@@ -14,36 +14,130 @@ export type Database = {
   }
   public: {
     Tables: {
+      class_exam_ai_control: {
+        Row: {
+          id: boolean
+          paused: boolean
+          reason: string | null
+          status_code: number | null
+        }
+        Insert: {
+          id?: boolean
+          paused?: boolean
+          reason?: string | null
+          status_code?: number | null
+        }
+        Update: {
+          id?: boolean
+          paused?: boolean
+          reason?: string | null
+          status_code?: number | null
+        }
+        Relationships: []
+      }
+      class_exam_ai_drafts: {
+        Row: {
+          attempt_id: string
+          error: string | null
+          lease_until: string | null
+          result: Json | null
+          status: string
+          updated_at: string
+        }
+        Insert: {
+          attempt_id: string
+          error?: string | null
+          lease_until?: string | null
+          result?: Json | null
+          status?: string
+          updated_at?: string
+        }
+        Update: {
+          attempt_id?: string
+          error?: string | null
+          lease_until?: string | null
+          result?: Json | null
+          status?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "class_exam_ai_drafts_attempt_id_fkey"
+            columns: ["attempt_id"]
+            isOneToOne: true
+            referencedRelation: "class_exam_attempts"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       class_exam_attempts: {
         Row: {
           assignment_id: string
+          graded_at: string | null
           id: string
           image_paths: string[]
+          result: Json | null
+          score: number | null
           started_at: string
           student_id: string
           submitted_at: string | null
+          teacher_feedback: string
+          total_marks: number | null
         }
         Insert: {
           assignment_id: string
+          graded_at?: string | null
           id?: string
           image_paths?: string[]
+          result?: Json | null
+          score?: number | null
           started_at?: string
           student_id?: string
           submitted_at?: string | null
+          teacher_feedback?: string
+          total_marks?: number | null
         }
         Update: {
           assignment_id?: string
+          graded_at?: string | null
           id?: string
           image_paths?: string[]
+          result?: Json | null
+          score?: number | null
           started_at?: string
           student_id?: string
           submitted_at?: string | null
+          teacher_feedback?: string
+          total_marks?: number | null
         }
         Relationships: [
           {
             foreignKeyName: "class_exam_attempts_assignment_id_fkey"
             columns: ["assignment_id"]
             isOneToOne: false
+            referencedRelation: "classroom_assignments"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      class_exam_marking_guides: {
+        Row: {
+          assignment_id: string
+          files: Json
+        }
+        Insert: {
+          assignment_id: string
+          files?: Json
+        }
+        Update: {
+          assignment_id?: string
+          files?: Json
+        }
+        Relationships: [
+          {
+            foreignKeyName: "class_exam_marking_guides_assignment_id_fkey"
+            columns: ["assignment_id"]
+            isOneToOne: true
             referencedRelation: "classroom_assignments"
             referencedColumns: ["id"]
           },
@@ -222,6 +316,7 @@ export type Database = {
         Row: {
           account_name: string | null
           contact: string | null
+          exam_packages: Json
           id: number
           kpay: string | null
           packages: Json
@@ -231,6 +326,7 @@ export type Database = {
         Insert: {
           account_name?: string | null
           contact?: string | null
+          exam_packages?: Json
           id?: number
           kpay?: string | null
           packages?: Json
@@ -240,6 +336,7 @@ export type Database = {
         Update: {
           account_name?: string | null
           contact?: string | null
+          exam_packages?: Json
           id?: number
           kpay?: string | null
           packages?: Json
@@ -355,6 +452,7 @@ export type Database = {
           created_at: string
           credits: number
           id: string
+          kind: string
           method: string
           price: number
           reviewed_at: string | null
@@ -367,6 +465,7 @@ export type Database = {
           created_at?: string
           credits: number
           id?: string
+          kind?: string
           method?: string
           price: number
           reviewed_at?: string | null
@@ -379,6 +478,7 @@ export type Database = {
           created_at?: string
           credits?: number
           id?: string
+          kind?: string
           method?: string
           price?: number
           reviewed_at?: string | null
@@ -437,6 +537,7 @@ export type Database = {
       tutor_wallets: {
         Row: {
           bonus_left: number
+          exam_bonus_left: number
           scholarship: string
           scholarship_note: string | null
           updated_at: string
@@ -444,6 +545,7 @@ export type Database = {
         }
         Insert: {
           bonus_left?: number
+          exam_bonus_left?: number
           scholarship?: string
           scholarship_note?: string | null
           updated_at?: string
@@ -451,6 +553,7 @@ export type Database = {
         }
         Update: {
           bonus_left?: number
+          exam_bonus_left?: number
           scholarship?: string
           scholarship_note?: string | null
           updated_at?: string
@@ -481,6 +584,10 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      admin_exam_credit: {
+        Args: { _add: number; _user: string }
+        Returns: undefined
+      }
       admin_review_teacher: {
         Args: { _approve: boolean; _id: string }
         Returns: undefined
@@ -493,7 +600,37 @@ export type Database = {
         Args: { _add_bonus: number; _scholarship: string; _user: string }
         Returns: undefined
       }
+      claim_class_exam_ai: {
+        Args: { _attempt: string; _force?: boolean }
+        Returns: boolean
+      }
+      class_exam_grade: {
+        Args: {
+          _attempt: string
+          _feedback: string
+          _result: Json
+          _score: number
+          _total: number
+        }
+        Returns: undefined
+      }
       class_exam_open: { Args: { _aid: string }; Returns: Json }
+      class_exam_roster: {
+        Args: { _aid: string }
+        Returns: {
+          attempt_id: string
+          display_name: string
+          graded_at: string
+          image_paths: string[]
+          result: Json
+          score: number
+          started_at: string
+          student_id: string
+          submitted_at: string
+          teacher_feedback: string
+          total_marks: number
+        }[]
+      }
       class_exam_submit: {
         Args: { _aid: string; _paths: string[] }
         Returns: undefined
