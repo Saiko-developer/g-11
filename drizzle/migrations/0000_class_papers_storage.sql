@@ -1,9 +1,9 @@
-CREATE POLICY "class teacher upload papers" ON storage.objects FOR INSERT TO authenticated
-WITH CHECK (bucket_id = 'class-papers' AND public.is_class_teacher(((storage.foldername(name))[1])::uuid));
-CREATE POLICY "class teacher delete papers" ON storage.objects FOR DELETE TO authenticated
-USING (bucket_id = 'class-papers' AND public.is_class_teacher(((storage.foldername(name))[1])::uuid));
-CREATE POLICY "class read papers" ON storage.objects FOR SELECT TO authenticated
-USING (bucket_id = 'class-papers' AND (
-  public.is_class_teacher(((storage.foldername(name))[1])::uuid)
-  OR public.is_class_member(((storage.foldername(name))[1])::uuid)
-  OR public.has_role(auth.uid(), 'admin')));
+-- CREATE POLICY "class teacher upload papers" ON storage.objects FOR INSERT TO authenticated
+-- WITH CHECK (bucket_id = 'class-papers' AND public.is_class_teacher(((storage.foldername(name))[1])::uuid));
+-- CREATE POLICY "class teacher delete papers" ON storage.objects FOR DELETE TO authenticated
+-- USING (bucket_id = 'class-papers' AND public.is_class_teacher(((storage.foldername(name))[1])::uuid));
+-- CREATE POLICY "class read papers" ON storage.objects FOR SELECT TO authenticated
+-- USING (bucket_id = 'class-papers' AND (
+--   public.is_class_teacher(((storage.foldername(name))[1])::uuid)
+--   OR public.is_class_member(((storage.foldername(name))[1])::uuid)
+--   OR public.has_role(auth.uid(), 'admin')));
