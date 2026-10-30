@@ -35,7 +35,9 @@ export function TopupPanel({ kind: initial = "tutor", showTabs = false }: { kind
   const [msg, setMsg] = useState<string | null>(null);
 
   const load = useCallback(async () => {
-    setS(await loadSettings());
+    const st = await loadSettings();
+    const def = { kpay: null, wavepay: null, account_name: null, contact: null, packages: [{ credits: 50, price: 1000 }, { credits: 150, price: 2500 }], exam_packages: [{ credits: 5, price: 1500 }, { credits: 15, price: 4000 }] };
+    setS(st ? { ...st, packages: st.packages.length ? st.packages : def.packages, exam_packages: st.exam_packages.length ? st.exam_packages : def.exam_packages } : def);
     const { data } = await db.from("topup_requests").select("*").order("created_at", { ascending: false }).limit(5);
     setMine(data ?? []);
   }, []);
