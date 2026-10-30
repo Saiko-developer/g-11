@@ -1,27 +1,5 @@
 {
   "version": "7",
   "dialect": "postgresql",
-  "entries": [
-    {
-      "idx": 0,
-      "version": "7",
-      "when": 1793350873031,
-      "tag": "0000_dual_credit_system",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1793356572362,
-      "tag": "0001_restore_core_schema",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1793356650708,
-      "tag": "0002_restore_classrooms_schema",
-      "breakpoints": true
-    }
-  ]
+  "entries": []
 }
