@@ -139,7 +139,7 @@ function MockExamPage() {
     return () => window.clearInterval(id);
   }, [running, seconds]);
 
-  const limitReached = !!quota && quota.limit >= 0 && quota.used >= quota.limit;
+  const limitReached = !!quota && quota.limit >= 0 && quota.used >= quota.limit && (quota.extra ?? 0) <= 0;
 
   // Students: answer key download unlocks 30 min after the paper was generated;
   // on-screen answers unlock only after they submit their paper for grading.
@@ -220,7 +220,7 @@ function MockExamPage() {
               <span className="rounded-lg border border-border px-2.5 py-1.5 text-xs text-muted-foreground">
                 {quota.limit < 0
                   ? "Admin · အကန့်အသတ်မရှိ"
-                  : `${quota.role === "teacher" ? "ဆရာ" : "ကျောင်းသား"} · ယနေ့ ကျန် ${Math.max(0, quota.limit - quota.used)}/${quota.limit} ကြိမ်`}
+                  : `${quota.role === "teacher" ? "ဆရာ" : "ကျောင်းသား"} · ယနေ့ အခမဲ့ ကျန် ${Math.max(0, quota.limit - quota.used)}/${quota.limit} ကြိမ်${(quota as { extra?: number }).extra ? ` · Extra ${(quota as { extra?: number }).extra}` : ""}`}
               </span>
             )}
             {isStaff && paper && (

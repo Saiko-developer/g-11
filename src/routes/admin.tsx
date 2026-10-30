@@ -105,12 +105,13 @@ function Dashboard({ myId, onSignOut }: { myId: string; onSignOut: () => void })
                   <p className="truncate font-semibold">{s.full_name || "—"} {me && <span className="text-xs text-primary">(you)</span>} {s.is_main_admin ? <span className="rounded bg-primary/10 px-1.5 text-xs text-primary">Main Admin</span> : s.is_admin && <span className="rounded bg-primary/10 px-1.5 text-xs text-primary">Admin</span>} {s.is_teacher && <span className="rounded bg-accent px-1.5 text-xs text-accent-foreground">Teacher</span>}</p>
                   <p className="truncate text-sm text-muted-foreground">{s.email}</p>
                   <p className="text-xs text-muted-foreground">Last seen: {new Date(s.last_seen_at).toLocaleString()}</p>
-                  <p className="text-xs text-muted-foreground">Sayar Owl: today {s.tutor_used_today}/10 · bonus {s.tutor_bonus}{s.scholarship === "approved" && " · 🎓 unlimited"}</p>
+                  <p className="text-xs text-muted-foreground">Sayar Owl: today {s.tutor_used_today}/10 · bonus {s.tutor_bonus} · 📝 Exam credit {(s as { exam_bonus?: number }).exam_bonus ?? 0}{s.scholarship === "approved" && " · 🎓 unlimited"}</p>
                 </div>
                 <span className={`rounded-full px-3 py-1 text-xs font-semibold ${suspended ? "bg-destructive/10 text-destructive" : "bg-primary/10 text-primary"}`}>
                   {suspended ? `Suspended${s.suspended_until ? " until " + new Date(s.suspended_until).toLocaleDateString() : ""}` : "Active"}
                 </span>
-                <button disabled={busy === s.id} onClick={() => { const n = Number(prompt("အကြိမ် ဘယ်လောက် ထည့်မလဲ?", "50")); if (n) run(s.id, () => tutor({ data: { id: s.id, addBonus: n } })); }} className="rounded-lg border border-input px-3 py-1.5 text-sm">+ အကြိမ်ထည့်ရန်</button>
+                <button disabled={busy === s.id} onClick={() => { const n = Number(prompt("အကြိမ် ဘယ်လောက် ထည့်မလဲ?", "50")); if (n) run(s.id, () => tutor({ data: { id: s.id, addBonus: n } })); }} className="rounded-lg border border-input px-3 py-1.5 text-sm">+ Tutor Questions</button>
+                <button disabled={busy === s.id} onClick={() => { const n = Number(prompt("စာမေးပွဲထုတ်ခွင့် ဘယ်နှစ်စုံ ထည့်မလဲ?", "5")); if (n) run(s.id, () => tutor({ data: { id: s.id, addExam: n } })); }} className="rounded-lg border border-input px-3 py-1.5 text-sm">+ Exam Credits</button>
                 {s.scholarship === "approved" && <button disabled={busy === s.id} onClick={() => run(s.id, () => tutor({ data: { id: s.id, scholarship: "none" } }))} className="rounded-lg border border-input px-3 py-1.5 text-sm">End scholarship</button>}
                 <button onClick={() => setViewing(viewing === s.id ? null : s.id)} className="rounded-lg border border-primary px-3 py-1.5 text-sm text-primary">{viewing === s.id ? "Hide Progress" : "View Progress"}</button>
                 {!me && !s.is_main_admin && (

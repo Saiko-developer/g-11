@@ -6,7 +6,7 @@ import type { MockExamPaper } from "@/lib/mockExam";
 import { configKey, examTotals, isFullExam, normalizeConfig, type SectionId } from "@/lib/examBlueprint";
 
 type Body = { unit?: number; unitTitle?: string; topics?: string; fresh?: boolean; units?: number[]; sections?: string[]; count?: number };
-export type ExamQuota = { role: string; limit: number; used: number };
+export type ExamQuota = { role: string; limit: number; used: number; extra?: number };
 
 function userClient(token: string) {
   const key = process.env.SUPABASE_PUBLISHABLE_KEY!;
@@ -52,9 +52,9 @@ export const Route = createFileRoute("/api/mock-exam")({
           });
           if (hit) return Response.json({ paper: hit.paper, quota, cached: true });
         }
-        if (quota.limit >= 0 && quota.used >= quota.limit) {
+        if (quota.limit >= 0 && quota.used >= quota.limit && (quota.extra ?? 0) <= 0) {
           return Response.json(
-            { error: `ယနေ့အတွက် မေးခွန်းထုတ်ခွင့် (${quota.limit} ကြိမ်) ပြည့်သွားပါပြီ။ မနက်ဖြန် ပြန်ထုတ်နိုင်ပါသည်။`, quota, limitReached: true },
+            { error: `ယနေ့အတွက် မေးခွန်းထုတ်ခွင့် (${quota.limit} ကြိမ်) ပြည့်သွားပါပြီ။ မနက်ဖြန် ပြန်ထုတ်နိုင်ပါသည် (သို့) Exam Credit ဝယ်ယူ / Admin ထံ ဆက်သွယ်ပါ။`, quota, limitReached: true },
             { status: 429 },
           );
         }
