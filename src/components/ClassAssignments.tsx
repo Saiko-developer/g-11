@@ -45,6 +45,24 @@ export function ClassAssignments({ cid, teacher }: { cid: string; teacher: boole
   }, [cid]);
   useEffect(() => void load(), [load]);
 
+  type Mine = { submitted_at: string | null; graded_at: string | null; score: number | null; total_marks: number | null };
+  const [mine, setMine] = useState<Record<string, Mine>>({});
+  useEffect(() => {
+    if (teacher || !list?.length) return;
+    const ids = list.filter((a) => a.kind === "class_exam").map((a) => a.id);
+    if (!ids.length) return;
+    void (async () => {
+      const { data: u } = await supabase.auth.getUser();
+      if (!u.user) return;
+      const { data } = await supabase.from("class_exam_attempts")
+        .select("assignment_id, submitted_at, graded_at, score, total_marks")
+        .in("assignment_id", ids).eq("student_id", u.user.id);
+      const m: Record<string, Mine> = {};
+      for (const r of data ?? []) m[r.assignment_id] = r as Mine;
+      setMine(m);
+    })();
+  }, [list, teacher]);
+
   const create = async () => {
     const t = title.trim() || `Unit ${unit} ${kind === "mock_exam" ? "Mock Exam" : "Practice"}`;
     setBusy(true);
@@ -133,7 +151,12 @@ export function ClassAssignments({ cid, teacher }: { cid: string; teacher: boole
                 <div className="flex shrink-0 flex-col gap-1">
                   {a.kind === "class_exam" ? (
                     <Link to="/class-exam/$id" params={{ id: a.id }} className={ghost}>
-                      {teacher ? "Open" : "Start Exam"}
+                      {teacher ? "Open" : (() => {
+                        const m = mine[a.id];
+                        if (m?.graded_at) return `✅ ${m.score ?? "—"} / ${m.total_marks ?? "—"} · အဖြေလွှာ ကြည့်ရန်`;
+                        if (m?.submitted_at) return "⏳ စစ်ဆေးနေဆဲ";
+                        return "Start Exam";
+                      })()}
                     </Link>
                   ) : a.kind === "mock_exam" ? (
                     <Link to="/mock-exam/$unit" params={{ unit: String(a.unit) }} className={ghost}>

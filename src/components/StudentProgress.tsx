@@ -95,6 +95,9 @@ export function StudentProgress({ userId }: { userId: string }) {
         )}
       </section>
 
+      <ClassExamHistory userId={userId} />
+
+
       <section>
         <h3 className="mb-2 font-semibold">Mock Exam ရလဒ်များ ({exams.length})</h3>
         {exams.length === 0 ? (
