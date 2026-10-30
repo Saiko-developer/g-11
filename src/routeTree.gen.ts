@@ -19,7 +19,6 @@ import { Route as ApiAnswerHintRouteImport } from './routes/api/answer-hint'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as ApiChatHomeRouteImport } from './routes/api/chat-home'
 import { Route as ApiExamRouteImport } from './routes/api/exam'
-import { Route as ApiExamsRouteImport } from './routes/api/exams'
 import { Route as ApiExercisesRouteImport } from './routes/api/exercises'
 import { Route as ApiGradeExamRouteImport } from './routes/api/grade-exam'
 import { Route as ApiGrammarExercisesRouteImport } from './routes/api/grammar-exercises'
@@ -84,11 +83,6 @@ const ApiChatHomeRoute = ApiChatHomeRouteImport.update({
 const ApiExamRoute = ApiExamRouteImport.update({
   id: '/api/exam',
   path: '/api/exam',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApiExamsRoute = ApiExamsRouteImport.update({
-  id: '/api/exams',
-  path: '/api/exams',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiExercisesRoute = ApiExercisesRouteImport.update({
@@ -178,7 +172,6 @@ export interface FileRoutesByFullPath {
   '/api/chat': typeof ApiChatRoute
   '/api/chat-home': typeof ApiChatHomeRoute
   '/api/exam': typeof ApiExamRoute
-  '/api/exams': typeof ApiExamsRoute
   '/api/exercises': typeof ApiExercisesRoute
   '/api/grade-exam': typeof ApiGradeExamRoute
   '/api/grammar-exercises': typeof ApiGrammarExercisesRoute
@@ -206,7 +199,6 @@ export interface FileRoutesByTo {
   '/api/chat': typeof ApiChatRoute
   '/api/chat-home': typeof ApiChatHomeRoute
   '/api/exam': typeof ApiExamRoute
-  '/api/exams': typeof ApiExamsRoute
   '/api/exercises': typeof ApiExercisesRoute
   '/api/grade-exam': typeof ApiGradeExamRoute
   '/api/grammar-exercises': typeof ApiGrammarExercisesRoute
@@ -234,7 +226,6 @@ export interface FileRoutesById {
   '/api/chat': typeof ApiChatRoute
   '/api/chat-home': typeof ApiChatHomeRoute
   '/api/exam': typeof ApiExamRoute
-  '/api/exams': typeof ApiExamsRoute
   '/api/exercises': typeof ApiExercisesRoute
   '/api/grade-exam': typeof ApiGradeExamRoute
   '/api/grammar-exercises': typeof ApiGrammarExercisesRoute
@@ -264,7 +255,6 @@ export interface FileRouteTypes {
     | '/api/chat'
     | '/api/chat-home'
     | '/api/exam'
-    | '/api/exams'
     | '/api/exercises'
     | '/api/grade-exam'
     | '/api/grammar-exercises'
@@ -292,7 +282,6 @@ export interface FileRouteTypes {
     | '/api/chat'
     | '/api/chat-home'
     | '/api/exam'
-    | '/api/exams'
     | '/api/exercises'
     | '/api/grade-exam'
     | '/api/grammar-exercises'
@@ -319,7 +308,6 @@ export interface FileRouteTypes {
     | '/api/chat'
     | '/api/chat-home'
     | '/api/exam'
-    | '/api/exams'
     | '/api/exercises'
     | '/api/grade-exam'
     | '/api/grammar-exercises'
@@ -348,7 +336,6 @@ export interface RootRouteChildren {
   ApiChatRoute: typeof ApiChatRoute
   ApiChatHomeRoute: typeof ApiChatHomeRoute
   ApiExamRoute: typeof ApiExamRoute
-  ApiExamsRoute: typeof ApiExamsRoute
   ApiExercisesRoute: typeof ApiExercisesRoute
   ApiGradeExamRoute: typeof ApiGradeExamRoute
   ApiGrammarExercisesRoute: typeof ApiGrammarExercisesRoute
@@ -434,13 +421,6 @@ declare module '@tanstack/react-router' {
       path: '/api/exam'
       fullPath: '/api/exam'
       preLoaderRoute: typeof ApiExamRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api/exams': {
-      id: '/api/exams'
-      path: '/api/exams'
-      fullPath: '/api/exams'
-      preLoaderRoute: typeof ApiExamsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/exercises': {
@@ -576,7 +556,6 @@ const rootRouteChildren: RootRouteChildren = {
   ApiChatRoute: ApiChatRoute,
   ApiChatHomeRoute: ApiChatHomeRoute,
   ApiExamRoute: ApiExamRoute,
-  ApiExamsRoute: ApiExamsRoute,
   ApiExercisesRoute: ApiExercisesRoute,
   ApiGradeExamRoute: ApiGradeExamRoute,
   ApiGrammarExercisesRoute: ApiGrammarExercisesRoute,
