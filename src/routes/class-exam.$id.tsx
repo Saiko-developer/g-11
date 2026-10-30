@@ -118,6 +118,12 @@ function ExamHall() {
       }
       const { error } = await supabase.rpc("class_exam_submit", { _aid: id, _paths: paths });
       if (error) throw error;
+      // Start private AI draft marking for the teacher in the background (student never sees it).
+      void supabase.auth.getSession().then(({ data: s }) => fetch("/api/auto-grade", {
+        method: "POST", keepalive: true,
+        headers: { "content-type": "application/json", authorization: `Bearer ${s.session?.access_token ?? ""}` },
+        body: JSON.stringify({ assignmentId: id }),
+      }).catch(() => {}));
       setFiles([]);
       toast.success("တင်သွင်းပြီးပါပြီ");
       await load();

@@ -15,11 +15,14 @@ export const Route = createFileRoute("/api/auto-grade")({
         if (!authRes.ok) return Response.json({ error: "Please sign in again." }, { status: 401 });
         const uid = ((await authRes.json()) as { id: string }).id;
 
-        const { attemptId, force } = (await request.json()) as { attemptId?: string; force?: boolean };
-        if (!attemptId) return Response.json({ error: "Missing attempt" }, { status: 400 });
-
+        const body = (await request.json()) as { attemptId?: string; assignmentId?: string; force?: boolean };
+        const force = body.force;
         const { supabaseAdmin: db } = await import("@/integrations/supabase/client.server");
-        const { data: att } = await db.from("class_exam_attempts").select("*").eq("id", attemptId).maybeSingle();
+        const q = db.from("class_exam_attempts").select("*");
+        const { data: att } = body.attemptId ? await q.eq("id", body.attemptId).maybeSingle()
+          : body.assignmentId ? await q.eq("assignment_id", body.assignmentId).eq("student_id", uid).maybeSingle()
+          : { data: null };
+        const attemptId = att?.id as string;
         if (!att?.submitted_at) return Response.json({ error: "Not submitted" }, { status: 404 });
         const { data: asg } = await db.from("classroom_assignments").select("classroom_id, paper_data").eq("id", att.assignment_id).maybeSingle();
         const { data: cls } = asg ? await db.from("classrooms").select("teacher_id").eq("id", asg.classroom_id).maybeSingle() : { data: null };
