@@ -1,109 +1,109 @@
-ALTER TABLE public.tutor_wallets ALTER COLUMN bonus_left SET DEFAULT 5;
-ALTER TABLE public.tutor_wallets ADD COLUMN IF NOT EXISTS exam_bonus_left integer NOT NULL DEFAULT 0;
-ALTER TABLE public.payment_settings ADD COLUMN IF NOT EXISTS exam_packages jsonb NOT NULL DEFAULT '[{"price": 1500, "credits": 5}, {"price": 4000, "credits": 15}]'::jsonb;
-ALTER TABLE public.topup_requests ADD COLUMN IF NOT EXISTS kind text NOT NULL DEFAULT 'tutor';
-ALTER TABLE public.topup_requests ADD CONSTRAINT topup_kind_check CHECK (kind IN ('tutor','exam'));
-
-CREATE OR REPLACE FUNCTION public.exam_quota()
- RETURNS json LANGUAGE plpgsql SECURITY DEFINER SET search_path TO 'public'
-AS $function$
-DECLARE uid uuid := auth.uid(); n integer; role_name text; lim integer; extra integer;
-BEGIN
-  IF uid IS NULL THEN RETURN json_build_object('role','guest','limit',0,'used',0,'extra',0); END IF;
-  IF public.has_role(uid,'admin') THEN role_name := 'admin'; lim := -1;
-  ELSIF public.has_role(uid,'teacher') THEN role_name := 'teacher'; lim := 2;
-  ELSE role_name := 'student'; lim := 1; END IF;
-  SELECT count(*) INTO n FROM public.exam_generations
-  WHERE user_id = uid AND (created_at AT TIME ZONE 'Asia/Yangon')::date = public.mm_today();
-  SELECT coalesce(exam_bonus_left,0) INTO extra FROM public.tutor_wallets WHERE user_id = uid;
-  RETURN json_build_object('role',role_name,'limit',lim,'used',n,'extra',coalesce(extra,0));
-END $function$;
-
-CREATE OR REPLACE FUNCTION public.record_exam_generation(_unit integer, _paper jsonb)
- RETURNS json LANGUAGE plpgsql SECURITY DEFINER SET search_path TO 'public'
-AS $function$
-DECLARE q json; uid uuid := auth.uid();
-BEGIN
-  IF uid IS NULL THEN RAISE EXCEPTION 'Please sign in'; END IF;
-  q := public.exam_quota();
-  IF (q->>'limit')::int >= 0 AND (q->>'used')::int >= (q->>'limit')::int THEN
-    UPDATE public.tutor_wallets SET exam_bonus_left = exam_bonus_left - 1, updated_at = now()
-      WHERE user_id = uid AND exam_bonus_left > 0;
-    IF NOT FOUND THEN RAISE EXCEPTION 'Daily limit reached'; END IF;
-  END IF;
-  INSERT INTO public.exam_generations (user_id, unit, paper) VALUES (uid, _unit, _paper);
-  RETURN public.exam_quota();
-END $function$;
-
-CREATE OR REPLACE FUNCTION public.admin_exam_credit(_user uuid, _add integer)
- RETURNS void LANGUAGE plpgsql SECURITY DEFINER SET search_path TO 'public'
-AS $function$
-BEGIN
-  IF NOT public.has_role(auth.uid(),'admin') THEN RAISE EXCEPTION 'Forbidden'; END IF;
-  INSERT INTO public.tutor_wallets (user_id) VALUES (_user) ON CONFLICT DO NOTHING;
-  UPDATE public.tutor_wallets SET exam_bonus_left = greatest(0, exam_bonus_left + coalesce(_add,0)), updated_at = now() WHERE user_id = _user;
-END $function$;
-
-CREATE OR REPLACE FUNCTION public.admin_review_topup(_id uuid, _approve boolean)
- RETURNS void LANGUAGE plpgsql SECURITY DEFINER SET search_path TO 'public'
-AS $function$
-DECLARE r public.topup_requests;
-BEGIN
-  IF NOT public.has_role(auth.uid(),'admin') THEN RAISE EXCEPTION 'Forbidden'; END IF;
-  SELECT * INTO r FROM public.topup_requests WHERE id = _id FOR UPDATE;
-  IF r.id IS NULL OR r.status <> 'pending' THEN RAISE EXCEPTION 'Request already reviewed'; END IF;
-  UPDATE public.topup_requests SET status = CASE WHEN _approve THEN 'approved' ELSE 'rejected' END,
-    reviewed_at = now(), reviewed_by = auth.uid() WHERE id = _id;
-  IF _approve THEN
-    INSERT INTO public.tutor_wallets (user_id) VALUES (r.user_id) ON CONFLICT DO NOTHING;
-    IF r.kind = 'exam' THEN
-      UPDATE public.tutor_wallets SET exam_bonus_left = exam_bonus_left + r.credits, updated_at = now() WHERE user_id = r.user_id;
-    ELSE
-      UPDATE public.tutor_wallets SET bonus_left = bonus_left + r.credits, updated_at = now() WHERE user_id = r.user_id;
-    END IF;
-  END IF;
-END $function$;
-
-CREATE OR REPLACE FUNCTION public.consume_tutor_message()
- RETURNS json LANGUAGE plpgsql SECURITY DEFINER SET search_path TO 'public'
-AS $function$
-DECLARE uid uuid := auth.uid(); w public.tutor_wallets; used_today integer; p public.profiles;
-BEGIN
-  IF uid IS NULL THEN RETURN json_build_object('ok', false, 'reason', 'signin'); END IF;
-  SELECT * INTO p FROM public.profiles WHERE id = uid;
-  IF p.status = 'suspended' AND (p.suspended_until IS NULL OR p.suspended_until > now()) THEN
-    RETURN json_build_object('ok', false, 'reason', 'suspended');
-  END IF;
-  INSERT INTO public.tutor_wallets (user_id) VALUES (uid) ON CONFLICT DO NOTHING;
-  SELECT * INTO w FROM public.tutor_wallets WHERE user_id = uid FOR UPDATE;
-  IF w.scholarship = 'approved' OR public.has_role(uid, 'admin') THEN RETURN json_build_object('ok', true); END IF;
-  INSERT INTO public.tutor_usage (user_id, day, used) VALUES (uid, public.mm_today(), 0) ON CONFLICT DO NOTHING;
-  SELECT used INTO used_today FROM public.tutor_usage WHERE user_id = uid AND day = public.mm_today() FOR UPDATE;
-  IF used_today < 10 THEN
-    UPDATE public.tutor_usage SET used = used + 1 WHERE user_id = uid AND day = public.mm_today();
-    RETURN json_build_object('ok', true);
-  END IF;
-  IF w.bonus_left > 0 THEN
-    UPDATE public.tutor_wallets SET bonus_left = bonus_left - 1, updated_at = now() WHERE user_id = uid;
-    RETURN json_build_object('ok', true);
-  END IF;
-  RETURN json_build_object('ok', false, 'reason', 'limit');
-END $function$;
-
-CREATE OR REPLACE FUNCTION public.tutor_quota()
- RETURNS json LANGUAGE plpgsql SECURITY DEFINER SET search_path TO 'public'
-AS $function$
-DECLARE uid uuid := auth.uid(); w public.tutor_wallets; used_today integer;
-BEGIN
-  IF uid IS NULL THEN RETURN json_build_object('signed_in', false); END IF;
-  INSERT INTO public.tutor_wallets (user_id) VALUES (uid) ON CONFLICT DO NOTHING;
-  SELECT * INTO w FROM public.tutor_wallets WHERE user_id = uid;
-  SELECT coalesce(used, 0) INTO used_today FROM public.tutor_usage WHERE user_id = uid AND day = public.mm_today();
-  used_today := coalesce(used_today, 0);
-  RETURN json_build_object('signed_in', true,
-    'unlimited', (w.scholarship = 'approved' OR public.has_role(uid, 'admin')),
-    'daily_limit', 10, 'daily_left', greatest(0, 10 - used_today),
-    'bonus_left', w.bonus_left, 'exam_bonus_left', w.exam_bonus_left, 'scholarship', w.scholarship);
-END $function$;
-
-GRANT EXECUTE ON FUNCTION public.admin_exam_credit(uuid, integer) TO authenticated;
+-- ALTER TABLE public.tutor_wallets ALTER COLUMN bonus_left SET DEFAULT 5;
+-- ALTER TABLE public.tutor_wallets ADD COLUMN IF NOT EXISTS exam_bonus_left integer NOT NULL DEFAULT 0;
+-- ALTER TABLE public.payment_settings ADD COLUMN IF NOT EXISTS exam_packages jsonb NOT NULL DEFAULT '[{"price": 1500, "credits": 5}, {"price": 4000, "credits": 15}]'::jsonb;
+-- ALTER TABLE public.topup_requests ADD COLUMN IF NOT EXISTS kind text NOT NULL DEFAULT 'tutor';
+-- ALTER TABLE public.topup_requests ADD CONSTRAINT topup_kind_check CHECK (kind IN ('tutor','exam'));
+-- 
+-- CREATE OR REPLACE FUNCTION public.exam_quota()
+--  RETURNS json LANGUAGE plpgsql SECURITY DEFINER SET search_path TO 'public'
+-- AS $function$
+-- DECLARE uid uuid := auth.uid(); n integer; role_name text; lim integer; extra integer;
+-- BEGIN
+--   IF uid IS NULL THEN RETURN json_build_object('role','guest','limit',0,'used',0,'extra',0); END IF;
+--   IF public.has_role(uid,'admin') THEN role_name := 'admin'; lim := -1;
+--   ELSIF public.has_role(uid,'teacher') THEN role_name := 'teacher'; lim := 2;
+--   ELSE role_name := 'student'; lim := 1; END IF;
+--   SELECT count(*) INTO n FROM public.exam_generations
+--   WHERE user_id = uid AND (created_at AT TIME ZONE 'Asia/Yangon')::date = public.mm_today();
+--   SELECT coalesce(exam_bonus_left,0) INTO extra FROM public.tutor_wallets WHERE user_id = uid;
+--   RETURN json_build_object('role',role_name,'limit',lim,'used',n,'extra',coalesce(extra,0));
+-- END $function$;
+-- 
+-- CREATE OR REPLACE FUNCTION public.record_exam_generation(_unit integer, _paper jsonb)
+--  RETURNS json LANGUAGE plpgsql SECURITY DEFINER SET search_path TO 'public'
+-- AS $function$
+-- DECLARE q json; uid uuid := auth.uid();
+-- BEGIN
+--   IF uid IS NULL THEN RAISE EXCEPTION 'Please sign in'; END IF;
+--   q := public.exam_quota();
+--   IF (q->>'limit')::int >= 0 AND (q->>'used')::int >= (q->>'limit')::int THEN
+--     UPDATE public.tutor_wallets SET exam_bonus_left = exam_bonus_left - 1, updated_at = now()
+--       WHERE user_id = uid AND exam_bonus_left > 0;
+--     IF NOT FOUND THEN RAISE EXCEPTION 'Daily limit reached'; END IF;
+--   END IF;
+--   INSERT INTO public.exam_generations (user_id, unit, paper) VALUES (uid, _unit, _paper);
+--   RETURN public.exam_quota();
+-- END $function$;
+-- 
+-- CREATE OR REPLACE FUNCTION public.admin_exam_credit(_user uuid, _add integer)
+--  RETURNS void LANGUAGE plpgsql SECURITY DEFINER SET search_path TO 'public'
+-- AS $function$
+-- BEGIN
+--   IF NOT public.has_role(auth.uid(),'admin') THEN RAISE EXCEPTION 'Forbidden'; END IF;
+--   INSERT INTO public.tutor_wallets (user_id) VALUES (_user) ON CONFLICT DO NOTHING;
+--   UPDATE public.tutor_wallets SET exam_bonus_left = greatest(0, exam_bonus_left + coalesce(_add,0)), updated_at = now() WHERE user_id = _user;
+-- END $function$;
+-- 
+-- CREATE OR REPLACE FUNCTION public.admin_review_topup(_id uuid, _approve boolean)
+--  RETURNS void LANGUAGE plpgsql SECURITY DEFINER SET search_path TO 'public'
+-- AS $function$
+-- DECLARE r public.topup_requests;
+-- BEGIN
+--   IF NOT public.has_role(auth.uid(),'admin') THEN RAISE EXCEPTION 'Forbidden'; END IF;
+--   SELECT * INTO r FROM public.topup_requests WHERE id = _id FOR UPDATE;
+--   IF r.id IS NULL OR r.status <> 'pending' THEN RAISE EXCEPTION 'Request already reviewed'; END IF;
+--   UPDATE public.topup_requests SET status = CASE WHEN _approve THEN 'approved' ELSE 'rejected' END,
+--     reviewed_at = now(), reviewed_by = auth.uid() WHERE id = _id;
+--   IF _approve THEN
+--     INSERT INTO public.tutor_wallets (user_id) VALUES (r.user_id) ON CONFLICT DO NOTHING;
+--     IF r.kind = 'exam' THEN
+--       UPDATE public.tutor_wallets SET exam_bonus_left = exam_bonus_left + r.credits, updated_at = now() WHERE user_id = r.user_id;
+--     ELSE
+--       UPDATE public.tutor_wallets SET bonus_left = bonus_left + r.credits, updated_at = now() WHERE user_id = r.user_id;
+--     END IF;
+--   END IF;
+-- END $function$;
+-- 
+-- CREATE OR REPLACE FUNCTION public.consume_tutor_message()
+--  RETURNS json LANGUAGE plpgsql SECURITY DEFINER SET search_path TO 'public'
+-- AS $function$
+-- DECLARE uid uuid := auth.uid(); w public.tutor_wallets; used_today integer; p public.profiles;
+-- BEGIN
+--   IF uid IS NULL THEN RETURN json_build_object('ok', false, 'reason', 'signin'); END IF;
+--   SELECT * INTO p FROM public.profiles WHERE id = uid;
+--   IF p.status = 'suspended' AND (p.suspended_until IS NULL OR p.suspended_until > now()) THEN
+--     RETURN json_build_object('ok', false, 'reason', 'suspended');
+--   END IF;
+--   INSERT INTO public.tutor_wallets (user_id) VALUES (uid) ON CONFLICT DO NOTHING;
+--   SELECT * INTO w FROM public.tutor_wallets WHERE user_id = uid FOR UPDATE;
+--   IF w.scholarship = 'approved' OR public.has_role(uid, 'admin') THEN RETURN json_build_object('ok', true); END IF;
+--   INSERT INTO public.tutor_usage (user_id, day, used) VALUES (uid, public.mm_today(), 0) ON CONFLICT DO NOTHING;
+--   SELECT used INTO used_today FROM public.tutor_usage WHERE user_id = uid AND day = public.mm_today() FOR UPDATE;
+--   IF used_today < 10 THEN
+--     UPDATE public.tutor_usage SET used = used + 1 WHERE user_id = uid AND day = public.mm_today();
+--     RETURN json_build_object('ok', true);
+--   END IF;
+--   IF w.bonus_left > 0 THEN
+--     UPDATE public.tutor_wallets SET bonus_left = bonus_left - 1, updated_at = now() WHERE user_id = uid;
+--     RETURN json_build_object('ok', true);
+--   END IF;
+--   RETURN json_build_object('ok', false, 'reason', 'limit');
+-- END $function$;
+-- 
+-- CREATE OR REPLACE FUNCTION public.tutor_quota()
+--  RETURNS json LANGUAGE plpgsql SECURITY DEFINER SET search_path TO 'public'
+-- AS $function$
+-- DECLARE uid uuid := auth.uid(); w public.tutor_wallets; used_today integer;
+-- BEGIN
+--   IF uid IS NULL THEN RETURN json_build_object('signed_in', false); END IF;
+--   INSERT INTO public.tutor_wallets (user_id) VALUES (uid) ON CONFLICT DO NOTHING;
+--   SELECT * INTO w FROM public.tutor_wallets WHERE user_id = uid;
+--   SELECT coalesce(used, 0) INTO used_today FROM public.tutor_usage WHERE user_id = uid AND day = public.mm_today();
+--   used_today := coalesce(used_today, 0);
+--   RETURN json_build_object('signed_in', true,
+--     'unlimited', (w.scholarship = 'approved' OR public.has_role(uid, 'admin')),
+--     'daily_limit', 10, 'daily_left', greatest(0, 10 - used_today),
+--     'bonus_left', w.bonus_left, 'exam_bonus_left', w.exam_bonus_left, 'scholarship', w.scholarship);
+-- END $function$;
+-- 
+-- GRANT EXECUTE ON FUNCTION public.admin_exam_credit(uuid, integer) TO authenticated;
