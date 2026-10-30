@@ -5,6 +5,7 @@
 - [ ] Verify marking and student/teacher flows live — blocked: no account has signed in yet.
 
 # Setup
-- [ ] Restore Google sign-up/sign-in and automatic profile creation.
+- [x] Enable Google sign-up/sign-in, restore automatic profile creation, and test session restoration, admin redirects and sign-out.
+- [ ] Verify first Google signup and profile/role creation live — blocked: no account has signed up yet.
 - [ ] Admin first sign-in check — blocked: admin must sign in with Google once.
 - [ ] Save KBZPay/WavePay details and prices — blocked: admin enters them on the Top-up page.
