@@ -2,12 +2,15 @@ import { useState, type ReactNode } from "react";
 import { Lock } from "lucide-react";
 import { lovable } from "@/integrations/lovable/index";
 import { useAuth } from "@/components/AuthGate";
+import { Button } from "@/components/ui/button";
 
 export async function signInWithGoogle(redirectUri?: string) {
-  return lovable.auth.signInWithOAuth("google", {
+  try { return await lovable.auth.signInWithOAuth("google", {
     redirect_uri: redirectUri ?? window.location.origin,
     extraParams: { prompt: "select_account" },
-  });
+  }); } catch (error) {
+    return { error: error instanceof Error ? error : new Error("Sign-in failed. Please try again."), redirected: false };
+  }
 }
 
 /** Shows children only for signed-in students; otherwise an inline sign-in card (no page redirect). */
@@ -24,18 +27,19 @@ export function RequireSignIn({ children }: { children: ReactNode }) {
       </div>
       <h2 className="text-lg font-semibold">ဆရာဇီးကွက် (AI) ကို သုံးရန် Login ဝင်ပါ</h2>
       <p className="mt-1 text-sm text-muted-foreground">Sign in with Google to use the AI tutor and exam grading.</p>
-      <button
+      <Button
         onClick={async () => {
           setBusy(true);
           setErr(null);
           const r = await signInWithGoogle();
-          if (r.error) { setErr("Sign-in failed. Please try again."); setBusy(false); }
+          if (r.error) setErr(r.error.message);
+          if (r.error || !r.redirected) setBusy(false);
         }}
         disabled={busy}
         className="mt-5 inline-flex w-full items-center justify-center rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground disabled:opacity-60"
       >
         {busy ? "Signing in…" : "Sign in with Google"}
-      </button>
+      </Button>
       {err && <p className="mt-3 text-sm text-destructive">{err}</p>}
     </div>
   );

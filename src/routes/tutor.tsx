@@ -51,6 +51,8 @@ export const Route = createFileRoute("/tutor")({
           "A patient AI English teacher for Grade 10 students in Myanmar. Get grammar explanations, sentence breakdowns, and Myanmar translations.",
       },
       { property: "og:title", content: "Sayar Owl — English Tutor for Grade 10 Myanmar Students" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       {
         property: "og:description",
         content:

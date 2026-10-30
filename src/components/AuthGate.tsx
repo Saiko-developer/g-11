@@ -1,9 +1,12 @@
-import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from "react";
+import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import type { Session } from "@supabase/supabase-js";
-import { useRouterState } from "@tanstack/react-router";
+import { useRouter } from "@tanstack/react-router";
+import { useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
-import { lovable } from "@/integrations/lovable/index";
-import { GraduationCap, Lock, LogOut } from "lucide-react";
+import { Lock, LogOut } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
+import { safeAuthDestination } from "@/lib/auth-redirect";
 
 type Access = { status: string; suspended_until: string | null; is_admin: boolean };
 type Ctx = { session: Session | null; access: Access | null; ready: boolean; signOut: () => Promise<void> };
@@ -12,38 +15,60 @@ export const useAuth = () => useContext(AuthCtx);
 
 /** Provides session state without blocking pages; lessons are public, AI features use RequireSignIn. */
 export function AuthGate({ children }: { children: ReactNode }) {
+  const router = useRouter();
+  const queryClient = useQueryClient();
   const [ready, setReady] = useState(false);
   const [session, setSession] = useState<Session | null>(null);
   const [access, setAccess] = useState<Access | null>(null);
 
-  const loadAccess = useCallback(async (s: Session | null) => {
-    if (!s) return setAccess(null);
-    const { data } = await supabase.rpc("my_access");
-    setAccess((data as unknown as Access) ?? null);
-  }, []);
-
   useEffect(() => {
-    const { data: sub } = supabase.auth.onAuthStateChange((event, s) => {
-      if (event === "SIGNED_IN" || event === "SIGNED_OUT" || event === "USER_UPDATED") {
-        setSession(s);
-        setTimeout(() => void loadAccess(s), 0);
-      }
-    });
-    supabase.auth.getSession().then(({ data }) => {
-      setSession(data.session);
+    let active = true;
+    let revision = 0;
+    const applySession = async (s: Session | null, current: number) => {
+      const { data, error } = s ? await supabase.auth.getUser() : { data: { user: null }, error: null };
+      if (!active || current !== revision) return;
+      const validated = !error && data.user ? s : null;
+      setSession(validated);
       setReady(true);
-      void loadAccess(data.session);
-      const next = localStorage.getItem("postLoginRedirect");
-      if (data.session && next && next.startsWith("/") && !next.startsWith("//")) {
+      if (!validated) setAccess(null);
+      else {
+        const { data: accessData } = await supabase.rpc("my_access");
+        if (!active || current !== revision) return;
+        setAccess((accessData as unknown as Access) ?? null);
+        const next = safeAuthDestination(localStorage.getItem("postLoginRedirect"));
         localStorage.removeItem("postLoginRedirect");
-        if (window.location.pathname !== next) window.location.assign(next);
+        if (next && window.location.pathname !== next) void router.navigate({ to: next, replace: true });
       }
+    };
+    const { data: sub } = supabase.auth.onAuthStateChange((event, s) => {
+      const current = ++revision;
+      if (event === "SIGNED_OUT") {
+        setSession(null);
+        setAccess(null);
+        setReady(true);
+      }
+      // Auth calls must run outside the callback to avoid locking the auth client.
+      setTimeout(() => { if (active) void applySession(s, current); }, 0);
+      if (event !== "SIGNED_IN" && event !== "SIGNED_OUT" && event !== "USER_UPDATED") return;
+      void router.invalidate();
+      if (event !== "SIGNED_OUT") void queryClient.invalidateQueries();
     });
-    return () => sub.subscription.unsubscribe();
-  }, [loadAccess]);
+    const initialRevision = revision;
+    supabase.auth.getSession().then(({ data }) => {
+      if (active && revision === initialRevision) void applySession(data.session, initialRevision);
+    });
+    return () => { active = false; sub.subscription.unsubscribe(); };
+  }, [router, queryClient]);
 
   const signOut = async () => {
-    await supabase.auth.signOut();
+    await queryClient.cancelQueries();
+    queryClient.clear();
+    const { error } = await supabase.auth.signOut();
+    if (error) { toast.error(error.message); return; }
+    localStorage.removeItem("postLoginRedirect");
+    setSession(null);
+    setAccess(null);
+    await router.navigate({ to: "/", replace: true });
   };
 
   if (session && access && access.status === "suspended") {
@@ -61,37 +86,6 @@ function Shell({ children }: { children: ReactNode }) {
   );
 }
 
-function SignInScreen() {
-  const [err, setErr] = useState<string | null>(null);
-  const [busy, setBusy] = useState(false);
-  const signIn = async () => {
-    setBusy(true);
-    setErr(null);
-    const result = await lovable.auth.signInWithOAuth("google", { redirect_uri: window.location.origin });
-    if (result.error) {
-      setErr("Sign-in failed. Please try again.");
-      setBusy(false);
-    }
-  };
-  return (
-    <Shell>
-      <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-        <GraduationCap className="h-7 w-7" />
-      </div>
-      <h1 className="text-2xl font-bold tracking-tight">Sayar Owl Academy</h1>
-      <p className="mt-2 text-sm text-muted-foreground">Gmail ဖြင့် တစ်ချက်နှိပ်ပြီး ဝင်ရောက်ပါ။</p>
-      <button
-        onClick={signIn}
-        disabled={busy}
-        className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground disabled:opacity-60"
-      >
-        {busy ? "Signing in…" : "Sign in with Google"}
-      </button>
-      {err && <p className="mt-3 text-sm text-destructive">{err}</p>}
-    </Shell>
-  );
-}
-
 function BlockedScreen({ access, onSignOut }: { access: Access; onSignOut: () => void }) {
   return (
     <Shell>
@@ -105,9 +99,9 @@ function BlockedScreen({ access, onSignOut }: { access: Access; onSignOut: () =>
           <> <br />Until: {new Date(access.suspended_until).toLocaleDateString()}</>
         )}
       </p>
-      <button onClick={onSignOut} className="mt-6 inline-flex items-center gap-2 rounded-lg border border-input px-4 py-2 text-sm">
+      <Button onClick={onSignOut} variant="outline" className="mt-6">
         <LogOut className="h-4 w-4" /> Sign out
-      </button>
+      </Button>
     </Shell>
   );
 }

@@ -21,6 +21,11 @@ import {
 type SectionId = "1a" | "1b" | "1c";
 
 export const Route = createFileRoute("/section/$sectionId")({
+  head: ({ params }) => {
+    const title = `Section ${params.sectionId.toUpperCase()} — Sayar Owl Academy`;
+    const description = "Grade 10 English reading, vocabulary and grammar lessons with Burmese explanations.";
+    return { meta: [{ title }, { name: "description", content: description }, { property: "og:title", content: title }, { property: "og:description", content: description }, { property: "og:type", content: "article" }, { name: "twitter:card", content: "summary" }] };
+  },
   component: SectionPage,
 });
 

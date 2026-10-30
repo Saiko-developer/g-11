@@ -8,6 +8,7 @@ import { useAuth } from "@/components/AuthGate";
 import { StudentProgress } from "@/components/StudentProgress";
 import { AdminTopups } from "@/components/Topup";
 import { AdminTeacherRequests } from "@/components/TeacherRequest";
+import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/admin")({
   head: () => ({
@@ -24,7 +25,8 @@ export const Route = createFileRoute("/admin")({
 });
 
 function AdminPage() {
-  const { access, session, signOut } = useAuth();
+  const { access, session, signOut, ready } = useAuth();
+  if (!ready || (session && !access)) return <main className="flex min-h-screen items-center justify-center bg-background text-foreground">Loading…</main>;
   if (!session) return <AdminLogin />;
   if (!access?.is_admin) {
     return (
@@ -37,7 +39,7 @@ function AdminPage() {
       </main>
     );
   }
-  return <Dashboard myId={session!.user.id} onSignOut={signOut} />;
+  return <Dashboard myId={session.user.id} onSignOut={signOut} />;
 }
 
 function Dashboard({ myId, onSignOut }: { myId: string; onSignOut: () => void }) {
@@ -153,7 +155,8 @@ function AdminLogin() {
     try {
       const r = await signInWithGoogle();
       if (r.error) {
-        setMsg("Login မအောင်မြင်ပါ။ Popup ပိတ်ခံရပါက Preview ကို tab အသစ်ဖြင့် ဖွင့်ပြီး ထပ်စမ်းပါ။");
+        setMsg(r.error.message);
+        localStorage.removeItem("postLoginRedirect");
         setBusy(false);
         return;
       }
@@ -170,9 +173,9 @@ function AdminLogin() {
       <div className="w-full max-w-sm space-y-4 rounded-2xl border border-border bg-card p-7 text-center shadow-sm">
         <h1 className="text-xl font-bold">Admin Login</h1>
         <p className="text-sm text-muted-foreground">Google အကောင့်ရွေးသည့်နေရာတွင် Admin Gmail ကို ရွေးပါ (သို့) "Use another account" ကိုနှိပ်ပြီး ရိုက်ထည့်ပါ။</p>
-        <button onClick={go} disabled={busy} className="w-full rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground disabled:opacity-60">
+        <Button onClick={go} disabled={busy} className="w-full">
           {busy ? "Google ဝင်းဒိုး ဖွင့်နေသည်…" : "Sign in with Google"}
-        </button>
+        </Button>
         {msg && <p className="text-sm text-destructive">{msg}</p>}
         <Link to="/" className="block text-xs text-muted-foreground underline">Home သို့ ပြန်သွားရန်</Link>
       </div>
