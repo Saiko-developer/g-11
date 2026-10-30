@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { supabase } from "@/integrations/supabase/client";
 
 type Pkg = { credits: number; price: number };
@@ -53,6 +54,7 @@ export function CreditPlanInfo({ teacher }: { teacher: boolean }) {
               <li>AI က အဖြေလွှာ စစ်ပြီး အမှတ်/Feedback Draft ပေး — ဆရာ ပြင်ပြီးမှ ပို့</li>
             </ul>
           </div>
+          <Link to="/guide" className="inline-block rounded-lg bg-primary px-3 py-1.5 text-primary-foreground">📖 လမ်းညွှန် & Credit ဝယ်ယူရန် ➜</Link>
           {!teacher && (
             <div className="rounded-lg border border-primary/40 bg-primary/5 p-3">
               <p className="font-medium">👩‍🏫 ဆရာအကောင့် ရယူလိုပါသလား?</p>
