@@ -12,7 +12,6 @@ import { useRef } from "react";
 
 import heroOwl from "@/assets/hero-owl.jpg";
 import { CurriculumExplorer } from "@/components/CurriculumExplorer";
-import { SayaOwlHome } from "@/components/SayaOwlHome";
 import { SiteHeader } from "@/components/SiteHeader";
 import { HowItWorks } from "@/components/HowItWorks";
 import { EXAM_UPLOAD_ACCEPT, emitExamUpload } from "@/lib/examUpload";
@@ -180,7 +179,6 @@ function Landing() {
         {t("footer", { year: new Date().getFullYear() })}
       </footer>
 
-      <SayaOwlHome lessonContext="Grade 10 English — exam paper review with Sayar Owl" />
     </div>
   );
 }

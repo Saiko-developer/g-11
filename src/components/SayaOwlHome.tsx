@@ -1,42 +1,21 @@
 import { RequireSignIn } from "@/components/RequireSignIn";
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport } from "ai";
-import { useCallback, useEffect, useRef, useState } from "react";
-import {
-  FileText,
-  Loader2,
-  Maximize2,
-  Mic,
-  Minimize2,
-  Send,
-  AudioLines,
-  PhoneOff,
-  Sparkles,
-  Square,
-  Volume2,
-  X,
-} from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { Loader2, Mic, MicOff, PhoneOff, Volume2, X } from "lucide-react";
 import { toast } from "sonner";
 
 import { TutorQuotaBar, tutorFetch } from "@/components/TutorQuotaBar";
 import tutorLogo from "@/assets/tutor-logo.png";
-import { MessageResponse } from "@/components/ai-elements/message";
 import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
 import { EXAM_UPLOAD_MESSAGE, fileToDataUrl, onExamUpload } from "@/lib/examUpload";
 import { takeSpeakableChunks } from "@/lib/voice-sentences";
 
-
 /**
- * SYLLABUS CURRICULUM EXPLORER ONLY — Saya Owl chatbox.
- * /tutor keeps using the original SayaOwl component, untouched.
- *  1. Draggable by its header, plus a fullscreen/minimize toggle.
- *  2. Microphone: getUserMedia + MediaRecorder → /api/transcribe
- *     (auto-detects Burmese, English and mixed code-switched speech).
- *  3. Sends the visible text of the active unit section as hidden context.
+ * Voice-only Sayar Owl popup. Students talk in Burmese/English; Sayar Owl
+ * answers out loud in Burmese, sentence by sentence. Typed chat lives on /tutor.
  */
 
-/** Grabs the visible text of whichever unit section is on screen right now. */
 function readActiveSectionText(): string | null {
   const el = document.querySelector("[data-saya-home-section]");
   const text = el?.textContent?.replace(/\s+/g, " ").trim();
@@ -44,384 +23,200 @@ function readActiveSectionText(): string | null {
   return text.length > 12000 ? `${text.slice(0, 12000)}…` : text;
 }
 
-type SayaOwlHomeProps = {
-  /** Human-readable description of the lesson the student is practising. */
-  lessonContext: string;
-};
-
+type SayaOwlHomeProps = { lessonContext: string };
 type Attachment = { name: string; mediaType: string; url: string };
+type Phase = "idle" | "listening" | "thinking" | "speaking" | "muted";
 
-const PANEL_W = 380;
-const PANEL_H = 560;
+const FIRST_CHUNK = 40;
+const NEXT_CHUNK = 200;
+const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
+
+/** One TTS request at a time, with backoff on 429/5xx so the voice isn't silently dropped. */
+async function fetchSpeech(text: string): Promise<{ text: string; url: string | null }> {
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      const r = await fetch("/api/tts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text }),
+      });
+      if (r.ok) return { text, url: URL.createObjectURL(await r.blob()) };
+      if (r.status !== 429 && r.status < 500) break;
+      const retryAfter = Number(r.headers.get("Retry-After"));
+      await sleep(retryAfter > 0 ? retryAfter * 1000 : 1500 * 2 ** attempt + Math.random() * 400);
+    } catch {
+      await sleep(1000 * 2 ** attempt);
+    }
+  }
+  return { text, url: null };
+}
 
 function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
   const [open, setOpen] = useState(false);
-  const [fullscreen, setFullscreen] = useState(false);
-  const [input, setInput] = useState("");
-  const [recording, setRecording] = useState(false);
-  const [transcribing, setTranscribing] = useState(false);
-  const [attachment, setAttachment] = useState<Attachment | null>(null);
-
-  // Drag state — offset from the default bottom-right anchor.
-  const [pos, setPos] = useState<{ x: number; y: number } | null>(null);
-  const dragRef = useRef<{ dx: number; dy: number } | null>(null);
-  const panelRef = useRef<HTMLElement | null>(null);
-
-  const mediaRef = useRef<MediaRecorder | null>(null);
-  const chunksRef = useRef<Blob[]>([]);
-  const streamRef = useRef<MediaStream | null>(null);
+  const [phase, setPhase] = useState<Phase>("idle");
+  const [heardSpeech, setHeardSpeech] = useState(false);
+  const [studentLine, setStudentLine] = useState("");
+  const [subtitle, setSubtitle] = useState("");
 
   const [transport] = useState(() => new DefaultChatTransport({ api: "/api/chat-home", fetch: tutorFetch }));
   const { messages, sendMessage, status } = useChat({
     transport,
-    onError: (err) => console.error("[saya-owl-home]", err),
+    onError: (err) => {
+      console.error("[saya-owl-voice]", err);
+      toast.error("ဆရာ ခဏ မဖြေနိုင်ပါ", { description: "ခဏနေ ပြန်မေးကြည့်ပါ။" });
+    },
   });
-  const scrollRef = useRef<HTMLDivElement | null>(null);
 
-  const busy = status === "submitted" || status === "streaming";
+  const activeRef = useRef(false);
+  const mutedRef = useRef(false);
+  const streamRef = useRef<MediaStream | null>(null);
+  const recorderRef = useRef<MediaRecorder | null>(null);
+  const vadRef = useRef<{ ctx: AudioContext; timer: number } | null>(null);
+  const textQueueRef = useRef<string[]>([]);
+  const nextFetchRef = useRef<Promise<{ text: string; url: string | null }> | null>(null);
+  const speakingRef = useRef(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const voiceFailedRef = useRef(false);
+  const turnRef = useRef({ active: false, offset: 0, done: false, userCount: 0 });
 
-  useEffect(() => {
-    scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
-  }, [messages, open]);
+  /* ----------------------------- speaking ----------------------------- */
+  const playUrl = (url: string) =>
+    new Promise<void>((resolve) => {
+      const audio = new Audio(url);
+      audioRef.current = audio;
+      const done = () => {
+        URL.revokeObjectURL(url);
+        if (audioRef.current === audio) audioRef.current = null;
+        resolve();
+      };
+      audio.onended = done;
+      audio.onerror = done;
+      audio.onpause = () => { if (!activeRef.current) done(); };
+      audio.play().catch(done);
+    });
 
-  /* ---------------------------- dragging ---------------------------- */
-  const onDragPointerDown = (e: React.PointerEvent<HTMLElement>) => {
-    if (fullscreen) return;
-    if ((e.target as HTMLElement).closest("button")) return;
-    const rect = panelRef.current?.getBoundingClientRect();
-    if (!rect) return;
-    dragRef.current = { dx: e.clientX - rect.left, dy: e.clientY - rect.top };
-    setPos({ x: rect.left, y: rect.top });
-    (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
-  };
-
-  const onDragPointerMove = (e: React.PointerEvent<HTMLElement>) => {
-    const d = dragRef.current;
-    if (!d) return;
-    const rect = panelRef.current?.getBoundingClientRect();
-    const w = rect?.width ?? PANEL_W;
-    const h = rect?.height ?? PANEL_H;
-    const x = Math.min(Math.max(0, e.clientX - d.dx), Math.max(0, window.innerWidth - w));
-    const y = Math.min(Math.max(0, e.clientY - d.dy), Math.max(0, window.innerHeight - h));
-    setPos({ x, y });
-  };
-
-  const endDrag = (e: React.PointerEvent<HTMLElement>) => {
-    if (!dragRef.current) return;
-    dragRef.current = null;
-    try {
-      (e.currentTarget as HTMLElement).releasePointerCapture(e.pointerId);
-    } catch {
-      // ignore
+  const maybeFinishTurn = () => {
+    const t = turnRef.current;
+    if (!activeRef.current || speakingRef.current) return;
+    if (t.active && t.done && textQueueRef.current.length === 0 && !nextFetchRef.current) {
+      t.active = false;
+      if (voiceFailedRef.current) {
+        toast.error("ဆရာ့အသံ ခဏ မထွက်နိုင်ပါ", { description: "အသံစနစ် အလုပ်များနေပါတယ်။ ခဏနေ ပြန်မေးပါ။" });
+      }
+      listenRef.current();
     }
   };
 
-  /* ------------------------------ chat ------------------------------ */
-  const send = (text: string, file?: Attachment | null, mode: "text" | "voice" = "text") => {
-    const value = text.trim();
-    if (!value || busy) return;
-    const attached = file ?? attachment;
-    setInput("");
-    setAttachment(null);
-    void sendMessage(
-      {
-        text: value,
-        ...(attached
-          ? {
-              files: [
-                {
-                  type: "file" as const,
-                  mediaType: attached.mediaType,
-                  filename: attached.name,
-                  url: attached.url,
-                },
-              ],
-            }
-          : {}),
-      },
-      {
-        body: {
-          mode,
-          lessonContext,
-          sectionContent: readActiveSectionText(),
-          hasUpload: Boolean(attached),
-        },
-      },
-    );
+  const pump = async () => {
+    if (speakingRef.current) return;
+    speakingRef.current = true;
+    try {
+      while (activeRef.current && (nextFetchRef.current || textQueueRef.current.length)) {
+        const pending = nextFetchRef.current ?? fetchSpeech(textQueueRef.current.shift()!);
+        nextFetchRef.current = null;
+        const { text, url } = await pending;
+        // Prefetch only one sentence ahead to stay inside the rate limit.
+        if (textQueueRef.current.length) nextFetchRef.current = fetchSpeech(textQueueRef.current.shift()!);
+        if (!activeRef.current) break;
+        setSubtitle(text.replace(/[*#>`_]/g, ""));
+        if (!url) { voiceFailedRef.current = true; continue; }
+        setPhase("speaking");
+        await playUrl(url);
+      }
+    } finally {
+      speakingRef.current = false;
+    }
+    maybeFinishTurn();
   };
 
-  const sendRef = useRef(send);
-  sendRef.current = send;
+  const enqueueSpeech = (text: string) => {
+    textQueueRef.current.push(text);
+    void pump();
+  };
 
-  /* --------------------- exam paper upload bridge -------------------- */
-  useEffect(
-    () =>
-      onExamUpload(async (file) => {
-        setOpen(true);
-        try {
-          const url = await fileToDataUrl(file);
-          const next: Attachment = {
-            name: file.name,
-            mediaType: file.type || "application/octet-stream",
-            url,
-          };
-          setAttachment(next);
-          if (!/^image\//.test(next.mediaType) && next.mediaType !== "application/pdf") {
-            toast.warning("ဓာတ်ပုံ (JPG/PNG) သို့မဟုတ် PDF ဖိုင်က အကောင်းဆုံး ဖတ်နိုင်ပါတယ်", {
-              description: "ဤဖိုင်အမျိုးအစားကို ဆရာ မဖတ်နိုင်ရင် ဓာတ်ပုံရိုက်ပြီး ပြန်တင်ပါ။",
-            });
-          }
-          setTimeout(() => sendRef.current(EXAM_UPLOAD_MESSAGE, next), 50);
-        } catch (err) {
-          console.error("[saya-owl-home] upload failed", err);
-          toast.error("ဖိုင် ဖတ်၍ မရပါ", { description: "ဖိုင်ကို ပြန်ရွေးကြည့်ပါ။" });
-        }
-      }),
-    [],
-  );
+  /* ----------------------------- listening ---------------------------- */
+  const stopVad = () => {
+    if (!vadRef.current) return;
+    window.clearInterval(vadRef.current.timer);
+    void vadRef.current.ctx.close().catch(() => {});
+    vadRef.current = null;
+  };
 
-
-  /* ------------------------- microphone ----------------------------- */
-  const cleanupRecorder = useCallback(() => {
+  const releaseMic = () => {
+    stopVad();
+    try { if (recorderRef.current?.state === "recording") recorderRef.current.stop(); } catch { /* ignore */ }
+    recorderRef.current = null;
     streamRef.current?.getTracks().forEach((t) => t.stop());
     streamRef.current = null;
-    mediaRef.current = null;
-    chunksRef.current = [];
-  }, []);
+  };
 
-  const transcribeToText = useCallback(async (blob: Blob): Promise<string | null> => {
-    if (blob.size < 2048) {
-      toast.error("အသံ မကြားရပါ", { description: "ခဏလေး ပြောပြီးမှ ရပ်ပါ။" });
-      return null;
-    }
-    setTranscribing(true);
+  const transcribe = async (blob: Blob): Promise<string | null> => {
+    if (blob.size < 2048) return null;
     try {
       const form = new FormData();
       form.append("file", blob, "recording.webm");
       const res = await fetch("/api/transcribe", { method: "POST", body: form });
       if (!res.ok) throw new Error(`transcribe ${res.status}`);
       const data = (await res.json()) as { text?: string };
-      const text = (data.text ?? "").trim();
-      if (!text) {
-        toast.error("စကားလုံး မဖတ်နိုင်ပါ", { description: "ပြန်ပြီး ပြောကြည့်ပါ။" });
-        return null;
-      }
-      return text;
+      return (data.text ?? "").trim() || null;
     } catch (err) {
-      console.error("[saya-owl-home] transcription failed", err);
-      toast.error("အသံမှ စာသား ပြောင်း၍ မရပါ", {
-        description: "ခဏနေ ပြန်ကြိုးစားပါ သို့မဟုတ် စာရိုက်၍ မေးပါ။",
-      });
+      console.error("[saya-owl-voice] transcription failed", err);
+      toast.error("အသံကို နားမလည်နိုင်ပါ", { description: "ပြန်ပြောကြည့်ပါ။" });
       return null;
-    } finally {
-      setTranscribing(false);
-    }
-  }, []);
-
-  const transcribe = useCallback(
-    async (blob: Blob) => {
-      const text = await transcribeToText(blob);
-      if (text) setInput((prev) => (prev ? `${prev} ${text}` : text));
-    },
-    [transcribeToText],
-  );
-
-  const stopRecording = useCallback(() => {
-    try {
-      mediaRef.current?.stop();
-    } catch {
-      cleanupRecorder();
-      setRecording(false);
-    }
-  }, [cleanupRecorder]);
-
-  const startRecording = useCallback(async () => {
-    if (typeof navigator === "undefined" || !navigator.mediaDevices?.getUserMedia) {
-      toast.error("မိုက်ခရိုဖုန်း မရနိုင်ပါ", {
-        description: "ဒီ browser က အသံဖမ်းခြင်းကို မထောက်ပံ့ပါ။",
-      });
-      return;
-    }
-    let stream: MediaStream;
-    try {
-      stream = await navigator.mediaDevices.getUserMedia({
-        audio: { echoCancellation: true, noiseSuppression: true },
-      });
-    } catch (err) {
-      const name = (err as { name?: string })?.name;
-      toast.error("မိုက်ခရိုဖုန်း ခွင့်ပြုချက် မရပါ", {
-        description:
-          name === "NotAllowedError"
-            ? "Browser ရဲ့ address bar မှာ microphone ကို Allow လုပ်ပေးပါ။"
-            : "မိုက်ခရိုဖုန်း ချိတ်ဆက်ထားမှု ကို စစ်ဆေးပါ။",
-      });
-      return;
-    }
-    streamRef.current = stream;
-    const mimeType = [
-      "audio/webm;codecs=opus",
-      "audio/webm",
-      "audio/mp4",
-      "audio/ogg;codecs=opus",
-    ].find((t) => typeof MediaRecorder !== "undefined" && MediaRecorder.isTypeSupported(t));
-
-    const recorder = new MediaRecorder(stream, mimeType ? { mimeType } : undefined);
-    chunksRef.current = [];
-    recorder.ondataavailable = (e) => {
-      if (e.data.size > 0) chunksRef.current.push(e.data);
-    };
-    recorder.onstop = () => {
-      const blob = new Blob(chunksRef.current, { type: recorder.mimeType || "audio/webm" });
-      cleanupRecorder();
-      setRecording(false);
-      void transcribe(blob);
-    };
-    recorder.onerror = () => {
-      cleanupRecorder();
-      setRecording(false);
-      toast.error("အသံဖမ်းခြင်း မအောင်မြင်ပါ");
-    };
-    mediaRef.current = recorder;
-    recorder.start();
-    setRecording(true);
-  }, [cleanupRecorder, transcribe]);
-
-  const toggleMic = () => {
-    if (recording) stopRecording();
-    else void startRecording();
-  };
-
-  useEffect(() => {
-    // Stop recording if the panel closes mid-capture.
-    if (!open && mediaRef.current) stopRecording();
-  }, [open, stopRecording]);
-
-  useEffect(() => () => cleanupRecorder(), [cleanupRecorder]);
-
-  /* ----------------------- hands-free voice mode ---------------------- */
-  const [handsFree, setHandsFree] = useState(false);
-  const [voicePhase, setVoicePhase] = useState<"listening" | "thinking" | "speaking">("listening");
-  const [heardSpeech, setHeardSpeech] = useState(false);
-  const handsFreeRef = useRef(false);
-  const vadRef = useRef<{ ctx: AudioContext; timer: number } | null>(null);
-  const audioQueueRef = useRef<Promise<string | null>[]>([]);
-  const playingRef = useRef<HTMLAudioElement | null>(null);
-  const turnRef = useRef<{ active: boolean; offset: number; done: boolean; userCount: number }>({
-    active: false,
-    offset: 0,
-    done: false,
-    userCount: 0,
-  });
-  const listenRef = useRef<() => void>(() => {});
-
-  const stopVad = () => {
-    if (vadRef.current) {
-      window.clearInterval(vadRef.current.timer);
-      void vadRef.current.ctx.close().catch(() => {});
-      vadRef.current = null;
     }
   };
 
-  const fetchSpeech = (text: string): Promise<string | null> =>
-    fetch("/api/tts", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text }),
-    })
-      .then(async (r) => (r.ok ? URL.createObjectURL(await r.blob()) : null))
-      .catch(() => null);
-
-  const maybeFinishTurn = () => {
-    const t = turnRef.current;
-    if (!handsFreeRef.current || playingRef.current) return;
-    if (t.active && t.done && audioQueueRef.current.length === 0) {
-      t.active = false;
-      listenRef.current();
-    }
-  };
-
-  const playNext = async () => {
-    if (playingRef.current || !handsFreeRef.current) return;
-    const next = audioQueueRef.current.shift();
-    if (!next) {
-      maybeFinishTurn();
-      return;
-    }
-    const placeholder = new Audio();
-    playingRef.current = placeholder;
-    const url = await next;
-    if (!handsFreeRef.current) return;
-    if (!url) {
-      playingRef.current = null;
-      void playNext();
-      return;
-    }
-    setVoicePhase("speaking");
-    placeholder.src = url;
-    const done = () => {
-      URL.revokeObjectURL(url);
-      if (playingRef.current === placeholder) playingRef.current = null;
-      void playNext();
-    };
-    placeholder.onended = done;
-    placeholder.onerror = done;
-    placeholder.play().catch(done);
-  };
-
-  const enqueueSpeech = (text: string) => {
-    audioQueueRef.current.push(fetchSpeech(text));
-    void playNext();
+  const sendTurn = (text: string, file?: Attachment) => {
+    voiceFailedRef.current = false;
+    textQueueRef.current = [];
+    turnRef.current = { active: true, offset: 0, done: false, userCount: -1 };
+    setPhase("thinking");
+    setSubtitle("");
+    void sendMessage(
+      {
+        text,
+        ...(file ? { files: [{ type: "file" as const, mediaType: file.mediaType, filename: file.name, url: file.url }] } : {}),
+      },
+      { body: { mode: "voice", lessonContext, sectionContent: readActiveSectionText(), hasUpload: Boolean(file) } },
+    );
   };
 
   const listenOnce = async () => {
-    if (!handsFreeRef.current) return;
-    setVoicePhase("listening");
+    if (!activeRef.current || mutedRef.current) return;
+    setPhase("listening");
     setHeardSpeech(false);
     let stream: MediaStream;
     try {
-      stream = await navigator.mediaDevices.getUserMedia({
-        audio: { echoCancellation: true, noiseSuppression: true },
-      });
+      stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true } });
     } catch {
-      toast.error("မိုက်ခရိုဖုန်း ခွင့်ပြုချက် မရပါ", {
-        description: "Browser ရဲ့ address bar မှာ microphone ကို Allow လုပ်ပေးပါ။",
-      });
-      stopHandsFreeRef.current();
+      toast.error("မိုက်ခရိုဖုန်း ခွင့်ပြုချက် မရပါ", { description: "Browser ရဲ့ address bar မှာ microphone ကို Allow လုပ်ပေးပါ။" });
+      endCallRef.current();
       return;
     }
-    if (!handsFreeRef.current) {
-      stream.getTracks().forEach((t) => t.stop());
-      return;
-    }
+    if (!activeRef.current || mutedRef.current) { stream.getTracks().forEach((t) => t.stop()); return; }
     streamRef.current = stream;
-    const mimeType = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/ogg;codecs=opus"].find(
-      (t) => MediaRecorder.isTypeSupported(t),
+    const mimeType = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/ogg;codecs=opus"].find((t) =>
+      MediaRecorder.isTypeSupported(t),
     );
     const recorder = new MediaRecorder(stream, mimeType ? { mimeType } : undefined);
+    recorderRef.current = recorder;
     const chunks: Blob[] = [];
     let spoke = false;
-    recorder.ondataavailable = (e) => e.data.size > 0 && chunks.push(e.data);
+    recorder.ondataavailable = (e) => { if (e.data.size > 0) chunks.push(e.data); };
     recorder.onstop = async () => {
       stopVad();
       stream.getTracks().forEach((t) => t.stop());
-      streamRef.current = null;
-      mediaRef.current = null;
-      if (!handsFreeRef.current) return;
-      if (!spoke) {
-        listenRef.current();
-        return;
-      }
-      setVoicePhase("thinking");
-      const text = await transcribeToText(new Blob(chunks, { type: recorder.mimeType || "audio/webm" }));
-      if (!handsFreeRef.current) return;
-      if (!text) {
-        listenRef.current();
-        return;
-      }
-      turnRef.current = { active: true, offset: 0, done: false, userCount: -1 };
-      sendRef.current(text, null, "voice");
+      if (streamRef.current === stream) streamRef.current = null;
+      if (recorderRef.current === recorder) recorderRef.current = null;
+      if (!activeRef.current || mutedRef.current) return;
+      if (!spoke) { listenRef.current(); return; }
+      setPhase("thinking");
+      const text = await transcribe(new Blob(chunks, { type: recorder.mimeType || "audio/webm" }));
+      if (!activeRef.current) return;
+      if (!text) { listenRef.current(); return; }
+      setStudentLine(text);
+      sendTurn(text);
     };
-    mediaRef.current = recorder;
     recorder.start();
 
     // Voice activity detection: stop ~1.2s after the student stops talking.
@@ -440,321 +235,205 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
       const now = Date.now();
       if (rms > 0.035) {
         lastVoice = now;
-        if (!spoke) {
-          spoke = true;
-          setHeardSpeech(true);
-        }
+        if (!spoke) { spoke = true; setHeardSpeech(true); }
       }
-      const silentFor = now - lastVoice;
-      if ((spoke && silentFor > 1200) || now - startedAt > 45000 || (!spoke && now - startedAt > 20000)) {
+      if ((spoke && now - lastVoice > 1200) || now - startedAt > 45000 || (!spoke && now - startedAt > 20000)) {
         if (recorder.state === "recording") recorder.stop();
       }
     }, 100);
     vadRef.current = { ctx, timer };
   };
+  const listenRef = useRef<() => void>(() => {});
   listenRef.current = () => void listenOnce();
 
-  const stopHandsFree = () => {
-    handsFreeRef.current = false;
-    setHandsFree(false);
+  /* ------------------------------ call ------------------------------- */
+  const endCall = () => {
+    activeRef.current = false;
+    mutedRef.current = false;
     turnRef.current.active = false;
-    stopVad();
-    try {
-      if (mediaRef.current?.state === "recording") mediaRef.current.stop();
-    } catch {
-      // ignore
-    }
-    cleanupRecorder();
-    playingRef.current?.pause();
-    playingRef.current = null;
-    audioQueueRef.current = [];
+    releaseMic();
+    audioRef.current?.pause();
+    audioRef.current = null;
+    textQueueRef.current = [];
+    nextFetchRef.current = null;
+    setPhase("idle");
+    setSubtitle("");
+    setStudentLine("");
   };
-  const stopHandsFreeRef = useRef(stopHandsFree);
-  stopHandsFreeRef.current = stopHandsFree;
+  const endCallRef = useRef(endCall);
+  endCallRef.current = endCall;
 
-  const startHandsFree = () => {
+  const startCall = () => {
     if (typeof navigator === "undefined" || !navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === "undefined") {
       toast.error("ဒီ browser က အသံဖြင့် စကားပြောခြင်းကို မထောက်ပံ့ပါ");
-      return;
+      return false;
     }
-    if (recording) stopRecording();
-    handsFreeRef.current = true;
-    setHandsFree(true);
-    void listenOnce();
+    activeRef.current = true;
+    mutedRef.current = false;
+    return true;
   };
 
-  // Stream the reply into speech sentence by sentence while it is still being written.
+  const openCall = () => {
+    setOpen(true);
+    if (startCall()) void listenOnce();
+  };
+
+  const closeCall = () => {
+    endCall();
+    setOpen(false);
+  };
+
+  const toggleMute = () => {
+    if (mutedRef.current) {
+      mutedRef.current = false;
+      if (!turnRef.current.active && !speakingRef.current) void listenOnce();
+      else setPhase(speakingRef.current ? "speaking" : "thinking");
+    } else {
+      mutedRef.current = true;
+      releaseMic();
+      setPhase("muted");
+    }
+  };
+
+  // Exam paper upload from the home page: Sayar Owl explains it out loud.
+  useEffect(
+    () =>
+      onExamUpload(async (file) => {
+        try {
+          const url = await fileToDataUrl(file);
+          setOpen(true);
+          if (!startCall()) return;
+          releaseMic();
+          setStudentLine(`📄 ${file.name}`);
+          sendTurn(EXAM_UPLOAD_MESSAGE, { name: file.name, mediaType: file.type || "application/octet-stream", url });
+        } catch {
+          toast.error("ဖိုင် ဖတ်၍ မရပါ", { description: "ဖိုင်ကို ပြန်ရွေးကြည့်ပါ။" });
+        }
+      }),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [],
+  );
+
+  // Turn the streaming reply into speech sentence by sentence.
   useEffect(() => {
     const t = turnRef.current;
-    if (!handsFreeRef.current || !t.active || t.done) return;
+    if (!activeRef.current || !t.active || t.done) return;
     const last = messages[messages.length - 1];
     if (t.userCount === -1) {
       if (last?.role === "user") t.userCount = messages.length;
       return;
     }
-    if (status === "error") {
-      t.done = true;
-      maybeFinishTurn();
-      return;
-    }
+    if (status === "error") { t.done = true; maybeFinishTurn(); return; }
     if (!last || last.role !== "assistant" || messages.length <= t.userCount) return;
     const body = last.parts.map((p) => (p.type === "text" ? p.text : "")).join("");
     const final = status === "ready";
-    const { chunks, next } = takeSpeakableChunks(body, t.offset, final);
+    const { chunks, next } = takeSpeakableChunks(body, t.offset, final, t.offset === 0 ? FIRST_CHUNK : NEXT_CHUNK);
     t.offset = next;
     chunks.forEach(enqueueSpeech);
-    if (final) {
-      t.done = true;
-      maybeFinishTurn();
-    }
+    if (final) { t.done = true; maybeFinishTurn(); }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [messages, status]);
 
-  useEffect(() => {
-    if (!open && handsFreeRef.current) stopHandsFreeRef.current();
-  }, [open]);
-  useEffect(() => () => stopHandsFreeRef.current(), []);
+  useEffect(() => () => endCallRef.current(), []);
 
-  const quickPrompts = [
-    "ဒီသင်ခန်းစာကို အသေးစိတ် ရှင်းပြပေးပါဆရာ",
-    "လေ့ကျင့်ခန်းထဲက မေးခွန်းတစ်ခုကို ကူညီပေးပါ",
-    "အဖြေ ဘာကြောင့် မှန်တယ်ဆိုတာ ရှင်းပြပေးပါ",
-  ];
-
-  const panelStyle =
-    !fullscreen && pos ? { left: pos.x, top: pos.y, right: "auto", bottom: "auto" } : undefined;
+  const statusLabel: Record<Phase, string> = {
+    idle: "ခလုတ်နှိပ်ပြီး ဆရာနဲ့ စကားပြောပါ",
+    listening: heardSpeech ? "ကြားနေပါတယ်… ပြောပြီးရင် ခဏ ရပ်လိုက်ပါ" : "နားထောင်နေပါတယ်… မေးလိုက်ပါ",
+    thinking: "ဆရာ စဉ်းစားနေပါတယ်…",
+    speaking: "ဆရာ ရှင်းပြနေပါတယ်…",
+    muted: "မိုက် ပိတ်ထားပါတယ်",
+  };
+  const ring =
+    phase === "listening" ? "ring-primary" : phase === "speaking" ? "ring-accent" : phase === "thinking" ? "ring-secondary" : "ring-border";
 
   return (
     <>
-      {/* Floating launcher */}
-      <button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        aria-label="Open Saya Owl tutor"
-        className="fixed bottom-5 right-5 z-40 flex items-center gap-2 rounded-full border border-primary/30 bg-card py-2 pl-2 pr-4 shadow-lg transition hover:-translate-y-0.5 hover:shadow-xl"
-      >
-        <img src={tutorLogo} alt="" className="h-9 w-9 rounded-full object-cover" />
-        <span className="text-sm font-semibold">{open ? "Close" : "Ask Saya Owl"}</span>
-      </button>
+      {!open && (
+        <button
+          type="button"
+          onClick={openCall}
+          aria-label="Talk to Sayar Owl"
+          className="fixed bottom-5 right-5 z-40 flex items-center gap-2 rounded-full bg-primary py-2 pl-2 pr-5 text-primary-foreground shadow-lg transition hover:-translate-y-0.5 hover:shadow-xl"
+        >
+          <img src={tutorLogo} alt="" className="h-10 w-10 rounded-full bg-card object-cover" />
+          <Mic className="h-4 w-4" />
+          <span className="text-sm font-semibold">ဆရာနှင့် စကားပြောမည်</span>
+        </button>
+      )}
 
       {open && (
-        <aside
-          ref={panelRef}
-          style={panelStyle}
-          className={
-            fullscreen
-              ? "fixed inset-0 z-50 flex flex-col overflow-hidden border border-border bg-card shadow-2xl"
-              : "fixed bottom-20 right-5 z-50 flex h-[min(70vh,560px)] w-[min(94vw,380px)] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-2xl"
-          }
-        >
-          <header
-            onPointerDown={onDragPointerDown}
-            onPointerMove={onDragPointerMove}
-            onPointerUp={endDrag}
-            onPointerCancel={endDrag}
-            className={`flex select-none items-center gap-3 border-b border-border bg-secondary/50 px-4 py-3 ${
-              fullscreen ? "" : "cursor-grab active:cursor-grabbing"
-            }`}
-          >
-            <img src={tutorLogo} alt="" className="h-8 w-8 rounded-full object-cover" />
-            <div className="min-w-0 flex-1">
-              <p className="truncate text-sm font-semibold">Saya Owl</p>
-              <p className="truncate text-[11px] text-muted-foreground">{lessonContext}</p>
+        <aside className="fixed bottom-5 right-5 z-50 flex w-[min(94vw,360px)] flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-2xl">
+          <header className="flex items-center justify-between px-5 pt-4">
+            <div>
+              <p className="text-sm font-semibold">Sayar Owl</p>
+              <p className="text-[11px] text-muted-foreground">အသံဖြင့် မေးပါ · မြန်မာ / English</p>
             </div>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setFullscreen((v) => !v)}
-              aria-label={fullscreen ? "Exit full screen" : "Expand to full screen"}
-              title={fullscreen ? "ချုံ့ရန်" : "မျက်နှာပြင် အပြည့် ဖွင့်ရန်"}
-            >
-              {fullscreen ? <Minimize2 className="h-4 w-4" /> : <Maximize2 className="h-4 w-4" />}
-            </Button>
-            <Button variant="ghost" size="icon" onClick={() => setOpen(false)} aria-label="Close">
+            <Button variant="ghost" size="icon" onClick={closeCall} aria-label="Close">
               <X className="h-4 w-4" />
             </Button>
           </header>
 
-          <div ref={scrollRef} className="flex-1 space-y-3 overflow-y-auto px-4 py-4">
-            {messages.length === 0 && (
-              <div className="rounded-xl bg-secondary/60 p-3 text-sm">
-                <p className="font-medium">မင်္ဂလာပါ ကျောင်းသား 🦉</p>
-                <p className="mt-1 text-muted-foreground">
-                  ဆရာ ဘေးနားမှာပဲ ရှိနေပါတယ်။ သင် ကြည့်နေတဲ့ သင်ခန်းစာပိုင်း (Listening,
-                  Reading, Speaking, Writing, Vocabulary, Grammar) ကို ဆရာ မြင်နေပါတယ်။
-                  မေးခွန်းနံပါတ် ပြောလိုက်ရုံနဲ့ အဆင့်လိုက် အသေးစိတ် ရှင်းပြပေးပါမယ်။
-                </p>
-              </div>
+          <div className="flex flex-col items-center px-6 pb-4 pt-6 text-center">
+            <div className="relative">
+              {(phase === "listening" || phase === "speaking") && (
+                <span className="absolute inset-0 animate-ping rounded-full bg-primary/20" />
+              )}
+              <img
+                src={tutorLogo}
+                alt="Sayar Owl"
+                className={`relative h-28 w-28 rounded-full bg-secondary object-cover ring-4 ring-offset-4 ring-offset-card transition ${ring}`}
+              />
+            </div>
+
+            <div className="mt-5 flex h-6 items-end gap-1" aria-hidden>
+              {[0, 1, 2, 3, 4].map((i) => (
+                <span
+                  key={i}
+                  className={`w-1.5 rounded-full bg-primary transition-all ${
+                    phase === "speaking" || (phase === "listening" && heardSpeech) ? "animate-pulse" : "opacity-30"
+                  }`}
+                  style={{ height: phase === "speaking" || heardSpeech ? `${8 + ((i * 7) % 16)}px` : "6px", animationDelay: `${i * 120}ms` }}
+                />
+              ))}
+            </div>
+
+            <p className="mt-3 flex items-center gap-2 text-sm font-medium">
+              {phase === "thinking" && <Loader2 className="h-4 w-4 animate-spin text-primary" />}
+              {phase === "speaking" && <Volume2 className="h-4 w-4 text-primary" />}
+              {statusLabel[phase]}
+            </p>
+
+            {studentLine && (
+              <p className="mt-3 line-clamp-2 text-xs text-muted-foreground">သင်: “{studentLine}”</p>
             )}
-            {messages.map((m) => {
-              const body = m.parts.map((p) => (p.type === "text" ? p.text : "")).join("");
-              const fileNames = m.parts
-                .filter((p) => p.type === "file")
-                .map((p) => (p as { filename?: string }).filename ?? "attachment");
-              if (fileNames.length > 0 && m.role === "user") {
-                return (
-                  <div key={m.id} className="ml-auto max-w-[85%] space-y-1">
-                    {fileNames.map((n) => (
-                      <p
-                        key={n}
-                        className="flex items-center justify-end gap-1.5 text-[11px] text-muted-foreground"
-                      >
-                        <FileText className="h-3.5 w-3.5" /> {n}
-                      </p>
-                    ))}
-                    {body && (
-                      <div className="rounded-2xl rounded-br-sm bg-primary px-3 py-2 text-sm text-primary-foreground">
-                        {body}
-                      </div>
-                    )}
-                  </div>
-                );
-              }
-              if (!body) return null;
-              return (
-                <div
-                  key={m.id}
-                  className={
-                    m.role === "user"
-                      ? "ml-auto max-w-[85%] rounded-2xl rounded-br-sm bg-primary px-3 py-2 text-sm text-primary-foreground"
-                      : "max-w-[92%] rounded-2xl rounded-bl-sm bg-secondary/70 px-3 py-2 text-sm"
-                  }
-                >
-                  {m.role === "assistant" ? <MessageResponse>{body}</MessageResponse> : body}
-                </div>
-              );
-            })}
-            {busy && (
-              <p className="flex items-center gap-2 text-xs text-muted-foreground">
-                <Sparkles className="h-3.5 w-3.5 animate-pulse text-primary" /> Saya Owl is
-                thinking…
-              </p>
+            {subtitle && (
+              <p className="mt-2 line-clamp-3 rounded-xl bg-secondary/60 px-3 py-2 text-sm leading-relaxed">{subtitle}</p>
             )}
           </div>
 
-          <div className="border-t border-border p-3">
-            {handsFree && (
-              <p className="mb-2 flex items-center gap-2 rounded-lg bg-primary/10 px-2.5 py-1.5 text-[11px] font-medium text-primary">
-                {voicePhase === "listening" ? (
-                  <>
-                    <span className="relative flex h-2.5 w-2.5">
-                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
-                      <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-primary" />
-                    </span>
-                    {heardSpeech ? "ကြားနေပါတယ်… ပြောပြီးရင် ခဏ ရပ်လိုက်ပါ" : "နားထောင်နေပါတယ်… ဆရာ့ကို မေးလိုက်ပါ"}
-                  </>
-                ) : voicePhase === "speaking" ? (
-                  <>
-                    <Volume2 className="h-3.5 w-3.5 animate-pulse" /> ဆရာ ရှင်းပြနေပါတယ်…
-                  </>
-                ) : (
-                  <>
-                    <Loader2 className="h-3 w-3 animate-spin" /> စဉ်းစားနေပါတယ်…
-                  </>
-                )}
-              </p>
-            )}
-            {!handsFree && (recording || transcribing) && (
-              <p className="mb-2 flex items-center gap-2 text-[11px] font-medium text-destructive">
-                {recording ? (
-                  <>
-                    <span className="relative flex h-2.5 w-2.5">
-                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-destructive opacity-75" />
-                      <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-destructive" />
-                    </span>
-                    အသံ ဖမ်းယူနေပါတယ်… ပြီးရင် ခလုတ်ကို ပြန်နှိပ်ပါ
-                  </>
-                ) : (
-                  <span className="flex items-center gap-2 text-muted-foreground">
-                    <Loader2 className="h-3 w-3 animate-spin" /> စာသားအဖြစ် ပြောင်းနေပါတယ်…
-                  </span>
-                )}
-              </p>
-            )}
-            {attachment && (
-              <div className="mb-2 flex items-center gap-2 rounded-lg border border-border bg-secondary/50 px-2.5 py-1.5 text-[11px]">
-                <FileText className="h-3.5 w-3.5 text-primary" />
-                <span className="min-w-0 flex-1 truncate">{attachment.name}</span>
-                <button
-                  type="button"
-                  onClick={() => setAttachment(null)}
-                  aria-label="Remove attachment"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  <X className="h-3.5 w-3.5" />
-                </button>
-              </div>
-            )}
-            <div className="mb-2 flex flex-wrap gap-1.5">
-              {quickPrompts.map((q) => (
-                <button
-                  key={q}
-                  type="button"
-                  disabled={busy}
-                  onClick={() => send(q)}
-                  className="rounded-full border border-border px-2.5 py-1 text-[11px] transition hover:border-primary/40 hover:bg-secondary disabled:opacity-50"
-                >
-                  {q}
-                </button>
-              ))}
-            </div>
-            <div className="mb-2"><TutorQuotaBar compact /></div>
+          <div className="px-5"><TutorQuotaBar compact /></div>
+
+          <div className="flex items-center justify-center gap-6 px-5 py-5">
             <Button
               type="button"
-              variant={handsFree ? "destructive" : "secondary"}
-              size="sm"
-              onClick={handsFree ? stopHandsFree : startHandsFree}
-              className="mb-2 w-full gap-2"
+              variant="outline"
+              size="icon"
+              onClick={toggleMute}
+              className="h-12 w-12 rounded-full"
+              aria-label={phase === "muted" ? "Unmute" : "Mute"}
             >
-              {handsFree ? <PhoneOff className="h-4 w-4" /> : <AudioLines className="h-4 w-4" />}
-              {handsFree ? "Hands-Free ပိတ်မည်" : "🎙️ Hands-Free စကားပြောမည်"}
+              {phase === "muted" ? <MicOff className="h-5 w-5" /> : <Mic className="h-5 w-5" />}
             </Button>
-            <form
-              className="flex items-end gap-2"
-              onSubmit={(e) => {
-                e.preventDefault();
-                send(input);
-              }}
+            <Button
+              type="button"
+              variant="destructive"
+              size="icon"
+              onClick={closeCall}
+              className="h-14 w-14 rounded-full"
+              aria-label="End conversation"
             >
-              <Textarea
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" && !e.shiftKey) {
-                    e.preventDefault();
-                    send(input);
-                  }
-                }}
-                rows={1}
-                placeholder={recording ? "နားထောင်နေပါတယ်… ပြောလိုက်ပါ" : "Ask Saya Owl…"}
-                className="max-h-28 min-h-9 resize-none text-sm"
-              />
-              <Button
-                type="button"
-                size="icon"
-                variant={recording ? "destructive" : "outline"}
-                onClick={toggleMic}
-                disabled={busy || transcribing}
-                className={recording ? "animate-pulse ring-2 ring-destructive/50" : undefined}
-                aria-label={recording ? "Stop voice input" : "Start voice input"}
-                title={
-                  recording
-                    ? "ရပ်ရန် နှိပ်ပါ"
-                    : "အသံဖြင့် မေးရန် နှိပ်ပါ — မြန်မာ/အင်္ဂလိပ် နှစ်မျိုးလုံး ရပါတယ်"
-                }
-              >
-                {transcribing ? (
-                  <Loader2 className="h-4 w-4 animate-spin" />
-                ) : recording ? (
-                  <Square className="h-4 w-4" />
-                ) : (
-                  <Mic className="h-4 w-4" />
-                )}
-              </Button>
-              <Button type="submit" size="icon" disabled={busy || !input.trim()}>
-                <Send className="h-4 w-4" />
-              </Button>
-            </form>
+              <PhoneOff className="h-6 w-6" />
+            </Button>
           </div>
         </aside>
       )}
