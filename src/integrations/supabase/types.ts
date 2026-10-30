@@ -14,6 +14,38 @@ export type Database = {
   }
   public: {
     Tables: {
+      class_exam_ai_drafts: {
+        Row: {
+          attempt_id: string
+          error: string | null
+          result: Json | null
+          status: string
+          updated_at: string
+        }
+        Insert: {
+          attempt_id: string
+          error?: string | null
+          result?: Json | null
+          status?: string
+          updated_at?: string
+        }
+        Update: {
+          attempt_id?: string
+          error?: string | null
+          result?: Json | null
+          status?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "class_exam_ai_drafts_attempt_id_fkey"
+            columns: ["attempt_id"]
+            isOneToOne: true
+            referencedRelation: "class_exam_attempts"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       class_exam_attempts: {
         Row: {
           assignment_id: string

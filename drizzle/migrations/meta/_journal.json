@@ -15,6 +15,13 @@
       "when": 1793333794266,
       "tag": "0001_class_exam_grading",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793334417988,
+      "tag": "0002_class_exam_ai_drafts",
+      "breakpoints": true
     }
   ]
 }
