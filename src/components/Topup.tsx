@@ -88,7 +88,7 @@ export function AdminTopups({ emails, onChanged }: { emails: Record<string, stri
   const [saved, setSaved] = useState(false);
 
   const load = useCallback(async () => {
-    const st = await loadSettings();
+    const st = (await loadSettings()) ?? { kpay: null, wavepay: null, account_name: null, contact: null, packages: [{ credits: 50, price: 1000 }, { credits: 150, price: 2500 }] };
     setS(st);
     setPkgText((st?.packages ?? []).map((p) => `${p.credits}=${p.price}`).join(", "));
     const { data } = await db.from("topup_requests").select("*").eq("status", "pending").order("created_at");
@@ -100,8 +100,10 @@ export function AdminTopups({ emails, onChanged }: { emails: Record<string, stri
   const save = async () => {
     const packages = pkgText.split(",").map((x) => x.trim().split("=").map(Number)).filter(([c, p]) => c > 0 && p >= 0).map(([credits, price]) => ({ credits, price }));
     setBusy(true);
-    await db.from("payment_settings").update({ kpay: s.kpay, wavepay: s.wavepay, account_name: s.account_name, contact: s.contact, packages, updated_at: new Date().toISOString() }).eq("id", 1);
-    setBusy(false); setSaved(true); setTimeout(() => setSaved(false), 2000); load();
+    const { error } = await db.from("payment_settings").upsert({ id: 1, kpay: s.kpay, wavepay: s.wavepay, account_name: s.account_name, contact: s.contact, packages, updated_at: new Date().toISOString() });
+    setBusy(false);
+    if (error) { alert(error.message); return; }
+    setSaved(true); setTimeout(() => setSaved(false), 2000); load();
   };
   const review = async (id: string, approve: boolean) => {
     setBusy(true);
@@ -130,8 +132,9 @@ export function AdminTopups({ emails, onChanged }: { emails: Record<string, stri
           </div>
         ))}
       </div>
-      <details>
-        <summary className="cursor-pointer text-sm font-semibold">⚙️ ငွေလွှဲ အချက်အလက်နှင့် ဈေးနှုန်း သတ်မှတ်ရန်</summary>
+      <div className="border-t border-border pt-4">
+        <h2 className="font-semibold">⚙️ Payment & Package Settings</h2>
+        <p className="text-xs text-muted-foreground">ကျောင်းသားများ မြင်ရမည့် ငွေလွှဲ အချက်အလက်နှင့် ဈေးနှုန်းများ</p>
         <div className="mt-3 grid gap-2 sm:grid-cols-2">
           {field("kpay", "KPay ဖုန်းနံပါတ်")}
           {field("wavepay", "WavePay ဖုန်းနံပါတ်")}
@@ -141,8 +144,8 @@ export function AdminTopups({ emails, onChanged }: { emails: Record<string, stri
             <input value={pkgText} onChange={(e) => setPkgText(e.target.value)} className="mt-0.5 w-full rounded border border-input bg-background px-2 py-1 text-sm" />
           </label>
         </div>
-        <button disabled={busy} onClick={save} className="mt-3 rounded-lg bg-primary px-4 py-1.5 text-sm text-primary-foreground">{saved ? "Saved ✓" : "Save"}</button>
-      </details>
+        <button disabled={busy} onClick={save} className="mt-3 rounded-lg bg-primary px-4 py-1.5 text-sm text-primary-foreground">{saved ? "Saved ✓" : "💾 Save"}</button>
+      </div>
     </div>
   );
 }
