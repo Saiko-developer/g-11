@@ -67,6 +67,7 @@
     "html2canvas-pro": "^2.5.2",
     "input-otp": "^1.4.2",
     "lucide-react": "^1.18.0",
+    "mammoth": "^1.13.0",
     "motion": "^12.40.0",
     "nanoid": "^5.1.11",
     "react": "^19.2.0",
@@ -84,7 +85,6 @@
     "use-stick-to-bottom": "^1.1.6",
     "vaul": "^1.1.2",
     "vite-tsconfig-paths": "^6.0.2",
-    "word-extractor": "^1.0.4",
     "zod": "^4.4.3"
   },
   "devDependencies": {
