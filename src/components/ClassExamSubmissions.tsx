@@ -179,7 +179,7 @@ function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper; onSav
           <ul className="mt-3 max-h-[32rem] space-y-2 overflow-y-auto">
             {grade.items.map((it, i) => {
               const upd = (patch: Partial<typeof it>) => {
-                const items = grade.items.map((x, j) => (j === i ? { ...x, ...patch } : x));
+                const items = (grade.items ?? []).map((x, j) => (j === i ? { ...x, ...patch } : x));
                 const total = items.reduce((s, x) => s + (Number(x.awarded) || 0), 0);
                 setGrade({ ...grade, items, score: total });
                 setScore(String(total));
