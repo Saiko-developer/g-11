@@ -60,7 +60,7 @@ export function ClassExamSubmissions({ aid, paper }: { aid: string; paper: MockE
         </ul>
       </aside>
       <section className="min-w-0">
-        {cur ? <Viewer key={cur.student_id} row={cur} paper={paper} onSaved={load} />
+        {cur ? <Viewer key={cur.student_id} row={cur} paper={paper} onSaved={async () => { await load(); }} />
           : <p className="rounded-2xl border border-dashed border-border p-8 text-center text-sm text-muted-foreground">ကျောင်းသားတစ်ဦးကို ရွေးပြီး အဖြေလွှာ ကြည့်ပါ။</p>}
       </section>
     </div>
