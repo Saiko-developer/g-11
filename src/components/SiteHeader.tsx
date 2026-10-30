@@ -76,6 +76,9 @@ export function SiteHeader() {
           <Link to="/classrooms" className="hidden rounded-md px-3 py-2 text-muted-foreground hover:text-foreground md:inline-flex" activeProps={{ className: "text-foreground font-medium" }}>
             Classrooms
           </Link>
+          <Link to="/guide" className="rounded-md px-2 py-2 text-muted-foreground hover:text-foreground sm:px-3" activeProps={{ className: "text-foreground font-medium" }}>
+            📖<span className="hidden sm:inline"> Guide</span>
+          </Link>
           <LanguageToggle />
           <AccountButton />
           <Link

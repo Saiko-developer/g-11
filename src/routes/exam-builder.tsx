@@ -36,7 +36,7 @@ export const Route = createFileRoute("/exam-builder")({
 
 const UNITS = SYLLABUS.filter((n): n is SyllabusUnit => n.type === "unit");
 
-type Quota = { role: string; limit: number; used: number };
+type Quota = { role: string; limit: number; used: number; extra?: number };
 
 function ExamBuilderPage() {
   const navigate = useNavigate();
@@ -89,7 +89,7 @@ function ExamBuilderPage() {
           <p className="mt-3 inline-block rounded-lg border border-border px-2.5 py-1 text-xs text-muted-foreground">
             {quota.limit < 0
               ? "Admin · အကန့်အသတ်မရှိ"
-              : `${quota.role === "teacher" ? "ဆရာ" : "ကျောင်းသား"} · ယနေ့ ကျန် ${Math.max(0, quota.limit - quota.used)}/${quota.limit} ကြိမ်`}
+              : `${quota.role === "teacher" ? "ဆရာ" : "ကျောင်းသား"} · ယနေ့ အခမဲ့ ကျန် ${Math.max(0, quota.limit - quota.used)}/${quota.limit} ကြိမ်${(quota as { extra?: number }).extra ? ` · Extra ${(quota as { extra?: number }).extra}` : ""}`}
           </p>
         )}
 

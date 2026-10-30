@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as ClassroomsRouteImport } from './routes/classrooms'
 import { Route as ExamBuilderRouteImport } from './routes/exam-builder'
+import { Route as GuideRouteImport } from './routes/guide'
 import { Route as ProgressRouteImport } from './routes/progress'
 import { Route as TutorRouteImport } from './routes/tutor'
 import { Route as ApiAnswerHintRouteImport } from './routes/api/answer-hint'
@@ -54,6 +55,11 @@ const ClassroomsRoute = ClassroomsRouteImport.update({
 const ExamBuilderRoute = ExamBuilderRouteImport.update({
   id: '/exam-builder',
   path: '/exam-builder',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GuideRoute = GuideRouteImport.update({
+  id: '/guide',
+  path: '/guide',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProgressRoute = ProgressRouteImport.update({
@@ -172,6 +178,7 @@ export interface FileRoutesByFullPath {
   '/admin': typeof AdminRoute
   '/classrooms': typeof ClassroomsRoute
   '/exam-builder': typeof ExamBuilderRoute
+  '/guide': typeof GuideRoute
   '/progress': typeof ProgressRoute
   '/tutor': typeof TutorRoute
   '/api/answer-hint': typeof ApiAnswerHintRoute
@@ -200,6 +207,7 @@ export interface FileRoutesByTo {
   '/admin': typeof AdminRoute
   '/classrooms': typeof ClassroomsRoute
   '/exam-builder': typeof ExamBuilderRoute
+  '/guide': typeof GuideRoute
   '/progress': typeof ProgressRoute
   '/tutor': typeof TutorRoute
   '/api/answer-hint': typeof ApiAnswerHintRoute
@@ -228,6 +236,7 @@ export interface FileRoutesById {
   '/admin': typeof AdminRoute
   '/classrooms': typeof ClassroomsRoute
   '/exam-builder': typeof ExamBuilderRoute
+  '/guide': typeof GuideRoute
   '/progress': typeof ProgressRoute
   '/tutor': typeof TutorRoute
   '/api/answer-hint': typeof ApiAnswerHintRoute
@@ -258,6 +267,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/classrooms'
     | '/exam-builder'
+    | '/guide'
     | '/progress'
     | '/tutor'
     | '/api/answer-hint'
@@ -286,6 +296,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/classrooms'
     | '/exam-builder'
+    | '/guide'
     | '/progress'
     | '/tutor'
     | '/api/answer-hint'
@@ -313,6 +324,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/classrooms'
     | '/exam-builder'
+    | '/guide'
     | '/progress'
     | '/tutor'
     | '/api/answer-hint'
@@ -342,6 +354,7 @@ export interface RootRouteChildren {
   AdminRoute: typeof AdminRoute
   ClassroomsRoute: typeof ClassroomsRoute
   ExamBuilderRoute: typeof ExamBuilderRoute
+  GuideRoute: typeof GuideRoute
   ProgressRoute: typeof ProgressRoute
   TutorRoute: typeof TutorRoute
   ApiAnswerHintRoute: typeof ApiAnswerHintRoute
@@ -392,6 +405,13 @@ declare module '@tanstack/react-router' {
       path: '/exam-builder'
       fullPath: '/exam-builder'
       preLoaderRoute: typeof ExamBuilderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/guide': {
+      id: '/guide'
+      path: '/guide'
+      fullPath: '/guide'
+      preLoaderRoute: typeof GuideRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/progress': {
@@ -570,6 +590,7 @@ const rootRouteChildren: RootRouteChildren = {
   AdminRoute: AdminRoute,
   ClassroomsRoute: ClassroomsRoute,
   ExamBuilderRoute: ExamBuilderRoute,
+  GuideRoute: GuideRoute,
   ProgressRoute: ProgressRoute,
   TutorRoute: TutorRoute,
   ApiAnswerHintRoute: ApiAnswerHintRoute,

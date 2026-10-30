@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { supabase } from "@/integrations/supabase/client";
 
 type Pkg = { credits: number; price: number };
@@ -32,7 +33,8 @@ export function CreditPlanInfo({ teacher }: { teacher: boolean }) {
           <div>
             <p className="font-medium">🎓 ကျောင်းသားများ</p>
             <ul className="ml-5 list-disc text-muted-foreground">
-              <li>ဆရာဇီးကွက် AI Tutor ကို နေ့စဉ် ၁၀ ကြိမ် အခမဲ့ မေးနိုင် (မြန်မာစံတော်ချိန် ည ၁၂ နာရီ ပြန်ပြည့်)</li>
+              <li>အကောင့်သစ် Welcome Gift ၅ ကြိမ် + AI Tutor နေ့စဉ် ၁၀ ကြိမ် အခမဲ့ (မြန်မာစံတော်ချိန် ည ၁၂ နာရီ ပြန်ပြည့်)</li>
+              <li>Mock Exam ထုတ်ခြင်း နေ့စဉ် ၁ ကြိမ် အခမဲ့</li>
               <li>အတန်းစာမေးပွဲ ဖြေဆိုခြင်း၊ အဖြေလွှာတင်ခြင်း၊ ရလဒ်ကြည့်ခြင်း — အခမဲ့</li>
               <li>ထပ်မေးလိုပါက KPay / WavePay ဖြင့် မေးခွင့် ဝယ်ယူနိုင် (သို့) ပညာသင်ဆု လျှောက်နိုင်</li>
             </ul>
@@ -45,11 +47,14 @@ export function CreditPlanInfo({ teacher }: { teacher: boolean }) {
           <div>
             <p className="font-medium">👩‍🏫 ဆရာ/ဆရာမများ</p>
             <ul className="ml-5 list-disc text-muted-foreground">
+              <li>AI Tutor နေ့စဉ် ၁၀ ကြိမ် (ကျောင်းသားနည်းတူ) · စာမေးပွဲထုတ်ခြင်း နေ့စဉ် ၂ ကြိမ် အခမဲ့</li>
+              <li>ထပ်ထုတ်လိုပါက Exam Credit ဝယ်ယူ (သို့) Admin ထံ ဆက်သွယ်ပါ</li>
               <li>အတန်းဖွင့်ခြင်း၊ Class Code ဖြင့် ကျောင်းသားလက်ခံခြင်း</li>
               <li>စနစ်မှ မေးခွန်းထုတ်ခြင်း သို့မဟုတ် ကိုယ်ပိုင် Paper (PDF/Word/Photo) တင်ခြင်း</li>
               <li>AI က အဖြေလွှာ စစ်ပြီး အမှတ်/Feedback Draft ပေး — ဆရာ ပြင်ပြီးမှ ပို့</li>
             </ul>
           </div>
+          <Link to="/guide" className="inline-block rounded-lg bg-primary px-3 py-1.5 text-primary-foreground">📖 လမ်းညွှန် & Credit ဝယ်ယူရန် ➜</Link>
           {!teacher && (
             <div className="rounded-lg border border-primary/40 bg-primary/5 p-3">
               <p className="font-medium">👩‍🏫 ဆရာအကောင့် ရယူလိုပါသလား?</p>

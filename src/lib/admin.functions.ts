@@ -27,14 +27,15 @@ export const listStudents = createServerFn({ method: "POST" })
     const rs = (roles ?? []) as { user_id: string; role: string }[];
     const admins = new Set(rs.filter((r) => r.role === "admin").map((r) => r.user_id));
     const teachers = new Set(rs.filter((r) => r.role === "teacher").map((r) => r.user_id));
-    const { data: wallets } = await (supabaseAdmin as any).from("tutor_wallets").select("user_id,bonus_left,scholarship,scholarship_note");
+    const { data: wallets } = await (supabaseAdmin as any).from("tutor_wallets").select("user_id,bonus_left,exam_bonus_left,scholarship,scholarship_note");
     const today = new Date(Date.now() + 6.5 * 3600000).toISOString().slice(0, 10);
     const { data: usage } = await (supabaseAdmin as any).from("tutor_usage").select("user_id,used").eq("day", today);
     const wm = new Map((wallets ?? []).map((w: any) => [w.user_id, w]));
     const um = new Map((usage ?? []).map((u: any) => [u.user_id, u.used as number]));
     return (data ?? []).map((s) => ({
       ...s,
-      tutor_bonus: ((wm.get(s.id) as any)?.bonus_left ?? 20) as number,
+      tutor_bonus: ((wm.get(s.id) as any)?.bonus_left ?? 5) as number,
+      exam_bonus: ((wm.get(s.id) as any)?.exam_bonus_left ?? 0) as number,
       tutor_used_today: (um.get(s.id) ?? 0) as number,
       scholarship: ((wm.get(s.id) as any)?.scholarship ?? "none") as string,
       scholarship_note: ((wm.get(s.id) as any)?.scholarship_note ?? null) as string | null,
@@ -112,11 +113,15 @@ export const setTeacherRole = createServerFn({ method: "POST" })
 
 export const updateTutorWallet = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
-  .inputValidator((i: { id: string; addBonus?: number; scholarship?: "none" | "approved" | "rejected" }) => i)
+  .inputValidator((i: { id: string; addBonus?: number; addExam?: number; scholarship?: "none" | "approved" | "rejected" }) => i)
   .handler(async ({ data, context }) => {
     const { error } = await (context.supabase as any).rpc("admin_tutor_update", {
       _user: data.id, _add_bonus: data.addBonus ?? 0, _scholarship: data.scholarship ?? "",
     });
     if (error) throw new Error(error.message);
+    if (data.addExam) {
+      const { error: e2 } = await (context.supabase as any).rpc("admin_exam_credit", { _user: data.id, _add: data.addExam });
+      if (e2) throw new Error(e2.message);
+    }
     return { ok: true };
   });

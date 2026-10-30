@@ -316,6 +316,7 @@ export type Database = {
         Row: {
           account_name: string | null
           contact: string | null
+          exam_packages: Json
           id: number
           kpay: string | null
           packages: Json
@@ -325,6 +326,7 @@ export type Database = {
         Insert: {
           account_name?: string | null
           contact?: string | null
+          exam_packages?: Json
           id?: number
           kpay?: string | null
           packages?: Json
@@ -334,6 +336,7 @@ export type Database = {
         Update: {
           account_name?: string | null
           contact?: string | null
+          exam_packages?: Json
           id?: number
           kpay?: string | null
           packages?: Json
@@ -449,6 +452,7 @@ export type Database = {
           created_at: string
           credits: number
           id: string
+          kind: string
           method: string
           price: number
           reviewed_at: string | null
@@ -461,6 +465,7 @@ export type Database = {
           created_at?: string
           credits: number
           id?: string
+          kind?: string
           method?: string
           price: number
           reviewed_at?: string | null
@@ -473,6 +478,7 @@ export type Database = {
           created_at?: string
           credits?: number
           id?: string
+          kind?: string
           method?: string
           price?: number
           reviewed_at?: string | null
@@ -531,6 +537,7 @@ export type Database = {
       tutor_wallets: {
         Row: {
           bonus_left: number
+          exam_bonus_left: number
           scholarship: string
           scholarship_note: string | null
           updated_at: string
@@ -538,6 +545,7 @@ export type Database = {
         }
         Insert: {
           bonus_left?: number
+          exam_bonus_left?: number
           scholarship?: string
           scholarship_note?: string | null
           updated_at?: string
@@ -545,6 +553,7 @@ export type Database = {
         }
         Update: {
           bonus_left?: number
+          exam_bonus_left?: number
           scholarship?: string
           scholarship_note?: string | null
           updated_at?: string
@@ -575,6 +584,10 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      admin_exam_credit: {
+        Args: { _add: number; _user: string }
+        Returns: undefined
+      }
       admin_review_teacher: {
         Args: { _approve: boolean; _id: string }
         Returns: undefined
