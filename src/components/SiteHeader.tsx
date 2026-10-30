@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { LogIn, LogOut } from "lucide-react";
 import tutorLogo from "@/assets/tutor-logo.png";
-import { LanguageToggle, useI18n } from "@/lib/i18n";
+import { useI18n } from "@/lib/i18n";
 import { useAuth } from "@/components/AuthGate";
 import { signInWithGoogle } from "@/components/RequireSignIn";
 
@@ -79,7 +79,6 @@ export function SiteHeader() {
           <Link to="/guide" className="rounded-md px-2 py-2 text-muted-foreground hover:text-foreground sm:px-3" activeProps={{ className: "text-foreground font-medium" }}>
             📖<span className="hidden sm:inline"> Guide</span>
           </Link>
-          <LanguageToggle />
           <AccountButton />
           <Link
             to="/tutor"
