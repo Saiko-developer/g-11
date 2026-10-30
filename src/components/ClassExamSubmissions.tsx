@@ -176,14 +176,37 @@ function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper; onSav
         {aiBusy && <p className="mt-2 text-xs text-muted-foreground">AI အမှတ်အကြမ်း ပြင်ဆင်နေပါတယ် — အသင့်ဖြစ်တာနဲ့ ဒီမှာ အလိုအလျောက် ပေါ်လာပါမယ်…</p>}
 
         {grade?.items && grade.items.length > 0 && (
-          <ul className="mt-3 max-h-96 space-y-2 overflow-y-auto">
-            {grade.items.map((it, i) => (
-              <li key={i} className="rounded-lg border border-border p-2 text-sm">
-                <p className="font-medium">{it.section} {it.number}. {it.question} — <span className={it.status === "correct" ? "text-primary" : it.status === "partial" ? "text-accent-foreground" : "text-destructive"}>{it.awarded}/{it.marks}</span></p>
-                <p className="text-xs text-muted-foreground">Student: {it.studentAnswer} · Key: {it.correctAnswer}</p>
-                {it.explanation && <p className="text-xs">{it.explanation}</p>}
-              </li>
-            ))}
+          <ul className="mt-3 max-h-[32rem] space-y-2 overflow-y-auto">
+            {grade.items.map((it, i) => {
+              const upd = (patch: Partial<typeof it>) => {
+                const items = grade.items.map((x, j) => (j === i ? { ...x, ...patch } : x));
+                const total = items.reduce((s, x) => s + (Number(x.awarded) || 0), 0);
+                setGrade({ ...grade, items, score: total });
+                setScore(String(total));
+              };
+              const cls = it.status === "correct" ? "bg-primary/15 text-primary" : it.status === "partial" ? "bg-accent text-accent-foreground" : "bg-destructive/15 text-destructive";
+              return (
+                <li key={i} className="rounded-lg border border-border p-2 text-sm">
+                  <div className="flex flex-wrap items-start justify-between gap-2">
+                    <p className="flex-1 font-medium">{it.section} {it.number}. {it.question}</p>
+                    <span className={`rounded px-1.5 py-0.5 text-xs font-semibold ${cls}`}>{it.status === "correct" ? "✓ Correct" : it.status === "partial" ? "~ Partial" : "✗ Wrong"}</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground">Student: {it.studentAnswer} · Key: {it.correctAnswer}</p>
+                  <div className="mt-1 flex items-center gap-1 text-xs">
+                    <input type="number" step="0.5" min={0} max={it.marks} value={it.awarded}
+                      onChange={(e) => {
+                        const v = Math.max(0, Math.min(Number(it.marks), Number(e.target.value) || 0));
+                        upd({ awarded: v, status: v >= Number(it.marks) ? "correct" : v > 0 ? "partial" : "wrong" } as Partial<typeof it>);
+                      }}
+                      className="w-16 rounded-md border border-input bg-background px-2 py-1" />
+                    <span className="text-muted-foreground">/ {it.marks} marks</span>
+                  </div>
+                  <textarea value={it.explanation ?? ""} onChange={(e) => upd({ explanation: e.target.value })} rows={2}
+                    placeholder="ဆရာ့မှတ်ချက် / အမှားပြင်ဆင်ချက်"
+                    className="mt-1 w-full rounded-md border border-input bg-background p-1.5 text-xs" />
+                </li>
+              );
+            })}
           </ul>
         )}
         {grade?.writingFeedback && <p className="mt-2 text-sm"><b>Writing:</b> {grade.writingFeedback}</p>}
