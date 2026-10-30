@@ -132,7 +132,7 @@ function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper; onSav
     setSaving(true);
     const total = grade?.totalMarks ?? paper.totalMarks;
     const { error } = await supabase.rpc("class_exam_grade", {
-      _attempt: row.attempt_id!, _score: n, _total: total, _result: (grade ?? null) as never, _feedback: feedback,
+      _attempt: row.attempt_id!, _score: n, _total: total, _result: (grade ? { ...grade, score: n, overallFeedback: feedback } : null) as never, _feedback: feedback,
     });
     setSaving(false);
     if (error) return toast.error(error.message);
@@ -209,7 +209,12 @@ function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper; onSav
             })}
           </ul>
         )}
-        {grade?.writingFeedback && <p className="mt-2 text-sm"><b>Writing:</b> {grade.writingFeedback}</p>}
+        {grade?.writingFeedback !== undefined && grade?.writingFeedback !== null && grade.writingFeedback !== "" && (
+          <label className="mt-2 block text-sm font-medium">Writing feedback
+            <textarea value={grade.writingFeedback} onChange={(e) => setGrade({ ...grade, writingFeedback: e.target.value })} rows={2}
+              className="mt-1 w-full rounded-md border border-input bg-background p-2 text-sm" />
+          </label>
+        )}
         {grade?.unreadable && <p className="mt-1 text-xs text-destructive">{grade.unreadable}</p>}
 
         <label className="mt-4 block text-sm font-medium">Score
