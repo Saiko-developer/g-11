@@ -11,6 +11,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { downloadAnswerKey, downloadExamPaper, type DownloadFormat } from "@/lib/examPrint";
 import type { MockExamPaper } from "@/lib/mockExam";
 import { SectionCard } from "@/routes/mock-exam.$unit";
+import { ClassExamSubmissions } from "@/components/ClassExamSubmissions";
 
 export const Route = createFileRoute("/class-exam/$id")({
   head: () => {
@@ -67,11 +68,18 @@ function ExamHall() {
   const [now, setNow] = useState(() => Date.now());
   const [files, setFiles] = useState<File[]>([]);
   const [busy, setBusy] = useState(false);
+  const [tab, setTab] = useState<"paper" | "subs">("paper");
+  const [mine, setMine] = useState<{ score: number | null; total_marks: number | null; teacher_feedback: string; graded_at: string | null } | null>(null);
 
   const load = async () => {
     const { data, error } = await supabase.rpc("class_exam_open", { _aid: id });
     if (error) return setErr(error.message);
     setExam(data as unknown as Exam);
+    const { data: u } = await supabase.auth.getUser();
+    if (u.user) {
+      const { data: a } = await supabase.from("class_exam_attempts").select("score, total_marks, teacher_feedback, graded_at").eq("assignment_id", id).eq("student_id", u.user.id).maybeSingle();
+      setMine(a as never);
+    }
   };
   useEffect(() => { void load(); }, [id]);
   useEffect(() => { const t = window.setInterval(() => setNow(Date.now()), 1000); return () => window.clearInterval(t); }, []);
@@ -165,7 +173,13 @@ function ExamHall() {
             <CheckCircle2 className="h-8 w-8 text-primary" />
             <div>
               <p className="font-bold">စာမေးပွဲ အောင်မြင်စွာ တင်သွင်းပြီးပါပြီ</p>
-              <p className="text-sm text-muted-foreground">{new Date(exam.submitted_at).toLocaleString()} · ဆရာက စစ်ဆေးပြီး အမှတ်ထုတ်ပေးပါမည်။</p>
+              <p className="text-sm text-muted-foreground">{new Date(exam.submitted_at).toLocaleString()} · {mine?.graded_at ? "" : "ဆရာက စစ်ဆေးပြီး အမှတ်ထုတ်ပေးပါမည်။"}</p>
+              {mine?.graded_at && (
+                <div className="mt-2">
+                  <p className="text-xl font-bold text-primary">ရမှတ်: {mine.score} / {mine.total_marks}</p>
+                  {mine.teacher_feedback && <p className="mt-1 whitespace-pre-wrap text-sm">{mine.teacher_feedback}</p>}
+                </div>
+              )}
             </div>
           </section>
         ) : (
@@ -194,9 +208,19 @@ function ExamHall() {
         )
       )}
 
-      <div className="space-y-6">
-        {exam.paper.sections.map((s) => <SectionCard key={s.id} section={s} showAnswers={exam.staff} />)}
-      </div>
+      {exam.staff && (
+        <div className="flex gap-2 border-b border-border">
+          {([["paper", "📄 Exam Paper"], ["subs", "👥 Student Submissions"]] as const).map(([k, l]) => (
+            <button key={k} onClick={() => setTab(k)}
+              className={`-mb-px border-b-2 px-3 py-2 text-sm font-medium ${tab === k ? "border-primary text-primary" : "border-transparent text-muted-foreground"}`}>{l}</button>
+          ))}
+        </div>
+      )}
+      {exam.staff && tab === "subs" ? <ClassExamSubmissions aid={exam.id} paper={exam.paper} /> : (
+        <div className="space-y-6">
+          {exam.paper.sections.map((s) => <SectionCard key={s.id} section={s} showAnswers={exam.staff} />)}
+        </div>
+      )}
     </div>
   );
 }
