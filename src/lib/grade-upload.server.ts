@@ -6,7 +6,7 @@ import { uploadedGradeSchema, normalizeUploadedGrade } from "./uploaded-grade";
 import { paperMime, validatePaperFile, type PaperFile, type UploadedPaper } from "./uploaded-paper";
 
 export type GradingDocument = PaperFile & { blob: Blob };
-export async function documentPart(file: GradingDocument): Promise<UserContent> {
+export async function documentPart(file: GradingDocument): Promise<Exclude<UserContent, string>> {
   validatePaperFile({ ...file, size: file.blob.size });
   const mediaType = paperMime(file);
   const bytes = new Uint8Array(await file.blob.arrayBuffer());
