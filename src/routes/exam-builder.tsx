@@ -36,7 +36,7 @@ export const Route = createFileRoute("/exam-builder")({
 
 const UNITS = SYLLABUS.filter((n): n is SyllabusUnit => n.type === "unit");
 
-type Quota = { role: string; limit: number; used: number };
+type Quota = { role: string; limit: number; used: number; extra?: number };
 
 function ExamBuilderPage() {
   const navigate = useNavigate();

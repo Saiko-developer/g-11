@@ -27,7 +27,7 @@ export const listStudents = createServerFn({ method: "POST" })
     const rs = (roles ?? []) as { user_id: string; role: string }[];
     const admins = new Set(rs.filter((r) => r.role === "admin").map((r) => r.user_id));
     const teachers = new Set(rs.filter((r) => r.role === "teacher").map((r) => r.user_id));
-    const { data: wallets } = await (supabaseAdmin as any).from("tutor_wallets").select("user_id,bonus_left,scholarship,scholarship_note");
+    const { data: wallets } = await (supabaseAdmin as any).from("tutor_wallets").select("user_id,bonus_left,exam_bonus_left,scholarship,scholarship_note");
     const today = new Date(Date.now() + 6.5 * 3600000).toISOString().slice(0, 10);
     const { data: usage } = await (supabaseAdmin as any).from("tutor_usage").select("user_id,used").eq("day", today);
     const wm = new Map((wallets ?? []).map((w: any) => [w.user_id, w]));
