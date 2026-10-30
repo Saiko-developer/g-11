@@ -77,9 +77,14 @@ export function ClassAssignments({ cid, teacher }: { cid: string; teacher: boole
           <ClipboardList className="h-4 w-4" /> Assignments
         </h4>
         {teacher && (
-          <button className={ghost} onClick={() => setShowForm((s) => !s)}>
-            <Plus className="h-3.5 w-3.5" /> Assign
-          </button>
+          <div className="flex gap-1.5">
+            <Link to="/class-exam/new" search={{ cid }} className={ghost}>
+              <Plus className="h-3.5 w-3.5" /> Create Class Exam
+            </Link>
+            <button className={ghost} onClick={() => setShowForm((s) => !s)}>
+              <Plus className="h-3.5 w-3.5" /> Assign
+            </button>
+          </div>
         )}
       </div>
 
@@ -118,7 +123,7 @@ export function ClassAssignments({ cid, teacher }: { cid: string; teacher: boole
                 <div className="min-w-0">
                   <div className="font-medium">{a.title}</div>
                   <div className="text-xs text-muted-foreground">
-                    {a.kind === "mock_exam" ? "📝 Mock Exam" : "✏️ Practice"} · Unit {a.unit}
+                    {a.kind === "class_exam" ? "🏫 Class Exam" : a.kind === "mock_exam" ? "📝 Mock Exam" : "✏️ Practice"} · Unit {a.unit}
                   </div>
                   <div className={`text-xs ${overdue(a.due_at) ? "text-destructive" : "text-muted-foreground"}`}>
                     ⏰ {fmtDue(a.due_at)} {overdue(a.due_at) && "(ကျော်လွန်)"}
@@ -126,7 +131,11 @@ export function ClassAssignments({ cid, teacher }: { cid: string; teacher: boole
                   {a.instructions && <p className="mt-1 whitespace-pre-wrap text-xs">{a.instructions}</p>}
                 </div>
                 <div className="flex shrink-0 flex-col gap-1">
-                  {a.kind === "mock_exam" ? (
+                  {a.kind === "class_exam" ? (
+                    <Link to="/class-exam/$id" params={{ id: a.id }} className={ghost}>
+                      {teacher ? "Open" : "Start Exam"}
+                    </Link>
+                  ) : a.kind === "mock_exam" ? (
                     <Link to="/mock-exam/$unit" params={{ unit: String(a.unit) }} className={ghost}>
                       {teacher ? "Open" : "Start Exam"}
                     </Link>
