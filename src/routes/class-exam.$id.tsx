@@ -12,6 +12,8 @@ import { downloadAnswerKey, downloadExamPaper, type DownloadFormat } from "@/lib
 import type { MockExamPaper } from "@/lib/mockExam";
 import { SectionCard } from "@/routes/mock-exam.$unit";
 import { ClassExamSubmissions } from "@/components/ClassExamSubmissions";
+import { UploadedPaperFiles } from "@/components/UploadedPaperFiles";
+import { isUploadedPaper } from "@/lib/uploaded-paper";
 import { ResultView } from "@/components/PaperSubmission";
 import type { GradeResult } from "@/routes/api/grade-exam";
 
@@ -58,8 +60,10 @@ async function compress(file: File): Promise<Blob> {
     const scale = Math.min(1, 1600 / Math.max(img.width, img.height));
     const c = document.createElement("canvas");
     c.width = Math.round(img.width * scale); c.height = Math.round(img.height * scale);
-    c.getContext("2d")!.drawImage(img, 0, 0, c.width, c.height);
-    return await new Promise<Blob>((res) => c.toBlob((b) => res(b!), "image/jpeg", 0.7));
+    const context = c.getContext("2d");
+    if (!context) throw new Error("Could not prepare answer photo.");
+    context.drawImage(img, 0, 0, c.width, c.height);
+    return await new Promise<Blob>((res, reject) => c.toBlob((b) => b ? res(b) : reject(new Error("Could not prepare photo.")), "image/jpeg", 0.7));
   } finally { URL.revokeObjectURL(url); }
 }
 
@@ -111,7 +115,8 @@ function ExamHall() {
     setBusy(true);
     try {
       const { data: u } = await supabase.auth.getUser();
-      const uid = u.user!.id;
+      if (!u.user) throw new Error("Please sign in again.");
+      const uid = u.user.id;
       const paths: string[] = [];
       for (let i = 0; i < files.length; i++) {
         const path = `${uid}/class-${id}-${Date.now()}-p${i + 1}.jpg`;
@@ -126,7 +131,7 @@ function ExamHall() {
         method: "POST", keepalive: true,
         headers: { "content-type": "application/json", authorization: `Bearer ${s.session?.access_token ?? ""}` },
         body: JSON.stringify({ assignmentId: id }),
-      }).catch(() => {}));
+      }).then((res) => { if (!res.ok) toast.error("Answer paper saved; AI marking is unavailable. Your teacher can review it."); }).catch(() => toast.error("Answer paper saved; AI marking could not start.")));
       setFiles([]);
       toast.success("တင်သွင်းပြီးပါပြီ");
       await load();
@@ -156,7 +161,7 @@ function ExamHall() {
               <Clock className="h-5 w-5" /> {clock}
             </span>
           )}
-          <DropdownMenu>
+          {!isUploadedPaper(exam.paper) && <><DropdownMenu>
             <DropdownMenuTrigger asChild><Button size="sm"><FileDown className="h-4 w-4" /> Download Paper</Button></DropdownMenuTrigger>
             <DropdownMenuContent align="end">
               {FORMATS.map(({ f, label }) => <DropdownMenuItem key={f} onSelect={() => downloadExamPaper(exam.paper, f)}>{label}</DropdownMenuItem>)}
@@ -172,7 +177,7 @@ function ExamHall() {
             <DropdownMenuContent align="end">
               {FORMATS.map(({ f, label }) => <DropdownMenuItem key={f} onSelect={() => void downloadKey(f)}>{label}</DropdownMenuItem>)}
             </DropdownMenuContent>
-          </DropdownMenu>
+          </DropdownMenu></>}
         </div>
       </header>
 
@@ -231,7 +236,7 @@ function ExamHall() {
       )}
       {exam.staff && tab === "subs" ? <ClassExamSubmissions aid={exam.id} paper={exam.paper} /> : (
         <div className="space-y-6">
-          {exam.paper.sections.map((s) => <SectionCard key={s.id} section={s} showAnswers={exam.staff} />)}
+          {isUploadedPaper(exam.paper) ? <UploadedPaperFiles files={exam.paper.files} /> : exam.paper.sections.map((s) => <SectionCard key={s.id} section={s} showAnswers={exam.staff} />)}
         </div>
       )}
     </div>

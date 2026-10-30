@@ -2,6 +2,8 @@ import { useCallback, useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { ClipboardList, Loader2, Plus, Trash2, Upload, Users, X } from "lucide-react";
 import { toast } from "sonner";
+import { Button } from "@/components/ui/button";
+import { validatePaperFile } from "@/lib/uploaded-paper";
 import { supabase } from "@/integrations/supabase/client";
 
 type Assignment = {
@@ -78,9 +80,9 @@ export function ClassAssignments({ cid, teacher }: { cid: string; teacher: boole
             <Link to="/class-exam/new" search={{ cid }} className={ghost}>
               <Plus className="h-3.5 w-3.5" /> Create Class Exam
             </Link>
-            <button className={ghost} onClick={() => setShowForm((s) => !s)}>
+            <Button className={ghost} onClick={() => setShowForm((s) => !s)}>
               <Upload className="h-3.5 w-3.5" /> Upload My Paper
-            </button>
+            </Button>
           </div>
         )}
       </div>
@@ -126,9 +128,9 @@ export function ClassAssignments({ cid, teacher }: { cid: string; teacher: boole
                     </Link>
                   )}
                   {teacher && (
-                    <button className={ghost} onClick={() => remove(a.id)} aria-label="Delete assignment">
+                    <Button className={ghost} onClick={() => remove(a.id)} aria-label="Delete assignment">
                       <Trash2 className="h-3.5 w-3.5" />
-                    </button>
+                    </Button>
                   )}
                 </div>
               </div>
@@ -160,7 +162,7 @@ function ExamProgress({ aid }: { aid: string }) {
     <div className="mt-2 rounded-md bg-muted/50 p-2">
       <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
         <span>📊 <b>{done.length} / {rows.length}</b> ဦး ဖြေဆိုပြီး · <span className="text-destructive">{notDone.length} ဦး မဖြေရသေး</span></span>
-        <button className={ghost} onClick={() => setOpen((o) => !o)}><Users className="h-3.5 w-3.5" /> {open ? "ပိတ်ရန်" : "ကျောင်းသားစာရင်း"}</button>
+        <Button className={ghost} onClick={() => setOpen((o) => !o)}><Users className="h-3.5 w-3.5" /> {open ? "ပိတ်ရန်" : "ကျောင်းသားစာရင်း"}</Button>
       </div>
       <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-border">
         <div className="h-full bg-primary" style={{ width: `${pct}%` }} />
@@ -168,7 +170,7 @@ function ExamProgress({ aid }: { aid: string }) {
       {open && (
         <div className="mt-2 grid gap-2 text-xs">
           <Group title={`✅ စစ်ပြီး (${graded.length})`} rows={graded} render={(r) => `${r.score ?? "—"} / ${r.total_marks ?? "—"}`} />
-          <Group title={`⏳ တင်ပြီး — စစ်ရန်ကျန် (${pending.length})`} rows={pending} render={(r) => new Date(r.submitted_at!).toLocaleString()} />
+          <Group title={`⏳ တင်ပြီး — စစ်ရန်ကျန် (${pending.length})`} rows={pending} render={(r) => new Date(r.submitted_at ?? "").toLocaleString()} />
           <Group title={`⚠️ မဖြေရသေး (${notDone.length})`} rows={notDone} render={(r) => (r.started_at ? "ဖြေဆိုနေဆဲ" : "မစရသေး")} danger />
           {(graded.length + pending.length) > 0 && (
             <Link to="/class-exam/$id" params={{ id: aid }} className={`${ghost} justify-self-start`}>Open submissions to grade →</Link>
@@ -201,6 +203,7 @@ function Group({ title, rows, render, danger }: { title: string; rows: RosterRow
 function UploadPaperForm({ cid, onDone }: { cid: string; onDone: () => void }) {
   const [title, setTitle] = useState("");
   const [files, setFiles] = useState<File[]>([]);
+  const [keys, setKeys] = useState<File[]>([]);
   const [marks, setMarks] = useState("50");
   const [duration, setDuration] = useState("60");
   const [due, setDue] = useState("");
@@ -215,6 +218,7 @@ function UploadPaperForm({ cid, onDone }: { cid: string; onDone: () => void }) {
     if (!(mins > 0)) return toast.error("ဖြေဆိုချိန် ထည့်ပါ");
     setBusy(true);
     try {
+      for (const file of [...files, ...keys]) validatePaperFile(file);
       const uploaded: { path: string; name: string; type: string }[] = [];
       for (const f of files) {
         const safe = f.name.replace(/[^\w.-]+/g, "_");
@@ -223,7 +227,7 @@ function UploadPaperForm({ cid, onDone }: { cid: string; onDone: () => void }) {
         if (error) throw error;
         uploaded.push({ path, name: f.name, type: f.type });
       }
-      const { error } = await supabase.from("classroom_assignments").insert({
+      const { data: assignment, error } = await supabase.from("classroom_assignments").insert({
         classroom_id: cid,
         title: title.trim(),
         kind: "class_exam",
@@ -232,8 +236,24 @@ function UploadPaperForm({ cid, onDone }: { cid: string; onDone: () => void }) {
         due_at: due ? new Date(due).toISOString() : null,
         duration_minutes: Math.round(mins),
         paper_data: { kind: "upload", title: title.trim(), totalMarks: total, sections: [], files: uploaded },
-      });
+      }).select("id").single();
       if (error) throw error;
+      if (keys.length && assignment) {
+        try {
+          const keyFiles = [];
+          for (const file of keys) {
+            const path = `${cid}/keys/${crypto.randomUUID()}-${file.name.replace(/[^\w.-]+/g, "_")}`;
+            const { error: uploadError } = await supabase.storage.from("class-papers").upload(path, file, { contentType: file.type || undefined });
+            if (uploadError) throw uploadError;
+            keyFiles.push({ path, name: file.name, type: file.type });
+          }
+          const { error: keyError } = await supabase.from("class_exam_marking_guides").insert({ assignment_id: assignment.id, files: keyFiles });
+          if (keyError) throw keyError;
+        } catch (failure) {
+          await supabase.from("classroom_assignments").delete().eq("id", assignment.id);
+          throw failure;
+        }
+      }
       toast.success("စာမေးပွဲ အတန်းဆီ ပို့ပြီးပါပြီ");
       onDone();
     } catch (e) {
@@ -255,11 +275,15 @@ function UploadPaperForm({ cid, onDone }: { cid: string; onDone: () => void }) {
           {files.map((f, i) => (
             <li key={i} className="flex items-center gap-1 rounded-md bg-background px-2 py-1 text-xs">
               {f.name}
-              <button aria-label="Remove file" onClick={() => setFiles((l) => l.filter((_, j) => j !== i))}><X className="h-3 w-3" /></button>
+              <Button aria-label="Remove file" onClick={() => setFiles((l) => l.filter((_, j) => j !== i))}><X className="h-3 w-3" /></Button>
             </li>
           ))}
         </ul>
       )}
+      <label className="text-xs font-medium">Private answer key / marking guide (optional)
+        <input aria-label="Private marking guide" type="file" accept={ACCEPT} multiple className={`${input} mt-1`} onChange={(e) => setKeys(Array.from(e.target.files ?? []).slice(0, MAX_FILES))} />
+      </label>
+      {keys.length > 0 && <p className="break-words text-xs text-muted-foreground">{keys.map((file) => file.name).join(", ")}</p>}
       <div className="grid grid-cols-2 gap-2">
         <label className="text-xs text-muted-foreground">Total marks
           <input type="number" min={1} className={`${input} mt-1`} value={marks} onChange={(e) => setMarks(e.target.value)} />
@@ -272,9 +296,9 @@ function UploadPaperForm({ cid, onDone }: { cid: string; onDone: () => void }) {
         <input type="datetime-local" className={`${input} mt-1`} value={due} onChange={(e) => setDue(e.target.value)} />
       </label>
       <textarea className={input} rows={2} placeholder="Instructions (ညွှန်ကြားချက်)" value={note} onChange={(e) => setNote(e.target.value)} />
-      <button className={btn} disabled={busy} onClick={publish}>
+      <Button className={btn} disabled={busy} onClick={publish}>
         {busy && <Loader2 className="h-4 w-4 animate-spin" />} Send to Class
-      </button>
+      </Button>
     </div>
   );
 }

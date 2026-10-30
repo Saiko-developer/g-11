@@ -14,10 +14,32 @@ export type Database = {
   }
   public: {
     Tables: {
+      class_exam_ai_control: {
+        Row: {
+          id: boolean
+          paused: boolean
+          reason: string | null
+          status_code: number | null
+        }
+        Insert: {
+          id?: boolean
+          paused?: boolean
+          reason?: string | null
+          status_code?: number | null
+        }
+        Update: {
+          id?: boolean
+          paused?: boolean
+          reason?: string | null
+          status_code?: number | null
+        }
+        Relationships: []
+      }
       class_exam_ai_drafts: {
         Row: {
           attempt_id: string
           error: string | null
+          lease_until: string | null
           result: Json | null
           status: string
           updated_at: string
@@ -25,6 +47,7 @@ export type Database = {
         Insert: {
           attempt_id: string
           error?: string | null
+          lease_until?: string | null
           result?: Json | null
           status?: string
           updated_at?: string
@@ -32,6 +55,7 @@ export type Database = {
         Update: {
           attempt_id?: string
           error?: string | null
+          lease_until?: string | null
           result?: Json | null
           status?: string
           updated_at?: string
@@ -91,6 +115,29 @@ export type Database = {
             foreignKeyName: "class_exam_attempts_assignment_id_fkey"
             columns: ["assignment_id"]
             isOneToOne: false
+            referencedRelation: "classroom_assignments"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      class_exam_marking_guides: {
+        Row: {
+          assignment_id: string
+          files: Json
+        }
+        Insert: {
+          assignment_id: string
+          files?: Json
+        }
+        Update: {
+          assignment_id?: string
+          files?: Json
+        }
+        Relationships: [
+          {
+            foreignKeyName: "class_exam_marking_guides_assignment_id_fkey"
+            columns: ["assignment_id"]
+            isOneToOne: true
             referencedRelation: "classroom_assignments"
             referencedColumns: ["id"]
           },
@@ -539,6 +586,10 @@ export type Database = {
       admin_tutor_update: {
         Args: { _add_bonus: number; _scholarship: string; _user: string }
         Returns: undefined
+      }
+      claim_class_exam_ai: {
+        Args: { _attempt: string; _force?: boolean }
+        Returns: boolean
       }
       class_exam_grade: {
         Args: {
