@@ -35,6 +35,8 @@ export const Route = createFileRoute("/api/auto-grade")({
         }
         // 402/403 = AI credits/policy block: never retry automatically, only on teacher's explicit force.
         if (existing?.status === "blocked" && !force) return Response.json({ status: "blocked" });
+        // Teacher-uploaded papers have no structured questions: marked by the teacher by hand.
+        if ((asg?.paper_data as { kind?: string } | null)?.kind === "upload") return Response.json({ status: "skipped" });
 
         await db.from("class_exam_ai_drafts").upsert({ attempt_id: attemptId, status: "pending", error: null, updated_at: new Date().toISOString() });
         try {
