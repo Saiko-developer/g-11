@@ -9,8 +9,11 @@ import {
   Mic,
   Minimize2,
   Send,
+  AudioLines,
+  PhoneOff,
   Sparkles,
   Square,
+  Volume2,
   X,
 } from "lucide-react";
 import { toast } from "sonner";
@@ -21,6 +24,7 @@ import { MessageResponse } from "@/components/ai-elements/message";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { EXAM_UPLOAD_MESSAGE, fileToDataUrl, onExamUpload } from "@/lib/examUpload";
+import { takeSpeakableChunks } from "@/lib/voice-sentences";
 
 
 /**
@@ -113,7 +117,7 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
   };
 
   /* ------------------------------ chat ------------------------------ */
-  const send = (text: string, file?: Attachment | null) => {
+  const send = (text: string, file?: Attachment | null, mode: "text" | "voice" = "text") => {
     const value = text.trim();
     if (!value || busy) return;
     const attached = file ?? attachment;
@@ -137,7 +141,7 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
       },
       {
         body: {
-          mode: "text",
+          mode,
           lessonContext,
           sectionContent: readActiveSectionText(),
           hasUpload: Boolean(attached),
@@ -185,10 +189,10 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
     chunksRef.current = [];
   }, []);
 
-  const transcribe = useCallback(async (blob: Blob) => {
+  const transcribeToText = useCallback(async (blob: Blob): Promise<string | null> => {
     if (blob.size < 2048) {
       toast.error("အသံ မကြားရပါ", { description: "ခဏလေး ပြောပြီးမှ ရပ်ပါ။" });
-      return;
+      return null;
     }
     setTranscribing(true);
     try {
@@ -200,18 +204,27 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
       const text = (data.text ?? "").trim();
       if (!text) {
         toast.error("စကားလုံး မဖတ်နိုင်ပါ", { description: "ပြန်ပြီး ပြောကြည့်ပါ။" });
-        return;
+        return null;
       }
-      setInput((prev) => (prev ? `${prev} ${text}` : text));
+      return text;
     } catch (err) {
       console.error("[saya-owl-home] transcription failed", err);
       toast.error("အသံမှ စာသား ပြောင်း၍ မရပါ", {
         description: "ခဏနေ ပြန်ကြိုးစားပါ သို့မဟုတ် စာရိုက်၍ မေးပါ။",
       });
+      return null;
     } finally {
       setTranscribing(false);
     }
   }, []);
+
+  const transcribe = useCallback(
+    async (blob: Blob) => {
+      const text = await transcribeToText(blob);
+      if (text) setInput((prev) => (prev ? `${prev} ${text}` : text));
+    },
+    [transcribeToText],
+  );
 
   const stopRecording = useCallback(() => {
     try {
@@ -284,6 +297,223 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
   }, [open, stopRecording]);
 
   useEffect(() => () => cleanupRecorder(), [cleanupRecorder]);
+
+  /* ----------------------- hands-free voice mode ---------------------- */
+  const [handsFree, setHandsFree] = useState(false);
+  const [voicePhase, setVoicePhase] = useState<"listening" | "thinking" | "speaking">("listening");
+  const [heardSpeech, setHeardSpeech] = useState(false);
+  const handsFreeRef = useRef(false);
+  const vadRef = useRef<{ ctx: AudioContext; timer: number } | null>(null);
+  const audioQueueRef = useRef<Promise<string | null>[]>([]);
+  const playingRef = useRef<HTMLAudioElement | null>(null);
+  const turnRef = useRef<{ active: boolean; offset: number; done: boolean; userCount: number }>({
+    active: false,
+    offset: 0,
+    done: false,
+    userCount: 0,
+  });
+  const listenRef = useRef<() => void>(() => {});
+
+  const stopVad = () => {
+    if (vadRef.current) {
+      window.clearInterval(vadRef.current.timer);
+      void vadRef.current.ctx.close().catch(() => {});
+      vadRef.current = null;
+    }
+  };
+
+  const fetchSpeech = (text: string): Promise<string | null> =>
+    fetch("/api/tts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text }),
+    })
+      .then(async (r) => (r.ok ? URL.createObjectURL(await r.blob()) : null))
+      .catch(() => null);
+
+  const maybeFinishTurn = () => {
+    const t = turnRef.current;
+    if (!handsFreeRef.current || playingRef.current) return;
+    if (t.active && t.done && audioQueueRef.current.length === 0) {
+      t.active = false;
+      listenRef.current();
+    }
+  };
+
+  const playNext = async () => {
+    if (playingRef.current || !handsFreeRef.current) return;
+    const next = audioQueueRef.current.shift();
+    if (!next) {
+      maybeFinishTurn();
+      return;
+    }
+    const placeholder = new Audio();
+    playingRef.current = placeholder;
+    const url = await next;
+    if (!handsFreeRef.current) return;
+    if (!url) {
+      playingRef.current = null;
+      void playNext();
+      return;
+    }
+    setVoicePhase("speaking");
+    placeholder.src = url;
+    const done = () => {
+      URL.revokeObjectURL(url);
+      if (playingRef.current === placeholder) playingRef.current = null;
+      void playNext();
+    };
+    placeholder.onended = done;
+    placeholder.onerror = done;
+    placeholder.play().catch(done);
+  };
+
+  const enqueueSpeech = (text: string) => {
+    audioQueueRef.current.push(fetchSpeech(text));
+    void playNext();
+  };
+
+  const listenOnce = async () => {
+    if (!handsFreeRef.current) return;
+    setVoicePhase("listening");
+    setHeardSpeech(false);
+    let stream: MediaStream;
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({
+        audio: { echoCancellation: true, noiseSuppression: true },
+      });
+    } catch {
+      toast.error("မိုက်ခရိုဖုန်း ခွင့်ပြုချက် မရပါ", {
+        description: "Browser ရဲ့ address bar မှာ microphone ကို Allow လုပ်ပေးပါ။",
+      });
+      stopHandsFreeRef.current();
+      return;
+    }
+    if (!handsFreeRef.current) {
+      stream.getTracks().forEach((t) => t.stop());
+      return;
+    }
+    streamRef.current = stream;
+    const mimeType = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/ogg;codecs=opus"].find(
+      (t) => MediaRecorder.isTypeSupported(t),
+    );
+    const recorder = new MediaRecorder(stream, mimeType ? { mimeType } : undefined);
+    const chunks: Blob[] = [];
+    let spoke = false;
+    recorder.ondataavailable = (e) => e.data.size > 0 && chunks.push(e.data);
+    recorder.onstop = async () => {
+      stopVad();
+      stream.getTracks().forEach((t) => t.stop());
+      streamRef.current = null;
+      mediaRef.current = null;
+      if (!handsFreeRef.current) return;
+      if (!spoke) {
+        listenRef.current();
+        return;
+      }
+      setVoicePhase("thinking");
+      const text = await transcribeToText(new Blob(chunks, { type: recorder.mimeType || "audio/webm" }));
+      if (!handsFreeRef.current) return;
+      if (!text) {
+        listenRef.current();
+        return;
+      }
+      turnRef.current = { active: true, offset: 0, done: false, userCount: -1 };
+      sendRef.current(text, null, "voice");
+    };
+    mediaRef.current = recorder;
+    recorder.start();
+
+    // Voice activity detection: stop ~1.2s after the student stops talking.
+    const ctx = new AudioContext();
+    const analyser = ctx.createAnalyser();
+    analyser.fftSize = 1024;
+    ctx.createMediaStreamSource(stream).connect(analyser);
+    const data = new Uint8Array(analyser.fftSize);
+    const startedAt = Date.now();
+    let lastVoice = Date.now();
+    const timer = window.setInterval(() => {
+      analyser.getByteTimeDomainData(data);
+      let sum = 0;
+      for (const v of data) sum += ((v - 128) / 128) ** 2;
+      const rms = Math.sqrt(sum / data.length);
+      const now = Date.now();
+      if (rms > 0.035) {
+        lastVoice = now;
+        if (!spoke) {
+          spoke = true;
+          setHeardSpeech(true);
+        }
+      }
+      const silentFor = now - lastVoice;
+      if ((spoke && silentFor > 1200) || now - startedAt > 45000 || (!spoke && now - startedAt > 20000)) {
+        if (recorder.state === "recording") recorder.stop();
+      }
+    }, 100);
+    vadRef.current = { ctx, timer };
+  };
+  listenRef.current = () => void listenOnce();
+
+  const stopHandsFree = () => {
+    handsFreeRef.current = false;
+    setHandsFree(false);
+    turnRef.current.active = false;
+    stopVad();
+    try {
+      if (mediaRef.current?.state === "recording") mediaRef.current.stop();
+    } catch {
+      // ignore
+    }
+    cleanupRecorder();
+    playingRef.current?.pause();
+    playingRef.current = null;
+    audioQueueRef.current = [];
+  };
+  const stopHandsFreeRef = useRef(stopHandsFree);
+  stopHandsFreeRef.current = stopHandsFree;
+
+  const startHandsFree = () => {
+    if (typeof navigator === "undefined" || !navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === "undefined") {
+      toast.error("ဒီ browser က အသံဖြင့် စကားပြောခြင်းကို မထောက်ပံ့ပါ");
+      return;
+    }
+    if (recording) stopRecording();
+    handsFreeRef.current = true;
+    setHandsFree(true);
+    void listenOnce();
+  };
+
+  // Stream the reply into speech sentence by sentence while it is still being written.
+  useEffect(() => {
+    const t = turnRef.current;
+    if (!handsFreeRef.current || !t.active || t.done) return;
+    const last = messages[messages.length - 1];
+    if (t.userCount === -1) {
+      if (last?.role === "user") t.userCount = messages.length;
+      return;
+    }
+    if (status === "error") {
+      t.done = true;
+      maybeFinishTurn();
+      return;
+    }
+    if (!last || last.role !== "assistant" || messages.length <= t.userCount) return;
+    const body = last.parts.map((p) => (p.type === "text" ? p.text : "")).join("");
+    const final = status === "ready";
+    const { chunks, next } = takeSpeakableChunks(body, t.offset, final);
+    t.offset = next;
+    chunks.forEach(enqueueSpeech);
+    if (final) {
+      t.done = true;
+      maybeFinishTurn();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [messages, status]);
+
+  useEffect(() => {
+    if (!open && handsFreeRef.current) stopHandsFreeRef.current();
+  }, [open]);
+  useEffect(() => () => stopHandsFreeRef.current(), []);
 
   const quickPrompts = [
     "ဒီသင်ခန်းစာကို အသေးစိတ် ရှင်းပြပေးပါဆရာ",
@@ -403,7 +633,28 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
           </div>
 
           <div className="border-t border-border p-3">
-            {(recording || transcribing) && (
+            {handsFree && (
+              <p className="mb-2 flex items-center gap-2 rounded-lg bg-primary/10 px-2.5 py-1.5 text-[11px] font-medium text-primary">
+                {voicePhase === "listening" ? (
+                  <>
+                    <span className="relative flex h-2.5 w-2.5">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
+                      <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-primary" />
+                    </span>
+                    {heardSpeech ? "ကြားနေပါတယ်… ပြောပြီးရင် ခဏ ရပ်လိုက်ပါ" : "နားထောင်နေပါတယ်… ဆရာ့ကို မေးလိုက်ပါ"}
+                  </>
+                ) : voicePhase === "speaking" ? (
+                  <>
+                    <Volume2 className="h-3.5 w-3.5 animate-pulse" /> ဆရာ ရှင်းပြနေပါတယ်…
+                  </>
+                ) : (
+                  <>
+                    <Loader2 className="h-3 w-3 animate-spin" /> စဉ်းစားနေပါတယ်…
+                  </>
+                )}
+              </p>
+            )}
+            {!handsFree && (recording || transcribing) && (
               <p className="mb-2 flex items-center gap-2 text-[11px] font-medium text-destructive">
                 {recording ? (
                   <>
@@ -448,6 +699,16 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
               ))}
             </div>
             <div className="mb-2"><TutorQuotaBar compact /></div>
+            <Button
+              type="button"
+              variant={handsFree ? "destructive" : "secondary"}
+              size="sm"
+              onClick={handsFree ? stopHandsFree : startHandsFree}
+              className="mb-2 w-full gap-2"
+            >
+              {handsFree ? <PhoneOff className="h-4 w-4" /> : <AudioLines className="h-4 w-4" />}
+              {handsFree ? "Hands-Free ပိတ်မည်" : "🎙️ Hands-Free စကားပြောမည်"}
+            </Button>
             <form
               className="flex items-end gap-2"
               onSubmit={(e) => {
