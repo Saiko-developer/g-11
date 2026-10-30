@@ -1,0 +1,1015 @@
+{
+  "unit": "UNIT 4",
+  "unitTitle": "Painting",
+  "lessons": [
+    {
+      "id": "4a-reading",
+      "code": "4A",
+      "type": "Reading",
+      "title": "4A Reading: Painting",
+      "titleMy": "စာဖတ်ခြင်း - ပန်းချီ",
+      "intro": "Read about painting as an ancient skill, its five common kinds, and modern styles such as abstract expressionism, cubism and graffiti art.",
+      "introMy": "ပန်းချီသည် ရှေးကျသော ကျွမ်းကျင်မှုတစ်ခု ဖြစ်ခြင်း၊ ပန်းချီ၏ ဘုံအမျိုးအစား ငါးမျိုးနှင့် abstract expressionism၊ cubism နှင့် graffiti အနုပညာ စသည့် ခေတ်သစ် ပုံစံများအကြောင်း ဖတ်ရှုလေ့လာပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "How old is painting as a skill?",
+          "suggested_answer": "Painting is a very ancient skill. Paintings discovered deep in the caves of southern Europe are believed to have been done between 750,000 and 150,000 years ago."
+        },
+        {
+          "id": 2,
+          "question": "What are the five common kinds of painting?",
+          "suggested_answer": "Water-colour painting, oil painting, tempera painting, mural painting, and fresco painting."
+        },
+        {
+          "id": 3,
+          "question": "Who invented cubism?",
+          "suggested_answer": "Cubism was invented by the Spanish artist Pablo Picasso."
+        },
+        {
+          "id": 4,
+          "question": "In which country are there 'graffiti zones' where artists can paint on walls?",
+          "suggested_answer": "In Taiwan."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Which two styles of painting do not follow the conventional style of painting?",
+          "answer": "Abstract expressionism and cubism."
+        },
+        {
+          "id": 2,
+          "question": "What do the murals around pagodas depict?",
+          "answer": "They depict the many significant events in the life of the Lord Buddha."
+        }
+      ]
+    },
+    {
+      "id": "4b-vocabulary",
+      "code": "4B",
+      "type": "Vocabulary",
+      "title": "4B Vocabulary: Painting Words & Prefixes",
+      "titleMy": "ဝေါဟာရ - ပန်းချီဝေါဟာရများနှင့် ရှေ့ဆက်စကားလုံးများ",
+      "intro": "Learn words related to painting and how prefixes change the meaning of nouns, verbs and adjectives.",
+      "introMy": "ပန်းချီနှင့် ဆက်စပ်သော စကားလုံးများကို လေ့လာပြီး ရှေ့ဆက်စကားလုံးများက နာမ်၊ ကြိယာနှင့် နာမဝိသေသနများ၏ အဓိပ္ပာယ်ကို မည်သို့ ပြောင်းလဲစေသည်ကို လေ့လာပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is a pigment used for?",
+          "suggested_answer": "A pigment is used to give colour to paint, ink and plastic."
+        },
+        {
+          "id": 2,
+          "question": "What does a prefix do to a root word?",
+          "suggested_answer": "A prefix is a letter or a group of letters added to the beginning of a word to change its meaning or to form a different word. Prefixes usually change the meaning of the root words but do not change the form of the base word except for some."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Which prefix makes the opposite of 'possible'?",
+          "answer": "im- → impossible."
+        },
+        {
+          "id": 2,
+          "question": "What does 'mispronounce' mean?",
+          "answer": "To pronounce a word wrongly."
+        }
+      ]
+    },
+    {
+      "id": "4c-grammar",
+      "code": "4C",
+      "type": "Grammar",
+      "title": "4C Grammar: Participial Phrases, Past Simple & Continuous",
+      "titleMy": "သဒ္ဒါ - ကြိယာနာမဝိသေသန စကားစုများ၊ အတိတ် ရိုးရိုးနှင့် ဆက်လက်ဖြစ်ပျက်နေသော အတိတ်ကာလ",
+      "intro": "Find the participial phrase in each sentence, and practise the past simple and past continuous tenses.",
+      "introMy": "စာကြောင်းတစ်ကြောင်းစီရှိ ကြိယာနာမဝိသေသန စကားစုကို ရှာဖွေပြီး အတိတ် ရိုးရိုးနှင့် ဆက်လက်ဖြစ်ပျက်နေသော အတိတ်ကာလများကို လေ့ကျင့်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is a participial phrase?",
+          "suggested_answer": "It is a group of words that begins with either an -ing or -ed / -en form of a verb, such as 'reading in that room', 'trained by a good coach', 'working in the garden' or 'written by Wordsworth'."
+        },
+        {
+          "id": 2,
+          "question": "When do we use the past simple tense?",
+          "suggested_answer": "We use it to describe a completed action in the past, actions that happened one after the other in the past, and past habits or repeated actions in the past (often with adverbs of frequency)."
+        },
+        {
+          "id": 3,
+          "question": "When do we use the past continuous tense?",
+          "suggested_answer": "We use it to describe an action in progress at a specific moment in the past, to convey the idea that the past continuous action started before the past simple action and probably continued after it, and to describe parallel actions in the past."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Which verbs are not usually used in the progressive form?",
+          "answer": "Verbs of the senses such as feel, find, hear, see, smell, sound and taste."
+        },
+        {
+          "id": 2,
+          "question": "Join: 'He was watching TV. His brother was listening to music.'",
+          "answer": "He was watching TV while his brother was listening to music."
+        }
+      ]
+    },
+    {
+      "id": "4d-listening-speaking",
+      "code": "4D",
+      "type": "Listening and Speaking",
+      "title": "4D Listening and Speaking: The Benefits of Taking Up Hobbies",
+      "titleMy": "နားထောင်ခြင်းနှင့် ပြောဆိုခြင်း - ဝါသနာများ ဆောင်ရွက်ခြင်း၏ အကျိုးကျေးဇူးများ",
+      "intro": "A. Listen to a talk on 'the benefits of taking up hobbies' and complete the sentences. B. Talk about your interests.",
+      "introMy": "A. 'ဝါသနာများ ဆောင်ရွက်ခြင်း၏ အကျိုးကျေးဇူးများ' အကြောင်း ဟောပြောချက်ကို နားထောင်ပြီး စာကြောင်းများ ဖြည့်စွက်ပါ။ B. သင့် စိတ်ဝင်စားမှုများအကြောင်း ပြောပြပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Doing an enjoyable activity helps ________ your satisfaction with life.",
+          "suggested_answer": "improve"
+        },
+        {
+          "id": 2,
+          "question": "Pursuing a hobby improves your performance in your ________ and ability to maintain ________.",
+          "suggested_answer": "job; relationships"
+        },
+        {
+          "id": 3,
+          "question": "Adding an activity to your list of things to do is actually a great way of releasing ________.",
+          "suggested_answer": "stress"
+        },
+        {
+          "id": 4,
+          "question": "When you ________ on a hobby, all of your stress seems to disappear.",
+          "suggested_answer": "focus"
+        },
+        {
+          "id": 5,
+          "question": "The more you are engaged in a hobby, the more you are likely to learn about the ________.",
+          "suggested_answer": "world"
+        },
+        {
+          "id": 6,
+          "question": "When taking up a hobby, you can enjoy the process of learning something ________.",
+          "suggested_answer": "new"
+        },
+        {
+          "id": 7,
+          "question": "If you try cooking, you may ________ that you love cooking, and that you have a certain ________ for it.",
+          "suggested_answer": "discover; flair"
+        },
+        {
+          "id": 8,
+          "question": "Hobbies help you discover the things that you're ________.",
+          "suggested_answer": "passionate about"
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Student A: Where do street artists paint their pictures?",
+          "answer": "Street artists paint their pictures on walls."
+        },
+        {
+          "id": 2,
+          "question": "Student A: When are street art festivals held every year in the UK?",
+          "answer": "In Bristol in the UK, there is a street art festival in August every year."
+        },
+        {
+          "id": 3,
+          "question": "Student A: What do lots of people including tourists do at the street art festival?",
+          "answer": "They come to watch the artists and take photos."
+        },
+        {
+          "id": 4,
+          "question": "Student A: How many famous stars are there in the street art world?",
+          "answer": "There are three famous stars of the street art world."
+        },
+        {
+          "id": 5,
+          "question": "Student A: Where are the famous stars of the street art world from?",
+          "answer": "The first group is the twin brothers from Brazil, the second street artist is from Paris, and the third famous street artist is from South Africa."
+        },
+        {
+          "id": 6,
+          "question": "Student B: What is graffiti?",
+          "answer": "Street art is very interesting. It is also called graffiti. Graffiti artists paint pictures on walls."
+        },
+        {
+          "id": 7,
+          "question": "Student B: With whom do graffiti artists have problems?",
+          "answer": "In some countries, writing or painting on walls is a crime, so graffiti artists sometimes have problems with the police."
+        },
+        {
+          "id": 8,
+          "question": "Student B: In Brazil, where can graffiti artists paint?",
+          "answer": "In Brazil, graffiti artists can paint pictures on walls and houses."
+        },
+        {
+          "id": 9,
+          "question": "Student B: Where can we see exhibitions of street art?",
+          "answer": "We can see exhibitions of street art in some galleries."
+        },
+        {
+          "id": 10,
+          "question": "Student B: In which towns are street art exhibitions held?",
+          "answer": "Street art exhibitions have been held in Paris, London and Los Angeles."
+        }
+      ],
+      "pairTexts": [
+        {
+          "label": "Text A",
+          "forStudent": "Student A",
+          "text": "Street art is very interesting. It is also called graffiti. Graffiti artists paint pictures on walls. In some countries, writing or painting on walls is a crime. Sometimes, graffiti artists have problems with the police. In some countries, artists can draw and paint in certain places. For example, in Taiwan, there are 'graffiti zones'. There, artists can paint on walls. In Brazil, graffiti artists can paint pictures on walls and houses. You can see exhibitions of street art in some galleries too. There have been exhibitions of street art in galleries in Paris, London and Los Angeles."
+        },
+        {
+          "label": "Text B",
+          "forStudent": "Student B",
+          "text": "Street artists usually paint on pavements, postboxes, buses and walls. Street paintings are colourful and beautiful. In Bristol in the UK, there is a street art festival in August every year. Artists paint all the buildings in a street. Lots of people including tourists come to watch the artists and take photos. There are three famous stars of the street art world. The first group is the twin brothers from Brazil. They painted big colourful pictures of people and a castle in Scotland. The second street artist is from Paris. He painted pictures of the homeless in big cities. The third famous street artist is from South Africa. She painted pictures of people and animals."
+        }
+      ]
+    },
+    {
+      "id": "4e-writing",
+      "code": "4E",
+      "type": "Writing",
+      "title": "4E Writing: Defining Words & A Painting I Like",
+      "titleMy": "စာရေးသားခြင်း - စကားလုံးများ အဓိပ္ပာယ်ဖွင့်ဆိုခြင်း နှင့် ကျွန်ုပ် နှစ်သက်သော ပန်းချီကား",
+      "intro": "Study how to define people, places or things using 'who', 'which' and 'where', then write a short paragraph on 'A painting I like'.",
+      "introMy": "'who'၊ 'which' နှင့် 'where' တို့ကို အသုံးပြု၍ လူများ၊ နေရာများနှင့် အရာဝတ္ထုများကို အဓိပ္ပာယ်ဖွင့်ဆိုပုံကို လေ့လာပြီး 'A painting I like' အကြောင်း စာပိုဒ်တိုတစ်ခု ရေးသားပါ။",
+      "matching": {
+        "instructions": "Define the following, matching the first parts of the sentences in Column A with the second parts in Column B.",
+        "column_b": [
+          {
+            "letter": "a",
+            "text": "has wings but cannot fly."
+          },
+          {
+            "letter": "b",
+            "text": "do not eat meat."
+          },
+          {
+            "letter": "c",
+            "text": "uses lenses to make very small things look larger."
+          },
+          {
+            "letter": "d",
+            "text": "people can see and study different kinds of wild animals and strange birds."
+          },
+          {
+            "letter": "e",
+            "text": "produces electricity."
+          },
+          {
+            "letter": "f",
+            "text": "gives information on subjects in alphabetical order."
+          },
+          {
+            "letter": "g",
+            "text": "is used for keeping works of art for the public to see or study."
+          },
+          {
+            "letter": "h",
+            "text": "has no wings and can land or take off vertically."
+          },
+          {
+            "letter": "i",
+            "text": "is large and round with green or white leaves and can be eaten raw or cooked."
+          },
+          {
+            "letter": "j",
+            "text": "eats meat."
+          }
+        ],
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "A microscope is an instrument ...",
+            "answer": "c",
+            "answer_text": "uses lenses to make very small things look larger."
+          },
+          {
+            "question_number": 2,
+            "text": "An encyclopaedia is a book ...",
+            "answer": "f",
+            "answer_text": "gives information on subjects in alphabetical order."
+          },
+          {
+            "question_number": 3,
+            "text": "A generator is a machine ...",
+            "answer": "e",
+            "answer_text": "produces electricity."
+          },
+          {
+            "question_number": 4,
+            "text": "A gallery is a room or building ...",
+            "answer": "g",
+            "answer_text": "is used for keeping works of art for the public to see or study."
+          },
+          {
+            "question_number": 5,
+            "text": "A carnivore is an animal ...",
+            "answer": "j",
+            "answer_text": "eats meat."
+          },
+          {
+            "question_number": 6,
+            "text": "A cabbage is a vegetable ...",
+            "answer": "i",
+            "answer_text": "is large and round with green or white leaves and can be eaten raw or cooked."
+          },
+          {
+            "question_number": 7,
+            "text": "An ostrich is a large bird ...",
+            "answer": "a",
+            "answer_text": "has wings but cannot fly."
+          },
+          {
+            "question_number": 8,
+            "text": "Vegetarians are people ...",
+            "answer": "b",
+            "answer_text": "do not eat meat."
+          },
+          {
+            "question_number": 9,
+            "text": "A zoo is a place ...",
+            "answer": "d",
+            "answer_text": "people can see and study different kinds of wild animals and strange birds."
+          },
+          {
+            "question_number": 10,
+            "text": "A helicopter is an aircraft ...",
+            "answer": "h",
+            "answer_text": "has no wings and can land or take off vertically."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a short paragraph on 'A painting I like'.",
+          "suggested_answer": "The painting I like is a water-colour painting. It is done on paper, using colours made from pigments mixed with water. The painter portrays the beauty of a countryside with a sunset, green fields, trees and a small river. I like it because it captures the beauty of nature, and the soft and bright colours give me a feeling of peace and happiness whenever I look at it."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What kind of painting is it?",
+          "answer": "It is a water-colour painting, done on paper with colours made from pigments mixed with water."
+        },
+        {
+          "id": 2,
+          "question": "What does the painter portray?",
+          "answer": "The painter portrays the beauty of a sunset and of a countryside."
+        },
+        {
+          "id": 3,
+          "question": "Why do you like it?",
+          "answer": "I like it because it captures the beauty of nature and gives me a feeling of peace and happiness."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "lesson": "4A Reading",
+      "topic": "Painting",
+      "pre_reading": [
+        {
+          "id": 1,
+          "question": "Do you like drawing and painting?",
+          "suggested_answer": "Yes, I do. Drawing and painting are interesting, and I enjoy expressing my ideas with colours."
+        },
+        {
+          "id": 2,
+          "question": "Are you good at painting?",
+          "suggested_answer": "A little bit. I can draw simple pictures such as a sunset or the countryside."
+        },
+        {
+          "id": 3,
+          "question": "Do you think painting is an easy task? Why or why not?",
+          "suggested_answer": "No, I do not think painting is an easy task because a painter has to choose and use the colours carefully, and it takes a lot of practice and patience to paint well."
+        }
+      ],
+      "reading_passage": {
+        "title": "4A Reading: Painting",
+        "paragraphs": [
+          {
+            "paragraph_id": 1,
+            "lines": "1-6",
+            "english_text": "Painting, the art of drawing in colours, is a very ancient skill. Paintings discovered deep in the caves of southern Europe are believed to have been done between 750,000 and 150,000 years ago. That period in human history is known as the Palaeolithic Age, or the early Stone Age. Those very early people of that time had learnt to use tools and weapons made only of stone.",
+            "burmese_explanation": "ပန်းချီသည် အရောင်များဖြင့် ရေးဆွဲသော အနုပညာတစ်ရပ်ဖြစ်ပြီး အလွန်ရှေးကျသော ကျွမ်းကျင်မှုတစ်ခု ဖြစ်သည်။ ဥရောပတောင်ပိုင်းရှိ ဂူများ၏ အနက်ရှိုင်းသော နေရာများတွင် တွေ့ရှိရသော ပန်းချီများကို လွန်ခဲ့သော နှစ်ပေါင်း ၇၅၀,၀၀၀ နှင့် ၁၅၀,၀၀၀ ကြားတွင် ရေးဆွဲခဲ့သည်ဟု ယူဆကြသည်။ လူ့သမိုင်း၏ ထိုကာလကို ကျောက်ခေတ်ဟောင်းဟု ခေါ်သည်။ ထိုအချိန်က အစောပိုင်းလူသားများသည် ကျောက်ဖြင့် ပြုလုပ်ထားသော ကိရိယာများနှင့် လက်နက်များကို အသုံးပြုတတ်ခဲ့ကြပြီ ဖြစ်သည်။"
+          },
+          {
+            "paragraph_id": 2,
+            "lines": "7-9",
+            "english_text": "Generally speaking, there are five common kinds of painting. They are: water-colour painting, oil painting, tempera painting, mural painting, and fresco painting.",
+            "burmese_explanation": "ယေဘုယျအားဖြင့် ပန်းချီ၏ ဘုံအမျိုးအစား ငါးမျိုး ရှိသည်။ ၎င်းတို့မှာ ရေဆေးပန်းချီ၊ ဆီဆေးပန်းချီ၊ ကြက်ဥအနှစ်နှင့် ကော်ရောစပ်သည့် ဆေးဖြင့်ရေးသော ပန်းချီ၊ နံရံဆေးရေးပန်းချီနှင့် စိုစွတ်သောအင်္ဂတေပေါ်တွင် ရေးဆွဲသည့် ပန်းချီတို့ ဖြစ်သည်။"
+          },
+          {
+            "paragraph_id": 3,
+            "lines": "10-17",
+            "english_text": "Water-colour painting is done on paper, using colours made from pigments mixed with water only. Oil painting is done on canvas, using oil colours. Tempera painting is done usually on dry walls, using colours made from pigments mixed with water, egg yolk and glue. Mural painting and fresco painting are both paintings on walls. However, mural painting is done by brushing water colour onto the dry plaster of a wall, while fresco painting is done by rapidly brushing water colour onto the wet plaster of a wall.",
+            "burmese_explanation": "ရေဆေးပန်းချီကို ရေနှင့် ရောစပ်ထားသော အရောင်ခြယ်ပစ္စည်းများဖြင့် စက္ကူပေါ်တွင် ရေးဆွဲသည်။ ဆီဆေးပန်းချီကို ဆီဆေးများဖြင့် ပန်းချီကားတင်စ အထည်ပေါ်တွင် ရေးဆွဲသည်။ ကြက်ဥအနှစ်နှင့် ကော်ရောစပ်သည့် ဆေးဖြင့် ရေးသောပန်းချီကို များသောအားဖြင့် ခြောက်သွေ့သောနံရံများပေါ်တွင် ရေးဆွဲသည်။ နံရံဆေးရေးပန်းချီနှင့် စိုစွတ်သောအင်္ဂတေပေါ်တွင် ရေးဆွဲသည့်ပန်းချီ နှစ်မျိုးစလုံးကို နံရံပေါ်တွင် ရေးဆွဲသည်။ သို့သော် ပထမအမျိုးအစားကို ခြောက်သွေ့သောအင်္ဂတေပေါ်တွင် ဆေးသုတ်၍ ရေးဆွဲပြီး ဒုတိယအမျိုးအစားကို စိုစွတ်သောအင်္ဂတေပေါ်တွင် အလျင်အမြန် ရေးဆွဲရသည်။"
+          },
+          {
+            "paragraph_id": 4,
+            "lines": "18-22",
+            "english_text": "Most painters paint just for the pleasure of painting, while some do it for a living. Some artists paint to capture the beauty of a sunset or of a countryside, while some others like to do portraits. Frescos and murals portray religious, historic or patriotic themes. Paintings that we see on the structures around pagodas are mostly murals, and they depict the many significant events in the life of the Lord Buddha.",
+            "burmese_explanation": "ပန်းချီဆရာအများစုသည် ပန်းချီရေးဆွဲခြင်း၏ ပျော်ရွှင်မှုအတွက်သာ ရေးဆွဲကြပြီး အချို့မှာမူ အသက်မွေးဝမ်းကျောင်းအတွက် ရေးဆွဲကြသည်။ အချို့အနုပညာရှင်များသည် နေဝင်ချိန်၏ အလှတရား သို့မဟုတ် ကျေးလက်ဒေသ၏ အလှကို ဖမ်းယူရန် ရေးဆွဲကြပြီး အချို့မှာမူ ပုံတူပန်းချီများကို နှစ်သက်ကြသည်။ နံရံဆေးရေးပန်းချီများသည် ဘာသာရေး၊ သမိုင်းဝင် သို့မဟုတ် မျိုးချစ်စိတ်ဆိုင်ရာ အကြောင်းအရာများကို ဖော်ကျူးကြသည်။ စေတီပုထိုးများအနီးရှိ အဆောက်အအုံများတွင် တွေ့ရသော ပန်းချီအများစုမှာ ထိုပန်းချီအမျိုးအစားဖြစ်ပြီး မြတ်စွာဘုရား၏ ဘဝဖြစ်စဉ်တွင် အရေးပါသော အဖြစ်အပျက်များစွာကို သရုပ်ဖော်ထားသည်။"
+          },
+          {
+            "paragraph_id": 5,
+            "lines": "23-30",
+            "english_text": "Among the many styles of painting, abstract expressionism and cubism are interesting because they do not follow the conventional style of painting. Abstract expressionism originated in New York in the 1940s. Simply put, it is a kind of painting without recognizable images. It does not keep the limits of conventional form. Cubism is a modern art in painting. It was invented by the Spanish artist Pablo Picasso. Cubism uses geometric shapes and forms that may overlap and penetrate one another. In most of these two styles of painting, it is not always easy to see what message the artist is trying to convey.",
+            "burmese_explanation": "ပန်းချီပုံစံများစွာအနက် ရိုးရာပုံဖော်နည်းကို မလိုက်နာသော အနုပညာပုံစံနှစ်မျိုးသည် စိတ်ဝင်စားစရာကောင်းသည်။ ပထမပုံစံသည် ၁၉၄၀ ပြည့်လွန်နှစ်များတွင် နယူးယောက်၌ စတင်ပေါ်ပေါက်ခဲ့ပြီး မှတ်မိနိုင်သော ရုပ်ပုံများကို မဖော်ပြဘဲ အနုပညာရှင်၏ ခံစားချက်ကို အရောင်နှင့် ပုံသဏ္ဌာန်တို့ဖြင့် ဖော်ပြသည်။ ၎င်းသည် ရိုးရာပန်းချီပုံစံ၏ ကန့်သတ်ချက်များကို မလိုက်နာပါ။ ဒုတိယပုံစံသည် ပန်းချီလောကရှိ ခေတ်သစ်အနုပညာတစ်ရပ်ဖြစ်ပြီး စပိန်အနုပညာရှင် Pablo Picasso က တီထွင်ခဲ့သည်။ ၎င်းတွင် တစ်ခုနှင့်တစ်ခု ထပ်နေခြင်း သို့မဟုတ် ဖောက်ထွင်းဝင်ရောက်သကဲ့သို့ မြင်ရသော ဂျီဩမေတြီပုံသဏ္ဌာန်များကို အသုံးပြုသည်။ ဤပန်းချီပုံစံနှစ်မျိုးစလုံးတွင် အနုပညာရှင် ဖော်ပြလိုသော အဓိပ္ပာယ်ကို နားလည်ရန် အမြဲတမ်း မလွယ်ကူပါ။"
+          },
+          {
+            "paragraph_id": 6,
+            "lines": "31-40",
+            "english_text": "In addition to the five common kinds of painting, there is another kind known as graffiti art. It is writings or drawings made on a wall or any other surface, usually as a form of artistic expression within public view, without permission. Graffiti art can be observed all over the world today on buildings, post and phone boxes, underground tunnels, buses and on subway cars. The debate over whether graffiti is art or harm is still going on. In some countries, writing or painting on walls is a crime. In other countries, artists can draw and paint in certain places. For example, in Taiwan, there are 'graffiti zones' where artists can paint on walls. Some say that it is an essential thing for a city. They say that a modern city's beauty can't be perfect without graffiti.",
+            "burmese_explanation": "ပန်းချီအမျိုးအစား ငါးမျိုးအပြင် ဂရပ်ဖီတီဟုခေါ်သော နောက်ထပ်အနုပညာပုံစံတစ်ခုလည်း ရှိသေးသည်။ ၎င်းသည် ခွင့်ပြုချက်မရဘဲ အများပြည်သူမြင်နိုင်သော နေရာများရှိ နံရံ သို့မဟုတ် အခြားမျက်နှာပြင်ပေါ်တွင် ရေးသားခြင်း၊ ရေးဆွဲခြင်းဖြစ်ပြီး များသောအားဖြင့် အနုပညာဖော်ပြမှုတစ်ရပ်အဖြစ် ပြုလုပ်ကြသည်။ ယနေ့ခေတ်တွင် ကမ္ဘာတစ်ဝှမ်းရှိ အဆောက်အအုံများ၊ စာတိုက်ပုံးများ၊ တယ်လီဖုန်းပုံးများ၊ မြေအောက်ဥမင်များ၊ ဘတ်စ်ကားများနှင့် မြေအောက်ရထားများပေါ်တွင် ထိုအနုပညာကို တွေ့နိုင်သည်။ ယင်းသည် အနုပညာလား၊ ပစ္စည်းဥစ္စာကို ထိခိုက်စေခြင်းလားဆိုသော အငြင်းပွားမှုမှာ ဆက်လက်ဖြစ်ပွားနေဆဲ ဖြစ်သည်။ အချို့နိုင်ငံများတွင် နံရံပေါ်၌ ရေးသားခြင်း သို့မဟုတ် ပန်းချီရေးဆွဲခြင်းသည် ရာဇဝတ်မှုဖြစ်သည်။ အခြားနိုင်ငံများတွင် သတ်မှတ်ထားသော နေရာအချို့၌ အနုပညာရှင်များ ရေးဆွဲနိုင်သည်။ ဥပမာ၊ ထိုင်ဝမ်တွင် ထိုအနုပညာကို ရေးဆွဲနိုင်သည့် သတ်မှတ်နေရာများ ရှိသည်။ အချို့က ယင်းသည် မြို့တစ်မြို့အတွက် မရှိမဖြစ်အရာတစ်ခုဟု ဆိုကြသည်။ ထိုအနုပညာမရှိလျှင် ခေတ်မီမြို့တစ်မြို့၏ အလှသည် ပြည့်စုံမည်မဟုတ်ဟု ၎င်းတို့က ဆိုကြသည်။"
+          }
+        ]
+      },
+      "comprehension": {
+        "part_A": {
+          "instructions": "Complete each sentence below with a word or phrase from the reading passage.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "text": "One word in line 1 which means 'of or from a long time ago' is ______.",
+              "answer": "ancient"
+            },
+            {
+              "question_number": 2,
+              "text": "Another name for the early Stone Age is ______.",
+              "answer": "the Palaeolithic Age"
+            },
+            {
+              "question_number": 3,
+              "text": "______ painting uses colours made from pigments with water, egg yolk and glue.",
+              "answer": "Tempera"
+            },
+            {
+              "question_number": 4,
+              "text": "Paintings on the dry plaster of walls are ______.",
+              "answer": "murals"
+            },
+            {
+              "question_number": 5,
+              "text": "The word 'do' in line 18 refers to ______.",
+              "answer": "paint"
+            },
+            {
+              "question_number": 6,
+              "text": "Most paintings that can be ______ on the structures around pagodas are murals.",
+              "answer": "seen"
+            },
+            {
+              "question_number": 7,
+              "text": "______ uses geometric forms and shapes.",
+              "answer": "Cubism"
+            },
+            {
+              "question_number": 8,
+              "text": "The phrase 'these two styles' in line 29 refers to ______.",
+              "answer": "abstract expressionism and cubism"
+            },
+            {
+              "question_number": 9,
+              "text": "Graffiti artists ______ or draw on walls or other surfaces.",
+              "answer": "write"
+            },
+            {
+              "question_number": 10,
+              "text": "We can ______ graffiti art within public view all over the world today.",
+              "answer": "observe"
+            }
+          ]
+        },
+        "part_B": {
+          "instructions": "Give a full-sentence answer to each question below.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "question": "Where were the first paintings found?",
+              "answer": "The first paintings were found deep in the caves of southern Europe."
+            },
+            {
+              "question_number": 2,
+              "question": "What were the tools and weapons of people in the early Stone Age made of?",
+              "answer": "They were made only of stone."
+            },
+            {
+              "question_number": 3,
+              "question": "What do most painters paint for?",
+              "answer": "Most painters paint just for the pleasure of painting."
+            },
+            {
+              "question_number": 4,
+              "question": "What do most mural paintings on the structures around pagodas depict?",
+              "answer": "They depict the many significant events in the life of the Lord Buddha."
+            },
+            {
+              "question_number": 5,
+              "question": "How are geometric forms and shapes in cubism painted?",
+              "answer": "They may overlap and penetrate one another."
+            },
+            {
+              "question_number": 6,
+              "question": "What kind of artistic expression is graffiti?",
+              "answer": "It is writings or drawings made on a wall or any other surface, usually as a form of artistic expression within public view, without permission."
+            },
+            {
+              "question_number": 7,
+              "question": "Where can graffiti be seen?",
+              "answer": "Graffiti art can be observed all over the world today on buildings, post and phone boxes, underground tunnels, buses and on subway cars."
+            },
+            {
+              "question_number": 8,
+              "question": "Do you like paintings that capture the beauty of nature or portraits? Why?",
+              "answer": "I like paintings that capture the beauty of nature because they show the colours of a sunset or a countryside and give me a feeling of peace and happiness."
+            },
+            {
+              "question_number": 9,
+              "question": "Should graffiti artists be allowed to write or draw on walls or surfaces within public view? Why or why not?",
+              "answer": "No, I do not think graffiti artists should paint on walls without permission, because writing or painting on walls is a crime in some countries. Instead, they should use special places such as the graffiti zones in Taiwan."
+            }
+          ]
+        },
+        "part_C": {
+          "instructions": "Complete the following table, using information from the passage. The first one is done for you as an example.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "type": "Water-colour painting",
+              "done_on": "Paper",
+              "paints_used": "Pigments mixed with water"
+            },
+            {
+              "question_number": 2,
+              "type": "Oil painting",
+              "done_on": "Canvas",
+              "paints_used": "Oil colours"
+            },
+            {
+              "question_number": 3,
+              "type": "Tempera painting",
+              "done_on": "Usually on dry walls",
+              "paints_used": "Colours made from pigments mixed with water, egg yolk and glue"
+            },
+            {
+              "question_number": 4,
+              "type": "Mural painting",
+              "done_on": "On the dry plaster of a wall",
+              "paints_used": "Water colour"
+            },
+            {
+              "question_number": 5,
+              "type": "Fresco painting",
+              "done_on": "On the wet plaster of a wall",
+              "paints_used": "Water colour brushed rapidly onto the wet plaster"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson": "4B Vocabulary",
+      "topic": "Words Related to Painting & Prefixes",
+      "part_A": {
+        "instructions": "Complete the pairs of sentences with the correct forms of the words given. Use a dictionary to help you.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "This painting ______ a feeling of happiness. / The painting ______ Cinderella in a pink dress.",
+            "answer": "conveys; portrays"
+          },
+          {
+            "question_number": 2,
+            "text": "Carpenters need many kinds of ______ such as saws, hammers and chisels. / ______ are used to fight or attack or defend yourself when being attacked.",
+            "answer": "tools; Weapons"
+          },
+          {
+            "question_number": 3,
+            "text": "A ______ is used to give colour to paint, ink and plastic. / She used tomatoes and yellow peppers in the salad for ______.",
+            "answer": "pigment; colour"
+          },
+          {
+            "question_number": 4,
+            "text": "The headlights of my car could not ______ the heavy fog. / The petals of flowers like roses and tulips ______.",
+            "answer": "penetrate; overlap"
+          },
+          {
+            "question_number": 5,
+            "text": "We visited the Pindaya Cave to see whether there are cave ______ or not. / She studied the ______ of sculpture at the University of Culture.",
+            "answer": "paintings; art"
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Complete the following tables with the nouns and verbs formed by adding prefixes to the root words.",
+        "nouns": [
+          {
+            "question_number": 1,
+            "prefix": "bi-",
+            "root": "cycle",
+            "noun": "bicycle"
+          },
+          {
+            "question_number": 2,
+            "prefix": "co-",
+            "root": "founder",
+            "noun": "co-founder"
+          },
+          {
+            "question_number": 3,
+            "prefix": "dis-",
+            "root": "advantage",
+            "noun": "disadvantage"
+          },
+          {
+            "question_number": 4,
+            "prefix": "fore-",
+            "root": "head",
+            "noun": "forehead"
+          },
+          {
+            "question_number": 5,
+            "prefix": "non-",
+            "root": "profit",
+            "noun": "non-profit"
+          },
+          {
+            "question_number": 6,
+            "prefix": "over-",
+            "root": "weight",
+            "noun": "overweight"
+          },
+          {
+            "question_number": 7,
+            "prefix": "pre-",
+            "root": "test",
+            "noun": "pre-test"
+          },
+          {
+            "question_number": 8,
+            "prefix": "semi-",
+            "root": "circle",
+            "noun": "semicircle"
+          }
+        ],
+        "verbs": [
+          {
+            "question_number": 1,
+            "prefix": "co-",
+            "root": "teach",
+            "verb": "co-teach"
+          },
+          {
+            "question_number": 2,
+            "prefix": "de-",
+            "root": "compose",
+            "verb": "decompose"
+          },
+          {
+            "question_number": 3,
+            "prefix": "dis-",
+            "root": "appear",
+            "verb": "disappear"
+          },
+          {
+            "question_number": 4,
+            "prefix": "mal-",
+            "root": "practise",
+            "verb": "malpractise"
+          },
+          {
+            "question_number": 5,
+            "prefix": "mis-",
+            "root": "pronounce",
+            "verb": "mispronounce"
+          },
+          {
+            "question_number": 6,
+            "prefix": "over-",
+            "root": "eat",
+            "verb": "overeat"
+          },
+          {
+            "question_number": 7,
+            "prefix": "re-",
+            "root": "arrange",
+            "verb": "rearrange"
+          },
+          {
+            "question_number": 8,
+            "prefix": "pre-",
+            "root": "pack",
+            "verb": "prepack"
+          }
+        ]
+      },
+      "part_C": {
+        "instructions": "Complete the following table with the adjectives formed by adding prefixes to the root words.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "prefix": "bi-",
+            "root": "annual",
+            "adjective": "biannual"
+          },
+          {
+            "question_number": 2,
+            "prefix": "dis-",
+            "root": "honest",
+            "adjective": "dishonest"
+          },
+          {
+            "question_number": 3,
+            "prefix": "il-",
+            "root": "literate",
+            "adjective": "illiterate"
+          },
+          {
+            "question_number": 4,
+            "prefix": "im-",
+            "root": "possible",
+            "adjective": "impossible"
+          },
+          {
+            "question_number": 5,
+            "prefix": "in-",
+            "root": "appropriate",
+            "adjective": "inappropriate"
+          },
+          {
+            "question_number": 6,
+            "prefix": "ir-",
+            "root": "regular",
+            "adjective": "irregular"
+          },
+          {
+            "question_number": 7,
+            "prefix": "over-",
+            "root": "confident",
+            "adjective": "overconfident"
+          },
+          {
+            "question_number": 8,
+            "prefix": "un-",
+            "root": "usual",
+            "adjective": "unusual"
+          }
+        ]
+      },
+      "part_D": {
+        "instructions": "Complete each sentence with the correct form of the word given in brackets by adding the appropriate prefix.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "At one time in many countries, a large percentage of the rural population was ______. (literate)",
+            "answer": "illiterate"
+          },
+          {
+            "question_number": 2,
+            "text": "Currently, she is working in a ______ organisation. (profit)",
+            "answer": "non-profit"
+          },
+          {
+            "question_number": 3,
+            "text": "My name is always ______ by people. It is rather difficult to pronounce. (pronounce)",
+            "answer": "mispronounced"
+          },
+          {
+            "question_number": 4,
+            "text": "A party dress is ______ for formal occasions. (appropriate)",
+            "answer": "inappropriate"
+          },
+          {
+            "question_number": 5,
+            "text": "Nothing is ______ for a willing heart. (possible)",
+            "answer": "impossible"
+          },
+          {
+            "question_number": 6,
+            "text": "One ______ of living in the town is the lack of safe places for the children to play. (advantage)",
+            "answer": "disadvantage"
+          },
+          {
+            "question_number": 7,
+            "text": "It is ______ for Thuta to go to bed early. He usually stays up until midnight. (usual)",
+            "answer": "unusual"
+          },
+          {
+            "question_number": 8,
+            "text": "______ the given words to form grammatical sentences. (arrange)",
+            "answer": "Rearrange"
+          },
+          {
+            "question_number": 9,
+            "text": "I'm ______ by 4 kg according to my doctor. (weight)",
+            "answer": "overweight"
+          },
+          {
+            "question_number": 10,
+            "text": "Personally I trust him, but many people think that he is ______. (honest)",
+            "answer": "dishonest"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": "4C Grammar",
+      "topic": "Participial Phrases, Past Simple & Continuous",
+      "part_A": {
+        "instructions": "Spot the participial phrases in the following sentences and underline them.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "Do you know that man working in our neighbour's garden?",
+            "participial_phrase": "working in our neighbour's garden",
+            "modified_noun": "that man",
+            "answer": "working in our neighbour's garden → modifies \"that man\""
+          },
+          {
+            "question_number": 2,
+            "text": "The children came in making a lot of noise.",
+            "participial_phrase": "making a lot of noise",
+            "modified_noun": "The children",
+            "answer": "making a lot of noise → modifies \"The children\""
+          },
+          {
+            "question_number": 3,
+            "text": "Many of the articles stolen from that store have been recovered.",
+            "participial_phrase": "stolen from that store",
+            "modified_noun": "the articles",
+            "answer": "stolen from that store → modifies \"the articles\""
+          },
+          {
+            "question_number": 4,
+            "text": "The Mona Lisa is one of the paintings done by Leonardo da Vinci.",
+            "participial_phrase": "done by Leonardo da Vinci",
+            "modified_noun": "the paintings",
+            "answer": "done by Leonardo da Vinci → modifies \"the paintings\""
+          },
+          {
+            "question_number": 5,
+            "text": "Watches made in Switzerland are famous all over the world.",
+            "participial_phrase": "made in Switzerland",
+            "modified_noun": "Watches",
+            "answer": "made in Switzerland → modifies \"Watches\""
+          },
+          {
+            "question_number": 6,
+            "text": "Cars manufactured in Japan are good but expensive.",
+            "participial_phrase": "manufactured in Japan",
+            "modified_noun": "Cars",
+            "answer": "manufactured in Japan → modifies \"Cars\""
+          },
+          {
+            "question_number": 7,
+            "text": "That girl talking to our teacher is very brilliant.",
+            "participial_phrase": "talking to our teacher",
+            "modified_noun": "That girl",
+            "answer": "talking to our teacher → modifies \"That girl\""
+          },
+          {
+            "question_number": 8,
+            "text": "Birds such as chickens and ducks bred for eggs and meat are called poultry.",
+            "participial_phrase": "bred for eggs and meat",
+            "modified_noun": "Birds such as chickens and ducks",
+            "answer": "bred for eggs and meat → modifies \"Birds such as chickens and ducks\""
+          },
+          {
+            "question_number": 9,
+            "text": "Decisions made in haste are seldom good.",
+            "participial_phrase": "made in haste",
+            "modified_noun": "Decisions",
+            "answer": "made in haste → modifies \"Decisions\""
+          },
+          {
+            "question_number": 10,
+            "text": "Information gleaned from encyclopaedias is reliable.",
+            "participial_phrase": "gleaned from encyclopaedias",
+            "modified_noun": "Information",
+            "answer": "gleaned from encyclopaedias → modifies \"Information\""
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Choose and tick the appropriate answers for the following sentences.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "I could not eat out with you because I (studied / was studying) for my test.",
+            "answer": "was studying"
+          },
+          {
+            "question_number": 2,
+            "text": "Thida and Nilar (played / were playing) outside in the yard when their parents came home.",
+            "answer": "were playing"
+          },
+          {
+            "question_number": 3,
+            "text": "Yesterday evening, we (did not cook / were not cooking). We ordered fried noodles for dinner.",
+            "answer": "did not cook"
+          },
+          {
+            "question_number": 4,
+            "text": "Last night, while I (watched / was watching) TV, my brother (listened / was listening) to music.",
+            "answer": "was watching; was listening"
+          },
+          {
+            "question_number": 5,
+            "text": "I think you (read / were reading) when I phoned.",
+            "answer": "were reading"
+          },
+          {
+            "question_number": 6,
+            "text": "We (decided / were deciding) not to go out because it (rained / was raining) heavily then.",
+            "answer": "decided; was raining"
+          },
+          {
+            "question_number": 7,
+            "text": "I (looked / was looking) for Yamin, but I (did not see / was not seeing) her anywhere.",
+            "answer": "was looking; did not see"
+          },
+          {
+            "question_number": 8,
+            "text": "The lights (went out / were going out) while I (studied / was studying).",
+            "answer": "went out; was studying"
+          },
+          {
+            "question_number": 9,
+            "text": "When I entered the room, I (found / was finding) that it was empty.",
+            "answer": "found"
+          },
+          {
+            "question_number": 10,
+            "text": "While I (waited / was waiting) for the bus, I (met / was meeting) my childhood friend.",
+            "answer": "was waiting; met"
+          }
+        ]
+      },
+      "part_C": {
+        "instructions": "Put the verbs in the following sentences into the past simple or the past continuous tense, whichever is appropriate.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "They ______ (wait) for the bus when it ______ (start) to rain.",
+            "answer": "were waiting; started"
+          },
+          {
+            "question_number": 2,
+            "text": "He ______ (see) an accident when he ______ (walk) to the library.",
+            "answer": "saw; was walking"
+          },
+          {
+            "question_number": 3,
+            "text": "Her mobile phone ______ (ring) while she ______ (drive) to work.",
+            "answer": "rang; was driving"
+          },
+          {
+            "question_number": 4,
+            "text": "Someone ______ (knock) on the door while I ______ (watch) TV.",
+            "answer": "knocked; was watching"
+          },
+          {
+            "question_number": 5,
+            "text": "The old woman ______ (fall) while she ______ (cross) the road.",
+            "answer": "fell; was crossing"
+          },
+          {
+            "question_number": 6,
+            "text": "My brother ______ (meet) a beautiful girl when he ______ (travel) to Japan.",
+            "answer": "met; was travelling"
+          },
+          {
+            "question_number": 7,
+            "text": "Someone ______ (snatch) my wallet when I ______ (get off) the bus.",
+            "answer": "snatched; was getting off"
+          },
+          {
+            "question_number": 8,
+            "text": "It ______ (rain) when he ______ (wake up) this morning.",
+            "answer": "was raining; woke up"
+          },
+          {
+            "question_number": 9,
+            "text": "I ______ (fall) and ______ (break) my leg while I ______ (cycle).",
+            "answer": "fell; broke; was cycling"
+          },
+          {
+            "question_number": 10,
+            "text": "______ (you drive) ______ when I ______ (phone) you last night?",
+            "answer": "Were you driving; phoned"
+          }
+        ]
+      }
+    }
+  ]
+}

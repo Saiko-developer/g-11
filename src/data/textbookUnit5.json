@@ -1,0 +1,744 @@
+{
+  "unit": "UNIT 5",
+  "unitTitle": "Trains",
+  "lessons": [
+    {
+      "id": "5a-reading",
+      "code": "5A",
+      "type": "Reading",
+      "title": "5A Reading: Trains",
+      "titleMy": "စာဖတ်ခြင်း - ရထားများ",
+      "intro": "Read about the history of trains: steam, electric, diesel, underground, skytrains and bullet trains.",
+      "introMy": "ရထား၏ သမိုင်းအကြောင်း ဖတ်ရှုပါ — ရေနွေးငွေ့၊ လျှပ်စစ်၊ ဒီဇယ်၊ မြေအောက်ရထား၊ ကောင်းကင်ရထားနှင့် အမြန်ကျည်ဆံရထားများအကြောင်း။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What are the three categories of trains?",
+          "suggested_answer": "Surface trains, underground trains and skytrains."
+        },
+        {
+          "id": 2,
+          "question": "Who designed and developed the first steam locomotive, and when?",
+          "suggested_answer": "Richard Trevithick, an engineer and inventor, designed and developed the first steam locomotive in 1804 in England."
+        },
+        {
+          "id": 3,
+          "question": "What is the chief disadvantage of an electric train?",
+          "suggested_answer": "The high cost of infrastructure: overhead lines or third rail, substations, and control systems."
+        },
+        {
+          "id": 4,
+          "question": "In which city was the first underground railway opened, and in which year?",
+          "suggested_answer": "The London Underground was opened in 1863."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Which type of train is fully-automated and driverless?",
+          "answer": "The skytrain."
+        },
+        {
+          "id": 2,
+          "question": "How fast can the Hayabusa (Falcon) bullet train travel today?",
+          "answer": "It can travel 186 miles per hour."
+        }
+      ]
+    },
+    {
+      "id": "5b-vocabulary",
+      "code": "5B",
+      "type": "Vocabulary",
+      "title": "5B Vocabulary: Words from the Text & '-friendly' Adjectives",
+      "titleMy": "ဝေါဟာရ - စာပိုဒ်မှ စကားလုံးများနှင့် '-friendly' နာမဝိသေသနများ",
+      "intro": "Learn the meanings of transport words from the passage and adjectives formed with '-friendly'.",
+      "introMy": "စာပိုဒ်မှ သယ်ယူပို့ဆောင်ရေး ဝေါဟာရများ၏ အဓိပ္ပာယ်နှင့် '-friendly' ဖြင့် ဖွဲ့စည်းထားသော နာမဝိသေသနများကို လေ့လာပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What does 'eco-friendly' mean?",
+          "suggested_answer": "It means not harmful to the environment."
+        },
+        {
+          "id": 2,
+          "question": "What does 'maintenance' mean?",
+          "suggested_answer": "It means keeping something in good condition by repairing it regularly."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What does 'commuter' mean?",
+          "answer": "A person who travels into a city to work each day, usually from quite far away."
+        },
+        {
+          "id": 2,
+          "question": "What does 'congestion' mean?",
+          "answer": "The state of being crowded and full of traffic."
+        }
+      ]
+    },
+    {
+      "id": "5c-grammar",
+      "code": "5C",
+      "type": "Grammar",
+      "title": "5C Grammar: Used to, Present Perfect & Present Perfect Continuous",
+      "titleMy": "သဒ္ဒါ - used to၊ ပစ္စုပ္ပန် ပြီးသား နှင့် ပစ္စုပ္ပန် ပြီးသား ဆက်လက်ဖြစ်ပျက်နေသော ကာလ",
+      "intro": "Practise the past habit form 'used to' and the present perfect and present perfect continuous tenses.",
+      "introMy": "အတိတ်အလေ့အထ ပုံစံ 'used to' နှင့် ပစ္စုပ္ပန် ပြီးသား၊ ပစ္စုပ္ပန် ပြီးသား ဆက်လက်ဖြစ်ပျက်နေသော ကာလများကို လေ့ကျင့်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "When do we use 'used to'?",
+          "suggested_answer": "We use it for things that happened repeatedly or over a long period of time in the past, but are usually not true now."
+        },
+        {
+          "id": 2,
+          "question": "When do we use the present perfect tense?",
+          "suggested_answer": "We use it to speak or write about the completion of an activity, experience, and the continuity of an activity which began sometime in the past but continues up to the present."
+        },
+        {
+          "id": 3,
+          "question": "What is the difference between the present perfect and the present perfect continuous?",
+          "suggested_answer": "We use the present perfect to emphasise the result of an action, and the present perfect continuous to emphasise the duration of an action."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What is the negative form of 'used to'?",
+          "answer": "The negative form is 'didn't use to', for example: She didn't use to wear glasses."
+        },
+        {
+          "id": 2,
+          "question": "Which verbs naturally suggest continuity?",
+          "answer": "Verbs like learn, lie, live, rain, sit, sleep, stand, study, wait, work, etc. naturally suggest continuity."
+        }
+      ]
+    },
+    {
+      "id": "5d-listening-speaking",
+      "code": "5D",
+      "type": "Listening and Speaking",
+      "title": "5D Listening and Speaking: Choosing the Right Form of Transport",
+      "titleMy": "နားထောင်ခြင်းနှင့် ပြောဆိုခြင်း - မှန်ကန်သော သယ်ယူပို့ဆောင်ရေးနည်းလမ်း ရွေးချယ်ခြင်း",
+      "intro": "A. Listen to a travel agent giving advice on how to choose the right form of transport. B. Complete the dialogue. C. In pairs, talk about the trip you went on.",
+      "introMy": "A. မှန်ကန်သော သယ်ယူပို့ဆောင်ရေးနည်းလမ်း ရွေးချယ်နည်းအကြောင်း ခရီးသွားအေးဂျင့်၏ အကြံပေးချက်ကို နားထောင်ပါ။ B. စကားဝိုင်းကို ဖြည့်စွက်ပါ။ C. သင်သွားခဲ့သည့် ခရီးစဉ်အကြောင်း သူငယ်ချင်းနှင့် တွဲဖက် ဆွေးနွေးပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "It is always wise to have a ________ travel plan.",
+          "suggested_answer": "neat"
+        },
+        {
+          "id": 2,
+          "question": "If you plan to see a lot within a short time, a ________ means of transport is suitable.",
+          "suggested_answer": "fast"
+        },
+        {
+          "id": 3,
+          "question": "If you want to ________ your horizons, a slower means of transport is fine.",
+          "suggested_answer": "broaden"
+        },
+        {
+          "id": 4,
+          "question": "How much money you are prepared to spend will help you ________ the type of transport you should take.",
+          "suggested_answer": "decide"
+        },
+        {
+          "id": 5,
+          "question": "With a fat ________ and lots of time, expensive cruise or train trip would suit you.",
+          "suggested_answer": "budget"
+        },
+        {
+          "id": 6,
+          "question": "The more time you have, the ________ your travel can be.",
+          "suggested_answer": "slower"
+        },
+        {
+          "id": 7,
+          "question": "If you plan to visit five cities in Europe in a month, you could save money by taking the coach or renting a ________.",
+          "suggested_answer": "car"
+        },
+        {
+          "id": 8,
+          "question": "If there are going to be kids travelling along with you, their ________ and endurance will need to be considered.",
+          "suggested_answer": "comfort"
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Complete the dialogue: A: (1) ________? Did you have a good time?",
+          "answer": "How was it? (d)"
+        },
+        {
+          "id": 2,
+          "question": "Complete the dialogue: B: (2) ________. Bagan is a great city with many historical landmarks.",
+          "answer": "It was wonderful. (a)"
+        },
+        {
+          "id": 3,
+          "question": "Complete the dialogue: B: We visited many ancient pagodas, the museum and Tharabar Gate. (3) ________!",
+          "answer": "They were really interesting. (c)"
+        },
+        {
+          "id": 4,
+          "question": "Complete the dialogue: A: (4) ________? B: No, it was a budget hotel.",
+          "answer": "Was it expensive? (e)"
+        },
+        {
+          "id": 5,
+          "question": "Complete the dialogue: B: (5) ________! We had not only Myanmar traditional food but also European food, both of which were delicious.",
+          "answer": "The food was great. (b)"
+        },
+        {
+          "id": 6,
+          "question": "In pairs, talk about a trip you went on using all six useful phrases: ‘It was ...’, ‘They were really ...’, ‘How was it?’, ‘Was it ...?’, ‘You could have ...’, and ‘What do you think of ...?’",
+          "answer": "How was it? — It was wonderful. Was it expensive? — No, it was a budget trip. What do you think of the food? — The food was great. They were really interesting places."
+        }
+      ],
+      "transcript": "Unit 5. Trains. People travel for various reasons. Some go on a business trip, some on a pilgrimage, some on vacation, while some others just to do some sightseeing. No matter what your reason is, it is always wise to have a neat travel plan. Here are four travel tips.\n\nTip number one. Purpose. You must be very clear of the purpose of your travel because your purpose will help you decide the right choice of transportation. For example, if you plan to see a lot within a short span of time, then a fast means of transport will suit you. But if your purpose is to broaden your horizons, then a bit slower means of transport should be fine.\n\nTip number two. Budget. How much money are you prepared to spend? This will help you decide the type of transport you should take. For instance, with a small budget and plenty of time, coach should be your choice. On the other hand, with a fat budget and lots of time, an expensive cruise or train trip would certainly suit you.\n\nTip number three. Length of your stay. The more time you have, the slower your travel can be. For instance, if you are visiting Europe and seeing five cities in ten days, high speed trains should be your choice. However, if your plan is to visit those same five cities in a month, then you could save money by taking the coach or renting a car.\n\nTip number four. Travelling companions and luggage. The more companions, the more pieces of luggage you will have. And if there are going to be kids travelling along with you, their comfort and endurance will need to be considered. And this in turn will help you make the right choice of transport. In such a case, a rental car or a caravan should be your choice."
+    },
+    {
+      "id": "5e-writing",
+      "code": "5E",
+      "type": "Writing",
+      "title": "5E Writing: The Means of Transport I Like Most",
+      "titleMy": "စာရေးသားခြင်း - ကျွန်ုပ် အကြိုက်ဆုံး သယ်ယူပို့ဆောင်ရေးနည်းလမ်း",
+      "intro": "Among different means of transport such as car, train, plane, bicycle, motorbike, etc., write a short paragraph on the means of transport you like most, using the points given.",
+      "introMy": "ကား၊ ရထား၊ လေယာဉ်၊ စက်ဘီး၊ ဆိုင်ကယ် စသည့် သယ်ယူပို့ဆောင်ရေးနည်းလမ်းများအနက် ပေးထားသော အချက်များကို အသုံးပြု၍ သင်အကြိုက်ဆုံး သယ်ယူပို့ဆောင်ရေးနည်းလမ်းအကြောင်း စာပိုဒ်တိုတစ်ခု ရေးပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a short paragraph on the means of transport you like most.",
+          "suggested_answer": "In my town, the common means of transport are bicycles, motorbikes, buses and taxis. I like the train very much, but the one I like best is the bicycle. I like the bicycle best because it is cheap and eco-friendly, it keeps me healthy, and I can ride it anywhere without causing traffic congestion. It is also easy to park and it does not need expensive fuel or maintenance."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What is the common means of transport in your village / town / city?",
+          "answer": "In my town, the common means of transport are bicycles, motorbikes, buses and taxis."
+        },
+        {
+          "id": 2,
+          "question": "Why do you like that means of transport best?",
+          "answer": "Because it is cheap and eco-friendly, it keeps me healthy, and it does not cause traffic congestion."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "lesson": "5A Reading",
+      "topic": "Trains",
+      "pre_reading": [
+        {
+          "id": 1,
+          "question": "Have you ever travelled by train? If yes, where did you go?",
+          "suggested_answer": "Yes, I have. I travelled by train from Yangon to Mandalay last year."
+        },
+        {
+          "id": 2,
+          "question": "What do you think trains in the old days were powered by?",
+          "suggested_answer": "I think trains in the old days were powered by steam."
+        },
+        {
+          "id": 3,
+          "question": "Do you think a train can travel as fast as a bullet?",
+          "suggested_answer": "I do not think a train can travel as fast as a bullet, but high-speed bullet trains are very fast — the Hayabusa bullet train can travel 186 miles per hour."
+        }
+      ],
+      "reading_passage": {
+        "title": "5A Reading: Trains",
+        "paragraphs": [
+          {
+            "paragraph_id": 1,
+            "lines": "1-4",
+            "english_text": "We use many means of transport such as planes, ships, trains, cars, etc. The train which was invented in the nineteenth century is still widely used today. Starting from its time of invention, trains can be categorized into three: surface trains, underground trains and skytrains. These trains are powered by steam, electricity and diesel.",
+            "burmese_explanation": "ကျွန်ုပ်တို့သည် လေယာဉ်၊ သင်္ဘော၊ ရထား၊ ကား စသည့် သယ်ယူပို့ဆောင်ရေးနည်းလမ်း အများအပြားကို အသုံးပြုကြသည်။ ဆယ့်ကိုးရာစုတွင် တီထွင်ခဲ့သော ရထားကို ယနေ့အထိ ကျယ်ကျယ်ပြန့်ပြန့် အသုံးပြုနေဆဲ ဖြစ်သည်။ ရထားများကို ပြေးဆွဲသည့်နေရာအလိုက် မြေပြင်ပေါ်ပြေးဆွဲသောရထား၊ မြေအောက်ရထားနှင့် မြေပြင်အထက်တွင် ပြေးဆွဲသောရထား ဟူ၍ သုံးမျိုး ခွဲခြားနိုင်သည်။ ဤရထားများကို ရေနွေးငွေ့၊ လျှပ်စစ်နှင့် ဒီဇယ်တို့ဖြင့် မောင်းနှင်ကြသည်။"
+          },
+          {
+            "paragraph_id": 2,
+            "lines": "5-13",
+            "english_text": "In the year 1804 in England, Richard Trevithick, an engineer and inventor, designed and developed the first steam locomotive, the engine that pulls the train, to be used to transport coal or minerals. His engine hauled 10 tons of iron and 70 men for ten miles at a speed of five miles per hour. In 1829, George Stephenson, a British engineer, developed the steam-powered locomotive to haul, for the first time, passengers and freight from Liverpool to Manchester. Steam locomotives, or railway engines, were used until about 1940.",
+            "burmese_explanation": "အင်္ဂလန်နိုင်ငံ၌ ၁၈၀၄ ခုနှစ်တွင် အင်ဂျင်နီယာနှင့် တီထွင်သူ Richard Trevithick သည် ကျောက်မီးသွေး သို့မဟုတ် တွင်းထွက်ပစ္စည်းများကို သယ်ယူရန် အသုံးပြုသည့် ပထမဆုံး ရေနွေးငွေ့ရထားစက်ခေါင်းကို ဒီဇိုင်းဆွဲတီထွင်ခဲ့သည်။ သူ၏စက်ခေါင်းသည် သံ ၁၀ တန်နှင့် လူ ၇၀ ကို တစ်နာရီလျှင် ငါးမိုင်နှုန်းဖြင့် ဆယ်မိုင်အကွာအဝေးအထိ ဆွဲယူနိုင်ခဲ့သည်။ ၁၈၂၉ ခုနှစ်တွင် ဗြိတိသျှအင်ဂျင်နီယာ George Stephenson သည် ခရီးသည်များနှင့် ကုန်ပစ္စည်းများကို Liverpool မှ Manchester သို့ ပထမဆုံးအကြိမ် သယ်ယူရန် ရေနွေးငွေ့ဖြင့်မောင်းနှင်သော စက်ခေါင်းကို တီထွင်ခဲ့သည်။ ရေနွေးငွေ့စက်ခေါင်းများကို ၁၉၄၀ ပြည့်နှစ်ခန့်အထိ အသုံးပြုခဲ့ကြသည်။"
+          },
+          {
+            "paragraph_id": 3,
+            "lines": "14-22",
+            "english_text": "Electric trains are powered by electricity from overhead lines, a third rail or on-board energy storage like a battery. They are used on freight routes or in areas with advanced rail networks, and they are ideal for commuter rail service with frequent stops. The locomotive of the first known electric train was built in 1837 by Robert Davidson of Aberdeen, and it was powered by galvanic cells (batteries). The chief disadvantage of an electric train is the high cost of infrastructure: overhead lines or third rail, substations, and control systems.",
+            "burmese_explanation": "လျှပ်စစ်ရထားများသည် မျက်နှာကျက်အထက်ရှိ လျှပ်စစ်ကြိုးများ၊ လမ်းဘေးတတိယရထားလမ်း သို့မဟုတ် ဘက်ထရီကဲ့သို့ ရထားပေါ်တွင်တပ်ဆင်ထားသည့် စွမ်းအင်သိုလှောင်ကိရိယာများမှ လျှပ်စစ်ဓာတ်အားကို ရယူ၍ မောင်းနှင်ကြသည်။ ၎င်းတို့ကို ကုန်စည်သယ်ယူသည့်လမ်းကြောင်းများ သို့မဟုတ် အဆင့်မြင့်ရထားကွန်ရက်ရှိသော ဒေသများတွင် အသုံးပြုကြပြီး မကြာခဏရပ်နားရသော မြို့ပတ်ရထားဝန်ဆောင်မှုများအတွက် အသင့်တော်ဆုံး ဖြစ်သည်။ ပထမဆုံးလူသိများသော လျှပ်စစ်ရထားစက်ခေါင်းကို Aberdeen မှ Robert Davidson က ၁၈၃၇ ခုနှစ်တွင် တည်ဆောက်ခဲ့ပြီး ဘက်ထရီဆဲလ်များဖြင့် မောင်းနှင်ခဲ့သည်။ လျှပ်စစ်ရထား၏ အဓိကအားနည်းချက်မှာ လျှပ်စစ်ကြိုးများ၊ တတိယရထားလမ်း၊ လျှပ်စစ်အားပြောင်းစက်များနှင့် ထိန်းချုပ်စနစ်များအပါအဝင် အခြေခံအဆောက်အအုံတည်ဆောက်စရိတ် မြင့်မားခြင်း ဖြစ်သည်။"
+          },
+          {
+            "paragraph_id": 4,
+            "lines": "24-33",
+            "english_text": "In 1860, work on the first Underground began in England. The London Underground was constructed as a response to the city's rapid growth. The first underground railway on which carriages were pulled by steam engine was opened in 1863. Steam engine trains retained their importance in transportation until about 1896, when electric-powered locomotives were used for the subway. Many cities in the world have underground railway nowadays, as underground trains are more convenient, cheaper and quicker for commuters. Underground trains are commonly used in New York, Mexico City, Paris, Madrid, Shanghai, Beijing, Guangzhou, Nanjing, Seoul, Moscow, Hong Kong, Tokyo, and Singapore.",
+            "burmese_explanation": "၁၈၆၀ ခုနှစ်တွင် အင်္ဂလန်နိုင်ငံ၌ ပထမဆုံး မြေအောက်ရထားအတွက် လုပ်ငန်းများ စတင်ခဲ့သည်။ London Underground ကို မြို့တော်၏ လျင်မြန်သော ကြီးထွားမှုကို တုံ့ပြန်ရန် တည်ဆောက်ခဲ့ခြင်း ဖြစ်သည်။ ရေနွေးငွေ့အင်ဂျင်ဖြင့် ခရီးသည်တွဲများကို ဆွဲယူသော ပထမဆုံး မြေအောက်ရထားလမ်းကို ၁၈၆၃ ခုနှစ်တွင် ဖွင့်လှစ်ခဲ့သည်။ ရေနွေးငွေ့အင်ဂျင်ရထားများသည် မြေအောက်ရထားအတွက် လျှပ်စစ်ဖြင့် မောင်းနှင်သော စက်ခေါင်းများကို အသုံးပြုသည့် ၁၈၉၆ ခုနှစ်ခန့်အထိ သယ်ယူပို့ဆောင်ရေးတွင် ၎င်းတို့၏ အရေးပါမှုကို ဆက်လက် ထိန်းသိမ်းခဲ့သည်။ မြေအောက်ရထားများသည် ခရီးသည်များအတွက် ပိုမို အဆင်ပြေ၊ စျေးသက်သာပြီး မြန်ဆန်သောကြောင့် ယနေ့ခေတ်တွင် ကမ္ဘာ့မြို့ကြီးများစွာ၌ မြေအောက်ရထားလမ်းများ ရှိကြသည်။ နယူးယောက်၊ မက္ကဆီကိုစီးတီး၊ ပါရီ၊ မက်ဒရစ်၊ ရှန်ဟိုင်း၊ ဘေဂျင်း၊ ကွမ်ကျိုး၊ နန်ကျင်း၊ ဆိုးလ်၊ မော်စကို၊ ဟောင်ကောင်နှင့် စင်ကာပူတို့တွင် မြေအောက်ရထားများကို အများအားဖြင့် အသုံးပြုကြသည်။"
+          },
+          {
+            "paragraph_id": 5,
+            "lines": "34-38",
+            "english_text": "It was only in the 20th century that surface trains with diesel-electric locomotives, known popularly as diesels, came into use. These diesel trains offered greater flexibility and performance than steam trains, as well as substantially lower operating and maintenance costs. After the Second World War, turbine electric locomotives were developed, but they were found to be uneconomical and were not used or developed further.",
+            "burmese_explanation": "ဒီဇယ်ဟု လူသိများသော ဒီဇယ်-လျှပ်စစ် စက်ခေါင်းများပါရှိသည့် မြေပြင်ရထားများကို ၂၀ ရာစုတွင်မှ စတင် အသုံးပြုလာခဲ့သည်။ ဤဒီဇယ်ရထားများသည် ရေနွေးငွေ့ရထားများထက် ပိုမို ပြောင်းလွယ်ပြင်လွယ်ရှိပြီး စွမ်းဆောင်ရည် ပိုကောင်းကာ လည်ပတ်မှုနှင့် ပြုပြင်ထိန်းသိမ်းမှု ကုန်ကျစရိတ်လည်း သိသိသာသာ သက်သာသည်။ ဒုတိယကမ္ဘာစစ်အပြီးတွင် တာဘိုင်လျှပ်စစ် စက်ခေါင်းများကို တီထွင်ခဲ့သော်လည်း ၎င်းတို့သည် စီးပွားရေးအရ မအကျိုးရှိကြောင်း တွေ့ရှိရသဖြင့် ထပ်မံ အသုံးပြုခြင်း သို့မဟုတ် တီထွင်ခြင်း မပြုတော့ပေ။"
+          },
+          {
+            "paragraph_id": 6,
+            "lines": "39-45",
+            "english_text": "Among the different types of train, the skytrain runs above the surface. It is a fully-automated, driverless, rapid transit system in the world. The skytrain system is a quality rapid transit system that is fully separated from vehicle traffic, and is an alternative for people to avoid being stuck in congestion. The Light Rapid Transit SkyTrain was opened in January 1986, in Vancouver, British Columbia, Canada. Skytrains can be seen in the USA, Germany, Japan, China, Australia, and South Africa. In Thailand, skytrains started operating in 1999.",
+            "burmese_explanation": "ရထားအမျိုးအစားများအနက် ကောင်းကင်ရထား (skytrain) သည် မြေပြင်အထက်တွင် ပြေးဆွဲသည်။ ၎င်းသည် အပြည့်အဝ အလိုအလျောက်၊ ယာဉ်မောင်းမလိုသော မြန်ဆန်သည့် ကူးသန်းသွားလာရေးစနစ် ဖြစ်သည်။ ကောင်းကင်ရထားစနစ်သည် ယာဉ်ကြောပိတ်ဆို့မှုမှ အပြည့်အဝ ခွဲထွက်ထားသော အရည်အသွေးရှိသည့် မြန်ဆန်သော ကူးသန်းသွားလာရေးစနစ် ဖြစ်ပြီး ယာဉ်ကြောပိတ်ဆို့မှုတွင် ရစ်ပတ်နေရခြင်းမှ ရှောင်ရှားရန် လူများအတွက် အခြားရွေးချယ်စရာ တစ်ခု ဖြစ်သည်။ Light Rapid Transit SkyTrain ကို ကနေဒါနိုင်ငံ၊ British Columbia ပြည်နယ်၊ Vancouver မြို့တွင် ၁၉၈၆ ခုနှစ် ဇန်နဝါရီလ၌ ဖွင့်လှစ်ခဲ့သည်။ အမေရိကန်၊ ဂျာမနီ၊ ဂျပန်၊ တရုတ်၊ ဩစတြေးလျနှင့် တောင်အာဖရိကတို့တွင် ကောင်းကင်ရထားများကို တွေ့မြင်နိုင်သည်။ ထိုင်းနိုင်ငံတွင် ကောင်းကင်ရထားများသည် ၁၉၉၉ ခုနှစ်၌ စတင် ပြေးဆွဲခဲ့သည်။"
+          },
+          {
+            "paragraph_id": 7,
+            "lines": "47-53",
+            "english_text": "Today, high-speed bullet trains are becoming popular and common. The first bullet train in Japan travelled 130 miles per hour. Today the Hayabusa (Falcon) bullet train can travel 186 miles per hour. Bullet trains are now quite common in France, Germany, Belgium, Italy, the Netherlands, Spain, Saudi Arabia, South Korea, China, and Japan.",
+            "burmese_explanation": "ယနေ့ခေတ်တွင် အမြန်နှုန်းမြင့် ကျည်ဆံရထားများသည် ရေပန်းစားပြီး အသုံးများလာနေသည်။ ဂျပန်နိုင်ငံရှိ ပထမဆုံး ကျည်ဆံရထားသည် တစ်နာရီ မိုင် ၁၃၀ နှုန်းဖြင့် သွားခဲ့သည်။ ယနေ့တွင် Hayabusa (သိမ်းငှက်) ကျည်ဆံရထားသည် တစ်နာရီ မိုင် ၁၈၆ နှုန်းဖြင့် သွားနိုင်သည်။ ပြင်သစ်၊ ဂျာမနီ၊ ဘယ်လ်ဂျီယံ၊ အီတလီ၊ နယ်သာလန်၊ စပိန်၊ ဆော်ဒီအာရေဗျ၊ တောင်ကိုရီးယား၊ တရုတ်နှင့် ဂျပန်တို့တွင် ကျည်ဆံရထားများသည် ယခုအခါ အတော်လေး အသုံးများလာပြီ ဖြစ်သည်။"
+          },
+          {
+            "paragraph_id": 8,
+            "lines": "54-57",
+            "english_text": "The invention of the train is a significant milestone in the history of human development. Trains are very eco-friendly, and though bullet trains are expensive to produce and maintain, they are still an important system of transport in many countries of the world.",
+            "burmese_explanation": "ရထားတီထွင်မှုသည် လူသားတို့၏ ဖွံ့ဖြိုးတိုးတက်မှုသမိုင်းတွင် အရေးပါသော မှတ်တိုင်တစ်ခု ဖြစ်သည်။ ရထားများသည် သဘာဝပတ်ဝန်းကျင်ကို အလွန်မထိခိုက်စေဘဲ ပြေးဆွဲနိုင်ပြီး ကျည်ဆံရထားများကို ထုတ်လုပ်ရန်နှင့် ပြုပြင်ထိန်းသိမ်းရန် စရိတ်ကြီးသော်လည်း ကမ္ဘာ့နိုင်ငံများစွာတွင် အရေးပါသော သယ်ယူပို့ဆောင်ရေးစနစ်များအဖြစ် ရှိနေဆဲ ဖြစ်သည်။"
+          }
+        ]
+      },
+      "comprehension": {
+        "part_A": {
+          "instructions": "Complete each sentence below with a word or phrase from the reading passage.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "text": "Among the different means of transport, one that is widely used today is ________.",
+              "answer": "the train"
+            },
+            {
+              "question_number": 2,
+              "text": "The first steam locomotive was used to carry ________.",
+              "answer": "coal or minerals"
+            },
+            {
+              "question_number": 3,
+              "text": "________ built the first electric locomotive only in 1837.",
+              "answer": "Robert Davidson of Aberdeen"
+            },
+            {
+              "question_number": 4,
+              "text": "People started using diesel-electric locomotives only in ________.",
+              "answer": "the 20th century"
+            },
+            {
+              "question_number": 5,
+              "text": "The skytrain system started operating in ________, our neighbouring country, in 1999.",
+              "answer": "Thailand"
+            }
+          ]
+        },
+        "part_B": {
+          "instructions": "Give a short answer to each question below.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "question": "How many types of train in general have been invented? What are they?",
+              "answer": "Three types have been invented: surface trains, underground trains and skytrains."
+            },
+            {
+              "question_number": 2,
+              "question": "Who developed the first steam engine and when?",
+              "answer": "Richard Trevithick, an engineer and inventor, developed the first steam locomotive in 1804."
+            },
+            {
+              "question_number": 3,
+              "question": "What was the first electric train built in 1837 powered by?",
+              "answer": "It was powered by galvanic cells (batteries)."
+            },
+            {
+              "question_number": 4,
+              "question": "What is the greatest disadvantage of an electric train?",
+              "answer": "The high cost of infrastructure: overhead lines or third rail, substations, and control systems."
+            },
+            {
+              "question_number": 5,
+              "question": "Until when did steam engine trains remain important?",
+              "answer": "They remained important until about 1896, when electric-powered locomotives were used for the subway."
+            }
+          ]
+        },
+        "part_C": {
+          "instructions": "Give complete answers to the following questions.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "question": "What does the word 'its' in line 3 refer to?",
+              "answer": "It refers to the train's (time of invention)."
+            },
+            {
+              "question_number": 2,
+              "question": "What does the word 'They' in line 14 refer to?",
+              "answer": "It refers to electric trains."
+            },
+            {
+              "question_number": 3,
+              "question": "What type of locomotive is not used or developed anymore? Why?",
+              "answer": "Turbine electric locomotives are not used or developed anymore, because they were found to be uneconomical."
+            },
+            {
+              "question_number": 4,
+              "question": "What is a skytrain?",
+              "answer": "It is a fully-automated, driverless, rapid transit system that runs above the surface and is fully separated from vehicle traffic."
+            },
+            {
+              "question_number": 5,
+              "question": "What does the word 'that' in line 41 refer to?",
+              "answer": "It refers to the skytrain system."
+            },
+            {
+              "question_number": 6,
+              "question": "Why are skytrains used in many countries?",
+              "answer": "Because they are fully separated from vehicle traffic, so people can avoid being stuck in congestion."
+            },
+            {
+              "question_number": 7,
+              "question": "What are the fastest trains at present? How fast can they travel?",
+              "answer": "High-speed bullet trains are the fastest. The first bullet train travelled 130 miles per hour, and today the Hayabusa (Falcon) bullet train can travel 186 miles per hour."
+            },
+            {
+              "question_number": 8,
+              "question": "Why are trains still an important means of transport in the world?",
+              "answer": "Because trains are very eco-friendly, and they are still an important system of transport in many countries of the world."
+            },
+            {
+              "question_number": 9,
+              "question": "Do you like travelling by train? Why or why not?",
+              "answer": "Yes, I like travelling by train because it is convenient, cheaper and eco-friendly, and I can enjoy the scenery along the way."
+            },
+            {
+              "question_number": 10,
+              "question": "If you could travel to a distant town by plane or train, which form of transport will you choose? Why?",
+              "answer": "I would choose the train, because it is cheaper and more eco-friendly than the plane, and I can enjoy the countryside on the way."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson": "5B Vocabulary",
+      "topic": "Words from the Text & '-friendly' Adjectives",
+      "part_A": {
+        "instructions": "Study the meanings of the following words. Then fill each blank with the correct form of the word from the table.",
+        "words": [
+          {
+            "number": 1,
+            "word": "categorize",
+            "letter": "a",
+            "meaning": "put things into groups according to what type they are"
+          },
+          {
+            "number": 2,
+            "word": "commuter",
+            "letter": "b",
+            "meaning": "a person who travels into a city to work each day, usually from quite far away"
+          },
+          {
+            "number": 3,
+            "word": "convenient",
+            "letter": "c",
+            "meaning": "easy to get to"
+          },
+          {
+            "number": 4,
+            "word": "congestion",
+            "letter": "d",
+            "meaning": "the state of being crowded and full of traffic"
+          },
+          {
+            "number": 5,
+            "word": "eco-friendly",
+            "letter": "e",
+            "meaning": "not harmful to the environment"
+          },
+          {
+            "number": 6,
+            "word": "flexibility",
+            "letter": "f",
+            "meaning": "being able to change to new conditions or situations"
+          },
+          {
+            "number": 7,
+            "word": "ideal",
+            "letter": "g",
+            "meaning": "perfect, most suitable"
+          },
+          {
+            "number": 8,
+            "word": "maintenance",
+            "letter": "h",
+            "meaning": "keeping something in good condition by repairing it regularly"
+          },
+          {
+            "number": 9,
+            "word": "retain",
+            "letter": "i",
+            "meaning": "keep something"
+          },
+          {
+            "number": 10,
+            "word": "significant",
+            "letter": "j",
+            "meaning": "important enough to have an effect"
+          }
+        ],
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "The skytrain is the most ________ form of transport for those living in urban areas.",
+            "answer": "convenient"
+          },
+          {
+            "question_number": 2,
+            "text": "The teachers were pleased to note the ________ improvements of their students.",
+            "answer": "significant"
+          },
+          {
+            "question_number": 3,
+            "text": "Before buying a house, one should consider its future possible ________ cost.",
+            "answer": "maintenance"
+          },
+          {
+            "question_number": 4,
+            "text": "The researcher is going to ________ the newly found birds according to their species.",
+            "answer": "categorize"
+          },
+          {
+            "question_number": 5,
+            "text": "As more and more people live outside the city, there are more ________ working in downtown areas.",
+            "answer": "commuters"
+          },
+          {
+            "question_number": 6,
+            "text": "Although we left home earlier, we were late for the meeting because of the traffic ________.",
+            "answer": "congestion"
+          },
+          {
+            "question_number": 7,
+            "text": "Horse-carts were the ________ transport in many countries before the invention of trains.",
+            "answer": "ideal"
+          },
+          {
+            "question_number": 8,
+            "text": "Plastic bags are not ________ because using a lot of them can harm the environment.",
+            "answer": "eco-friendly"
+          },
+          {
+            "question_number": 9,
+            "text": "More and more people in Europe travel by the Euro Train because of the ________ of its schedule.",
+            "answer": "flexibility"
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Match the expressions (1-5) with their meanings (a-e) and complete each sentence below with a suitable expression from the table.",
+        "column_b": [
+          {
+            "letter": "a",
+            "text": "acting in the interests of the 'whole' child which includes his or her health, nutrition and overall well-being"
+          },
+          {
+            "letter": "b",
+            "text": "not containing substances that are destructive to the ozone layer"
+          },
+          {
+            "letter": "c",
+            "text": "friendly to guests; hospitable; welcoming"
+          },
+          {
+            "letter": "d",
+            "text": "easy to use or understand"
+          },
+          {
+            "letter": "e",
+            "text": "not harmful to the natural environment"
+          }
+        ],
+        "matches": [
+          {
+            "question_number": 1,
+            "text": "eco-friendly",
+            "answer": "e",
+            "answer_text": "not harmful to the natural environment"
+          },
+          {
+            "question_number": 2,
+            "text": "user-friendly",
+            "answer": "d",
+            "answer_text": "easy to use or understand"
+          },
+          {
+            "question_number": 3,
+            "text": "child-friendly",
+            "answer": "a",
+            "answer_text": "acting in the interests of the 'whole' child which includes his or her health, nutrition and overall well-being"
+          },
+          {
+            "question_number": 4,
+            "text": "ozone-friendly",
+            "answer": "b",
+            "answer_text": "not containing substances that are destructive to the ozone layer"
+          },
+          {
+            "question_number": 5,
+            "text": "guest-friendly",
+            "answer": "c",
+            "answer_text": "friendly to guests; hospitable; welcoming"
+          }
+        ],
+        "sentences": [
+          {
+            "question_number": 6,
+            "text": "Dictionaries should be as ________ as possible.",
+            "answer": "user-friendly",
+            "letter": "d"
+          },
+          {
+            "question_number": 7,
+            "text": "Our products are packed in ________ paper bags.",
+            "answer": "ozone-friendly",
+            "letter": "b"
+          },
+          {
+            "question_number": 8,
+            "text": "The facilities in this hotel are ________. I do not have any difficulty using them.",
+            "answer": "guest-friendly",
+            "letter": "c"
+          },
+          {
+            "question_number": 9,
+            "text": "This car was designed to be ________ by using an electric engine.",
+            "answer": "eco-friendly",
+            "letter": "e"
+          },
+          {
+            "question_number": 10,
+            "text": "Schools must be as ________ as possible so that children will be happy and healthy.",
+            "answer": "child-friendly",
+            "letter": "a"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": "5C Grammar",
+      "topic": "Used to, Present Perfect & Present Perfect Continuous",
+      "part_A": {
+        "instructions": "Rewrite the following sentences with the correct form of 'used to'.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "She (not like) vegetables when she was a child.",
+            "answer": "She didn't use to like vegetables when she was a child."
+          },
+          {
+            "question_number": 2,
+            "text": "We can't believe she has failed the exam. She (work) hard.",
+            "answer": "We can't believe she has failed the exam. She used to work hard."
+          },
+          {
+            "question_number": 3,
+            "text": "Su Su (not like) Maths. She was really bad at it.",
+            "answer": "Su Su didn't use to like Maths. She was really bad at it."
+          },
+          {
+            "question_number": 4,
+            "text": "What (you, do) in the summer when you lived in the country?",
+            "answer": "What did you use to do in the summer when you lived in the country?"
+          },
+          {
+            "question_number": 5,
+            "text": "Zaw Zaw (not eat) carrots, but now, he eats it.",
+            "answer": "Zaw Zaw didn't use to eat carrots, but now, he eats it."
+          },
+          {
+            "question_number": 6,
+            "text": "(You, play) tennis when you were at school?",
+            "answer": "Did you use to play tennis when you were at school?"
+          },
+          {
+            "question_number": 7,
+            "text": "Myintzu (like) chocolate, but now she does not like it.",
+            "answer": "Myintzu used to like chocolate, but now she does not like it."
+          },
+          {
+            "question_number": 8,
+            "text": "We (live) in a flat when we were young.",
+            "answer": "We used to live in a flat when we were young."
+          },
+          {
+            "question_number": 9,
+            "text": "My aunt (speak) Spanish, but she has forgotten it all.",
+            "answer": "My aunt used to speak Spanish, but she has forgotten it all."
+          },
+          {
+            "question_number": 10,
+            "text": "They (go) to the beach every summer when they were young?",
+            "answer": "Did they use to go to the beach every summer when they were young?"
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Supply the present perfect or the present perfect continuous form (whichever is appropriate) of the word given in brackets.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "I'm not hungry. I (have) my lunch already.",
+            "answer": "have had"
+          },
+          {
+            "question_number": 2,
+            "text": "Nyi Nyi doesn't want to go to Bago. He (be) there twice already.",
+            "answer": "has been"
+          },
+          {
+            "question_number": 3,
+            "text": "Soe Soe (study) Japanese for two years but she hasn't mastered it yet.",
+            "answer": "has been studying"
+          },
+          {
+            "question_number": 4,
+            "text": "How long (the children, sleep)?",
+            "answer": "have the children been sleeping"
+          },
+          {
+            "question_number": 5,
+            "text": "Till now we (not receive) any message from Dar Dar.",
+            "answer": "have not received"
+          },
+          {
+            "question_number": 6,
+            "text": "We (build) this garage ourselves and hope to finish it within the next two days.",
+            "answer": "have been building"
+          },
+          {
+            "question_number": 7,
+            "text": "Hurry! Your school bus (arrive).",
+            "answer": "has arrived"
+          },
+          {
+            "question_number": 8,
+            "text": "I think someone (take) my umbrella by mistake.",
+            "answer": "has taken"
+          },
+          {
+            "question_number": 9,
+            "text": "Ko Lay (paint) his room and it will look good when it is finished.",
+            "answer": "has been painting"
+          },
+          {
+            "question_number": 10,
+            "text": "My favourite actor (not win) any academy award till now.",
+            "answer": "has not won"
+          }
+        ]
+      }
+    }
+  ]
+}

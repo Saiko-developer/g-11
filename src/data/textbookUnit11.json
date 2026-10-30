@@ -1,0 +1,1028 @@
+{
+  "unit": "UNIT 11",
+  "unitTitle": "THANAKHA",
+  "lessons": [
+    {
+      "id": "11a-reading",
+      "code": "11A",
+      "type": "Reading",
+      "title": "11A Reading: Thanakha",
+      "titleMy": "စာဖတ်ခြင်း - သနပ်ခါး",
+      "intro": "Read the passage about thanakha and answer the comprehension questions. Learn what thanakha is, how it is used, its different forms, and its future.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Why are there more choices of beauty products today than in the past?",
+          "suggested_answer": "Because the beauty industry is booming and new products and brands are being created every day."
+        },
+        {
+          "id": 2,
+          "question": "How is thanakha mainly used in other countries and in Myanmar?",
+          "suggested_answer": "In other countries, thanakha is used mostly for medicinal purposes; in Myanmar, it is used mainly as a cosmetic."
+        },
+        {
+          "id": 3,
+          "question": "For what purpose do beauty conscious ladies apply thanakha to their faces?",
+          "suggested_answer": "They apply it to somewhat cover pimples and acne; it also keeps them sweet-scented, cool and fresh."
+        },
+        {
+          "id": 4,
+          "question": "At what age do pimples appear on the faces of boys?",
+          "suggested_answer": "They begin to appear when boys are teenagers."
+        },
+        {
+          "id": 5,
+          "question": "What protects people who have to toil in the sun from sunburn?",
+          "suggested_answer": "A thick layer of thanakha serves as a sun block, protecting their faces and limbs from sunburn."
+        },
+        {
+          "id": 6,
+          "question": "Why are the roots of thanakha trees valuable to the medical man?",
+          "suggested_answer": "They are valuable because they form important ingredients in some medicines."
+        },
+        {
+          "id": 7,
+          "question": "In what forms is thanakha available?",
+          "suggested_answer": "It is available as pieces from slender branches to huge trunks, and as small cakes, creams, lotions and powders; paste with flower and fruit fragrances is also available."
+        },
+        {
+          "id": 8,
+          "question": "Why do many Myanmar ladies still rely on thanakha?",
+          "suggested_answer": "They still rely on it for their beauty and comfort."
+        },
+        {
+          "id": 9,
+          "question": "Do you like to apply thanakha to your face? Why or why not?",
+          "suggested_answer": "Sample answer: Yes, I like to apply thanakha because it helps keep my face cool and fresh."
+        },
+        {
+          "id": 10,
+          "question": "Do you think the use of thanakha as a cosmetic will be more popular or less popular in the future? Why?",
+          "suggested_answer": "Sample answer: It may remain popular because many people still rely on it for beauty and comfort, and it is being exported and promoted abroad."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What are the topics matched with paragraphs 1–5?",
+          "answer": "1-d, 2-b, 3-a, 4-e, 5-c."
+        },
+        {
+          "id": 2,
+          "question": "How is thanakha prepared according to paragraph 3?",
+          "answer": "The paste is obtained by grinding the bark of the thanakha tree with a bit of water on a kyauk pyin, a piece of flat stone."
+        }
+      ]
+    },
+    {
+      "id": "11b-vocabulary",
+      "code": "11B",
+      "type": "Vocabulary",
+      "title": "11B Vocabulary: Suffixes and Collocations",
+      "titleMy": "ဝေါဟာရ - Suffixes နှင့် Collocations",
+      "intro": "Study noun-forming and verb-forming suffixes, complete the word-formation exercises, and practise collocations.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is a suffix?",
+          "suggested_answer": "A suffix is a letter or a group of letters that is added to the end of a word."
+        },
+        {
+          "id": 2,
+          "question": "What happens when a suffix is added to a word?",
+          "suggested_answer": "Adding a suffix to a word changes its meaning or forms a different word."
+        },
+        {
+          "id": 3,
+          "question": "What are collocations?",
+          "suggested_answer": "Collocations are groups of two or more words that usually go together."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Give examples of noun-forming suffixes.",
+          "answer": "-al, -ance, -dom, -ence, -er, -or, -ion, -ist, -ment and -ness."
+        },
+        {
+          "id": 2,
+          "question": "Give examples of verb-forming suffixes.",
+          "answer": "-ate, -en, -ize and -ify."
+        }
+      ]
+    },
+    {
+      "id": "11c-grammar",
+      "code": "11C",
+      "type": "Grammar",
+      "title": "11C Grammar: Relative Pronouns: 'who', 'whom' and 'whose'",
+      "titleMy": "သဒ္ဒါ - Relative Pronouns: who, whom နှင့် whose",
+      "intro": "Study who, whom and whose, then complete the exercises by choosing the appropriate relative pronoun and combining sentences.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "When do we use who?",
+          "suggested_answer": "We use who to refer to people."
+        },
+        {
+          "id": 2,
+          "question": "When do we use whom?",
+          "suggested_answer": "We use whom to refer to people when the person is the object of the verb."
+        },
+        {
+          "id": 3,
+          "question": "When do we use whose?",
+          "suggested_answer": "We use whose to refer to possession of people and animals."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Complete: The prize will go to the student, ________ story is the most interesting.",
+          "answer": "whose"
+        },
+        {
+          "id": 2,
+          "question": "Complete: He got married to the girl, ________ he met in university.",
+          "answer": "whom"
+        }
+      ]
+    },
+    {
+      "id": "11d-listening-speaking",
+      "code": "11D",
+      "type": "Listening and Speaking",
+      "title": "11D Listening and Speaking: Thanakha and Making Suggestions",
+      "titleMy": "နားထောင်ခြင်းနှင့် ပြောဆိုခြင်း - သနပ်ခါးနှင့် အကြံပြုချက်များ",
+      "intro": "Listen to the dialogue between Mary, an Australian visitor, and her friend Sandar at Baho Market in Shwebo, fill in the blanks, then practise making and responding to suggestions.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What does Mary ask Sandar about at the beginning of the dialogue?",
+          "suggested_answer": "She asks whether she may ask a question about Myanmar customs and practices."
+        },
+        {
+          "id": 2,
+          "question": "Why does Mary think Myanmar people paint their faces yellow?",
+          "suggested_answer": "She sees children, men and women of all ages with yellow paint on their cheeks and foreheads, so she wonders who they are trying to hide from."
+        },
+        {
+          "id": 3,
+          "question": "How is thanakha paste made?",
+          "suggested_answer": "The bark of the thanakha tree is ground on a flat, circular stone with water to get a paste."
+        },
+        {
+          "id": 4,
+          "question": "Who taught Sandar that thanakha protects the skin from the sun?",
+          "suggested_answer": "Her mother, who is an expert on traditional medicine, taught her."
+        },
+        {
+          "id": 5,
+          "question": "Why do parents put thanakha on their children's faces?",
+          "suggested_answer": "It protects the children's faces from the sun, it is soothing to the skin, it smells nice, and it shows the parents' love."
+        },
+        {
+          "id": 6,
+          "question": "In what forms can thanakha be bought?",
+          "suggested_answer": "It can be bought as pieces of wood, or ready-made in the form of creams, lotions, cakes or powders."
+        },
+        {
+          "id": 7,
+          "question": "Does the price of thanakha stay the same?",
+          "suggested_answer": "No. The price depends on which product is used."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "You want a friend to come shopping with you. Make a suggestion.",
+          "answer": "Would you care to come along? / Why don't you come with me to the supermarket?"
+        },
+        {
+          "id": 2,
+          "question": "Accept a suggestion politely.",
+          "answer": "That's a good idea! / That sounds great. / Thanks! I'd love to."
+        },
+        {
+          "id": 3,
+          "question": "Decline a suggestion politely.",
+          "answer": "That sounds great, but I prefer our local product. / I'd rather not. / I'd prefer thanakha."
+        },
+        {
+          "id": 4,
+          "question": "Susan wants souvenirs for her friends. Suggest what to buy and where.",
+          "answer": "Why don't you buy thanakha cakes and a kyauk pyin? Shall we go to Bogyoke Market, where they also sell lacquerware and longyi?"
+        }
+      ]
+    },
+    {
+      "id": "11e-writing",
+      "code": "11E",
+      "type": "Writing",
+      "title": "11E Writing: An Email About Thanakha",
+      "titleMy": "စာရေးသားခြင်း - သနပ်ခါးအကြောင်း အီးမေးလ်ရေးခြင်း",
+      "intro": "Write an email to an online pal, Yuri from Japan, telling her about thanakha, a cosmetic unique to Myanmar.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Who is the email addressed to?",
+          "suggested_answer": "Yuri from Japan at yuri12apple@gmail.com."
+        },
+        {
+          "id": 2,
+          "question": "What should the email be about?",
+          "suggested_answer": "It should tell Yuri about thanakha, a cosmetic unique to Myanmar."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What is the writing task?",
+          "answer": "Write an email to Yuri from Japan telling her about thanakha, a cosmetic unique to Myanmar."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "lesson": "11A Reading",
+      "topic": "Thanakha",
+      "pre_reading": [
+        {
+          "id": 1,
+          "question": "What beauty products do you use every day?",
+          "suggested_answer": "Sample answer: I use face wash, moisturizer and other beauty products every day."
+        },
+        {
+          "id": 2,
+          "question": "Do you apply thanakha to your face? Why?",
+          "suggested_answer": "Sample answer: Yes, I apply thanakha because it helps keep my face cool and fresh."
+        },
+        {
+          "id": 3,
+          "question": "Have you ever seen thanakha trees? If so, where can you find them?",
+          "suggested_answer": "Sample answer: Yes, I have seen thanakha trees in Myanmar."
+        }
+      ],
+      "reading_passage": {
+        "title": "11A Reading: Thanakha",
+        "paragraphs": [
+          {
+            "paragraph_id": 1,
+            "lines": "1-9",
+            "english_text": "With the booming of the beauty industry, there are more choices for beauty products such as make-ups, lip care, masks, creams, moisturizers, spray deodorants, aftersave balms and countless others than in the past. In spite of new products and brands being created every day, thanakha is a unique beauty product of Myanmar. It is inseparable from the daily life of most women in Myanmar. In other countries, it is used mostly for medicinal purposes. Only in Myanmar is it used mainly as a cosmetic.",
+            "burmese_explanation": "အလှကုန်လုပ်ငန်း တိုးတက်လာသဖြင့် ယခင်ကထက် အလှအပပစ္စည်း ရွေးချယ်စရာများ ပိုမိုများပြားလာသည်။ မိတ်ကပ်၊ နှုတ်ခမ်းဆိုးဆေး၊ မျက်နှာပေါင်းတင်မျက်နှာဖုံး၊ လိမ်းဆေး၊ အစိုဓာတ်ထိန်းခရင်မ်၊ ချွေးနံ့ပျောက်ဆေးဖြန်းနှင့် အခြားပစ္စည်းများကို ရွေးချယ်နိုင်သည်။ နေ့စဉ် ပစ္စည်းအသစ်နှင့် အမှတ်တံဆိပ်အသစ်များ ပေါ်ထွက်နေသော်လည်း သနပ်ခါးသည် မြန်မာနိုင်ငံ၏ ထူးခြားသော အလှအပပစ္စည်းတစ်ခု ဖြစ်သည်။ ၎င်းသည် မြန်မာအမျိုးသမီးအများစု၏ နေ့စဉ်ဘဝနှင့် ခွဲမရအောင် ဆက်နွယ်နေသည်။ အခြားနိုင်ငံများတွင် သနပ်ခါးကို ဆေးဖက်ဝင်ရည်ရွယ်ချက်ဖြင့် အများဆုံး အသုံးပြုကြသော်လည်း မြန်မာနိုင်ငံတွင် အလှကုန်အဖြစ် အဓိက အသုံးပြုကြသည်။"
+          },
+          {
+            "paragraph_id": 2,
+            "lines": "10-26",
+            "english_text": "In Myanmar, thanakha means different things to different groups of people. To Myanmar children, it means just a paste their mothers smear on their faces and bodies after a bath. To beauty conscious young ladies, a thin layer of the best quality thanakha applied to their faces somewhat covers pimples and acne on their faces. It also keeps them sweet-scented, cool and fresh the whole day. Some young ladies find time to make decorative patterns such as that of a leaf, or flower. To teenage boys, thanakha helps them hide the ugly pimples that begin to appear on their faces just at the age when they want to look handsome. To older women, thanakha makes them feel protected from getting wrinkles and freckles. To those who have to toil in the paddy fields, or sell things in the tropical sun, a thick layer of thanakha definitely serves as a sun block, protecting their faces and limbs from sunburn. To a young man returning from a visit to upper Myanmar, a sizable piece of thanakha serves as a cherished gift for his beloved. To indigenous medical men, the roots of thanakha trees are of much value as they form important ingredients in some medicines.",
+            "burmese_explanation": "မြန်မာနိုင်ငံတွင် သနပ်ခါးသည် လူအုပ်စုတစ်ခုစီအတွက် အဓိပ္ပာယ်မတူပါ။ ကလေးများအတွက်မူ ရေချိုးပြီးနောက် မိခင်များက မျက်နှာနှင့် ကိုယ်ခန္ဓာပေါ်တွင် လိမ်းပေးသော သနပ်ခါးအနှစ် ဖြစ်သည်။ အလှအပကို ဂရုစိုက်သော မိန်းကလေးငယ်များအတွက် အရည်အသွေးကောင်းသော သနပ်ခါးကို မျက်နှာပေါ်တွင် ပါးပါးလိမ်းခြင်းက ဝက်ခြံများကို အတန်အသင့် ဖုံးကွယ်ပေးပြီး တစ်နေ့လုံး မွှေးပျံ့အေးမြလန်းဆန်းစေသည်။ အချို့မိန်းကလေးငယ်များသည် သစ်ရွက်ပုံ၊ ပန်းပုံ စသည့် အလှပုံစံများကို ရေးဆွဲလိမ်းခြယ်ကြသည်။ ဆယ်ကျော်သက်ယောက်ျားလေးများအတွက်လည်း ခန့်ညားချင်သောအရွယ်တွင် မျက်နှာပေါ်၌ ပေါက်လာသော ဝက်ခြံများကို ဖုံးကွယ်ပေးသည်။ အသက်ကြီးသော အမျိုးသမီးများက သနပ်ခါးလိမ်းခြင်းဖြင့် အရေးအကြောင်းနှင့် တင်းတိပ်များမှ ကာကွယ်ပေးသည်ဟု ခံစားကြသည်။ နေပူထဲရှိ လယ်ကွင်းများတွင် ပင်ပန်းစွာ အလုပ်လုပ်ရသူများနှင့် ဆိုင်များတွင် ပစ္စည်းရောင်းချရသူများအတွက် သနပ်ခါးထူထူလိမ်းခြင်းက မျက်နှာနှင့် လက်ခြေတို့ကို နေလောင်ခြင်းမှ ကာကွယ်ပေးသည်။ မြန်မာပြည်အထက်ပိုင်းသို့ သွားပြီး ပြန်လာသော လူငယ်တစ်ဦးအတွက် သနပ်ခါးတုံးကြီးတစ်တုံးသည် ချစ်သူအား ပေးရန် တန်ဖိုးထားရသော လက်ဆောင်ဖြစ်သည်။ တိုင်းရင်းဆေးပညာရှင်များအတွက်လည်း သနပ်ခါးမြစ်များသည် ဆေးဝါးအချို့တွင် အရေးပါသော ပါဝင်ပစ္စည်းဖြစ်သောကြောင့် တန်ဖိုးရှိသည်။"
+          },
+          {
+            "paragraph_id": 3,
+            "lines": "27-35",
+            "english_text": "And what might thanakha mean to a foreign woman visiting Myanmar for the first time? She is likely to be bewildered to see most local women with yellowish patches on their faces and arms. She will likely ask a person nearby what those yellow patches are. She will, of course, be told that the yellowish patches are paste from the bark of the thanakha tree. She may even be told that the paste is obtained from grinding the bark of thanakha with a bit of water on a kyauk pyin, a piece of flat stone. At the same time, she is likely to learn about its many benefits.",
+            "burmese_explanation": "မြန်မာနိုင်ငံသို့ ပထမဆုံးအကြိမ် လာရောက်လည်ပတ်သော နိုင်ငံခြမီးတစ်ဦးအတွက် သနပ်ခါးက ဘာကို ဆိုလိုနိုင်မည်နည်း။ ဒေသခံးအများစု၏ မျက်နှာများနှင့် လက်မောင်းများပေါ်တွင် အဝါရောင် အစင်းအရွက်များကို မြင်ရလျှင် သူမသည် အံ့သြမောသွားနိုင်သည်။ နားရှိလူအား ထိုအဝါရောင် အစင်းများသည် အဘယ်ဖြစ်ကြောင်း မေးနိုင်ပြီး သနပ်ခါးပင်၏ အခေါက်ကို ရေနည်းနည်းဖြင့် ကျောက်ပျဉ်ပေါ်တွင် သွေးဖိက၍ ရသော မြစ်ဖြစ်ကြောင်း ပြောပြလိမ့်မည်။ တချိန်တည်းတွင် သူမသည် ၎င်း၏ အကျိုးကျေးဇူးများစွာကိုလည်း သိရှိလာနိုင်သည်။"
+          },
+          {
+            "paragraph_id": 4,
+            "lines": "36-41",
+            "english_text": "Thanakha comes in different forms and sizes: from pieces cut from the slender branches to huge trunks, which look like logs for the fireplace. It is also available in the form of small cakes, creams, lotions and powders. Today, thanakha paste with fragrances of flowers and fruits is available on the market.",
+            "burmese_explanation": "သနပ်ခါးကို ပုံစံအမျိုးမျိုးနှင့် အရွယ်အစားအမျိုးမျိုးဖြင့် ရနိုင်သည် — ပျင်းလိန့်သော အကိုင်းများမှ ဖြတ်ထားသော အတုံးများမှ မီးဖိုထဲ ထည့်ရမည့် သစ်တုံးကဲ့သို့ ကြီးမားသော ပင်စည်များအထိ ရှိသည်။ ကိတ်မုန့်သေးငယ်များ၊ ခရင်မ်၊ လို့ရှင် နှင့် အမှုန့်ပုံစံများဖြင့်လည်း ရနိုင်သည်။ ယနေ့ခေတ်တွင် ပန်းများနှင့််သီးများ၏ မွှေးပျံ့မှုန့်များ ပါဝင်သော သနပ်ခါးမြစ်ကို စျေးကွက်တွင် ဝယ်ယူနိုင်ပြီ။"
+          },
+          {
+            "paragraph_id": 5,
+            "lines": "42-52",
+            "english_text": "Today, many forms of beauty products may compete with thanakha, and many young and old Myanmar ladies may show preference for western dresses and beauty products, but many of them may still continue to rely on the power of thanakha for their beauty and comfort. Currently, thanakha is exported in the form of cakes, creams and powders. There are Myanmar entrepreneurs who are doing their best to promote the sale of thanakha abroad. This will surely help the world to recognize thanakha as a Myanmar cultural heritage. It might even convince non-Myanmar women that thanakha is good not only as a cosmetic but also as a skincare product.",
+            "burmese_explanation": "ယနေ့ခေတ်တွင် အလှအပပစ္စည်း ပုံစံအမျိုးများစွာက သနပ်ခါးနှင့် ယှဉ်ပြိုင်နိုင်ပြီး မြန်မသစ်အဟောင်းများစွာက အနောက်တိုင်း ဝတ်စားဆင်ယင်မှုနှင့် အလှအပပစ္စည်းများကို ပို၍ နှစ်သက်နိုင်ကြသည်။ သို့သော် ၎င်းတို့ထဲမှ အများအပြားက အလှအပနှင့် သက်တောင့်သက်သာအတွက် သနပ်ခါး၏ စွမ်းအားကို ဆက်လက်မှီခိုနိုင်ကြသည်။ လက်ရှိတွင် သနပ်ခါးကို ကိတ်မုန့်၊ ခရင်မ်နှင့် အမှုန့်ပုံစံဖြင့် နိုင်ငံခြားသို့ တင်ပို့လျက်ရှိပြီး နိုင်ငံခြားတွင် သနပ်ခါးအရောင်းကို မြှင့်တင်ရန် အစွန်ကုန် ကြိုးပမ်းနေသော မြန်မာ စီးပွားရေးလုပ်ငန်းရှင်များလည်း ရှိသည်။ ဤအရာက သနပ်ခါးကို မြန်မာ့ ယဉ်ကျေးမှု အမွနှစ်အဖြစ် ကမ္ဘာက အသိအမှတ်ပြုရန် အထောက်အကူ ဖြစ်စေမည်။ ၎င်းက မြန်မာမဟုတ်သောီးများကိုလည်း သနပ်ခါးသည် အလှကပ်အဖြစ်သာ မက အရေပြားစောင့်ရှောက်မှု ထုတ်ကုန်အဖြစ်လည်း ကောင်းမွန်ကြောင်း ယုံကြည်စေနိုင်သည်။"
+          }
+        ]
+      },
+      "comprehension": {
+        "part_A": {
+          "instructions": "Read the passage and choose the appropriate topic for each paragraph. Match paragraphs (1–5) with topics (a–e).",
+          "topics": [
+            "a. What thanakha is",
+            "b. How thanakha is used",
+            "c. The future of thanakha",
+            "d. An incomparable beauty product of Myanmar",
+            "e. Different forms of thanakha"
+          ],
+          "exercises": [
+            {
+              "question_number": 1,
+              "text": "Paragraph 1",
+              "answer": "d. An incomparable beauty product of Myanmar"
+            },
+            {
+              "question_number": 2,
+              "text": "Paragraph 2",
+              "answer": "b. How thanakha is used"
+            },
+            {
+              "question_number": 3,
+              "text": "Paragraph 3",
+              "answer": "a. What thanakha is"
+            },
+            {
+              "question_number": 4,
+              "text": "Paragraph 4",
+              "answer": "e. Different forms of thanakha"
+            },
+            {
+              "question_number": 5,
+              "text": "Paragraph 5",
+              "answer": "c. The future of thanakha"
+            }
+          ]
+        },
+        "part_B": {
+          "instructions": "For each word in bold, choose from the three choices given, one that is similar in meaning and circle a, b or c whichever is correct.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "text": "booming in paragraph 1: a. changing; b. growing; c. success",
+              "answer": "b. growing"
+            },
+            {
+              "question_number": 2,
+              "text": "unique in paragraph 1: a. very rare; b. very special; c. very valuable",
+              "answer": "b. very special"
+            },
+            {
+              "question_number": 3,
+              "text": "smears in paragraph 2: a. covers; b. puts; c. spreads",
+              "answer": "c. spreads"
+            },
+            {
+              "question_number": 4,
+              "text": "cherished in paragraph 2: a. valued; b. honoured; c. respected",
+              "answer": "a. valued"
+            },
+            {
+              "question_number": 5,
+              "text": "bewildered in paragraph 3: a. confused; b. pleased; c. shocked",
+              "answer": "a. confused"
+            }
+          ]
+        },
+        "part_C": {
+          "instructions": "Answer the following questions in complete sentences.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "question": "Why are there more choices of beauty products today than in the past?",
+              "answer": "Because the beauty industry is booming and new products and brands are being created every day."
+            },
+            {
+              "question_number": 2,
+              "question": "How is thanakha mainly used in other countries and in Myanmar?",
+              "answer": "In other countries, thanakha is used mostly for medicinal purposes; in Myanmar, it is used mainly as a cosmetic."
+            },
+            {
+              "question_number": 3,
+              "question": "For what purpose do beauty conscious ladies apply thanakha to their faces?",
+              "answer": "They apply it to somewhat cover pimples and acne; it also keeps them sweet-scented, cool and fresh."
+            },
+            {
+              "question_number": 4,
+              "question": "At what age do pimples appear on the faces of boys?",
+              "answer": "They begin to appear when boys are teenagers."
+            },
+            {
+              "question_number": 5,
+              "question": "What protects people who have to toil in the sun from sunburn?",
+              "answer": "A thick layer of thanakha serves as a sun block, protecting their faces and limbs from sunburn."
+            },
+            {
+              "question_number": 6,
+              "question": "Why are the roots of thanakha trees valuable to the medical man?",
+              "answer": "They are valuable because they form important ingredients in some medicines."
+            },
+            {
+              "question_number": 7,
+              "question": "In what forms is thanakha available?",
+              "answer": "It is available as pieces from slender branches to huge trunks, and as small cakes, creams, lotions and powders; paste with flower and fruit fragrances is also available."
+            },
+            {
+              "question_number": 8,
+              "question": "Why do many Myanmar ladies still rely on thanakha?",
+              "answer": "They still rely on it for their beauty and comfort."
+            },
+            {
+              "question_number": 9,
+              "question": "Do you like to apply thanakha to your face? Why or why not?",
+              "answer": "Sample answer: Yes, I like to apply thanakha because it helps keep my face cool and fresh."
+            },
+            {
+              "question_number": 10,
+              "question": "Do you think the use of thanakha as a cosmetic will be more popular or less popular in the future? Why?",
+              "answer": "Sample answer: It may remain popular because many people still rely on it for beauty and comfort, and it is being exported and promoted abroad."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson": "11B Vocabulary",
+      "topic": "Suffixes and Collocations",
+      "part_A": {
+        "instructions": "Complete the tables by adding suffixes to the words given.",
+        "noun_forming": [
+          {
+            "suffix": "-al",
+            "entries": [
+              {
+                "root_word": "arrive (v)",
+                "noun": "arrival"
+              },
+              {
+                "root_word": "approve (v)",
+                "noun": "approval"
+              }
+            ]
+          },
+          {
+            "suffix": "-ance",
+            "entries": [
+              {
+                "root_word": "fragrant (adj.)",
+                "noun": "fragrance"
+              },
+              {
+                "root_word": "guide (v)",
+                "noun": "guidance"
+              }
+            ]
+          },
+          {
+            "suffix": "-dom",
+            "entries": [
+              {
+                "root_word": "free (adj.)",
+                "noun": "freedom"
+              },
+              {
+                "root_word": "bore (v)",
+                "noun": "boredom"
+              }
+            ]
+          },
+          {
+            "suffix": "-ence",
+            "entries": [
+              {
+                "root_word": "prefer (v)",
+                "noun": "preference"
+              },
+              {
+                "root_word": "refer (v)",
+                "noun": "reference"
+              }
+            ]
+          },
+          {
+            "suffix": "-er",
+            "entries": [
+              {
+                "root_word": "moisturize (v)",
+                "noun": "moisturizer"
+              },
+              {
+                "root_word": "teach (v)",
+                "noun": "teacher"
+              }
+            ]
+          },
+          {
+            "suffix": "-or",
+            "entries": [
+              {
+                "root_word": "invent (v)",
+                "noun": "inventor"
+              },
+              {
+                "root_word": "act (v)",
+                "noun": "actor"
+              }
+            ]
+          },
+          {
+            "suffix": "-ion",
+            "entries": [
+              {
+                "root_word": "promote (v)",
+                "noun": "promotion"
+              },
+              {
+                "root_word": "revise (v)",
+                "noun": "revision"
+              }
+            ]
+          },
+          {
+            "suffix": "-ist",
+            "entries": [
+              {
+                "root_word": "science (n)",
+                "noun": "scientist"
+              },
+              {
+                "root_word": "art (n)",
+                "noun": "artist"
+              }
+            ]
+          },
+          {
+            "suffix": "-ment",
+            "entries": [
+              {
+                "root_word": "manage (v)",
+                "noun": "management"
+              },
+              {
+                "root_word": "move (v)",
+                "noun": "movement"
+              }
+            ]
+          },
+          {
+            "suffix": "-ness",
+            "entries": [
+              {
+                "root_word": "useful (adj.)",
+                "noun": "usefulness"
+              },
+              {
+                "root_word": "great (adj.)",
+                "noun": "greatness"
+              }
+            ]
+          }
+        ],
+        "verb_forming": [
+          {
+            "suffix": "-ate",
+            "entries": [
+              {
+                "root_word": "immigrant (n)",
+                "verb": "immigrate"
+              },
+              {
+                "root_word": "different (adj.)",
+                "verb": "differentiate"
+              }
+            ]
+          },
+          {
+            "suffix": "-en",
+            "entries": [
+              {
+                "root_word": "strength (n)",
+                "verb": "strengthen"
+              },
+              {
+                "root_word": "light (adj.)",
+                "verb": "lighten"
+              }
+            ]
+          },
+          {
+            "suffix": "-ize",
+            "entries": [
+              {
+                "root_word": "computer (n)",
+                "verb": "computerize"
+              },
+              {
+                "root_word": "memory (n)",
+                "verb": "memorize"
+              }
+            ]
+          },
+          {
+            "suffix": "-ify",
+            "entries": [
+              {
+                "root_word": "simple (adj.)",
+                "verb": "simplify"
+              },
+              {
+                "root_word": "example (n)",
+                "verb": "exemplify"
+              }
+            ]
+          }
+        ]
+      },
+      "part_C": {
+        "instructions": "Complete each sentence with the correct form of the word given in brackets.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "She tried to ________ up her speech with a few jokes. (light)",
+            "answer": "lighten"
+          },
+          {
+            "question_number": 2,
+            "text": "Bagan is one of the major ________ attractions in Myanmar. (tour)",
+            "answer": "tourist"
+          },
+          {
+            "question_number": 3,
+            "text": "His answer has no direct ________ to the question. (relevant)",
+            "answer": "relevance"
+          },
+          {
+            "question_number": 4,
+            "text": "I am looking for a skin cleanser that can help reduce the ________ of my face. (oily)",
+            "answer": "oiliness"
+          },
+          {
+            "question_number": 5,
+            "text": "Fresh flowers ________ the entire church on my sister's wedding day. (beauty)",
+            "answer": "beautified"
+          },
+          {
+            "question_number": 6,
+            "text": "I often go to my teacher for words of ________. (encourage)",
+            "answer": "encouragement"
+          },
+          {
+            "question_number": 7,
+            "text": "This new toothpaste will ________ your teeth better. (white)",
+            "answer": "whiten"
+          },
+          {
+            "question_number": 8,
+            "text": "We congratulated them on the successful ________ of their project. (complete)",
+            "answer": "completion"
+          },
+          {
+            "question_number": 9,
+            "text": "Regular exercise will ________ your muscle. (strong)",
+            "answer": "strengthen"
+          },
+          {
+            "question_number": 10,
+            "text": "I plan to ________ in history for my BA degree. (special)",
+            "answer": "specialize"
+          }
+        ]
+      },
+      "part_D": {
+        "instructions": "Complete each sentence with the appropriate word given in the box that collocates with the word(s) in italics.",
+        "word_box": [
+          "wins",
+          "do",
+          "products",
+          "boomed",
+          "wearing",
+          "toil",
+          "apply",
+          "promote",
+          "heritage",
+          "medical"
+        ],
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "Mg Mg is such a reliable student that he ________ the trust of all his teachers and friends.",
+            "answer": "wins"
+          },
+          {
+            "question_number": 2,
+            "text": "Food producers should ________ their best to make sure that they produce safe foods.",
+            "answer": "do"
+          },
+          {
+            "question_number": 3,
+            "text": "We are introducing a new range of beauty ________ intended for teenagers.",
+            "answer": "products"
+          },
+          {
+            "question_number": 4,
+            "text": "Hotel and tourism industry has ________ in the last few years.",
+            "answer": "boomed"
+          },
+          {
+            "question_number": 5,
+            "text": "Some Myanmar women are very fond of ________ flowers in their hair.",
+            "answer": "wearing"
+          },
+          {
+            "question_number": 6,
+            "text": "Farmers in our village have to ________ in the paddy field from morning till evening.",
+            "answer": "toil"
+          },
+          {
+            "question_number": 7,
+            "text": "She doesn't ________ any make-up; yet she is beautiful.",
+            "answer": "apply"
+          },
+          {
+            "question_number": 8,
+            "text": "We launched a big advertising campaign to ________ the sale of our new product.",
+            "answer": "promote"
+          },
+          {
+            "question_number": 9,
+            "text": "Our traditions and customs are all part of our cultural ________.",
+            "answer": "heritage"
+          },
+          {
+            "question_number": 10,
+            "text": "The drug is sold only for ________ purposes.",
+            "answer": "medical"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": "11C Grammar",
+      "topic": "Relative Pronouns: 'who', 'whom' and 'whose'",
+      "part_A": {
+        "instructions": "Fill in each blank with 'who', 'whom' or 'whose', whichever is correct. The first one is done for you as an example.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "The girl, whom we met in Tokyo last year, sent me a postcard.",
+            "answer": "whom"
+          },
+          {
+            "question_number": 2,
+            "text": "Daw Nilar is my teacher, ________ taught me English when I was in Grade 3.",
+            "answer": "who"
+          },
+          {
+            "question_number": 3,
+            "text": "She is the student, ________ handwriting is the best in my class.",
+            "answer": "whose"
+          },
+          {
+            "question_number": 4,
+            "text": "She is one of those people, ________ loves to be the centre of attention.",
+            "answer": "who"
+          },
+          {
+            "question_number": 5,
+            "text": "Daw Nu is a person, ________ takes her responsibilities seriously.",
+            "answer": "who"
+          },
+          {
+            "question_number": 6,
+            "text": "The police are investigating the company, ________ top managers were arrested last night.",
+            "answer": "whose"
+          },
+          {
+            "question_number": 7,
+            "text": "Do you know the woman, ________ I sent those flowers to?",
+            "answer": "whom"
+          },
+          {
+            "question_number": 8,
+            "text": "The school is established specially for children, ________ schooling has been disturbed by illness.",
+            "answer": "whose"
+          },
+          {
+            "question_number": 9,
+            "text": "The person, ________ we met on the train, was very helpful.",
+            "answer": "whom"
+          },
+          {
+            "question_number": 10,
+            "text": "He, ________ is ashamed of asking, is ashamed of learning.",
+            "answer": "who"
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Combine each pair of sentences, using the appropriate relative pronoun as in the example.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "I helped the girl. Her car had broken down in front of our house.",
+            "answer": "I helped the girl whose car had broken down in front of our house."
+          },
+          {
+            "question_number": 2,
+            "text": "I hardly recognized my distant relatives. They came to my sister's wedding.",
+            "answer": "I hardly recognized my distant relatives who came to my sister's wedding."
+          },
+          {
+            "question_number": 3,
+            "text": "Nyi Nyi is very good at playing football. He has just moved to our school.",
+            "answer": "Nyi Nyi, who has just moved to our school, is very good at playing football."
+          },
+          {
+            "question_number": 4,
+            "text": "The children are not from our school. They are playing in the street.",
+            "answer": "The children who are playing in the street are not from our school."
+          },
+          {
+            "question_number": 5,
+            "text": "The people live next door to us. They are very friendly.",
+            "answer": "The people who live next door to us are very friendly."
+          },
+          {
+            "question_number": 6,
+            "text": "The home for the aged is for elderly people. They do not have anyone to look after them.",
+            "answer": "The home for the aged is for elderly people who do not have anyone to look after them."
+          },
+          {
+            "question_number": 7,
+            "text": "I met the famous singer at a friend's birthday party. I always buy his albums.",
+            "answer": "I met the famous singer whose albums I always buy at a friend's birthday party."
+          },
+          {
+            "question_number": 8,
+            "text": "The cyclist won the race. He had trained hard the whole year.",
+            "answer": "The cyclist who had trained hard the whole year won the race."
+          },
+          {
+            "question_number": 9,
+            "text": "Customers like the salespersons. The salespersons are friendly and helpful.",
+            "answer": "Customers like the salespersons who are friendly and helpful."
+          },
+          {
+            "question_number": 10,
+            "text": "We chose Aye Aye as our team leader. Everyone trusted her.",
+            "answer": "We chose Aye Aye, whom everyone trusted, as our team leader."
+          }
+        ]
+      }
+    },
+    {
+      "lesson": "11D Listening and Speaking",
+      "topic": "Thanakha and Making Suggestions",
+      "part_A": {
+        "instructions": "Listen to the dialogue between Mary and Sandar and fill in the blanks.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "Mary asked Sandar about ________.",
+            "answer": "Myanmar customs and practices"
+          },
+          {
+            "question_number": 2,
+            "text": "Mary thought that Myanmar people ________ their faces yellow.",
+            "answer": "painted"
+          },
+          {
+            "question_number": 3,
+            "text": "Mary said that wherever she went, she saw Myanmar people with ________ on their cheeks and foreheads.",
+            "answer": "yellow paint"
+          },
+          {
+            "question_number": 4,
+            "text": "Sandar explained to Mary that thanakha is used as a ________ and sometimes as medicine.",
+            "answer": "beauty treatment"
+          },
+          {
+            "question_number": 5,
+            "text": "Sandar's mother is an expert on ________.",
+            "answer": "traditional medicine"
+          },
+          {
+            "question_number": 6,
+            "text": "Sandar told Mary that thanakha helps protect ________ faces from the sun.",
+            "answer": "the children's"
+          },
+          {
+            "question_number": 7,
+            "text": "Sandar said that thanakha could be bought as pieces of wood, or ________ in the form of creams, lotions, cakes or powders.",
+            "answer": "ready-made"
+          }
+        ],
+        "context": "Mary is a visitor from Australia. This is her very first visit to Myanmar. Her new friend Sandar is showing her around Baho Market in Shwebo."
+      },
+      "part_B": {
+        "instructions": "Complete the dialogue with the expressions given in the box.",
+        "expressions": [
+          "I would ...",
+          "that's a good idea",
+          "would you ...",
+          "why don't you ...",
+          "that sounds ..."
+        ],
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "(1) ________ care to come along?",
+            "answer": "would you"
+          },
+          {
+            "question_number": 2,
+            "text": "Yes, (2) ________, maybe just to keep you company and look around for a lipstick and eye shadow.",
+            "answer": "I would"
+          },
+          {
+            "question_number": 3,
+            "text": "(3) ________ buy creams or lotions to protect your skin from sunburn?",
+            "answer": "why don't you"
+          },
+          {
+            "question_number": 4,
+            "text": "(4) ________ great, but I prefer our local product as it works fine for me.",
+            "answer": "that sounds"
+          },
+          {
+            "question_number": 5,
+            "text": "Well, (5) ________, but I've never used it. I think I should try.",
+            "answer": "that's a good idea"
+          }
+        ],
+        "title": "Making and responding to suggestions",
+        "dialogue": [
+          {
+            "speaker": "Nu Nu",
+            "line": "Hello, Thandar, where are you off to?"
+          },
+          {
+            "speaker": "Thandar",
+            "line": "The supermarket, to buy a few cosmetic items."
+          },
+          {
+            "speaker": "Nu Nu",
+            "line": "Such as?"
+          },
+          {
+            "speaker": "Thandar",
+            "line": "Oh you know, lipstick, make-up, eye shadow, so on and so forth. (1) ________ care to come along?",
+            "blank": 1
+          },
+          {
+            "speaker": "Nu Nu",
+            "line": "Yes, (2) ________, maybe just to keep you company and look around for a lipstick and eye shadow.",
+            "blank": 2
+          },
+          {
+            "speaker": "Thandar",
+            "line": "(3) ________ buy creams or lotions to protect your skin from sunburn?",
+            "blank": 3
+          },
+          {
+            "speaker": "Nu Nu",
+            "line": "(4) ________ great, but I prefer our local product as it works fine for me.",
+            "blank": 4
+          },
+          {
+            "speaker": "Thandar",
+            "line": "What do you mean by local product?"
+          },
+          {
+            "speaker": "Nu Nu",
+            "line": "Thanakha, of course. It beats all foreign products, and what's more, it is not expensive."
+          },
+          {
+            "speaker": "Thandar",
+            "line": "Really?"
+          },
+          {
+            "speaker": "Nu Nu",
+            "line": "Of course. Have you ever seen my face turning oily? It's thanakha that keeps my complexion in good shape."
+          },
+          {
+            "speaker": "Thandar",
+            "line": "Well, (5) ________, but I've never used it. I think I should try.",
+            "blank": 5
+          },
+          {
+            "speaker": "Nu Nu",
+            "line": "You certainly should. And I guarantee that you'll come to prefer it to all those fancy foreign products!"
+          }
+        ]
+      },
+      "part_C": {
+        "instructions": "Your friend, Susan who has come to visit Myanmar, wants to buy souvenirs for her friends. In pairs, write a short dialogue between Susan and you making suggestions to her on what to buy and where to buy them. You can use the expressions given below.",
+        "making_suggestions": [
+          "Would you care ...?",
+          "Why don't you ...?",
+          "Shall I / we ...?",
+          "Would you like ...?"
+        ],
+        "accepting": [
+          "That's a good / great idea!",
+          "That sounds good / great.",
+          "Thanks! I'd love to."
+        ],
+        "declining": [
+          "I'd rather not ...",
+          "I'd prefer ...",
+          "That's a good idea but ..."
+        ]
+      }
+    },
+    {
+      "lesson": "11E Writing",
+      "topic": "An Email About Thanakha",
+      "writing_task": {
+        "instructions": "Write an email to an online pal, Yuri from Japan, telling her about thanakha, a cosmetic unique to Myanmar. You can begin like this.",
+        "to": "yuri12apple@gmail.com",
+        "subject": "",
+        "opening": "Hi Yuri, How are things? Everything's okay here. Thank you for your last mail. I find the tea culture in Japan you told me very interesting. I'd also like to tell you about a cosmetic unique to Myanmar only. I hope you'll find it interesting too ..."
+      }
+    }
+  ]
+}

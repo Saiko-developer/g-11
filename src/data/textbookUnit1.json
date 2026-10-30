@@ -1,0 +1,750 @@
+{
+  "unit": "UNIT 1",
+  "unitTitle": "Language: Skill, Tool, Form, and Function",
+  "lessons": [
+    {
+      "id": "1a-reading",
+      "code": "1A",
+      "type": "Reading",
+      "title": "Language: Skill, Tool, Form, and Function",
+      "titleMy": "ဘာသာစကား - အရည်အချင်း၊ ကိရိယာ၊ ပုံစံ၊ နှင့် လုပ်ဆောင်ချက်",
+      "intro": "Explore the fundamental aspects of language as a skill, tool, form, and function in our daily communication.",
+      "introMy": "ဘာသာစကားကို အရည်အချင်း၊ ကိရိယာ၊ ပုံစံ နဲ့ လုပ်ဆောင်ချက်တွေအနေနဲ့ သဘောတရားများကို လေ့လာပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is language?",
+          "suggested_answer": "Language is a skill, a tool for communication, a form of verbal and non-verbal expression, and a means to perform social functions."
+        },
+        {
+          "id": 2,
+          "question": "What do we use it for?",
+          "suggested_answer": "We use it to communicate with others, share information, express our feelings, ask questions, and perform daily social tasks."
+        },
+        {
+          "id": 3,
+          "question": "What does language do for us?",
+          "suggested_answer": "Language helps us connect with people, reflects and preserves our culture, passes traditions to the next generation, and defines our social identity."
+        },
+        {
+          "id": 4,
+          "question": "What would our life be like without language?",
+          "suggested_answer": "Without language, our life would be incredibly difficult because we would not be able to share complex ideas, express thoughts clearly, or build organized societies."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Name the four language skills.",
+          "answer": "Listening, speaking, reading, and writing."
+        },
+        {
+          "id": 2,
+          "question": "Which skill do babies develop first?",
+          "answer": "The listening skill."
+        }
+      ]
+    },
+    {
+      "id": "1b-vocabulary",
+      "code": "1B",
+      "type": "Vocabulary",
+      "title": "Countries, Nationalities and Languages",
+      "titleMy": "တိုင်းတရားများ၊ နိုင်ငံသားများ နှင့် ဘာသာစကားများ",
+      "intro": "Learn the names of countries, their nationalities, languages, and related adjectives.",
+      "introMy": "တိုင်းတရားများ၊ နိုင်ငံသားများ၊ ဘာသာစကား နှင့် သက်ဆိုင်ရာ ဝေါဟာရများကို လေ့လာပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the nationality of someone from France?",
+          "answer": "French"
+        },
+        {
+          "id": 2,
+          "question": "Which country's people speak Chinese?",
+          "answer": "China"
+        },
+        {
+          "id": 3,
+          "question": "What language is spoken in Japan?",
+          "answer": "Japanese"
+        },
+        {
+          "id": 4,
+          "question": "What is the adjective for Italy?",
+          "answer": "Italian"
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What is the nationality for Myanmar?",
+          "answer": "Burmese"
+        },
+        {
+          "id": 2,
+          "question": "Which country is also called 'The UK'?",
+          "answer": "United Kingdom"
+        }
+      ]
+    },
+    {
+      "id": "1c-grammar",
+      "code": "1C",
+      "type": "Grammar",
+      "title": "Nouns in Apposition",
+      "titleMy": "အပြန်အလှန်အဆိုပါ နာမ်များ",
+      "intro": "Master the concept of nouns in apposition and how to identify them in sentences.",
+      "introMy": "အပြန်အလှန်အဆိုပါ နာမ်များ၏ သဘောတရားကို နားလည်ပြီး စာတွင် သိရှိနိုင်ရန် လေ့ကျင့်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the noun in apposition in: 'Bagan, an ancient capital of Myanmar, has many pagodas'?",
+          "answer": "an ancient capital of Myanmar"
+        },
+        {
+          "id": 2,
+          "question": "Identify the apposition in: 'Mt. Everest, the highest peak in the world, is in Nepal.'",
+          "answer": "the highest peak in the world"
+        },
+        {
+          "id": 3,
+          "question": "What does 'noun in apposition' mean?",
+          "answer": "A noun or noun phrase placed next to another noun to explain or identify it."
+        },
+        {
+          "id": 4,
+          "question": "What is the apposition phrase in: 'The Nile, the longest river in the world, is in northeastern Africa'?",
+          "answer": "the longest river in the world"
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Find the noun in apposition: 'My son, a musician, lives with me.'",
+          "answer": "a musician"
+        },
+        {
+          "id": 2,
+          "question": "How many appositions are in: 'Judo, a Japanese martial art, originated from jujitsu, a samurai fighting technique'?",
+          "answer": "Two appositions"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "lesson": "1A Reading",
+      "topic": "Language: Skill, Tool, Form, and Function",
+      "pre_reading": [
+        {
+          "id": 1,
+          "question": "What is language?",
+          "suggested_answer": "Language is a skill, a tool for communication, a form of verbal and non-verbal expression, and a means to perform social functions."
+        },
+        {
+          "id": 2,
+          "question": "What do we use it for?",
+          "suggested_answer": "We use it to communicate with others, share information, express our feelings, ask questions, and perform daily social tasks."
+        },
+        {
+          "id": 3,
+          "question": "What does language do for us?",
+          "suggested_answer": "Language helps us connect with people, reflects and preserves our culture, passes traditions to the next generation, and defines our social identity."
+        },
+        {
+          "id": 4,
+          "question": "What would our life be like without language?",
+          "suggested_answer": "Without language, our life would be incredibly difficult because we would not be able to share complex ideas, express thoughts clearly, or build organized societies."
+        }
+      ],
+      "reading_passage": {
+        "title": "Read the passage.",
+        "paragraphs": [
+          {
+            "paragraph_id": 1,
+            "lines": "1-3",
+            "english_text": "The question, \"What is language?\" can have several different answers, and all of them may be acceptable. For our present purpose, however, let us look at language as a skill, as a tool for communication, as a form of communication, and as a means to perform many social functions.",
+            "burmese_explanation": "ဘာသာစကားဆိုတာ ဘာလဲဆိုတဲ့ မေးခွန်းအတွက် လက်ခံနိုင်တဲ့ အဖြေများစွာ ရှိပါတယ်။ သို့သော် ဒီခါမှာ ဘာသာစကားကို အရည်အချင်း၊ ဆက်သွယ်ရေးအတွက် ကိရိယာ၊ ဆက်သွယ်ရေးပုံစံ နှင့် လူမှုဘဝ လုပ်ဆောင်ချက်များ ကျင့်သုံးရန် အခန်းကဏ္ဍအဖြစ် ထည့်သွင်းစဉ်းစားကြည့်ပါ။"
+          },
+          {
+            "paragraph_id": 2,
+            "lines": "4-9",
+            "english_text": "First, language is a set of skills: listening, speaking, reading, and writing. They are often known as the four language skills. Of these four skills, the listening skill is the first to be developed by a baby.",
+            "burmese_explanation": "ပထမအချက်အနေနဲ့ ဘာသာစကားဟာ နားထောင်ခြင်း၊ ပြောဆိုခြင်း၊ ဖတ်ခြင်း နှင့် ရေးခြင်းတွေအပါအဝင် စွမ်းရည်များ အစုအဖွဲ့တစ်ခု ဖြစ်ပါတယ်။ ဒီ အရည်စွမ်းရည်လေးခုကို ဘာသာစကား စွမ်းရည်လေးခု ဟုခေါ်သည်။ ဒီလေးခုထဲမှ နားထောင်ခြင်းစွမ်းရည်ကို ကလေးများက အကျင့်အရည် အရင်ဆုံး ပြုလုပ်လာခြင်းဖြစ်ပါတယ်။"
+          },
+          {
+            "paragraph_id": 3,
+            "lines": "10-15",
+            "english_text": "Here, we should note that listening and speaking work together as a pair of skills, while reading and writing work together as another pair. We should note further that speaking and writing are productive skills, while listening and reading are receptive skills.",
+            "burmese_explanation": "မှတ်သားရမှာက နားထောင်ခြင်းနဲ့ ပြောဆိုခြင်းက တွဲလျက် စွမ်းရည်မျိုးတစ်မျိုး အဖြစ် လုပ်ဆောင်ခြင်းအနည်းငယ်တစ်ခုခြင်းဖြစ်ပါတယ်။ ဖတ်ခြင်းနဲ့ ရေးခြင်းတွေကလည်း တစ်ခြား တွဲလျက် စွမ်းရည်များ အဖြစ် လုပ်ဆောင်ခြင်းများ ဖြစ်ပါတယ်။ နောက်ထပ် သတိပြုရမှာကတော့ ပြောဆိုခြင်းနဲ့ ရေးခြင်းတွေဟာ ဖန်တီးမှု စွမ်းရည်များ ဖြစ်တဲ့ အတွက် နားထောင်ခြင်းနဲ့ ဖတ်ခြင်းတွေကတော့ လက်ခံမှု စွမ်းရည်များ ဖြစ်ပါတယ်။"
+          },
+          {
+            "paragraph_id": 4,
+            "lines": "16-27",
+            "english_text": "Second, language is a tool for communication. This means that we use language to speak to someone, or to write to someone. To speak, we use vocal symbols; to write, we use written symbols.",
+            "burmese_explanation": "ဒုတိယအချက်ကတော့ ဘာသာစကားဟာ ဆက်သွယ်ရေးအတွက် ကိရိယာတစ်ခု ဖြစ်ပါတယ်။ ဒါက ငါတို့ ဘာသာစကားကို တစ်စုံတစ်ယောက်ထံ ပြောဆိုရန် သို့မဟုတ် စာဖြင့် ရေးတိုက်ရန် အသုံးပြုခြင်းဖြစ်ပါတယ်။ ပြောဆိုရန် ငါတို့ အသံအသုံးပြုခြင်းများ အသုံးပြုပါတယ်။ စာဖြင့်ရေးရန်တော့ စာသားအသုံးပြုမှုများ အသုံးပြုပါတယ်။"
+          },
+          {
+            "paragraph_id": 5,
+            "lines": "28-32",
+            "english_text": "Third, communication may be in one of two forms: verbal communication, and non-verbal communication. In verbal communication, we use words and sentences. They may be spoken or written.",
+            "burmese_explanation": "တတိယအချက်အနေနဲ့ ဆက်သွယ်ရေးမှာ ပုံသဏ္ဌာန်နှစ်မျိုး ရှိပါတယ်။ စကားအသုံးပြုခြင်းဆက်သွယ်ရေး နှင့် စကားမဆုံးလုံးဆက်သွယ်ရေး ဖြစ်ပါတယ်။ စကားအသုံးပြုခြင်းဆက်သွယ်ရေးတွင် ငါတို့ စကားလုံး နှင့် စာကြောင်းများ အသုံးပြုပါတယ်။ ၎င်းတို့သည် ပြောဆိုရန် သို့မဟုတ် ရေးတိုက်ရန် ဖြစ်နိုင်ပါတယ်။"
+          },
+          {
+            "paragraph_id": 6,
+            "lines": "33-54",
+            "english_text": "Fourth, we use language to help us perform many social functions, which are very much part of our day-to-day life. This means that we use language: to greet or to bid goodbye, to ask questions, to give orders, to thank someone, to apologize, to request something, to offer, to refuse, to invite, to suggest, and to warn.",
+            "burmese_explanation": "စတုတ္ထအချက်ကတော့ ဘာသာစကားကို နေ့စဉ်လူမှုဘဝ လုပ်ဆောင်ချက်များ ကျင့်သုံးရန် အသုံးပြုပါတယ်။ ဆိုလိုရင်း ငါတို့ အလျှောက်လည်း အသုံးပြုခြင်း၊ ကွင်းဆင်းခြင်း၊ မေးခြင်း၊ အမိန့်စာ ထုတ်ခြင်း၊ ကျေးဇူးတင်ခြင်း၊ တောင်းပန်ခြင်း၊ တောင်းခံခြင်း၊ အဆိုပြုခြင်း၊ ငြင်းပယ်ခြင်း၊ ဖိတ်ခေါ်ခြင်း၊ အကြံပြုခြင်း နှင့် သတိပေးခြင်းတွေအတွက် ဘာသာစကားကို အသုံးပြုပါတယ်။"
+          },
+          {
+            "paragraph_id": 7,
+            "lines": "55-57",
+            "english_text": "In addition, language reflects culture, preserves culture, passes on culture from one generation to the next, preserves nationality, and also identifies social class.",
+            "burmese_explanation": "ဒါ့အပြင် ဘာသာစကားဟာ ယဉ်ကျေးမှုကို ထင်ဟပ်စေတယ်။ ယဉ်ကျေးမှုကို ကြေးမုံကျင့်သုံးစေတယ်။ ယဉ်ကျေးမှုကို လူမှုတစ်မျိုးမှ တစ်မျိုးသို့ ကျေးဇူးတင်သွားစေတယ်။ နိုင်ငံသားခွဲခြားမှုကို ကြေးမုံကျင့်သုံးစေတယ်။ လူမှုအဆင့်အတန်းကို နားလည်စေတယ်။"
+          }
+        ]
+      },
+      "comprehension": {
+        "part_A": {
+          "instructions": "Complete each sentence below with a word or phrase from the reading passage.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "text": "The four language skills are: ___________.",
+              "answer": "listening, speaking, reading, and writing"
+            },
+            {
+              "question_number": 2,
+              "text": "The first language skill to develop is ___________.",
+              "answer": "the listening skill"
+            },
+            {
+              "question_number": 3,
+              "text": "A baby begins to speak at the age of ___________.",
+              "answer": "about one and a half years or so"
+            },
+            {
+              "question_number": 4,
+              "text": "Listening and ___________ work together as a pair of skills.",
+              "answer": "speaking"
+            },
+            {
+              "question_number": 5,
+              "text": "The other pair of skills includes ___________.",
+              "answer": "reading and writing"
+            },
+            {
+              "question_number": 6,
+              "text": "Speaking and writing are ___________ skills.",
+              "answer": "productive"
+            },
+            {
+              "question_number": 7,
+              "text": "Language is also known as a ___________ for communication.",
+              "answer": "tool"
+            },
+            {
+              "question_number": 8,
+              "text": "The two forms of communication are ___________ and ___________.",
+              "answer": "verbal communication; non-verbal communication"
+            },
+            {
+              "question_number": 9,
+              "text": "We use ___________ when we speak to help the listener understand better.",
+              "answer": "gestures"
+            },
+            {
+              "question_number": 10,
+              "text": "We use ___________ when we write to help the reader understand better.",
+              "answer": "graphics"
+            }
+          ]
+        },
+        "part_B": {
+          "instructions": "Give a short answer to each question below.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "question": "When does a child begin to read and write?",
+              "answer": "Only when the child goes to school."
+            },
+            {
+              "question_number": 2,
+              "question": "What are the productive skills of language?",
+              "answer": "Speaking and writing."
+            },
+            {
+              "question_number": 3,
+              "question": "What are the receptive skills of language?",
+              "answer": "Listening and reading."
+            },
+            {
+              "question_number": 4,
+              "question": "Why do we use gestures when we speak?",
+              "answer": "To help the listener understand us better."
+            },
+            {
+              "question_number": 5,
+              "question": "How do we help the reader understand what we write better?",
+              "answer": "By using graphics such as pictures, photographs, charts, and tables."
+            },
+            {
+              "question_number": 6,
+              "question": "What are the two forms of communication?",
+              "answer": "Verbal communication and non-verbal communication."
+            },
+            {
+              "question_number": 7,
+              "question": "Do you want to learn any other foreign language apart from English? Why?",
+              "answer": "Sample answer: Yes, I want to learn Japanese because I want to understand Japanese culture and communicate with Japanese people."
+            },
+            {
+              "question_number": 8,
+              "question": "Which language skill is the most difficult for you to learn? Why?",
+              "answer": "Sample answer: Writing is the most difficult skill for me because it requires more thought and careful grammar usage."
+            }
+          ]
+        },
+        "part_C": {
+          "instructions": "Write the function of each utterance within the brackets given.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "utterance": "Hello, good morning.",
+              "function": "greeting"
+            },
+            {
+              "question_number": 2,
+              "utterance": "May I use the phone, please?",
+              "function": "asking for permission"
+            },
+            {
+              "question_number": 3,
+              "utterance": "It's very kind of you to help me.",
+              "function": "thanking or expressing gratitude"
+            },
+            {
+              "question_number": 4,
+              "utterance": "Could you please scan the photo for me?",
+              "function": "requesting"
+            },
+            {
+              "question_number": 5,
+              "utterance": "I'm sorry I'm late.",
+              "function": "apologizing or expressing regret"
+            },
+            {
+              "question_number": 6,
+              "utterance": "Go along this street and turn right.",
+              "function": "directing someone how to get to a certain place"
+            },
+            {
+              "question_number": 7,
+              "utterance": "It's my pleasure.",
+              "function": "responding to words of thanks and gratitude"
+            },
+            {
+              "question_number": 8,
+              "utterance": "How's your grandmother?",
+              "function": "asking someone a question"
+            },
+            {
+              "question_number": 9,
+              "utterance": "I don't quite agree with what you said.",
+              "function": "disagreeing"
+            },
+            {
+              "question_number": 10,
+              "utterance": "Make three copies of this article.",
+              "function": "instructing someone what to do"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson": "1B Vocabulary",
+      "topic": "Countries, Nationalities and Languages",
+      "part_A": {
+        "instructions": "Complete the table. Australia and China are done for you as examples.",
+        "headers": ["COUNTRY", "NATIONALITY", "LANGUAGE", "ADJECTIVE"],
+        "table_data": [
+          {
+            "country": "Australia",
+            "nationality": "Australian",
+            "language": "English",
+            "adjective": "Australian"
+          },
+          {
+            "country": "China",
+            "nationality": "Chinese",
+            "language": "Chinese",
+            "adjective": "Chinese"
+          },
+          {
+            "country": "France",
+            "nationality": "French",
+            "language": "French",
+            "adjective": "French"
+          },
+          {
+            "country": "Germany",
+            "nationality": "German",
+            "language": "German",
+            "adjective": "German"
+          },
+          {
+            "country": "Italy",
+            "nationality": "Italian",
+            "language": "Italian",
+            "adjective": "Italian"
+          },
+          {
+            "country": "Japan",
+            "nationality": "Japanese",
+            "language": "Japanese",
+            "adjective": "Japanese"
+          },
+          {
+            "country": "Korea",
+            "nationality": "Korean",
+            "language": "Korean",
+            "adjective": "Korean"
+          },
+          {
+            "country": "Laos",
+            "nationality": "Laotian",
+            "language": "Lao / Laotian",
+            "adjective": "Lao / Laotian"
+          },
+          {
+            "country": "Myanmar",
+            "nationality": "Burmese",
+            "language": "Myanmar / Burmese",
+            "adjective": "Burmese"
+          },
+          {
+            "country": "The UK",
+            "nationality": "British",
+            "language": "English",
+            "adjective": "British"
+          },
+          {
+            "country": "The USA",
+            "nationality": "American",
+            "language": "English",
+            "adjective": "American"
+          },
+          {
+            "country": "Vietnam",
+            "nationality": "Vietnamese",
+            "language": "Vietnamese",
+            "adjective": "Vietnamese"
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Rewrite each sentence below, filling the blanks with appropriate words from the table in Exercise A.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "Because I speak ___________ fluently, I did not have much trouble in France.",
+            "answer": "French"
+          },
+          {
+            "question_number": 2,
+            "text": "Those tourists are from Italy and they speak only ___________ and do not understand a word of English.",
+            "answer": "Italian"
+          },
+          {
+            "question_number": 3,
+            "text": "I wish to visit Vietnam but I do not speak a word of ___________.",
+            "answer": "Vietnamese"
+          },
+          {
+            "question_number": 4,
+            "text": "Since you speak ___________ quite well, you should have no problem studying in the USA.",
+            "answer": "English"
+          },
+          {
+            "question_number": 5,
+            "text": "I plan to work in Korea, so I'm learning ___________ at the Yangon University of Foreign Languages.",
+            "answer": "Korean"
+          },
+          {
+            "question_number": 6,
+            "text": "A kimono is a traditional ___________ garment.",
+            "answer": "Japanese"
+          },
+          {
+            "question_number": 7,
+            "text": "William Shakespeare is a very widely known ___________ playwright and poet.",
+            "answer": "British"
+          },
+          {
+            "question_number": 8,
+            "text": "I have never been to Laos and I have never tried ___________ food.",
+            "answer": "Lao / Laotian"
+          },
+          {
+            "question_number": 9,
+            "text": "He grew up in Germany and he speaks ___________ fluently.",
+            "answer": "German"
+          },
+          {
+            "question_number": 10,
+            "text": "I like ___________ food though I don't know how to use the chopstick.",
+            "answer": "Chinese"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": "1C Grammar",
+      "topic": "Nouns in Apposition",
+      "part_A": {
+        "instructions": "Spot the nouns in apposition in the following sentences and underline them.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "There are many pagodas in Bagan, an ancient capital of Myanmar.",
+            "apposition_phrases": ["an ancient capital of Myanmar"]
+          },
+          {
+            "question_number": 2,
+            "text": "The ostrich, a kind of flightless bird, is found only in Africa.",
+            "apposition_phrases": ["a kind of flightless bird"]
+          },
+          {
+            "question_number": 3,
+            "text": "My son, a musician, earns little and lives with me.",
+            "apposition_phrases": ["a musician"]
+          },
+          {
+            "question_number": 4,
+            "text": "Loch Ness, a large mountain lake, is in Scotland.",
+            "apposition_phrases": ["a large mountain lake"]
+          },
+          {
+            "question_number": 5,
+            "text": "Mt. Everest, the highest peak in the world, is in Nepal.",
+            "apposition_phrases": ["the highest peak in the world"]
+          },
+          {
+            "question_number": 6,
+            "text": "I'd love to climb Kilimanjaro, the highest mountain in Tanzania.",
+            "apposition_phrases": ["the highest mountain in Tanzania"]
+          },
+          {
+            "question_number": 7,
+            "text": "Brussels sprout, a green vegetable like a tiny cabbage, is quite delicious to eat.",
+            "apposition_phrases": ["a green vegetable like a tiny cabbage"]
+          },
+          {
+            "question_number": 8,
+            "text": "The Nile, the longest river in the world, is in northeastern Africa.",
+            "apposition_phrases": ["the longest river in the world"]
+          },
+          {
+            "question_number": 9,
+            "text": "Judo, a Japanese martial art, originated from jujitsu, a samurai unarmed fighting technique.",
+            "apposition_phrases": [
+              "a Japanese martial art",
+              "a samurai unarmed fighting technique"
+            ]
+          },
+          {
+            "question_number":10,
+            "text":"Albert Einstein ,the great physicist,was famous for his theory of relativity.",
+            "apposition_pharses":[
+              "Albert Einstein",
+              "the great physicist"
+            ]
+          }
+        ]
+      },
+        "part_B": {
+    "instructions": "Combine the two sentences, using nouns in apposition.",
+    "exercises": [
+      {
+        "question_number": 1,
+        "text": "Myanmar is the second largest country in Southeast Asia. It is known as the land of pagodas.",
+        "correct_answer": "Myanmar, the second largest country in Southeast Asia, is known as the land of pagodas.",
+        "alternative_answer": "Myanmar, the land of pagodas, is the second largest country in Southeast Asia."
+      },
+      {
+        "question_number": 2,
+        "text": "U Tun Tun is our English teacher. He is a very strict person.",
+        "correct_answer": "U Tun Tun, our English teacher, is a very strict person."
+      },
+      {
+        "question_number": 3,
+        "text": "Aung Aung won many prizes. He is the best footballer in our school.",
+        "correct_answer": "Aung Aung, the best footballer in our school, won many prizes."
+      },
+      {
+        "question_number": 4,
+        "text": "An excuse may or may not be true. It is a reason for an apology.",
+        "correct_answer": "An excuse, a reason for an apology, may or may not be true."
+      },
+      {
+        "question_number": 5,
+        "text": "Jack was born in Finland. Finland is the land of a thousand lakes.",
+        "correct_answer": "Jack was born in Finland, the land of a thousand lakes."
+      },
+      {
+        "question_number": 6,
+        "text": "Elvis Presley was a very popular singer. He was referred to as the \"King of Rock and Roll\".",
+        "correct_answer": "Elvis Presley, a very popular singer, was referred to as the \"King of Rock and Roll\"."
+      },
+      {
+        "question_number": 7,
+        "text": "We will spend our vacation at Ngapali Beach. It is the most beautiful beach in our country.",
+        "correct_answer": "We will spend our vacation at Ngapali Beach, the most beautiful beach in our country."
+      },
+      {
+        "question_number": 8,
+        "text": "William Henry Gates was born in Washington. He is the principal founder of Microsoft.",
+        "correct_answer": "William Henry Gates, the principal founder of Microsoft, was born in Washington."
+      },
+      {
+        "question_number": 9,
+        "text": "I like spaghetti. It is an Italian dish with noodles and sauce.",
+        "correct_answer": "I like spaghetti, an Italian dish with noodles and sauce."
+      },
+      {
+        "question_number": 10,
+        "text": "My childhood home is just down the road. It is an old wooden house.",
+        "correct_answer": "My childhood home, an old wooden house, is just down the road."
+      }
+    ]
+  }
+    },
+    {
+    "id": "1d-listening-speaking",
+    "code": "1D",
+    "type": "Listening and Speaking",
+    "title": "Listening and Speaking",
+    "titleMy": "နားထောင်ခြင်းနှင့် ပြောဆိုခြင်း",
+    "intro": "Listen to the information about global languages and practice conversational interviewing skills with your partner.",
+    "introMy": "ကမ္ဘာ့ဘာသာစကားများအကြောင်းကို နားထောင်ပြီး သူငယ်ချင်းနှင့်အတူ အင်တာဗျူးမေးခွန်းများ မေးမြန်းပြောဆိုလေ့ကျင့်ပါ။",
+    "questions": [
+      {
+        "id": 1,
+        "question": "English is spoken by over __________ people in the world.",
+        "suggested_answer": "[Listen to audio for exact number]"
+      },
+      {
+        "id": 2,
+        "question": "__________ is the second most spoken language in the world.",
+        "suggested_answer": "[Listen to audio for exact language]"
+      },
+      {
+        "id": 3,
+        "question": "Hindi and Punjabi belong to the __________ language family.",
+        "suggested_answer": "Indo-Aryan / Indo-European"
+      },
+      {
+        "id": 4,
+        "question": "People in Spain and Central and South America speak __________.",
+        "suggested_answer": "Spanish"
+      },
+        {
+          "id": 5,
+          "question": "The number of people who speak __________ is more than that of Russian.",
+          "suggested_answer": "[Listen to audio for exact language]"
+        },
+        {
+          "id": 6,
+          "question": "A. Listen to the recording and tick the names of the languages you hear: Arabic, Brazilian, Chinese, English, French, German, Hindi, Italian, Japanese, Portuguese, Russian, Spanish.",
+          "translation": "A။ အသံဖိုင်ကို နားထောင်ပြီး ကြားရသော ဘာသာစကားအမည်များကို အမှန်ခြစ်ပါ။"
+        },
+        {
+          "id": 7,
+          "question": "C. Listen again and order the seven languages from the most widely spoken to the least spoken.",
+          "translation": "C။ ထပ်မံနားထောင်ပြီး လူအများဆုံးပြောသော ဘာသာစကားမှ လူအနည်းဆုံးပြောသော ဘာသာစကားအထိ အစဉ်လိုက်စီပါ။"
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Are you learning a foreign language? What is it?",
+          "translation": "သင် နိုင်ငံခြားဘာသာစကားတစ်ခုခုကို သင်ယူနေပါသလား။ ဘယ်ဘာသာစကားလဲ။",
+          "answer": "Yes, I am learning English."
+        },
+        {
+          "id": 2,
+          "question": "When did you start learning it?",
+          "translation": "အဲဒီဘာသာစကားကို ဘယ်အချိန်က စပြီး သင်ယူခဲ့တာလဲ။",
+          "answer": "I started learning it when I was in primary school."
+        },
+        {
+          "id": 3,
+          "question": "What difficulties do you have in learning it?",
+          "translation": "အဲဒီဘာသာစကားကို သင်ယူရာမှာ ဘယ်လိုအခက်အခဲတွေ ရှိပါသလဲ။",
+          "answer": "I have difficulties with vocabulary, grammar rules, and correct pronunciation."
+        },
+        {
+          "id": 4,
+          "question": "How do you study that language outside school?",
+          "translation": "ကျောင်းပြင်ပမှာ အဲဒီဘာသာစကားကို ဘယ်လိုလေ့လာပါသလဲ။",
+          "answer": "I practice by watching English movies, listening to songs, and reading storybooks."
+        },
+        {
+          "id": 5,
+          "question": "How do you greet each other in that language?",
+          "translation": "အဲဒီဘာသာစကားနဲ့ အချင်းချင်း ဘယ်လိုနှုတ်ဆက်ကြပါသလဲ။",
+          "answer": "We greet each other by saying, 'Hello.'"
+        },
+        {
+          "id": 6,
+          "question": "What words or phrases would you use to express thanks?",
+          "translation": "ကျေးဇူးတင်ကြောင်း ဖော်ပြဖို့ ဘယ်စကားလုံးတွေ၊ စကားစုတွေကို သုံးပါသလဲ။",
+          "answer": "I would use phrases like 'Thank you very much', 'Thanks a lot', or 'I really appreciate it'."
+        },
+        {
+          "id": 7,
+          "question": "What other foreign languages would you like to learn? Why?",
+          "translation": "တခြားဘယ်နိုင်ငံခြားဘာသာစကားတွေကို သင်ယူချင်ပါသလဲ။ ဘာကြောင့်လဲ။",
+          "answer": "I would like to learn Japanese because I am interested in Japanese culture."
+        },
+        {
+          "id": 8,
+          "question": "E. Tell the class about the foreign language your friend is learning.",
+          "translation": "E။ သင့်သူငယ်ချင်း သင်ယူနေသော နိုင်ငံခြားဘာသာစကားအကြောင်း အတန်းဖော်များကို ပြောပြပါ။",
+          "answer": "My friend is learning English. They started learning it in primary school and practise outside school by reading and speaking with friends."
+        }
+      ]
+  },
+  {
+    "id": "1e-writing",
+    "code": "1E",
+    "type": "Writing",
+    "title": "Writing: Essay on Japan",
+    "titleMy": "စာရေးသားခြင်း - ဂျပန်နိုင်ငံအကြောင်း စာပိုဒ်တိုရေးသားခြင်း",
+    "intro": "Write a short paragraph of seven to ten sentences on Japan using the suggested key points.",
+    "introMy": "ပေးထားသော အချက်အလက်များကို အသုံးပြု၍ ဂျပန်နိုင်ငံအကြောင်း စာကြောင်းရေ ၇ ကြောင်းမှ ၁၀ ကြောင်းပါ စာပိုဒ်တိုတစ်ခု ရေးသားပါ။",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Write a short paragraph about Japan using the suggested points (island nation, Pacific Ocean, advanced country, exports, etc.).",
+        "suggested_answer": "Japan is an island nation located in the north Pacific Ocean, just off the coast of the Asian continent. The people of Japan speak Japanese, which is their official language. It is known worldwide as a very advanced country with a strong economy. Japan is famous for its technology and high-quality production. The country manufactures and exports millions of cars, advanced cameras, and televisions to many global markets. Through hard work and innovation, Japan has become one of the most developed nations in the world."
+      }
+    ],
+    "bonusQuestions": [
+      {
+        "id": 1,
+        "question": "Where is Japan located?",
+        "answer": "It is located in the north Pacific Ocean, off the coast of the Asian continent."
+      },
+      {
+        "id": 2,
+        "question": "What are the major manufacturing exports of Japan?",
+        "answer": "Japan manufactures and exports cars, cameras, and televisions."
+      }
+    ]
+  }
+    
+  ]
+}

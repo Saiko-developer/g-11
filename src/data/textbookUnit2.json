@@ -1,0 +1,834 @@
+{
+  "unit": "UNIT 2",
+  "unitTitle": "Literature",
+  "lessons": [
+    {
+      "id": "2a-reading",
+      "code": "2A",
+      "type": "Reading",
+      "title": "2A Reading: Literature",
+      "titleMy": "စာဖတ်ခြင်း - စာပေ",
+      "intro": "Read about what literature is and about its three subjects: Prose, Poetry, and Drama.",
+      "introMy": "စာပေဆိုသည်မှာ ဘာလဲဆိုတာနှင့် စာပေ၏ အခန်းကဏ္ဍသုံးရပ်ဖြစ်သော စကားပြေ၊ ကဗျာ နှင့် ပြဇာတ်တို့အကြောင်း ဖတ်ရှုလေ့လာပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What does the Latin word \"litteratura\" mean?",
+          "suggested_answer": "It means \"writing\"."
+        },
+        {
+          "id": 2,
+          "question": "What are the three subjects of literature?",
+          "suggested_answer": "Prose, Poetry, and Drama."
+        },
+        {
+          "id": 3,
+          "question": "What are the three kinds of drama?",
+          "suggested_answer": "Comedy, Tragedy, and Tragicomedy."
+        },
+        {
+          "id": 4,
+          "question": "What makes a novel, a poem or a play a classic?",
+          "suggested_answer": "It becomes a classic when it is of the highest quality, is pleasurable to read at any time, and has enduring cultural value."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Who is a writer of literature compared to in the passage?",
+          "answer": "A painter."
+        },
+        {
+          "id": 2,
+          "question": "How many lines does a sonnet have?",
+          "answer": "Fourteen lines."
+        }
+      ]
+    },
+    {
+      "id": "2b-vocabulary",
+      "code": "2B",
+      "type": "Vocabulary",
+      "title": "2B Vocabulary: Defining Words",
+      "titleMy": "ဝေါဟာရ - စကားလုံးများ၏ အဓိပ္ပာယ်ဖွင့်ဆိုချက်",
+      "intro": "Copy the meanings of the literature words from the passage and match definitions in Column A with Column B.",
+      "introMy": "စာပိုဒ်ထဲမှ စာပေဝေါဟာရများ၏ အဓိပ္ပာယ်ကို ကူးယူပြီး Column A နှင့် Column B ကို တွဲဆက်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is prose?",
+          "suggested_answer": "A kind of free, straightforward writing with no restrictions on the number of words or syllables."
+        },
+        {
+          "id": 2,
+          "question": "What is poetry?",
+          "suggested_answer": "Literature in verse."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What is a limerick?",
+          "answer": "A humorous poem with five lines and its own rhyming scheme."
+        },
+        {
+          "id": 2,
+          "question": "What is a tragicomedy?",
+          "answer": "A type of play that is both sad and amusing."
+        }
+      ]
+    },
+    {
+      "id": "2c-grammar",
+      "code": "2C",
+      "type": "Grammar",
+      "title": "2C Grammar: Adjectival Phrases, Present Simple & Continuous",
+      "titleMy": "သဒ္ဒါ - နာမဝိသေသန စကားစုများ၊ ပစ္စုပ္ပန် ရိုးရိုး နှင့် ဆက်လက်ဖြစ်ပျက်နေသော ကာလ",
+      "intro": "Find the adjectival phrase in each sentence, and practise the present simple and present continuous tenses.",
+      "introMy": "စာကြောင်းတစ်ကြောင်းစီရှိ နာမဝိသေသန စကားစုကို ရှာဖွေပြီး ပစ္စုပ္ပန် ရိုးရိုးနှင့် ဆက်လက်ဖြစ်ပျက်နေသော ကာလများကို လေ့ကျင့်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the adjectival phrase in: 'That boy in the green shirt is my cousin.'?",
+          "answer": "in the green shirt"
+        },
+        {
+          "id": 2,
+          "question": "Which tense do we use for something happening at the moment?",
+          "answer": "The present continuous tense."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Correct this sentence: 'I work in a public library at the moment.'",
+          "answer": "I am working in a public library at the moment."
+        },
+        {
+          "id": 2,
+          "question": "Why is 'I am not liking to wear too much make-up' wrong?",
+          "answer": "'Like' is a state verb, so it is not used in the continuous form: 'I do not like to wear too much make-up.'"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "lesson": "2A Reading",
+      "topic": "Literature",
+      "pre_reading": [
+        {
+          "id": 1,
+          "question": "What is literature?",
+          "suggested_answer": "Literature is writing that has a lasting effect on the reader, making the reader want to read on and on, and again and again."
+        },
+        {
+          "id": 2,
+          "question": "Is every piece of writing literature?",
+          "suggested_answer": "No. A recipe or the directions on a bottle of medicine are pieces of writing, but they are not literature."
+        },
+        {
+          "id": 3,
+          "question": "Which subjects make up literature as a field of study?",
+          "suggested_answer": "Prose, Poetry, and Drama."
+        },
+        {
+          "id": 4,
+          "question": "Does Myanmar have a literature of its own?",
+          "suggested_answer": "Yes. As a literate nation, we have our own poems, prose and drama."
+        }
+      ],
+      "reading_passage": {
+        "title": "2A Reading: Literature",
+        "paragraphs": [
+          {
+            "paragraph_id": 1,
+            "lines": "1-5",
+            "english_text": "The English word \"literature\" comes from the Latin word \"litteratura,\" which means \"writing.\" Thus, we may assume that there was no literature until people could write. However, we cannot say that every and any piece of writing is literature. For instance, no one would call a \"Recipe for Coconut Rice\" literature. Neither could one call the \"Directions\" on a bottle of medicine literature.",
+            "burmese_explanation": "စာပေဟူသော အယူအဆသည် အရေးအသားကို ဆိုလိုသည့် လက်တင်စကားလုံးမှ ဆင်းသက်လာသည်။ ထို့ကြောင့် လူသားများ စာရေးတတ်လာသည့်အချိန်မှသာ စာပေ ပေါ်ပေါက်လာသည်ဟု ယူဆနိုင်သည်။ သို့သော် အရေးအသားတိုင်းကို စာပေဟု မခေါ်ဆိုနိုင်ပါ။ ဥပမာ၊ အုန်းထမင်းချက်နည်းကို စာပေဟု မည်သူမျှ မခေါ်ပါ။ ဆေးပုလင်းပေါ်ရှိ သောက်သုံးရန် ညွှန်ကြားချက်ကိုလည်း စာပေဟု မခေါ်နိုင်ပါ။"
+          },
+          {
+            "paragraph_id": 2,
+            "lines": "6-11",
+            "english_text": "To put it simply, for a piece of writing to be recognized as literature, it must have a lasting effect on the reader in such a way that the reader would want to read on and on, and again and again too. A writer of a piece of literature may be compared to a painter. A painter chooses and uses colours carefully to get a beautiful painting. Similarly, a writer of a piece of literature chooses and uses his words carefully to turn out a piece of writing that will make his reader wish to read on and on, and even again and again.",
+            "burmese_explanation": "ရိုးရှင်းစွာ ဆိုရလျှင် အရေးအသားတစ်ခုကို စာပေအဖြစ် အသိအမှတ်ပြုရန်အတွက် စာဖတ်သူအပေါ် ရေရှည်တည်တံ့သော သက်ရောက်မှုရှိရမည်ဖြစ်ပြီး စာဖတ်သူက ဆက်လက်ဖတ်ရှုလိုစိတ်၊ ထပ်ခါထပ်ခါ ဖတ်လိုစိတ် ဖြစ်စေရမည်။ စာပေရေးသားသူကို ပန်းချီဆရာနှင့် နှိုင်းယှဉ်နိုင်သည်။ ပန်းချီဆရာသည် လှပသော ပန်းချီကားရရှိရန် အရောင်များကို ဂရုတစိုက် ရွေးချယ်အသုံးပြုသည်။ ထို့အတူ စာရေးဆရာသည်လည်း စာဖတ်သူ ဆက်လက်ဖတ်ရှုလိုစေရန် စကားလုံးများကို ဂရုတစိုက် ရွေးချယ်အသုံးပြုသည်။"
+          },
+          {
+            "paragraph_id": 3,
+            "lines": "12-14",
+            "english_text": "Another important point to note is that every literate nation has literature of its own. Literature as a field of study is made up of three subjects: Prose, Poetry, and Drama.",
+            "burmese_explanation": "မှတ်သားရမည့် နောက်ထပ်အချက်မှာ စာတတ်မြောက်သော နိုင်ငံတိုင်းတွင် မိမိတို့ကိုယ်ပိုင် စာပေရှိကြခြင်း ဖြစ်သည်။ စာပေကို လေ့လာရာတွင် အဓိကအားဖြင့် စကားပြေ၊ ကဗျာနှင့် ပြဇာတ် ဟူ၍ အမျိုးအစားသုံးမျိုး ပါဝင်သည်။"
+          },
+          {
+            "paragraph_id": 4,
+            "lines": "15-19",
+            "english_text": "Prose — This is a kind of free, straightforward writing. There are no restrictions on the number of words or syllables as there are in poetry. Thus, letters, essays, articles, biographies, short stories, and novels are all pieces of prose. Wuthering Heights by Emily Brontë, Pride and Prejudice by Jane Austen, and For Whom the Bell Tolls by Ernest Hemingway are well-known novels. They are all pieces of prose.",
+            "burmese_explanation": "စကားပြေဆိုသည်မှာ လွတ်လပ်ပြီး တိုက်ရိုက်ရေးသားသော အရေးအသားမျိုး ဖြစ်သည်။ ကဗျာကဲ့သို့ စကားလုံး သို့မဟုတ် အသံထွက်လုံးရေ ကန့်သတ်ချက် မရှိပါ။ ထို့ကြောင့် စာများ၊ စာစီစာကုံးများ၊ ဆောင်းပါးများ၊ အတ္ထုပ္ပတ္တိများ၊ ဝတ္ထုတိုများနှင့် ဝတ္ထုရှည်များအားလုံးသည် စကားပြေများ ဖြစ်သည်။ Emily Brontë ၏ Wuthering Heights၊ Jane Austen ၏ Pride and Prejudice နှင့် Ernest Hemingway ၏ For Whom the Bell Tolls တို့သည် နာမည်ကျော် ဝတ္ထုရှည်များ ဖြစ်သည်။"
+          },
+          {
+            "paragraph_id": 5,
+            "lines": "20-27",
+            "english_text": "Poetry — Poetry is sometimes defined as \"literature in verse.\" Depending on the type of poem, the poet has to follow certain rules such as the number of syllables to a line; the number of lines to a stanza; the pattern of rhyme and rhythm to maintain, etc. For instance, a sonnet is a poem that has fourteen lines and a particular pattern of rhyme. A limerick, on the other hand, is a humorous poem with five lines and its own rhyming scheme. A lyrical poem, another variety, expresses the poet's thoughts and feelings about something such as love, beauty, death, etc. For instance, Daffodils by William Wordsworth, Song by Christina Rossetti, and The Light of Other Days by Thomas Moore are famous lyrical poems.",
+            "burmese_explanation": "ကဗျာကို တစ်ခါတစ်ရံ အနုပညာမြောက်စွာ ရေးသားထားသော စာပေအဖြစ် အဓိပ္ပာယ်ဖွင့်ဆိုကြသည်။ ကဗျာအမျိုးအစားပေါ်မူတည်၍ ကဗျာဆရာသည် စာကြောင်းတစ်ကြောင်းစီရှိ အသံလုံးရေ၊ အပိုဒ်တစ်ပိုဒ်စီရှိ စာကြောင်းရေ၊ ကာရန်နှင့် စည်းချက်ပုံစံ စသည့် စည်းမျဉ်းများကို လိုက်နာရသည်။ ဥပမာ၊ စာကြောင်း ၁၄ ကြောင်းပါ ကဗျာတွင် သီးသန့်ကာရန်ပုံစံ ရှိတတ်သည်။ စာကြောင်းငါးကြောင်းပါ ဟာသကဗျာမှာမူ ရယ်စရာအကြောင်းအရာ ပါဝင်တတ်သည်။ သီချင်းဆန်သော ကဗျာများတွင် အချစ်၊ အလှ၊ သေခြင်းတရား စသည်တို့အပေါ် ကဗျာဆရာ၏ အတွေးအမြင်နှင့် ခံစားချက်များကို ဖော်ပြသည်။"
+          },
+          {
+            "paragraph_id": 6,
+            "lines": "28-30",
+            "english_text": "Drama — Sometimes, some writers write stories in the form of a play which is to be performed on a stage of a theatre, or presented as a radio or television programme. Such plays are known as drama. There are three kinds of drama: Comedy, Tragedy, and Tragicomedy.",
+            "burmese_explanation": "တစ်ခါတစ်ရံ စာရေးဆရာအချို့သည် ဇာတ်ရုံစင်မြင့်ပေါ်တွင် ကပြရန် သို့မဟုတ် ရေဒီယို၊ ရုပ်မြင်သံကြားအစီအစဉ်အဖြစ် တင်ဆက်ရန် ပြဇာတ်ပုံစံဖြင့် ဇာတ်လမ်းများ ရေးသားကြသည်။ ပြဇာတ်တွင် ရယ်စရာဇာတ်၊ ဝမ်းနည်းဖွယ်ဇာတ်နှင့် ရယ်စရာ၊ ဝမ်းနည်းဖွယ် နှစ်မျိုးရောနှောထားသော ဇာတ် ဟူ၍ အမျိုးအစားသုံးမျိုး ရှိသည်။"
+          },
+          {
+            "paragraph_id": 7,
+            "lines": "31-34",
+            "english_text": "A comedy is a play that is amusing and it makes people laugh. In such a play, the characters may be amusing, or the events may be amusing, or both are amusing. As You Like It and A Midsummer Night's Dream are well-known comedies written by William Shakespeare.",
+            "burmese_explanation": "ရယ်စရာဇာတ်သည် ပရိသတ်ကို ရယ်မောစေသော ပြဇာတ်ဖြစ်သည်။ ထိုပြဇာတ်မျိုးတွင် ဇာတ်ကောင်များ ရယ်စရာကောင်းနိုင်သည်၊ ဖြစ်ရပ်များ ရယ်စရာကောင်းနိုင်သည်၊ သို့မဟုတ် နှစ်ခုစလုံး ရယ်စရာကောင်းနိုင်သည်။ William Shakespeare ရေးသားသော As You Like It နှင့် A Midsummer Night's Dream တို့သည် နာမည်ကျော် ရယ်စရာပြဇာတ်များ ဖြစ်သည်။"
+          },
+          {
+            "paragraph_id": 8,
+            "lines": "35-37",
+            "english_text": "A tragedy is a play that has a very sad ending. Such a play usually tells about the heroic struggle and the downfall of the main character. Shakespeare's Macbeth and Julius Caesar are famous tragedies of English literature. So is Romeo and Juliet.",
+            "burmese_explanation": "ဝမ်းနည်းဖွယ်ဇာတ်သည် အလွန်ဝမ်းနည်းဖွယ်ကောင်းသော အဆုံးသတ်ရှိသည့် ပြဇာတ်ဖြစ်သည်။ ထိုပြဇာတ်မျိုးသည် ဇာတ်ဆောင်၏ သူရဲကောင်းဆန်သော ရုန်းကန်မှုနှင့် ကျဆုံးမှုကို ဖော်ပြလေ့ရှိသည်။ Shakespeare ၏ Macbeth၊ Julius Caesar နှင့် Romeo and Juliet တို့သည် အင်္ဂလိပ်စာပေရှိ ထင်ရှားသော ဝမ်းနည်းဖွယ်ပြဇာတ်များ ဖြစ်သည်။"
+          },
+          {
+            "paragraph_id": 9,
+            "lines": "38-39",
+            "english_text": "A tragicomedy is a type of play that is both sad and amusing. The Winter's Tale and The Tempest are well-known Shakespeare's tragicomedies.",
+            "burmese_explanation": "ရယ်စရာနှင့် ဝမ်းနည်းဖွယ် အင်္ဂါရပ်နှစ်မျိုးလုံး ပါဝင်သော ပြဇာတ်အမျိုးအစားလည်း ရှိသည်။ Shakespeare ၏ The Winter's Tale နှင့် The Tempest တို့သည် ထိုပြဇာတ်အမျိုးအစား၏ နာမည်ကျော် ဥပမာများ ဖြစ်သည်။"
+          },
+          {
+            "paragraph_id": 10,
+            "lines": "40-42",
+            "english_text": "When a novel or a poem or a play is of the highest quality, it becomes a classic. Thus, classics in literature are novels, poems, and plays that are of top quality. They are pleasurable to read at any time. And they have enduring cultural value.",
+            "burmese_explanation": "ဝတ္ထု၊ ကဗျာ သို့မဟုတ် ပြဇာတ်တစ်ခုသည် အရည်အသွေးအမြင့်ဆုံးဖြစ်လာသောအခါ ဂန္ထဝင်လက်ရာတစ်ခု ဖြစ်လာသည်။ ထို့ကြောင့် စာပေတွင် ဂန္ထဝင်လက်ရာများဆိုသည်မှာ အရည်အသွေးအမြင့်ဆုံး ဝတ္ထုများ၊ ကဗျာများနှင့် ပြဇာတ်များ ဖြစ်သည်။ ၎င်းတို့ကို မည်သည့်အချိန်တွင်မဆို ဖတ်ရှုခံစားနိုင်ပြီး ရေရှည်တည်တံ့သော ယဉ်ကျေးမှုတန်ဖိုး ရှိသည်။"
+          },
+          {
+            "paragraph_id": 11,
+            "lines": "43-48",
+            "english_text": "As a literate nation, ours is a literate culture, and hence, we too, have our own literature. Surely, you must have come across such Myanmar terms as: yatu., yagan, pyou., aye-gyin:, aing-gyin:, lay-hsit., tay-dut., baw-lai, etc., all of which are the various kinds of poem of Myanmar literature. And of course we have our prose and drama, too. You might even happen to know or have heard of some prominent figures in Myanmar literature of the past.",
+            "burmese_explanation": "စာတတ်မြောက်သော နိုင်ငံတစ်ခုအနေဖြင့် ကျွန်ုပ်တို့တွင်လည်း ကိုယ်ပိုင်စာပေ ရှိသည်။ ရတု၊ ရကန်၊ ပျို့၊ အေးချင်း၊ အိုင်ချင်း၊ လေးဆစ်၊ တေးထပ်၊ ဘောလယ် စသည့် မြန်မာစာပေ ကဗျာအမျိုးအစားများကို သင် ကြားဖူးမည် ဖြစ်သည်။ ထို့အပြင် ကျွန်ုပ်တို့တွင် စကားပြေနှင့် ပြဇာတ်လည်း ရှိသည်။ ရှေးခေတ် မြန်မာစာပေ၏ ထင်ရှားသော စာဆိုတော်များကိုလည်း သိရှိကြားဖူးကောင်း ကြားဖူးပါလိမ့်မည်။"
+          }
+        ]
+      },
+      "comprehension": {
+        "part_A": {
+          "instructions": "Complete each sentence below with a word or phrase from the reading passage.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "text": "A painter uses colours. A writer uses ______ .",
+              "answer": "words"
+            },
+            {
+              "question_number": 2,
+              "text": "The three subjects under literature are: ______ .",
+              "answer": "Prose, Poetry, and Drama"
+            },
+            {
+              "question_number": 3,
+              "text": "The author or writer of Pride and Prejudice was ______ .",
+              "answer": "Jane Austen"
+            },
+            {
+              "question_number": 4,
+              "text": "For Whom the Bell Tolls was written by ______ .",
+              "answer": "Ernest Hemingway"
+            },
+            {
+              "question_number": 5,
+              "text": "There are ______ lines in a sonnet.",
+              "answer": "fourteen"
+            },
+            {
+              "question_number": 6,
+              "text": "There are ______ lines in a limerick.",
+              "answer": "five"
+            },
+            {
+              "question_number": 7,
+              "text": "The three kinds of drama are: ______ .",
+              "answer": "Comedy, Tragedy, and Tragicomedy"
+            },
+            {
+              "question_number": 8,
+              "text": "A play that has a sad ending is a ______ .",
+              "answer": "tragedy"
+            },
+            {
+              "question_number": 9,
+              "text": "Yatu., yagan, aye-gyin:, and baw-lai are different kinds of Myanmar ______ .",
+              "answer": "poem"
+            }
+          ]
+        },
+        "part_B": {
+          "instructions": "Give a short answer to each question below.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "question": "Who wrote Wuthering Heights?",
+              "answer": "Emily Brontë."
+            },
+            {
+              "question_number": 2,
+              "question": "What is a sonnet?",
+              "answer": "A poem that has fourteen lines and a particular pattern of rhyme."
+            },
+            {
+              "question_number": 3,
+              "question": "What is a limerick?",
+              "answer": "A humorous poem with five lines and its own rhyming scheme."
+            },
+            {
+              "question_number": 4,
+              "question": "Who wrote the play As You Like It?",
+              "answer": "William Shakespeare."
+            },
+            {
+              "question_number": 5,
+              "question": "What is a tragicomedy?",
+              "answer": "A type of play that is both sad and amusing."
+            }
+          ]
+        },
+        "part_C": {
+          "instructions": "Give a full-sentence answer to each question below.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "question": "Can a news article be regarded as literature? Why?",
+              "answer": "A news article cannot usually be regarded as literature because it only reports facts and does not have a lasting effect that makes the reader want to read it again and again."
+            },
+            {
+              "question_number": 2,
+              "question": "When can a piece of writing be recognized as literature?",
+              "answer": "A piece of writing can be recognized as literature when it has a lasting effect on the reader in such a way that the reader would want to read on and on, and again and again."
+            },
+            {
+              "question_number": 3,
+              "question": "What is the difference between a painter and a writer?",
+              "answer": "A painter chooses and uses colours carefully to get a beautiful painting, while a writer chooses and uses his words carefully to turn out a piece of writing that his reader wishes to read again and again."
+            },
+            {
+              "question_number": 4,
+              "question": "What is drama meant for?",
+              "answer": "Drama is meant to be performed on a stage of a theatre, or presented as a radio or television programme."
+            },
+            {
+              "question_number": 5,
+              "question": "What is the difference between a comedy and a tragedy?",
+              "answer": "A comedy is a play that is amusing and makes people laugh, whereas a tragedy is a play that has a very sad ending and tells about the heroic struggle and the downfall of the main character."
+            },
+            {
+              "question_number": 6,
+              "question": "What are classics?",
+              "answer": "Classics are novels, poems, and plays that are of top quality, are pleasurable to read at any time, and have enduring cultural value."
+            },
+            {
+              "question_number": 7,
+              "question": "Which do you like: comedy, tragedy or tragicomedy? Explain why you like it.",
+              "answer": "I like comedy best because the characters and the events are amusing, and a comedy makes me laugh and feel happy after a long day of study."
+            },
+            {
+              "question_number": 8,
+              "question": "Do you wish to be a famous author? Why or why not?",
+              "answer": "Yes, I wish to be a famous author because I would like to choose my words carefully and write stories that my readers would want to read again and again."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson": "2B Vocabulary",
+      "topic": "Defining Words",
+      "part_A": {
+        "instructions": "Copy from the passage the meaning of each word below.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "prose",
+            "answer": "A kind of free, straightforward writing with no restrictions on the number of words or syllables as there are in poetry."
+          },
+          {
+            "question_number": 2,
+            "text": "poetry",
+            "answer": "Literature in verse."
+          },
+          {
+            "question_number": 3,
+            "text": "drama",
+            "answer": "Stories written in the form of a play which is to be performed on a stage of a theatre, or presented as a radio or television programme."
+          },
+          {
+            "question_number": 4,
+            "text": "sonnet",
+            "answer": "A poem that has fourteen lines and a particular pattern of rhyme."
+          },
+          {
+            "question_number": 5,
+            "text": "limerick",
+            "answer": "A humorous poem with five lines and its own rhyming scheme."
+          },
+          {
+            "question_number": 6,
+            "text": "comedy",
+            "answer": "A play that is amusing and it makes people laugh."
+          },
+          {
+            "question_number": 7,
+            "text": "tragedy",
+            "answer": "A play that has a very sad ending."
+          },
+          {
+            "question_number": 8,
+            "text": "tragicomedy",
+            "answer": "A type of play that is both sad and amusing."
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Match the first parts of the sentences in Column A with the second parts in Column B.",
+        "column_b": [
+          {
+            "letter": "a",
+            "text": "composes poems."
+          },
+          {
+            "letter": "b",
+            "text": "studies plants."
+          },
+          {
+            "letter": "c",
+            "text": "defines the meanings of words."
+          },
+          {
+            "letter": "d",
+            "text": "tells us about stars and planets."
+          },
+          {
+            "letter": "e",
+            "text": "is amusing and has five lines."
+          },
+          {
+            "letter": "f",
+            "text": "writes novels or essays."
+          },
+          {
+            "letter": "g",
+            "text": "has a sad ending."
+          },
+          {
+            "letter": "h",
+            "text": "has fourteen lines."
+          },
+          {
+            "letter": "i",
+            "text": "makes the audience laugh."
+          },
+          {
+            "letter": "j",
+            "text": "we use to measure length or height."
+          }
+        ],
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "A limerick is a poem which ...",
+            "answer": "e",
+            "answer_text": "is amusing and has five lines."
+          },
+          {
+            "question_number": 2,
+            "text": "A tragedy is a play which ...",
+            "answer": "g",
+            "answer_text": "has a sad ending."
+          },
+          {
+            "question_number": 3,
+            "text": "A sonnet is a poem which ...",
+            "answer": "h",
+            "answer_text": "has fourteen lines."
+          },
+          {
+            "question_number": 4,
+            "text": "An author is a person who ...",
+            "answer": "f",
+            "answer_text": "writes novels or essays."
+          },
+          {
+            "question_number": 5,
+            "text": "A comedy is a play which ...",
+            "answer": "i",
+            "answer_text": "makes the audience laugh."
+          },
+          {
+            "question_number": 6,
+            "text": "A poet is a person who ...",
+            "answer": "a",
+            "answer_text": "composes poems."
+          },
+          {
+            "question_number": 7,
+            "text": "An astronomer is a person who ...",
+            "answer": "d",
+            "answer_text": "tells us about stars and planets."
+          },
+          {
+            "question_number": 8,
+            "text": "A dictionary is a book which ...",
+            "answer": "c",
+            "answer_text": "defines the meanings of words."
+          },
+          {
+            "question_number": 9,
+            "text": "A botanist is a person who ...",
+            "answer": "b",
+            "answer_text": "studies plants."
+          },
+          {
+            "question_number": 10,
+            "text": "A ruler is an instrument which ...",
+            "answer": "j",
+            "answer_text": "we use to measure length or height."
+          }
+        ]
+      }
+    },
+    {
+      "lesson": "2C Grammar",
+      "topic": "Adjectival Phrases, Present Simple & Continuous",
+      "part_A": {
+        "instructions": "Copy the sentences below in your exercise book. Then, box the adjectival phrase in each sentence, and use an arrow to show the noun it modifies.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "Plays and poems written by Shakespeare are not easy to understand.",
+            "adjectival_phrase": "written by Shakespeare",
+            "modified_noun": "Plays and poems"
+          },
+          {
+            "question_number": 2,
+            "text": "Eggs from U Ba's poultry farm are big and fresh.",
+            "adjectival_phrase": "from U Ba's poultry farm",
+            "modified_noun": "Eggs"
+          },
+          {
+            "question_number": 3,
+            "text": "That boy in the green shirt is my cousin.",
+            "adjectival_phrase": "in the green shirt",
+            "modified_noun": "That boy"
+          },
+          {
+            "question_number": 4,
+            "text": "The two men talking under that tree are engineers.",
+            "adjectival_phrase": "talking under that tree",
+            "modified_noun": "The two men"
+          },
+          {
+            "question_number": 5,
+            "text": "The bridge across that river is more than fifty years old.",
+            "adjectival_phrase": "across that river",
+            "modified_noun": "The bridge"
+          },
+          {
+            "question_number": 6,
+            "text": "Books sold in that little shop are quite cheap.",
+            "adjectival_phrase": "sold in that little shop",
+            "modified_noun": "Books"
+          },
+          {
+            "question_number": 7,
+            "text": "These lunch packets are for those workers resting under that tree.",
+            "adjectival_phrase": "resting under that tree",
+            "modified_noun": "those workers"
+          },
+          {
+            "question_number": 8,
+            "text": "All those watches in that showcase are made in Japan.",
+            "adjectival_phrase": "in that showcase",
+            "modified_noun": "All those watches"
+          },
+          {
+            "question_number": 9,
+            "text": "Have you read any detective story written by Agatha Christie?",
+            "adjectival_phrase": "written by Agatha Christie",
+            "modified_noun": "any detective story"
+          },
+          {
+            "question_number": 10,
+            "text": "Any book borrowed from our library must be returned in two weeks.",
+            "adjectival_phrase": "borrowed from our library",
+            "modified_noun": "Any book"
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Underline the verbs in the sentences.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "The teacher always switches off his mobile phone while he is teaching.",
+            "answer": "switches off ; is teaching"
+          },
+          {
+            "question_number": 2,
+            "text": "Do you believe in the existence of ghosts?",
+            "answer": "Do believe"
+          },
+          {
+            "question_number": 3,
+            "text": "I do not usually go to the gym at weekends.",
+            "answer": "do not go"
+          },
+          {
+            "question_number": 4,
+            "text": "Why are you upsetting me by asking personal questions?",
+            "answer": "are upsetting ; asking"
+          },
+          {
+            "question_number": 5,
+            "text": "Be serious! I am not joking.",
+            "answer": "Be ; am not joking"
+          },
+          {
+            "question_number": 6,
+            "text": "A good teacher always makes learning enjoyable.",
+            "answer": "makes"
+          }
+        ]
+      },
+      "part_C": {
+        "instructions": "Tick the sentences that are right. Circle the verbs that are wrong and give the correct form.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "I work in a public library at the moment.",
+            "is_correct": false,
+            "answer": "I am working in a public library at the moment."
+          },
+          {
+            "question_number": 2,
+            "text": "We're spending next summer in Mogok.",
+            "is_correct": true,
+            "answer": "Right — a present continuous form is used for a fixed future arrangement."
+          },
+          {
+            "question_number": 3,
+            "text": "Htun Htun is never getting up early.",
+            "is_correct": false,
+            "answer": "Htun Htun never gets up early."
+          },
+          {
+            "question_number": 4,
+            "text": "This coat belongs to my father.",
+            "is_correct": true,
+            "answer": "Right — 'belong' is a state verb, so the present simple is used."
+          },
+          {
+            "question_number": 5,
+            "text": "Some birds build their nests out of small twigs.",
+            "is_correct": true,
+            "answer": "Right — the present simple is used for a general truth."
+          },
+          {
+            "question_number": 6,
+            "text": "I'm usually going to work by bicycle.",
+            "is_correct": false,
+            "answer": "I usually go to work by bicycle."
+          },
+          {
+            "question_number": 7,
+            "text": "When does a child begin to walk?",
+            "is_correct": true,
+            "answer": "Right — the present simple is used for a general truth."
+          },
+          {
+            "question_number": 8,
+            "text": "Look! The girl dances beautifully.",
+            "is_correct": false,
+            "answer": "Look! The girl is dancing beautifully."
+          },
+          {
+            "question_number": 9,
+            "text": "In the picture, we all smile and eat snacks happily.",
+            "is_correct": false,
+            "answer": "In the picture, we are all smiling and eating snacks happily."
+          },
+          {
+            "question_number": 10,
+            "text": "I am not liking to wear too much make-up.",
+            "is_correct": false,
+            "answer": "I do not like to wear too much make-up."
+          }
+        ]
+      }
+    },
+    {
+      "id": "2d-listening-speaking",
+      "code": "2D",
+      "type": "Listening and Speaking",
+      "title": "2D Listening and Speaking: Studying Literature",
+      "titleMy": "နားထောင်ခြင်းနှင့် ပြောဆိုခြင်း - စာပေ လေ့လာခြင်း",
+      "intro": "A. Match each speaker to the utterance you hear. B. Gap fill scripts for Student A and Student B pair work regarding William Shakespeare's \"Romeo and Juliet\".",
+      "introMy": "A. ပြောဆိုသူတစ်ဦးချင်းစီနှင့် သူတို့ပြောသော စကားကို တွဲဆက်ပါ။ B. William Shakespeare ၏ \"Romeo and Juliet\" အကြောင်း သူငယ်ချင်းနှစ်ဦး တွဲဖက်ပြီး ကွက်လပ်ဖြည့် စကားပြောလေ့ကျင့်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Describing people requires countless words.",
+          "suggested_answer": "Adam"
+        },
+        {
+          "id": 2,
+          "question": "I studied literature because I wanted to read and write well.",
+          "suggested_answer": "[Listen to the audio and write the speaker's name.]"
+        },
+        {
+          "id": 3,
+          "question": "Art is the greatest expression of human feelings.",
+          "suggested_answer": "[Listen to the audio and write the speaker's name.]"
+        },
+        {
+          "id": 4,
+          "question": "Only people who are not smart study literature.",
+          "suggested_answer": "[Listen to the audio and write the speaker's name.]"
+        },
+        {
+          "id": 5,
+          "question": "Literature is the central part of many lives.",
+          "suggested_answer": "[Listen to the audio and write the speaker's name.]"
+        },
+        {
+          "id": 6,
+          "question": "There is always something new to discover in literature.",
+          "suggested_answer": "[Listen to the audio and write the speaker's name.]"
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Student A: Ask your partner who wrote Romeo and Juliet.",
+          "answer": "William Shakespeare wrote Romeo and Juliet."
+        },
+        {
+          "id": 2,
+          "question": "Student B: Ask your partner what kind of play Romeo and Juliet is.",
+          "answer": "It is a tragedy, because it has a very sad ending."
+        },
+        {
+          "id": 3,
+          "question": "Student A: Ask your partner why Romeo and Juliet is famous.",
+          "answer": "It is famous because it is a classic of English literature with enduring cultural value."
+        }
+      ],
+      "pairActivity": {
+        "instruction": "B. Work in pairs. Read your respective text. Some pieces of information are missing. Ask and answer the questions below to complete your texts.",
+        "instructionMy": "B။ အတွဲလိုက်လုပ်ပါ။ မိမိတို့ရရှိထားသော စာသားကို ဖတ်ပါ။ အချက်အလက်အချို့ ပျောက်နေပါသည်။ စာသားများကို ဖြည့်စွက်ရန် အောက်ပါမေးခွန်းများကို အပြန်အလှန် မေးမြန်းဖြေဆိုပါ။",
+        "studentA": "‘Romeo and Juliet’ is one of the most popular plays written by William Shakespeare. The story is about _____. The young man's name is Romeo and the young woman is Juliet. _____ so they marry in secret. One day, Romeo gets into a fight and kills a young man. The young man is _____. Romeo has to leave the city. Juliet sends him a message. The message is very important because _____. Romeo doesn't get it. Because of this, Romeo and Juliet kill themselves at the end of the story.",
+        "studentB": "‘Romeo and Juliet’ is one of the most popular plays written by Shakespeare. The story is about a young man who falls in love with a young woman. The names of the young man and the young woman are _____. Their families are enemies so they marry _____. One day, Romeo gets into a fight and kills a young man. The young man is Juliet's cousin. Romeo has to _____. Juliet sends him a message. The message is very important because it explains how they can stay together. Romeo doesn't get it. Because of this, _____ at the end of the story.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the story about?",
+            "translation": "ဇာတ်လမ်းက ဘာအကြောင်းလဲ။",
+            "answer": "It is about a young man who falls in love with a young woman."
+          },
+          {
+            "id": 2,
+            "question": "Why do Romeo and Juliet marry in secret?",
+            "translation": "Romeo နဲ့ Juliet တို့ ဘာကြောင့် လျှို့ဝှက်ပြီး လက်ထပ်ကြတာလဲ။",
+            "answer": "Their families are enemies."
+          },
+          {
+            "id": 3,
+            "question": "Who does Romeo kill?",
+            "translation": "Romeo က ဘယ်သူ့ကို သတ်မိတာလဲ။",
+            "answer": "Juliet's cousin."
+          },
+          {
+            "id": 4,
+            "question": "Why is the message Juliet sends Romeo important?",
+            "translation": "Juliet က Romeo ဆီပို့တဲ့ သတင်းစကားက ဘာကြောင့် အရေးကြီးတာလဲ။",
+            "answer": "It explains how they can stay together."
+          },
+          {
+            "id": 5,
+            "question": "What are the names of the characters?",
+            "translation": "ဇာတ်ကောင်တွေရဲ့ အမည်တွေက ဘာတွေလဲ။",
+            "answer": "Romeo and Juliet."
+          },
+          {
+            "id": 6,
+            "question": "How do Romeo and Juliet marry?",
+            "translation": "Romeo နဲ့ Juliet တို့ ဘယ်လိုလက်ထပ်ကြတာလဲ။",
+            "answer": "They marry in secret."
+          },
+          {
+            "id": 7,
+            "question": "What does Romeo have to do?",
+            "translation": "Romeo က ဘာလုပ်ရမလဲ။",
+            "answer": "He has to leave the city."
+          },
+          {
+            "id": 8,
+            "question": "How does the story end?",
+            "translation": "ဇာတ်လမ်းက ဘယ်လိုအဆုံးသတ်သလဲ။",
+            "answer": "Romeo and Juliet kill themselves at the end of the story."
+          }
+        ]
+      }
+    },
+    {
+      "id": "2e-writing",
+      "code": "2E",
+      "type": "Writing",
+      "title": "2E Writing: My Favourite Author",
+      "titleMy": "စာရေးသားခြင်း - ကျွန်ုပ် အနှစ်သက်ဆုံး စာရေးဆရာ",
+      "intro": "Write a short paragraph about your favourite author: who the author is, what he or she writes (prose, poetry or drama), and why you like his or her work.",
+      "introMy": "သင် အနှစ်သက်ဆုံး စာရေးဆရာအကြောင်း စာပိုဒ်တိုတစ်ခု ရေးသားပါ - မည်သူဖြစ်သည်၊ စကားပြေ၊ ကဗျာ သို့မဟုတ် ပြဇာတ် မည်သည့်အမျိုးအစား ရေးသည်၊ အဘယ်ကြောင့် နှစ်သက်သည် ဆိုသည်တို့ကို ဖော်ပြပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a short paragraph about your favourite author.",
+          "suggested_answer": "My favourite author is William Shakespeare. He wrote both prose and drama, but he is best known for his plays. He wrote comedies such as As You Like It and A Midsummer Night's Dream, tragedies such as Macbeth and Julius Caesar, and tragicomedies such as The Tempest. I like his work because he chooses and uses his words very carefully, just as a painter chooses his colours. His plays are classics because they are pleasurable to read at any time and they have enduring cultural value. Whenever I read one of his plays, I want to read it again and again."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Does your author write prose, poetry or drama?",
+          "answer": "Give the subject of literature your author belongs to and one example of his or her work."
+        },
+        {
+          "id": 2,
+          "question": "Why would you call one of his or her works a classic?",
+          "answer": "Because it is of top quality, pleasurable to read at any time, and has enduring cultural value."
+        }
+      ],
+      "planningPoints": [
+        {
+          "text": "Who your favourite author is",
+          "translation": "သင်အကြိုက်ဆုံး စာရေးဆရာ/ဆရာမက ဘယ်သူလဲ။"
+        },
+        {
+          "text": "The title of the book",
+          "translation": "စာအုပ်၏ ခေါင်းစဉ်"
+        },
+        {
+          "text": "When you read it",
+          "translation": "သင် အဲဒီစာအုပ်ကို ဘယ်အချိန်က ဖတ်ခဲ့သလဲ။"
+        },
+        {
+          "text": "What the story is about",
+          "translation": "ဇာတ်လမ်းက ဘာအကြောင်းလဲ။"
+        },
+        {
+          "text": "How many books he or she has written",
+          "translation": "သူ ရေးသားခဲ့သော စာအုပ်အရေအတွက်"
+        },
+        {
+          "text": "Why you like him or her",
+          "translation": "သူ့ကို ဘာကြောင့် သဘောကျသလဲ။"
+        }
+      ]
+    }
+  ]
+}

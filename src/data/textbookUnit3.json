@@ -1,0 +1,628 @@
+{
+  "unit": "UNIT 3",
+  "unitTitle": "Zero",
+  "lessons": [
+    {
+      "id": "3a-reading",
+      "code": "3A",
+      "type": "Reading",
+      "title": "3A Reading: Zero",
+      "titleMy": "စာဖတ်ခြင်း - သုည",
+      "intro": "Read about the numeral zero: why it matters in counting and calculation, how it differs from Roman numerals, and who discovered it.",
+      "introMy": "သုည ဂဏန်းအကြောင်း ဖတ်ရှုပါ — ရေတွက်ခြင်းနှင့် တွက်ချက်ခြင်းတွင် အဘယ်ကြောင့် အရေးကြီးသနည်း၊ ရောမ ဂဏန်းများနှင့် မည်သို့ ကွာခြားသနည်း၊ မည်သူ ရှာဖွေတွေ့ရှိခဲ့သနည်း ဆိုသည်ကို လေ့လာပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "How many Arabic numerals are there, and what is the first of them?",
+          "suggested_answer": "There are ten Arabic numerals (0 to 9), and the first of them is \"0\" (zero)."
+        },
+        {
+          "id": 2,
+          "question": "Why do we not need a special numeral for \"ten\"?",
+          "suggested_answer": "Because we have \"0\", so we simply write \"10\"."
+        },
+        {
+          "id": 3,
+          "question": "Which number is neither positive nor negative?",
+          "suggested_answer": "Zero. It represents the boundary between the negative and the positive numbers."
+        },
+        {
+          "id": 4,
+          "question": "Who is generally believed to have discovered zero?",
+          "suggested_answer": "The Hindu mathematicians of India, sometime in the sixth century or so."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What word is used instead of \"zero\" in tennis, and what does it really mean?",
+          "answer": "\"Love\" — it is French for \"egg\", and the French use \"egg\" to mean \"zero\"."
+        },
+        {
+          "id": 2,
+          "question": "How do you write 100 + 27 = 127 in Roman numerals?",
+          "answer": "C + XXVII = CXXVII."
+        }
+      ]
+    },
+    {
+      "id": "3b-vocabulary",
+      "code": "3B",
+      "type": "Vocabulary",
+      "title": "3B Vocabulary: Words Related to Zero",
+      "titleMy": "ဝေါဟာရ - သုညနှင့် ဆက်စပ်သော စကားလုံးများ",
+      "intro": "Learn the expressions built on the word \"zero\", then practise the noun, verb and adjective forms of words from the passage.",
+      "introMy": "\"zero\" ဖြင့် တွဲဖက်အသုံးပြုသော အသုံးအနှုန်းများကို လေ့လာပြီး စာပိုဒ်ထဲမှ စကားလုံးများ၏ နာမ်၊ ကြိယာ၊ နာမဝိသေသန ပုံစံများကို လေ့ကျင့်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What does \"absolute zero\" mean?",
+          "suggested_answer": "The lowest temperature possible, which is -273.15°C."
+        },
+        {
+          "id": 2,
+          "question": "What does \"zero in on somebody / something\" mean?",
+          "suggested_answer": "To direct all your attention towards a particular person or thing."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What is \"ground zero\"?",
+          "answer": "The exact place where a nuclear bomb explodes."
+        },
+        {
+          "id": 2,
+          "question": "What is \"zero hour\"?",
+          "answer": "The time at which something, especially some type of military activity, is planned to begin."
+        }
+      ]
+    },
+    {
+      "id": "3c-grammar",
+      "code": "3C",
+      "type": "Grammar",
+      "title": "3C Grammar: Subject & Predicate, Either ... or, Neither ... nor",
+      "titleMy": "သဒ္ဒါ - ကတ္တားနှင့် ကြိယာပုဒ်စု၊ either ... or နှင့် neither ... nor",
+      "intro": "Separate the subject from the predicate, and join sentences using the correlative conjunctions either ... or and neither ... nor.",
+      "introMy": "ကတ္တားနှင့် ကြိယာပုဒ်စုကို ခွဲခြားပါ။ ထို့နောက် တွဲဖက်သမ္ဗန္ဓ either ... or နှင့် neither ... nor တို့ဖြင့် စာကြောင်းများကို ပေါင်းစပ်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What are the two parts of every sentence?",
+          "answer": "The subject and the predicate."
+        },
+        {
+          "id": 2,
+          "question": "What does 'neither ... nor' mean?",
+          "answer": "Not one and not the other — it negates both parts of a statement."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "In \"The books in that bookcase belong to my father.\", what is the subject?",
+          "answer": "\"The books in that bookcase\" — the verb in the predicate is \"belong\"."
+        },
+        {
+          "id": 2,
+          "question": "Join: 'Love cannot be bought. Love cannot be sold.'",
+          "answer": "Love can neither be bought nor sold."
+        }
+      ]
+    },
+    {
+      "id": "3d-listening-speaking",
+      "code": "3D",
+      "type": "Listening and Speaking",
+      "title": "3D Listening and Speaking: Women Inventors",
+      "titleMy": "နားထောင်ခြင်းနှင့် ပြောဆိုခြင်း - အမျိုးသမီး တီထွင်သူများ",
+      "intro": "A. Listen to a talk on 'Women Inventors' and complete the sentences. B. Talk about a famous person, using the points given.",
+      "introMy": "A. 'အမျိုးသမီး တီထွင်သူများ' အကြောင်း ဟောပြောချက်ကို နားထောင်ပြီး စာကြောင်းများကို ဖြည့်စွက်ပါ။ B. ပေးထားသော အချက်များကို အသုံးပြု၍ နာမည်ကျော် ပုဂ္ဂိုလ်တစ်ဦးအကြောင်း ပြောပြပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "People remember Marie Curie for her ________ of radium and polonium.",
+          "suggested_answer": "discovery"
+        },
+        {
+          "id": 2,
+          "question": "Marie Curie played a huge role to fight against ________.",
+          "suggested_answer": "cancer"
+        },
+        {
+          "id": 3,
+          "question": "Grace Hopper was an American computer ________.",
+          "suggested_answer": "scientist"
+        },
+        {
+          "id": 4,
+          "question": "Stephanie Kwolek invented Kevlar, a material five times stronger than ________.",
+          "suggested_answer": "steel"
+        },
+        {
+          "id": 5,
+          "question": "Kevlar is used to make bulletproof ________.",
+          "suggested_answer": "vests"
+        },
+        {
+          "id": 6,
+          "question": "The lives of many soldiers, ________ and politicians have been saved by bulletproof vests.",
+          "suggested_answer": "police officers"
+        },
+        {
+          "id": 7,
+          "question": "The nationality of Mary Anderson is ________.",
+          "suggested_answer": "American"
+        },
+        {
+          "id": 8,
+          "question": "Without windscreen wipers, drivers could not see where they were going when it was raining or ________.",
+          "suggested_answer": "snowing"
+        },
+        {
+          "id": 9,
+          "question": "The disposable diapers have made parents and children ________.",
+          "suggested_answer": "comfortable"
+        },
+        {
+          "id": 10,
+          "question": "Josephine Cochrane invented the ________ to help her servants with washing dishes.",
+          "suggested_answer": "dishwasher"
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Talk about Charles Darwin: who he is, when he was born, what he did, and how he changed people's ideas.",
+          "answer": "Charles Darwin was born in 1809. In 1859 he published \"A Book that Shook the World\". He believed that all species were not created individually but evolved over a million of years through a process. He was against the idea that the earth was just 4,000 years old and that God had created all."
+        },
+        {
+          "id": 2,
+          "question": "Talk about Emmeline Pankhurst using the points given.",
+          "answer": "Emmeline Pankhurst was born in 1858. She was the principal fighter for women's equality and was sent to prison three times. The British government changed the law on voting rights for women in 1918, and women achieved equal voting rights to men in 1928."
+        },
+        {
+          "id": 3,
+          "question": "Talk about Galileo Galilei using the points given.",
+          "answer": "Galileo Galilei was born in 1564. He spent many years observing the movements of the planets. He believed that the earth rotated on its own axis once daily and travelled around the sun once every year. He was found guilty and imprisoned in his own home in 1633. He is referred to as the father of modern science."
+        },
+        {
+          "id": 4,
+          "question": "Who is your hero, why do you like him or her, and how did he or she change the world?",
+          "answer": "Answers will vary — name your hero, give two or three reasons why you admire him or her, then describe one achievement that changed the world."
+        }
+      ]
+    },
+    {
+      "id": "3e-writing",
+      "code": "3E",
+      "type": "Writing",
+      "title": "3E Writing: Zero",
+      "titleMy": "စာရေးသားခြင်း - သုည",
+      "intro": "Write a short paragraph of about ten sentences on Zero, using these points: meaning, who discovered it, where it was discovered, and its importance.",
+      "introMy": "အောက်ပါ အချက်များကို အသုံးပြု၍ သုညအကြောင်း စာကြောင်း ဆယ်ကြောင်းခန့်ပါ စာပိုဒ်တိုတစ်ခု ရေးပါ - အဓိပ္ပာယ်၊ မည်သူ ရှာဖွေတွေ့ရှိသနည်း၊ မည်သည့်နေရာတွင် တွေ့ရှိသနည်း၊ အရေးပါပုံ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a short paragraph of about ten sentences on: Zero.",
+          "suggested_answer": "The word \"zero\" means \"nothing\", yet it is one of the most useful numbers we have. It is the first of the ten Arabic numerals: 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9. Because we have zero, we do not need a special numeral for ten; we simply write 10. In the same way we write 100 for one hundred and 1,000 for one thousand. The Roman numerals have no zero, so even a simple sum such as 100 + 27 = 127 must be written as C + XXVII = CXXVII. Zero is also the only real number that is neither positive nor negative, so it marks the boundary between the two on scales and coordinate axes. We use it on a thermometer, where any point below 0°C is written with a minus sign. We use it in games too, when an umpire calls out zero-zero at the start of a match. Nobody knows for certain who discovered zero, but the general belief is that it was the Hindu mathematicians of India, sometime in the sixth century. Their word for it was \"śūnya\", meaning \"empty\", and the Arabs borrowed it and called it \"sifr\", the root of the English words \"cipher\" and \"zero\"."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Which two sentences would you use to open your paragraph?",
+          "answer": "Start with the meaning of zero, then say that although it means \"nothing\", it is essential in counting and calculation."
+        },
+        {
+          "id": 2,
+          "question": "How can you show the importance of zero in one sentence?",
+          "answer": "Compare a sum written in Arabic numerals with the same sum written in Roman numerals."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "lesson": "3A Reading",
+      "topic": "Zero",
+      "pre_reading": [
+        {
+          "id": 1,
+          "question": "How many letters are there in the English alphabet, and how many Arabic numerals are there?",
+          "suggested_answer": "There are 26 letters (A to Z) and ten Arabic numerals (0 to 9)."
+        },
+        {
+          "id": 2,
+          "question": "What does the word \"zero\" mean?",
+          "suggested_answer": "It means \"nothing\", yet it is essential in counting and calculation."
+        },
+        {
+          "id": 3,
+          "question": "Do the Roman numerals have a zero?",
+          "suggested_answer": "No. The Roman numerals are I, V, X, L, C, D and M, and there is no \"0\" at all."
+        },
+        {
+          "id": 4,
+          "question": "Where do you see zero used in everyday life?",
+          "suggested_answer": "On thermometers, on coordinate axes and scales, and in the scores of games such as badminton."
+        }
+      ],
+      "reading_passage": {
+        "title": "3A Reading: Zero",
+        "paragraphs": [
+          {
+            "paragraph_id": 1,
+            "lines": "1-9",
+            "english_text": "To write an English word, short or long, we use the 26 letters (A to Z) of the English alphabet as required. To write a number, small or big, we use the Arabic numerals: 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9 as required. The first of those is \"0\" (zero). The word \"zero\" means \"nothing\", yet it is essential in counting and calculation. Firstly, because we have \"0\", we do not need a special numeral for \"ten\". We just write \"10\". For \"one hundred\", we just add one more zero and write \"100\". For \"one thousand\", we add another zero and write \"1,000\". Thus, in a sense, \"0\" means \"10 times of a number\". After all, \"10\" means 1 ten times; \"20\" means 2 ten times; \"100\" means 10 ten times; and \"1,000\" means 100 ten times, and so on.",
+            "burmese_explanation": "အင်္ဂလိပ် စကားလုံးတစ်လုံးကို ရေးရာတွင် တိုသည်ဖြစ်စေ၊ ရှည်သည်ဖြစ်စေ အက္ခရာ ၂၆ လုံး (A မှ Z) ကို လိုအပ်သလို သုံးပါသည်။ ဂဏန်းတစ်ခုကို ရေးရာတွင်မူ အာရေဗျ ဂဏန်း ၀၊ ၁၊ ၂၊ ၃၊ ၄၊ ၅၊ ၆၊ ၇၊ ၈၊ ၉ တို့ကို လိုအပ်သလို သုံးပါသည်။ ထိုဂဏန်းများအနက် ပထမဆုံးမှာ \"၀\" သုည ဖြစ်သည်။ \"သုည\" ဆိုသည်မှာ \"ဘာမျှ မရှိခြင်း\" ဟု အဓိပ္ပာယ်ရသော်လည်း ရေတွက်ခြင်းနှင့် တွက်ချက်ခြင်းတွင် မရှိမဖြစ် အရေးပါပါသည်။ ပထမအချက်အနေဖြင့် သုည ရှိသောကြောင့် \"ဆယ်\" အတွက် သီးသန့် ဂဏန်းတစ်လုံး မလိုအပ်တော့ဘဲ \"၁၀\" ဟုသာ ရေးလိုက်ရုံ ဖြစ်သည်။ \"တစ်ရာ\" အတွက် သုည တစ်လုံး ထပ်ထည့်ကာ \"၁၀၀\"၊ \"တစ်ထောင်\" အတွက် နောက်ထပ် သုည တစ်လုံး ထပ်ထည့်ကာ \"၁၀၀၀\" ဟု ရေးပါသည်။ ထို့ကြောင့် တစ်နည်းအားဖြင့် သုညသည် ဂဏန်းတစ်ခုကို ဆယ်ဆ တိုးပေးသည်ဟု ဆိုနိုင်ပါသည်။"
+          },
+          {
+            "paragraph_id": 2,
+            "lines": "10-17",
+            "english_text": "Now, let's try using Roman numerals. You will soon see that the task would no longer be as straightforward. The Roman numerals, as we know, are: I, V, X, L, C, D, and M, and respectively they stand for 1, 5, 10, 50, 100, 500, and 1,000. There is no \"0\" at all. Thus, 10 is X; 20 is XX; 30 is XXX; 40 is XXXX or XL (meaning 10 less than 50). For a simple mathematical equation like: 100 + 27 = 127 you will have to write: C + XXVII = CXXVII. Not simple at all. The larger the number, the greater the trouble. This illustration should be plain enough to help you see how important zero is.",
+            "burmese_explanation": "ယခု ရောမ ဂဏန်းများဖြင့် ရေးကြည့်ကြပါစို့။ ထိုအလုပ်သည် ရိုးရှင်းလွယ်ကူတော့မည် မဟုတ်ကြောင်း ချက်ချင်း တွေ့ရပါလိမ့်မည်။ ရောမ ဂဏန်းများမှာ I, V, X, L, C, D, M တို့ဖြစ်ပြီး အသီးသီး ၁၊ ၅၊ ၁၀၊ ၅၀၊ ၁၀၀၊ ၅၀၀၊ ၁၀၀၀ ကို ကိုယ်စားပြုပါသည်။ သုည ဆိုသည် လုံးဝ မပါဝင်ပါ။ ထို့ကြောင့် ၁၀ သည် X၊ ၂၀ သည် XX၊ ၃၀ သည် XXX၊ ၄၀ သည် XXXX သို့မဟုတ် XL (၅၀ ထက် ၁၀ လျော့သည် ဟု အဓိပ္ပာယ်ရသည်) ဖြစ်ပါသည်။ ၁၀၀ + ၂၇ = ၁၂၇ ကဲ့သို့ ရိုးရှင်းသော ပုစ္ဆာတစ်ပုဒ်ကိုပင် C + XXVII = CXXVII ဟု ရေးရပါမည်။ လုံးဝ မရိုးရှင်းပါ။ ဂဏန်း ကြီးလေ အခက်အခဲ များလေ ဖြစ်သည်။ ဤဥပမာက သုည မည်မျှ အရေးပါကြောင်းကို ရှင်းရှင်းလင်းလင်း ပြသနေပါသည်။"
+          },
+          {
+            "paragraph_id": 3,
+            "lines": "18-23",
+            "english_text": "Another point to note is that in the real number system, not an imaginary number, \"0\" is the only number that is neither positive nor negative. Therefore, \"0\" represents the boundary between the negative and positive numbers. This can be seen on the coordinate axes (mathematics) and on many scales. For example, on a thermometer to measure the temperature of the air, any point above 0°C freezing point is positive, while any point below 0°C freezing point is negative, and this is shown with the minus sign before the number as in: - 5°C or - 20°C as the case may be.",
+            "burmese_explanation": "မှတ်သားရမည့် နောက်ထပ် အချက်တစ်ခုမှာ စိတ်ကူးယဉ် ဂဏန်း မဟုတ်သော အစစ်အမှန် ဂဏန်းစနစ်တွင် သုညသည် အပေါင်းလည်း မဟုတ်၊ အနုတ်လည်း မဟုတ်သော တစ်ခုတည်းသော ဂဏန်း ဖြစ်ခြင်း ဖြစ်သည်။ ထို့ကြောင့် သုညသည် အနုတ် ဂဏန်းများနှင့် အပေါင်း ဂဏန်းများကြား နယ်နိမိတ်ကို ကိုယ်စားပြုပါသည်။ ဤအချက်ကို သင်္ချာ အချိန်ညှိ ဝင်ရိုးများပေါ်တွင်လည်းကောင်း၊ တိုင်းတာသည့် စကေးများစွာပေါ်တွင်လည်းကောင်း တွေ့မြင်နိုင်သည်။ ဥပမာ လေထု အပူချိန်တိုင်းသည့် သာမိုမီတာတွင် ရေခဲမှတ် ၀ ဒီဂရီ စင်တီဂရိတ် အထက်ရှိ မှတ်တိုင်းသည် အပေါင်း ဖြစ်ပြီး၊ အောက်ရှိ မှတ်တိုင်းသည် အနုတ် ဖြစ်ကာ ဂဏန်းရှေ့တွင် အနုတ်လက္ခဏာ ထည့်၍ - ၅ ဒီဂရီ သို့မဟုတ် - ၂၀ ဒီဂရီ စသည်ဖြင့် ဖော်ပြပါသည်။"
+          },
+          {
+            "paragraph_id": 4,
+            "lines": "24-29",
+            "english_text": "You may already know that \"0\" is also used in declaring the scores of a game. For example, at the beginning of a game, say badminton, the umpire calls out: zero-zero. This means that neither of the players has scored a point. Then, as the game proceeds we hear the umpire calling out: zero-1; 1-1; 3-2; or 6-8 as the case may be. In tennis, though, we hear \"love\" instead of \"zero\". Actually, it is not the English word \"love\". It is French for \"egg\". The French use the word \"egg\" to mean \"zero\".",
+            "burmese_explanation": "အားကစားပွဲများ၏ ရမှတ်ကြေညာရာတွင်လည်း သုညကို သုံးကြောင်း သင် သိပြီး ဖြစ်ပေမည်။ ဥပမာ ကြက်တောင်ပွဲ စတင်ချိန်တွင် ဒိုင်လူကြီးက \"သုည - သုည\" ဟု အော်ပြောသည်။ ဆိုလိုသည်မှာ ကစားသမား နှစ်ဦးစလုံး အမှတ် မရသေးခြင်း ဖြစ်သည်။ ပွဲ ဆက်သွားသည်နှင့်အမျှ \"သုည - ၁\"၊ \"၁ - ၁\"၊ \"၃ - ၂\"၊ \"၆ - ၈\" စသည်ဖြင့် ကြားရသည်။ တင်းနစ်တွင်မူ \"သုည\" အစား \"love\" ဟု ကြားရသည်။ အမှန်တွင် ၎င်းသည် အင်္ဂလိပ် စကားလုံး \"love\" မဟုတ်ဘဲ ပြင်သစ်ဘာသာဖြင့် \"ဥ\" ဟု အဓိပ္ပာယ်ရသည်။ ပြင်သစ်လူမျိုးတို့သည် \"ဥ\" ဟူသော စကားလုံးကို သုည အဓိပ္ပာယ်ဖြင့် သုံးကြသည်။"
+          },
+          {
+            "paragraph_id": 5,
+            "lines": "30-35",
+            "english_text": "Nobody knows for certain who discovered zero. Nobody knows for certain either when and where it was discovered. However, the general belief is that it was the Hindu mathematicians of India who discovered zero, sometime in the sixth century or so. The Hindu word for it was \"śūnya\", meaning \"empty\", or \"void\". It is also believed that the Arabs borrowed it from the Hindus, and called it \"sifr\", which became the root word for the English words \"cipher\" and \"zero\".",
+            "burmese_explanation": "သုညကို မည်သူ ရှာဖွေတွေ့ရှိခဲ့သည်ကို အတိအကျ မည်သူမျှ မသိပါ။ မည်သည့်အချိန်၊ မည်သည့်နေရာတွင် တွေ့ရှိခဲ့သည်ကိုလည်း အတိအကျ မသိကြပါ။ သို့သော် အိန္ဒိယနိုင်ငံမှ ဟိန္ဒူ သင်္ချာပညာရှင်များက ခရစ်နှစ် ဆဋ္ဌမ ရာစုခန့်တွင် သုညကို ရှာဖွေတွေ့ရှိခဲ့သည် ဟူ၍ ယေဘုယျအားဖြင့် ယုံကြည်ကြပါသည်။ ဟိန္ဒူ ဘာသာစကားတွင် ၎င်းကို \"śūnya\" ဟု ခေါ်ပြီး \"ဗလာ\" သို့မဟုတ် \"ဟာလာဟင်းလင်း\" ဟု အဓိပ္ပာယ်ရသည်။ အာရပ်လူမျိုးတို့က ဟိန္ဒူတို့ထံမှ ငှားယူပြီး \"sifr\" ဟု ခေါ်ခဲ့ရာ ထိုစကားလုံးမှ အင်္ဂလိပ် စကားလုံး \"cipher\" နှင့် \"zero\" တို့ ဆင်းသက်လာသည် ဟုလည်း ယုံကြည်ကြပါသည်။"
+          }
+        ]
+      },
+      "comprehension": {
+        "part_A": {
+          "instructions": "Complete each sentence below with a word or phrase from the reading passage.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "text": "The word \"those\" in line 3 refers to ________ .",
+              "answer": "the Arabic numerals (0, 1, 2, 3, 4, 5, 6, 7, 8 and 9)"
+            },
+            {
+              "question_number": 2,
+              "text": "One word in line 10 which means the same as plain, or simple, is ________ .",
+              "answer": "straightforward"
+            },
+            {
+              "question_number": 3,
+              "text": "The two kinds of numerals are ________ .",
+              "answer": "the Arabic numerals and the Roman numerals"
+            },
+            {
+              "question_number": 4,
+              "text": "The word \"This\" in line 18 refers to ________ .",
+              "answer": "the fact that \"0\" represents the boundary between the negative and positive numbers"
+            },
+            {
+              "question_number": 5,
+              "text": "The word \"it\" in line 27 refers to ________ .",
+              "answer": "zero"
+            },
+            {
+              "question_number": 6,
+              "text": "It was the Hindu mathematicians who ________ .",
+              "answer": "discovered zero, sometime in the sixth century or so"
+            },
+            {
+              "question_number": 7,
+              "text": "The Arabic word for zero is ________ .",
+              "answer": "sifr"
+            }
+          ]
+        },
+        "part_B": {
+          "instructions": "Give a short answer to each question below.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "question": "What is the passage about?",
+              "answer": "It is about zero — its meaning, its importance in counting and calculation, and its discovery."
+            },
+            {
+              "question_number": 2,
+              "question": "What is the main difference between the two kinds of numerals?",
+              "answer": "The Arabic numerals have a zero, but the Roman numerals have no zero at all."
+            },
+            {
+              "question_number": 3,
+              "question": "Which of the two kinds of numerals is easy to use? Why?",
+              "answer": "The Arabic numerals, because they have zero, so large numbers and equations can be written simply."
+            },
+            {
+              "question_number": 4,
+              "question": "What does the Hindu word for zero mean?",
+              "answer": "\"Śūnya\" means \"empty\" or \"void\"."
+            },
+            {
+              "question_number": 5,
+              "question": "What does \"0\" represent in scales and coordinate axes?",
+              "answer": "It represents the boundary between the negative and the positive numbers."
+            },
+            {
+              "question_number": 6,
+              "question": "When did the Hindu mathematicians discover zero?",
+              "answer": "Sometime in the sixth century or so."
+            },
+            {
+              "question_number": 7,
+              "question": "What is the other English word for zero?",
+              "answer": "Cipher."
+            },
+            {
+              "question_number": 8,
+              "question": "How do we use \"0\" today?",
+              "answer": "We use it in counting and calculation, on thermometers and other scales, on coordinate axes, and in declaring the scores of a game."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson": "3B Vocabulary",
+      "topic": "Words Related to Zero",
+      "expressions": [
+        {
+          "letter": "a",
+          "expression": "absolute zero",
+          "meaning": "lowest temperature possible, which is -273.15°C"
+        },
+        {
+          "letter": "b",
+          "expression": "ground zero",
+          "meaning": "the exact place where a nuclear bomb explodes"
+        },
+        {
+          "letter": "c",
+          "expression": "zero hour",
+          "meaning": "the time at which something, especially some type of military activity, is planned to begin"
+        },
+        {
+          "letter": "d",
+          "expression": "zero in on somebody / something",
+          "meaning": "direct all your attention towards a particular person or thing (phrasal verb)"
+        }
+      ],
+      "word_forms": [
+        { "noun": "calculation", "verb": "calculate", "adjective": "—" },
+        { "noun": "discovery / discoverer", "verb": "discover", "adjective": "—" },
+        { "noun": "equation", "verb": "equate", "adjective": "—" },
+        { "noun": "illustration", "verb": "illustrate", "adjective": "—" },
+        { "noun": "imagination", "verb": "imagine", "adjective": "imaginative" },
+        { "noun": "importance", "verb": "—", "adjective": "important" },
+        { "noun": "mathematics / mathematician", "verb": "—", "adjective": "mathematical" },
+        { "noun": "measurement", "verb": "measure", "adjective": "measurable" },
+        { "noun": "number / numeral", "verb": "number", "adjective": "—" },
+        { "noun": "representation / representative", "verb": "represent", "adjective": "—" }
+      ],
+      "part_A": {
+        "instructions": "Complete each sentence below with a suitable expression from the table.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "They decided to set 12 midnight as the ________ to attack the enemy.",
+            "answer": "zero hour"
+          },
+          {
+            "question_number": 2,
+            "text": "Hiroshima was the first ________ during World War II.",
+            "answer": "ground zero"
+          },
+          {
+            "question_number": 3,
+            "text": "First, decide on a plan, then just ________ it.",
+            "answer": "zero in on"
+          },
+          {
+            "question_number": 4,
+            "text": "Technically speaking, no temperature can be lower than ________ .",
+            "answer": "absolute zero"
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Study the words given in the table and complete each sentence using the correct form of the word in brackets.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "(represent) The tiger is a common ________ of the cat family.",
+            "answer": "representative"
+          },
+          {
+            "question_number": 2,
+            "text": "(imagine) She is hardworking but not very ________ .",
+            "answer": "imaginative"
+          },
+          {
+            "question_number": 3,
+            "text": "(discover) Penicillin was an extremely significant medical ________ .",
+            "answer": "discovery"
+          },
+          {
+            "question_number": 4,
+            "text": "(calculate) We used different methods of ________ , but we both got the same result.",
+            "answer": "calculation"
+          },
+          {
+            "question_number": 5,
+            "text": "(illustrate) In yesterday's lecture, the professor ________ the difficult concept of relativity, using a diagram.",
+            "answer": "illustrated"
+          },
+          {
+            "question_number": 6,
+            "text": "(measure) The lecturer advised the students to set realistic, ________ targets.",
+            "answer": "measurable"
+          },
+          {
+            "question_number": 7,
+            "text": "(equate) You can't ________ passing an examination with being intelligent.",
+            "answer": "equate"
+          },
+          {
+            "question_number": 8,
+            "text": "(important) He emphasized the ________ of environmental conservation.",
+            "answer": "importance"
+          },
+          {
+            "question_number": 9,
+            "text": "(mathematics) Physics, Chemistry and ________ are science subjects.",
+            "answer": "Mathematics"
+          },
+          {
+            "question_number": 10,
+            "text": "(number) There are two kinds of ________ : Roman and Arabic.",
+            "answer": "numerals"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": "3C Grammar",
+      "topic": "Subject & Predicate, Either ... or, Neither ... nor",
+      "samples": [
+        { "letter": "a", "text": "All the teachers in our school / are highly qualified.", "subject": "All the teachers in our school", "verb": "are" },
+        { "letter": "b", "text": "The boy who has won the scholarship / is from my class.", "subject": "The boy who has won the scholarship", "verb": "is" },
+        { "letter": "c", "text": "One of my friends / drew the cover design for that book.", "subject": "One of my friends", "verb": "drew" },
+        { "letter": "d", "text": "Our principal / has gone to Nay Pyi Taw to attend a meeting.", "subject": "Our principal", "verb": "has gone" },
+        { "letter": "e", "text": "The books in that bookcase / belong to my father.", "subject": "The books in that bookcase", "verb": "belong" }
+      ],
+      "part_A": {
+        "instructions": "Separate the Subject and Predicate in each sentence below with a forward slash (/). Also underline the verb in the Predicate.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "Myanmar, our country, is often called the Land of Golden Pagodas.",
+            "subject": "Myanmar, our country,",
+            "verb": "is called",
+            "answer": "Myanmar, our country, / is often called the Land of Golden Pagodas. (verb: is called)"
+          },
+          {
+            "question_number": 2,
+            "text": "The English alphabet contains twenty-six letters.",
+            "subject": "The English alphabet",
+            "verb": "contains",
+            "answer": "The English alphabet / contains twenty-six letters. (verb: contains)"
+          },
+          {
+            "question_number": 3,
+            "text": "Most trees in our country shed their leaves in the hot season.",
+            "subject": "Most trees in our country",
+            "verb": "shed",
+            "answer": "Most trees in our country / shed their leaves in the hot season. (verb: shed)"
+          },
+          {
+            "question_number": 4,
+            "text": "Many diseases these days are caused by different kinds of viruses.",
+            "subject": "Many diseases these days",
+            "verb": "are caused",
+            "answer": "Many diseases these days / are caused by different kinds of viruses. (verb: are caused)"
+          },
+          {
+            "question_number": 5,
+            "text": "All those paintings in that gallery are done by famous Myanmar artists.",
+            "subject": "All those paintings in that gallery",
+            "verb": "are done",
+            "answer": "All those paintings in that gallery / are done by famous Myanmar artists. (verb: are done)"
+          },
+          {
+            "question_number": 6,
+            "text": "Pollution is causing lasting damage to our environment.",
+            "subject": "Pollution",
+            "verb": "is causing",
+            "answer": "Pollution / is causing lasting damage to our environment. (verb: is causing)"
+          },
+          {
+            "question_number": 7,
+            "text": "Little drops of water and little grains of sand make a mighty ocean and a pleasant land.",
+            "subject": "Little drops of water and little grains of sand",
+            "verb": "make",
+            "answer": "Little drops of water and little grains of sand / make a mighty ocean and a pleasant land. (verb: make)"
+          },
+          {
+            "question_number": 8,
+            "text": "Almost all the plays written by Shakespeare are well known.",
+            "subject": "Almost all the plays written by Shakespeare",
+            "verb": "are",
+            "answer": "Almost all the plays written by Shakespeare / are well known. (verb: are)"
+          },
+          {
+            "question_number": 9,
+            "text": "According to one English pop song, the best things in life are free.",
+            "subject": "the best things in life",
+            "verb": "are",
+            "answer": "According to one English pop song, the best things in life / are free. (verb: are)"
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Join the two sentences in each item, using 'either ... or' or 'neither ... nor'.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "The injured person could not walk. He could not move.",
+            "answer": "The injured person could neither walk nor move."
+          },
+          {
+            "question_number": 2,
+            "text": "Our relatives do not know that we are buying a new house. Our friends do not know that we are buying a new house.",
+            "answer": "Neither our relatives nor our friends know that we are buying a new house."
+          },
+          {
+            "question_number": 3,
+            "text": "You can ring me up. You can send me an e-mail.",
+            "answer": "You can either ring me up or send me an e-mail."
+          },
+          {
+            "question_number": 4,
+            "text": "According to the weather forecast, it may be cloudy today. It may be rainy today.",
+            "answer": "According to the weather forecast, it may be either cloudy or rainy today."
+          },
+          {
+            "question_number": 5,
+            "text": "Love cannot be bought. Love cannot be sold.",
+            "answer": "Love can neither be bought nor sold."
+          },
+          {
+            "question_number": 6,
+            "text": "The restaurant doesn't have fish on its menu. It doesn't have lobster on its menu.",
+            "answer": "The restaurant has neither fish nor lobster on its menu."
+          },
+          {
+            "question_number": 7,
+            "text": "I want to talk to your parents. I want to talk to your guardian.",
+            "answer": "I want to talk to either your parents or your guardian."
+          },
+          {
+            "question_number": 8,
+            "text": "We don't have banana juice. We don't have apple juice.",
+            "answer": "We have neither banana juice nor apple juice."
+          },
+          {
+            "question_number": 9,
+            "text": "I'll have my hair cut today. I'll have my hair cut tomorrow.",
+            "answer": "I'll have my hair cut either today or tomorrow."
+          },
+          {
+            "question_number": 10,
+            "text": "The boy didn't bring any book to the class. He didn't do his homework.",
+            "answer": "The boy neither brought any book to the class nor did his homework."
+          }
+        ]
+      }
+    }
+  ]
+}
