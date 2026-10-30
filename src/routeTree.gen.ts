@@ -16,6 +16,7 @@ import { Route as ExamBuilderRouteImport } from './routes/exam-builder'
 import { Route as ProgressRouteImport } from './routes/progress'
 import { Route as TutorRouteImport } from './routes/tutor'
 import { Route as ApiAnswerHintRouteImport } from './routes/api/answer-hint'
+import { Route as ApiAutoGradeRouteImport } from './routes/api/auto-grade'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as ApiChatHomeRouteImport } from './routes/api/chat-home'
 import { Route as ApiExamRouteImport } from './routes/api/exam'
@@ -68,6 +69,11 @@ const TutorRoute = TutorRouteImport.update({
 const ApiAnswerHintRoute = ApiAnswerHintRouteImport.update({
   id: '/api/answer-hint',
   path: '/api/answer-hint',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiAutoGradeRoute = ApiAutoGradeRouteImport.update({
+  id: '/api/auto-grade',
+  path: '/api/auto-grade',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiChatRoute = ApiChatRouteImport.update({
@@ -169,6 +175,7 @@ export interface FileRoutesByFullPath {
   '/progress': typeof ProgressRoute
   '/tutor': typeof TutorRoute
   '/api/answer-hint': typeof ApiAnswerHintRoute
+  '/api/auto-grade': typeof ApiAutoGradeRoute
   '/api/chat': typeof ApiChatRoute
   '/api/chat-home': typeof ApiChatHomeRoute
   '/api/exam': typeof ApiExamRoute
@@ -196,6 +203,7 @@ export interface FileRoutesByTo {
   '/progress': typeof ProgressRoute
   '/tutor': typeof TutorRoute
   '/api/answer-hint': typeof ApiAnswerHintRoute
+  '/api/auto-grade': typeof ApiAutoGradeRoute
   '/api/chat': typeof ApiChatRoute
   '/api/chat-home': typeof ApiChatHomeRoute
   '/api/exam': typeof ApiExamRoute
@@ -223,6 +231,7 @@ export interface FileRoutesById {
   '/progress': typeof ProgressRoute
   '/tutor': typeof TutorRoute
   '/api/answer-hint': typeof ApiAnswerHintRoute
+  '/api/auto-grade': typeof ApiAutoGradeRoute
   '/api/chat': typeof ApiChatRoute
   '/api/chat-home': typeof ApiChatHomeRoute
   '/api/exam': typeof ApiExamRoute
@@ -252,6 +261,7 @@ export interface FileRouteTypes {
     | '/progress'
     | '/tutor'
     | '/api/answer-hint'
+    | '/api/auto-grade'
     | '/api/chat'
     | '/api/chat-home'
     | '/api/exam'
@@ -279,6 +289,7 @@ export interface FileRouteTypes {
     | '/progress'
     | '/tutor'
     | '/api/answer-hint'
+    | '/api/auto-grade'
     | '/api/chat'
     | '/api/chat-home'
     | '/api/exam'
@@ -305,6 +316,7 @@ export interface FileRouteTypes {
     | '/progress'
     | '/tutor'
     | '/api/answer-hint'
+    | '/api/auto-grade'
     | '/api/chat'
     | '/api/chat-home'
     | '/api/exam'
@@ -333,6 +345,7 @@ export interface RootRouteChildren {
   ProgressRoute: typeof ProgressRoute
   TutorRoute: typeof TutorRoute
   ApiAnswerHintRoute: typeof ApiAnswerHintRoute
+  ApiAutoGradeRoute: typeof ApiAutoGradeRoute
   ApiChatRoute: typeof ApiChatRoute
   ApiChatHomeRoute: typeof ApiChatHomeRoute
   ApiExamRoute: typeof ApiExamRoute
@@ -400,6 +413,13 @@ declare module '@tanstack/react-router' {
       path: '/api/answer-hint'
       fullPath: '/api/answer-hint'
       preLoaderRoute: typeof ApiAnswerHintRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/auto-grade': {
+      id: '/api/auto-grade'
+      path: '/api/auto-grade'
+      fullPath: '/api/auto-grade'
+      preLoaderRoute: typeof ApiAutoGradeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/chat': {
@@ -553,6 +573,7 @@ const rootRouteChildren: RootRouteChildren = {
   ProgressRoute: ProgressRoute,
   TutorRoute: TutorRoute,
   ApiAnswerHintRoute: ApiAnswerHintRoute,
+  ApiAutoGradeRoute: ApiAutoGradeRoute,
   ApiChatRoute: ApiChatRoute,
   ApiChatHomeRoute: ApiChatHomeRoute,
   ApiExamRoute: ApiExamRoute,
