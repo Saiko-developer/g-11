@@ -185,10 +185,10 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
     chunksRef.current = [];
   }, []);
 
-  const transcribe = useCallback(async (blob: Blob) => {
+  const transcribeToText = useCallback(async (blob: Blob): Promise<string | null> => {
     if (blob.size < 2048) {
       toast.error("အသံ မကြားရပါ", { description: "ခဏလေး ပြောပြီးမှ ရပ်ပါ။" });
-      return;
+      return null;
     }
     setTranscribing(true);
     try {
@@ -200,18 +200,27 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
       const text = (data.text ?? "").trim();
       if (!text) {
         toast.error("စကားလုံး မဖတ်နိုင်ပါ", { description: "ပြန်ပြီး ပြောကြည့်ပါ။" });
-        return;
+        return null;
       }
-      setInput((prev) => (prev ? `${prev} ${text}` : text));
+      return text;
     } catch (err) {
       console.error("[saya-owl-home] transcription failed", err);
       toast.error("အသံမှ စာသား ပြောင်း၍ မရပါ", {
         description: "ခဏနေ ပြန်ကြိုးစားပါ သို့မဟုတ် စာရိုက်၍ မေးပါ။",
       });
+      return null;
     } finally {
       setTranscribing(false);
     }
   }, []);
+
+  const transcribe = useCallback(
+    async (blob: Blob) => {
+      const text = await transcribeToText(blob);
+      if (text) setInput((prev) => (prev ? `${prev} ${text}` : text));
+    },
+    [transcribeToText],
+  );
 
   const stopRecording = useCallback(() => {
     try {
