@@ -5,10 +5,10 @@
  * listening tracks.
  */
 import unit1 from "@/data/textbookUnit1.json";
-import unit1Audio from "@/data/lesson-audio/Unit 1 - Language.mp3";
-import unit2Audio from "@/data/lesson-audio/Unit 2 - Literature.mp3";
-import unit3Audio from "@/data/lesson-audio/Unit 3 - Zero.mp3";
-import unit4Audio from "@/data/lesson-audio/Unit 4 - Painting.mp3";
+import unit1Audio from "@/data/lesson-audio/unit1.mp3.asset.json";
+import unit2Audio from "@/data/lesson-audio/unit2.mp3.asset.json";
+import unit3Audio from "@/data/lesson-audio/unit3.mp3.asset.json";
+import unit4Audio from "@/data/lesson-audio/unit4.mp3.asset.json";
 import unit5Audio from "@/data/lesson-audio/unit5.mp3.asset.json";
 import unit6Audio from "@/data/lesson-audio/unit6.mp3.asset.json";
 import unit7Audio from "@/data/lesson-audio/unit7.mp3.asset.json";
@@ -36,10 +36,10 @@ const UNIT1 = unit1 as any;
 
 /** Bundled listening / speaking tracks, keyed by unit number. */
 export const UNIT_AUDIO: Record<number, string> = {
-  1: unit1Audio,
-  2: unit2Audio,
-  3: unit3Audio,
-  4: unit4Audio,
+  1: encodeURI(unit1Audio.url),
+  2: encodeURI(unit2Audio.url),
+  3: encodeURI(unit3Audio.url),
+  4: encodeURI(unit4Audio.url),
   5: encodeURI(unit5Audio.url),
   6: encodeURI(unit6Audio.url),
   7: encodeURI(unit7Audio.url),
