@@ -6,6 +6,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { useAuth } from "@/components/AuthGate";
 import { supabase } from "@/integrations/supabase/client";
 import { ClassAssignments } from "@/components/ClassAssignments";
+import { CreditPlanInfo } from "@/components/CreditPlanInfo";
 
 export const Route = createFileRoute("/classrooms")({
   head: () => ({
@@ -68,6 +69,7 @@ function TeacherView() {
   const [subject, setSubject] = useState("");
   const [busy, setBusy] = useState(false);
   const [open, setOpen] = useState<string | null>(null);
+  const [createOpen, setCreateOpen] = useState(false);
 
   const load = useCallback(async () => {
     const { data: u } = await supabase.auth.getUser();
@@ -104,17 +106,25 @@ function TeacherView() {
   return (
     <>
       <p className="mb-5 text-sm text-muted-foreground">👩‍🏫 ဆရာ — အတန်းဖွင့်ပြီး Class Code ကို ကျောင်းသားများထံ ပေးပါ။</p>
-      <MyNameCard />
+      <CreditPlanInfo teacher />
+      <div className="mb-4 flex flex-wrap items-center gap-2">
+        <button className={btn} onClick={() => setCreateOpen(!createOpen)}>
+          <Plus className="h-4 w-4" /> Create Class
+        </button>
+        <MyNameCard />
+      </div>
+      {createOpen && (
       <div className={`${card} mb-6`}>
         <h2 className="mb-3 font-semibold">+ Create Class</h2>
         <div className="grid gap-2 sm:grid-cols-[1fr_1fr_auto]">
           <input className={input} placeholder="Class name (e.g. Grade 10-A)" value={name} onChange={(e) => setName(e.target.value)} />
           <input className={input} placeholder="Subject (optional)" value={subject} onChange={(e) => setSubject(e.target.value)} />
-          <button className={btn} disabled={busy} onClick={create}>
+          <button className={btn} disabled={busy} onClick={async () => { await create(); }}>
             <Plus className="h-4 w-4" /> Create
           </button>
         </div>
       </div>
+      )}
       {rooms.length === 0 ? (
         <p className="text-sm text-muted-foreground">အတန်း မရှိသေးပါ။</p>
       ) : (
@@ -204,6 +214,7 @@ function Roster({ cid, onChange }: { cid: string; onChange: () => void }) {
 function MyNameCard() {
   const [name, setName] = useState("");
   const [busy, setBusy] = useState(false);
+  const [editing, setEditing] = useState(false);
   useEffect(() => {
     void supabase.rpc("my_name").then(({ data }) => setName((data as string) ?? ""));
   }, []);
@@ -214,13 +225,21 @@ function MyNameCard() {
     if (error) return toast.error(error.message);
     toast.success("အမည် သိမ်းပြီးပါပြီ");
   };
+  if (!editing) {
+    return (
+      <button className={ghost} onClick={() => setEditing(true)}>
+        <Pencil className="h-3.5 w-3.5" /> Teacher name: <b>{name || "(not set)"}</b>
+      </button>
+    );
+  }
   return (
-    <div className={`${card} mb-6`}>
+    <div className={`${card} mb-4`}>
       <h2 className="mb-1 font-semibold">Teacher name</h2>
       <p className="mb-3 text-xs text-muted-foreground">ကျောင်းသားများ မြင်ရမည့် ဆရာအမည် (ဥပမာ Tr. Daw Hla)</p>
       <div className="flex gap-2">
         <input className={input} value={name} onChange={(e) => setName(e.target.value)} placeholder="Tr. ..." />
-        <button className={btn} disabled={busy} onClick={save}>Save</button>
+        <button className={btn} disabled={busy} onClick={async () => { await save(); setEditing(false); }}>Save</button>
+        <button className={ghost} onClick={() => setEditing(false)}>Cancel</button>
       </div>
     </div>
   );
@@ -232,6 +251,7 @@ function StudentView() {
   const [sname, setSname] = useState("");
   const [email, setEmail] = useState("");
   const [busy, setBusy] = useState(false);
+  const [joinOpen, setJoinOpen] = useState(false);
   const load = useCallback(async () => {
     const { data } = await supabase.rpc("my_classes");
     setClasses((data as Joined[]) ?? []);
@@ -261,11 +281,21 @@ function StudentView() {
     void load();
   };
 
+  const showJoin = joinOpen || classes.length === 0;
   return (
     <>
       <p className="mb-5 text-sm text-muted-foreground">ဆရာပေးသော Class Code ဖြင့် အတန်းထဲ ဝင်ပါ။</p>
+      <CreditPlanInfo teacher={false} />
+      {!showJoin ? (
+        <button className={`${btn} mb-6`} onClick={() => setJoinOpen(true)}>
+          <Plus className="h-4 w-4" /> Join Another Class
+        </button>
+      ) : (
       <div className={`${card} mb-6`}>
-        <h2 className="mb-3 font-semibold">Join Class</h2>
+        <div className="mb-3 flex items-center justify-between">
+          <h2 className="font-semibold">Join Class</h2>
+          {classes.length > 0 && <button className={ghost} onClick={() => setJoinOpen(false)}>Close</button>}
+        </div>
         <div className="grid gap-2">
           <p className="text-xs text-muted-foreground">Signed in as: <span className="font-medium text-foreground">{email}</span></p>
           <input className={`${input} font-mono uppercase`} placeholder="Class Code (OWL-XXXX)" value={code} onChange={(e) => setCode(e.target.value)} />
@@ -273,6 +303,7 @@ function StudentView() {
           <button className={btn} disabled={busy} onClick={join}>Join Class</button>
         </div>
       </div>
+      )}
       <h2 className="mb-3 font-semibold">My Classes</h2>
       {classes.length === 0 ? (
         <p className="text-sm text-muted-foreground">အတန်း မဝင်ရသေးပါ။</p>
