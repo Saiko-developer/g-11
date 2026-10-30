@@ -6,7 +6,6 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { useAuth } from "@/components/AuthGate";
 import { supabase } from "@/integrations/supabase/client";
 import { ClassAssignments } from "@/components/ClassAssignments";
-import { CreditPlanInfo } from "@/components/CreditPlanInfo";
 
 export const Route = createFileRoute("/classrooms")({
   head: () => ({
@@ -106,7 +105,6 @@ function TeacherView() {
   return (
     <>
       <p className="mb-5 text-sm text-muted-foreground">👩‍🏫 ဆရာ — အတန်းဖွင့်ပြီး Class Code ကို ကျောင်းသားများထံ ပေးပါ။</p>
-      <CreditPlanInfo teacher />
       <div className="mb-4 flex flex-wrap items-center gap-2">
         <button className={btn} onClick={() => setCreateOpen(!createOpen)}>
           <Plus className="h-4 w-4" /> Create Class
@@ -285,7 +283,6 @@ function StudentView() {
   return (
     <>
       <p className="mb-5 text-sm text-muted-foreground">ဆရာပေးသော Class Code ဖြင့် အတန်းထဲ ဝင်ပါ။</p>
-      <CreditPlanInfo teacher={false} />
       {!showJoin ? (
         <button className={`${btn} mb-6`} onClick={() => setJoinOpen(true)}>
           <Plus className="h-4 w-4" /> Join Another Class
