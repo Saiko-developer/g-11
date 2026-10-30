@@ -8,6 +8,13 @@
       "when": 1793341109752,
       "tag": "0000_class_papers_storage",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1793342411897,
+      "tag": "0001_uploaded_paper_ai_jobs",
+      "breakpoints": true
     }
   ]
 }
