@@ -17,27 +17,42 @@ export type Database = {
       class_exam_attempts: {
         Row: {
           assignment_id: string
+          graded_at: string | null
           id: string
           image_paths: string[]
+          result: Json | null
+          score: number | null
           started_at: string
           student_id: string
           submitted_at: string | null
+          teacher_feedback: string
+          total_marks: number | null
         }
         Insert: {
           assignment_id: string
+          graded_at?: string | null
           id?: string
           image_paths?: string[]
+          result?: Json | null
+          score?: number | null
           started_at?: string
           student_id?: string
           submitted_at?: string | null
+          teacher_feedback?: string
+          total_marks?: number | null
         }
         Update: {
           assignment_id?: string
+          graded_at?: string | null
           id?: string
           image_paths?: string[]
+          result?: Json | null
+          score?: number | null
           started_at?: string
           student_id?: string
           submitted_at?: string | null
+          teacher_feedback?: string
+          total_marks?: number | null
         }
         Relationships: [
           {
@@ -493,7 +508,33 @@ export type Database = {
         Args: { _add_bonus: number; _scholarship: string; _user: string }
         Returns: undefined
       }
+      class_exam_grade: {
+        Args: {
+          _attempt: string
+          _feedback: string
+          _result: Json
+          _score: number
+          _total: number
+        }
+        Returns: undefined
+      }
       class_exam_open: { Args: { _aid: string }; Returns: Json }
+      class_exam_roster: {
+        Args: { _aid: string }
+        Returns: {
+          attempt_id: string
+          display_name: string
+          graded_at: string
+          image_paths: string[]
+          result: Json
+          score: number
+          started_at: string
+          student_id: string
+          submitted_at: string
+          teacher_feedback: string
+          total_marks: number
+        }[]
+      }
       class_exam_submit: {
         Args: { _aid: string; _paths: string[] }
         Returns: undefined
