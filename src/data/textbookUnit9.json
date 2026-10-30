@@ -1,0 +1,589 @@
+{
+  "unit": "UNIT 9",
+  "unitTitle": "CLIMATE CHANGE",
+  "lessons": [
+    {
+      "id": "9a-reading",
+      "code": "9A",
+      "type": "Reading",
+      "title": "9A Reading: Climate Change",
+      "titleMy": "စာဖတ်ခြင်း - ရာသီဥတုပြောင်းလဲမှု",
+      "intro": "Read the passage about climate change and answer the questions. Find out what climate change is, what causes it, what its effects are, and what we are doing to prevent it.",
+      "introMy": "ရာသီဥတုပြောင်းလဲမှု (climate change) အကြောင်း စာပိုဒ်ကို ဖတ်၍ မေးခွန်းများကို ဖြေပါ။ ရာသီဥတုပြောင်းလဲမှုဆိုသည်မှာ အဘယ်နည်း၊ အဘယ်ကြောင့် ဖြစ်ပေါ်သည်၊ အဘယ်သက်ရောက်မှုများ ရှိသည်နှင့် ၎င်းကို တားဆီးရန် ကျွန်ုပ်တို့ အဘယ်အရာ ပြုလုပ်နေကြသည်တို့ကို လေ့လာပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is climate change?",
+          "suggested_answer": "Climate change is simply a change in climate. The climate referred to is the entire climate of this earth of ours, and it means the climate of the whole world is changing. To be specific, the average temperature of the earth is rising, slowly and steadily, and our earth is getting warmer and warmer from year to year. This phenomenon is called global warming."
+        },
+        {
+          "id": 2,
+          "question": "What causes climate change?",
+          "suggested_answer": "We are responsible for it. Since the advent of the Industrial Revolution in the 1700s, we have been burning fossil fuels such as coal, oil, and natural gas to produce energy, and we have cut down many trees. So the levels of carbon dioxide and other greenhouse gases in the atmosphere have gradually risen."
+        },
+        {
+          "id": 3,
+          "question": "What are the effects of climate change?",
+          "suggested_answer": "The temperature of the earth's atmosphere, its oceans and landmasses is increasing day by day. Glaciers and sea ice melt, sea levels rise, flooding many coastal regions and leading to loss of property and life. There is increasing soil erosion, which leads to loss of vegetation, and El Niño and La Niña bring about severe changes in the climatic pattern."
+        },
+        {
+          "id": 4,
+          "question": "What are we doing about it?",
+          "suggested_answer": "Many governments of the world are taking all possible measures to reduce emission of carbon dioxide and to devise feasible ways to utilize solar power, wind power, and thermal power instead of burning fossil fuels. As responsible citizens, we should stop using fossil fuels, plant more trees, and do our utmost to keep our planet earth green and clean."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What are the El Niño and La Niña?",
+          "answer": "They are the warm and cold currents respectively of the South Pacific Ocean. They bring about severe changes in the climatic pattern, resulting in changes in temperature, snow, and the track and intensity of storms."
+        },
+        {
+          "id": 2,
+          "question": "How do greenhouse gases function?",
+          "answer": "They act as a blanket and have kept our earth constantly warm enough for over four billion years for living things to be able to live. Without these gases as a blanket, the temperature of the earth would be 33°C cooler than we can stand, and most living things would not be able to survive."
+        }
+      ]
+    },
+    {
+      "id": "9b-vocabulary",
+      "code": "9B",
+      "type": "Vocabulary",
+      "title": "9B Vocabulary: Expressions Related to Climate Change",
+      "titleMy": "ဝေါဟာရ - ရာသီဥတုပြောင်းလဲမှုနှင့် ဆိုင်သော အသုံးအနှုန်းများ",
+      "intro": "Put the expressions related to climate change in the correct boxes — Causes, Effects, and Ways to prevent it. An example is given for each box.",
+      "introMy": "ရာသီဥတုပြောင်းလဲမှုနှင့် ဆိုင်သော အသုံးအနှုန်းများကို အကြောင်းရင်း (Causes)၊ သက်ရောက်မှု (Effects) နှင့် တားဆီးနည်း (Ways to prevent it) ဟူသော အုံများတွင် မှန်ကန်စွာ ခွဲထည့်ပါ။ အုံတစ်ခုစီအတွက် ဥပမာ ပေးထားသည်။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Which expressions are related to the causes of climate change?",
+          "suggested_answer": "Burning fossil fuels, cutting down trees, and emission of carbon dioxide."
+        },
+        {
+          "id": 2,
+          "question": "Which expressions are related to the ways to prevent climate change?",
+          "suggested_answer": "Stop using fossil fuels, planting more trees, reducing emission of carbon dioxide, and utilizing solar power, wind power, etc."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Which expressions are related to the effects of climate change?",
+          "answer": "Floods, loss of property and life, soil erosion, loss of vegetation, occurrence of El Niño and La Niña, weather patterns change severely, glaciers and sea ice melt, and storms."
+        },
+        {
+          "id": 2,
+          "question": "What example is given for each box in the textbook?",
+          "answer": "Burning fossil fuels (Causes), floods (Effects), and reducing emission of carbon dioxide (Ways to prevent it)."
+        }
+      ]
+    },
+    {
+      "id": "9c-grammar",
+      "code": "9C",
+      "type": "Grammar",
+      "title": "9C Grammar: The Future Tense and Conditional Clauses",
+      "titleMy": "သဒ္ဒါ - အနာဂတ်တင်းစ်နှင့် Conditional Clauses (အခြေအနေသတ်မှတ် ဝါကျအပိုဒ်များ)",
+      "intro": "Learn when the future tense (will + V-inf) is used, study the three types of conditional clauses, and complete the exercises using the future tense and the correct forms of the verbs in brackets.",
+      "introMy": "အနာဂတ်တင်းစ် (will + V-inf) ကို မည်သည့်အခါ အသုံးပြုသည်ကို လေ့လာပြီး conditional clause အမျိုးအစား သုံးမျိုးကို လေ့လာကာ လေ့ကျင့်ခန်းများကို အနာဂတ်တင်းစ်ဖြင့်လည်းကောင်း၊ ကွင်းထဲပါသော ကြိယာများ၏ မှန်ကန်သည့် ပုံစံများဖြင့်လည်းကောင်း ဖြည့်စွက်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "When is the future tense used?",
+          "suggested_answer": "The future tense [will + V-inf] is used to speak or write about what we think or believe will happen, e.g., \"You will fail if you do not study.\", and about decisions made at the present time, e.g., \"The room is stuffy. I will turn on the fan.\""
+        },
+        {
+          "id": 2,
+          "question": "What is a conditional clause?",
+          "suggested_answer": "A conditional clause is a type of subordinate clause, most commonly introduced by the conjunction if or unless, e.g., \"If I study hard, I will pass the exam.\" / \"I will pass the exam if I study hard.\""
+        },
+        {
+          "id": 3,
+          "question": "Give an example of a Type 3 conditional sentence.",
+          "suggested_answer": "\"If you had warned me, I would not have told your father about that party.\" (if-clause: Past Perfect; main clause: Future Perfect Conditional)"
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Give the forms of the three types of conditional clauses.",
+          "answer": "Type 1: if-clause = Simple Present, main clause = Future Simple. Type 2: if-clause = Simple Past, main clause = Future Conditional (would + V-inf). Type 3: if-clause = Past Perfect, main clause = Future Perfect Conditional (would have + V3)."
+        },
+        {
+          "id": 2,
+          "question": "Change \"The room is stuffy.\" into a decision made at the present time, using the future tense.",
+          "answer": "The room is stuffy. I will turn on the fan."
+        }
+      ]
+    },
+    {
+      "id": "9d-listening-speaking",
+      "code": "9D",
+      "type": "Listening and Speaking",
+      "title": "9D Listening and Speaking: The Importance of Forests and Expressing Opinions",
+      "titleMy": "နားထောင်ခြင်းနှင့် ပြောဆိုခြင်း - သစ်တောများ၏ အရေးပါမှုနှင့် ထင်မြင်ချက် ဖော်ပြခြင်း",
+      "intro": "A. Listen to the recording and say whether the following statements are TRUE (T) or FALSE (F). B. Study the language phrases used to express opinions. C. Complete the dialogue with the expressions given below. D. In pairs, practise the dialogue.",
+      "introMy": "A. အသံဖိုင်ကို နားထောင်ပြီး ဖော်ပြချက်များသည် မှန် (TRUE) သည် (သို့) မှား (FALSE) သည်ကို ဆုံးဖြတ်ပါ။ B. ထင်မြင်ချက် ဖော်ပြရာတွင် အသုံးပြုသော အသုံးအနှုန်းများကို လေ့လာပါ။ C. ပေးထားသော အသုံးအနှုန်းများဖြင့် စကားဝိုင်းကို ဖြည့်စွက်ပါ။ D. အစုံလိုက် စကားဝိုင်းကို လေ့ကျင့်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Forests are homes to millions of animals.",
+          "suggested_answer": "TRUE"
+        },
+        {
+          "id": 2,
+          "question": "There cannot be streams and rivers in forests.",
+          "suggested_answer": "FALSE"
+        },
+        {
+          "id": 3,
+          "question": "We shouldn't live near forests.",
+          "suggested_answer": "FALSE"
+        },
+        {
+          "id": 4,
+          "question": "People who live near forests have no income.",
+          "suggested_answer": "FALSE"
+        },
+        {
+          "id": 5,
+          "question": "We get timber and wood from forests.",
+          "suggested_answer": "TRUE"
+        },
+        {
+          "id": 6,
+          "question": "Tourists visit forest areas to see nature at its best.",
+          "suggested_answer": "TRUE"
+        },
+        {
+          "id": 7,
+          "question": "We can prevent climate change if there are trees.",
+          "suggested_answer": "TRUE"
+        },
+        {
+          "id": 8,
+          "question": "Trees can stabilize the climate.",
+          "suggested_answer": "TRUE"
+        },
+        {
+          "id": 9,
+          "question": "Trees absorb carbon dioxide.",
+          "suggested_answer": "TRUE"
+        },
+        {
+          "id": 10,
+          "question": "Both oxygen and carbon dioxide are bad gases.",
+          "suggested_answer": "FALSE"
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Study the language phrases used to express opinions.",
+          "answer": "Personal: In my opinion ..., In my experience ..., Speaking for myself ..., Personally, I think ..., I (strongly) believe that ..., I really feel that ..., If you ask me ... General: Some people say that ..., Many / Most people think / believe that ..., Everybody knows that ..., According to scientists ..., The thing is that ..., The point is that ..."
+        },
+        {
+          "id": 2,
+          "question": "Complete the dialogue with the expressions given: (a) I agree, (b) in my opinion, (c) I know what you mean, (d) of course it is, (e) personally, I think, (f) the point is that, (g) that's what I think, (h) that's very true.",
+          "answer": "(1) in my opinion (b), (2) personally, I think (e), (3) The point is that (f), (4) that's very true (h), (5) I know what you mean (c), (6) I agree (a), (7) Of course it is (d), (8) that's what I think (g). Each expression is used once."
+        },
+        {
+          "id": 3,
+          "question": "In pairs, practise the dialogue.",
+          "answer": "Sample answer: Practise the completed dialogue in pairs, taking the roles of A and B, and pay attention to the expressions used to agree and disagree about cars and public transport."
+        }
+      ]
+    },
+    {
+      "id": "9e-writing",
+      "code": "9E",
+      "type": "Writing",
+      "title": "9E Writing: An Expository Essay on Public Transportation",
+      "titleMy": "စာရေးသားခြင်း - \"Public transportation is better than private transportation for the environment\" အကြောင်း အသိပညာပေး ဆောင်းပါး",
+      "intro": "Learn what expository writing is and the steps in writing an expository essay. Then write an expository essay on \"Public transportation is better than private transportation for the environment\", using the prompts given.",
+      "introMy": "အသိပညာပေး ဆောင်းပါး (expository essay) ဟူသည်မှာ အဘယ်နည်းနှင့် ၎င်းကို မည်သို့ ရေးသားရမည်ကို လေ့လာပါ။ ထို့နောက် \"Public transportation is better than private transportation for the environment\" ခေါင်းစဉ်ဖြင့် ပေးထားသော အချက်များကို အသုံးပြု၍ ဆောင်းပါး ရေးပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is expository writing?",
+          "suggested_answer": "An expository writing is an argument which can offer two opposing perspectives. The writer needs to establish his opinion on a topic and persuade his opinion by exploring the reasons why each view may or may not be valid. The writer usually maintains a calm and neutral stand throughout the text to establish an unbiased and informative argument."
+        },
+        {
+          "id": 2,
+          "question": "Write an expository essay on \"Public transportation is better than private transportation for the environment\", using the prompts given below.",
+          "suggested_answer": "Sample answer: Public transportation is better than private transportation for the environment. In my opinion, public transport such as buses and trains can solve air pollution and noise pollution problems because fewer vehicles are on the road. It also saves energy, as one bus can carry many people instead of dozens of cars. In addition, using public transport slows down the process of climate change because it reduces the emission of carbon dioxide. Moreover, it reduces traffic jams, so we can reach our destination faster. On the other hand, some people say that private cars are more comfortable and convenient. However, if we use public transport, we can also meet new people on our journey. In conclusion, I strongly believe that public transportation is better than private transportation for the environment, and we should use it whenever we can."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What are the steps in writing an expository essay?",
+          "answer": "1. Define your topic: decide what the topic is and which side you are supporting. 2. Outline: Introduction — clearly states the topic and explains why it is important; Body — contains the arguments and logic for both sides; Conclusion — establishes your personal stand on the argument."
+        },
+        {
+          "id": 2,
+          "question": "Give the prompts for the essay on \"Public transportation is better than private transportation for the environment\".",
+          "answer": "solve air pollution and noise pollution problems; save energy; slow down the process of climate change; reduce traffic jam; reach our destination faster; meet new people on our journey"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "lesson": "9A Reading",
+      "topic": "Climate Change",
+      "pre_reading": [
+        {
+          "id": 1,
+          "question": "What is climate change?",
+          "suggested_answer": "Sample answer: Climate change is the change in the entire climate of the earth — the average temperature of the earth is rising, and the earth is getting warmer and warmer from year to year (global warming)."
+        },
+        {
+          "id": 2,
+          "question": "What causes climate change?",
+          "suggested_answer": "Sample answer: Human activities such as burning fossil fuels and cutting down trees cause the level of carbon dioxide in the atmosphere to rise, which makes the earth warmer."
+        },
+        {
+          "id": 3,
+          "question": "What are the effects of climate change?",
+          "suggested_answer": "Sample answer: Glaciers and sea ice melt, sea levels rise and flood coastal regions, weather patterns change severely with storms, and there are soil erosion and loss of vegetation."
+        },
+        {
+          "id": 4,
+          "question": "What are we doing about it?",
+          "suggested_answer": "Sample answer: Governments are reducing emission of carbon dioxide and utilizing solar power, wind power and thermal power, and we should stop using fossil fuels and plant more trees."
+        }
+      ],
+      "reading_passage": {
+        "title": "9A Reading: Climate Change",
+        "paragraphs": [
+          {
+            "paragraph_id": 1,
+            "lines": "1-13",
+            "english_text": "A. Climate change is simply: change in climate. What we should understand here is that climate as used in the title of this lesson refers not to the climate of any particular country or part of the world. It refers to the entire climate of this earth of ours. It means the climate of the whole world is changing. To be specific, the average temperature of the earth is rising, slowly and steadily. And our earth is getting warmer and warmer from year to year. This phenomenon, or happening, is called global warming.",
+            "burmese_explanation": "ရာသီဥတုပြောင်းလဲမှုဆိုသည်မှာ မြေကြီးတစ်ခုလုံး၏ ရာသီဥတုပုံစံ ပြောင်းလဲခြင်းကို ဆိုလိုသည်။ ဤနေရာတွင် ရာသီဥတုဟူသည် နိုင်ငံတစ်နိုင်ငံ သို့မဟုတ် ကမ္ဘာ့ဒေသတစ်ခု၏ ရာသီဥတုကိုသာ ရည်ညွှန်းခြင်းမဟုတ်ဘဲ ကမ္ဘာတစ်ခုလုံး၏ ရာသီဥတုကို ရည်ညွှန်းသည်။ တိကျစွာပြောရလျှင် မြေကြီး၏ ပျမ်းမျှအပူချိန်သည် ဖြည်းဖြည်းချင်း ဆက်လက်မြင့်တက်နေပြီး ကမ္ဘာကြီးသည် နှစ်စဉ် ပိုမိုပူနွေးလာသည်။ ဤဖြစ်စဉ်ကို ကမ္ဘာလုံးဆိုင်ရာ ပူနွေးလာမှုဟု ခေါ်သည်။"
+          },
+          {
+            "paragraph_id": 2,
+            "lines": "14-19",
+            "english_text": "B. Climatologists, scientists who carry out scientific studies of general weather conditions, say that greenhouse gases (carbon dioxide, methane, nitrous oxide, ozone, fluorinated compounds, and water vapour) in our earth's atmosphere act as a blanket and have kept our earth constantly warm enough for over four billion years for living things to be able to live. Without these gases as a blanket, the temperature of the earth would be 33°C cooler than we can stand, and most living things would not be able to survive.",
+            "burmese_explanation": "ရာသီဥတုကို သိပ္ပံနည်းကျ လေ့လာသော ပညာရှင်များ၏ အဆိုအရ ကမ္ဘာမြေ၏လေထုထဲရှိ ဖန်လုံအိမ်ဓာတ်ငွေ့များ — ကာဗွန်ဒိုင်အောက်ဆိုက်၊ မီသိန်း၊ နိုက်ထရပ်အောက်ဆိုက်၊ အိုဇုန်း၊ ဖလူအိုရင်းပါဝင်သော ဓာတ်ပေါင်းများနှင့် ရေငွေ့ — သည် အပူထိန်းစောင်ကဲ့သို့ လုပ်ဆောင်ကြသည်။ ၎င်းတို့သည် သက်ရှိများ နေထိုင်နိုင်ရန် လွန်ခဲ့သော နှစ်ပေါင်းလေးဘီလီယံကျော်မှစ၍ ကမ္ဘာမြေကို လုံလောက်စွာ နွေးထွေးစေခဲ့သည်။ ထိုဓာတ်ငွေ့များ မရှိပါက ကမ္ဘာမြေ၏ အပူချိန်သည် လူသားများ ခံနိုင်ရည်ရှိသော အပူချိန်ထက် ၃၃°C ပိုအေးသွားမည်ဖြစ်ပြီး သက်ရှိအများစု ရှင်သန်နိုင်မည်မဟုတ်ပါ။"
+          },
+          {
+            "paragraph_id": 3,
+            "lines": "20-23",
+            "english_text": "C. Today, climatologists agree that carbon dioxide levels in the atmosphere have gradually risen. So have the levels of other greenhouse gases. As a result, the temperature of the earth's atmosphere, its oceans and landmasses is increasing day by day.",
+            "burmese_explanation": "ယနေ့တွင် ရာသီဥတုပညာရှင်များ သဘောတူကြသည်မှာ လေထုထဲရှိ ကာဗွန်ဒိုင်အောက်ဆိုက် ပမာဏသည် တဖြည်းဖြည်း မြင့်တက်လာခဲ့သည်။ အခြားဖန်လုံအိမ်ဓာတ်ငွေ့များ၏ ပမာဏလည်း ထို့အတူ မြင့်တက်လာသည်။ ထို့ကြောင့် မြေကြီး၏ လေထု၊ သမုဒ္ဒရာများနှင့် ကုန်းမြေများ၏ အပူချိန်သည် တစ်နေ့ထက်တစ်နေ့ မြင့်တက်လာသည်။"
+          },
+          {
+            "paragraph_id": 4,
+            "lines": "24-28",
+            "english_text": "D. Now, what is making this global temperature rise? Who is responsible for it? Frankly speaking, we are responsible for it. Since the advent of the Industrial Revolution in the 1700s, we have been burning fossil fuels such as coal, oil, and natural gas to produce energy to run our cars, trains, ships, planes and many other energy-consuming inventions. The more fuels we burn, the higher the carbon dioxide level in the atmosphere, and the warmer the earth gets.",
+            "burmese_explanation": "ယခုအခါ ကမ္ဘာ့အပူချိန် မြင့်တက်စေသော အကြောင်းရင်းမှာ အဘယ်နည်း။ အဘယ်သူ တာဝန်ရှိသနည်း။ ရိုးရိုးသားသား ပြောရလျှင် ကျွန်ုပ်တို့သည်ပင် တာဝန်ရှိသည်။ ၁၇၀၀ ပြည့်လွန် ခုနှစ်များတွင် စတင်ပေါ်ပေါက်လာသော စက်မှုတော်လှန်ရေးမှစ၍ ကျွန်ုပ်တို့သည် ကားများ၊ ရထားများ၊ သင်္ဘောများ၊ လေယာဉ်များနှင့် စွမ်းအင်စားသုံးသော တီထွင်ဖန်တီးမှုများစွာကို လည်ပတ်စေရန် စွမ်းအင် ထုတ်လုပ်ရန်အတွက် မီးသွေး၊ ရေနံနှင့် သဘာဝဓာတ်ငွေ့ကဲ့သို့သော ကျောက်ဖြစ်ရုပ်ကြွင်း လောင်စာများကို လောင်ကျွမ်းလာခဲ့ကြသည်။ လောင်ကျွမ်းသော လောင်စာ များလာသည်နှင့်အမျှ လေထုထဲရှိ ကာဗွန်ဒိုင်အောက်ဆိုက် ပမာဏသည် ပိုမိုမြင့်တက်လာပြီး မြေကြီးသည်လည်း ပိုမိုနွေးထွေးလာသည်။"
+          },
+          {
+            "paragraph_id": 5,
+            "lines": "29-32",
+            "english_text": "E. In addition, we cut down many trees, forgetting or not caring that trees use carbon dioxide in the air to manufacture food, and thereby keep the level of carbon dioxide in the atmosphere at a safe level for all. With fewer and fewer trees, not only does the level of carbon dioxide in the atmosphere rise, but there is increasing soil erosion, which in turn leads to loss of vegetation.",
+            "burmese_explanation": "ထို့အပြင် လူသားများသည် လေထုထဲရှိ ကာဗွန်ဒိုင်အောက်ဆိုက်ကို အသုံးပြုပြီး အစာပြုလုပ်ပေးသော သစ်ပင်များစွာကို ခုတ်လှဲကြသည်။ သစ်ပင်အရေအတွက် လျော့နည်းလာသည်နှင့်အမျှ လေထုထဲရှိ ကာဗွန်ဒိုင်အောက်ဆိုက်ပမာဏ မြင့်တက်လာပြီး မြေဆီလွှာလည်း ပိုမိုတိုက်စားကာ အပင်များ ဆုံးရှုံးမှု ဖြစ်ပေါ်လာသည်။"
+          },
+          {
+            "paragraph_id": 6,
+            "lines": "33-41",
+            "english_text": "F. Then, with the rise in the temperature of the atmosphere, there is a relative rise in the temperature of oceans. This in turn causes more and more glaciers and sea ice to melt, which in turn causes sea levels to rise, flooding many coastal regions leading to loss of property and life. Then there are the El Niño and La Niña, warm and cold currents respectively of the South Pacific Ocean, that bring about severe changes in the climatic pattern resulting in changes in temperature, snow, and track and intensity of storms.",
+            "burmese_explanation": "ထို့နောက် လေထု၏ အပူချိန်မြင့်တက်လာမှုနှင့်အမျှ သမုဒ္ဒရာများ၏ အပူချိန်လည်း တစ်ဆိုင်တည်း မြင့်တက်လာသည်။ ယင်းသည် ရေခဲမြောင်းများနှင့် ပင်လယ်ရေခဲပျင်များ ပိုမိုများပြားစွာ အရည်ပျက်စေပြီး ယင်းမှတစ်ဆင့် ပင်လယ်ရေမျက်နှာပြင် မြင့်တက်လာကာ ကမ်းရိုးတန်းဒေသများစွာကို ရေလွှမ်းမိုးစေသဖြင့် ဥစ္စာနှင့် အသက်ဆုံးရှုံးမှုများ ဖြစ်ပေါ်စေသည်။ ထို့အပြင် တောင်ပစိဖိတ် သမုဒ္ဒရာရှိ နွေးသော ရေစီးကြောင်း El Niño နှင့် အေးသော ရေစီးကြောင်း La Niña တို့သည် ရာသီဥတုပုံစံ၌ ပြင်းထန်သော ပြောင်းလဲမှုများ ဖြစ်ပေါ်စေပြီး အပူချိန်၊ နှင်းနှင့် မုန်တိုင်းများ၏ လမ်းကြောင်းနှင့် ပြင်းထန်မှုတို့ ပြောင်းလဲမှုများကို ရလဒ်အဖြစ် ဖြစ်ပေါ်စေသည်။"
+          },
+          {
+            "paragraph_id": 7,
+            "lines": "42-51",
+            "english_text": "G. All of those are undesirable results of the increase in the temperature of the earth. What are we doing to prevent the temperature from rising higher or to stop it completely? What should we do? Many governments of the world are taking all possible measures to reduce emission of carbon dioxide, and to devise feasible ways to utilize solar power, wind power, and thermal power instead of burning fossil fuels. As responsible citizens, we ourselves should stop using fossil fuels, plant more trees, and do our utmost to keep our planet earth green and clean.",
+            "burmese_explanation": "ထိုအရာအားလုံးသည် မြေကြီး၏ အပူချိန်မြင့်တက်လာမှု၏ မလိုလားအပ်သော ရလဒ်များ ဖြစ်သည်။ အပူချိန် ထပ်မံမြင့်တက်ခြင်းမှ ကာကွယ်ရန် (သို့) လုံးဝရပ်တန့်ရန် ကျွန်ုပ်တို့ အဘယ်အရာကို ပြုလုပ်နေကြသနည်း။ အဘယ်အရာကို ပြုလုပ်သင့်သနည်း။ ကမ္ဘာ့နိုင်ငံများစွာ၏ အစိုးရများသည် ကာဗွန်ဒိုင်အောက်ဆိုက် ထုတ်လွှင့်မှုကို လျှော့ချရန်နှင့် ကျောက်ဖြစ်ရုပ်ကြွင်း လောင်စာများ လောင်ကျွမ်းခြင်းအစား နေစွမ်းအင်၊ လေစွမ်းအင်နှင့် အပူစွမ်းအင်တို့ကို အသုံးချနိုင်သော ဖြစ်နိုင်ခြေရှိသည့် နည်းလမ်းများကို စီမံကြံစည်ရန် ဖြစ်နိုင်သမျှ အစီအမံများ ချမှတ်လျက်ရှိကြသည်။ တာဝန်သိသော နိုင်ငံသားများအနေဖြင့် ကျွန်ုပ်တို့ကိုယ်တိုင်လည်း ကျောက်ဖြစ်ရုပ်ကြွင်း လောင်စာများ အသုံးပြုခြင်း ရပ်တန့်ကြရမည်၊ သစ်ပင်များ စိုက်ပျိုးကြရမည်ဖြစ်ပြီး ကျွန်ုပ်တို့၏ ဂြိုဟ်ဖြစ်သော ကမ္ဘာမြေကြီးကို အစိမ်းရောင်နှင့် သန့်ရှင်းစွာ ထားရှိနိုင်ရန် စွမ်းဆောင်နိုင်သမျှ ကြိုးပမ်းကြရမည်။"
+          }
+        ]
+      },
+      "comprehension": {
+        "part_A": {
+          "instructions": "Which paragraph (A–G) best answers each question (1–7) below?",
+          "exercises": [
+            {
+              "question_number": 1,
+              "text": "What causes climate change?",
+              "answer": "D"
+            },
+            {
+              "question_number": 2,
+              "text": "Can climate change be prevented?",
+              "answer": "G"
+            },
+            {
+              "question_number": 3,
+              "text": "What is climate change?",
+              "answer": "A"
+            },
+            {
+              "question_number": 4,
+              "text": "What happens when the temperature rises?",
+              "answer": "F"
+            },
+            {
+              "question_number": 5,
+              "text": "How do greenhouse gases function?",
+              "answer": "B"
+            },
+            {
+              "question_number": 6,
+              "text": "Why are trees important?",
+              "answer": "E"
+            },
+            {
+              "question_number": 7,
+              "text": "What is the current situation of the earth?",
+              "answer": "C"
+            }
+          ]
+        },
+        "part_B": {
+          "instructions": "Fill each blank with an appropriate phrase or clause.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "text": "Global warming means the earth _______________ .",
+              "answer": "is getting warmer and warmer from year to year"
+            },
+            {
+              "question_number": 2,
+              "text": "Living things are able to live because _______________ blanket the earth and have kept it constantly warm.",
+              "answer": "greenhouse gases"
+            },
+            {
+              "question_number": 3,
+              "text": "The temperature of the earth's atmosphere, its oceans and landmasses has risen because CO2 levels in the atmosphere _______________ .",
+              "answer": "have gradually risen"
+            },
+            {
+              "question_number": 4,
+              "text": "The energy we need to run cars, trains, ships and planes comes from _______________ .",
+              "answer": "burning fossil fuels such as coal, oil, and natural gas"
+            },
+            {
+              "question_number": 5,
+              "text": "An increase in soil erosion can lead to _______________ .",
+              "answer": "loss of vegetation"
+            },
+            {
+              "question_number": 6,
+              "text": "Severe changes in the climatic pattern are caused by _______________ in the South Pacific Ocean.",
+              "answer": "El Niño and La Niña (the warm and cold currents)"
+            },
+            {
+              "question_number": 7,
+              "text": "We should use solar power, wind power and thermal power to _______________ .",
+              "answer": "prevent the temperature of the earth from rising higher (instead of burning fossil fuels)"
+            }
+          ]
+        },
+        "part_C": {
+          "instructions": "Answer the following questions in complete sentences.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "question": "What does \"It\" in line 6 refer to?",
+              "answer": "The word \"It\" refers to climate — the entire climate of this earth of ours."
+            },
+            {
+              "question_number": 2,
+              "question": "What do climatologists study?",
+              "answer": "Climatologists carry out scientific studies of general weather conditions."
+            },
+            {
+              "question_number": 3,
+              "question": "Why is the earth's atmosphere compared to a blanket?",
+              "answer": "Because greenhouse gases in the earth's atmosphere act as a blanket and have kept our earth constantly warm enough for over four billion years for living things to be able to live. Without these gases as a blanket, the temperature of the earth would be 33°C cooler than we can stand, and most living things would not be able to survive."
+            },
+            {
+              "question_number": 4,
+              "question": "What happens when the level of greenhouse gases rises?",
+              "answer": "When the level of greenhouse gases rises, the temperature of the earth's atmosphere, its oceans and landmasses increases day by day, and the earth gets warmer and warmer."
+            },
+            {
+              "question_number": 5,
+              "question": "What does \"its\" in line 22 refer to?",
+              "answer": "The word \"its\" refers to the earth — the oceans and landmasses of the earth."
+            },
+            {
+              "question_number": 6,
+              "question": "What does \"which\" in line 31 refer to?",
+              "answer": "The word \"which\" refers to the increasing soil erosion, which in turn leads to loss of vegetation."
+            },
+            {
+              "question_number": 7,
+              "question": "What are the El Niño and La Niña?",
+              "answer": "The El Niño and La Niña are the warm and cold currents respectively of the South Pacific Ocean. They bring about severe changes in the climatic pattern, resulting in changes in temperature, snow, and the track and intensity of storms."
+            },
+            {
+              "question_number": 8,
+              "question": "What should we do to prevent the rise in the earth's temperature or to stop it completely?",
+              "answer": "We should stop using fossil fuels, plant more trees, and do our utmost to keep our planet earth green and clean. Governments should also reduce emission of carbon dioxide and utilize solar power, wind power, and thermal power instead of burning fossil fuels."
+            },
+            {
+              "question_number": 9,
+              "question": "What will you do to help prevent climate change?",
+              "answer": "Sample answer: I will stop using fossil fuels, plant more trees, save electricity and paper, and encourage my family and friends to do their utmost to keep our planet earth green and clean."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson": "9B Vocabulary",
+      "topic": "Expressions Related to Climate Change",
+      "part_A": {
+        "instructions": "Put the expressions below in the correct boxes. An example is given for each. (Expressions: burning fossil fuels, loss of property and life, soil erosion, cutting down trees, loss of vegetation, emission of carbon dioxide, stop using fossil fuels, occurrence of El Niño and La Niña, floods, weather patterns change severely, glaciers and sea ice melt, storms, planting more trees, reducing emission of carbon dioxide, utilizing solar power, windpower, etc.)",
+        "headers": ["BOX", "EXAMPLE GIVEN", "MORE EXPRESSIONS"],
+        "table_data": [
+          {
+            "box": "Causes",
+            "example_given": "burning fossil fuels",
+            "more_expressions": "cutting down trees; emission of carbon dioxide"
+          },
+          {
+            "box": "Effects",
+            "example_given": "floods",
+            "more_expressions": "loss of property and life; soil erosion; loss of vegetation; occurrence of El Niño and La Niña; weather patterns change severely; glaciers and sea ice melt; storms"
+          },
+          {
+            "box": "Ways to prevent it",
+            "example_given": "reducing emission of carbon dioxide",
+            "more_expressions": "stop using fossil fuels; planting more trees; utilizing solar power, windpower, etc."
+          }
+        ]
+      }
+    },
+    {
+      "lesson": "9C Grammar",
+      "topic": "The Future Tense and Conditional Clauses",
+      "part_A": {
+        "instructions": "Complete each sentence, using the future tense with an appropriate phrase below.",
+        "phrases": [
+          "bring me a nice present",
+          "see the dentist",
+          "close the window",
+          "miss the train",
+          "take swimming lessons",
+          "not take long",
+          "throw a big party",
+          "stand first",
+          "enjoy the delightful view",
+          "buy some bread"
+        ],
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "Mother has a severe toothache; she _______________.",
+            "answer": "will see the dentist"
+          },
+          {
+            "question_number": 2,
+            "text": "Father has gone to Paris to attend a conference. I think he _______________ when he comes back.",
+            "answer": "will bring me a nice present"
+          },
+          {
+            "question_number": 3,
+            "text": "Nyo Nyo will get a long holiday this summer; she _______________.",
+            "answer": "will take swimming lessons"
+          },
+          {
+            "question_number": 4,
+            "text": "Kyaw Lwin will be fifteen on 27th October; he _______________ on that day.",
+            "answer": "will throw a big party"
+          },
+          {
+            "question_number": 5,
+            "text": "Hurry up please. Otherwise we _______________.",
+            "answer": "will miss the train"
+          },
+          {
+            "question_number": 6,
+            "text": "He studies very hard. I think he _______________ in the final examination.",
+            "answer": "will stand first"
+          },
+          {
+            "question_number": 7,
+            "text": "It's cold in here; I _______________.",
+            "answer": "will close the window"
+          },
+          {
+            "question_number": 8,
+            "text": "If I have time, I _______________ on my way home.",
+            "answer": "will buy some bread"
+          },
+          {
+            "question_number": 9,
+            "text": "Please wait for a few minutes; I _______________.",
+            "answer": "won't take long"
+          },
+          {
+            "question_number": 10,
+            "text": "Let's stop here for a while. We _______________ over the valley.",
+            "answer": "will enjoy the delightful view"
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Supply the correct form of the verbs in brackets. (Conditional clauses — Type 1: Simple Present + Future Simple; Type 2: Simple Past + Future Conditional; Type 3: Past Perfect + Future Perfect Conditional)",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "If the temperature falls below zero, water (freeze).",
+            "answer": "freezes (a general truth; \"will freeze\" is also acceptable)"
+          },
+          {
+            "question_number": 2,
+            "text": "If you visit Scotland, you (see) Edinburgh Castle.",
+            "answer": "will see"
+          },
+          {
+            "question_number": 3,
+            "text": "Unless you sleep well at night, you (not, feel) good the next morning.",
+            "answer": "will not feel (won't feel)"
+          },
+          {
+            "question_number": 4,
+            "text": "He (lend) her the money if she had asked for it from him.",
+            "answer": "would have lent"
+          },
+          {
+            "question_number": 5,
+            "text": "You wouldn't have fallen unless there (not be) a banana skin on the ground.",
+            "answer": "had not been (hadn't been)"
+          },
+          {
+            "question_number": 6,
+            "text": "If you get there early enough, you (have) a chance to choose the seats you want.",
+            "answer": "will have"
+          },
+          {
+            "question_number": 7,
+            "text": "If you ate too much, you (gain) weight.",
+            "answer": "would gain"
+          },
+          {
+            "question_number": 8,
+            "text": "If everyone (work) faster, we could finish our work in time.",
+            "answer": "worked"
+          },
+          {
+            "question_number": 9,
+            "text": "Unless the sales (increase), we'd have to close the shop.",
+            "answer": "increased"
+          },
+          {
+            "question_number": 10,
+            "text": "If his parents (not, support) him, he would have had to find a part-time job.",
+            "answer": "had not supported"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1173 @@
+{
+  "unit": "UNIT 12",
+  "unitTitle": "URBANIZATION",
+  "lessons": [
+    {
+      "id": "12a-reading",
+      "code": "12A",
+      "type": "Reading",
+      "title": "12A Reading: Urbanization",
+      "titleMy": "စာဖတ်ခြင်း - မြို့ပြပြောင်းလဲမှု",
+      "intro": "Read the passage about urbanization and answer the comprehension questions. Find out what urbanization is, its causes, advantages and disadvantages, and some solutions to its problems.",
+      "introMy": "မြို့ပြပြောင်းလဲမှု (urbanization) အကြောင်း စာပိုဒ်ကို ဖတ်၍ နားလည်မှုမေးခွန်းများကို ဖြေပါ။ မြို့ပြပြောင်းလဲမှုဆိုသည်မှာ အဘယ်နည်း၊ ၎င်း၏ အကြေင်းရင်းများ၊ အားသာချက်နှင့် အားနည်းချက်များ၊ ပြဿနာများကို ဖြေရှင်းနည်းများကို လေ့လာပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is urbanization?",
+          "suggested_answer": "Urbanization is the process by which more and more people leave the countryside to live in cities."
+        },
+        {
+          "id": 2,
+          "question": "What are the causes of urbanization?",
+          "suggested_answer": "The causes of urbanization may be political, economic or social. The root cause is the natural desire of humans to look for greener pastures."
+        },
+        {
+          "id": 3,
+          "question": "What are the advantages of urbanization?",
+          "suggested_answer": "Urbanization brings about many advantages such as a greater number of hospitals and clinics, better equipped educational institutions, advanced infrastructure, and urban comforts and conveniences."
+        },
+        {
+          "id": 4,
+          "question": "What are the disadvantages of urbanization?",
+          "suggested_answer": "The disadvantages include the growth of slums, unemployment, overcrowded living quarters, traffic congestion, air pollution, rise in cost of living, and urban crime."
+        },
+        {
+          "id": 5,
+          "question": "What are some solutions to the problems of urbanization?",
+          "suggested_answer": "Good housing plans should be drawn up and implemented, private investments should be encouraged to create more jobs, the police force should be expanded, and means to control the influx of people should be adopted."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What does the phrase 'greener pastures' mean in the passage?",
+          "answer": "The phrase 'greener pastures' means places that offer new opportunities."
+        },
+        {
+          "id": 2,
+          "question": "What happens when modern livestock and dairy farms are established in the countryside?",
+          "answer": "The rural farmers begin to find it more and more difficult to earn enough to meet their daily needs, so they move to towns or cities to find new forms of livelihood."
+        }
+      ]
+    },
+    {
+      "id": "12b-vocabulary",
+      "code": "12B",
+      "type": "Vocabulary",
+      "title": "12B Vocabulary: Compound Nouns",
+      "titleMy": "ဝေါဟာရ - ပေါင်းစပ်နာမ်များ",
+      "intro": "Study compound nouns and how they are formed. Learn to match nouns to form compound nouns and use them in sentences.",
+      "introMy": "ပေါင်းစပ်နာမ်များနှင့် ၎င်းတို့ကို မည်သို့ဖွဲ့စည်းရကို လေ့လာပါ။ ပေါင်းစပ်နာမ်များဖွဲ့စည်းရန် နာမ်များကို ကိုက်ညီစေပြီး ဝါကျများတွင် အသုံးပြုနည်း လေ့လာပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is a compound noun?",
+          "suggested_answer": "A compound noun is a noun made up of two or more words that together name one thing, for example 'traffic congestion' or 'city life'."
+        },
+        {
+          "id": 2,
+          "question": "Make a compound noun from 'traffic' and 'jam' and use it in a sentence.",
+          "suggested_answer": "traffic jam — There is a long traffic jam on the road to the city centre every morning."
+        },
+        {
+          "id": 3,
+          "question": "Which two words make the compound noun that means 'the growth of towns and cities'?",
+          "suggested_answer": "'Urban' + 'growth' gives 'urban growth'; the single-word noun for the whole process is 'urbanization'."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Give three compound nouns connected with life in a city.",
+          "suggested_answer": "city centre, traffic congestion, public transport (also: street market, high-rise building)."
+        },
+        {
+          "id": 2,
+          "question": "Give three compound nouns connected with life in the countryside.",
+          "suggested_answer": "farmland, village school, rice field (also: country road, water buffalo)."
+        }
+      ]
+    },
+    {
+      "id": "12c-grammar",
+      "code": "12C",
+      "type": "Grammar",
+      "title": "12C Grammar: Relative Pronouns and Comparisons",
+      "titleMy": "သဒ္ဒါ - ဆက်စပ်နာမစာလုံးများနှင့် နှိုင်းယှဉ်ချက်များ",
+      "intro": "Learn about relative pronouns 'that' and 'which', and how to make comparisons using 'as ... as' and 'not as ... as'.",
+      "introMy": "ဆက်စပ်နာမစာလုံးများ 'that' နှင့် 'which' အကြောင်းနှင့် 'as ... as' နှင့် 'not as ... as' ကို အသုံးပြု၍ နှိုင်းယှဉ်ချက်များကို မည်သို့ပြုလုပ်ရကို လေ့လာပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "When do we use 'that' and when do we use 'which'?",
+          "suggested_answer": "'That' is used in defining relative clauses for things (and sometimes people). 'Which' is used for things in both defining and non-defining clauses; after a comma, only 'which' is possible."
+        },
+        {
+          "id": 2,
+          "question": "Join these sentences with a relative pronoun: 'This is the town. It grew very fast.'",
+          "suggested_answer": "This is the town that grew very fast."
+        },
+        {
+          "id": 3,
+          "question": "Compare using 'as … as': 'Village life is peaceful. City life is not peaceful.'",
+          "suggested_answer": "City life is not as peaceful as village life."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Write a sentence about your town using 'as … as'.",
+          "suggested_answer": "My town is not as crowded as Yangon, but it is as friendly as my village."
+        }
+      ]
+    },
+    {
+      "id": "12d-listening-speaking",
+      "code": "12D",
+      "type": "Listening and Speaking",
+      "title": "12D Listening and Speaking: Urban Life and Rural Life",
+      "titleMy": "နားထောင်ခြင်းနှင့် စကားပြောခြင်း - မြို့ပြဘဝနှင့် ကျေးလက်ဘဝ",
+      "intro": "Listen to a short talk on the differences between urban life and rural life and complete the table. Practise making an appointment with a doctor.",
+      "introMy": "မြို့ပြဘဝနှင့် ကျေးလက်ဘဝကြား ကွာခြားချက်များအကြောင်း ဟောပြောချက်ကို နားထောင်၍ ဇယားကို ဖြည့်ပါ။ ဆရာဝန်နှင့် ချိန်းဆိုမှု ပြုလုပ်ပုံကို လေ့ကျင့်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "How is life in urban areas described in the talk?",
+          "suggested_answer": "It is fast and complicated."
+        },
+        {
+          "id": 2,
+          "question": "How is rural life described?",
+          "suggested_answer": "It is simple and relaxed."
+        },
+        {
+          "id": 3,
+          "question": "What does the urban settlement include?",
+          "suggested_answer": "Cities and towns."
+        },
+        {
+          "id": 4,
+          "question": "What does the rural settlement include?",
+          "suggested_answer": "Villages and groups of houses."
+        },
+        {
+          "id": 5,
+          "question": "What is said about the environment in the two areas?",
+          "suggested_answer": "Urban areas are separated from nature, but rural areas are in direct contact with nature."
+        },
+        {
+          "id": 6,
+          "question": "What kind of work are urban people engaged in?",
+          "suggested_answer": "Non-agricultural work."
+        },
+        {
+          "id": 7,
+          "question": "What is the primary occupation of rural people?",
+          "suggested_answer": "Farming (agriculture)."
+        },
+        {
+          "id": 8,
+          "question": "Compare the population of urban and rural areas.",
+          "suggested_answer": "Urban areas are densely populated; rural areas are sparsely populated."
+        },
+        {
+          "id": 9,
+          "question": "Why do urban people often change their jobs?",
+          "suggested_answer": "They change jobs because they are looking for better opportunities."
+        },
+        {
+          "id": 10,
+          "question": "Do rural people change their jobs often?",
+          "suggested_answer": "No, in rural areas people do not usually change their jobs."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "You phone the clinic. How do you begin the call?",
+          "suggested_answer": "I'd like to make an appointment with the doctor."
+        },
+        {
+          "id": 2,
+          "question": "The receptionist asks what your problem is. What do you say?",
+          "suggested_answer": "I'm not feeling very well."
+        },
+        {
+          "id": 3,
+          "question": "The receptionist asks if you can come in the morning. What do you say?",
+          "suggested_answer": "Certainly."
+        },
+        {
+          "id": 4,
+          "question": "She offers 10 o'clock. How do you accept?",
+          "suggested_answer": "Yes, 10 o'clock is fine."
+        },
+        {
+          "id": 5,
+          "question": "She asks for your name. What do you say?",
+          "suggested_answer": "Nay Aung."
+        },
+        {
+          "id": 6,
+          "question": "How do you end the call politely?",
+          "suggested_answer": "Thank you. Goodbye."
+        },
+        {
+          "id": 7,
+          "question": "Now make an appointment with a dentist: how do you ask for an early appointment because of toothache?",
+          "suggested_answer": "I'd like to make an appointment with the dentist, please. I have a bad toothache. Could I come as early as possible tomorrow?"
+        }
+      ]
+    },
+    {
+      "id": "12e-writing",
+      "code": "12E",
+      "type": "Writing",
+      "title": "12E Writing: Argumentative Essay",
+      "titleMy": "စာရေးခြင်း - ငြင်းခုံရေးစာတမ်း",
+      "intro": "Learn how to write an argumentative essay that presents arguments about both sides of an issue. Write an essay to prove that life is better in the city than in the rural area.",
+      "introMy": "အငြင်းပွားဖွယ် အကြောင်းအရာတစ်ခု၏ နှစ်ဖက်စလုံးအတွက် ငြင်းခုံချက်များကို တင်ပြသော ငြင်းခုံရေးစာတမ်းကို မည်သို့ရေးသားရကို လေ့လာပါ။ ကျေးလက်ဒေသထက် မြို့တွင် နေထိုင်ခြင်းသည် ပိုမိုကောင်းသည်ဟု သက်သေပြရန် စာတမ်းတစ်ပုဒ် ရေးသားပါ။",
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Write an argumentative essay: 'Living in a town is better than living in the countryside.' Give arguments for and against, then your own opinion.",
+          "suggested_answer": "Many people believe that living in a town is better than living in the countryside. Those who agree point out that towns offer more job opportunities, better schools and hospitals, and more advanced infrastructure. Shops, markets and transport are close at hand, so daily life is convenient.\n\nOn the other hand, some people argue that the countryside is better. The air is clean, the surroundings are quiet, and the cost of living is lower. Neighbours know one another well and help each other, while town life can be crowded, noisy and expensive. Traffic congestion, pollution and the growth of slums are serious problems in fast-growing cities.\n\nIn my opinion, a town is better for young people who need education and work, but the countryside is better for a peaceful life. The best solution is to develop the countryside so that people do not have to leave their villages to find a good livelihood."
+        },
+        {
+          "id": 2,
+          "question": "List three arguments FOR living in a town.",
+          "suggested_answer": "More jobs, better education and healthcare, and more advanced infrastructure and transport."
+        },
+        {
+          "id": 3,
+          "question": "List three arguments AGAINST living in a town.",
+          "suggested_answer": "Traffic congestion and pollution, a high cost of living, and crowded slums with poor sanitation."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "lesson": "12A Reading",
+      "topic": "Urbanization",
+      "pre_reading": [
+        {
+          "id": 1,
+          "question": "Where do you live - in a village, a town, or a city?",
+          "suggested_answer": "Sample answer: I live in a city."
+        },
+        {
+          "id": 2,
+          "question": "Why do some people leave their villages and move to towns?",
+          "suggested_answer": "Sample answer: They move to towns for better job opportunities, education, and healthcare."
+        },
+        {
+          "id": 3,
+          "question": "Do you think life in a city is better than life in a village?",
+          "suggested_answer": "Sample answer: It depends on personal preferences. Cities offer more opportunities but villages offer a simpler and more peaceful life."
+        }
+      ],
+      "reading_passage": {
+        "title": "12A Reading: Urbanization",
+        "paragraphs": [
+          {
+            "paragraph_id": 1,
+            "lines": "1-4",
+            "english_text": "The word 'urbanization' is the noun form of the verb 'urbanize', and 'urbanize' comes from the adjective 'urban', which means 'of or in a city or town'. The simple diagram below should help you see how those three words are related. urban (adjective) → urbanize (verb) → urbanization (noun)",
+            "burmese_explanation": "မြို့ပြဖွံ့ဖြိုးတိုးတက်မှုဟူသည် မြို့ပြဖြစ်လာစေသည့် လုပ်ငန်းစဉ်ကို ဆိုလိုသည်။ 'မြို့ပြနှင့်ဆိုင်သော' ဟူသည့် အဓိပ္ပာယ်မှ 'မြို့ပြဖြစ်လာစေသည်' ဟူသော ကြိယာအယူအဆ ဆင်းသက်လာပြီး ယင်းကြိယာအယူအဆမှ 'မြို့ပြဖွံ့ဖြိုးတိုးတက်မှု' ဟူသော နာမ်အယူအဆ ဖြစ်ပေါ်လာသည်။ အောက်ပါပုံစံက စကားလုံးသုံးမျိုး၏ ဆက်စပ်ပုံကို ရိုးရှင်းစွာ ပြသထားသည် — မြို့ပြနှင့်ဆိုင်သော (နာမဝိသေသန) → မြို့ပြဖြစ်လာစေသည် (ကြိယာ) → မြို့ပြဖွံ့ဖြိုးတိုးတက်မှု (နာမ်)။"
+          },
+          {
+            "paragraph_id": 2,
+            "lines": "5-6",
+            "english_text": "As most of us know, people living in the countryside often leave their rural homes to live in towns and cities. This moving of rural people to towns and cities is urbanization. Thus, urbanization is 'the process by which more and more people leave the countryside to live in cities'.",
+            "burmese_explanation": "ကျွန်ုပ်တို့အများစု သိကြသည့်အတိုင်း ကျေးလက်ဒေသတွင် နေထိုင်ကြသူများသည် မြို့ပြနှင့် မြို့ကြီးများတွင် နေထိုင်ရန်အတွက် ၎င်းတို့၏ ကျေးလက်အိမ်ရာများကို စွန့်ခွာသွားလေ့ရှိကြသည်။ ဤကဲ့သို့ ကျေးလက်ပြည်သူများ မြို့ပြနှင့် မြို့ကြီးများသို့ ပြောင်းရွှေ့ခြင်းသည် မြို့ပြဖြစ်ထွန်းလာမှုပင် ဖြစ်သည်။ ထို့ကြောင့် မြို့ပြဖြစ်ထွန်းလာမှု ဆိုသည်မှာ 'ကျေးလက်ဒေသကို စွန့်ခွာပြီး မြို့ကြီးများတွင် နေထိုင်သူ ပိုမိုများပြားလာသည့် ဖြစ်စဉ်' ဖြစ်သည်။"
+          },
+          {
+            "paragraph_id": 3,
+            "lines": "7-12",
+            "english_text": "Causes of urbanization. And these reasons may be political, economic or social. However, the root cause is the natural desire of humans to look for greener pastures. This means that as human beings, we wish to be better, that is we wish to get more, earn more, rise higher in rank, and so on.",
+            "burmese_explanation": "မြို့ပြဖြစ်ထွန်းလာမှု၏ အကြောင်းရင်းများ။ ထိုအကြောင်းပြချက်များသည် နိုင်ငံရေး၊ စီးပွားရေး သို့မဟုတ် လူမှုရေးဆိုင်ရာများ ဖြစ်နိုင်ပါသည်။ သို့သော်လည်း အခြေခံအကျဆုံး အကြောင်းရင်းမှာ ပိုမိုကောင်းမွန်သော ဘဝအခွင့်အလမ်းသစ်များကို ရှာဖွေလိုသည့် လူသားတို့၏ သဘာဝအလျောက် ဖြစ်ပေါ်သော အလိုဆန္ဒကြောင့် ဖြစ်သည်။ ယင်းမှာ လူသားများအနေဖြင့် ကျွန်ုပ်တို့သည် ပိုမိုကောင်းမွန်လိုကြခြင်း၊ ဆိုလိုသည်မှာ ပိုမိုရရှိလိုခြင်း၊ ပိုမိုဝင်ငွေရှာဖွေလိုခြင်း၊ ရာထူးအဆင့်အတန်း ပိုမိုမြင့်မားလိုခြင်း စသည်တို့ ဖြစ်ကြသည်။"
+          },
+          {
+            "paragraph_id": 4,
+            "lines": "13-20",
+            "english_text": "So what do they do? They buy up land in the countryside and establish modern livestock and dairy farms. The rural farmers of that countryside begin to find it more and more difficult to earn enough to meet their daily needs. So what do they do? They move to towns or cities to find new forms of livelihood. Here, the reason is economic. Sometimes, in some parts of the world, because of war, all the people of a village are required to abandon their homes and find somewhere else to live. Here, the reason is political. The number may not be large but there are rural families who move from the countryside to towns and cities where there are better schools, colleges and universities for their children, as well as better hospitals, healthcare centres, and other medical service providers for the entire family. In such a case, the reason is social.",
+            "burmese_explanation": "သို့ဆိုလျှင် သူတို့ ဘာလုပ်ကြသနည်း။ သူတို့သည် ကျေးလက်ဒေသရှိ မြေယာများကို လိုက်လံဝယ်ယူပြီး ခေတ်မီမွေးမြူရေးနှင့် နို့စားနွားမွေးမြူရေးခြံများကို တည်ထောင်ကြသည်။ ထိုကျေးလက်ဒေသရှိ ကျေးလက်တောင်သူများသည် ၎င်းတို့၏ နေ့စဉ်လိုအပ်ချက်များကို ဖြည့်ဆည်းရန်အတွက် လုံလောက်သော ဝင်ငွေရှာဖွေရန် ပိုမိုခက်ခဲလာသည်ကို စတင်ကြုံတွေ့ရသည်။ သို့ဆိုလျှင် သူတို့ ဘာလုပ်ကြသနည်း။ သူတို့သည် အသက်မွေးဝမ်းကျောင်း လုပ်ငန်းပုံစံအသစ်များကို ရှာဖွေရန် မြို့ပြ သို့မဟုတ် မြို့ကြီးများသို့ ပြောင်းရွှေ့ကြသည်။ ဤနေရာတွင် အကြောင်းပြချက်မှာ စီးပွားရေးဆိုင်ရာ ဖြစ်သည်။ တစ်ခါတစ်ရံတွင် ကမ္ဘာ့အချို့သော ဒေသများ၌ စစ်ပွဲများကြောင့် ရွာတစ်ရွာလုံးရှိ လူအားလုံးသည် မိမိတို့၏ အိမ်ထောင်ရက်များကို စွန့်ခွာပြီး နေထိုင်စရာ အခြားနေရာတစ်ခုကို ရှာဖွေကြရသည်။ ဤနေရာတွင် အကြောင်းပြချက်မှာ နိုင်ငံရေးဆိုင်ရာ ဖြစ်သည်။ အရေအတွက်အားဖြင့် အများကြီး မဟုတ်နိုင်သော်လည်း မိမိတို့၏ သားသမီးများအတွက် ပိုမိုကောင်းမွန်သော ကျောင်းများ၊ ကောလိပ်များနှင့် တက္ကသိုလ်များ ရှိသကဲ့သို့ မိသားစုတစ်ခုလုံးအတွက် ပိုမိုကောင်းမွန်သော ဆေးရုံများ၊ ကျန်းမာရေးစောင့်ရှောက်မှု စင်တာများနှင့် အခြားဆေးဘက်ဆိုင်ရာ ဝန်ဆောင်မှုပေးသည့် နေရာများရှိရာ ကျေးလက်ဒေသမှ မြို့ပြနှင့် မြို့ကြီးများသို့ ပြောင်းရွှေ့ကြသည့် ကျေးလက်မိသားစုများလည်း ရှိကြသည်။ ထိုကဲ့သို့သော အခြေအနေမျိုးတွင် အကြောင်းပြချက်မှာ လူမှုရေးဆိုင်ရာ ဖြစ်သည်။"
+          },
+          {
+            "paragraph_id": 5,
+            "lines": "21-32",
+            "english_text": "Advantages and disadvantages. Urbanization certainly brings about many advantages such as a greater number of hospitals and clinics, all better equipped and better staffed with specialists; a greater number of educational institutions such as schools, colleges, and universities; an infrastructure more advanced than the one in the countryside; and of course, all the urban comforts and conveniences such as recreation centres, libraries, museums, parks, beauty salons, hotels, and restaurants. However, urbanization brings about many undesirable results. These may be classified as economic and social ills. One of them is the growth of slums where people live in shanties and hovels, and sanitation is inadequate. Then there are problems of unemployment, overcrowded living quarters, traffic congestion, and air pollution. There is also a rise in the cost of living, and also a rise in urban crime such as mugging, stealing, drug abusing, prostitution and murder. As a result, the urban areas are not as safe as they used to be.",
+            "burmese_explanation": "ကောင်းကျိုးများနှင့် ဆိုးကျိုးများ။ မြို့ပြဖြစ်ထွန်းလာမှုသည် ပိုမိုကောင်းမွန်သော စက်ကိရိယာများ တပ်ဆင်ထားပြီး အထူးကုဆရာဝန်ကြီးများ ပိုမိုပြည့်စုံစွာရှိသော ဆေးရုံများနှင့် ဆေးခန်းများ ပိုမိုများပြားလာခြင်း၊ ကျောင်းများ၊ ကောလိပ်များနှင့် တက္ကသိုလ်များကဲ့သို့သော ပညာရေးအဖွဲ့အစည်းများ ပိုမိုများပြားလာခြင်း၊ ကျေးလက်ဒေသထက် ပိုမိုအဆင့်မြင့်သော အခြေခံအဆောက်အအုံများ ရှိလာခြင်းနှင့် အပန်းဖြေစင်တာများ၊ စာကြည့်တိုက်များ၊ ပြတိုက်များ၊ ပန်းခြံများ၊ အလှပြင်ဆိုင်များ၊ ဟိုတယ်များနှင့် စားသောက်ဆိုင်များကဲ့သို့သော မြို့ပြ၏ သက်တောင့်သက်သာရှိမှုနှင့် အဆင်ပြေချောမွေ့မှု အားလုံးကို ရရှိစေခြင်း စသည့် ကောင်းကျိုးများစွာကို အသေအချာ ဆောင်ကြဉ်းပေးပါသည်။ သို့သော်လည်း မြို့ပြဖြစ်ထွန်းလာမှုသည် မလိုလားအပ်သော ရလဒ်များစွာကိုလည်း ဖြစ်ပေါ်စေပါသည်။ ယင်းတို့ကို စီးပွားရေးနှင့် လူမှုရေးဆိုင်ရာ ဆိုးကွက်များဟု အမျိုးအစားခွဲခြားနိုင်ပါသည်။ ထိုအထဲမှ တစ်ခုမှာ လူများက ယာယီတဲအိမ်များနှင့် စုတ်ချာသော အိမ်ငယ်များတွင် နေထိုင်ကြပြီး မိလ္လာစနစ် မလုံလောက်သော ကျူးကျော်ရပ်ကွက်များ တိုးပွားလာခြင်း ဖြစ်သည်။ ထို့အပြင် အလုပ်လက်မဲ့ပြဿနာများ၊ ပြွတ်သိပ်အော်ဂရိုင် နေထိုင်ရသည့် အိမ်ရာများ၊ ယာဉ်ကြောပိတ်ဆို့မှုများနှင့် လေထုညစ်ညမ်းမှု ပြဿနာများလည်း ရှိနေပါသည်။ လူနေမှုစရိတ်များ မြင့်တက်လာခြင်းနှင့်အတူ လုယက်ခြင်း၊ ခိုးယူခြင်း၊ မူးယစ်ဆေးဝါး သုံးစွဲခြင်း၊ ပြည့်တန်ဆာလုပ်ငန်းလုပ်ကိုင်ခြင်းနှင့် လူသတ်ခြင်းကဲ့သို့သော မြို့ပြရာဇဝတ်မှုများလည်း မြင့်တက်လာပါသည်။ ရလဒ်အနေဖြင့် မြို့ပြဒေသများသည် ယခင်ကကဲ့သို့ ဘေးကင်းလုံခြုံမှု မရှိတော့ပါ။"
+          },
+          {
+            "paragraph_id": 6,
+            "lines": "33-38",
+            "english_text": "Some solutions to those problems of urbanization. With more and more people from the countryside coming to stay in towns and cities, good housing plans should be drawn up and implemented. At the same time, sewage and other drainage systems should be well maintained. To solve the unemployment problem, private investments may be encouraged in order to create more jobs. The police force may need to be expanded in proportion to the increase in population and crime. Means to control the influx of people from the countryside may need to be adopted.",
+            "burmese_explanation": "မြို့ပြဖြစ်ထွန်းလာမှု ပြဿနာများအတွက် အချို့သော ဖြေရှင်းချက်များမှာ အောက်ပါအတိုင်း ဖြစ်ပါသည်။ ကျေးလက်ဒေသများမှ မြို့ပြနှင့် မြို့ကြီးများသို့ လာရောက်နေထိုင်သူ ပိုမိုများပြားလာသည်နှင့်အမျှ ကောင်းမွန်သော အိမ်ရာစီမံကိန်းများကို ရေးဆွဲပြီး အကောင်အထည်ဖော် ဆောင်ရွက်သင့်ပါသည်။ တစ်ချိန်တည်းမှာပင် ရေဆိုးထုတ်စနစ်နှင့် အခြားရေနုတ်မြောင်းစနစ်များကိုလည်း ကောင်းမွန်စွာ ထိန်းသိမ်းစောင့်ရှောက်ရပါမည်။ အလုပ်လက်မဲ့ပြဿနာကို ဖြေရှင်းရန်အတွက် အလုပ်အကိုင် အခွင့်အလမ်းသစ်များ ပိုမိုဖန်တီးနိုင်ရန် ပုဂ္ဂလိက ရင်းနှီးမြှုပ်နှံမှုများကို အားပေးရပါမည်။ လူဦးရေနှင့် ရာဇဝတ်မှု တိုးပွားလာမှု အချိုးအစားအလိုက် ရဲတပ်ဖွဲ့အင်အားကိုလည်း တိုးချဲ့ရန် လိုအပ်နိုင်ပါသည်။ ကျေးလက်ဒေသမှ လူဦးရေ အစုလိုက်အပြုံလိုက် ဝင်ရောက်လာမှုကို ထိန်းချုပ်မည့် နည်းလမ်းများကိုလည်း ချမှတ်ဆောင်ရွက်ရန် လိုအပ်နိုင်ပါသည်။"
+          }
+        ]
+      },
+      "comprehension": {
+        "part_A": {
+          "instructions": "Five sentences are removed from the passage. Choose from the sentences (A-E) the one which best fits each gap (1-5).",
+          "exercises": [
+            {
+              "question_number": 1,
+              "text": "(1) __________",
+              "answer": "E. This moving of rural people to towns and cities is urbanization."
+            },
+            {
+              "question_number": 2,
+              "text": "(2) __________",
+              "answer": "C. Reasons for rural folks to move to towns and cities are many."
+            },
+            {
+              "question_number": 3,
+              "text": "(3) __________",
+              "answer": "D. There are, of course, other urban comforts and conveniences they may enjoy."
+            },
+            {
+              "question_number": 4,
+              "text": "(4) __________",
+              "answer": "B. However, urbanization brings about many undesirable results."
+            },
+            {
+              "question_number": 5,
+              "text": "(5) __________",
+              "answer": "A. At the same time, sewage and other drainage systems should be well maintained."
+            }
+          ],
+          "options": [
+            {
+              "letter": "A",
+              "text": "At the same time, sewage and other drainage systems should be well maintained."
+            },
+            {
+              "letter": "B",
+              "text": "However, urbanization brings about many undesirable results."
+            },
+            {
+              "letter": "C",
+              "text": "Reasons for rural folks to move to towns and cities are many."
+            },
+            {
+              "letter": "D",
+              "text": "There are, of course, other urban comforts and conveniences they may enjoy."
+            },
+            {
+              "letter": "E",
+              "text": "This moving of rural people to towns and cities is urbanization."
+            }
+          ]
+        },
+        "part_B": {
+          "instructions": "Read the passage again and complete the table with the examples given for the general expressions in Column A.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "text": "medical service providers",
+              "answer": "hospitals, healthcare centres, and other medical service providers"
+            },
+            {
+              "question_number": 2,
+              "text": "education institutions",
+              "answer": "schools, colleges, and universities"
+            },
+            {
+              "question_number": 3,
+              "text": "urban comforts and conveniences",
+              "answer": "recreation centres, libraries, museums, parks, beauty salons, hotels, and restaurants"
+            },
+            {
+              "question_number": 4,
+              "text": "undesirable results brought about by urbanization",
+              "answer": "the growth of slums, unemployment, overcrowded living quarters, traffic congestion, air pollution, rise in cost of living, urban crime"
+            },
+            {
+              "question_number": 5,
+              "text": "urban crime",
+              "answer": "mugging, stealing, drug abusing, prostitution and murder"
+            }
+          ]
+        },
+        "part_C": {
+          "instructions": "Give a full-sentence answer to each question.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "question": "For what reasons do people living in the countryside often leave their rural homes?",
+              "answer": "People leave their rural homes for political, economic or social reasons."
+            },
+            {
+              "question_number": 2,
+              "question": "The phrase 'greener pastures' in line 9 is similar in meaning to",
+              "answer": "c. places that offer new opportunities"
+            },
+            {
+              "question_number": 3,
+              "question": "When human beings wish to be better, what do they do?",
+              "answer": "They switch from one job to another, move from one place to another, or give up one method and try something else."
+            },
+            {
+              "question_number": 4,
+              "question": "When modern livestock and dairy farms are established in the countryside, what happens to the rural farmers there?",
+              "answer": "They find it more and more difficult to earn enough to meet their daily needs, so they move to towns or cities."
+            },
+            {
+              "question_number": 5,
+              "question": "Because of war in some parts of the world, what do people in villages have to do?",
+              "answer": "They are required to abandon their homes and find somewhere else to live."
+            },
+            {
+              "question_number": 6,
+              "question": "What kind of undesirable results does urbanization bring about?",
+              "answer": "It brings about economic and social ills such as the growth of slums, unemployment, overcrowding, traffic congestion, air pollution, and urban crime."
+            },
+            {
+              "question_number": 7,
+              "question": "With the growth of slums, where are people forced to live?",
+              "answer": "People are forced to live in shanties and hovels where sanitation is inadequate."
+            },
+            {
+              "question_number": 8,
+              "question": "If more job opportunities can be created, what problem can be solved?",
+              "answer": "The unemployment problem can be solved."
+            },
+            {
+              "question_number": 9,
+              "question": "To what extent should the police force be expanded?",
+              "answer": "The police force should be expanded in proportion to the increase in population and crime."
+            },
+            {
+              "question_number": 10,
+              "question": "If you were living in a village, would you move to a big city? Why?",
+              "answer": "Sample answer: Yes, I would move to a big city for better education and job opportunities."
+            },
+            {
+              "question_number": 11,
+              "question": "Would you like to live in a village or a big city? Why?",
+              "answer": "Sample answer: I would like to live in a big city because it offers more opportunities and conveniences."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson": "12B Vocabulary",
+      "topic": "Compound Nouns; 'as' and 'like'",
+      "part_A": {
+        "instructions": "Match the nouns in Column A with those in Column B to form compound nouns found in the reading passage.",
+        "column_A": [
+          "air",
+          "beauty",
+          "dairy",
+          "drainage",
+          "drug",
+          "housing",
+          "recreation",
+          "root",
+          "rural",
+          "service",
+          "traffic",
+          "unemployment"
+        ],
+        "column_B": [
+          "provider",
+          "centre",
+          "salon",
+          "congestion",
+          "pollution",
+          "abusing",
+          "plan",
+          "system",
+          "problem",
+          "cause",
+          "farms",
+          "folks"
+        ],
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "air + __________",
+            "answer": "air pollution"
+          },
+          {
+            "question_number": 2,
+            "text": "beauty + __________",
+            "answer": "beauty salon"
+          },
+          {
+            "question_number": 3,
+            "text": "dairy + __________",
+            "answer": "dairy farms"
+          },
+          {
+            "question_number": 4,
+            "text": "drainage + __________",
+            "answer": "drainage system"
+          },
+          {
+            "question_number": 5,
+            "text": "drug + __________",
+            "answer": "drug abusing"
+          },
+          {
+            "question_number": 6,
+            "text": "housing + __________",
+            "answer": "housing plan"
+          },
+          {
+            "question_number": 7,
+            "text": "recreation + __________",
+            "answer": "recreation centre"
+          },
+          {
+            "question_number": 8,
+            "text": "root + __________",
+            "answer": "root cause"
+          },
+          {
+            "question_number": 9,
+            "text": "rural + __________",
+            "answer": "rural folks"
+          },
+          {
+            "question_number": 10,
+            "text": "service + __________",
+            "answer": "service provider"
+          },
+          {
+            "question_number": 11,
+            "text": "traffic + __________",
+            "answer": "traffic congestion"
+          },
+          {
+            "question_number": 12,
+            "text": "unemployment + __________",
+            "answer": "unemployment problem"
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Complete each sentence with an appropriate compound noun from Exercise A as in the example. e.g. The bookstore is a service provider for people looking for rare books.",
+        "example": "The bookstore is a service provider for people looking for rare books.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "Unhappiness is the __________ of his illness.",
+            "answer": "root cause"
+          },
+          {
+            "question_number": 2,
+            "text": "Many __________ in the rural areas were turned into industrial zones.",
+            "answer": "dairy farms"
+          },
+          {
+            "question_number": 3,
+            "text": "This area was very muddy before the __________ was installed.",
+            "answer": "drainage system"
+          },
+          {
+            "question_number": 4,
+            "text": "To resolve the __________, we must create more job opportunities.",
+            "answer": "unemployment problem"
+          },
+          {
+            "question_number": 5,
+            "text": "This weekend, I am going to visit my __________ who live in a village.",
+            "answer": "rural folks"
+          },
+          {
+            "question_number": 6,
+            "text": "Do you usually go to the __________ to have your hair cut?",
+            "answer": "beauty salon"
+          },
+          {
+            "question_number": 7,
+            "text": "There's a __________ on the ground floor. You can play table tennis there.",
+            "answer": "recreation centre"
+          },
+          {
+            "question_number": 8,
+            "text": "Among the causes of __________, car exhaust fumes are the worst.",
+            "answer": "air pollution"
+          },
+          {
+            "question_number": 9,
+            "text": "Architects are currently drafting a new __________ for our city.",
+            "answer": "housing plan"
+          },
+          {
+            "question_number": 10,
+            "text": "Much of the crime in this area is related to __________.",
+            "answer": "drug abusing"
+          },
+          {
+            "question_number": 11,
+            "text": "__________ in large cities seems to be an insoluble problem.",
+            "answer": "Traffic congestion"
+          }
+        ]
+      },
+      "part_C": {
+        "title": "'As' and 'like'",
+        "instructions": "Complete the following sentences, using 'as' or 'like'.",
+        "study_examples": [
+          {
+            "text": "He worked for a long time as a teacher in Africa.",
+            "note": "His job is teaching."
+          },
+          {
+            "text": "It rained all weekend as we thought it would.",
+            "note": "We thought it would rain and it really rained."
+          },
+          {
+            "text": "She works in a hotel like me.",
+            "note": "We both work in a hotel."
+          },
+          {
+            "text": "It's hot in this room. It's like an oven.",
+            "note": "Both an oven and this room are hot."
+          },
+          {
+            "text": "She's got a shawl like mine.",
+            "note": "Both of us have got the same kind of shawls."
+          },
+          {
+            "text": "That house looks like a castle.",
+            "note": "The appearance of the house and that of a castle is compared."
+          }
+        ],
+        "rules": [
+          "The use of 'as': 'As' + noun means 'in the role of' and is commonly used to talk about jobs.",
+          "The use of 'as': 'As' is also used to compare something that is the same as something else, or in the same condition.",
+          "The use of 'like': Like + noun means 'similar to' or 'in the same way as'.",
+          "The use of 'like': When we compare appearance or behaviour, we use like, not as."
+        ],
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "I'm attending the meeting __________ an observer.",
+            "answer": "as"
+          },
+          {
+            "question_number": 2,
+            "text": "The baby is more __________ his mother than his father.",
+            "answer": "like"
+          },
+          {
+            "question_number": 3,
+            "text": "There is too much traffic in London __________ in New York.",
+            "answer": "as"
+          },
+          {
+            "question_number": 4,
+            "text": "We're late for the train. We'll have to run __________ the wind.",
+            "answer": "like"
+          },
+          {
+            "question_number": 5,
+            "text": "I'm your friend and, __________ a friend, I advise you to think again.",
+            "answer": "as"
+          },
+          {
+            "question_number": 6,
+            "text": "I want to join the air force __________ a fighter jet pilot.",
+            "answer": "as"
+          },
+          {
+            "question_number": 7,
+            "text": "My father gave me this watch __________ a birthday present.",
+            "answer": "as"
+          },
+          {
+            "question_number": 8,
+            "text": "I'm afraid I can't meet you tomorrow __________ we have planned.",
+            "answer": "as"
+          },
+          {
+            "question_number": 9,
+            "text": "He's 18, but he sometimes behaves __________ a child.",
+            "answer": "like"
+          },
+          {
+            "question_number": 10,
+            "text": "She's a talented writer, __________ most of her family are.",
+            "answer": "as"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": "12C Grammar",
+      "topic": "Relative Pronouns 'that' and 'which'; 'as ... as' and 'not as ... as'",
+      "part_A": {
+        "instructions": "Join the two sentences in each number, using 'that' or 'which' as in the example given. e.g. I do these exercises every day. They build muscles and increase stamina. -> I do these exercises, that / which build muscles and increase stamina, every day.",
+        "example": "I do these exercises, that / which build muscles and increase stamina, every day.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "The building, __________ was destroyed in the storm, has now been rebuilt.",
+            "answer": "The building, that / which was destroyed in the storm, has now been rebuilt."
+          },
+          {
+            "question_number": 2,
+            "text": "We stayed in the Excellent Hotel, __________ a friend recommended to us.",
+            "answer": "We stayed in the Excellent Hotel, that / which a friend recommended to us."
+          },
+          {
+            "question_number": 3,
+            "text": "These buses, __________ leave every half hour, go to the airport.",
+            "answer": "These buses, that / which leave every half hour, go to the airport."
+          },
+          {
+            "question_number": 4,
+            "text": "Ko Tu told me about his new job, __________ he is enjoying very much.",
+            "answer": "Ko Tu told me about his new job, that / which he is enjoying very much."
+          },
+          {
+            "question_number": 5,
+            "text": "We often go to Bago, __________ is only ten miles from our village, to visit our relatives.",
+            "answer": "We often go to Bago, that / which is only ten miles from our village, to visit our relatives."
+          },
+          {
+            "question_number": 6,
+            "text": "These stairs, __________ lead to the swimming pool, are rather slippery.",
+            "answer": "These stairs, that / which lead to the swimming pool, are rather slippery."
+          },
+          {
+            "question_number": 7,
+            "text": "Mother gave me this sweater, __________ she knitted herself.",
+            "answer": "Mother gave me this sweater, that / which she knitted herself."
+          },
+          {
+            "question_number": 8,
+            "text": "The washing machine, __________ I have used with care, is still working perfectly.",
+            "answer": "The washing machine, that / which I have used with care, is still working perfectly."
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Make sentences with relative clauses using the words as in the example given. e.g. Unicycle / a vehicle like a bicycle / has only one wheel. -> A unicycle is a vehicle like a bicycle that / which has only one wheel.",
+        "example": "A unicycle is a vehicle like a bicycle that / which has only one wheel.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "the earth / the only planet / can support life.",
+            "answer": "The earth is the only planet that / which can support life."
+          },
+          {
+            "question_number": 2,
+            "text": "the invention / has changed the modern world / the computer.",
+            "answer": "The computer is the invention that / which has changed the modern world."
+          },
+          {
+            "question_number": 3,
+            "text": "swimming / an activity / I enjoy doing.",
+            "answer": "Swimming is an activity that / which I enjoy doing."
+          },
+          {
+            "question_number": 4,
+            "text": "the programme / I love watching on TV / the Master Chef programme.",
+            "answer": "The programme that / which I love watching on TV is the Master Chef programme."
+          },
+          {
+            "question_number": 5,
+            "text": "an activity / helps reduce stress / gardening.",
+            "answer": "Gardening is an activity that / which helps reduce stress."
+          }
+        ]
+      },
+      "study_examples": [
+        {
+          "text": "I do not like stories that / which have sad endings.",
+          "note": "'that' or 'which' is used to refer to stories."
+        },
+        {
+          "text": "Nandar works for a company that / which makes shoes.",
+          "note": "'that' or 'which' is used to refer to a company."
+        },
+        {
+          "text": "When we talk about things, we use that or which in a relative clause.",
+          "note": ""
+        }
+      ],
+      "comparisons_study": {
+        "title": "Making Comparisons: 'as ... as' and 'not as ... as'",
+        "pairs": [
+          {
+            "given": "A small elephant is big. That cow is also big.",
+            "result": "That cow is as big as a small elephant."
+          },
+          {
+            "given": "Mee Mee can play the piano well. Ko Ko can also play the piano well.",
+            "result": "Ko Ko can play the piano as well as Mee Mee."
+          },
+          {
+            "given": "Thura can run faster than Thuta.",
+            "result": "Thuta cannot run as fast as Thura."
+          },
+          {
+            "given": "It is colder this year than it was last year.",
+            "result": "It was not as cold last year as it is this year."
+          }
+        ],
+        "rules": [
+          "We use 'as + adjective / adverb + as' to make comparisons when the things we are comparing are equal in some way.",
+          "We use 'not as + adjective / adverb + as' to make comparisons between things which are not equal."
+        ]
+      },
+      "part_C": {
+        "instructions": "Join each pair of sentences, using 'as ... as'.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "Climbing up a mountain is difficult. Climbing down a mountain is also difficult.",
+            "answer": "Climbing down a mountain is as difficult as climbing up a mountain."
+          },
+          {
+            "question_number": 2,
+            "text": "It is warm today. It was also warm yesterday.",
+            "answer": "It is as warm today as it was yesterday."
+          },
+          {
+            "question_number": 3,
+            "text": "The shopping mall is crowded today. It was also crowded yesterday.",
+            "answer": "The shopping mall is as crowded today as it was yesterday."
+          },
+          {
+            "question_number": 4,
+            "text": "Yesterday, they played well. They usually play well.",
+            "answer": "Yesterday, they played as well as they usually do."
+          },
+          {
+            "question_number": 5,
+            "text": "My mother is always busy. My father is also always busy.",
+            "answer": "My father is always as busy as my mother."
+          }
+        ]
+      },
+      "part_D": {
+        "instructions": "Rewrite the sentences, using 'not as ... as'.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "Robots can work more precisely than human workers.",
+            "answer": "Human workers cannot work as precisely as robots."
+          },
+          {
+            "question_number": 2,
+            "text": "An electric lamp is brighter than a candle.",
+            "answer": "A candle is not as bright as an electric lamp."
+          },
+          {
+            "question_number": 3,
+            "text": "Ko Ko spends more time playing than studying.",
+            "answer": "Ko Ko does not spend as much time studying as playing."
+          },
+          {
+            "question_number": 4,
+            "text": "Nuclear power is cleaner than coal.",
+            "answer": "Coal is not as clean as nuclear power."
+          },
+          {
+            "question_number": 5,
+            "text": "The air quality in rural areas is better than the air quality in urban areas.",
+            "answer": "The air quality in urban areas is not as good as the air quality in rural areas."
+          }
+        ]
+      }
+    },
+    {
+      "lesson": "12D Listening and Speaking",
+      "topic": "Urban Life and Rural Life",
+      "part_A": {
+        "instructions": "Listen to a short talk on the differences between urban life and rural life and complete the table.",
+        "table_title": "The Differences between Urban Life and Rural Life",
+        "table_rows": [
+          {
+            "feature": "life",
+            "urban": "Life in urban areas is __________ and complicated.",
+            "urban_answer": "fast",
+            "urban_number": 1,
+            "rural": "Life in rural areas is simple and __________",
+            "rural_answer": "relaxed",
+            "rural_number": 2
+          },
+          {
+            "feature": "settlement",
+            "urban": "The settlement in urban areas includes __________ and towns.",
+            "urban_answer": "cities",
+            "urban_number": 3,
+            "rural": "The settlement in rural areas includes __________ and groups of houses.",
+            "rural_answer": "villages",
+            "rural_number": 4
+          },
+          {
+            "feature": "environment",
+            "urban": "The environment in urban areas is separated from __________",
+            "urban_answer": "nature",
+            "urban_number": 5,
+            "rural": "The environment in rural areas is in __________ contact with nature.",
+            "rural_answer": "direct",
+            "rural_number": 6
+          },
+          {
+            "feature": "people",
+            "urban": "People are engaged in non-agricultural __________",
+            "urban_answer": "work",
+            "urban_number": 7,
+            "rural": "The primary job of rural people is __________",
+            "rural_answer": "farming",
+            "rural_number": 8
+          },
+          {
+            "feature": "population",
+            "urban": "Urban areas are __________ populated.",
+            "urban_answer": "densely",
+            "urban_number": 9,
+            "rural": "Rural areas are __________ populated.",
+            "rural_answer": "sparsely",
+            "rural_number": 10
+          },
+          {
+            "feature": "jobs",
+            "urban": "People __________ change their jobs.",
+            "urban_answer": "often",
+            "urban_number": 11,
+            "rural": "People do not __________ change their jobs.",
+            "rural_answer": "usually",
+            "rural_number": 12
+          }
+        ],
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "life (urban area): Life in urban areas is __________ and complicated.",
+            "answer": "fast"
+          },
+          {
+            "question_number": 2,
+            "text": "life (rural area): Life in rural areas is simple and __________",
+            "answer": "relaxed"
+          },
+          {
+            "question_number": 3,
+            "text": "settlement (urban area): The settlement in urban areas includes __________ and towns.",
+            "answer": "cities"
+          },
+          {
+            "question_number": 4,
+            "text": "settlement (rural area): The settlement in rural areas includes __________ and groups of houses.",
+            "answer": "villages"
+          },
+          {
+            "question_number": 5,
+            "text": "environment (urban area): The environment in urban areas is separated from __________",
+            "answer": "nature"
+          },
+          {
+            "question_number": 6,
+            "text": "environment (rural area): The environment in rural areas is in __________ contact with nature.",
+            "answer": "direct"
+          },
+          {
+            "question_number": 7,
+            "text": "people (urban area): People are engaged in non-agricultural __________",
+            "answer": "work"
+          },
+          {
+            "question_number": 8,
+            "text": "people (rural area): The primary job of rural people is __________",
+            "answer": "farming"
+          },
+          {
+            "question_number": 9,
+            "text": "population (urban area): Urban areas are __________ populated.",
+            "answer": "densely"
+          },
+          {
+            "question_number": 10,
+            "text": "population (rural area): Rural areas are __________ populated.",
+            "answer": "sparsely"
+          },
+          {
+            "question_number": 11,
+            "text": "jobs (urban area): People __________ change their jobs.",
+            "answer": "often"
+          },
+          {
+            "question_number": 12,
+            "text": "jobs (rural area): People do not __________ change their jobs.",
+            "answer": "usually"
+          }
+        ],
+        "audio_title": "Unit 12 – Urbanization"
+      },
+      "part_B": {
+        "title": "Making an appointment with a doctor",
+        "instructions": "Complete the following dialogue, using the expressions given below.",
+        "options": [
+          {
+            "letter": "a",
+            "text": "I'm not feeling very well."
+          },
+          {
+            "letter": "b",
+            "text": "Certainly."
+          },
+          {
+            "letter": "c",
+            "text": "Nay Aung."
+          },
+          {
+            "letter": "d",
+            "text": "Yes, 10 o'clock is fine."
+          },
+          {
+            "letter": "e",
+            "text": "Thank you."
+          },
+          {
+            "letter": "f",
+            "text": "I'd like to make an appointment with the doctor."
+          }
+        ],
+        "dialogue": [
+          {
+            "speaker": "Receptionist",
+            "text": "Dr. Anderson's clinic. May I help you?"
+          },
+          {
+            "speaker": "Patient",
+            "slot": 1
+          },
+          {
+            "speaker": "Receptionist",
+            "text": "Certainly, could you tell me what your problem is?"
+          },
+          {
+            "speaker": "Patient",
+            "slot": 2
+          },
+          {
+            "speaker": "Receptionist",
+            "text": "OK, let me check. Yes, Dr. Anderson can see you tomorrow. Can you come in the morning?"
+          },
+          {
+            "speaker": "Patient",
+            "slot": 3
+          },
+          {
+            "speaker": "Receptionist",
+            "text": "How about 10 o'clock?"
+          },
+          {
+            "speaker": "Patient",
+            "slot": 4
+          },
+          {
+            "speaker": "Receptionist",
+            "text": "May I have your name?"
+          },
+          {
+            "speaker": "Patient",
+            "slot": 5
+          },
+          {
+            "speaker": "Receptionist",
+            "text": "OK, 10 tomorrow morning."
+          },
+          {
+            "speaker": "Patient",
+            "slot": 6
+          },
+          {
+            "speaker": "Receptionist",
+            "text": "Goodbye."
+          }
+        ],
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "(1) __________",
+            "answer": "(f) I'd like to make an appointment with the doctor."
+          },
+          {
+            "question_number": 2,
+            "text": "(2) __________",
+            "answer": "(a) I'm not feeling very well."
+          },
+          {
+            "question_number": 3,
+            "text": "(3) __________",
+            "answer": "(b) Certainly."
+          },
+          {
+            "question_number": 4,
+            "text": "(4) __________",
+            "answer": "(d) Yes, 10 o'clock is fine."
+          },
+          {
+            "question_number": 5,
+            "text": "(5) __________",
+            "answer": "(c) Nay Aung."
+          },
+          {
+            "question_number": 6,
+            "text": "(6) __________",
+            "answer": "(e) Thank you."
+          }
+        ]
+      },
+      "part_C": {
+        "instructions": "In pairs, practise making an appointment with a dentist.",
+        "type": "pair_work",
+        "model_title": "Model dialogue — making an appointment with a dentist"
+      }
+    },
+    {
+      "lesson": "12E Writing",
+      "topic": "Argumentative Essay",
+      "writing_task": {
+        "instructions": "Write an argumentative essay to prove that life is better in the city than in the rural area. You can use the useful language provided below.",
+        "opening": "It is undeniable that more and more people are leaving their villages for the city every year ..."
+      },
+      "explanation": "An argumentative essay is a type of essay that presents arguments about both sides of an issue. It could be that both sides are presented equally balanced, or it could be that one side is presented more forcefully than the other. It all depends on the writer, and what side he supports the most.",
+      "structure": [
+        {
+          "step": 1,
+          "name": "Introduction",
+          "detail": "Attention grabber, Background information"
+        },
+        {
+          "step": 2,
+          "name": "Body",
+          "detail": "Major arguments"
+        },
+        {
+          "step": 3,
+          "name": "Counterarguments",
+          "detail": "An argument to refute earlier arguments and give weight to the actual position"
+        },
+        {
+          "step": 4,
+          "name": "Conclusion",
+          "detail": "Concluding remarks"
+        }
+      ],
+      "useful_language": [
+        "It is often said that ... / It is undeniable that ... / It is a well-known fact that ...",
+        "One argument in support of ... / The second reason for ... / An important aspect of the problem is ...",
+        "On the other hand, we can observe that ... / The other side of the coin is, however, that ...",
+        "Another way of looking at this question is to ...",
+        "The truth of the matter is simply that ...",
+        "On balance, we can safely say that ...",
+        "On reflection, it seems more accurate to say that ...",
+        "What conclusions can be drawn from all this? / The conclusion that we can come to is ...",
+        "To sum up ... / We believe that ... / we have to accept that ..."
+      ]
+    }
+  ]
+}

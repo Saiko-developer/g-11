@@ -1,0 +1,450 @@
+{
+  "unit": "UNIT 10",
+  "unitTitle": "FOOD SAFETY",
+  "lessons": [
+    {
+      "id": "10a-reading",
+      "code": "10A",
+      "type": "Reading",
+      "title": "10A Reading: Food Safety",
+      "titleMy": "စာဖတ်ခြင်း - အစားအသောက် ဘေးကင်းလုံခြုံမှု",
+      "intro": "Read the passage about food safety and answer the questions. Find out what food is, what we need it for, what kinds of food are good or bad for us, and what food safety means.",
+      "introMy": "အစားအသောက် ဘေးကင်းလုံခြုံမှုအကြောင်း စာပိုဒ်ကို ဖတ်၍ မေးခွန်းများကို ဖြေပါ။ အစားအသောက်ဆိုသည်မှာ အဘယ်နည်း၊ အဘယ်ကြောင့် လိုအပ်သည်၊ မည်သည့်အစားအစာအမျိုးအစားများက ကျွန်ုပ်တို့အတွက် ကောင်းမွန် သို့မဟုတ် မကောင်းမွန်ကြောင်းနှင့် အစားအသောက် ဘေးကင်းလုံခြုံမှုဆိုသည်မှာ အဘယ်အရာဖြစ်သည်ကို လေ့လာပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What are living things?",
+          "suggested_answer": "Plants, animals, and human beings are living things."
+        },
+        {
+          "id": 2,
+          "question": "Name three kinds of food you eat almost every day.",
+          "suggested_answer": "Sample answer: Rice, vegetables, and fish are three kinds of food I eat almost every day."
+        },
+        {
+          "id": 3,
+          "question": "Why are fresh fruits and vegetables good for us?",
+          "suggested_answer": "Fresh fruits and vegetables are good for us because they contain vitamins and minerals."
+        },
+        {
+          "id": 4,
+          "question": "What is a balanced diet?",
+          "suggested_answer": "A balanced diet is a combination of the correct types and amounts of food."
+        },
+        {
+          "id": 5,
+          "question": "What can happen to us when we have a wrong combination of food?",
+          "suggested_answer": "When we have a wrong combination of food, it can cause food poisoning and even death."
+        },
+        {
+          "id": 6,
+          "question": "What examples of preserved food are given in the passage?",
+          "suggested_answer": "The examples of preserved food given in the passage are corned beef, canned sardines, tuna, and sausages."
+        },
+        {
+          "id": 7,
+          "question": "What kind of fruits and vegetables should we eat?",
+          "suggested_answer": "We should eat fruits and vegetables that are not only fresh but also free of traces of fertilizers and pesticides."
+        },
+        {
+          "id": 8,
+          "question": "What is the Food and Drug Administration (FDA) responsible for?",
+          "suggested_answer": "The Food and Drug Administration (FDA) is responsible for the safety of food and drug in the country."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What do we need food for?",
+          "answer": "We primarily need food for health, energy, and growth, requiring a daily supply of essential nutrients like starch, sugar, proteins, fats, vitamins, and minerals found in various foods."
+        },
+        {
+          "id": 2,
+          "question": "What does the underlined word 'those' in line 10 refer to?",
+          "answer": "The word 'those' refers to the vital questions: What is food? What do we need food for? What kind of food is good for us? What kind of food is not good for us? What is food safety?"
+        },
+        {
+          "id": 3,
+          "question": "What is the advantage of having a balanced diet?",
+          "answer": "If we have a balanced diet, we will get the right amount of vitamins and minerals for each day to maintain our health."
+        },
+        {
+          "id": 4,
+          "question": "When we have food allergy, what can happen to us?",
+          "answer": "When we have a food allergy, it can make us sick, causing us to vomit after eating certain foods, and in certain cases, can make us break out in rash."
+        },
+        {
+          "id": 5,
+          "question": "Why can canned fish or meat and flavoured fruit juices be harmful to our health?",
+          "answer": "Because all those canned fish or meat and flavoured fruit juices contain additives and colourants, which are chemicals that can be harmful to our health."
+        },
+        {
+          "id": 6,
+          "question": "What does the underlined word 'which' in line 30 refer to?",
+          "answer": "The word 'which' refers to additives and colourants."
+        },
+        {
+          "id": 7,
+          "question": "Why do you think farmers use fertilizers and pesticides?",
+          "answer": "Farmers use chemical fertilizers to increase crop yields and improve growth, and they use pesticides to kill pests, especially insects, that destroy their produce."
+        },
+        {
+          "id": 8,
+          "question": "How should food be handled?",
+          "answer": "Food, right from its production to our dining table, must be hygienically handled."
+        },
+        {
+          "id": 9,
+          "question": "Give an example of what the Food and Drug Administration (FDA) does in Myanmar.",
+          "answer": "Sample answer: The Food and Drug Administration (FDA) in Myanmar regularly checks local markets, imported items, and manufacturing factories to ensure that the food, consumer goods, and medicines are safe, hygienic, and free from dangerous chemicals."
+        },
+        {
+          "id": 10,
+          "question": "Do you think you have a balanced diet? Why or why not?",
+          "answer": "Sample answer: Yes, I think I have a balanced diet because I try to eat an appropriate amount of rice for carbohydrates, fish or meat for proteins, and fresh vegetables and fruits every day to get enough vitamins."
+        }
+      ]
+    },
+    {
+      "id": "10b-vocabulary",
+      "code": "10B",
+      "type": "Vocabulary",
+      "title": "10B Vocabulary: Words Related to Food Safety",
+      "titleMy": "ဝေါဟာရ - အစားအသောက် ဘေးကင်းလုံခြုံမှုနှင့် ဆိုင်သော စကားလုံးများ",
+      "intro": "Match the words in Column A with their meanings in Column B. Then complete the sentences using the appropriate words.",
+      "introMy": "ကော်လံ A ပါ စကားလုံးများကို ကော်လံ B ပါ အဓိပ္ပာယ်များနှင့် မှန်ကန်စွာ တွဲဖက်ပါ။ ထို့နောက် ပေးထားသော လစ်လပ်နေရာများကို သင့်လျော်သော စကားလုံးများဖြင့် ဖြည့်စွက်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "responsible",
+          "suggested_answer": "b"
+        },
+        {
+          "id": 2,
+          "question": "balanced",
+          "suggested_answer": "i"
+        },
+        {
+          "id": 3,
+          "question": "vital",
+          "suggested_answer": "j"
+        },
+        {
+          "id": 4,
+          "question": "supply",
+          "suggested_answer": "c"
+        },
+        {
+          "id": 5,
+          "question": "artificially",
+          "suggested_answer": "h"
+        },
+        {
+          "id": 6,
+          "question": "allergy",
+          "suggested_answer": "g"
+        },
+        {
+          "id": 7,
+          "question": "additive",
+          "suggested_answer": "a"
+        },
+        {
+          "id": 8,
+          "question": "colourants",
+          "suggested_answer": "d"
+        },
+        {
+          "id": 9,
+          "question": "pesticides",
+          "suggested_answer": "e"
+        },
+        {
+          "id": 10,
+          "question": "hygienically",
+          "suggested_answer": "f"
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "The fruits are picked and __ ripened before shipping.",
+          "answer": "artificially"
+        },
+        {
+          "id": 2,
+          "question": "It is good for everyone to have a __ daily programme of work and recreation.",
+          "answer": "balanced"
+        },
+        {
+          "id": 3,
+          "question": "At home I am __ for doing the washing up.",
+          "answer": "responsible"
+        },
+        {
+          "id": 4,
+          "question": "All food sellers should prepare their food __.",
+          "answer": "hygienically"
+        },
+        {
+          "id": 5,
+          "question": "Do we have enough __ of water for the trip?",
+          "answer": "supply"
+        },
+        {
+          "id": 6,
+          "question": "We use __ to kill insects.",
+          "answer": "pesticides"
+        },
+        {
+          "id": 7,
+          "question": "We should avoid foods and drinks containing __.",
+          "answer": "colourants"
+        },
+        {
+          "id": 8,
+          "question": "Some people develop an __ to the fur of animals.",
+          "answer": "allergy"
+        },
+        {
+          "id": 9,
+          "question": "It is __ that you follow the rules laid down by the school.",
+          "answer": "vital"
+        },
+        {
+          "id": 10,
+          "question": "Food colouring is often an __ in foods.",
+          "answer": "additive"
+        }
+      ]
+    },
+    {
+      "id": "10c-grammar",
+      "code": "10C",
+      "type": "Grammar",
+      "title": "10C Grammar: Not only ... but also & Correlative Comparatives",
+      "titleMy": "သဒ္ဒါ - Not only ... but also နှင့် The more ..., the more ... ဝါကျတည်ဆောက်ပုံများ",
+      "intro": "Learn how to combine sentences using 'not only ... but also' to link parallel structures, and study 'The more / less / -er ..., the more / less / -er ...' structure to show proportional relations.",
+      "introMy": "'not only ... but also' ကို အသုံးပြု၍ တူညီသော ဝါကျအစိတ်အပိုင်းများကို ပေါင်းစပ်နည်းနှင့် အကြောင်းအရာတစ်ခု ပြောင်းလဲမှုအပေါ် မူတည်၍ အခြားတစ်ခု လိုက်လျောညီထွေ ပြောင်းလဲပုံကို ဖော်ပြသော 'The more / less / -er ..., the more / less / -er ...' တည်ဆောက်ပုံကို လေ့လာပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Combine: She has a great sense of humour. She has good communication skills.",
+          "suggested_answer": "She has not only a great sense of humour but also good communication skills."
+        },
+        {
+          "id": 2,
+          "question": "Combine: We will redecorate our living room. We will also redecorate our kitchen.",
+          "suggested_answer": "We will redecorate not only our living room but also our kitchen."
+        },
+        {
+          "id": 3,
+          "question": "Combine: My mother is a good teacher to me. She is also a good friend to me.",
+          "suggested_answer": "My mother is not only a good teacher to me but also a good friend to me."
+        },
+        {
+          "id": 4,
+          "question": "Combine: The effects of flooding include damage to property. They also include loss of life.",
+          "suggested_answer": "The effects of flooding include not only damage to property but also loss of life."
+        },
+        {
+          "id": 5,
+          "question": "Combine: My new car has a front camera. It also has a rear camera.",
+          "suggested_answer": "My new car has not only a front camera but also a rear camera."
+        },
+        {
+          "id": 6,
+          "question": "Combine: Smoking can cause heart and lung diseases. It can also cause cancer.",
+          "suggested_answer": "Smoking can cause not only heart and lung diseases but also cancer."
+        },
+        {
+          "id": 7,
+          "question": "Combine: Nandar fell while playing badminton. She also broke her leg.",
+          "suggested_answer": "Nandar not only fell while playing badminton but also broke her leg."
+        },
+        {
+          "id": 8,
+          "question": "Combine: Sandar won the race. She also broke last year's record.",
+          "suggested_answer": "Sandar not only won the race but also broke last year's record."
+        },
+        {
+          "id": 9,
+          "question": "Combine: The new housing block has a swimming pool. It also has a gym.",
+          "suggested_answer": "The new housing block has not only a swimming pool but also a gym."
+        },
+        {
+          "id": 10,
+          "question": "Combine: He won the first prize at the school level competition. He also won the first prize at the national level competition.",
+          "suggested_answer": "He won the first prize not only at the school level competition but also at the national level competition."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Rewrite 1-5 using 'The more...': (1) older/younger, (2) study more/better grades, (3) more cars/worse traffic, (4) better education/greater opportunities, (5) stronger coffee/sleep less.",
+          "answer": "(1) The older I get, the younger I feel. (2) The more I study, the better grades I get. (3) The more cars there are, the worse the traffic will be. (4) The better education you have, the greater opportunities you will have. (5) The stronger the coffee is, the less I sleep."
+        },
+        {
+          "id": 2,
+          "question": "Rewrite 6-10 using 'The more...': (6) richer/greater worries, (7) practise more/improve more, (8) better healthcare/longer life expectancy, (9) younger/easier to learn, (10) more time to play/less time for study.",
+          "answer": "(6) The richer you grow, the greater your worries will be. (7) The more you practise, the more you will improve. (8) The better the quality of healthcare is, the longer life expectancy will be. (9) The younger you are, the easier it will be to learn languages. (10) The more time you give to play games, the less time you will have for study."
+        }
+      ]
+    },
+    {
+      "id": "10d-listening-speaking",
+      "code": "10D",
+      "type": "Listening and Speaking",
+      "title": "10D Listening and Speaking: Artificial Additives and Fruit Preferences",
+      "titleMy": "နားထောင်ခြင်းနှင့် ပြောဆိုခြင်း - ဓာတုပစ္စည်းများအကြောင်းနှင့် သစ်သီးဝလံ နှစ်သက်မှုဆိုင်ရာ စကားပြောဆိုခြင်း",
+      "intro": "A. Listen to the extract on 'Artificial Additives to Avoid' and complete the table. B. Complete the dialogue using the expressions given. C. In pairs, practise substituting the dialogue.",
+      "introMy": "A. 'Artificial Additives to Avoid' ဆောင်းပါးကောက်နုတ်ချက်ကို နားထောင်ပြီး ဇယားကို ဖြည့်ပါ။ B. ပေးထားသော အသုံးအနှုန်းများဖြင့် စကားဝိုင်းကို ဖြည့်စွက်ပါ။ C. မိမိနှစ်သက်ရာ သရေစာအမည်များဖြင့် အစားထိုး၍ စကားဝိုင်းကို အဖော်နှင့်အတူ လေ့ကျင့်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Complete table advantages: (1) bought in ________ are pre-packaged..., (2) need little or no ________ before ready..., (3) are ________ for customers, (4) save a lot of ________.",
+          "suggested_answer": "(1) supermarkets, (2) cooking / preparation, (3) convenient, (4) time"
+        },
+        {
+          "id": 2,
+          "question": "Complete table disadvantages: (1) contain chemicals and ________, (2) harm ________ and animals, (3) used in meats, ________ and farm produce, (4) add great costs to our ________ system.",
+          "suggested_answer": "(1) additives, (2) humans, (3) fish, (4) healthcare"
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Complete the dialogue with the correct options (a-f) for blanks (1) to (6).",
+          "answer": "(1) what fruits (b), (2) do you like most (e), (3) do you think (d), (4) how are (f), (5) how often (c), (6) is there (a)."
+        },
+        {
+          "id": 2,
+          "question": "Provide a sample substitution dialogue using a favorite snack.",
+          "answer": "Sample answer: A: What snack do you usually eat? B: Potato chips and chocolate biscuits. A: Among them, which do you like most and why? B: Potato chips most. I just love their crunchy texture. A: Do you think they are good for health? B: No, I don't think they are very healthy because they contain a lot of salt and oil."
+        }
+      ]
+    },
+    {
+      "id": "10e-writing",
+      "code": "10E",
+      "type": "Writing",
+      "title": "10E Writing: Writing a Complaint Letter",
+      "titleMy": "စာရေးသားခြင်း - အကျိုးအကြောင်းပြ တိုင်ကြားစာ ရေးသားခြင်း",
+      "intro": "Study the five components of a formal complaint letter. Then follow the structured outline to draft a complaint letter regarding a faulty electronic item.",
+      "introMy": "ပုံစံတကျ တိုင်ကြားစာတစ်စောင်၏ အစိတ်အပိုင်း ငါးခုကို လေ့လာပါ။ ထို့နောက် ပေးထားသော အချက်အလက် အကြမ်းဖျင်းကို အသုံးပြု၍ ချို့ယွင်းချက်ပါသော လျှပ်စစ်ပစ္စည်းတစ်ခုအတွက် တိုင်ကြားစာတစ်စောင် ရေးသားပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Label the parts (1) to (5) of the sample complaint letter shown in Exercise A.",
+          "suggested_answer": "(1) -> d (sender's address and date), (2) -> e (receiver's address), (3) -> a (salutation (greeting)), (4) -> b (body of the letter), (5) -> c (leave-taking)"
+        },
+        {
+          "id": 2,
+          "question": "Write a complaint letter from Ko Sithu (Pyay) to the sales manager of Bright office and stationery store (No. 28, Pagoda Road, Yangon) about a broken calculator.",
+          "suggested_answer": "No. 45, Cherry Road,\nPyay.\n1-9-2026\n\nSales Manager\nBright office and stationery store\nNo. 28, Pagoda Road, Yangon.\n\nDear Sir,\n\nOn the 25th of August 2026, I bought an electronic calculator from your shop at No. 28, Pagoda Road, Yangon. Unfortunately, when I got home to Pyay and tried to use it, the electronic calculator did not work at all. The screen remains completely blank even after replacing the batteries.\n\nI wonder, therefore, whether I could get a replacement to be made as the item is completely faulty. I have enclosed a copy of the purchase receipt with this letter as proof of my transaction.\n\nI look forward to receiving a reply together with a solution from you within a week if possible. I can be reached anytime at my phone number, which is 09-98765432.\n\nYours faithfully,\n\nSithu\nKo Sithu"
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What structural elements must be included when writing a formal complaint letter according to the textbook?",
+          "answer": "The letter must follow an outline containing: 1. Sender's address, 2. Date, 3. Receiver's address, 4. Salutation (greeting), 5. Body of the letter (split into paragraphs describing the purchase/problem, proposed solution, and contact info with response deadline), and 6. Closing (leave-taking, signature, and full name)."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "lesson": "10A Reading",
+      "topic": "Food Safety",
+      "pre_reading": [
+        {
+          "id": 1,
+          "question": "Do you think the food you eat is always safe? Why or why not?",
+          "suggested_answer": "Sample answer: No, I don't think it is always safe because some foods contain harmful chemicals, preservatives, artificial additives, or traces of toxic pesticides used by farmers."
+        },
+        {
+          "id": 2,
+          "question": "What healthy food do you usually eat?",
+          "suggested_answer": "Sample answer: I usually eat fresh homemade food, green vegetables, fresh local fruits, fish, eggs, and milk."
+        },
+        {
+          "id": 3,
+          "question": "Do you think fast food is healthy? Why or why not?",
+          "suggested_answer": "Sample answer: No, fast food is not healthy because it often contains too much oil, unhealthy fats, sugar, and high levels of artificial preservatives and low nutrients."
+        }
+      ],
+      "reading_passage": {
+        "title": "10A Reading: Food Safety",
+        "paragraphs": [
+          {
+            "paragraph_id": 1,
+            "lines": "1-4",
+            "english_text": "All living things need food. Plants need food; animals need food; and human beings also need food. But: What is food? What do we need food for? What kind of food is good for us? What kind of food is not good for us? What is food safety? Read on to find the answers to those vital questions.",
+            "burmese_explanation": "သက်ရှိသတ္တဝါအားလုံးသည် အစာအာဟာရ လိုအပ်ကြသည်။ အပင်များသည် အစာလိုအပ်သည်၊ တိရစ္ဆာန်များသည် အစာလိုအပ်သည်၊ လူသားများသည်လည်း အစာလိုအပ်ကြသည်။ သို့သော် အစားအစာဆိုသည်မှာ အဘယ်နည်း။ ကျွန်ုပ်တို့သည် အစားအစာကို အဘယ်အတွက်ကြောင့် လိုအပ်သနည်း။ မည်သည့်အစားအစာအမျိုးအစားက ကျွန်ုပ်တို့အတွက် ကောင်းမွန်သနည်း။ မည်သည့်အစားအစာအမျိုးအစားက ကျွန်ုပ်တို့အတွက် မကောင်းမွန်သနည်း။ အစားအသောက် ဘေးကင်းလုံခြုံမှုဆိုသည်မှာ အဘယ်နည်း။ ထိုအရေးကြီးသော မေးခွန်းများ၏ အဖြေကို သိရှိနိုင်ရန် ဆက်လက်ဖတ်ရှုပါ။"
+          },
+          {
+            "paragraph_id": 2,
+            "lines": "5-6",
+            "english_text": "What is food? Food is something we eat or drink. Rice is food. Milk is food. Bread is food. Butter, cheese, vegetables, beef, mutton, fish, fruits are all food. In fact, water too is food.",
+            "burmese_explanation": "အစားအစာဆိုသည်မှာ အဘယ်နည်း။ အစားအစာဆိုသည်မှာ ကျွန်ုပ်တို့ စားသည့် သို့မဟုတ် သောက်သည့် အရာတစ်ခုဖြစ်သည်။ ထမင်းသည် အစားအစာဖြစ်သည်။ နို့သည် အစားအစာဖြစ်သည်။ ပေါင်မုန့်သည် အစားအစာဖြစ်သည်။ ထောပတ်၊ ဒိန်ခဲ၊ ဟင်းသီးဟင်းရွက်များ၊ အမဲသား၊ သိုးသား၊ ငါးနှင့် သစ်သီးဝလံများအားလုံးသည် အစားအစာများဖြစ်ကြသည်။ အမှန်စင်စစ် ရေသည်လည်း အစားအစာဖြစ်သည်။"
+          },
+          {
+            "paragraph_id": 3,
+            "lines": "7-12",
+            "english_text": "What do we need food for? We primarily need food for health, energy, and growth, requiring a daily supply of essential nutrients like starch, sugar, proteins, fats, vitamins, and minerals found in various foods. While we sometimes eat purely for pleasure (such as ice cream or popcorn), our overall food requirement increases with our level of physical activity.",
+            "burmese_explanation": "ကျွန်ုပ်တို့သည် အစားအစာကို အဘယ်အတွက်ကြောင့် လိုအပ်သနည်း။ ကျွန်ုပ်တို့သည် ကျန်းမာရေး၊ စွမ်းအင်နှင့် ကြီးထွားဖွံ့ဖြိုးမှုတို့အတွက် အစားအစာကို အဓိကလိုအပ်ကြပြီး အစားအစာအမျိုးမျိုးတွင် တွေ့ရှိရသော ကစီဓာတ်၊ သကြားဓာတ်၊ အသားဓာတ်၊ အဆီဓာတ်၊ ဗီတာမင်များနှင့် သတ္တုဓာတ်များကဲ့သို့ မရှိမဖြစ်လိုအပ်သော အာဟာရဓာတ်များကို နေ့စဉ်ရရှိရန် လိုအပ်သည်။ ကျွန်ုပ်တို့သည် တစ်ခါတစ်ရံ ရေခဲမုန့် သို့မဟုတ် ပြောင်းဖူးပေါက်ပေါက်ကဲ့သို့ အစားအစာများကို အရသာခံစားမှုအတွက်သာ စားသုံးသော်လည်း ကိုယ်လက်လှုပ်ရှားမှု များပြားလာသည်နှင့်အမျှ အစားအစာလိုအပ်ချက်လည်း တိုးလာသည်။"
+          },
+          {
+            "paragraph_id": 4,
+            "lines": "13-16",
+            "english_text": "What kind of food is good for us? Fresh fruits and vegetables are good for us because they contain vitamins and minerals. Eggs, milk, cheese, fish, chicken, beef, and mutton are good for us because they contain proteins. Rice, bread, and potatoes give us carbohydrate for the starch and sugar we need for our daily activities.",
+            "burmese_explanation": "မည်သည့်အစားအစာအမျိုးအစားက ကျွန်ုပ်တို့အတွက် ကောင်းမွန်သနည်း။ လတ်ဆတ်သော သစ်သီးဝလံများနှင့် ဟင်းသီးဟင်းရွက်များတွင် ဗီတာမင်များနှင့် သတ္တုဓာတ်များ ပါဝင်သောကြောင့် ကျွန်ုပ်တို့အတွက် ကောင်းမွန်သည်။ ဥများ၊ နို့၊ ဒိန်ခဲ၊ ငါး၊ ကြက်သား၊ အမဲသားနှင့် သိုးသားတို့တွင် အသားဓာတ်ပါဝင်သောကြောင့် ကျွန်ုပ်တို့အတွက် ကောင်းမွန်သည်။ ထမင်း၊ ပေါင်မုန့်နှင့် အာလူးတို့သည် ကျွန်ုပ်တို့၏ နေ့စဉ်လှုပ်ရှားမှုများအတွက် လိုအပ်သော ကစီဓာတ်နှင့် သကြားဓာတ်တို့ပါဝင်သည့် ကာဗိုဟိုက်ဒရိတ်ကို ပေးသည်။"
+          },
+          {
+            "paragraph_id": 5,
+            "lines": "17-20",
+            "english_text": "One thing we need to be careful about is that we should never eat more than we need. After all, too much of anything is not good. All doctors advise us to have a \"balanced diet\". A \"balanced diet\" is \"a combination of the correct types and amounts of food\". If we have a balanced diet, we will get the right amount of vitamins and minerals for each day.",
+            "burmese_explanation": "ကျွန်ုပ်တို့ သတိထားရမည့် အချက်တစ်ခုမှာ လိုအပ်သည်ထက် ပို၍ မစားသင့်ခြင်းဖြစ်သည်။ မည်သည့်အရာမဆို အလွန်အကျွံဖြစ်လျှင် မကောင်းပါ။ ဆရာဝန်အားလုံးက မျှတသော အစားအစာကို စားသုံးရန် အကြံပြုကြသည်။ မျှတသော အစားအစာဆိုသည်မှာ မှန်ကန်သည့် အစားအစာအမျိုးအစားများနှင့် ပမာဏများကို ပေါင်းစပ်ထားခြင်းဖြစ်သည်။ မျှတသော အစားအစာကို စားသုံးပါက နေ့စဉ်လိုအပ်သော ဗီတာမင်နှင့် သတ္တုဓာတ်ပမာဏ မှန်ကန်စွာ ရရှိမည်ဖြစ်သည်။"
+          },
+          {
+            "paragraph_id": 6,
+            "lines": "21-27",
+            "english_text": "What kind of food is not good for us? Any fruit or vegetable that is not fresh is not good for us. Any fish or meat that is not fresh is not good for us. Any vegetable or meat that is not well-cooked is not good for us. Too much of any kind of food is not good for us. Generally speaking, any food that makes us sick is not good for us. For example, certain mushrooms and certain types of seafood can make us sick, that is, they make us vomit after eating them, and in certain cases, can make us break out in rash. This is commonly known as food allergy. In some cases, a wrong combination of food can cause food poisoning and even death.",
+            "burmese_explanation": "မည်သည့်အစားအစာအမျိုးအစားက ကျွန်ုပ်တို့အတွက် မကောင်းမွန်သနည်း။ မလတ်ဆတ်သော မည်သည့်သစ်သီး သို့မဟုတ် ဟင်းသီးဟင်းရွက်မဆို ကျွန်ုပ်တို့အတွက် မကောင်းပါ။ မလတ်ဆတ်သော မည်သည့်ငါး သို့မဟုတ် အသားမဆို ကျွန်ုပ်တို့အတွက် မကောင်းပါ။ ကောင်းစွာ မချက်ပြုတ်ထားသော မည်သည့်ဟင်းသီးဟင်းရွက် သို့မဟုတ် အသားမဆို ကျွန်ုပ်တို့အတွက် မကောင်းပါ။ မည်သည့်အစားအစာအမျိုးအစားကိုမဆို အလွန်အကျွံ စားသုံးခြင်းသည် ကျွန်ုပ်တို့အတွက် မကောင်းပါ။ ယေဘုယျအားဖြင့် ကျွန်ုပ်တို့ကို နေမကောင်းဖြစ်စေသော မည်သည့်အစားအစာမဆို ကျွန်ုပ်တို့အတွက် မကောင်းပါ။ ဥပမာအားဖြင့် မှိုအမျိုးအစားအချို့နှင့် ပင်လယ်စာအမျိုးအစားအချို့သည် ကျွန်ုပ်တို့ကို နေမကောင်းဖြစ်စေနိုင်သည်။ ဆိုလိုသည်မှာ ယင်းတို့ကို စားပြီးနောက် အန်စေနိုင်ကာ အချို့အခြေအနေများတွင် အရေပြားအဖုအပိန့်များ ထွက်စေနိုင်သည်။ ယင်းကို အစားအစာဓာတ်မတည့်မှုဟု အများအားဖြင့် ခေါ်သည်။ အချို့အခြေအနေများတွင် မသင့်လျော်သော အစားအစာများကို တွဲဖက်စားသုံးခြင်းကြောင့် အစာအဆိပ်သင့်ခြင်းနှင့် သေဆုံးခြင်းပင် ဖြစ်စေနိုင်သည်။"
+          },
+          {
+            "paragraph_id": 7,
+            "lines": "28-31",
+            "english_text": "Moreover, many preserved foods such as corned beef, canned sardines, tuna, sausages are not advisable. So are artificially flavoured fruit juices. All those canned fish or meat and flavoured fruit juices contain additives and colourants, which are chemicals that can be harmful to our health.",
+            "burmese_explanation": "ထို့အပြင် ဆားနယ်အမဲသား၊ သံဘူးထည့် ဆာဒင်းငါး၊ တူနာငါးနှင့် ဝက်အူချောင်းကဲ့သို့ တာရှည်ခံအောင် ပြုပြင်ထားသော အစားအစာများစွာကို စားသုံးရန် မသင့်တော်ပါ။ အတုပြုလုပ်ထားသော အနံ့အရသာများ ထည့်ထားသည့် သစ်သီးဖျော်ရည်များလည်း ထိုနည်းတူပင် ဖြစ်သည်။ ယင်းသံဘူးထည့် ငါး သို့မဟုတ် အသားများနှင့် အနံ့အရသာထည့်ထားသော သစ်သီးဖျော်ရည်များအားလုံးတွင် ကျွန်ုပ်တို့၏ ကျန်းမာရေးကို ထိခိုက်စေနိုင်သော ဓာတုပစ္စည်းများဖြစ်သည့် ဖြည့်စွက်ပစ္စည်းများနှင့် အရောင်ဆိုးပစ္စည်းများ ပါဝင်သည်။"
+          },
+          {
+            "paragraph_id": 8,
+            "lines": "32-35",
+            "english_text": "Furthermore, many farmers today use chemical fertilizers and pesticides for good reasons, but in most cases, such fertilizers and pesticides are overused. As a result, the vegetables and fruits we eat can contain traces of fertilizers and pesticides. All these are harmful to health.",
+            "burmese_explanation": "ထို့ပြင် ယနေ့ခေတ် တောင်သူလယ်သမားများစွာသည် အကြောင်းပြချက်ကောင်းများဖြင့် ဓာတ်မြေဩဇာများနှင့် ပိုးသတ်ဆေးများကို အသုံးပြုကြသော်လည်း အများအားဖြင့် ထိုဓာတ်မြေဩဇာများနှင့် ပိုးသတ်ဆေးများကို အလွန်အကျွံ အသုံးပြုကြသည်။ ထို့ကြောင့် ကျွန်ုပ်တို့စားသုံးသည့် ဟင်းသီးဟင်းရွက်များနှင့် သစ်သီးဝလံများတွင် ဓာတ်မြေဩဇာနှင့် ပိုးသတ်ဆေး အကြွင်းအကျန်များ ပါဝင်နိုင်သည်။ ယင်းတို့အားလုံးသည် ကျန်းမာရေးကို ထိခိုက်စေသည်။"
+          },
+          {
+            "paragraph_id": 9,
+            "lines": "36-41",
+            "english_text": "What is food safety? \"Food safety\" means \"food that is safe to eat; food that will not be harmful to our health\". This means that food, right from its production to our dining table must be hygienically handled. This means that the vegetables and fruits we buy should not only be fresh but also free of traces of fertilizers and pesticides. Similarly, the meat we buy should never be from diseased animals. Canned meat, fish, fruit, and vegetables, as well as flavoured fruit juices should contain as little additives and colourants as possible.",
+            "burmese_explanation": "အစားအသောက် ဘေးကင်းလုံခြုံမှုဆိုသည်မှာ အဘယ်နည်း။ အစားအသောက် ဘေးကင်းလုံခြုံမှုဆိုသည်မှာ စားသုံးရန် ဘေးကင်းသော အစားအစာ၊ ကျွန်ုပ်တို့၏ ကျန်းမာရေးကို ထိခိုက်စေမည်မဟုတ်သော အစားအစာဟု ဆိုလိုသည်။ ထို့ကြောင့် အစားအစာကို ထုတ်လုပ်ချိန်မှ ကျွန်ုပ်တို့၏ စားပွဲပေါ် ရောက်ရှိချိန်အထိ ကျန်းမာရေးနှင့် ညီညွတ်သန့်ရှင်းစွာ ကိုင်တွယ်ရမည်ဟု ဆိုလိုသည်။ ကျွန်ုပ်တို့ဝယ်ယူသော ဟင်းသီးဟင်းရွက်များနှင့် သစ်သီးဝလံများသည် လတ်ဆတ်ရုံသာမက ဓာတ်မြေဩဇာနှင့် ပိုးသတ်ဆေး အကြွင်းအကျန်များလည်း ကင်းစင်သင့်သည်။ အလားတူပင် ကျွန်ုပ်တို့ဝယ်ယူသော အသားသည် ရောဂါရှိသည့် တိရစ္ဆာန်များမှ လုံးဝ မဖြစ်သင့်ပါ။ သံဘူးထည့် အသား၊ ငါး၊ သစ်သီးနှင့် ဟင်းသီးဟင်းရွက်များအပြင် အနံ့အရသာထည့်ထားသော သစ်သီးဖျော်ရည်များတွင် ဖြည့်စွက်ပစ္စည်းများနှင့် အရောင်ဆိုးပစ္စည်းများ တတ်နိုင်သမျှ အနည်းဆုံးသာ ပါဝင်သင့်သည်။"
+          },
+          {
+            "paragraph_id": 10,
+            "lines": "42-44",
+            "english_text": "Many countries have a department known as \"Food and Drug Administration\" (FDA). The department is responsible for the safety of food and drug in the country.",
+            "burmese_explanation": "နိုင်ငံများစွာတွင် အစားအသောက်နှင့် ဆေးဝါးကွပ်ကဲရေးဌာနဟု ခေါ်သော ဌာနတစ်ခု ရှိသည်။ ထိုဌာနသည် နိုင်ငံအတွင်းရှိ အစားအသောက်နှင့် ဆေးဝါးများ၏ ဘေးကင်းလုံခြုံမှုအတွက် တာဝန်ရှိသည်။"
+          },
+          {
+            "paragraph_id": 11,
+            "lines": "45-46",
+            "english_text": "Nevertheless, we ourselves must do our best to look after our own safety by having only fresh fruits and vegetables, only well-cooked meat or fish, and a balanced diet.",
+            "burmese_explanation": "မည်သို့ပင်ဆိုစေကာမူ ကျွန်ုပ်တို့ကိုယ်တိုင်လည်း လတ်ဆတ်သော သစ်သီးဝလံများနှင့် ဟင်းသီးဟင်းရွက်များ၊ ကောင်းစွာချက်ပြုတ်ထားသော အသား သို့မဟုတ် ငါးနှင့် မျှတသော အစားအစာတို့ကိုသာ စားသုံးခြင်းဖြင့် မိမိတို့၏ ဘေးကင်းလုံခြုံမှုကို စောင့်ရှောက်ရန် အတတ်နိုင်ဆုံး ကြိုးစားရမည်။"
+          }
+        ]
+      }
+    }
+  ]
+}

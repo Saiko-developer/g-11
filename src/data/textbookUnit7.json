@@ -1,0 +1,828 @@
+{
+  "unit": "UNIT 7",
+  "unitTitle": "TYPICAL MYANMAR SNACKS",
+  "lessons": [
+    {
+      "id": "7a-reading",
+      "code": "7A",
+      "type": "Reading",
+      "title": "7A Reading: Typical Myanmar Snacks",
+      "titleMy": "စာဖတ်ခြင်း - မြန်မာ့ထုံးစံ သရေစာများ",
+      "intro": "Read the passage about typical Myanmar snacks and answer the questions. Find out about mont-hin-gah, kauk-hnyin-baung, hta-ma-ne, mont-lin-ma-yar and bu-thee-gyaw.",
+      "introMy": "မြန်မာ့ထုံးစံ သရေစာများအကြောင်း စာပိုဒ်ကို ဖတ်၍ မေးခွန်းများကို ဖြေပါ။ မုန့်ဟင်းခါး၊ ကောက်ညှင်းပေါင်း၊ ထမနဲ၊ မုန့်လင်မယားနှင့် ဘူးသီးကြော်အကြောင်း လေ့လာပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the most popular Myanmar snack?",
+          "suggested_answer": "Mont-hin-gah, rice noodles in gravy, is the most popular Myanmar snack. It can be taken as a snack as well as a full meal."
+        },
+        {
+          "id": 2,
+          "question": "What are the main ingredients to make mont-hin-gah gravy?",
+          "suggested_answer": "The main ingredients are fish, sliced pith of banana stem, roasted rice flour, roasted pea flour, lemon grass, ginger, onions, garlic, eggs and good quality fish sauce."
+        },
+        {
+          "id": 3,
+          "question": "What do we need in order to get perfect hta-ma-ne?",
+          "suggested_answer": "Perfect hta-ma-ne requires both a well-balanced proportion of the ingredients and cooperative strength of the team members."
+        },
+        {
+          "id": 4,
+          "question": "Why is mont-lin-ma-yar given that name?",
+          "suggested_answer": "It is made from rice batter in the form of two small hemispheres, each facing the other forming a loving couple, so it is called husband-and-wife pancakes."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What do we usually eat bu-thee-gyaw with?",
+          "answer": "We usually eat bu-thee-gyaw with lettuce and a sauce made from tamarind pulp in which crushed chillies and garlic are mixed."
+        },
+        {
+          "id": 2,
+          "question": "What is the common ingredient of Myanmar snacks mentioned in the passage?",
+          "answer": "The common ingredient is rice, because most Myanmar local snacks are made from rice and glutinous rice."
+        }
+      ]
+    },
+    {
+      "id": "7b-vocabulary",
+      "code": "7B",
+      "type": "Vocabulary",
+      "title": "7B Vocabulary: Adjective-forming Suffixes",
+      "titleMy": "ဝေါဟာရ - နာမဝိသေသနဖွဲ့ နောက်ဆက်များ",
+      "intro": "Learn the adjective-forming suffixes -al, -ive, -ous, -ful, -ible and -able, and practise forming adjectives from nouns and verbs.",
+      "introMy": "နာမဝိသေသနဖွဲ့ နောက်ဆက်များဖြစ်သည့် -al, -ive, -ous, -ful, -ible နှင့် -able တို့ကို လေ့လာပြီး နာမ်နှင့် ကြိယာများမှ နာမဝိသေသနများ ဖွဲ့စည်းလေ့ကျင့်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is a suffix?",
+          "suggested_answer": "A suffix is a set of letters added at the end of a word to make a new word. Many adjectives can be formed by adding characteristic suffixes to the root words which are either verbs or nouns."
+        },
+        {
+          "id": 2,
+          "question": "What does the suffix '-ous' mean?",
+          "suggested_answer": "It forms adjectives meaning 'full of' or 'having', e.g., various, nutritious, famous."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What suffix is added to 'compete' to form the adjective 'competitive'?",
+          "answer": "The suffix '-ive' is added to form 'competitive'."
+        },
+        {
+          "id": 2,
+          "question": "What does the suffix '-able' in 'available' mean?",
+          "answer": "It means 'able to be', e.g., available means able to be obtained."
+        }
+      ]
+    },
+    {
+      "id": "7c-grammar",
+      "code": "7C",
+      "type": "Grammar",
+      "title": "7C Grammar: The Active Voice and the Passive Voice",
+      "titleMy": "သဒ္ဒါ - Active Voice နှင့် Passive Voice",
+      "intro": "Learn the active voice and the passive voice, and practise changing sentences from active into passive in various tenses and aspects.",
+      "introMy": "Active Voice နှင့် Passive Voice တို့ကို လေ့လာပြီး တင်းစ်နှင့် aspect အမျိုးမျိုးတွင် စာကြောင်းများကို active မှ passive သို့ ပြောင်းလဲ လေ့ကျင့်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the passive verb form?",
+          "suggested_answer": "The passive verb form is 'be + V-ed/V3'. The correct form of 'be' changes according to the tense of the sentence."
+        },
+        {
+          "id": 2,
+          "question": "In the passive sentence, who becomes the subject of the sentence?",
+          "suggested_answer": "In the passive voice, the recipient (the object of the active sentence) becomes the subject of the sentence, while the doer (agent) usually follows the preposition 'by'."
+        },
+        {
+          "id": 3,
+          "question": "Why are present perfect continuous, past perfect continuous, future continuous and future perfect continuous left out of the passive table?",
+          "suggested_answer": "They are left out because the frequency of their uses in the passive voice is low."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Change 'Daw Lay May cleans the kitchen every Sunday.' into the passive.",
+          "answer": "The kitchen is cleaned by Daw Lay May every Sunday."
+        },
+        {
+          "id": 2,
+          "question": "Change 'Nwe Ni sent the letter to the wrong address.' into the passive.",
+          "answer": "The letter was sent to the wrong address by Nwe Ni."
+        }
+      ]
+    },
+    {
+      "id": "7d-listening-speaking",
+      "code": "7D",
+      "type": "Listening and Speaking",
+      "title": "7D Listening and Speaking: Expressions of Pleasure, Surprise and Sympathy",
+      "titleMy": "နားထောင်ခြင်းနှင့် ပြောဆိုခြင်း - နှစ်သက်မှု၊ အံ့သြမှုနှင့် စာနာမှု ဖော်ပြချက်များ",
+      "intro": "A. Listen to the recording and say whether the given statements are TRUE (T) or FALSE (F). B. Study the expressions of pleasure, surprise and sympathy, and write the correct heading for each column. C. Complete the dialogue using the short responses given. D. In pairs, practise the dialogue.",
+      "introMy": "A. အသံဖိုင်ကို နားထောင်ပြီး ပေးထားသော အဆိုကြောင်းများ မှန် (T) သို့မဟုတ် မှား (F) ဟု ဆုံးဖြတ်ပါ။ B. နှစ်သက်မှု၊ အံ့သြမှုနှင့် စာနာမှုကို ဖော်ပြသော စကားရပ်များကို လေ့လာပြီး ကော်လံတစ်ခုစီအတွက် မှန်ကန်သော ခေါင်းစဉ်ကို ရေးပါ။ C. ပေးထားသော တိုတောင်းသည့် အဖြေများဖြင့် စကားဝိုင်းကို ဖြည့်စွက်ပါ။ D. အစုံလိုက် စကားဝိုင်းကို လေ့ကျင့်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Eating snacks can reduce stress.",
+          "suggested_answer": "TRUE"
+        },
+        {
+          "id": 2,
+          "question": "Most people eat snacks when they are sad.",
+          "suggested_answer": "TRUE"
+        },
+        {
+          "id": 3,
+          "question": "People usually celebrate their achievements by having snacks.",
+          "suggested_answer": "TRUE"
+        },
+        {
+          "id": 4,
+          "question": "Many people have snacks to break up the monotony of their daily lives.",
+          "suggested_answer": "TRUE"
+        },
+        {
+          "id": 5,
+          "question": "Some eat snacks so that they can finish their job without delay.",
+          "suggested_answer": "FALSE (they eat snacks to delay doing what they should do)"
+        },
+        {
+          "id": 6,
+          "question": "Eating snacks is funny.",
+          "suggested_answer": "FALSE (the reason for snacking is funny, not the eating itself)"
+        },
+        {
+          "id": 7,
+          "question": "The way we eat snacks differs if our social culture differs.",
+          "suggested_answer": "TRUE"
+        },
+        {
+          "id": 8,
+          "question": "People in France, Mexico and the Philippines eat snacks as a fifth meal.",
+          "suggested_answer": "FALSE (it is a fourth meal, not a fifth)"
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Study the following expressions and write the correct heading given in the box for each column: Pleasure / Surprise / Sympathy.",
+          "answer": "Column 1 (Did you / she / they? That's amazing! You're kidding! Really?) — Surprise. Column 2 (Fantastic! That's great! Lovely! Brilliant!) — Pleasure. Column 3 (What a pity! Oh dear. That's too bad. How awful!) — Sympathy."
+        },
+        {
+          "id": 2,
+          "question": "Complete the dialogue: A: My grandma hasn't been too well lately. B: (1) ______",
+          "answer": "What a pity! / Oh dear."
+        },
+        {
+          "id": 3,
+          "question": "Complete the dialogue: A: She's 80. At her age, she should slow down a bit. But she said she would come along with us to Kyeik-htee-yo Pagoda. B: (2) ______",
+          "answer": "Really? / You're kidding!"
+        },
+        {
+          "id": 4,
+          "question": "Complete the dialogue: A: She said she wanted to enjoy her life to the full. B: (3) ______",
+          "answer": "That's amazing!"
+        },
+        {
+          "id": 5,
+          "question": "Complete the dialogue: A: Last week, she went to the supermarket and then cooked for the whole family. B: (4) ______",
+          "answer": "Fantastic! / That's great!"
+        },
+        {
+          "id": 6,
+          "question": "Complete the dialogue: A: We're going to give her a big party for her 81st birthday. B: (5) ______",
+          "answer": "Lovely! / Brilliant!"
+        },
+        {
+          "id": 7,
+          "question": "In pairs, practise the dialogue.",
+          "answer": "Your grandma hasn't been too well lately? (Sympathy) Oh dear. / What a pity! (Surprise) Really? / That's amazing! (Pleasure) Fantastic! / That's great! Practise taking turns to be A and B."
+        }
+      ],
+      "transcript": "Unit 7, Typical Myanmar Snacks\n\nSome people eat snacks when they are stressed. Eating snacks can help them soothe and comfort themselves when they experience an unpleasant situation.\n\nIn addition, some people eat snacks when they are sad. I've seen some people have a piece of cake after an unsuccessful job interview.\n\nAnother reason for having snacks is to celebrate. Some people have snacks to honour small victories, like getting a promotion or passing a test.\n\nOne simple reason for having snacks is because we're bored. Therefore, many people turn to food to break up the monotony of their day-to-day lives.\n\nOne funny reason for having snacks is that we want to delay doing things we should do. \"I will finish this report right after I go grab a cookie from the coffee shop down the street.\" In fact, eating snacks is an easily accessible pastime for those who usually put things off until the very last minute.\n\nSnacking can be influenced by social culture and food culture. In some countries, like France, Mexico and the Philippines, a fourth meal or snack is part of the traditional meal pattern."
+    },
+    {
+      "id": "7e-writing",
+      "code": "7E",
+      "type": "Writing",
+      "title": "7E Writing: A Descriptive Essay",
+      "titleMy": "စာရေးသားခြင်း - သရုပ်ဖော်စာစု",
+      "intro": "A descriptive essay expresses or describes a person, place or thing in a way that readers can easily form a picture of it in the mind. Connect the sentence parts and then write a short paragraph about your favourite snack.",
+      "introMy": "သရုပ်ဖော်စာစု (descriptive essay) သည် လူ၊ နေရာ သို့မဟုတ် အရာဝတ္ထုတစ်ခုကို စာဖတ်သူများ စိတ်ထဲတွင် အလွယ်တကူ မြင်ယောင်နိုင်သည့်ပုံစံဖြင့် ဖော်ပြချက်ဖြစ်သည်။ ဝါကျအပိုင်းများကို ချိတ်ဆက်ပြီး သင့်အကြိုက်ဆုံး သရေစာနှင့်ပတ်သက်၍ စာပိုဒ်တိုတစ်ပိုဒ် ရေးပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Connect the first parts of the sentences in Column A with the appropriate parts in Column B.",
+          "suggested_answer": "1-e, 2-d, 3-b, 4-a, 5-c"
+        },
+        {
+          "id": 2,
+          "question": "Use the points suggested below. Create your own snack and write a short paragraph of about six or seven sentences to describe it.",
+          "suggested_answer": "My favourite snack is mont-lin-ma-yar. It is made from rice batter, boiled green peas and roasted sesame powder with salt. I usually have it at pagoda festivals in the evening. I often eat it with a cup of plain green tea. It is special because it is served in pairs like a loving couple. I like it because it is delicious, nutritious and not costly to make. It goes well with a hot cup of tea."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What is a descriptive essay?",
+          "answer": "It is an essay that expresses or describes a person, place or thing in a way that readers can easily form a picture of it in the mind."
+        },
+        {
+          "id": 2,
+          "question": "Give the useful language to describe your favourite snack.",
+          "answer": "My favourite snack is ...; It is made from ...; It is special because ...; I like it because ...; Its ingredients are ...; It goes well with ..."
+        }
+      ],
+      "planningPoints": [
+        {
+          "text": "Your favourite snack",
+          "translation": "သင်အကြိုက်ဆုံး သရေစာ"
+        },
+        {
+          "text": "What it is made from",
+          "translation": "၎င်းကို မည်သည့်ပစ္စည်းများဖြင့် ပြုလုပ်ထားသလဲ။"
+        },
+        {
+          "text": "When you normally have it",
+          "translation": "ပုံမှန်အားဖြင့် ဘယ်အချိန်မှာ စားသလဲ။"
+        },
+        {
+          "text": "What you eat it with",
+          "translation": "၎င်းနဲ့အတူ ဘာကိုစားသလဲ။"
+        },
+        {
+          "text": "Why you like it",
+          "translation": "၎င်းကို ဘာကြောင့် သဘောကျသလဲ။"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "lesson": "7A Reading",
+      "topic": "Typical Myanmar Snacks",
+      "pre_reading": [
+        {
+          "id": 1,
+          "question": "What is a snack?",
+          "suggested_answer": "A snack is something that people eat between meals."
+        },
+        {
+          "id": 2,
+          "question": "Why do people eat snacks?",
+          "suggested_answer": "People eat snacks because they feel hungry between meals and want something light and tasty to eat."
+        },
+        {
+          "id": 3,
+          "question": "Name some typical Myanmar snacks you know.",
+          "suggested_answer": "Mont-hin-gah, kauk-hnyin-baung, hta-ma-ne, mont-lin-ma-yar, bu-thee-gyaw, mont-lone-ye-baw, hsa-nwin-ma-kin, etc."
+        },
+        {
+          "id": 4,
+          "question": "What is your favourite snack?",
+          "suggested_answer": "Sample answer: My favourite snack is mont-lin-ma-yar because it is delicious, nutritious and not costly to make."
+        }
+      ],
+      "reading_passage": {
+        "title": "7A Reading: Typical Myanmar Snacks",
+        "paragraphs": [
+          {
+            "paragraph_id": 1,
+            "lines": "1-5",
+            "english_text": "People normally have three meals a day and between meals, they eat something which is called a snack. Most Myanmar local snacks are made from rice and glutinous rice. Some of these are traditionally aromatic and lightly-prepared foods, using a delicate balance of quick stir-frying, steaming, or boiling, supplemented with spices and seasonings. One important point to note is that the style of preparing snacks may vary from region to region, and from culture to culture. For instance, what we know as mont-ti is available in two varieties such as Mandalay mont-ti and Rakhine mont-ti.",
+            "burmese_explanation": "လူအများသည် ပုံမှန်အားဖြင့် တစ်နေ့လျှင် အစားအစာ သုံးနပ်စားကြပြီး အစားအစာများကြားတွင် သရေစာဟု ခေါ်သော တစ်စုံတစ်ရာကို စားကြသည်။ မြန်မာ့ဒေသထွက် သရေစာအများစုကို ဆန်နှင့် ကောက်ညှင်းတို့ဖြင့် ပြုလုပ်ကြသည်။ အချို့မှာ အစဉ်အလာအားဖြင့် မွှေးပျံ့ပြီး ပေါ့ပါးစွာ ပြင်ဆင်ထားသော အစားအစာများဖြစ်ကာ လျင်မြန်သော ဆီသတ်ကြော်ခြင်း၊ ပေါင်းတင်ခြင်း သို့မဟုတ် ပြုတ်ခြင်းတို့ကို ဟင်းခတ်အမွှေးအကြိုင်များဖြင့် ထည့်စပ်ထားသည်။ သတိပြုရန် အရေးကြီးသော အချက်တစ်ခုမှာ သရေစာပြင်ဆင်ပုံသည် ဒေသတစ်ခုနှင့်တစ်ခု၊ ယဉ်ကျေးမှုတစ်ခုနှင့်တစ်ခု ကွဲပြားနိုင်သည်ဟူသော အချက်ဖြစ်သည်။ ဥပမာအားဖြင့် ကျွန်ုပ်တို့ မုန့်တီဟု သိကြသည့်အရာသည် မန္တလေးမုန့်တီနှင့် ရခိုင်မုန့်တီဟူ၍ အမျိုးအစား နှစ်မျိုးရှိသည်။"
+          },
+          {
+            "paragraph_id": 2,
+            "lines": "6-10",
+            "english_text": "Rice noodles in gravy (mont-hin-gah). Mont-hin-gah, rice noodles in gravy, is the most popular Myanmar snack. It can be taken as a snack as well as a full meal. To make mont-hin-gah gravy, a variety of ingredients are required but the main ingredients are fish, sliced pith of banana stem, roasted rice flour, roasted pea flour, lemon grass, ginger, onions, garlic, eggs and good quality fish sauce. Roasted rice flour and roasted pea flour thicken the mont-hin-gah gravy whereas lemon grass and ginger give a zesty flavour to it.",
+            "burmese_explanation": "ငါးနှင့်ခေါက်ဆွဲပါဝင်သော မုန့်ဟင်းခါးသည် မြန်မာနိုင်ငံ၏ လူကြိုက်အများဆုံး သရေစာဖြစ်သည်။ ၎င်းကို သရေစာအဖြစ်လည်းကောင်း၊ ပြည့်ဝသောအစားအစာအဖြစ်လည်းကောင်း စားနိုင်သည်။ မုန့်ဟင်းခါးရည်ပြုလုပ်ရန် ပါဝင်ပစ္စည်းအမျိုးမျိုး လိုအပ်သော်လည်း အဓိကပါဝင်ပစ္စည်းများမှာ ငါး၊ ငှက်ပျောအူ၊ ဆန်မှုန့်ကြော်၊ ပဲမှုန့်ကြော်၊ စပါးလင်၊ ချင်း၊ ကြက်သွန်နီ၊ ကြက်သွန်ဖြူ၊ ကြက်ဥနှင့် အရည်အသွေးကောင်းသော ငါးငံပြာရည်တို့ ဖြစ်သည်။ ဆန်မှုန့်ကြော်နှင့် ပဲမှုန့်ကြော်တို့သည် မုန့်ဟင်းခါးရည်ကို ပျစ်စေပြီး စပါးလင်နှင့် ချင်းတို့က အနံ့အရသာကို ပေးသည်။"
+          },
+          {
+            "paragraph_id": 3,
+            "lines": "11-15",
+            "english_text": "Many like to have mont-hin-gah with a variety of fritters such as gourd fritters (bu-thee-gyaw), pea fritters (pe-gyaw) and deep-fried twisted dough sticks (i-kyar-kwei). Some people like to eat mont-hin-gah with coriander leaves, a dash of lime juice and roasted chilli powder. Shops selling mont-hin-gah can be found in any city, town and village in our country. In most alms-giving ceremonies, mont-hin-gah is almost always a must simply because it is a preference of both hosts and guests.",
+            "burmese_explanation": "လူအများသည် ဘူးသီးကြော်၊ ပဲကြော်နှင့် အကြော်ချောင်းများကဲ့သို့သော အကြော်အမျိုးမျိုးနှင့်တွဲ၍ မုန့်ဟင်းခါး စားလေ့ရှိကြသည်။ အချို့လူများသည် နံနံပင်၊ ထုံးရည်တစ်ဇွန်းနှင့် ငရုတ်မှုန့်ကြော်တို့ဖြင့် မုန့်ဟင်းခါးကို စားလေ့ရှိသည်။ မုန့်ဟင်းခါးရောင်းသည့်ဆိုင်များကို ကျွန်ုပ်တို့နိုင်ငံရှိ မြို့၊ မြို့နယ်နှင့် ရွာတိုင်းတွင် တွေ့ရှိနိုင်သည်။ အလှူပွဲအများစုတွင် မုန့်ဟင်းခါးသည် အိမ်ရှင်နှင့် ဧည့်သည်နှစ်ဦးစလုံး နှစ်သက်သော အစားအစာဖြစ်သောကြောင့် အမြဲလိုလို မဖြစ်မနေ ပါဝင်လေ့ရှိသည်။"
+          },
+          {
+            "paragraph_id": 4,
+            "lines": "16-22",
+            "english_text": "Steamed glutinous rice (kauk-hnyin-baung). To make kauk-hnyin-baung, glutinous rice is steamed. There are two kinds of glutinous rice: white and black. The black is delicious and crispy. It can be taken with boiled peas soaked in sesame oil, or with a sprinkling of shredded coconut and a pinch of roasted brown sesame powder with salt. It goes equally well with fried chicken or fried fish. City folks usually have it as breakfast with hot coffee whereas people in rural areas prefer to have it with plain green tea.",
+            "burmese_explanation": "ကောက်ညှင်းပေါင်းပြုလုပ်ရန် ကောက်ညှင်းကို ပေါင်းတင်ရသည်။ ကောက်ညှင်းနှစ်မျိုးရှိသည် — အဖြူရောင်ကောက်ညှင်းနှင့် အမည်းရောင်ကောက်ညှင်းတို့ ဖြစ်သည်။ အမည်းရောင်ကောက်ညှင်းသည် အရသာရှိပြီး ဝါးရသည်မှာလည်း ကောင်းသည်။ ၎င်းကို နှမ်းဆီဖြင့် နယ်ထားသော ပြုတ်ပဲစေ့များ သို့မဟုတ် အုန်းသီးစိမ်းနှင့် ဆားရောထားသော နှမ်းမှုန့်ကြော်အနည်းငယ်ဖြင့် စားနိုင်သည်။ ကြက်ကြော် သို့မဟုတ် ငါးကြော်နှင့်လည်း တွဲဖက်စားကောင်းသည်။ မြို့သူမြို့သားများသည် နံနက်စာအဖြစ် ကော်ဖီပူပူနှင့် စားလေ့ရှိပြီး ကျေးလက်သူများမှာမူ ရေနွေးကြမ်းဖြင့် စားလေ့ရှိသည်။"
+          },
+          {
+            "paragraph_id": 5,
+            "lines": "23-30",
+            "english_text": "Viscous glutinous snack (hta-ma-ne). Hta-ma-ne is a mixture of glutinous rice, roasted sesame seeds, roasted peanuts, coconut slices and a generous amount of cooking oil. Flavoured with ginger, hta-ma-ne goes well with the cold weather of the harvest season. It is said that the word hta-ma-ne comes from hnan-ma-ne; hnan in Myanmar is sesame seeds and ma-ne means large in amount. The snack is called hnan-ma-ne because a large amount of sesame seeds is required to make it. Though it is available in markets all the year round, it is regularly made in Ta-bo-dwe, the eleventh month of the Myanmar calendar which falls in February. At such a time, hta-ma-ne-making competitions are held in many parts of the country to celebrate the harvest festival.",
+            "burmese_explanation": "စေးကပ်သော ကောက်ညှင်းသရေစာ (ထမနဲ)။ ထမနဲသည် ကောက်ညှင်း၊ နှမ်းကြော်၊ မြေပဲကြော်၊ အုန်းသီးစိမ်းနှင့် ချက်ပြုတ်ဆီ အမြောက်အမြားတို့ကို ရောစပ်ထားသော အစားအစာဖြစ်သည်။ ချင်းဖြင့် မြည်းစပ်ထားသော ထမနဲသည် ရိတ်သိမ်းရာသီ၏ အေးမြသော ရာသီဥတုနှင့် လိုက်ဖက်သည်။ ထမနဲဟူသော စကားလုံးသည် 'ငှမနဲ' မှ ဆင်းသက်လာသည်ဟု ဆိုကြပြီး မြန်မာလို 'ငှ' မှာ နှမ်းဖြစ်ပြီး 'မနဲ' မှာ အမြောက်အမြား ဟု အဓိပ္ပာယ်ရသည်။ ယင်းသရေစာကို ပြုလုပ်ရန် နှမ်းအမြောက်အမြား လိုအပ်သောကြောင့် ငှမနဲဟု ခေါ်ခြင်းဖြစ်သည်။ တစ်နှစ်ပတ်လုံး ဈေးများတွင် ရရှိနိုင်သော်လည်း မြန်မာပြက္ခဒိန် ဆယ့်တစ်လမြောက် ဖေဖော်ဝါရီလတွင် ကျရောက်သော တပို့တွဲလ၌ ပုံမှန် ပြုလုပ်လေ့ရှိသည်။ ထိုအချိန်တွင် ရိတ်သိမ်းပွဲတော်ကို ဂုဏ်ပြုရန် နိုင်ငံနေရာအနှံ့တွင် ထမနဲထိုးပြိုင်ပွဲများ ကျင်းပကြသည်။"
+          },
+          {
+            "paragraph_id": 6,
+            "lines": "31-35",
+            "english_text": "The competition is like a big gathering because many hands are needed to get perfect hta-ma-ne. Perfect hta-ma-ne requires both a well-balanced proportion of the ingredients and cooperative strength of the team members.",
+            "burmese_explanation": "ပြိုင်ပွဲသည် ဆုံဆည်းပွဲကြီးတစ်ခုနှင့်တူသည် — အဘယ်ကြောင့်ဆိုသော် ပြီးပြည့်စုံသော ထမနဲရရှိရန် လက်အများအပြား လိုအပ်သောကြောင့်ဖြစ်သည်။ ပြီးပြည့်စုံသော ထမနဲရရှိရန် ပါဝင်ပစ္စည်းများ၏ မျှမျှတတ အချိုးအစားနှင့် အဖွဲ့ဝင်များ၏ ပူးပေါင်းပါဝင်မှု စွမ်းအား နှစ်ရပ်စလုံး လိုအပ်သည်။"
+          },
+          {
+            "paragraph_id": 7,
+            "lines": "36-44",
+            "english_text": "Darby-and-Joan Myanmar mini pancakes (mont-lin-ma-yar). A popular Myanmar street food with a rather unusual name is mont-lin-ma-yar. Literally, the word means husband-and-wife pancakes. Like most Myanmar snacks, rice is used as the main ingredient to make this. It is made from rice batter in the form of two small hemispheres, each facing the other forming a loving couple. It is eaten with roasted sesame powder with salt and boiled green peas. Some people put coconut milk in the mixing batter and some prepare the mini pancakes with a quail egg in each hemisphere. Mont-lin-ma-yar is a popular snack sold at the food stalls of pagoda festivals. However, it is available anytime, anywhere and liked by all Myanmar people — young and old — because it is delicious, nutritious and not costly to make.",
+            "burmese_explanation": "အမည်ဆန်းသော်လည်း လူကြိုက်များသော မြန်မာ့လမ်းဘေးအစားအစာတစ်မျိုးမှာ မုန့်လင်မယား ဖြစ်သည်။ အမည်အရ ယင်းသည် လင်နှင့်မယား မုန့်ကို ဆိုလိုသည်။ အခြားမြန်မာ့သရေစာများကဲ့သို့ပင် ယင်းကို ဆန်ကို အဓိကပါဝင်ပစ္စည်းအဖြစ် အသုံးပြု၍ ပြုလုပ်သည်။ ချစ်ခင်သောစုံတွဲတစ်တွဲကဲ့သို့ မျက်နှာချင်းဆိုင်နေသည့် အဝိုင်းခြမ်းနှစ်ခုကို ဆန်ရည်ဖြင့် ပြုလုပ်ထားသည်။ ၎င်းကို ဆားရောထားသော နှမ်းမှုန့်ကြော်နှင့် ပြုတ်ထားသော ပဲစိမ်းတို့ဖြင့် စားကြသည်။ အချို့က မုန့်ရည်ထဲတွင် အုန်းနို့ထည့်ကြပြီး အချို့က အဝိုင်းခြမ်းတစ်ခုစီတွင် ငုံးဥတစ်လုံးစီ ထည့်ပြင်ဆင်ကြသည်။ မုန့်လင်မယားကို ဘုရားပွဲတော်များရှိ အစားအသောက်ဆိုင်များတွင် ရောင်းချကြသည်။ အချိန်မရွေး၊ နေရာမရွေး ရရှိနိုင်ပြီး အရသာရှိကာ အာဟာရပြည့်ဝ၍ စရိတ်မကြီးသောကြောင့် လူငယ်ရော လူကြီးပါ နှစ်သက်ကြသည်။"
+          },
+          {
+            "paragraph_id": 8,
+            "lines": "45-55",
+            "english_text": "Gourd fritters (bu-thee-gyaw). To prepare gourd fritters, tender gourd chips dipped in rice batter are fried until they become golden brown. It is a tradition of Myanmar to eat bu-thee-gyaw together with lettuce and a sauce made from tamarind pulp in which crushed chillies and garlic are mixed. A plate of bu-thee-gyaw with lettuce on the side, with a bowl of tamarind sauce to be taken with a cup of plain green tea is hard to resist. Bu-thee-gyaw is available anytime and almost everywhere in Myanmar. There is always an abundance of shops selling bu-thee-gyaw in the food stalls of any pagoda festivals throughout the country. There are indeed many other snacks, namely hsa-nwin-ma-kin, mont-pyit-tha-let, mont-lone-ye-baw, ye-mont, mont-hsi-gyaw, mont-kywea-thea, etc. Each of these snacks has its own unique taste. The reason why Myanmar snacks are widely known is simply because they are delicious and not too costly.",
+            "burmese_explanation": "ဘူးသီးကြော်ပြုလုပ်ရန် ဘူးသီးနုများကို ဆန်ရည်တွင်နှစ်ပြီး ရွှေဝါရောင်သန်းလာသည်အထိ ကြော်ရသည်။ ငရုတ်သီးနှင့် ကြက်သွန်ဖြူရောထားသော မန်ကျည်းရည်၊ ဆလတ်ရွက်တို့နှင့် တွဲစားခြင်းသည် မြန်မာ့ရိုးရာအလေ့အထတစ်ခု ဖြစ်သည်။ ဆလတ်ရွက်နှင့် ဘူးသီးကြော်တစ်ပွဲ၊ မန်ကျည်းရည်တစ်ခွက်နှင့် ရေနွေးကြမ်းတစ်ဖလားကို တွဲစားလျှင် မစားဘဲနေရန် ခက်ခဲသည်။ ဘူးသီးကြော်ကို မြန်မာနိုင်ငံအနှံ့ အချိန်မရွေး ရရှိနိုင်သည်။ ဘုရားပွဲများ၏ အစားအသောက်ဆိုင်တန်းများတွင် ဘူးသီးကြော်ရောင်းသောဆိုင်များစွာ ရှိတတ်သည်။ ထို့ပြင် ဆန်းမုန့်၊ မုန့်ပဲသလက်၊ မုန့်လုံးရေပေါ်၊ ယိမုန့်၊ မုန့်ဆီကြော်နှင့် မုန့်ကြွားသီး စသည့် အခြားသရေစာများစွာလည်း ရှိသည်။ သရေစာတစ်မျိုးစီတွင် ထူးခြားသောအရသာ ရှိသည်။ မြန်မာ့သရေစာများ လူသိများရခြင်းမှာ အရသာရှိပြီး ဈေးလည်း မကြီးလွန်းသောကြောင့် ဖြစ်သည်။"
+          }
+        ]
+      },
+      "comprehension": {
+        "part_A": {
+          "instructions": "In pairs, find the bold-faced words in the passage that are similar in meaning to the following.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "text": "a large quantity that is more than enough",
+              "answer": "abundance"
+            },
+            {
+              "question_number": 2,
+              "text": "having a pleasant noticeable smell",
+              "answer": "aromatic"
+            },
+            {
+              "question_number": 3,
+              "text": "put into a liquid and taken out again",
+              "answer": "dipped"
+            },
+            {
+              "question_number": 4,
+              "text": "involving doing something together with others towards a shared aim",
+              "answer": "cooperative"
+            },
+            {
+              "question_number": 5,
+              "text": "expensive",
+              "answer": "costly"
+            },
+            {
+              "question_number": 6,
+              "text": "(of food) pleasantly hard and dry",
+              "answer": "crispy"
+            },
+            {
+              "question_number": 7,
+              "text": "being the only one of its kind",
+              "answer": "unique"
+            },
+            {
+              "question_number": 8,
+              "text": "brown sauce made by adding flour to the juices that come from meat or fish while cooking",
+              "answer": "gravy"
+            },
+            {
+              "question_number": 9,
+              "text": "stop yourself from doing something you very much want to do",
+              "answer": "resist"
+            },
+            {
+              "question_number": 10,
+              "text": "show that a day or an event is important by doing something special on it",
+              "answer": "celebrate"
+            }
+          ]
+        },
+        "part_B": {
+          "instructions": "Complete each sentence below with a suitable word from Exercise A.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "text": "Every human being has a ________ fingerprint.",
+              "answer": "unique"
+            },
+            {
+              "question_number": 2,
+              "text": "Various ________ herbs are used in making Myanmar dishes.",
+              "answer": "aromatic"
+            },
+            {
+              "question_number": 3,
+              "text": "Grandma ________ the bread into her coffee before eating it.",
+              "answer": "dipped"
+            },
+            {
+              "question_number": 4,
+              "text": "We usually eat ________ potato chips and popcorn while watching TV.",
+              "answer": "crispy"
+            },
+            {
+              "question_number": 5,
+              "text": "Students are ________ and attentive to do the group work in class.",
+              "answer": "cooperative"
+            },
+            {
+              "question_number": 6,
+              "text": "They are having a dinner party to ________ their son's graduation.",
+              "answer": "celebrate"
+            },
+            {
+              "question_number": 7,
+              "text": "Our farm produces an ________ of fruit and vegetables.",
+              "answer": "abundance"
+            },
+            {
+              "question_number": 8,
+              "text": "You shouldn't spend a lot of money on buying ________ cosmetics.",
+              "answer": "costly"
+            },
+            {
+              "question_number": 9,
+              "text": "Mashed potatoes are often eaten with ________.",
+              "answer": "gravy"
+            },
+            {
+              "question_number": 10,
+              "text": "Toe Toe likes chocolate ice cream so much that he can't ________ it whenever he sees it.",
+              "answer": "resist"
+            }
+          ]
+        },
+        "part_C": {
+          "instructions": "Give a full-sentence answer to each question below.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "question": "Which sentence tells you that mont-hin-gah is essential in almost every ceremony in Myanmar?",
+              "answer": "In most alms-giving ceremonies, mont-hin-gah is almost always a must simply because it is a preference of both hosts and guests."
+            },
+            {
+              "question_number": 2,
+              "question": "What ingredients are used to make hta-ma-ne?",
+              "answer": "Hta-ma-ne is made from glutinous rice, roasted sesame seeds, roasted peanuts, coconut slices and a generous amount of cooking oil."
+            },
+            {
+              "question_number": 3,
+              "question": "What do we need in order to get perfect hta-ma-ne?",
+              "answer": "We need both a well-balanced proportion of the ingredients and cooperative strength of the team members."
+            },
+            {
+              "question_number": 4,
+              "question": "Why is mont-lin-ma-yar given that name?",
+              "answer": "It is given that name because it is made from rice batter in the form of two small hemispheres, each facing the other forming a loving couple."
+            },
+            {
+              "question_number": 5,
+              "question": "What do we usually eat bu-thee-gyaw with?",
+              "answer": "We usually eat bu-thee-gyaw with lettuce and a sauce made from tamarind pulp in which crushed chillies and garlic are mixed."
+            },
+            {
+              "question_number": 6,
+              "question": "Some make snacks to celebrate. Give an example of a Myanmar tradition of snacking to celebrate.",
+              "answer": "In Ta-bo-dwe, the eleventh month of the Myanmar calendar which falls in February, hta-ma-ne-making competitions are held in many parts of the country to celebrate the harvest festival."
+            },
+            {
+              "question_number": 7,
+              "question": "What is the common ingredient of Myanmar snacks mentioned in the passage?",
+              "answer": "The common ingredient is rice, because most Myanmar local snacks are made from rice and glutinous rice."
+            },
+            {
+              "question_number": 8,
+              "question": "Do you like steamed glutinous rice? Give reasons for your answer.",
+              "answer": "Sample answer: Yes, I like kauk-hnyin-baung because the black glutinous rice is delicious and crispy, and it goes well with boiled peas and shredded coconut."
+            },
+            {
+              "question_number": 9,
+              "question": "Among the ingredients used in making mont-hin-gah, what do you think is the most important?",
+              "answer": "Sample answer: I think fish and good quality fish sauce are the most important because they give the gravy its flavour."
+            },
+            {
+              "question_number": 10,
+              "question": "Out of the Myanmar snacks mentioned in the passage, which do you like most? Why?",
+              "answer": "Sample answer: I like mont-lin-ma-yar most because it is delicious, nutritious and not costly to make."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson": "7B Vocabulary",
+      "topic": "Adjective-forming Suffixes",
+      "part_A": {
+        "instructions": "Study the following table. Then add the adjectives in the spaces given.",
+        "headers": [
+          "SUFFIX",
+          "ROOT WORD",
+          "ADJECTIVE"
+        ],
+        "table_data": [
+          {
+            "suffix": "-al",
+            "root_word": "tradition (n)",
+            "adjective": "traditional"
+          },
+          {
+            "suffix": "-al",
+            "root_word": "nutrition (n)",
+            "adjective": "nutritional"
+          },
+          {
+            "suffix": "-al",
+            "root_word": "nation (n)",
+            "adjective": "national"
+          },
+          {
+            "suffix": "-al",
+            "root_word": "season (n)",
+            "adjective": "seasonal"
+          },
+          {
+            "suffix": "-ive",
+            "root_word": "compete (v)",
+            "adjective": "competitive"
+          },
+          {
+            "suffix": "-ive",
+            "root_word": "effect (n)",
+            "adjective": "effective"
+          },
+          {
+            "suffix": "-ive",
+            "root_word": "reflect (v)",
+            "adjective": "reflective"
+          },
+          {
+            "suffix": "-ive",
+            "root_word": "attract (v)",
+            "adjective": "attractive"
+          },
+          {
+            "suffix": "-ous",
+            "root_word": "vary (v)",
+            "adjective": "various"
+          },
+          {
+            "suffix": "-ous",
+            "root_word": "nutrition (n)",
+            "adjective": "nutritious"
+          },
+          {
+            "suffix": "-ous",
+            "root_word": "fame (n)",
+            "adjective": "famous"
+          },
+          {
+            "suffix": "-ous",
+            "root_word": "adventure (n) (v)",
+            "adjective": "adventurous"
+          },
+          {
+            "suffix": "-ful",
+            "root_word": "success (n)",
+            "adjective": "successful"
+          },
+          {
+            "suffix": "-ful",
+            "root_word": "power (n)",
+            "adjective": "powerful"
+          },
+          {
+            "suffix": "-ful",
+            "root_word": "colour (n)",
+            "adjective": "colourful"
+          },
+          {
+            "suffix": "-ful",
+            "root_word": "forget (v)",
+            "adjective": "forgetful"
+          },
+          {
+            "suffix": "-ible",
+            "root_word": "access (n) (v)",
+            "adjective": "accessible"
+          },
+          {
+            "suffix": "-ible",
+            "root_word": "horror (n)",
+            "adjective": "horrible"
+          },
+          {
+            "suffix": "-ible",
+            "root_word": "digest (v)",
+            "adjective": "digestible"
+          },
+          {
+            "suffix": "-ible",
+            "root_word": "response (n)",
+            "adjective": "responsible"
+          },
+          {
+            "suffix": "-able",
+            "root_word": "avail (v)",
+            "adjective": "available"
+          },
+          {
+            "suffix": "-able",
+            "root_word": "enjoy (v)",
+            "adjective": "enjoyable"
+          },
+          {
+            "suffix": "-able",
+            "root_word": "comfort (n)",
+            "adjective": "comfortable"
+          },
+          {
+            "suffix": "-able",
+            "root_word": "reason (n) (v)",
+            "adjective": "reasonable"
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Fill each blank with the correct adjective of the underlined word.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "The artist gained his fame only when he died. He became ________ for his latest work.",
+            "answer": "famous"
+          },
+          {
+            "question_number": 2,
+            "text": "There is a tradition in our family that we have a party on New Year's Day. It is ________ to make steamed glutinous rice on that day.",
+            "answer": "traditional"
+          },
+          {
+            "question_number": 3,
+            "text": "The menu of this restaurant varies with the season. ________ dishes are available in different seasons.",
+            "answer": "various"
+          },
+          {
+            "question_number": 4,
+            "text": "There is not much nutrition in potato chips. Nuts and fruit are more ________.",
+            "answer": "nutritious"
+          },
+          {
+            "question_number": 5,
+            "text": "All students have access to the school library. The information they need is ________ to them.",
+            "answer": "accessible"
+          },
+          {
+            "question_number": 6,
+            "text": "We enjoyed the trip to Bagan. It was really ________.",
+            "answer": "enjoyable"
+          },
+          {
+            "question_number": 7,
+            "text": "A very ________ storm hit the coastal region last night. Ships were helpless against its power.",
+            "answer": "powerful"
+          },
+          {
+            "question_number": 8,
+            "text": "She always attracts people wherever she goes. She is really an ________ lady.",
+            "answer": "attractive"
+          },
+          {
+            "question_number": 9,
+            "text": "Her new diet programme has worked wonders for her. It is ________.",
+            "answer": "wonderful"
+          },
+          {
+            "question_number": 10,
+            "text": "I am glad to notice your improvement in English, because your improvement is quite ________.",
+            "answer": "noticeable"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": "7C Grammar",
+      "topic": "The Active Voice and the Passive Voice",
+      "part_A": {
+        "instructions": "Rewrite the following in the passive.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "Zaw Zaw is fixing the car at the moment.",
+            "answer": "The car is being fixed by Zaw Zaw at the moment."
+          },
+          {
+            "question_number": 2,
+            "text": "The police arrested the man for shoplifting.",
+            "answer": "The man was arrested by the police for shoplifting."
+          },
+          {
+            "question_number": 3,
+            "text": "The waiters had laid the tables before the customers arrived.",
+            "answer": "The tables had been laid by the waiters before the customers arrived."
+          },
+          {
+            "question_number": 4,
+            "text": "Scientists always gather information on natural disasters.",
+            "answer": "Information on natural disasters is always gathered by scientists."
+          },
+          {
+            "question_number": 5,
+            "text": "A wildfire can destroy large areas of land in just a few minutes.",
+            "answer": "Large areas of land can be destroyed by a wildfire in just a few minutes."
+          },
+          {
+            "question_number": 6,
+            "text": "Egyptians built pyramids to keep the names and stories of their kings alive.",
+            "answer": "Pyramids were built by Egyptians to keep the names and stories of their kings alive."
+          },
+          {
+            "question_number": 7,
+            "text": "The Internet empowers people by enabling the exchange of information.",
+            "answer": "People are empowered by the Internet by enabling the exchange of information."
+          },
+          {
+            "question_number": 8,
+            "text": "Entrepreneurs should design products based on what customers say they want.",
+            "answer": "Products should be designed by entrepreneurs based on what customers say they want."
+          },
+          {
+            "question_number": 9,
+            "text": "Virologists study viruses to discover how to stop people from getting infested.",
+            "answer": "Viruses are studied by virologists to discover how to stop people from getting infested."
+          },
+          {
+            "question_number": 10,
+            "text": "Scientists have used chimps to study infectious diseases.",
+            "answer": "Chimps have been used by scientists to study infectious diseases."
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Read the following paragraph and complete the blanks with the correct passive form of the verbs given below. The first one is done for you as an example.",
+        "verbs": [
+          "bake",
+          "enjoy",
+          "place",
+          "mix",
+          "sprinkle",
+          "eat",
+          "make",
+          "pour",
+          "smear",
+          "use"
+        ],
+        "passage": "Bein-mont or Myanmar pancake (1) is made from rice flour, palm sugar, eggs, coconut chips, and peanuts, garnished with poppy seeds. Rice flour (2) _______________ with palm sugar (3) _______________ to make batter for this pancake. First, a shallow pan (4) _______________ with a tiny amount of edible oil, using a makeshift brush so that the pancake won't stick to the pan. Then a ladle of batter (5) _______________ into the pan. Next coconut chips and poppy seeds (6) _______________ on top of the batter. The pan (7) _______________ on an open fireplace and then covered with a lid on which are pieces of burning coal. In other words, the pancake (8) _______________ with heat from below and above. When it turns golden brown, sweet and tasty pancake is ready to be served. Some bein-mont makers use butter instead of edible oil in order to make it more delicious. Bein-mont (9) _______________ with either tea or coffee, and it is a very common breakfast which (10) _______________ by people from rural and urban areas in Myanmar.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "blank": "is made from rice flour, palm sugar, eggs, coconut chips, and peanuts, garnished with poppy seeds",
+            "answer": "is made"
+          },
+          {
+            "question_number": 2,
+            "blank": "Rice flour _______________ with palm sugar",
+            "answer": "is mixed"
+          },
+          {
+            "question_number": 3,
+            "blank": "with palm sugar _______________ to make batter for this pancake",
+            "answer": "is used"
+          },
+          {
+            "question_number": 4,
+            "blank": "First, a shallow pan _______________ with a tiny amount of edible oil",
+            "answer": "is smeared"
+          },
+          {
+            "question_number": 5,
+            "blank": "Then a ladle of batter _______________ into the pan",
+            "answer": "is poured"
+          },
+          {
+            "question_number": 6,
+            "blank": "Next coconut chips and poppy seeds _______________ on top of the batter",
+            "answer": "are sprinkled"
+          },
+          {
+            "question_number": 7,
+            "blank": "The pan _______________ on an open fireplace and then covered with a lid on which are pieces of burning coal",
+            "answer": "is placed"
+          },
+          {
+            "question_number": 8,
+            "blank": "In other words, the pancake _______________ with heat from below and above",
+            "answer": "is baked"
+          },
+          {
+            "question_number": 9,
+            "blank": "Bein-mont _______________ with either tea or coffee",
+            "answer": "is enjoyed"
+          },
+          {
+            "question_number": 10,
+            "blank": "and it is a very common breakfast which _______________ by people from rural and urban areas in Myanmar",
+            "answer": "is eaten"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -10,33 +10,345 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AdminRouteImport } from './routes/admin'
+import { Route as ClassroomsRouteImport } from './routes/classrooms'
+import { Route as ExamBuilderRouteImport } from './routes/exam-builder'
+import { Route as ProgressRouteImport } from './routes/progress'
+import { Route as TutorRouteImport } from './routes/tutor'
+import { Route as ApiAnswerHintRouteImport } from './routes/api/answer-hint'
+import { Route as ApiChatRouteImport } from './routes/api/chat'
+import { Route as ApiChatHomeRouteImport } from './routes/api/chat-home'
+import { Route as ApiExamRouteImport } from './routes/api/exam'
+import { Route as ApiExercisesRouteImport } from './routes/api/exercises'
+import { Route as ApiGradeExamRouteImport } from './routes/api/grade-exam'
+import { Route as ApiGrammarExercisesRouteImport } from './routes/api/grammar-exercises'
+import { Route as ApiGrammarQuestionsRouteImport } from './routes/api/grammar-questions'
+import { Route as ApiHealthRouteImport } from './routes/api/health'
+import { Route as ApiMockExamRouteImport } from './routes/api/mock-exam'
+import { Route as ApiTranscribeRouteImport } from './routes/api/transcribe'
+import { Route as ApiTtsRouteImport } from './routes/api/tts'
+import { Route as ClassExamIdRouteImport } from './routes/class-exam.$id'
+import { Route as ClassExamNewRouteImport } from './routes/class-exam.new'
+import { Route as MockExamUnitRouteImport } from './routes/mock-exam.$unit'
+import { Route as PracticeUnitRouteImport } from './routes/practice.$unit'
+import { Route as SectionSectionIdRouteImport } from './routes/section.$sectionId'
+import { Route as PracticeUnitIndexRouteImport } from './routes/practice.$unit.index'
+import { Route as PracticeUnitSkillRouteImport } from './routes/practice.$unit.$skill'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ClassroomsRoute = ClassroomsRouteImport.update({
+  id: '/classrooms',
+  path: '/classrooms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExamBuilderRoute = ExamBuilderRouteImport.update({
+  id: '/exam-builder',
+  path: '/exam-builder',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgressRoute = ProgressRouteImport.update({
+  id: '/progress',
+  path: '/progress',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TutorRoute = TutorRouteImport.update({
+  id: '/tutor',
+  path: '/tutor',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiAnswerHintRoute = ApiAnswerHintRouteImport.update({
+  id: '/api/answer-hint',
+  path: '/api/answer-hint',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiChatRoute = ApiChatRouteImport.update({
+  id: '/api/chat',
+  path: '/api/chat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiChatHomeRoute = ApiChatHomeRouteImport.update({
+  id: '/api/chat-home',
+  path: '/api/chat-home',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiExamRoute = ApiExamRouteImport.update({
+  id: '/api/exam',
+  path: '/api/exam',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiExercisesRoute = ApiExercisesRouteImport.update({
+  id: '/api/exercises',
+  path: '/api/exercises',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiGradeExamRoute = ApiGradeExamRouteImport.update({
+  id: '/api/grade-exam',
+  path: '/api/grade-exam',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiGrammarExercisesRoute = ApiGrammarExercisesRouteImport.update({
+  id: '/api/grammar-exercises',
+  path: '/api/grammar-exercises',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiGrammarQuestionsRoute = ApiGrammarQuestionsRouteImport.update({
+  id: '/api/grammar-questions',
+  path: '/api/grammar-questions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiHealthRoute = ApiHealthRouteImport.update({
+  id: '/api/health',
+  path: '/api/health',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiMockExamRoute = ApiMockExamRouteImport.update({
+  id: '/api/mock-exam',
+  path: '/api/mock-exam',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiTranscribeRoute = ApiTranscribeRouteImport.update({
+  id: '/api/transcribe',
+  path: '/api/transcribe',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiTtsRoute = ApiTtsRouteImport.update({
+  id: '/api/tts',
+  path: '/api/tts',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ClassExamIdRoute = ClassExamIdRouteImport.update({
+  id: '/class-exam/$id',
+  path: '/class-exam/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ClassExamNewRoute = ClassExamNewRouteImport.update({
+  id: '/class-exam/new',
+  path: '/class-exam/new',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MockExamUnitRoute = MockExamUnitRouteImport.update({
+  id: '/mock-exam/$unit',
+  path: '/mock-exam/$unit',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PracticeUnitRoute = PracticeUnitRouteImport.update({
+  id: '/practice/$unit',
+  path: '/practice/$unit',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SectionSectionIdRoute = SectionSectionIdRouteImport.update({
+  id: '/section/$sectionId',
+  path: '/section/$sectionId',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PracticeUnitIndexRoute = PracticeUnitIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => PracticeUnitRoute,
+} as any)
+const PracticeUnitSkillRoute = PracticeUnitSkillRouteImport.update({
+  id: '/$skill',
+  path: '/$skill',
+  getParentRoute: () => PracticeUnitRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
+  '/classrooms': typeof ClassroomsRoute
+  '/exam-builder': typeof ExamBuilderRoute
+  '/progress': typeof ProgressRoute
+  '/tutor': typeof TutorRoute
+  '/api/answer-hint': typeof ApiAnswerHintRoute
+  '/api/chat': typeof ApiChatRoute
+  '/api/chat-home': typeof ApiChatHomeRoute
+  '/api/exam': typeof ApiExamRoute
+  '/api/exercises': typeof ApiExercisesRoute
+  '/api/grade-exam': typeof ApiGradeExamRoute
+  '/api/grammar-exercises': typeof ApiGrammarExercisesRoute
+  '/api/grammar-questions': typeof ApiGrammarQuestionsRoute
+  '/api/health': typeof ApiHealthRoute
+  '/api/mock-exam': typeof ApiMockExamRoute
+  '/api/transcribe': typeof ApiTranscribeRoute
+  '/api/tts': typeof ApiTtsRoute
+  '/class-exam/$id': typeof ClassExamIdRoute
+  '/class-exam/new': typeof ClassExamNewRoute
+  '/mock-exam/$unit': typeof MockExamUnitRoute
+  '/practice/$unit': typeof PracticeUnitRouteWithChildren
+  '/section/$sectionId': typeof SectionSectionIdRoute
+  '/practice/$unit/$skill': typeof PracticeUnitSkillRoute
+  '/practice/$unit/': typeof PracticeUnitIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
+  '/classrooms': typeof ClassroomsRoute
+  '/exam-builder': typeof ExamBuilderRoute
+  '/progress': typeof ProgressRoute
+  '/tutor': typeof TutorRoute
+  '/api/answer-hint': typeof ApiAnswerHintRoute
+  '/api/chat': typeof ApiChatRoute
+  '/api/chat-home': typeof ApiChatHomeRoute
+  '/api/exam': typeof ApiExamRoute
+  '/api/exercises': typeof ApiExercisesRoute
+  '/api/grade-exam': typeof ApiGradeExamRoute
+  '/api/grammar-exercises': typeof ApiGrammarExercisesRoute
+  '/api/grammar-questions': typeof ApiGrammarQuestionsRoute
+  '/api/health': typeof ApiHealthRoute
+  '/api/mock-exam': typeof ApiMockExamRoute
+  '/api/transcribe': typeof ApiTranscribeRoute
+  '/api/tts': typeof ApiTtsRoute
+  '/class-exam/$id': typeof ClassExamIdRoute
+  '/class-exam/new': typeof ClassExamNewRoute
+  '/mock-exam/$unit': typeof MockExamUnitRoute
+  '/section/$sectionId': typeof SectionSectionIdRoute
+  '/practice/$unit/$skill': typeof PracticeUnitSkillRoute
+  '/practice/$unit': typeof PracticeUnitIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
+  '/classrooms': typeof ClassroomsRoute
+  '/exam-builder': typeof ExamBuilderRoute
+  '/progress': typeof ProgressRoute
+  '/tutor': typeof TutorRoute
+  '/api/answer-hint': typeof ApiAnswerHintRoute
+  '/api/chat': typeof ApiChatRoute
+  '/api/chat-home': typeof ApiChatHomeRoute
+  '/api/exam': typeof ApiExamRoute
+  '/api/exercises': typeof ApiExercisesRoute
+  '/api/grade-exam': typeof ApiGradeExamRoute
+  '/api/grammar-exercises': typeof ApiGrammarExercisesRoute
+  '/api/grammar-questions': typeof ApiGrammarQuestionsRoute
+  '/api/health': typeof ApiHealthRoute
+  '/api/mock-exam': typeof ApiMockExamRoute
+  '/api/transcribe': typeof ApiTranscribeRoute
+  '/api/tts': typeof ApiTtsRoute
+  '/class-exam/$id': typeof ClassExamIdRoute
+  '/class-exam/new': typeof ClassExamNewRoute
+  '/mock-exam/$unit': typeof MockExamUnitRoute
+  '/practice/$unit': typeof PracticeUnitRouteWithChildren
+  '/section/$sectionId': typeof SectionSectionIdRoute
+  '/practice/$unit/$skill': typeof PracticeUnitSkillRoute
+  '/practice/$unit/': typeof PracticeUnitIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/admin'
+    | '/classrooms'
+    | '/exam-builder'
+    | '/progress'
+    | '/tutor'
+    | '/api/answer-hint'
+    | '/api/chat'
+    | '/api/chat-home'
+    | '/api/exam'
+    | '/api/exercises'
+    | '/api/grade-exam'
+    | '/api/grammar-exercises'
+    | '/api/grammar-questions'
+    | '/api/health'
+    | '/api/mock-exam'
+    | '/api/transcribe'
+    | '/api/tts'
+    | '/class-exam/$id'
+    | '/class-exam/new'
+    | '/mock-exam/$unit'
+    | '/practice/$unit'
+    | '/section/$sectionId'
+    | '/practice/$unit/$skill'
+    | '/practice/$unit/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/admin'
+    | '/classrooms'
+    | '/exam-builder'
+    | '/progress'
+    | '/tutor'
+    | '/api/answer-hint'
+    | '/api/chat'
+    | '/api/chat-home'
+    | '/api/exam'
+    | '/api/exercises'
+    | '/api/grade-exam'
+    | '/api/grammar-exercises'
+    | '/api/grammar-questions'
+    | '/api/health'
+    | '/api/mock-exam'
+    | '/api/transcribe'
+    | '/api/tts'
+    | '/class-exam/$id'
+    | '/class-exam/new'
+    | '/mock-exam/$unit'
+    | '/section/$sectionId'
+    | '/practice/$unit/$skill'
+    | '/practice/$unit'
+  id:
+    | '__root__'
+    | '/'
+    | '/admin'
+    | '/classrooms'
+    | '/exam-builder'
+    | '/progress'
+    | '/tutor'
+    | '/api/answer-hint'
+    | '/api/chat'
+    | '/api/chat-home'
+    | '/api/exam'
+    | '/api/exercises'
+    | '/api/grade-exam'
+    | '/api/grammar-exercises'
+    | '/api/grammar-questions'
+    | '/api/health'
+    | '/api/mock-exam'
+    | '/api/transcribe'
+    | '/api/tts'
+    | '/class-exam/$id'
+    | '/class-exam/new'
+    | '/mock-exam/$unit'
+    | '/practice/$unit'
+    | '/section/$sectionId'
+    | '/practice/$unit/$skill'
+    | '/practice/$unit/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdminRoute: typeof AdminRoute
+  ClassroomsRoute: typeof ClassroomsRoute
+  ExamBuilderRoute: typeof ExamBuilderRoute
+  ProgressRoute: typeof ProgressRoute
+  TutorRoute: typeof TutorRoute
+  ApiAnswerHintRoute: typeof ApiAnswerHintRoute
+  ApiChatRoute: typeof ApiChatRoute
+  ApiChatHomeRoute: typeof ApiChatHomeRoute
+  ApiExamRoute: typeof ApiExamRoute
+  ApiExercisesRoute: typeof ApiExercisesRoute
+  ApiGradeExamRoute: typeof ApiGradeExamRoute
+  ApiGrammarExercisesRoute: typeof ApiGrammarExercisesRoute
+  ApiGrammarQuestionsRoute: typeof ApiGrammarQuestionsRoute
+  ApiHealthRoute: typeof ApiHealthRoute
+  ApiMockExamRoute: typeof ApiMockExamRoute
+  ApiTranscribeRoute: typeof ApiTranscribeRoute
+  ApiTtsRoute: typeof ApiTtsRoute
+  ClassExamIdRoute: typeof ClassExamIdRoute
+  ClassExamNewRoute: typeof ClassExamNewRoute
+  MockExamUnitRoute: typeof MockExamUnitRoute
+  PracticeUnitRoute: typeof PracticeUnitRouteWithChildren
+  SectionSectionIdRoute: typeof SectionSectionIdRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +360,215 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/classrooms': {
+      id: '/classrooms'
+      path: '/classrooms'
+      fullPath: '/classrooms'
+      preLoaderRoute: typeof ClassroomsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/exam-builder': {
+      id: '/exam-builder'
+      path: '/exam-builder'
+      fullPath: '/exam-builder'
+      preLoaderRoute: typeof ExamBuilderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/progress': {
+      id: '/progress'
+      path: '/progress'
+      fullPath: '/progress'
+      preLoaderRoute: typeof ProgressRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tutor': {
+      id: '/tutor'
+      path: '/tutor'
+      fullPath: '/tutor'
+      preLoaderRoute: typeof TutorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/answer-hint': {
+      id: '/api/answer-hint'
+      path: '/api/answer-hint'
+      fullPath: '/api/answer-hint'
+      preLoaderRoute: typeof ApiAnswerHintRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/chat': {
+      id: '/api/chat'
+      path: '/api/chat'
+      fullPath: '/api/chat'
+      preLoaderRoute: typeof ApiChatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/chat-home': {
+      id: '/api/chat-home'
+      path: '/api/chat-home'
+      fullPath: '/api/chat-home'
+      preLoaderRoute: typeof ApiChatHomeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/exam': {
+      id: '/api/exam'
+      path: '/api/exam'
+      fullPath: '/api/exam'
+      preLoaderRoute: typeof ApiExamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/exercises': {
+      id: '/api/exercises'
+      path: '/api/exercises'
+      fullPath: '/api/exercises'
+      preLoaderRoute: typeof ApiExercisesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/grade-exam': {
+      id: '/api/grade-exam'
+      path: '/api/grade-exam'
+      fullPath: '/api/grade-exam'
+      preLoaderRoute: typeof ApiGradeExamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/grammar-exercises': {
+      id: '/api/grammar-exercises'
+      path: '/api/grammar-exercises'
+      fullPath: '/api/grammar-exercises'
+      preLoaderRoute: typeof ApiGrammarExercisesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/grammar-questions': {
+      id: '/api/grammar-questions'
+      path: '/api/grammar-questions'
+      fullPath: '/api/grammar-questions'
+      preLoaderRoute: typeof ApiGrammarQuestionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/health': {
+      id: '/api/health'
+      path: '/api/health'
+      fullPath: '/api/health'
+      preLoaderRoute: typeof ApiHealthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/mock-exam': {
+      id: '/api/mock-exam'
+      path: '/api/mock-exam'
+      fullPath: '/api/mock-exam'
+      preLoaderRoute: typeof ApiMockExamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/transcribe': {
+      id: '/api/transcribe'
+      path: '/api/transcribe'
+      fullPath: '/api/transcribe'
+      preLoaderRoute: typeof ApiTranscribeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/tts': {
+      id: '/api/tts'
+      path: '/api/tts'
+      fullPath: '/api/tts'
+      preLoaderRoute: typeof ApiTtsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/class-exam/$id': {
+      id: '/class-exam/$id'
+      path: '/class-exam/$id'
+      fullPath: '/class-exam/$id'
+      preLoaderRoute: typeof ClassExamIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/class-exam/new': {
+      id: '/class-exam/new'
+      path: '/class-exam/new'
+      fullPath: '/class-exam/new'
+      preLoaderRoute: typeof ClassExamNewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mock-exam/$unit': {
+      id: '/mock-exam/$unit'
+      path: '/mock-exam/$unit'
+      fullPath: '/mock-exam/$unit'
+      preLoaderRoute: typeof MockExamUnitRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/practice/$unit': {
+      id: '/practice/$unit'
+      path: '/practice/$unit'
+      fullPath: '/practice/$unit'
+      preLoaderRoute: typeof PracticeUnitRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/section/$sectionId': {
+      id: '/section/$sectionId'
+      path: '/section/$sectionId'
+      fullPath: '/section/$sectionId'
+      preLoaderRoute: typeof SectionSectionIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/practice/$unit/': {
+      id: '/practice/$unit/'
+      path: '/'
+      fullPath: '/practice/$unit/'
+      preLoaderRoute: typeof PracticeUnitIndexRouteImport
+      parentRoute: typeof PracticeUnitRoute
+    }
+    '/practice/$unit/$skill': {
+      id: '/practice/$unit/$skill'
+      path: '/$skill'
+      fullPath: '/practice/$unit/$skill'
+      preLoaderRoute: typeof PracticeUnitSkillRouteImport
+      parentRoute: typeof PracticeUnitRoute
+    }
   }
 }
 
+interface PracticeUnitRouteChildren {
+  PracticeUnitSkillRoute: typeof PracticeUnitSkillRoute
+  PracticeUnitIndexRoute: typeof PracticeUnitIndexRoute
+}
+
+const PracticeUnitRouteChildren: PracticeUnitRouteChildren = {
+  PracticeUnitSkillRoute: PracticeUnitSkillRoute,
+  PracticeUnitIndexRoute: PracticeUnitIndexRoute,
+}
+
+const PracticeUnitRouteWithChildren = PracticeUnitRoute._addFileChildren(
+  PracticeUnitRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdminRoute: AdminRoute,
+  ClassroomsRoute: ClassroomsRoute,
+  ExamBuilderRoute: ExamBuilderRoute,
+  ProgressRoute: ProgressRoute,
+  TutorRoute: TutorRoute,
+  ApiAnswerHintRoute: ApiAnswerHintRoute,
+  ApiChatRoute: ApiChatRoute,
+  ApiChatHomeRoute: ApiChatHomeRoute,
+  ApiExamRoute: ApiExamRoute,
+  ApiExercisesRoute: ApiExercisesRoute,
+  ApiGradeExamRoute: ApiGradeExamRoute,
+  ApiGrammarExercisesRoute: ApiGrammarExercisesRoute,
+  ApiGrammarQuestionsRoute: ApiGrammarQuestionsRoute,
+  ApiHealthRoute: ApiHealthRoute,
+  ApiMockExamRoute: ApiMockExamRoute,
+  ApiTranscribeRoute: ApiTranscribeRoute,
+  ApiTtsRoute: ApiTtsRoute,
+  ClassExamIdRoute: ClassExamIdRoute,
+  ClassExamNewRoute: ClassExamNewRoute,
+  MockExamUnitRoute: MockExamUnitRoute,
+  PracticeUnitRoute: PracticeUnitRouteWithChildren,
+  SectionSectionIdRoute: SectionSectionIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

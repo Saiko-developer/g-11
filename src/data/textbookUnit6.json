@@ -1,0 +1,742 @@
+{
+  "unit": "UNIT 6",
+  "unitTitle": "The Prodigal Son",
+  "lessons": [
+    {
+      "id": "6a-reading",
+      "code": "6A",
+      "type": "Reading",
+      "title": "6A Reading: The Prodigal Son",
+      "titleMy": "စာဖတ်ခြင်း - အဖ၏ ပစ္စည်းများကို ဖြုန်းတီးသော သား",
+      "intro": "Read the story of Ben, the prodigal son, who asked for his share of the inheritance, squandered it in a distant land, and came back home to a father who forgave him and celebrated his return.",
+      "introMy": "အဖ၏ အမွေပစ္စည်းအပိုင်းကို တောင်းယူပြီး ဝေးလံသော နိုင်ငံတွင် ဖြုန်းတီးခဲ့သော်လည်း ပြန်ရောက်လာသည့်အခါ ခွင့်လွှတ်၍ ပျော်ရွှင်စွာ ကြိုဆိုသော ဖခင်၏ ဇာတ်လမ်း — ဖြုန်းတီးသော သား Ben အကြောင်းကို ဖတ်ရှုပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What did Ben ask for from his father and why?",
+          "suggested_answer": "He asked for his share of the inheritance because he wished to go to a distant land and lead an independent life."
+        },
+        {
+          "id": 2,
+          "question": "What kind of life did Ben lead at a distant land?",
+          "suggested_answer": "He led a very free and easy life, just squandering the money his father gave him."
+        },
+        {
+          "id": 3,
+          "question": "What did Ben have to eat when working as a swineherd?",
+          "suggested_answer": "He became so poor that he had to eat what the swine were fed with."
+        },
+        {
+          "id": 4,
+          "question": "How did Ben's father welcome him when he came back home?",
+          "suggested_answer": "He saw Ben at a distance and came rushing towards him. He hugged him and kissed him and welcomed him, and he asked his servants to wash Ben up, dress him up in the best of clothing, kill the fatted calf and prepare a grand meal to celebrate."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "How was Dan different from Ben?",
+          "answer": "Dan, the elder one, was serious, hardworking, and was a great help to his father, while Ben, the younger one, was a happy-go-lucky young man and never bothered to help his father."
+        },
+        {
+          "id": 2,
+          "question": "Why did the father celebrate when Ben came back?",
+          "answer": "Because Ben was naughty but he had repented of his folly and had come back. They had lost him, but now they had found him, so they should rejoice and celebrate."
+        }
+      ]
+    },
+    {
+      "id": "6b-vocabulary",
+      "code": "6B",
+      "type": "Vocabulary",
+      "title": "6B Vocabulary: Phrasal Verbs with 'Run' & 'Say' and 'Tell'",
+      "titleMy": "ဝေါဟာရ - 'Run' ဖြင့် ဖွဲ့သော စပ်ကြိယာများ နှင့် 'Say' နှင့် 'Tell'",
+      "intro": "Learn the phrasal verbs formed with 'run' and study the correct use of 'say' and 'tell'.",
+      "introMy": "'run' ဖြင့် ဖွဲ့စည်းထားသော စပ်ကြိယာများ၏ အဓိပ္ပာယ်များကို လေ့လာပြီး 'say' နှင့် 'tell' တို့၏ မှန်ကန်သော အသုံးပြုပုံကို လေ့လာပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is a phrasal verb?",
+          "suggested_answer": "A phrasal verb is a combination of words used as a verb. It is usually used with an idiomatic meaning, which is often quite different from the literal meaning of the individual words."
+        },
+        {
+          "id": 2,
+          "question": "What does 'run into someone' mean?",
+          "suggested_answer": "It means to meet someone unexpectedly."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What does 'run out of' mean?",
+          "answer": "It means to have none left."
+        },
+        {
+          "id": 2,
+          "question": "Which word do we use with 'the truth', 'a lie', 'a joke' and 'a story' — 'say' or 'tell'?",
+          "answer": "We use 'tell': tell the truth, tell a lie, tell a joke and tell a story. 'Say' is used with words such as hello, goodbye and prayers."
+        }
+      ]
+    },
+    {
+      "id": "6c-grammar",
+      "code": "6C",
+      "type": "Grammar",
+      "title": "6C Grammar: Reported Speech",
+      "titleMy": "သဒ္ဒါ - သွယ်ဝိုက်ပြောဆိုခြင်း (Reported Speech)",
+      "intro": "Learn how to change direct speech into reported speech — statements, questions, commands and requests.",
+      "introMy": "တိုက်ရိုက်ပြောဆိုချက်များကို သွယ်ဝိုက်ပြောဆိုချက်အဖြစ် ပြောင်းလဲနည်း — ဖော်ပြချက်များ၊ မေးခွန်းများ၊ ညွှန်ကြားချက်နှင့် တောင်းဆိုချက်များကို လေ့ကျင့်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is reported speech?",
+          "suggested_answer": "Reported speech is an act of reporting something that was said. No quotation marks are used."
+        },
+        {
+          "id": 2,
+          "question": "How do we change a Yes / No question into reported speech?",
+          "suggested_answer": "We use 'ask' as a reporting verb and 'if / whether' is used to introduce the reported clause. The question must be changed to a statement, e.g. He asked the new secretary if she could type."
+        },
+        {
+          "id": 3,
+          "question": "How do we report commands and requests?",
+          "suggested_answer": "The reporting verb 'tell' (or 'ask' for requests) is immediately followed by a noun or a pronoun object, and a to-infinitive / not to-infinitive is used to introduce the reported clause, e.g. The guard told us not to enter that area."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What happens to the verb in the reported clause when the reporting verb is in the past?",
+          "answer": "The verb in the reported clause will usually be in a past form, e.g. She said that she watched TV every day. The present tense is retained when the reported sentence deals with a general truth, e.g. She said that the Earth is round."
+        },
+        {
+          "id": 2,
+          "question": "Which time and place expressions change when changing direct speech to reported speech?",
+          "answer": "here → there, this → that, these → those, now → then, today → that day, tonight → that night, yesterday → the day before / the previous day, ago → before, tomorrow → the next day / the following day, next month / year → the following month / year."
+        }
+      ]
+    },
+    {
+      "id": "6d-listening-speaking",
+      "code": "6D",
+      "type": "Listening and Speaking",
+      "title": "6D Listening and Speaking: Winston Churchill and Alexander Fleming",
+      "titleMy": "နားထောင်ခြင်းနှင့် ပြောဆိုခြင်း - Winston Churchill နှင့် Alexander Fleming",
+      "intro": "A. Listen to the story and decide whether the given statements are TRUE (T) or FALSE (F). B. Work in pairs. Taking turns, one member says one of the following and the other reports what he / she has said by using the reported speech. C. Write three sentences — a statement, a question and a command / a request — and report what your friend has said in pairs.",
+      "introMy": "A. ဇာတ်ကြောင်းကို နားထောင်ပြီး ပေးထားသော အဆိုကြောင်းများ မှန် (TRUE) သို့မဟုတ် မှား (FALSE) ဖြစ်ကြောင်း ဆုံးဖြတ်ပါ။ B. အစုံလိုက် လေ့ကျင့်၍ တစ်ယောက်က အောက်ပါအကြောင်းအရာတစ်ခုကို ပြောပြီး အခြားတစ်ယောက်က သွယ်ဝိုက်ပြောဆိုခြင်းဖြင့် ဖော်ပြပါ။ C. ဖော်ပြချက်တစ်ခေါက်၊ မေးခွန်းတစ်ခေါက်နှင့် ညွှန်ကြားချက် / တောင်းဆိုချက်တစ်ခေါက် — စာကြောင်းသုံးကြောင်း ရေးပြီး အစုံလိုက် သူငယ်ချင်း ပြောသည့် စကားကို ဖော်ပြပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "One summer, the wealthy noble family decided to spend their weekend in a big city.",
+          "suggested_answer": "FALSE (the family spent their weekend in the country)"
+        },
+        {
+          "id": 2,
+          "question": "The children of the noble man were all boys.",
+          "suggested_answer": "TRUE"
+        },
+        {
+          "id": 3,
+          "question": "The son of the gardener rescued the drowning boy.",
+          "suggested_answer": "TRUE"
+        },
+        {
+          "id": 4,
+          "question": "The parents of the boy were very grateful to the gardener's son.",
+          "suggested_answer": "TRUE"
+        },
+        {
+          "id": 5,
+          "question": "About sixty years later, Winston Churchill became the President of Britain.",
+          "suggested_answer": "FALSE (Winston Churchill became the Prime Minister of Britain)"
+        },
+        {
+          "id": 6,
+          "question": "The Queen instructed the cabinet to get the best doctor to save Winston Churchill.",
+          "suggested_answer": "FALSE (the King of England instructed the cabinet)"
+        },
+        {
+          "id": 7,
+          "question": "The boy who was saved by Alexander Fleming 60 years ago was Winston Churchill.",
+          "suggested_answer": "TRUE"
+        },
+        {
+          "id": 8,
+          "question": "Alexander Fleming was the doctor who developed penicillin.",
+          "suggested_answer": "TRUE"
+        },
+        {
+          "id": 9,
+          "question": "Alexander Fleming saved the life of Winston Churchill twice.",
+          "suggested_answer": "TRUE"
+        },
+        {
+          "id": 10,
+          "question": "Alexander Fleming was the son of a wealthy noble family.",
+          "suggested_answer": "FALSE (Alexander Fleming was the son of a poor gardener)"
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Your friend says: \"I like watching videos on the internet.\" Report what he / she has said.",
+          "answer": "He / She said he / she liked watching videos on the internet."
+        },
+        {
+          "id": 2,
+          "question": "Your friend says: \"I am looking for a part-time job.\" Report what he / she has said.",
+          "answer": "He / She said he / she was looking for a part-time job."
+        },
+        {
+          "id": 3,
+          "question": "Your friend says: \"Come to me at 6 p.m. tomorrow.\" Report what he / she has said.",
+          "answer": "He / She told me to go to him / her at 6 p.m. the next day."
+        },
+        {
+          "id": 4,
+          "question": "Your friend says: \"Make me a cup of tea.\" Report what he / she has said.",
+          "answer": "He / She asked me to make him / her a cup of tea."
+        },
+        {
+          "id": 5,
+          "question": "Your friend says: \"What is your favourite fruit?\" Report what he / she has said.",
+          "answer": "He / She asked me what my favourite fruit was."
+        },
+        {
+          "id": 6,
+          "question": "Write three sentences — a statement, a question and a command / a request — and report what your friend has said in pairs.",
+          "answer": "Sample: A: I like playing online games. B: He said he liked playing online games. A: What is your favourite fruit? B: She asked me what my favourite fruit was. A: Make me a cup of tea. B: He told me to make him a cup of tea."
+        }
+      ],
+      "transcript": "Unit 6, The Prodigal Son.\n\nOnce in England, there was a very wealthy noble family. One summer, the family decided to spend the weekend on their estate in the countryside. While the parents were taking a stroll across a meadow, the children, all young boys, just ran about in the huge garden and went swimming in a pool. One of the boys began to drown, and the son of the gardener jumped into the pool and rescued him. When the parents came back from their stroll and heard about the accident, they were so grateful to the boy who had saved their son.\n\nAbout 60 years or so later, Winston Churchill, the Prime Minister of Britain, suffered from pneumonia. The King of England instructed the cabinet to get the best doctor in their country to save Winston Churchill. The best doctor at that time was Alexander Fleming, the doctor who developed penicillin. Churchill recovered, and when Dr. Alexander came to see him, Churchill, shaking the doctor's hand, said, \"Rarely has one man owed his life twice to the same rescuer.\"\n\nThe boy who nearly drowned 60 years or so before was Winston Churchill, and the youthful hero who saved him was Alexander Fleming, the gardener's son and developer of the antibiotic penicillin."
+    },
+    {
+      "id": "6e-writing",
+      "code": "6E",
+      "type": "Writing",
+      "title": "6E Writing: A Story of My Own",
+      "titleMy": "စာရေးသားခြင်း - ကျွန်ုပ်၏ ကိုယ်ပိုင် ဇာတ်လမ်း",
+      "intro": "Write a story of your own. It may be a true story or an imaginary one. You may use the following prompts: what the story is about, who the characters are, when it happened and what happened.",
+      "introMy": "မိမိကိုယ်တိုင် ဇာတ်လမ်းတစ်ခု ရေးပါ။ ဇာတ်လမ်းသည် အမှန်ဖြစ်စေ၊ စိတ်ကူးယဉ်ဖြစ်စေ ရနိုင်သည်။ အောက်ပါ အချက်များကို အသုံးပြုနိုင်သည် — ဇာတ်လမ်းသည် အကြောင်းအရာ၊ ဇာတ်ကောင်များ၊ ဖြစ်ပေါ်ချိန်နှင့် ဖြစ်ပေါ်ပုံ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Write a story of your own. It may be a true story or an imaginary one. You may use the following prompts.",
+          "suggested_answer": "Last summer, a terrible storm hit our village at midnight. The characters in my story are my father, my younger brother, our old neighbour Daw Htay and I. When the rain started pouring, my father woke everyone up and we moved the cattle into the shed and covered the rice sacks with tarpaulin sheets. Then we heard that Daw Htay, who lives alone, needed help, so my brother and I rushed to her house and helped her move her belongings upstairs. The next morning the flood went down and nobody was hurt. Daw Htay thanked us with a basket of mangoes. From that day, I learnt that helping one another is the greatest happiness."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What is your story about, and who are the characters?",
+          "answer": "My story is about the terrible storm that hit our village last summer. The characters are my father, my younger brother, our old neighbour Daw Htay and I."
+        },
+        {
+          "id": 2,
+          "question": "When did it happen and what happened?",
+          "answer": "It happened at midnight last summer. We moved the cattle and the rice sacks to safety and helped our neighbour move her belongings upstairs before the flood came. Nobody was hurt."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "lesson": "6A Reading",
+      "topic": "The Prodigal Son",
+      "pre_reading": [
+        {
+          "id": 1,
+          "question": "When you were young, who usually told you stories?",
+          "suggested_answer": "When I was young, my grandmother usually told me stories before going to bed."
+        },
+        {
+          "id": 2,
+          "question": "What is your favourite story? Why?",
+          "suggested_answer": "My favourite story is 'The Prodigal Son' because it teaches me that we should forgive those who realize their mistakes and come back to us."
+        },
+        {
+          "id": 3,
+          "question": "What kind of stories do you like?",
+          "suggested_answer": "I like folk tales and stories with a moral lesson because they are interesting and teach me good values."
+        }
+      ],
+      "reading_passage": {
+        "title": "6A Reading: The Prodigal Son",
+        "paragraphs": [
+          {
+            "paragraph_id": 1,
+            "lines": "1-5",
+            "english_text": "Once upon a time, there was a very wealthy man. He owned flocks of sheep, herds of cattle, orchards, vineyards, and wheat farms. He had two sons, Dan and Ben. Dan, the elder one, was serious, hardworking, and was a great help to his father. Ben, the younger one, was a happy-go-lucky young man and never bothered to help his father. All he kept thinking was how to have a good time with his friends.",
+            "burmese_explanation": "ရှေးအခါက အလွန်ချမ်းသာကြွယ်ဝသော သူဌေးတစ်ယောက် ရှိသည်။ သူသည် သိုးအုပ်များ၊ နွားအုပ်များ၊ သစ်သီးဥယျာဉ်များ၊ စပျစ်ခြံများနှင့် စပါးခင်းများကို ပိုင်ဆိုင်သည်။ သူ့တွင် ဒန်နှင့် ဘင်ဟူသော သားနှစ်ယောက် ရှိသည်။ သားကြီး ဒန်သည် တည်ငြိမ်ရိုးသား၍ ကြိုးစားလုပ်ကိုင်သဖြင့် ဖခင်အတွက် ကြီးမားသော အထောက်အကူ ဖြစ်သည်။ သားငယ် ဘင်မှာမူ ပေါ့ပေါ့ပါးပါး နေတတ်သော လူငယ်ဖြစ်ပြီး ဖခင်ကို ကူညီရန် မည်သည့်အခါမှ ဂရုမစိုက်ချေ။ သူအမြဲစဉ်းစားနေသည်မှာ မိတ်ဆွေများနှင့်အတူ အချိန်ကုန်ပျော်ရွှင်နေနည်းကိုသာ ဖြစ်သည်။"
+          },
+          {
+            "paragraph_id": 2,
+            "lines": "6-10",
+            "english_text": "One day, he said to his father, \"Father, give me my share of the inheritance. I wish to go to a distant land and lead an independent life.\" \"Are you sure you wish to do that? Do you think you'll make it?\" \"Of course, Father,\" he answered. \"I'm sure I'll succeed.\" \"All right then,\" said the father and gave Ben whatever the son was entitled to.",
+            "burmese_explanation": "တစ်နေ့တွင် သူသည် ဖခင်အား 'အဖေ၊ ကျွန်တော့် အမွေပိုင်းကို ပေးပါ။ ကျွန်တော် ဝေးလံသော နိုင်ငံတစ်ခုသို့ သွား၍ လွတ်လပ်စွာ နေထိုင်ချင်ပါသည်' ဟု ပြောသည်။ 'ဘယ်လောက်အထိ သေချာသလဲ။ နင် အောင်မြင်နိုင်မယ်ထင်လား' ဟု ဖခင်က မေးသည်။ 'ဖေ၊ ရှင်ပါ။ ကျွန်တော် အောင်မြင်မယ်ဆိုတာ သေချာပါတယ်' ဟု သူဖြေသည်။ 'အဲဒါဆို ရပြီ' ဟု ဖခင်က ပြော၍ သားသည် ရရှိထိုက်သည့် အမွေပစ္စည်းကို ဘင်အား ပေးလိုက်သည်။"
+          },
+          {
+            "paragraph_id": 3,
+            "lines": "11-12",
+            "english_text": "Father and son hugged and kissed each other as was the custom, said goodbye, and the young man left. He did not even say goodbye to his brother Dan or the workmen on his father's land.",
+            "burmese_explanation": "ဖခင်နှင့် သားသည် ဓလေ့ထုံးစံအတိုင်း တစ်ယောက်ကိုတစ်ယောက် ဖက်ထား၍ နမ်းတွေ့ကြသည်။ နှုတ်ဆက်ခဲ့ကြပြီး လူငယ်သည် ထွက်ခွာသွားသည်။ သူသည် မိမိ၏ ညီ ဒန်ကိုမှ၊ ဖခင်၏ ယာမြေပေါ်ရှိ အလုပ်သမားများကိုမှ နှုတ်ဆက်ခြင်း မပြုခဲ့ချေ။"
+          },
+          {
+            "paragraph_id": 4,
+            "lines": "13-19",
+            "english_text": "In a distant land, Ben led a very free and easy life, just squandering the money his father gave him. When his money ran out, he sold one piece of precious jewellery after another he had received from his father. In no time he became a pauper with nowhere to stay and nothing to eat. He had only the clothes he was wearing. Then, to keep his body and soul together, he worked as a swineherd of a wealthy man in that distant land. He became so poor that he had to eat what the swine were fed with.",
+            "burmese_explanation": "ဝေးလံသောနိုင်ငံတွင် ဘင်သည် အလွန်လွတ်လပ်ပေါ့ပါးစွာ နေထိုင်ခဲ့ပြီး ဖခင်ပေးသော ငွေများကို ဖြုန်းတီးခဲ့သည်။ ငွေကုန်ခမ်းသောအခါ ဖခင်ထံမှရရှိခဲ့သော တန်ဖိုးရှိလက်ဝတ်ရတနာများကို တစ်ခုပြီးတစ်ခု ရောင်းချခဲ့သည်။ မကြာမီ သူသည် နေစရာ၊ စားစရာမရှိသော ဆင်းရဲသားတစ်ဦး ဖြစ်သွားသည်။ ဝတ်စရာအဝတ်အစားအနည်းငယ်သာ ကျန်တော့သည်။ ထို့နောက် အသက်မွေးနိုင်ရန် ထိုဝေးလံသောနိုင်ငံရှိ ချမ်းသာသူတစ်ဦး၏ ဝက်များကို ထိန်းကျောင်းသည့်အလုပ် လုပ်ခဲ့ရသည်။ သူသည် ဝက်များစားသောအစာကိုပင် စားရသည့်အထိ ဆင်းရဲသွားသည်။"
+          },
+          {
+            "paragraph_id": 5,
+            "lines": "20-24",
+            "english_text": "\"I'm not even half as rich as my father's workmen,\" he often thought sadly. \"I think I should go back to my father, but I'm afraid. He would certainly drive me away,\" he often said to himself. One day he fell ill. He had nothing to eat, and he was in rags. He decided to go back to his father and he did.",
+            "burmese_explanation": "'ကျွန်တော့် ဖခင်၏ အလုပ်သမားများထက် တစ်ဝက်မျှလောက်ပင် ချမ်းသာသည်မျှ မရှိချေ' ဟု သူသည် ဝမ်းနည်းစွာ မကြာခဏ စဉ်းစားမိသည်။ 'ဖခင်ထံသို့ ပြန်သင့်သည်ထင်သည်။ သို့သော် ကြောက်သည်။ ဖခင်က နှင်ထုတ်ပစ်လိမ့်မည်' ဟု သူသည် မကြာခဏ ကိုယ့်ကိုယ်ကိုယ် ပြောနေတတ်သည်။ တစ်နေ့တွင် သူ နာများသည်။ စားရန်လည်း မရှိ၊ အဝတ်အစားလည်း ပြဲနေသည်။ သူသည် ဖခင်ထံသို့ ပြန်ရန် ဆုံးဖြတ်ခဲ့သည်။ ပြန်လည်း ခဲ့သည်။"
+          },
+          {
+            "paragraph_id": 6,
+            "lines": "25-28",
+            "english_text": "He was still at a distance from his father's house when his father saw him and came rushing towards him. His father hugged him and kissed him and welcomed him. He called his servants and said to them, \"Some of you, wash my son up and dress him up in the best of clothing. Some others, go kill the fatted calf and prepare a grand meal. We shall celebrate.\"",
+            "burmese_explanation": "သူသည် ဖခင်၏ အိမ်နှင့် အကွာအဝေး ရှိနေသေးစဉ်မှာပင် ဖခင်က မြင်၍ လျင်မြန်စွာ လိုက်လာသည်။ ဖခင်သည် သူ့အား ဖက်ထား၍ နမ်းတွေ့ကာ ကြိုဆိုသည်။ အစေခစ်များကို ခေါ်၍ 'အချို့က သားငယ်ကို ရေချိုးပေးပြီး အကောင်းဆုံး အဝတ်အစားများ ဝတ်ဆင်ပေးကြပါ။ အချို့က အဆီဖြူးသော နွားငယ်ကို သတ်၍ စားပွဲကြီး ပြင်ဆင်ကြပါ။ ကျွန်ုပ်တို့ ပျော်ရွှင်စွာ ကျင်းပကြမည်' ဟု ပြောသည်။"
+          },
+          {
+            "paragraph_id": 7,
+            "lines": "29-30",
+            "english_text": "Just then, his elder son Dan got back from the orchards and said, \"What's going on?\" One of the workmen answered, \"Your younger brother is back and your father is going to celebrate.\"",
+            "burmese_explanation": "ထိုအချိန် တစ်ချိန်တည်းမှာပင် သူ၏ သားကြီး ဒန်သည် သစ်သီးဥယျာဉ်မှ ပြန်ရောက်လာ၍ 'ဘာဖြစ်နေကြလဲ' ဟု မေးသည်။ အလုပ်သမားတစ်ယောက်က 'မင်း၏ ညီငယ် ပြန်ရောက်လာပြီဖြစ်၍ မင်း၏ ဖခင်က ပျော်ရွှင်စွာ ကျင်းပရန် ပြင်ဆင်နေသည်' ဟု ဖြေသည်။"
+          },
+          {
+            "paragraph_id": 8,
+            "lines": "31-36",
+            "english_text": "Dan went to his father and said, \"Father, why are you doing all this for the naughty prodigal son? He deserves to be driven out.\" \"No, Dan,\" said the father, \"Yes, your brother was naughty but he has repented of his folly and has come back. You lost a brother, and I lost a son, but now we have found him. We should rejoice and celebrate.\"",
+            "burmese_explanation": "ဒန်သည် ဖခင်ထံသို့ သွား၍ 'အဖေ၊ ပစ္စည်းများကို ဖြုန်းတီးတတ်သော ရိုင်းစိုင်းသည့် သားငယ်အတွက် ဒီလောက် လုပ်ပေးနေတာ ဘာကြောင့်လဲ။ သူ နှင်ထုတ်ခြင်း ခံရထိုက်တယ်' ဟု ပြောသည်။ 'မဟုတ်ပါဘူး ဒန်' ဟု ဖခင်က ပြောသည်။ 'ဖြစ်သည်၊ မင်း၏ ညီသည် ရိုင်းစိုင်းခဲ့သော်လည်း မိမိ၏ အမှားကို နောင်တရသွားပြီး ပြန်လာခဲ့သည်။ ညီတစ်ယောက် ဆုံးရှုံးခဲ့ရ၍ သားတစ်ယောက် ဆုံးရှုံးခဲ့ရသည်။ သို့သော် ယခု ပြန်တွေ့ရှိပြီ ဖြစ်သည်။ ကျွန်ုပ်တို့ ဝမ်းသာစွာ ကျင်းပသင့်သည်'"
+          }
+        ]
+      },
+      "comprehension": {
+        "part_A": {
+          "instructions": "Give a short answer to each question below.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "question": "What did Ben ask for from his father and why?",
+              "answer": "He asked for his share of the inheritance because he wished to go to a distant land and lead an independent life."
+            },
+            {
+              "question_number": 2,
+              "question": "What kind of life did Ben lead at a distant land?",
+              "answer": "He led a very free and easy life, just squandering the money his father gave him."
+            },
+            {
+              "question_number": 3,
+              "question": "What did Ben have to eat when working as a swineherd?",
+              "answer": "He had to eat what the swine were fed with."
+            },
+            {
+              "question_number": 4,
+              "question": "What does the phrase 'he did' in line 24 mean?",
+              "answer": "It means he went back to his father."
+            },
+            {
+              "question_number": 5,
+              "question": "What did Dan think that his brother deserved?",
+              "answer": "He thought that his brother deserved to be driven out."
+            }
+          ]
+        },
+        "part_B": {
+          "instructions": "Give a full-sentence answer to each question below.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "question": "The word 'prodigal' in the title is similar in meaning to ______ (a. wasting a lot of one's time; b. spending a large amount of money without thinking of the future; c. having a very good ability)",
+              "answer": "b. spending a large amount of money without thinking of the future"
+            },
+            {
+              "question_number": 2,
+              "question": "What are the differences between Dan and Ben?",
+              "answer": "Dan, the elder brother, was serious, hardworking, and was a great help to his father, while Ben, the younger one, was a happy-go-lucky young man who never bothered to help his father and only thought of having a good time with his friends."
+            },
+            {
+              "question_number": 3,
+              "question": "What do you think the phrase 'make it' in line 8 means?",
+              "answer": "I think 'make it' means to succeed in living an independent life in a distant land."
+            },
+            {
+              "question_number": 4,
+              "question": "What does 'his' in line 12 refer to?",
+              "answer": "'His' refers to Ben, the young man who left his father's house."
+            },
+            {
+              "question_number": 5,
+              "question": "When Ben ran out of money in a distant land, what did he do?",
+              "answer": "He sold one piece of precious jewellery after another that he had received from his father."
+            },
+            {
+              "question_number": 6,
+              "question": "What did Ben think that his father would do to him if he went back home?",
+              "answer": "He thought that his father would certainly drive him away."
+            },
+            {
+              "question_number": 7,
+              "question": "What did Ben's father do when he saw his son at a distance?",
+              "answer": "He came rushing towards him, hugged him, kissed him and welcomed him."
+            },
+            {
+              "question_number": 8,
+              "question": "When Ben got home what did his father ask his servants to do?",
+              "answer": "He asked some of them to wash his son up and dress him up in the best of clothing, and some others to kill the fatted calf and prepare a grand meal because he wanted to celebrate."
+            },
+            {
+              "question_number": 9,
+              "question": "If you were Dan, how would you feel when your brother, Ben came home?",
+              "answer": "If I were Dan, I would feel surprised and a little angry at first, but I would be happy to see my brother safe and well again."
+            },
+            {
+              "question_number": 10,
+              "question": "If you were the father of Dan and Ben, what would you do when Ben came back? Why?",
+              "answer": "If I were the father, I would forgive him and welcome him home, because he repented of his folly and came back, so we should rejoice and celebrate."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson": "6B Vocabulary",
+      "topic": "Phrasal Verbs with 'Run' & 'Say' and 'Tell'",
+      "part_A": {
+        "instructions": "Study each phrasal verb and its meaning. Then complete the following sentences with the correct forms of the phrasal verbs given above.",
+        "words": [
+          {
+            "number": 1,
+            "word": "run after",
+            "letter": "a",
+            "meaning": "chase"
+          },
+          {
+            "number": 2,
+            "word": "run down",
+            "letter": "b",
+            "meaning": "lose power or stop working"
+          },
+          {
+            "number": 3,
+            "word": "run into someone",
+            "letter": "c",
+            "meaning": "meet someone unexpectedly"
+          },
+          {
+            "number": 4,
+            "word": "run on",
+            "letter": "d",
+            "meaning": "be powered by"
+          },
+          {
+            "number": 5,
+            "word": "run out of",
+            "letter": "e",
+            "meaning": "have none left"
+          },
+          {
+            "number": 6,
+            "word": "run over",
+            "letter": "f",
+            "meaning": "hit with a vehicle (car, train, truck)"
+          },
+          {
+            "number": 7,
+            "word": "run through",
+            "letter": "g",
+            "meaning": "do something quickly"
+          }
+        ],
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "After travelling for three hours, our car ________ petrol.",
+            "answer": "ran out of"
+          },
+          {
+            "question_number": 2,
+            "text": "The man was driving at top speed when he ________ a dog.",
+            "answer": "ran over"
+          },
+          {
+            "question_number": 3,
+            "text": "I didn't have time to read the essay thoroughly, so I just ________ it.",
+            "answer": "ran through"
+          },
+          {
+            "question_number": 4,
+            "text": "What sort of fuel does the car ________?",
+            "answer": "run on"
+          },
+          {
+            "question_number": 5,
+            "text": "Last night I ________ a childhood friend of mine at a concert.",
+            "answer": "ran into"
+          },
+          {
+            "question_number": 6,
+            "text": "I can't use my calculator. I think the battery has ________.",
+            "answer": "run down"
+          },
+          {
+            "question_number": 7,
+            "text": "While I ________ my cat, I tripped over a stone and fell.",
+            "answer": "was running after"
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Study the pointers — Say + something, Tell + somebody + something. Then complete each sentence, using the correct form of 'say' or 'tell'.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "Thida ________ she would join us after work.",
+            "answer": "said"
+          },
+          {
+            "question_number": 2,
+            "text": "He ________ the police about the car he had lost.",
+            "answer": "told"
+          },
+          {
+            "question_number": 3,
+            "text": "Nilar ________ us that she could not come to the party.",
+            "answer": "told"
+          },
+          {
+            "question_number": 4,
+            "text": "They ________ us they were going to the museum that afternoon.",
+            "answer": "told"
+          },
+          {
+            "question_number": 5,
+            "text": "I agree with what you ________ to some extent.",
+            "answer": "say"
+          },
+          {
+            "question_number": 6,
+            "text": "The teacher ________ the children to stop chattering in class.",
+            "answer": "told"
+          },
+          {
+            "question_number": 7,
+            "text": "People ________ that girls spend more time worrying about how they look than boys do.",
+            "answer": "say"
+          },
+          {
+            "question_number": 8,
+            "text": "Don't hesitate to ________ me if you need anything.",
+            "answer": "tell"
+          },
+          {
+            "question_number": 9,
+            "text": "I ________ the boy a story that made his hair stand on end.",
+            "answer": "told"
+          },
+          {
+            "question_number": 10,
+            "text": "I think it's time for me to ________ what I really think.",
+            "answer": "say"
+          },
+          {
+            "question_number": 11,
+            "text": "I just stopped by to ________ hello.",
+            "answer": "say"
+          },
+          {
+            "question_number": 12,
+            "text": "He left without ________ goodbye.",
+            "answer": "saying"
+          },
+          {
+            "question_number": 13,
+            "text": "He needs to carefully ________ them the truth.",
+            "answer": "tell"
+          },
+          {
+            "question_number": 14,
+            "text": "I wish to ________ 'thank you' for all you've done for me.",
+            "answer": "say"
+          },
+          {
+            "question_number": 15,
+            "text": "Can you please ________ me what time the train leaves?",
+            "answer": "tell"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": "6C Grammar",
+      "topic": "Reported Speech",
+      "part_A": {
+        "instructions": "Change the following into the reported speech.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "She said, \"I travel a lot in my job.\"",
+            "answer": "She said that she travelled a lot in her job."
+          },
+          {
+            "question_number": 2,
+            "text": "Mother said, \"I don't see any stranger here.\"",
+            "answer": "Mother said that she didn't see any stranger there."
+          },
+          {
+            "question_number": 3,
+            "text": "Ni Ni said, \"They have already had their lunch.\"",
+            "answer": "Ni Ni said that they had already had their lunch."
+          },
+          {
+            "question_number": 4,
+            "text": "Thuzar said, \"I'm leaving for Nay Pyi Taw tomorrow.\"",
+            "answer": "Thuzar said that she was leaving for Nay Pyi Taw the next day / the following day."
+          },
+          {
+            "question_number": 5,
+            "text": "\"I saw a crocodile in the river 10 years ago,\" said Su Su.",
+            "answer": "Su Su said that she had seen a crocodile in the river 10 years before."
+          },
+          {
+            "question_number": 6,
+            "text": "\"I have just turned off the light,\" said Thuta.",
+            "answer": "Thuta said that he had just turned off the light."
+          },
+          {
+            "question_number": 7,
+            "text": "\"Mom, I have already done my homework,\" said Nilar.",
+            "answer": "Nilar told her mom that she had already done her homework."
+          },
+          {
+            "question_number": 8,
+            "text": "Zaw Zaw said, \"My friends and I are going swimming this weekend.\"",
+            "answer": "Zaw Zaw said that his friends and he were going swimming that weekend."
+          },
+          {
+            "question_number": 9,
+            "text": "Our teacher said, \"I want you to concentrate on your studies.\"",
+            "answer": "Our teacher said that he / she wanted us to concentrate on our studies."
+          },
+          {
+            "question_number": 10,
+            "text": "My uncle said, \"If you work harder, you will get better grades.\"",
+            "answer": "My uncle said that if I worked harder, I would get better grades."
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Change the following into the direct speech.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "Marlar asked Thuzar if she had been to Singapore.",
+            "answer": "Marlar said to Thuzar, \"Have you been to Singapore?\""
+          },
+          {
+            "question_number": 2,
+            "text": "My English teacher asked if I wanted to speak English fluently.",
+            "answer": "My English teacher said to me, \"Do you want to speak English fluently?\""
+          },
+          {
+            "question_number": 3,
+            "text": "My sister asked me what plan I had that day.",
+            "answer": "My sister said to me, \"What plan do you have today?\""
+          },
+          {
+            "question_number": 4,
+            "text": "My father asked me if I was willing to work harder.",
+            "answer": "My father said to me, \"Are you willing to work harder?\""
+          },
+          {
+            "question_number": 5,
+            "text": "The teacher asked Myintzu why she was late again.",
+            "answer": "The teacher said to Myintzu, \"Why are you late again?\""
+          },
+          {
+            "question_number": 6,
+            "text": "Thin Thin asked Ohnmar when the last coach to Mandalay left.",
+            "answer": "Thin Thin said to Ohnmar, \"When does the last coach to Mandalay leave?\""
+          },
+          {
+            "question_number": 7,
+            "text": "The teacher asked Ko Toe what his favourite subject was.",
+            "answer": "The teacher said to Ko Toe, \"What is your favourite subject?\""
+          },
+          {
+            "question_number": 8,
+            "text": "Aye Aye asked why I looked so sad that day.",
+            "answer": "Aye Aye said to me, \"Why do you look so sad today?\""
+          },
+          {
+            "question_number": 9,
+            "text": "My aunt asked how often I took out the trash.",
+            "answer": "My aunt said to me, \"How often do you take out the trash?\""
+          },
+          {
+            "question_number": 10,
+            "text": "My neighbour asked me if I had seen her/his dog.",
+            "answer": "My neighbour said to me, \"Have you seen my dog?\""
+          }
+        ]
+      },
+      "part_C": {
+        "instructions": "Change the following sentences into the reported speech.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "My uncle warned me, \"Don't waste your time playing online games.\"",
+            "answer": "My uncle warned me not to waste my time playing online games."
+          },
+          {
+            "question_number": 2,
+            "text": "His mother told him, \"Study harder because this is your last chance.\"",
+            "answer": "His mother told him to study harder because that was his last chance."
+          },
+          {
+            "question_number": 3,
+            "text": "The man said to the stranger, \"Go down the street and then turn left.\"",
+            "answer": "The man told the stranger to go down the street and then turn left."
+          },
+          {
+            "question_number": 4,
+            "text": "Mother said to me, \"Tidy up your bed every day.\"",
+            "answer": "Mother told me to tidy up my bed every day."
+          },
+          {
+            "question_number": 5,
+            "text": "\"Lend me your camera for a day, Cho Cho,\" said her brother.",
+            "answer": "Her brother asked her to lend him her camera for a day."
+          },
+          {
+            "question_number": 6,
+            "text": "\"Avoid eating unhealthy food,\" said the doctor to her patient.",
+            "answer": "The doctor told her patient to avoid eating unhealthy food."
+          },
+          {
+            "question_number": 7,
+            "text": "Mother said to me, \"Hurry or you'll be late for school.\"",
+            "answer": "Mother told me to hurry or I would be late for school."
+          },
+          {
+            "question_number": 8,
+            "text": "Our teacher asked us, \"Give your opinion on this statement.\"",
+            "answer": "Our teacher asked us to give our opinion on that statement."
+          },
+          {
+            "question_number": 9,
+            "text": "My aunt said to us, \"Enjoy some fresh strawberries.\"",
+            "answer": "My aunt told us to enjoy some fresh strawberries."
+          },
+          {
+            "question_number": 10,
+            "text": "\"Please give me a few weeks to make up my mind,\" said Nilar to Kyi Pyar.",
+            "answer": "Nilar asked Kyi Pyar to give her a few weeks to make up her mind."
+          }
+        ]
+      }
+    }
+  ]
+}

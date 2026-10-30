@@ -1,0 +1,728 @@
+{
+  "unit": "UNIT 8",
+  "unitTitle": "FOOD CHAIN",
+  "lessons": [
+    {
+      "id": "8a-reading",
+      "code": "8A",
+      "type": "Reading",
+      "title": "8A Reading: Food Chain",
+      "titleMy": "စာဖတ်ခြင်း - အစာကွင်းဆက်",
+      "intro": "Read the passage about the food chain and answer the questions. Find out how plants make their own food, what scavengers and decomposers do, and how food chains are connected with one another in a food web.",
+      "introMy": "အစာကွင်းဆက် (food chain) အကြောင်း စာပိုဒ်ကို ဖတ်၍ မေးခွန်းများကို ဖြေပါ။ အပင်များသည် မိမိတို့၏ အစားအစာကို မည်သို့ ပြုလုပ်သည်၊ အစာကျန်စားသည့် တိရစ္ဆာန်များ (scavengers) နှင့် ပြိုကျစေသော သတ္တဝါများ (decomposers) သည် မည်သို့ လုပ်ဆောင်သည်နှင့် အစာကွင်းဆက်များသည် အစာကွန်ရက် (food web) အဖြစ် မည်သို့ တွဲဖက်နေသည်တို့ကို လေ့လာပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "How do plants make their food?",
+          "suggested_answer": "Plants make their own food by using carbon dioxide from the air and water from the soil in the presence of sunlight as they possess green pigments."
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between plants and animals?",
+          "suggested_answer": "Plants can make their own food, but animals cannot make their own food, so they must eat plants or other living things."
+        },
+        {
+          "id": 3,
+          "question": "What do scavengers do?",
+          "suggested_answer": "Scavengers, such as vultures, crows, hyenas and jackals, eat the remains of what other animals have killed and eaten, so what they do is a kind of cleaning up job."
+        },
+        {
+          "id": 4,
+          "question": "What do decomposers do?",
+          "suggested_answer": "Decomposers, which are bacteria and fungi, change all rotting flesh and bones into nutrients, so they do the final cleaning up work and are sometimes called \"garbage collectors\"."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What is a food web?",
+          "answer": "A food web is the connection of food chains with many other food chains. A complete food web might include 50 or more living things."
+        },
+        {
+          "id": 2,
+          "question": "Why are decomposers sometimes called \"garbage collectors\"?",
+          "answer": "Because they do the final cleaning up work by changing all rotting flesh and bones left behind into nutrients."
+        }
+      ]
+    },
+    {
+      "id": "8b-vocabulary",
+      "code": "8B",
+      "type": "Vocabulary",
+      "title": "8B Vocabulary: Phrasal Verbs with 'up' and 'behind'",
+      "titleMy": "ဝေါဟာရ - 'up' နှင့် 'behind' ပါဝင်သော Phrasal Verbs",
+      "intro": "Learn what a phrasal verb is, study the phrasal verbs with 'up' and 'behind', and complete the sentences with the correct forms of the phrasal verbs given.",
+      "introMy": "Phrasal verb ဟူသည် အဘယ်နည်း လေ့လာပြီး 'up' နှင့် 'behind' ပါဝင်သော phrasal verbs များကို လေ့လာကာ ပေးထားသော phrasal verbs များ၏ မှန်ကန်သည့် ပုံစံများဖြင့် ဝါကျများကို ဖြည့်စွက်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is a phrasal verb?",
+          "suggested_answer": "A phrasal verb is a verb followed by an adverb, a preposition, or both. It is usually used with an idiomatic meaning, which is often quite different from the literal meaning of the individual words, e.g., put up with = tolerate, stand for = represent."
+        },
+        {
+          "id": 2,
+          "question": "What does the phrasal verb 'bring up' mean?",
+          "suggested_answer": "It means 'look after a child until maturity', e.g., Thuzar was brought up by her aunt as both her parents were working in another town."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What does 'use up' mean?",
+          "answer": "It means 'use something until none is left', e.g., Don't use up all your money before the end of the month."
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between 'stay up' and 'stay behind'?",
+          "answer": "'Stay up' means 'go to bed later than usual', e.g., Don't stay up late tonight, whereas 'stay behind' means 'remain where one is while others leave', e.g., Ni Ni had to stay behind after class."
+        }
+      ]
+    },
+    {
+      "id": "8c-grammar",
+      "code": "8C",
+      "type": "Grammar",
+      "title": "8C Grammar: The Passive Voice without Agents and Omission of Verbs",
+      "titleMy": "သဒ္ဒါ - Agent မပါဝင်သော Passive Voice နှင့် ကြိယာချန်လှပ်ခြင်း",
+      "intro": "Learn when the passive voice is used without agents, practise changing sentences into the passive voice, and shorten sentences by omitting the repeated verbs.",
+      "introMy": "Passive voice ကို agent မပါဝင်ဘဲ မည်သည့်အခါ အသုံးပြုသည်ကို လေ့လာပြီး စာကြောင်းများကို passive voice သို့ ပြောင်းလဲခြင်းနှင့် ထပ်ခါထပ်ခါ ပါဝင်သော ကြိယာများကို ချန်လှပ်၍ ဝါကျများကို တိုတောင်းစေခြင်းတို့ကို လေ့ကျင့်ပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "When is the passive voice used without an agent?",
+          "suggested_answer": "The passive is used without an agent when the agent (the person who does the action) is unknown, unimportant or not obvious from the context, e.g., \"John Lennon, the famous singer, was shot.\" It is also used when the action is more important than the agent, as in processes, instructions, events, reports, headlines, news items and advertisements."
+        },
+        {
+          "id": 2,
+          "question": "What can be omitted when we shorten the sentence \"Grass is eaten by grasshoppers, and grasshoppers are eaten by frogs; and frogs are eaten by snakes and snakes are eaten by hawks.\"?",
+          "suggested_answer": "The repeated verbs are omitted: \"Grass is eaten by grasshoppers, grasshoppers by frogs, frogs by snakes and snakes by hawks.\""
+        },
+        {
+          "id": 3,
+          "question": "Give an example of a passive sentence in which the agent is unknown.",
+          "suggested_answer": "\"John Lennon, the famous singer, was shot.\" (We don't know who shot him.)"
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Change \"People speak English all over the world.\" into the passive.",
+          "answer": "English is spoken all over the world."
+        },
+        {
+          "id": 2,
+          "question": "Shorten \"I was born in Yangon; my elder brother was born in Taunggyi and my sister was born in Dawei.\" by omitting the repeated verbs.",
+          "answer": "I was born in Yangon; my elder brother in Taunggyi and my sister in Dawei."
+        }
+      ]
+    },
+    {
+      "id": "8d-listening-speaking",
+      "code": "8D",
+      "type": "Listening and Speaking",
+      "title": "8D Listening and Speaking: The Food Animals Eat and Eating Habits",
+      "titleMy": "နားထောင်ခြင်းနှင့် ပြောဆိုခြင်း - တိရစ္ဆာန်များ စားသော အစားအစာနှင့် စားသောက်ပုံ အလေ့အကျင့်",
+      "intro": "A. Listen and complete the table with the food some animals eat. B. Listen again and fill the blanks. C. Put the food items below into the correct columns. D. In pairs, ask and answer about each other's eating habits. E. Tell the class what your partner said.",
+      "introMy": "A. အသံဖိုင်ကို နားထောင်ပြီး အချို့သော တိရစ္ဆာန်များ စားသော အစားအစာများဖြင့် ဇယားကို ဖြည့်ပါ။ B. ထပ်မံ နားထောင်၍ စာလုံးထိုးများကို ဖြည့်ပါ။ C. အစားအစာများကို မှန်ကန်သော ကော်လံများတွင် ခွဲခြားပါ။ D. အစုံလိုက် တစ်ယောက်နှင့်တစ်ယောက် စားသောက်ပုံ အလေ့အကျင့်များအကြောင်း မေးပြီး ဖြေပါ။ E. မိမိ၏ စုံတွဲက ပြောခဲ့သည့်အရာကို အတန်းသို့ ပြန်ပြောပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Listen and complete the table: rabbits and rats eat ________.",
+          "suggested_answer": "hard grains and nuts"
+        },
+        {
+          "id": 2,
+          "question": "Listen and complete the table: frogs eat ________.",
+          "suggested_answer": "insects (caught with its long sticky tongue)"
+        },
+        {
+          "id": 3,
+          "question": "Listen and complete the table: bees and butterflies eat ________.",
+          "suggested_answer": "nectar from plants (sucked up through a long tube)"
+        },
+        {
+          "id": 4,
+          "question": "Animals like squirrels eat hard ________ and nuts.",
+          "suggested_answer": "grains"
+        },
+        {
+          "id": 5,
+          "question": "Snakes swallow their food because they do not have chewing ________.",
+          "suggested_answer": "teeth"
+        },
+        {
+          "id": 6,
+          "question": "The frog uses its long sticky ________ to catch its prey.",
+          "suggested_answer": "tongue"
+        },
+        {
+          "id": 7,
+          "question": "Cows and ________ first swallow their food whole and bring it back into their mouth and keep chewing it for hours.",
+          "suggested_answer": "buffaloes"
+        },
+        {
+          "id": 8,
+          "question": "Dogs and cats use their ________ to lap up their food.",
+          "suggested_answer": "tongues"
+        },
+        {
+          "id": 9,
+          "question": "The giraffe uses its ________ to reach tall trees.",
+          "suggested_answer": "long neck (giraffes reach leaves, seeds, fruits and branches high up in trees)"
+        },
+        {
+          "id": 10,
+          "question": "The elephant uses its ________ to take in food.",
+          "suggested_answer": "trunk"
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "Put the food items below into the correct columns (Fruit / Meat / Vegetables): bananas, beef, beans, broccoli, carrots, chicken, grapes, lamb, mutton, mushrooms, oranges, pears, pork, potatoes, watermelons.",
+          "translation": "အောက်ပါ အစားအစာများကို မှန်ကန်သော ကော်လံများ (သစ်သီး၊ အသား၊ ဟင်းသီးဟင်းရွက်) တွင် ခွဲထည့်ပါ။",
+          "answer": "Fruit: bananas, grapes, oranges, pears, watermelons. Meat: beef, chicken, lamb, mutton, pork. Vegetables: beans, broccoli, carrots, mushrooms, potatoes."
+        },
+        {
+          "id": 2,
+          "question": "In pairs, ask and answer the six questions below about each other's eating habits.",
+          "answer": "Sample answer: No, I don't eat a lot of meat and fish. I eat chicken most often because it is easy to cook. Yes, I eat a lot of fruit and vegetables. I am not a vegetarian. Yes, I have had hotpot; I usually put meatballs, noodles and vegetables in the hotpot. My family usually cooks mont-hin-gah and rice with curry on special occasions."
+        },
+        {
+          "id": 3,
+          "question": "Tell the class what your partner said.",
+          "answer": "Sample answer: My partner does not eat a lot of meat and fish, but she eats a lot of fruit and vegetables. She is not a vegetarian. She has had hotpot, and she usually puts meatballs, noodles and vegetables in it. Her family usually cooks mont-hin-gah and rice with curry on special occasions."
+        },
+        {
+          "id": 4,
+          "question": "Do you eat a lot of meat and fish?",
+          "translation": "သင် အသားနဲ့ ငါးကို အများကြီး စားပါသလား။"
+        },
+        {
+          "id": 5,
+          "question": "What type of meat do you eat most often? Why?",
+          "translation": "ဘယ်အသားအမျိုးအစားကို အများဆုံး စားပါသလဲ။ ဘာကြောင့်လဲ။"
+        },
+        {
+          "id": 6,
+          "question": "Do you eat a lot of fruit and vegetables?",
+          "translation": "သစ်သီးနဲ့ ဟင်းသီးဟင်းရွက်တွေကို အများကြီး စားပါသလား။"
+        },
+        {
+          "id": 7,
+          "question": "Are you a vegetarian?",
+          "translation": "သင်က သက်သတ်လွတ်စားသူလား။"
+        },
+        {
+          "id": 8,
+          "question": "Have you ever had hotpot? If so, what do you usually put in it?",
+          "translation": "ဟော့ပေါ့ စားဖူးပါသလား။ စားဖူးရင် ဟော့ပေါ့ထဲမှာ ပုံမှန် ဘာတွေထည့်စားပါသလဲ။"
+        },
+        {
+          "id": 9,
+          "question": "What does your family usually cook on special occasions?",
+          "translation": "အထူးအခါသမယတွေမှာ သင့်မိသားစုက ပုံမှန် ဘာဟင်းချက်ပါသလဲ။"
+        }
+      ],
+      "transcript": "Food Chain\n\nLet us enter the animal world and see how some animals eat their food.\n\nAnimals like squirrels, rabbits and rats feed on hard grains and nuts. They bite these hard nuts with very sharp front cutting teeth. This is called gnawing.\n\nAnimals like snakes do not have chewing teeth. They do not chew their food. Instead, they swallow their food whole.\n\nAnimals like frogs have a long, sticky tongue to catch their prey. When a frog spots an insect, it sticks out its tongue and catches its prey. Then it rolls its tongue back into its mouth.\n\nInsects like bees and butterflies have a long tube to suck nectar from plants.\n\nAnimals like cows and buffaloes have a special way of eating their food. They first swallow their food whole and fill their stomach. Later, they bring it back into their mouth and keep chewing it for hours. This is known as ruminating, or chewing the cud.\n\nDogs and cats use their tongue to lap up their food.\n\nThe long necks of giraffes allow them to reach leaves, seeds, fruits and branches high up in trees.\n\nThe elephant uses its trunk to take in food."
+    },
+    {
+      "id": "8e-writing",
+      "code": "8E",
+      "type": "Writing",
+      "title": "8E Writing: A Food Chain of Your Own",
+      "titleMy": "စာရေးသားခြင်း - မိမိကိုယ်ပိုင် အစာကွင်းဆက်",
+      "intro": "Draw a food chain of your own, using arrows. Include at least 6 animals, insects and scavengers which are not mentioned in the passage. Then write about the food chain of your own.",
+      "introMy": "မြှား (→) များကို အသုံးပြု၍ မိမိကိုယ်ပိုင် အစာကွင်းဆက်တစ်ခု ဆွဲပါ။ စာပိုဒ်တွင် မပါဝင်သော တိရစ္ဆာန်၊ အင်းဆက်နှင့် အစာကျန်စားသည့် တိရစ္ဆာန်များ (scavengers) အနည်းဆုံး ၆ ကောင် ပါဝင်ရမည်။ ထို့နောက် မိမိ၏ အစာကွင်းဆက်အကြောင်း ရေးပါ။",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Draw a food chain of your own, using arrows. Include at least 6 animals, insects and scavengers which are not mentioned in the passage.",
+          "suggested_answer": "Sample answer: rice plant → grasshopper → chameleon → wild cat → python → eagle. When the eagle dies, scavengers such as vultures and crows eat its dead body, and ants and bacteria turn what is left into nutrients for plants."
+        },
+        {
+          "id": 2,
+          "question": "Then write about the food chain of your own.",
+          "suggested_answer": "Sample answer: My food chain starts with a rice plant. A grasshopper eats the rice plant, and a chameleon eats the grasshopper. Then a wild cat catches and eats the chameleon, and a python eats the wild cat. Finally, an eagle swoops down and eats the python. When the eagle dies, its dead body falls to the ground. Scavengers such as vultures and crows eat it, and ants and bacteria turn what is left into nutrients. The nutrients go back into the soil, and the rice plants use them to grow again. In this way, the food chain starts all over again."
+        }
+      ],
+      "bonusQuestions": [
+        {
+          "id": 1,
+          "question": "What is a food chain?",
+          "answer": "A food chain shows \"what is eaten by what\" in the form of a simple diagram with arrows, e.g., grass → rabbit → hawk."
+        },
+        {
+          "id": 2,
+          "question": "Give the useful language for writing about your food chain.",
+          "answer": "... is eaten by ...; ... eat(s) ...; Use arrows (→) to show \"what is eaten by what\"; ... do the cleaning up job; ... change ... into nutrients; The food chain starts all over again."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "lesson": "8A Reading",
+      "topic": "Food Chain",
+      "pre_reading": [
+        {
+          "id": 1,
+          "question": "What is a chain?",
+          "suggested_answer": "A chain is a connected series of metal rings, or a connected series of things, events or people in which each one is linked to the next."
+        },
+        {
+          "id": 2,
+          "question": "Can you guess what \"food chain\" could mean?",
+          "suggested_answer": "Sample answer: A food chain could mean a connected series of living things in which each one is eaten by the next, e.g., grass → rabbit → hawk."
+        },
+        {
+          "id": 3,
+          "question": "Name a few animals that eat grass.",
+          "suggested_answer": "Rabbits, cows, goats, sheep, deer, elephants, etc."
+        },
+        {
+          "id": 4,
+          "question": "Name a few animals that eat the animals that eat grass.",
+          "suggested_answer": "Hawks, tigers, lions, snakes, foxes, etc."
+        }
+      ],
+      "reading_passage": {
+        "title": "8A Reading: Food Chain",
+        "paragraphs": [
+          {
+            "paragraph_id": 1,
+            "lines": "1-10",
+            "english_text": "All living things need food. Plants are living things, so they need food. The question is: \"Where do plants get their food from?\" Well, plants make their own food by using carbon dioxide from the air and water from the soil in the presence of sunlight as they possess green pigments. Animals, on the other hand, cannot make their own food, so they must eat plants or other living things. For example, grass grows in a field, and we all know that \"rabbits eat grass, and hawks eat rabbits.\" Now, we may rewrite that sentence in the passive voice, and we will get: \"grass is eaten by rabbits, and rabbits are eaten by hawks.\" That is an example of a simple food chain. Now, instead of writing a full sentence, let us use an arrow (→) to show \"what is eaten by what.\" Then we get a simple diagram of a simple food chain like this: grass → rabbit → hawk",
+            "burmese_explanation": "သက်ရှိအားလုံးသည် အစာလိုအပ်သည်။ အပင်များသည် သက်ရှိများဖြစ်သောကြောင့် အစာလိုအပ်သည်။ မေးခွန်းမှာ 'အပင်များသည် မိမိတို့၏အစာကို မည်သည့်နေရာမှ ရသနည်း' ဟူ၍ ဖြစ်သည်။ အပင်များသည် လေထဲမှ ကာဗွန်ဒိုင်အောက်ဆိုက်နှင့် မြေဆီလွှာမှရေကို နေရောင်ခြည်ရှိသည့်အခါ အသုံးပြု၍ မိမိတို့အစာကို ကိုယ်တိုင်ပြုလုပ်နိုင်သည်။ အပင်များတွင် အစိမ်းရောင်ခြယ်ပစ္စည်းများ ပါဝင်သောကြောင့် ဖြစ်သည်။ တိရစ္ဆာန်များမှာမူ မိမိတို့အစာကို ကိုယ်တိုင်မပြုလုပ်နိုင်သဖြင့် အပင်များ သို့မဟုတ် အခြားတိရစ္ဆာန်များကို စားရသည်။ ဥပမာ၊ လယ်ကွင်းတွင် မြက်များ ပေါက်ရောက်သည်။ 'ယုန်များသည် မြက်ကိုစားပြီး သိုက်ငှက်များသည် ယုန်ကိုစားသည်' ဟု ကျွန်ုပ်တို့သိကြသည်။ ထိုဝါကျကို ခံရပြကြိယာဝါကျပုံစံဖြင့် ပြန်ရေးလျှင် 'မြက်ကို ယုန်များစားပြီး ယုန်များကို သိုက်ငှက်များစားသည်' ဟု ရသည်။ ဤသည် ရိုးရှင်းသော အစာကွင်းဆက်တစ်ခု၏ ဥပမာဖြစ်သည်။ ဝါကျအပြည့်အစုံရေးမည့်အစား မည်သည့်အရာကို မည်သည့်အရာက စားသည်ကို မြှားဖြင့် ပြသလျှင် အစာကွင်းဆက်ပုံစံမှာ မြက် → ယုန် → သိုက်ငှက် ဖြစ်သည်။"
+          },
+          {
+            "paragraph_id": 2,
+            "lines": "11-13",
+            "english_text": "Now, instead of writing \"grass is eaten by cows and cows are eaten by tigers,\" we may use a simple diagram like this: grass → cow → tiger",
+            "burmese_explanation": "ထို့အတူ 'မြက်ကို နွားများ စားသည်၊ နွားများကို ကျားများ စားသည်' ဟု ရေးရန်အစား ရိုးရှင်းသော ပုံစံတစ်ခုကို ဤသို့ အသုံးပြုနိုင်သည်- မြက် → နွား → ကျား။"
+          },
+          {
+            "paragraph_id": 3,
+            "lines": "14-20",
+            "english_text": "To understand better, let us take a little larger food chain where \"grass is eaten by grasshoppers, and grasshoppers by frogs, and frogs by snakes, and snakes by hawks.\" A simple diagram for that will be: grass → grasshopper → frog → snake → hawk. But when the hawks die one day, their bodies fall to earth, and they are eaten by ants and bacteria. Their bodies then decompose and become nutrients for plants. Study the diagram to understand the food chain. (Diagram labels: snake, hawk, frog, grasshopper, grass, nutrients, dead body of hawk, ants and bacteria)",
+            "burmese_explanation": "ပိုမိုကောင်းမွန်စွာ နားလည်ရန် အနည်းငယ် ကြီးမားသော အစာကွင်းဆက်တစ်ခုကို ကြည့်ကြပါစို့- 'မြက်ကို တောင်ပို့ကောင်များ စားသည်၊ တောင်ပို့ကောင်များကို ဖားများ စားသည်၊ ဖားများကို မြွေများ စားသည်၊ မြွေများကို သိုက်ငှက်များ စားသည်။' ယင်းအတွက် ရိုးရှင်းသော ပုံစံမှာ မြက် → တောင်ပို့ကောင် → ဖား → မြွေ → သိုက်ငှက် ဖြစ်သည်။ သို့သော် တစ်နေ့သောအခါ သိုက်ငှက်များ သေဆုံးလျှင် ၎င်းတို့၏ ခန္ဓာကိုယ်များသည် မြေသို့ ကျရောက်ပြီး ပိတုန်းများနှင့် ဘက်တီးရီးယားများက စားသုံးပစ်သည်။ ထို့နောက် ၎င်းတို့၏ ခန္ဓာကိုယ်များသည် ဆွေးမြေ့ပြိုကျသွားကာ အပင်များအတွက် အာဟာရဓာတ်များ ဖြစ်လာသည်။ အစာကွင်းဆက်ကို နားလည်ရန် ပုံကို လေ့လာပါ။"
+          },
+          {
+            "paragraph_id": 4,
+            "lines": "21-25",
+            "english_text": "Birds such as vultures and crows, and animals such as hyenas and jackals are called scavengers. These birds and animals eat the remains of what other animals have killed and eaten. In fact, vultures eat even the rotting flesh of dead animals. Thus, what these scavengers do is a kind of cleaning up job. However, there are still bones and tiny pieces of flesh left behind when the scavengers have eaten and gone away.",
+            "burmese_explanation": "လင်းယုန်နှင့် ကျီးကဲ့သို့သော ငှက်များ၊ ဟိုင်းနားနှင့် ကျားသစ်ကဲ့သို့သော တိရစ္ဆာန်များသည် အခြားတိရစ္ဆာန်များ စားပြီးနောက် ကျန်ရှိသော အကြွင်းအကျန်များကို စားကြသည်။ ထိုသတ္တဝါများကို အစာကျန်စားသတ္တဝါများဟု ခေါ်သည်။ လင်းယုန်များသည် သေဆုံးနေသောတိရစ္ဆာန်များ၏ ဆွေးမြေ့နေသောအသားကိုပင် စားကြသည်။ ထို့ကြောင့် ၎င်းတို့သည် သဘာဝကို သန့်ရှင်းစေသည့် အလုပ်တစ်မျိုးကို လုပ်ဆောင်ပေးသည်။ သို့သော် အစာကျန်စားသတ္တဝါများ စားပြီးနောက် အရိုးများနှင့် အလွန်သေးငယ်သော အသားအပိုင်းအစများ ကျန်ရှိနေသေးသည်။"
+          },
+          {
+            "paragraph_id": 5,
+            "lines": "26-31",
+            "english_text": "After the scavengers, come ants and other insects to eat up whatever is left behind. Then, come the decomposers. These are bacteria and fungi, and they change all rotting flesh and bones into nutrients. We can, therefore, say that decomposers do the final cleaning up work. For this reason, they are sometimes called \"garbage collectors\". And when plants eat these nutrients, they start the food chain all over again. Study the diagram to get a clear picture of a food chain. (Diagram labels: tiger, dead body, cow, grass, scavengers (vultures, crows, hyenas, etc.), decomposers (bacteria and fungi), nutrients)",
+            "burmese_explanation": "အစာကျန်စားသတ္တဝါများ စားပြီးနောက် ကျန်ရှိနေသောအရာများကို စားရန် ပိတုန်းနှင့် အခြားအင်းဆက်များ ရောက်လာကြသည်။ ထို့နောက် ဆွေးမြေ့နေသောအရာများကို ချေဖျက်သည့် သက်ရှိများ ရောက်လာသည်။ ၎င်းတို့မှာ ဘက်တီးရီးယားနှင့် မှိုများဖြစ်ပြီး ဆွေးမြေ့နေသော အသားနှင့် အရိုးများကို အာဟာရဓာတ်များအဖြစ် ပြောင်းလဲပေးသည်။ ထို့ကြောင့် ၎င်းတို့သည် နောက်ဆုံးအဆင့် သန့်ရှင်းရေးကို လုပ်ဆောင်ပေးသည်ဟု ဆိုနိုင်သည်။ အပင်များသည် ထိုအာဟာရဓာတ်များကို စုပ်ယူသည့်အခါ အစာကွင်းဆက်သည် ပြန်လည်စတင်သည်။ အစာကွင်းဆက်ကို ရှင်းလင်းစွာ မြင်နိုင်ရန် ပုံကို လေ့လာပါ။"
+          },
+          {
+            "paragraph_id": 6,
+            "lines": "32-39",
+            "english_text": "Moreover, some food chains are connected with many other food chains. This connection of food chains is called a food web. For example, squirrels eat nuts. Then, these squirrels become food for hawks, owls, or foxes. And when hawks, owls and foxes die, their dead bodies become food for scavengers. What the scavengers leave behind becomes food for decomposers. These decomposers change everything into nutrients. Then, nutrients become food for plants, and the food chain starts again. (Diagram labels: hawk, snake, owl, frog, fox, dead body, rabbit, grasshopper, squirrel, scavengers eat the dead body and decomposers turn it into nutrients, grass, plants / nuts, nutrients)",
+            "burmese_explanation": "အချို့အစာကွင်းဆက်များသည် အခြားအစာကွင်းဆက်များစွာနှင့် ဆက်နွယ်နေကြသည်။ အစာကွင်းဆက်များ ဤသို့ချိတ်ဆက်နေမှုကို အစာကွန်ရက်ဟု ခေါ်သည်။ ဥပမာ၊ ရှဉ့်များသည် သစ်စေ့များကို စားကြသည်။ ထို့နောက် ရှဉ့်များသည် သိုက်ငှက်၊ ဒီကော သို့မဟုတ် မြေခွေးတို့၏ အစာဖြစ်လာသည်။ ထိုတိရစ္ဆာန်များ သေဆုံးသောအခါ ၎င်းတို့၏ ကိုယ်ခန္ဓာများသည် အစာကျန်စားသတ္တဝါများ၏ အစာဖြစ်လာသည်။ ထိုသတ္တဝါများ ချန်ထားခဲ့သောအရာများကို ဆွေးမြေ့ပစ္စည်းများကို ချေဖျက်သည့် သက်ရှိများက စားသုံးကြသည်။ ထိုသက်ရှိများသည် အကြွင်းအကျန်များကို အာဟာရဓာတ်များအဖြစ် ပြောင်းလဲပေးသည်။ ထို့နောက် အာဟာရဓာတ်များသည် အပင်များအတွက် အစာဖြစ်လာပြီး အစာကွင်းဆက် ပြန်လည်စတင်သည်။"
+          },
+          {
+            "paragraph_id": 7,
+            "lines": "40-41",
+            "english_text": "The food web above is just a sample that shows only a few of the food chains that may exist in one small area. A complete food web might include 50 or more living things.",
+            "burmese_explanation": "အထက်ပါ အစာကွန်ရက်သည် နေရာသေးသေးလေးတစ်ခုတွင် ရှိနိုင်သည့် အစာကွင်းဆက်များစွာအနက်မှ အနည်းငယ်ကိုသာ ပြသထားသော နမူနာတစ်ခုသာ ဖြစ်သည်။ ပြီးပြည့်စုံသော အစာကွန်ရက်တစ်ခုတွင် သတ္တဝါ ၅၀ သို့မဟုတ် ထို့ထက်ပင် ပိုမို ပါဝင်နိုင်သည်။"
+          }
+        ]
+      },
+      "comprehension": {
+        "part_A": {
+          "instructions": "Read the passage and decide if the following statements are TRUE (T) or FALSE (F) or NOT MENTIONED (NM). Write T, F or NM in the brackets.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "text": "Both animals and plants need food.",
+              "answer": "T"
+            },
+            {
+              "question_number": 2,
+              "text": "Both animals and plants make their own food.",
+              "answer": "F"
+            },
+            {
+              "question_number": 3,
+              "text": "After being eaten by ants and bacteria, the bodies of animals decompose and become nutrients.",
+              "answer": "T"
+            },
+            {
+              "question_number": 4,
+              "text": "Nothing is left behind when the scavengers have eaten what other animals have killed or eaten.",
+              "answer": "F"
+            },
+            {
+              "question_number": 5,
+              "text": "Vultures eat what other animals have killed or eaten as well as the rotting flesh of dead animals.",
+              "answer": "T"
+            },
+            {
+              "question_number": 6,
+              "text": "The scavengers do the cleaning up of the remains of animals.",
+              "answer": "T"
+            },
+            {
+              "question_number": 7,
+              "text": "Nutrients are made up of magnesium, calcium and sulphur.",
+              "answer": "NM"
+            },
+            {
+              "question_number": 8,
+              "text": "The decomposers come before ants and other insects to eat up what is left by scavengers.",
+              "answer": "F"
+            },
+            {
+              "question_number": 9,
+              "text": "Decomposers are known as garbage collectors.",
+              "answer": "T"
+            },
+            {
+              "question_number": 10,
+              "text": "People eat scavengers and decomposers.",
+              "answer": "NM"
+            }
+          ]
+        },
+        "part_B": {
+          "instructions": "Answer the following questions in complete sentences.",
+          "exercises": [
+            {
+              "question_number": 1,
+              "question": "How do plants make their food?",
+              "answer": "Plants make their own food by using carbon dioxide from the air and water from the soil in the presence of sunlight as they possess green pigments."
+            },
+            {
+              "question_number": 2,
+              "question": "What is the difference between plants and animals?",
+              "answer": "Plants can make their own food, but animals cannot make their own food, so they must eat plants or other living things."
+            },
+            {
+              "question_number": 3,
+              "question": "What does the word \"their\" in line 4 refer to?",
+              "answer": "The word \"their\" refers to animals — animals cannot make their own food, so they must eat plants or other living things."
+            },
+            {
+              "question_number": 4,
+              "question": "Unlike plants, what must animals do to live?",
+              "answer": "Unlike plants, animals must eat plants or other living things to live."
+            },
+            {
+              "question_number": 5,
+              "question": "What animals do the cleaning up before the final cleaning up?",
+              "answer": "Ants and other insects eat up whatever the scavengers leave behind before the decomposers do the final cleaning up work."
+            },
+            {
+              "question_number": 6,
+              "question": "What does the word \"These\" in line 27 refer to?",
+              "answer": "The word \"These\" refers to the decomposers, which are bacteria and fungi."
+            },
+            {
+              "question_number": 7,
+              "question": "What do decomposers do to what is left behind by insects?",
+              "answer": "They change all rotting flesh and bones into nutrients."
+            },
+            {
+              "question_number": 8,
+              "question": "In addition to squirrels, name two other animals that eat nuts.",
+              "answer": "Sample answer: Mice and chipmunks. (Other possible answers: monkeys, parrots, wild pigs, jays, etc.)"
+            }
+          ]
+        },
+        "part_C": {
+          "instructions": "Complete the following table. Find one more example of each type of the living things mentioned in the passage. Then add two more of your own to each. An example each is given to help you.",
+          "headers": [
+            "LIVING THINGS",
+            "EXAMPLE GIVEN",
+            "ONE MORE FROM THE PASSAGE",
+            "TWO MORE OF YOUR OWN"
+          ],
+          "table_data": [
+            {
+              "category": "animals",
+              "example_given": "fox",
+              "from_passage": "rabbit (also: cow, tiger, squirrel, snake, frog)",
+              "own_examples": "Sample answer: lion, goat"
+            },
+            {
+              "category": "birds",
+              "example_given": "hawk",
+              "from_passage": "owl (also: vulture, crow)",
+              "own_examples": "Sample answer: eagle, sparrow"
+            },
+            {
+              "category": "decomposers",
+              "example_given": "bacteria",
+              "from_passage": "fungi",
+              "own_examples": "Sample answer: mould, mushroom"
+            },
+            {
+              "category": "insects",
+              "example_given": "ant",
+              "from_passage": "grasshopper",
+              "own_examples": "Sample answer: butterfly, beetle"
+            },
+            {
+              "category": "scavengers",
+              "example_given": "vulture",
+              "from_passage": "hyena (also: jackal, crow)",
+              "own_examples": "Sample answer: wild dog, raccoon"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson": "8B Vocabulary",
+      "topic": "Phrasal Verbs with 'up' and 'behind'",
+      "part_A": {
+        "instructions": "A phrasal verb is a verb followed by an adverb, a preposition, or both. It is usually used with an idiomatic meaning. This meaning is often quite different from the literal meaning of the individual words, e.g., put up with = tolerate, stand for = represent. Study the following phrasal verbs with 'up' and 'behind'.",
+        "headers": [
+          "PHRASAL VERB",
+          "MEANING"
+        ],
+        "table_data": [
+          {
+            "phrasal_verb": "bring up",
+            "meaning": "look after a child until maturity"
+          },
+          {
+            "phrasal_verb": "grow up",
+            "meaning": "develop into an adult"
+          },
+          {
+            "phrasal_verb": "stay up",
+            "meaning": "go to bed later than usual"
+          },
+          {
+            "phrasal_verb": "take up",
+            "meaning": "begin doing something as a hobby"
+          },
+          {
+            "phrasal_verb": "use up",
+            "meaning": "use something until none is left"
+          },
+          {
+            "phrasal_verb": "make up",
+            "meaning": "invent false stories"
+          },
+          {
+            "phrasal_verb": "fall behind",
+            "meaning": "fail to keep pace with others"
+          },
+          {
+            "phrasal_verb": "lag behind",
+            "meaning": "be late"
+          },
+          {
+            "phrasal_verb": "leave behind",
+            "meaning": "leave something, especially something you possess"
+          },
+          {
+            "phrasal_verb": "stay behind",
+            "meaning": "remain where one is while others leave"
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Complete the sentences with the correct forms of the phrasal verbs given above.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "Ni Ni had to ________ after class, as she hasn't finished writing her essay.",
+            "answer": "stay behind"
+          },
+          {
+            "question_number": 2,
+            "text": "I'm ________ gardening as it is said to be very relaxing.",
+            "answer": "taking up"
+          },
+          {
+            "question_number": 3,
+            "text": "Susan often ________ stories which are not true at all.",
+            "answer": "makes up"
+          },
+          {
+            "question_number": 4,
+            "text": "You could lose your job if you keep ________ with your work.",
+            "answer": "falling behind"
+          },
+          {
+            "question_number": 5,
+            "text": "Thuzar ________ by her aunt as both her parents were working in another town.",
+            "answer": "was brought up"
+          },
+          {
+            "question_number": 6,
+            "text": "I ________ in a small village where most people earn their living as farmers.",
+            "answer": "grew up"
+          },
+          {
+            "question_number": 7,
+            "text": "Tomorrow, we'll leave at 5 a.m., so don't ________ late tonight.",
+            "answer": "stay up"
+          },
+          {
+            "question_number": 8,
+            "text": "Don't ________ all your money before the end of the month.",
+            "answer": "use up"
+          },
+          {
+            "question_number": 9,
+            "text": "Ko Ko ________ Bo Bo in the race.",
+            "answer": "lagged behind"
+          },
+          {
+            "question_number": 10,
+            "text": "We accidentally ________ our luggage at the airport.",
+            "answer": "left behind"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": "8C Grammar",
+      "topic": "The Passive Voice without Agents and Omission of Verbs",
+      "part_A": {
+        "instructions": "Change each sentence below in the passive voice.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "You must keep the fire exit free all the time.",
+            "answer": "The fire exit must be kept free all the time."
+          },
+          {
+            "question_number": 2,
+            "text": "People built the pyramids nearly 5,000 years ago.",
+            "answer": "The pyramids were built nearly 5,000 years ago."
+          },
+          {
+            "question_number": 3,
+            "text": "They painted the entire house blue.",
+            "answer": "The entire house was painted blue."
+          },
+          {
+            "question_number": 4,
+            "text": "They required the staff to follow safety rules.",
+            "answer": "The staff were required to follow safety rules."
+          },
+          {
+            "question_number": 5,
+            "text": "They vacuum and dust the office every night.",
+            "answer": "The office is vacuumed and dusted every night."
+          },
+          {
+            "question_number": 6,
+            "text": "People speak English all over the world.",
+            "answer": "English is spoken all over the world."
+          },
+          {
+            "question_number": 7,
+            "text": "They usually lock this gate at 10 p.m.",
+            "answer": "This gate is usually locked at 10 p.m."
+          },
+          {
+            "question_number": 8,
+            "text": "Someone used my computer in my absence.",
+            "answer": "My computer was used in my absence."
+          },
+          {
+            "question_number": 9,
+            "text": "He warned us against the pickpockets in this area.",
+            "answer": "We were warned against the pickpockets in this area."
+          },
+          {
+            "question_number": 10,
+            "text": "They will fine you if you dump rubbish illegally.",
+            "answer": "You will be fined if you dump rubbish illegally."
+          },
+          {
+            "question_number": 11,
+            "text": "Where did they find the book?",
+            "answer": "Where was the book found?"
+          },
+          {
+            "question_number": 12,
+            "text": "They will refurbish this hotel in the following year.",
+            "answer": "This hotel will be refurbished in the following year."
+          },
+          {
+            "question_number": 13,
+            "text": "They are building a new stadium near the station.",
+            "answer": "A new stadium is being built near the station."
+          },
+          {
+            "question_number": 14,
+            "text": "Someone has sent Nandar a mysterious letter.",
+            "answer": "Nandar has been sent a mysterious letter. / A mysterious letter has been sent to Nandar."
+          },
+          {
+            "question_number": 15,
+            "text": "People have seen UFOs in this area.",
+            "answer": "UFOs have been seen in this area."
+          }
+        ]
+      },
+      "part_B": {
+        "instructions": "Shorten the following sentences by omitting the repeated verbs.",
+        "exercises": [
+          {
+            "question_number": 1,
+            "text": "My mother gave me a beautiful dress; my father gave me a calculator and my brother gave me a watch on my birthday.",
+            "answer": "My mother gave me a beautiful dress; my father, a calculator and my brother, a watch on my birthday."
+          },
+          {
+            "question_number": 2,
+            "text": "When the fire broke out, Daw Nilar was in the living room and her baby was in the bedroom.",
+            "answer": "When the fire broke out, Daw Nilar was in the living room and her baby in the bedroom."
+          },
+          {
+            "question_number": 3,
+            "text": "I like travelling by train but my friend, Hnin Zi, likes travelling by plane.",
+            "answer": "I like travelling by train but my friend, Hnin Zi, by plane."
+          },
+          {
+            "question_number": 4,
+            "text": "Some animals live on land; some live in water and some live both on land and in water.",
+            "answer": "Some animals live on land; some in water and some both on land and in water."
+          },
+          {
+            "question_number": 5,
+            "text": "I was born in Yangon; my elder brother was born in Taunggyi and my sister was born in Dawei.",
+            "answer": "I was born in Yangon; my elder brother in Taunggyi and my sister in Dawei."
+          },
+          {
+            "question_number": 6,
+            "text": "Mg Mg is good at playing football; Zaw Zaw is good at playing tennis and Ko Ko is good at playing basketball.",
+            "answer": "Mg Mg is good at playing football; Zaw Zaw, tennis and Ko Ko, basketball."
+          },
+          {
+            "question_number": 7,
+            "text": "Some plants grow well in clay soils; some grow well in sandy soils and some grow well in silt soils.",
+            "answer": "Some plants grow well in clay soils; some in sandy soils and some in silt soils."
+          },
+          {
+            "question_number": 8,
+            "text": "In supermarkets, frozen food must be kept at zero degree Fahrenheit; meat and fish must be kept at 28-32 degree Fahrenheit; and dairy produce must be kept at 40-50 degree Fahrenheit.",
+            "answer": "In supermarkets, frozen food must be kept at zero degree Fahrenheit; meat and fish at 28-32 degree Fahrenheit and dairy produce at 40-50 degree Fahrenheit."
+          },
+          {
+            "question_number": 9,
+            "text": "For my parents' anniversary, I am cleaning the backyard; my brothers are cleaning the window panes and my cousins are cleaning the garden.",
+            "answer": "For my parents' anniversary, I am cleaning the backyard; my brothers, the window panes and my cousins, the garden."
+          },
+          {
+            "question_number": 10,
+            "text": "My hobby is collecting stamps; John's hobby is collecting CDs and Mary's hobby is collecting coins.",
+            "answer": "My hobby is collecting stamps; John's, CDs and Mary's, coins."
+          }
+        ]
+      }
+    }
+  ]
+}
