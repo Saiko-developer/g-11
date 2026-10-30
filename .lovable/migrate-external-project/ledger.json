@@ -1,0 +1,15 @@
+[
+  {"capability":"code","source":"TanStack Start app (src/)","outcome":"migrate","status":"in_progress","next_action":"copy source into project"},
+  {"capability":"schema","source":"drizzle/migrations 0000-0006 (Supabase SQL)","outcome":"migrate","status":"pending","next_action":"apply as Lovable Cloud migration"},
+  {"capability":"records","source":"old Cloud database","outcome":"migrate","status":"pending","next_action":"user to provide per-table CSV exports"},
+  {"capability":"auth identities","source":"Supabase auth (Google + email)","outcome":"migrate","status":"pending","next_action":"user export of profiles/users; users re-verify email + set password"},
+  {"capability":"authorization","source":"user_roles, has_role, RLS","outcome":"migrate","status":"pending","next_action":"included in schema migration"},
+  {"capability":"uploaded file bytes","source":"exam photo storage bucket","outcome":"migrate","status":"pending","next_action":"bucket recreated; old files need export"},
+  {"capability":"AI","source":"Lovable AI Gateway (chat, json, tts, transcription)","outcome":"preserve","status":"pending","next_action":"LOVABLE_API_KEY auto-provided by Cloud"},
+  {"capability":"public endpoints","source":"src/routes/api/*","outcome":"preserve","status":"pending","next_action":"verify after build"},
+  {"capability":"edge functions student-access/admin-dashboard","source":"supabase/functions (not called by app)","outcome":"not migrated","status":"accepted_unused","next_action":"none unless requested"},
+  {"capability":"standalone admin-dashboard + Better Auth/Postgres/R2 prototype","source":"admin-dashboard/, migrations/, scripts/","outcome":"not migrated (unfinished self-host prototype; in-app /admin route kept)","status":"pending_confirmation","next_action":"confirm with user"},
+  {"capability":"email (Resend)","source":"edge functions only","outcome":"not migrated","status":"accepted_unused","next_action":"none"},
+  {"capability":"secrets","source":".env","outcome":"no user secrets needed for kept features","status":"done","next_action":"none"},
+  {"capability":"verification","source":"-","outcome":"-","status":"pending","next_action":"build + route checks"}
+]
