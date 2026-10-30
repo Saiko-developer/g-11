@@ -13,10 +13,6 @@ type Row = {
   result: GradeResult | null; teacher_feedback: string; graded_at: string | null;
 };
 
-async function toDataUrl(url: string): Promise<string> {
-  const blob = await (await fetch(url)).blob();
-  return await new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(r.result as string); r.onerror = rej; r.readAsDataURL(blob); });
-}
 
 export function ClassExamSubmissions({ aid, paper }: { aid: string; paper: MockExamPaper }) {
   const [rows, setRows] = useState<Row[] | null>(null);
@@ -83,9 +79,6 @@ function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper; onSav
     });
   }, [row.image_paths]);
 
-  if (!row.submitted_at) {
-    return <p className="rounded-2xl border border-border bg-card p-6 text-sm text-muted-foreground">{row.display_name} — {row.started_at ? "ဖြေဆိုနေဆဲ (မတင်သွင်းရသေးပါ)" : "စာမေးပွဲ မစရသေးပါ"}</p>;
-  }
 
   const applyDraft = (r: GradeResult) => {
     setGrade(r); setScore(String(r.score)); setFeedback(r.overallFeedback ?? "");
@@ -103,42 +96,46 @@ function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper; onSav
   // Load the AI draft prepared at submit time; start it if missing and poll while it runs.
   useEffect(() => {
     if (!row.submitted_at || !row.attempt_id || row.graded_at) return;
-    let stop = false; let kicked = false;
+    let stop = false; let timer: ReturnType<typeof setTimeout> | undefined;
     const tick = async () => {
-      const { data } = await supabase.from("class_exam_ai_drafts").select("status, result, error").eq("attempt_id", row.attempt_id!).maybeSingle();
+      const { data } = await supabase.from("class_exam_ai_drafts").select("status, result, error").eq("attempt_id", row.attempt_id ?? "").maybeSingle();
       if (stop) return;
       if (data?.status === "done" && data.result) { setAiBusy(false); applyDraft(data.result as unknown as GradeResult); return; }
-      if (data?.status === "blocked" || (data?.status === "error" && kicked)) { setAiBusy(false); if (data.error) toast.error(data.error); return; }
+      if (data?.status === "blocked" || data?.status === "error" || data?.status === "refused") { setAiBusy(false); if (data.error) toast.error(data.error); return; }
+      if (!data) { setAiBusy(false); return; }
       setAiBusy(true);
-      if (!data || data.status === "error") { kicked = true; void callAuto(false); }
-      setTimeout(() => void tick(), 5000);
+      timer = setTimeout(() => void tick(), 5000);
     };
     void tick();
-    return () => { stop = true; };
+    return () => { stop = true; if (timer) clearTimeout(timer); };
   }, [row.attempt_id]);
 
   const runAi = async () => {
     setAiBusy(true);
     const res = await callAuto(true);
-    const { data } = await supabase.from("class_exam_ai_drafts").select("status, result, error").eq("attempt_id", row.attempt_id!).maybeSingle();
+    const { data } = await supabase.from("class_exam_ai_drafts").select("status, result, error").eq("attempt_id", row.attempt_id ?? "").maybeSingle();
     setAiBusy(false);
     if (data?.status === "done" && data.result) { applyDraft(data.result as unknown as GradeResult); toast.success("AI က အမှတ်အကြမ်း ပေးပြီးပါပြီ — စစ်ဆေးပြီး Confirm လုပ်ပါ"); }
     else toast.error(data?.error ?? (res ? "AI marking failed" : "Network error"));
   };
 
   const save = async () => {
+    if (!row.attempt_id) return;
     const n = Number(score);
     if (score === "" || Number.isNaN(n)) return toast.error("အမှတ် ထည့်ပါ");
+    if (n < 0 || n > (grade?.totalMarks ?? paper.totalMarks)) return toast.error("Score must be between zero and total marks.");
     setSaving(true);
     const total = grade?.totalMarks ?? paper.totalMarks;
     const { error } = await supabase.rpc("class_exam_grade", {
-      _attempt: row.attempt_id!, _score: n, _total: total, _result: (grade ? { ...grade, score: n, overallFeedback: feedback } : null) as never, _feedback: feedback,
+      _attempt: row.attempt_id ?? "", _score: n, _total: total, _result: (grade ? { ...grade, score: n, overallFeedback: feedback } : null) as never, _feedback: feedback,
     });
     setSaving(false);
     if (error) return toast.error(error.message);
     toast.success("ကျောင်းသားဆီ ရလဒ် ပို့ပြီးပါပြီ");
     await onSaved();
   };
+
+  if (!row.submitted_at) return <p className="p-6 text-sm text-muted-foreground">{row.display_name} — {row.started_at ? "In progress" : "Not started"}</p>;
 
   return (
     <div className="space-y-4">
@@ -170,7 +167,7 @@ function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper; onSav
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h3 className="font-bold">အမှတ်ပေးခြင်း</h3>
           <Button size="sm" variant="outline" onClick={runAi} disabled={aiBusy || !urls.length}>
-            {aiBusy ? <Loader2 className="h-4 w-4 animate-spin" /> : <Bot className="h-4 w-4" />} Re-grade with AI
+            {aiBusy ? <Loader2 className="h-4 w-4 animate-spin" /> : <Bot className="h-4 w-4" />} {grade ? "Re-grade with AI" : "Grade with AI"}
           </Button>
         </div>
         {aiBusy && <p className="mt-2 text-xs text-muted-foreground">AI အမှတ်အကြမ်း ပြင်ဆင်နေပါတယ် — အသင့်ဖြစ်တာနဲ့ ဒီမှာ အလိုအလျောက် ပေါ်လာပါမယ်…</p>}
