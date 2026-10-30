@@ -7,7 +7,10 @@ const mocks = vi.hoisted(() => ({
   listener: undefined as undefined | ((event: string, session: unknown) => void),
   navigate: vi.fn(), invalidate: vi.fn(), getSession: vi.fn(), getUser: vi.fn(), rpc: vi.fn(), signOut: vi.fn(),
 }));
-vi.mock("@tanstack/react-router", () => ({ useRouter: () => ({ navigate: mocks.navigate, invalidate: mocks.invalidate }) }));
+vi.mock("@tanstack/react-router", () => {
+  const router = { navigate: mocks.navigate, invalidate: mocks.invalidate };
+  return { useRouter: () => router };
+});
 vi.mock("@/integrations/supabase/client", () => ({ supabase: {
   auth: { getSession: mocks.getSession, getUser: mocks.getUser, signOut: mocks.signOut,
     onAuthStateChange: (cb: typeof mocks.listener) => { mocks.listener = cb; return { data: { subscription: { unsubscribe: vi.fn() } } }; } },
