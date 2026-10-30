@@ -12,6 +12,8 @@ import { downloadAnswerKey, downloadExamPaper, type DownloadFormat } from "@/lib
 import type { MockExamPaper } from "@/lib/mockExam";
 import { SectionCard } from "@/routes/mock-exam.$unit";
 import { ClassExamSubmissions } from "@/components/ClassExamSubmissions";
+import { ResultView } from "@/components/PaperSubmission";
+import type { GradeResult } from "@/routes/api/grade-exam";
 
 export const Route = createFileRoute("/class-exam/$id")({
   head: () => {
@@ -69,7 +71,8 @@ function ExamHall() {
   const [files, setFiles] = useState<File[]>([]);
   const [busy, setBusy] = useState(false);
   const [tab, setTab] = useState<"paper" | "subs">("paper");
-  const [mine, setMine] = useState<{ score: number | null; total_marks: number | null; teacher_feedback: string; graded_at: string | null } | null>(null);
+  const [mine, setMine] = useState<{ score: number | null; total_marks: number | null; teacher_feedback: string; graded_at: string | null; result: unknown } | null>(null);
+  const [showDetail, setShowDetail] = useState(false);
 
   const load = async () => {
     const { data, error } = await supabase.rpc("class_exam_open", { _aid: id });
@@ -77,7 +80,7 @@ function ExamHall() {
     setExam(data as unknown as Exam);
     const { data: u } = await supabase.auth.getUser();
     if (u.user) {
-      const { data: a } = await supabase.from("class_exam_attempts").select("score, total_marks, teacher_feedback, graded_at").eq("assignment_id", id).eq("student_id", u.user.id).maybeSingle();
+      const { data: a } = await supabase.from("class_exam_attempts").select("score, total_marks, teacher_feedback, graded_at, result").eq("assignment_id", id).eq("student_id", u.user.id).maybeSingle();
       setMine(a as never);
     }
   };
@@ -184,6 +187,10 @@ function ExamHall() {
                 <div className="mt-2">
                   <p className="text-xl font-bold text-primary">ရမှတ်: {mine.score} / {mine.total_marks}</p>
                   {mine.teacher_feedback && <p className="mt-1 whitespace-pre-wrap text-sm">{mine.teacher_feedback}</p>}
+                  <Button size="sm" className="mt-3" onClick={() => setShowDetail((v) => !v)}>
+                    📊 {showDetail ? "အသေးစိတ် အဖြေလွှာ ပိတ်ရန်" : "အသေးစိတ် အဖြေလွှာ ကြည့်ရန်"}
+                  </Button>
+                  {showDetail && <ResultView r={mine.result as GradeResult} score={mine.score} total={mine.total_marks} />}
                 </div>
               )}
             </div>

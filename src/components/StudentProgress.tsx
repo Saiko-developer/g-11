@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { ChevronDown, Loader2, Trash2 } from "lucide-react";
 import { PhotoGallery } from "@/components/PhotoGallery";
 import { supabase } from "@/integrations/supabase/client";
@@ -95,6 +96,9 @@ export function StudentProgress({ userId }: { userId: string }) {
         )}
       </section>
 
+      <ClassExamHistory userId={userId} />
+
+
       <section>
         <h3 className="mb-2 font-semibold">Mock Exam ရလဒ်များ ({exams.length})</h3>
         {exams.length === 0 ? (
@@ -130,5 +134,58 @@ export function StudentProgress({ userId }: { userId: string }) {
         )}
       </section>
     </div>
+  );
+}
+
+type ClassRow = {
+  id: string; assignment_id: string; submitted_at: string | null; graded_at: string | null;
+  score: number | null; total_marks: number | null; teacher_feedback: string; result: GradeResult | null;
+  classroom_assignments: { title: string; classrooms: { name: string } | null } | null;
+};
+
+/** Student's classroom exam history; result details only appear after the teacher confirms grading. */
+function ClassExamHistory({ userId }: { userId: string }) {
+  const [rows, setRows] = useState<ClassRow[] | null>(null);
+  const [open, setOpen] = useState<string | null>(null);
+  useEffect(() => {
+    void supabase.from("class_exam_attempts")
+      .select("id, assignment_id, submitted_at, graded_at, score, total_marks, teacher_feedback, result, classroom_assignments(title, classrooms(name))")
+      .eq("student_id", userId).not("submitted_at", "is", null)
+      .order("submitted_at", { ascending: false })
+      .then(({ data }) => setRows((data as unknown as ClassRow[]) ?? []));
+  }, [userId]);
+  if (!rows) return null;
+  return (
+    <section>
+      <h3 className="mb-2 font-semibold">🏫 Classroom Exam ရလဒ်များ ({rows.length})</h3>
+      {rows.length === 0 ? <p className="text-sm text-muted-foreground">အတန်းစာမေးပွဲ မဖြေရသေးပါ။</p> : (
+        <ul className="space-y-2">
+          {rows.map((r) => (
+            <li key={r.id} className="rounded-lg border border-border bg-card">
+              <button onClick={() => setOpen(open === r.id ? null : r.id)} disabled={!r.graded_at}
+                className="flex min-h-12 w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm">
+                <span>
+                  <b>{r.classroom_assignments?.title ?? "Class Exam"}</b>
+                  <span className="ml-2 text-muted-foreground">{r.classroom_assignments?.classrooms?.name} · {new Date(r.submitted_at!).toLocaleString()}</span>
+                </span>
+                {r.graded_at ? (
+                  <span className="flex items-center gap-2 font-bold text-primary">
+                    {r.score ?? "—"} / {r.total_marks ?? "—"}
+                    <ChevronDown className={`h-4 w-4 transition-transform ${open === r.id ? "rotate-180" : ""}`} />
+                  </span>
+                ) : <span className="text-muted-foreground">⏳ စစ်ဆေးနေဆဲ</span>}
+              </button>
+              {open === r.id && r.graded_at && (
+                <div className="border-t border-border p-3 text-sm">
+                  {r.teacher_feedback && <p className="whitespace-pre-wrap">{r.teacher_feedback}</p>}
+                  <ResultView r={r.result} score={r.score} total={r.total_marks} />
+                  <Link to="/class-exam/$id" params={{ id: r.assignment_id }} className="mt-2 inline-block text-primary underline">စာမေးပွဲ စာမျက်နှာ ဖွင့်ရန်</Link>
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
   );
 }
