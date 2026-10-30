@@ -19,10 +19,10 @@ export const Route = createFileRoute("/guide")({
 });
 
 const LIMITS = [
-  ["Welcome Gift (အကောင့်သစ်)", "၅ ကြိမ်", "၅ ကြိမ်", "—"],
-  ["AI Tutor (နေ့စဉ် အခမဲ့)", "၁၀ ကြိမ်", "၁၀ ကြိမ်", "အကန့်အသတ်မဲ့"],
-  ["စာမေးပွဲထုတ်ခြင်း (နေ့စဉ် အခမဲ့)", "၁ ကြိမ်", "၂ ကြိမ်", "အကန့်အသတ်မဲ့"],
-  ["ကိုယ်ပိုင် Paper တင်ခြင်း", "—", "အကန့်အသတ်မဲ့", "အကန့်အသတ်မဲ့"],
+  ["Welcome Gift (အကောင့်သစ်)", "၅ ကြိမ်", "၅ ကြိမ်"],
+  ["AI Tutor (နေ့စဉ် အခမဲ့)", "၁၀ ကြိမ်", "၁၀ ကြိမ်"],
+  ["စာမေးပွဲထုတ်ခြင်း (နေ့စဉ် အခမဲ့)", "၁ ကြိမ်", "၂ ကြိမ်"],
+  ["ကိုယ်ပိုင် Paper တင်ခြင်း", "—", "အကန့်အသတ်မဲ့"],
 ];
 
 function GuidePage() {
@@ -65,7 +65,7 @@ function GuidePage() {
               <h2 className="mb-2 font-semibold">📊 အသုံးပြုခွင့် ကန့်သတ်ချက်များ</h2>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
-                  <thead><tr className="text-left text-muted-foreground"><th className="py-1 pr-2"></th><th className="pr-2">ကျောင်းသား</th><th className="pr-2">ဆရာ</th><th>Admin</th></tr></thead>
+                  <thead><tr className="text-left text-muted-foreground"><th className="py-1 pr-2"></th><th className="pr-2">ကျောင်းသား</th><th className="pr-2">ဆရာ</th></tr></thead>
                   <tbody>{LIMITS.map((r) => <tr key={r[0]} className="border-t border-border">{r.map((c, i) => <td key={i} className={`py-1.5 pr-2 ${i === 0 ? "font-medium" : ""}`}>{c}</td>)}</tr>)}</tbody>
                 </table>
               </div>
