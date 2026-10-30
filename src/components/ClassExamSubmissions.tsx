@@ -87,25 +87,43 @@ function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper; onSav
     return <p className="rounded-2xl border border-border bg-card p-6 text-sm text-muted-foreground">{row.display_name} — {row.started_at ? "ဖြေဆိုနေဆဲ (မတင်သွင်းရသေးပါ)" : "စာမေးပွဲ မစရသေးပါ"}</p>;
   }
 
+  const applyDraft = (r: GradeResult) => {
+    setGrade(r); setScore(String(r.score)); setFeedback(r.overallFeedback ?? "");
+  };
+
+  const callAuto = async (force: boolean) => {
+    const { data: s } = await supabase.auth.getSession();
+    return fetch("/api/auto-grade", {
+      method: "POST",
+      headers: { "content-type": "application/json", authorization: `Bearer ${s.session?.access_token ?? ""}` },
+      body: JSON.stringify({ attemptId: row.attempt_id, force }),
+    }).catch(() => null);
+  };
+
+  // Load the AI draft prepared at submit time; start it if missing and poll while it runs.
+  useEffect(() => {
+    if (!row.submitted_at || !row.attempt_id || row.graded_at) return;
+    let stop = false; let kicked = false;
+    const tick = async () => {
+      const { data } = await supabase.from("class_exam_ai_drafts").select("status, result, error").eq("attempt_id", row.attempt_id!).maybeSingle();
+      if (stop) return;
+      if (data?.status === "done" && data.result) { setAiBusy(false); applyDraft(data.result as unknown as GradeResult); return; }
+      if (data?.status === "blocked" || (data?.status === "error" && kicked)) { setAiBusy(false); if (data.error) toast.error(data.error); return; }
+      setAiBusy(true);
+      if (!data || data.status === "error") { kicked = true; void callAuto(false); }
+      setTimeout(() => void tick(), 5000);
+    };
+    void tick();
+    return () => { stop = true; };
+  }, [row.attempt_id]);
+
   const runAi = async () => {
     setAiBusy(true);
-    try {
-      const images = await Promise.all(urls.map(toDataUrl));
-      const { data: s } = await supabase.auth.getSession();
-      const res = await fetch("/api/grade-exam", {
-        method: "POST",
-        headers: { "content-type": "application/json", authorization: `Bearer ${s.session?.access_token ?? ""}` },
-        body: JSON.stringify({ paper, images }),
-      });
-      const data = (await res.json()) as GradeResult & { error?: string };
-      if (!res.ok) throw new Error(data.error ?? "AI marking failed");
-      setGrade(data);
-      setScore(String(data.score));
-      setFeedback(data.overallFeedback ?? "");
-      toast.success("AI က အမှတ်အကြမ်း ပေးပြီးပါပြီ — စစ်ဆေးပြီး Confirm လုပ်ပါ");
-    } catch (e) {
-      toast.error(e instanceof Error ? e.message : "AI marking failed");
-    } finally { setAiBusy(false); }
+    const res = await callAuto(true);
+    const { data } = await supabase.from("class_exam_ai_drafts").select("status, result, error").eq("attempt_id", row.attempt_id!).maybeSingle();
+    setAiBusy(false);
+    if (data?.status === "done" && data.result) { applyDraft(data.result as unknown as GradeResult); toast.success("AI က အမှတ်အကြမ်း ပေးပြီးပါပြီ — စစ်ဆေးပြီး Confirm လုပ်ပါ"); }
+    else toast.error(data?.error ?? (res ? "AI marking failed" : "Network error"));
   };
 
   const save = async () => {
@@ -152,10 +170,10 @@ function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper; onSav
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h3 className="font-bold">အမှတ်ပေးခြင်း</h3>
           <Button size="sm" variant="outline" onClick={runAi} disabled={aiBusy || !urls.length}>
-            {aiBusy ? <Loader2 className="h-4 w-4 animate-spin" /> : <Bot className="h-4 w-4" />} Grade with AI
+            {aiBusy ? <Loader2 className="h-4 w-4 animate-spin" /> : <Bot className="h-4 w-4" />} Re-grade with AI
           </Button>
         </div>
-        {aiBusy && <p className="mt-2 text-xs text-muted-foreground">AI က လက်ရေးကို ဖတ်ပြီး အမှတ်ပေးနေပါတယ် (၁ မိနစ်ခန့်)…</p>}
+        {aiBusy && <p className="mt-2 text-xs text-muted-foreground">AI အမှတ်အကြမ်း ပြင်ဆင်နေပါတယ် — အသင့်ဖြစ်တာနဲ့ ဒီမှာ အလိုအလျောက် ပေါ်လာပါမယ်…</p>}
 
         {grade?.items && grade.items.length > 0 && (
           <ul className="mt-3 max-h-96 space-y-2 overflow-y-auto">
