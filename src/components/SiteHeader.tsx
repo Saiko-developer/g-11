@@ -5,6 +5,8 @@ import tutorLogo from "@/assets/tutor-logo.png";
 import { useI18n } from "@/lib/i18n";
 import { useAuth } from "@/components/AuthGate";
 import { signInWithGoogle } from "@/components/RequireSignIn";
+import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 
 /** Header sign-in / sign-out control driven by the current session. */
 function AccountButton() {
@@ -25,19 +27,20 @@ function AccountButton() {
             {name.charAt(0).toUpperCase()}
           </span>
         )}
-        <button onClick={() => void signOut()} className={btn} aria-label="Sign out">
+        <Button variant="outline" onClick={() => void signOut()} className={btn} aria-label="Sign out">
           <LogOut className="h-4 w-4" />
           <span className="hidden sm:inline">Sign out</span>
-        </button>
+        </Button>
       </div>
     );
   }
   return (
-    <button
+    <Button variant="outline"
       disabled={busy}
       onClick={async () => {
         setBusy(true);
         const r = await signInWithGoogle();
+        if (r.error) toast.error(r.error.message);
         if (r.error || !r.redirected) setBusy(false);
       }}
       className={btn}
@@ -45,7 +48,7 @@ function AccountButton() {
     >
       <LogIn className="h-4 w-4" />
       <span className="hidden min-[400px]:inline">{busy ? "…" : "Login"}</span>
-    </button>
+    </Button>
   );
 }
 

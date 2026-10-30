@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from "react";
+import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import type { Session } from "@supabase/supabase-js";
 import { useRouter } from "@tanstack/react-router";
 import { useQueryClient } from "@tanstack/react-query";
@@ -20,12 +20,6 @@ export function AuthGate({ children }: { children: ReactNode }) {
   const [ready, setReady] = useState(false);
   const [session, setSession] = useState<Session | null>(null);
   const [access, setAccess] = useState<Access | null>(null);
-
-  const loadAccess = useCallback(async (s: Session | null) => {
-    if (!s) return setAccess(null);
-    const { data } = await supabase.rpc("my_access");
-    setAccess((data as unknown as Access) ?? null);
-  }, []);
 
   useEffect(() => {
     let active = true;
