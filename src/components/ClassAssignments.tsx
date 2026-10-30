@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { ClipboardList, Plus, Trash2 } from "lucide-react";
+import { ClipboardList, Loader2, Plus, Trash2, Upload, Users, X } from "lucide-react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -18,6 +18,9 @@ const input = "w-full rounded-md border border-input bg-background px-3 py-2 tex
 const btn = "inline-flex items-center justify-center gap-1.5 rounded-md bg-primary px-3 py-2 text-sm font-medium text-primary-foreground hover:opacity-90 disabled:opacity-60";
 const ghost = "inline-flex items-center gap-1.5 rounded-md border border-border px-2.5 py-1.5 text-xs hover:bg-muted";
 
+const ACCEPT = ".pdf,.doc,.docx,image/jpeg,image/png";
+const MAX_FILES = 10;
+
 function fmtDue(d: string | null) {
   if (!d) return "ရက်ချိန်း မသတ်မှတ်ပါ";
   return new Date(d).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
@@ -27,12 +30,6 @@ const overdue = (d: string | null) => !!d && new Date(d).getTime() < Date.now();
 export function ClassAssignments({ cid, teacher }: { cid: string; teacher: boolean }) {
   const [list, setList] = useState<Assignment[] | null>(null);
   const [showForm, setShowForm] = useState(false);
-  const [title, setTitle] = useState("");
-  const [kind, setKind] = useState("mock_exam");
-  const [unit, setUnit] = useState(1);
-  const [due, setDue] = useState("");
-  const [note, setNote] = useState("");
-  const [busy, setBusy] = useState(false);
 
   const load = useCallback(async () => {
     const { data, error } = await supabase
@@ -63,24 +60,6 @@ export function ClassAssignments({ cid, teacher }: { cid: string; teacher: boole
     })();
   }, [list, teacher]);
 
-  const create = async () => {
-    const t = title.trim() || `Unit ${unit} ${kind === "mock_exam" ? "Mock Exam" : "Practice"}`;
-    setBusy(true);
-    const { error } = await supabase.from("classroom_assignments").insert({
-      classroom_id: cid,
-      title: t,
-      kind,
-      unit,
-      instructions: note.trim(),
-      due_at: due ? new Date(due).toISOString() : null,
-    });
-    setBusy(false);
-    if (error) return toast.error(error.message);
-    toast.success("Assignment ပေးပြီးပါပြီ");
-    setTitle(""); setNote(""); setDue(""); setShowForm(false);
-    void load();
-  };
-
   const remove = async (id: string) => {
     if (!confirm("ဤ Assignment ကို ဖျက်မှာလား?")) return;
     const { error } = await supabase.from("classroom_assignments").delete().eq("id", id);
@@ -90,44 +69,23 @@ export function ClassAssignments({ cid, teacher }: { cid: string; teacher: boole
 
   return (
     <div className="mt-3 border-t border-border pt-3">
-      <div className="mb-2 flex items-center justify-between">
+      <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
         <h4 className="flex items-center gap-1.5 text-sm font-semibold">
           <ClipboardList className="h-4 w-4" /> Assignments
         </h4>
         {teacher && (
-          <div className="flex gap-1.5">
+          <div className="flex flex-wrap gap-1.5">
             <Link to="/class-exam/new" search={{ cid }} className={ghost}>
               <Plus className="h-3.5 w-3.5" /> Create Class Exam
             </Link>
             <button className={ghost} onClick={() => setShowForm((s) => !s)}>
-              <Plus className="h-3.5 w-3.5" /> Assign
+              <Upload className="h-3.5 w-3.5" /> Upload My Paper
             </button>
           </div>
         )}
       </div>
 
-      {teacher && showForm && (
-        <div className="mb-3 grid gap-2 rounded-lg bg-muted/50 p-3">
-          <div className="grid grid-cols-2 gap-2">
-            <select className={input} value={kind} onChange={(e) => setKind(e.target.value)}>
-              <option value="mock_exam">Mock Exam</option>
-              <option value="practice">Unit Practice</option>
-            </select>
-            <select className={input} value={unit} onChange={(e) => setUnit(Number(e.target.value))}>
-              {Array.from({ length: 12 }, (_, i) => (
-                <option key={i + 1} value={i + 1}>Unit {i + 1}</option>
-              ))}
-            </select>
-          </div>
-          <input className={input} placeholder="Title (optional)" value={title} onChange={(e) => setTitle(e.target.value)} />
-          <label className="text-xs text-muted-foreground">
-            Due date (ရက်ချိန်း)
-            <input type="datetime-local" className={`${input} mt-1`} value={due} onChange={(e) => setDue(e.target.value)} />
-          </label>
-          <textarea className={input} rows={2} placeholder="Instructions (ညွှန်ကြားချက်)" value={note} onChange={(e) => setNote(e.target.value)} />
-          <button className={btn} disabled={busy} onClick={create}>Assign to class</button>
-        </div>
-      )}
+      {teacher && showForm && <UploadPaperForm cid={cid} onDone={() => { setShowForm(false); void load(); }} />}
 
       {!list ? (
         <p className="text-xs text-muted-foreground">Loading…</p>
@@ -141,7 +99,7 @@ export function ClassAssignments({ cid, teacher }: { cid: string; teacher: boole
                 <div className="min-w-0">
                   <div className="font-medium">{a.title}</div>
                   <div className="text-xs text-muted-foreground">
-                    {a.kind === "class_exam" ? "🏫 Class Exam" : a.kind === "mock_exam" ? "📝 Mock Exam" : "✏️ Practice"} · Unit {a.unit}
+                    {a.kind === "class_exam" ? (a.unit === 0 ? "📎 Teacher's Paper" : `🏫 Class Exam · Unit ${a.unit}`) : a.kind === "mock_exam" ? `📝 Mock Exam · Unit ${a.unit}` : `✏️ Practice · Unit ${a.unit}`}
                   </div>
                   <div className={`text-xs ${overdue(a.due_at) ? "text-destructive" : "text-muted-foreground"}`}>
                     ⏰ {fmtDue(a.due_at)} {overdue(a.due_at) && "(ကျော်လွန်)"}
@@ -174,10 +132,149 @@ export function ClassAssignments({ cid, teacher }: { cid: string; teacher: boole
                   )}
                 </div>
               </div>
+              {teacher && a.kind === "class_exam" && <ExamProgress aid={a.id} />}
             </li>
           ))}
         </ul>
       )}
+    </div>
+  );
+}
+
+type RosterRow = { student_id: string; display_name: string; started_at: string | null; submitted_at: string | null; graded_at: string | null; score: number | null; total_marks: number | null };
+
+/** Teacher-only: who has finished / not finished this class exam. */
+function ExamProgress({ aid }: { aid: string }) {
+  const [rows, setRows] = useState<RosterRow[] | null>(null);
+  const [open, setOpen] = useState(false);
+  useEffect(() => {
+    void supabase.rpc("class_exam_roster", { _aid: aid }).then(({ data }) => setRows((data as unknown as RosterRow[]) ?? []));
+  }, [aid]);
+  if (!rows) return null;
+  const done = rows.filter((r) => r.submitted_at);
+  const graded = done.filter((r) => r.graded_at);
+  const pending = done.filter((r) => !r.graded_at);
+  const notDone = rows.filter((r) => !r.submitted_at);
+  const pct = rows.length ? Math.round((done.length / rows.length) * 100) : 0;
+  return (
+    <div className="mt-2 rounded-md bg-muted/50 p-2">
+      <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
+        <span>📊 <b>{done.length} / {rows.length}</b> ဦး ဖြေဆိုပြီး · <span className="text-destructive">{notDone.length} ဦး မဖြေရသေး</span></span>
+        <button className={ghost} onClick={() => setOpen((o) => !o)}><Users className="h-3.5 w-3.5" /> {open ? "ပိတ်ရန်" : "ကျောင်းသားစာရင်း"}</button>
+      </div>
+      <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-border">
+        <div className="h-full bg-primary" style={{ width: `${pct}%` }} />
+      </div>
+      {open && (
+        <div className="mt-2 grid gap-2 text-xs">
+          <Group title={`✅ စစ်ပြီး (${graded.length})`} rows={graded} render={(r) => `${r.score ?? "—"} / ${r.total_marks ?? "—"}`} />
+          <Group title={`⏳ တင်ပြီး — စစ်ရန်ကျန် (${pending.length})`} rows={pending} render={(r) => new Date(r.submitted_at!).toLocaleString()} />
+          <Group title={`⚠️ မဖြေရသေး (${notDone.length})`} rows={notDone} render={(r) => (r.started_at ? "ဖြေဆိုနေဆဲ" : "မစရသေး")} danger />
+          {(graded.length + pending.length) > 0 && (
+            <Link to="/class-exam/$id" params={{ id: aid }} className={`${ghost} justify-self-start`}>Open submissions to grade →</Link>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function Group({ title, rows, render, danger }: { title: string; rows: RosterRow[]; render: (r: RosterRow) => string; danger?: boolean }) {
+  return (
+    <div>
+      <p className={`font-semibold ${danger ? "text-destructive" : ""}`}>{title}</p>
+      {rows.length === 0 ? <p className="text-muted-foreground">—</p> : (
+        <ul className="divide-y divide-border">
+          {rows.map((r) => (
+            <li key={r.student_id} className="flex justify-between gap-2 py-1">
+              <span className="truncate">{r.display_name || "(no name)"}</span>
+              <span className="shrink-0 text-muted-foreground">{render(r)}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
+/** Teacher uploads their own exam paper (PDF / Word / JPEG / PNG) and sends it to the class. */
+function UploadPaperForm({ cid, onDone }: { cid: string; onDone: () => void }) {
+  const [title, setTitle] = useState("");
+  const [files, setFiles] = useState<File[]>([]);
+  const [marks, setMarks] = useState("50");
+  const [duration, setDuration] = useState("60");
+  const [due, setDue] = useState("");
+  const [note, setNote] = useState("");
+  const [busy, setBusy] = useState(false);
+
+  const publish = async () => {
+    if (!title.trim()) return toast.error("စာမေးပွဲ ခေါင်းစဉ် ထည့်ပါ");
+    if (!files.length) return toast.error("မေးခွန်းစာရွက် ဖိုင် တင်ပါ");
+    const total = Number(marks), mins = Number(duration);
+    if (!(total > 0)) return toast.error("စုစုပေါင်း အမှတ် ထည့်ပါ");
+    if (!(mins > 0)) return toast.error("ဖြေဆိုချိန် ထည့်ပါ");
+    setBusy(true);
+    try {
+      const uploaded: { path: string; name: string; type: string }[] = [];
+      for (const f of files) {
+        const safe = f.name.replace(/[^\w.-]+/g, "_");
+        const path = `${cid}/${crypto.randomUUID()}-${safe}`;
+        const { error } = await supabase.storage.from("class-papers").upload(path, f, { contentType: f.type || undefined });
+        if (error) throw error;
+        uploaded.push({ path, name: f.name, type: f.type });
+      }
+      const { error } = await supabase.from("classroom_assignments").insert({
+        classroom_id: cid,
+        title: title.trim(),
+        kind: "class_exam",
+        unit: 0,
+        instructions: note.trim(),
+        due_at: due ? new Date(due).toISOString() : null,
+        duration_minutes: Math.round(mins),
+        paper_data: { kind: "upload", title: title.trim(), totalMarks: total, sections: [], files: uploaded },
+      });
+      if (error) throw error;
+      toast.success("စာမေးပွဲ အတန်းဆီ ပို့ပြီးပါပြီ");
+      onDone();
+    } catch (e) {
+      toast.error(e instanceof Error ? e.message : "Upload failed");
+    } finally { setBusy(false); }
+  };
+
+  return (
+    <div className="mb-3 grid gap-2 rounded-lg bg-muted/50 p-3">
+      <p className="text-xs font-semibold">📎 ကိုယ်ပိုင် မေးခွန်းစာရွက် တင်ရန် (PDF, Word, JPEG, PNG)</p>
+      <input className={input} placeholder="Exam title (e.g. Midterm English)" value={title} onChange={(e) => setTitle(e.target.value)} />
+      <label className="inline-flex cursor-pointer items-center gap-2 justify-self-start rounded-md border border-border bg-background px-3 py-2 text-sm hover:bg-muted">
+        <Upload className="h-4 w-4" /> ဖိုင် ရွေးမည်
+        <input type="file" accept={ACCEPT} multiple className="hidden"
+          onChange={(e) => { const l = Array.from(e.target.files ?? []); setFiles((f) => [...f, ...l].slice(0, MAX_FILES)); e.target.value = ""; }} />
+      </label>
+      {files.length > 0 && (
+        <ul className="flex flex-wrap gap-1.5">
+          {files.map((f, i) => (
+            <li key={i} className="flex items-center gap-1 rounded-md bg-background px-2 py-1 text-xs">
+              {f.name}
+              <button aria-label="Remove file" onClick={() => setFiles((l) => l.filter((_, j) => j !== i))}><X className="h-3 w-3" /></button>
+            </li>
+          ))}
+        </ul>
+      )}
+      <div className="grid grid-cols-2 gap-2">
+        <label className="text-xs text-muted-foreground">Total marks
+          <input type="number" min={1} className={`${input} mt-1`} value={marks} onChange={(e) => setMarks(e.target.value)} />
+        </label>
+        <label className="text-xs text-muted-foreground">Duration (minutes)
+          <input type="number" min={1} className={`${input} mt-1`} value={duration} onChange={(e) => setDuration(e.target.value)} />
+        </label>
+      </div>
+      <label className="text-xs text-muted-foreground">Due date (ရက်ချိန်း)
+        <input type="datetime-local" className={`${input} mt-1`} value={due} onChange={(e) => setDue(e.target.value)} />
+      </label>
+      <textarea className={input} rows={2} placeholder="Instructions (ညွှန်ကြားချက်)" value={note} onChange={(e) => setNote(e.target.value)} />
+      <button className={btn} disabled={busy} onClick={publish}>
+        {busy && <Loader2 className="h-4 w-4 animate-spin" />} Send to Class
+      </button>
     </div>
   );
 }
