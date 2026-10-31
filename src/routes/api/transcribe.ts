@@ -46,6 +46,7 @@ export const Route = createFileRoute("/api/transcribe")({
           process.env.LOVABLE_TRANSCRIPTION_MODEL?.trim() || "openai/gpt-4o-mini-transcribe",
         );
         upstreamForm.append("file", file, `recording.${ext}`);
+        upstreamForm.append("language", "my");
         upstreamForm.append(
           "prompt",
           "Grade 10 Myanmar student speaking Burmese mixed with English textbook words (Unit, Exercise, Lesson, Grammar, Reading, Vocabulary). Transcribe exactly what is said; keep exercise letters and numbers exactly as spoken.",
