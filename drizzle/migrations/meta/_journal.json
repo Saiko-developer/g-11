@@ -1,48 +1,5 @@
 {
   "version": "7",
   "dialect": "postgresql",
-  "entries": [
-    {
-      "idx": 0,
-      "version": "7",
-      "when": 1793433349328,
-      "tag": "0000_full_schema",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1793433381945,
-      "tag": "0001_owner_defaults",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1793434557705,
-      "tag": "0002_role_based_daily_limits",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "7",
-      "when": 1793436053475,
-      "tag": "0003_restore_signup_trigger",
-      "breakpoints": true
-    },
-    {
-      "idx": 4,
-      "version": "7",
-      "when": 1793436450402,
-      "tag": "0004_fix_create_classroom_code",
-      "breakpoints": true
-    },
-    {
-      "idx": 5,
-      "version": "7",
-      "when": 1793437458907,
-      "tag": "0005_class_feed_posts",
-      "breakpoints": true
-    }
-  ]
+  "entries": []
 }
