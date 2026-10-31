@@ -143,6 +143,38 @@ export type Database = {
           },
         ]
       }
+      class_posts: {
+        Row: {
+          author_id: string
+          body: string
+          classroom_id: string
+          created_at: string
+          id: string
+        }
+        Insert: {
+          author_id?: string
+          body: string
+          classroom_id: string
+          created_at?: string
+          id?: string
+        }
+        Update: {
+          author_id?: string
+          body?: string
+          classroom_id?: string
+          created_at?: string
+          id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "class_posts_classroom_id_fkey"
+            columns: ["classroom_id"]
+            isOneToOne: false
+            referencedRelation: "classrooms"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       classroom_assignments: {
         Row: {
           classroom_id: string
@@ -679,6 +711,17 @@ export type Database = {
       class_exam_submit: {
         Args: { _aid: string; _paths: string[] }
         Returns: undefined
+      }
+      class_feed: {
+        Args: { _cid: string }
+        Returns: {
+          author_id: string
+          author_name: string
+          body: string
+          created_at: string
+          id: string
+          is_teacher: boolean
+        }[]
       }
       classroom_roster: {
         Args: { _cid: string }
