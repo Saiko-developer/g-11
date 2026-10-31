@@ -21,15 +21,16 @@ function ClassTabs({ cid, teacher, onChange }: { cid: string; teacher: boolean; 
   const tabs: [string, string, number][] = teacher
     ? [["feed", "💬 Feed", 0], ["group", "👥 Group Chat", groupN], ["private", "🔒 Private Chat", privN], ["assign", "📋 Assignments", 0], ["grades", "🎓 Students & Grades", 0]]
     : [["feed", "💬 Feed", 0], ["group", "👥 Group Chat", groupN], ["private", "🔒 Chat with Teacher", privN], ["assign", "📋 Assignments", 0]];
-  const [tab, setTab] = useState<string>("assign");
+  const [tab, setTab] = useState<string | null>(null);
   return (
     <div className="mt-3 border-t border-border pt-3">
-      <div role="tablist" className="mb-3 flex flex-wrap gap-1">
+      <div className={`${tab ? "mb-3" : ""} flex flex-wrap gap-1`}>
         {tabs.map(([k, label, n]) => (
-          <button key={k} role="tab" aria-selected={tab === k} onClick={() => setTab(k)}
-            className={`relative rounded-md px-2.5 py-1.5 text-xs font-medium ${tab === k ? "bg-primary text-primary-foreground" : "border border-border hover:bg-muted"}`}>
+          <button key={k} aria-pressed={tab === k} aria-expanded={tab === k} onClick={() => setTab(tab === k ? null : k)}
+            className={`relative inline-flex items-center gap-1 rounded-md px-2.5 py-1.5 text-xs font-medium ${tab === k ? "bg-primary text-primary-foreground" : "border border-border hover:bg-muted"}`}>
             {label}
             {n > 0 && <span className="ml-1 rounded-full bg-destructive px-1.5 text-[10px] text-destructive-foreground">{n}</span>}
+            {tab === k ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />}
           </button>
         ))}
       </div>
