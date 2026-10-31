@@ -396,7 +396,11 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
       {open && <TutorQuotaBar lowOnly />}
       {open && (subtitle || phase !== "idle") && (
         <p className="line-clamp-2 max-w-[260px] rounded-2xl bg-card/95 px-3 py-1.5 text-xs leading-relaxed text-foreground shadow-md">
-          {phase === "speaking" && subtitle ? subtitle : statusLabel[phase]}
+          {phase === "speaking" && subtitle
+            ? subtitle
+            : phase === "thinking" && studentLine
+              ? `ကြားလိုက်ရတာ: “${studentLine}”`
+              : statusLabel[phase]}
         </p>
       )}
       <div className="relative">
