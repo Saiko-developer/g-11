@@ -1,13 +1,5 @@
 {
   "version": "7",
   "dialect": "postgresql",
-  "entries": [
-    {
-      "idx": 0,
-      "version": "7",
-      "when": 1793424544475,
-      "tag": "0000_attach_signup_trigger",
-      "breakpoints": true
-    }
-  ]
+  "entries": []
 }
