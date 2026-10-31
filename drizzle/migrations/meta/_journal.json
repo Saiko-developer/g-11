@@ -36,6 +36,13 @@
       "when": 1793436450402,
       "tag": "0004_fix_create_classroom_code",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1793437458907,
+      "tag": "0005_class_feed_posts",
+      "breakpoints": true
     }
   ]
 }
