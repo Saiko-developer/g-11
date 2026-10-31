@@ -16,3 +16,10 @@ describe("takeSpeakableChunks", () => {
     expect(done.chunks).toEqual(["Present Perfect ကို သုံးရ"]);
   });
 });
+
+import { cleanForSpeech } from "./voice-sentences";
+describe("cleanForSpeech", () => {
+  it("drops robotic English headers", () => {
+    expect(cleanForSpeech("**[The Correct Answer]** အဖြေမှန်ကတော့ begins ပါ။")).toBe("အဖြေမှန်ကတော့ begins ပါ။");
+  });
+});

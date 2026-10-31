@@ -8,7 +8,7 @@ import { toast } from "sonner";
 import { TutorQuotaBar, tutorFetch } from "@/components/TutorQuotaBar";
 import { SayaOwlAvatar } from "@/components/SayaOwlAvatar";
 import { EXAM_UPLOAD_MESSAGE, fileToDataUrl, onExamUpload } from "@/lib/examUpload";
-import { takeSpeakableChunks } from "@/lib/voice-sentences";
+import { cleanForSpeech, takeSpeakableChunks } from "@/lib/voice-sentences";
 
 /**
  * Voice-only Sayar Owl popup. Students talk in Burmese/English; Sayar Owl
@@ -160,7 +160,9 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
     maybeFinishTurn();
   };
 
-  const enqueueSpeech = (text: string) => {
+  const enqueueSpeech = (raw: string) => {
+    const text = cleanForSpeech(raw);
+    if (!text) return;
     textQueueRef.current.push(text);
     void pump();
   };

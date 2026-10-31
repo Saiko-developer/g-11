@@ -39,3 +39,12 @@ export function takeSpeakableChunks(
   void lastBoundary;
   return { chunks, next: start };
 }
+
+/** Removes bracketed section headers and markdown so they are never read aloud. */
+export function cleanForSpeech(text: string): string {
+  return text
+    .replace(/\[[^\]\n]{1,60}\]/g, "")
+    .replace(/[*#>`_]+/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
