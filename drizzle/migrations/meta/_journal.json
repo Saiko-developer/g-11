@@ -29,6 +29,13 @@
       "when": 1793436053475,
       "tag": "0003_restore_signup_trigger",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1793436450402,
+      "tag": "0004_fix_create_classroom_code",
+      "breakpoints": true
     }
   ]
 }
