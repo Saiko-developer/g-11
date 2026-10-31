@@ -8,6 +8,13 @@
       "when": 1793437895918,
       "tag": "0000_restore_signup_trigger",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1793439624714,
+      "tag": "0001_class_chat",
+      "breakpoints": true
     }
   ]
 }
