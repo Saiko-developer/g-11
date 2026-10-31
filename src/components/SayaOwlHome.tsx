@@ -25,6 +25,17 @@ function readActiveSectionText(): string | null {
 type SayaOwlHomeProps = { lessonContext: string };
 type Attachment = { name: string; mediaType: string; url: string };
 type Phase = "idle" | "listening" | "thinking" | "speaking" | "muted";
+type NativeRec = {
+  lang: string;
+  continuous: boolean;
+  interimResults: boolean;
+  start: () => void;
+  stop: () => void;
+  abort: () => void;
+  onresult: ((e: { resultIndex: number; results: { length: number; [i: number]: { isFinal: boolean; 0: { transcript: string } } } }) => void) | null;
+  onerror: ((e: unknown) => void) | null;
+  onend: (() => void) | null;
+};
 
 const FIRST_CHUNK = 30;
 const SILENCE_MS = 2000;
@@ -70,6 +81,8 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
   });
 
   const activeRef = useRef(false);
+  const nativeRecRef = useRef<NativeRec | null>(null);
+  const nativeFailedRef = useRef(false);
   const mutedRef = useRef(false);
   const streamRef = useRef<MediaStream | null>(null);
   const recorderRef = useRef<MediaRecorder | null>(null);
@@ -176,6 +189,8 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
   };
 
   const releaseMic = () => {
+    try { nativeRecRef.current?.abort(); } catch { /* ignore */ }
+    nativeRecRef.current = null;
     stopVad();
     try { if (recorderRef.current?.state === "recording") recorderRef.current.stop(); } catch { /* ignore */ }
     recorderRef.current = null;
@@ -218,6 +233,60 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
     if (!activeRef.current || mutedRef.current) return;
     setPhase("listening");
     setHeardSpeech(false);
+
+    // Preferred path: the browser's native Burmese recognizer (same as /tutor).
+    const w = window as unknown as { SpeechRecognition?: new () => NativeRec; webkitSpeechRecognition?: new () => NativeRec };
+    const Ctor = w.SpeechRecognition ?? w.webkitSpeechRecognition;
+    if (Ctor && !nativeFailedRef.current) {
+      const rec = new Ctor();
+      rec.lang = "my-MM";
+      rec.continuous = true;
+      rec.interimResults = true;
+      nativeRecRef.current = rec;
+      let finalText = "";
+      let interim = "";
+      let silence: number | undefined;
+      let finished = false;
+      const finish = () => {
+        if (finished) return;
+        finished = true;
+        window.clearTimeout(silence);
+        try { rec.stop(); } catch { /* ignore */ }
+      };
+      const startedAt = Date.now();
+      const idle = window.setTimeout(() => { if (!finalText && !interim) finish(); }, 20000);
+      rec.onresult = (e) => {
+        interim = "";
+        for (let i = e.resultIndex; i < e.results.length; i++) {
+          const r = e.results[i];
+          if (r.isFinal) finalText += (finalText ? " " : "") + r[0].transcript.trim();
+          else interim += r[0].transcript;
+        }
+        setHeardSpeech(true);
+        setStudentLine((finalText + " " + interim).trim());
+        window.clearTimeout(silence);
+        silence = window.setTimeout(finish, SILENCE_MS);
+        if (Date.now() - startedAt > 45000) finish();
+      };
+      rec.onerror = (e) => {
+        const err = (e as { error?: string }).error;
+        if (err === "not-allowed" || err === "service-not-allowed" || err === "language-not-supported") {
+          nativeFailedRef.current = true;
+        }
+      };
+      rec.onend = () => {
+        window.clearTimeout(idle);
+        window.clearTimeout(silence);
+        if (nativeRecRef.current === rec) nativeRecRef.current = null;
+        if (!activeRef.current || mutedRef.current) return;
+        const text = (finalText + " " + interim).trim();
+        if (!text) { listenRef.current(); return; }
+        setStudentLine(text);
+        fillerDoneRef.current = playFiller();
+        sendTurn(text);
+      };
+      try { rec.start(); return; } catch { nativeFailedRef.current = true; nativeRecRef.current = null; }
+    }
     let stream: MediaStream;
     try {
       stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true } });
