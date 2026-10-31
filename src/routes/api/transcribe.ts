@@ -48,7 +48,7 @@ export const Route = createFileRoute("/api/transcribe")({
         upstreamForm.append("file", file, `recording.${ext}`);
         upstreamForm.append(
           "prompt",
-          "ဆရာ၊ Exercise A မေးခွန်း ၃ ကို ရှင်းပြပေးပါ။ Unit 1 Grammar မှာ Present Perfect နဲ့ Past Simple ဘာကွာလဲ။ ဒီ Reading ထဲက vocabulary အဓိပ္ပာယ် ဘာလဲ။ The speaker is a Myanmar Grade 10 student talking to a teacher called ဆရာ. Speech mixes Burmese (Myanmar Unicode script) with English textbook words like Unit, Exercise, Question, Lesson, Grammar, Reading, Writing, Listening, Speaking, Vocabulary, tense. Write Burmese in Myanmar script (never romanized), English words in English, and numbers as spoken.",
+          "Grade 10 Myanmar student speaking Burmese mixed with English textbook words (Unit, Exercise, Lesson, Grammar, Reading, Vocabulary). Transcribe exactly what is said; keep exercise letters and numbers exactly as spoken.",
         );
 
         const upstream = await fetch(
