@@ -90,7 +90,7 @@ export const Route = createFileRoute("/api/tts")({
                   role: "user",
                   parts: [
                     {
-                      text: `ကျောင်းသားများကို သင်ကြားနေသော မြန်မာဆရာတစ်ဦးကဲ့သို့ ယဉ်ကျေးနွေးထွေးစွာ၊ ရှင်းလင်းသော အသံဖြင့် ဖတ်ပြပါ။\n\n${input}`,
+                      text: input,
                     },
                   ],
                 },
