@@ -28,7 +28,7 @@ export const tutorFetch: typeof fetch = async (input, init) => {
   return res;
 };
 
-export function TutorQuotaBar({ compact = false }: { compact?: boolean }) {
+export function TutorQuotaBar({ compact = false, lowOnly = false }: { compact?: boolean; lowOnly?: boolean }) {
   const [q, setQ] = useState<TutorQuota | null>(null);
   const [sending, setSending] = useState(false);
   const [askOpen, setAskOpen] = useState(false);
@@ -63,6 +63,15 @@ export function TutorQuotaBar({ compact = false }: { compact?: boolean }) {
     setAskOpen(false);
     load();
   };
+
+  if (lowOnly && left > 3) return null;
+  if (lowOnly && left > 0) {
+    return (
+      <p className={`rounded-full px-3 py-1 text-xs font-medium shadow ${left === 1 ? "bg-destructive/15 text-destructive" : "bg-accent/20 text-foreground"}`}>
+        ⚠️ {left === 1 ? "နောက်ဆုံး (၁) ကြိမ်သာ မေးခွင့် ကျန်ပါတော့သည်" : `ယနေ့ မေးခွင့် (${left}) ကြိမ်သာ ကျန်ပါတော့သည်`}
+      </p>
+    );
+  }
 
   return (
     <div className={`rounded-lg border border-border bg-card px-3 py-2 text-xs ${compact ? "" : "text-sm"}`}>
