@@ -682,3 +682,11 @@ INSERT INTO public.payment_settings (id, packages, exam_packages) VALUES (1,
   '[{"credits":50,"price":1000},{"credits":150,"price":2500}]',
   '[{"credits":5,"price":1500},{"credits":15,"price":4000}]') ON CONFLICT (id) DO NOTHING;
 INSERT INTO public.class_exam_ai_control (id) VALUES (true) ON CONFLICT DO NOTHING;
+
+-- ============ OWNER DEFAULTS ============
+ALTER TABLE public.classroom_assignments ALTER COLUMN created_by SET DEFAULT auth.uid();
+ALTER TABLE public.exam_submissions ALTER COLUMN user_id SET DEFAULT auth.uid();
+ALTER TABLE public.tutor_chats ALTER COLUMN user_id SET DEFAULT auth.uid();
+ALTER TABLE public.practice_attempts ALTER COLUMN user_id SET DEFAULT auth.uid();
+ALTER TABLE public.topup_requests ALTER COLUMN user_id SET DEFAULT auth.uid();
+ALTER TABLE public.teacher_requests ALTER COLUMN user_id SET DEFAULT auth.uid();
