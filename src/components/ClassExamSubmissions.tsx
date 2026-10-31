@@ -7,7 +7,7 @@ import { supabase } from "@/integrations/supabase/client";
 import type { MockExamPaper } from "@/lib/mockExam";
 import type { GradeResult } from "@/routes/api/grade-exam";
 
-type Row = {
+export type Row = {
   student_id: string; display_name: string; attempt_id: string | null; started_at: string | null;
   submitted_at: string | null; image_paths: string[]; score: number | null; total_marks: number | null;
   result: GradeResult | null; teacher_feedback: string; graded_at: string | null;
@@ -63,7 +63,7 @@ export function ClassExamSubmissions({ aid, paper }: { aid: string; paper: MockE
   );
 }
 
-function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper; onSaved: () => Promise<void> | void }) {
+export function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper; onSaved: () => Promise<void> | void }) {
   const [urls, setUrls] = useState<string[]>([]);
   const [page, setPage] = useState(0);
   const [grade, setGrade] = useState<GradeResult | null>(row.result);
