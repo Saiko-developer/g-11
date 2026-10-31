@@ -27,7 +27,7 @@ type Attachment = { name: string; mediaType: string; url: string };
 type Phase = "idle" | "listening" | "thinking" | "speaking" | "muted";
 
 const FIRST_CHUNK = 30;
-const SILENCE_MS = 800;
+const SILENCE_MS = 2000;
 /** Short Burmese acknowledgements played instantly while the real answer is prepared. */
 const FILLERS = ["ဟုတ်ကဲ့ပါ… ဆရာ ကြည့်ပေးမယ်နော်။", "ကောင်းပြီ… သေချာ ရှင်းပြမယ်နော်။", "အေးပါ… ခဏလေး စဉ်းစားလိုက်ဦးမယ်။"];
 const NEXT_CHUNK = 200;
@@ -396,7 +396,11 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
       {open && <TutorQuotaBar lowOnly />}
       {open && (subtitle || phase !== "idle") && (
         <p className="line-clamp-2 max-w-[260px] rounded-2xl bg-card/95 px-3 py-1.5 text-xs leading-relaxed text-foreground shadow-md">
-          {phase === "speaking" && subtitle ? subtitle : statusLabel[phase]}
+          {phase === "speaking" && subtitle
+            ? subtitle
+            : phase === "thinking" && studentLine
+              ? `ကြားလိုက်ရတာ: “${studentLine}”`
+              : statusLabel[phase]}
         </p>
       )}
       <div className="relative">
