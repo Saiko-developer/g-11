@@ -14,6 +14,35 @@ export type Database = {
   }
   public: {
     Tables: {
+      class_chat_reads: {
+        Row: {
+          classroom_id: string
+          last_read_at: string
+          thread: string
+          user_id: string
+        }
+        Insert: {
+          classroom_id: string
+          last_read_at?: string
+          thread: string
+          user_id: string
+        }
+        Update: {
+          classroom_id?: string
+          last_read_at?: string
+          thread?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "class_chat_reads_classroom_id_fkey"
+            columns: ["classroom_id"]
+            isOneToOne: false
+            referencedRelation: "classrooms"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       class_exam_ai_control: {
         Row: {
           id: boolean
@@ -139,6 +168,41 @@ export type Database = {
             columns: ["assignment_id"]
             isOneToOne: true
             referencedRelation: "classroom_assignments"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      class_messages: {
+        Row: {
+          body: string
+          classroom_id: string
+          created_at: string
+          id: string
+          peer_id: string | null
+          sender_id: string
+        }
+        Insert: {
+          body: string
+          classroom_id: string
+          created_at?: string
+          id?: string
+          peer_id?: string | null
+          sender_id?: string
+        }
+        Update: {
+          body?: string
+          classroom_id?: string
+          created_at?: string
+          id?: string
+          peer_id?: string | null
+          sender_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "class_messages_classroom_id_fkey"
+            columns: ["classroom_id"]
+            isOneToOne: false
+            referencedRelation: "classrooms"
             referencedColumns: ["id"]
           },
         ]
@@ -680,6 +744,32 @@ export type Database = {
       claim_class_exam_ai: {
         Args: { _attempt: string; _force?: boolean }
         Returns: boolean
+      }
+      class_chat: {
+        Args: { _cid: string; _peer: string }
+        Returns: {
+          body: string
+          created_at: string
+          id: string
+          is_teacher: boolean
+          sender_id: string
+          sender_name: string
+        }[]
+      }
+      class_chat_mark_read: {
+        Args: { _cid: string; _thread: string }
+        Returns: undefined
+      }
+      class_chat_send: {
+        Args: { _body: string; _cid: string; _peer: string }
+        Returns: string
+      }
+      class_chat_unread: {
+        Args: { _cid: string }
+        Returns: {
+          thread: string
+          unread: number
+        }[]
       }
       class_exam_grade: {
         Args: {
