@@ -6,6 +6,30 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { useAuth } from "@/components/AuthGate";
 import { supabase } from "@/integrations/supabase/client";
 import { ClassAssignments } from "@/components/ClassAssignments";
+import { ClassFeed } from "@/components/ClassFeed";
+import { ClassGradebook } from "@/components/ClassGradebook";
+
+function ClassTabs({ cid, teacher, onChange }: { cid: string; teacher: boolean; onChange?: () => void }) {
+  const tabs = teacher
+    ? ([["feed", "💬 Feed"], ["assign", "📋 Assignments"], ["grades", "👥 Students & Grades"]] as const)
+    : ([["feed", "💬 Feed"], ["assign", "📋 Assignments"]] as const);
+  const [tab, setTab] = useState<string>("assign");
+  return (
+    <div className="mt-3 border-t border-border pt-3">
+      <div role="tablist" className="mb-3 flex flex-wrap gap-1">
+        {tabs.map(([k, label]) => (
+          <button key={k} role="tab" aria-selected={tab === k} onClick={() => setTab(k)}
+            className={`rounded-md px-2.5 py-1.5 text-xs font-medium ${tab === k ? "bg-primary text-primary-foreground" : "border border-border hover:bg-muted"}`}>
+            {label}
+          </button>
+        ))}
+      </div>
+      {tab === "feed" && <ClassFeed cid={cid} teacher={teacher} />}
+      {tab === "assign" && <ClassAssignments cid={cid} teacher={teacher} />}
+      {tab === "grades" && teacher && <ClassGradebook cid={cid} onChange={onChange ?? (() => {})} />}
+    </div>
+  );
+}
 
 export const Route = createFileRoute("/classrooms")({
   head: () => ({
@@ -155,7 +179,7 @@ function TeacherView() {
                 {open === r.id ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
               </button>
               {open === r.id && <Roster cid={r.id} onChange={load} />}
-              <ClassAssignments cid={r.id} teacher />
+              <ClassTabs cid={r.id} teacher onChange={load} />
             </div>
           ))}
         </div>
@@ -318,7 +342,7 @@ function StudentView() {
                   <LogOut className="h-3.5 w-3.5" /> Leave
                 </button>
               </div>
-              <ClassAssignments cid={c.id} teacher={false} />
+              <ClassTabs cid={c.id} teacher={false} />
             </div>
           ))}
         </div>
