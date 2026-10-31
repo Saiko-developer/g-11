@@ -8,23 +8,36 @@ import { supabase } from "@/integrations/supabase/client";
 import { ClassAssignments } from "@/components/ClassAssignments";
 import { ClassFeed } from "@/components/ClassFeed";
 import { ClassGradebook } from "@/components/ClassGradebook";
+import { ChatThread, PrivateInbox, useChatUnread } from "@/components/ClassChat";
 
 function ClassTabs({ cid, teacher, onChange }: { cid: string; teacher: boolean; onChange?: () => void }) {
-  const tabs = teacher
-    ? ([["feed", "💬 Feed"], ["assign", "📋 Assignments"], ["grades", "👥 Students & Grades"]] as const)
-    : ([["feed", "💬 Feed"], ["assign", "📋 Assignments"]] as const);
+  const [me, setMe] = useState<string | null>(null);
+  useEffect(() => { void supabase.auth.getUser().then(({ data }) => setMe(data.user?.id ?? null)); }, []);
+  const { counts, reload } = useChatUnread(cid);
+  const groupN = counts.group ?? 0;
+  const privN = teacher
+    ? Object.entries(counts).reduce((s, [k, v]) => (k === "group" ? s : s + v), 0)
+    : (me ? counts[me] ?? 0 : 0);
+  const tabs: [string, string, number][] = teacher
+    ? [["feed", "💬 Feed", 0], ["group", "👥 Group Chat", groupN], ["private", "🔒 Private Chat", privN], ["assign", "📋 Assignments", 0], ["grades", "🎓 Students & Grades", 0]]
+    : [["feed", "💬 Feed", 0], ["group", "👥 Group Chat", groupN], ["private", "🔒 Chat with Teacher", privN], ["assign", "📋 Assignments", 0]];
   const [tab, setTab] = useState<string>("assign");
   return (
     <div className="mt-3 border-t border-border pt-3">
       <div role="tablist" className="mb-3 flex flex-wrap gap-1">
-        {tabs.map(([k, label]) => (
+        {tabs.map(([k, label, n]) => (
           <button key={k} role="tab" aria-selected={tab === k} onClick={() => setTab(k)}
-            className={`rounded-md px-2.5 py-1.5 text-xs font-medium ${tab === k ? "bg-primary text-primary-foreground" : "border border-border hover:bg-muted"}`}>
+            className={`relative rounded-md px-2.5 py-1.5 text-xs font-medium ${tab === k ? "bg-primary text-primary-foreground" : "border border-border hover:bg-muted"}`}>
             {label}
+            {n > 0 && <span className="ml-1 rounded-full bg-destructive px-1.5 text-[10px] text-destructive-foreground">{n}</span>}
           </button>
         ))}
       </div>
       {tab === "feed" && <ClassFeed cid={cid} teacher={teacher} />}
+      {tab === "group" && <ChatThread cid={cid} peer={null} teacher={teacher} onRead={reload} />}
+      {tab === "private" && (teacher
+        ? <PrivateInbox cid={cid} counts={counts} onRead={reload} />
+        : me && <ChatThread cid={cid} peer={me} teacher={false} onRead={reload} />)}
       {tab === "assign" && <ClassAssignments cid={cid} teacher={teacher} />}
       {tab === "grades" && teacher && <ClassGradebook cid={cid} onChange={onChange ?? (() => {})} />}
     </div>
