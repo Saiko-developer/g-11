@@ -160,7 +160,7 @@ export type Database = {
         Insert: {
           classroom_id: string
           created_at?: string
-          created_by: string
+          created_by?: string
           due_at?: string | null
           duration_minutes?: number
           id?: string
@@ -296,7 +296,7 @@ export type Database = {
           score?: number | null
           total_marks?: number | null
           unit?: number
-          user_id: string
+          user_id?: string
         }
         Update: {
           created_at?: string
@@ -409,7 +409,7 @@ export type Database = {
           skill: string
           unit: number
           updated_at?: string
-          user_id: string
+          user_id?: string
         }
         Update: {
           answer?: string
@@ -477,7 +477,7 @@ export type Database = {
           school?: string
           status?: string
           subject?: string
-          user_id: string
+          user_id?: string
         }
         Update: {
           created_at?: string
@@ -517,7 +517,7 @@ export type Database = {
           reviewed_by?: string | null
           status?: string
           txn_ref: string
-          user_id: string
+          user_id?: string
         }
         Update: {
           created_at?: string
@@ -549,7 +549,7 @@ export type Database = {
           messages?: Json
           title?: string
           updated_at?: string
-          user_id: string
+          user_id?: string
         }
         Update: {
           created_at?: string
