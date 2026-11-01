@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import type { Session } from "@supabase/supabase-js";
-import { Coins, LogOut, Zap } from "lucide-react";
+import { FileText, LogOut, Zap } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import type { TutorQuota } from "@/components/TutorQuotaBar";
@@ -47,15 +47,23 @@ export function AccountMenu({ session, onSignOut }: { session: Session; onSignOu
   const name = (meta.full_name as string) || session.user.email || "";
   const avatar = meta.avatar_url as string | undefined;
   const [q, setQ] = useState<TutorQuota | null>(null);
+  const [eq, setEq] = useState<{ role: string; limit: number; used: number; extra?: number } | null>(null);
 
   const load = useCallback(async () => {
-    const { data } = await supabase.rpc("tutor_quota" as never);
-    setQ((data as unknown as TutorQuota) ?? null);
+    const [t, e] = await Promise.all([
+      supabase.rpc("tutor_quota" as never),
+      supabase.rpc("exam_quota"),
+    ]);
+    setQ((t.data as unknown as TutorQuota) ?? null);
+    setEq((e.data as unknown as typeof eq) ?? null);
   }, []);
 
   const bonus = q?.bonus_left ?? 0;
   const left = q?.daily_left ?? 0;
   const limit = q?.daily_limit ?? 0;
+  const examLimit = eq?.limit ?? 0;
+  const examLeft = Math.max(0, examLimit - (eq?.used ?? 0));
+  const examExtra = eq?.extra ?? 0;
 
   return (
     <Popover onOpenChange={(o) => { if (o) void load(); }}>
@@ -83,8 +91,14 @@ export function AccountMenu({ session, onSignOut }: { session: Session; onSignOu
             <p className="py-6 text-center text-sm font-medium text-primary">🎓 အကန့်အသတ်မရှိ</p>
           ) : (
             <div className="flex justify-around">
-              <Ring value={bonus} max={Math.max(bonus, 50)} label={String(bonus)} sub="🪙 AI Credits" icon={<Coins className="h-4 w-4" />} glow />
-              <Ring value={left} max={limit} label={`${left}/${limit}`} sub="⚡ Today Free" icon={<Zap className="h-4 w-4" />} />
+              <div className="flex flex-col items-center gap-1">
+                <Ring value={left} max={limit} label={`${left}/${limit}`} sub="💬 AI Tutor" icon={<Zap className="h-4 w-4" />} />
+                <span className="text-[10px] font-semibold text-amber-500">+{bonus} AI Credits</span>
+              </div>
+              <div className="flex flex-col items-center gap-1">
+                <Ring value={examLeft} max={examLimit} label={`${examLeft}/${examLimit}`} sub="📑 Exam Credits" icon={<FileText className="h-4 w-4" />} glow />
+                <span className="text-[10px] font-semibold text-amber-500">+{examExtra} Bonus Exams</span>
+              </div>
             </div>
           )}
         </div>
