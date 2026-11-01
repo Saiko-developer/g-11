@@ -678,7 +678,7 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false }: SayaOwlHomeProps
   }
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 flex max-w-[calc(100vw-2rem)] flex-col items-end gap-2" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
+    <div ref={drag.ref} className="fixed bottom-20 right-4 z-50 flex max-w-[calc(100vw-2rem)] flex-col items-end gap-2 md:bottom-4" style={{ paddingBottom: "env(safe-area-inset-bottom)", ...drag.style }}>
       {open && <TutorQuotaBar lowOnly />}
       {open && (subtitle || phase !== "idle") && (
         <p className="line-clamp-2 max-w-[260px] rounded-2xl bg-card/95 px-3 py-1.5 text-xs leading-relaxed text-foreground shadow-md">
@@ -689,7 +689,7 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false }: SayaOwlHomeProps
               : statusLabel[phase]}
         </p>
       )}
-      <div className="relative">
+      <div className="relative cursor-grab active:cursor-grabbing" {...drag.handleProps}>
         <button
           type="button"
           onClick={open ? tapOwl : openCall}
