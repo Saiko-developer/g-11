@@ -376,6 +376,16 @@ Please teach this as a spoken lesson — natural conversational voice, short sen
 
   const [photo, setPhoto] = useState<string | null>(null);
   const [photoBusy, setPhotoBusy] = useState(false);
+  // Exam paper handed over from the Home Page Sayar Owl pop-up.
+  useEffect(() => {
+    try {
+      const handoff = sessionStorage.getItem("saya-owl:tutor-photo");
+      if (handoff) {
+        sessionStorage.removeItem("saya-owl:tutor-photo");
+        setPhoto(handoff);
+      }
+    } catch { /* storage unavailable */ }
+  }, []);
   const photoInputRef = useRef<HTMLInputElement | null>(null);
   const onPickPhoto = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
