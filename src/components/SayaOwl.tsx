@@ -9,6 +9,7 @@ import tutorLogo from "@/assets/tutor-logo.png";
 import { MessageResponse } from "@/components/ai-elements/message";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { useDraggable } from "@/hooks/useDraggable";
 
 /** Strips the <voice_only>/<ui_display> envelope so only the note is shown. */
 function toDisplayText(raw: string): string {
@@ -28,6 +29,7 @@ type SayaOwlProps = {
 };
 
 function SayaOwlInner({ lessonContext, currentQuestion }: SayaOwlProps) {
+  const drag = useDraggable("sayaowl-pos");
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
   const [transport] = useState(() => new DefaultChatTransport({ api: "/api/chat", fetch: tutorFetch }));

@@ -9,6 +9,7 @@ import { toast } from "sonner";
 
 import { TutorQuotaBar, tutorFetch } from "@/components/TutorQuotaBar";
 import { SayaOwlAvatar } from "@/components/SayaOwlAvatar";
+import { useDraggable } from "@/hooks/useDraggable";
 import { fileToDataUrl, onExamUpload } from "@/lib/examUpload";
 import { cleanForSpeech, takeSpeakableChunks } from "@/lib/voice-sentences";
 
@@ -67,6 +68,7 @@ async function fetchSpeech(text: string): Promise<{ text: string; url: string | 
 }
 
 function SayaOwlHomeInner({ lessonContext, paperOnly = false }: SayaOwlHomeProps) {
+  const drag = useDraggable("sayaowl-pos");
   // Exam-paper mode: the student asks first (text or voice); replies in Burmese, voice optional.
   const [paper, setPaper] = useState<Attachment | null>(null);
   const unsentPaperRef = useRef<Attachment | null>(null);
