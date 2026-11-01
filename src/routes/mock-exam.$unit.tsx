@@ -18,6 +18,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { PaperSubmission } from "@/components/PaperSubmission";
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
+import { signInWithGoogle } from "@/components/RequireSignIn";
 import type { ExamQuota } from "@/routes/api/mock-exam";
 import { SYLLABUS, type SyllabusUnit } from "@/data/syllabus";
 import { downloadAnswerKey, downloadExamPaper, type DownloadFormat } from "@/lib/examPrint";
@@ -97,6 +98,7 @@ function MockExamPage() {
   const [showAnswers, setShowAnswers] = useState(false);
   const [editing, setEditing] = useState(false);
   const [quota, setQuota] = useState<ExamQuota | null>(null);
+  const [needsSignIn, setNeedsSignIn] = useState(false);
 
   const generate = useMemo(
     () => async (fresh = false) => {
@@ -113,6 +115,7 @@ function MockExamPage() {
           },
           body: JSON.stringify({ unit: config.units[0], unitTitle: meta.title, topics: meta.topics, fresh, units: config.units, sections: config.sections, count: config.count }),
         });
+        setNeedsSignIn(res.status === 401);
         const raw = (await res.json()) as { paper?: MockExamPaper; quota?: ExamQuota; error?: string };
         if (raw.quota) setQuota(raw.quota);
         if (!res.ok || !raw.paper) throw new Error(raw.error ?? "Could not generate the exam paper");
@@ -275,7 +278,17 @@ function MockExamPage() {
           </div>
         )}
 
-        {error && (
+        {error && needsSignIn && (
+          <div className="mt-8 rounded-2xl border border-border bg-card p-6 text-center text-sm">
+            <p className="font-semibold">စာမေးပွဲဖြေရန် အရင် Sign in ဝင်ပါ</p>
+            <p className="mt-1 text-muted-foreground">Please sign in to generate your mock exam paper.</p>
+            <Button className="mt-3" size="sm" onClick={() => void signInWithGoogle(window.location.href)}>
+              Google ဖြင့် ဝင်ရန်
+            </Button>
+          </div>
+        )}
+
+        {error && !needsSignIn && (
           <div className="mt-8 rounded-2xl border border-destructive/40 bg-destructive/10 p-6 text-sm">
             <p className="font-semibold">Could not generate the paper.</p>
             <p className="mt-1 text-muted-foreground">{error}</p>
