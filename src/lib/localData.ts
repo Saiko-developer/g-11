@@ -5,18 +5,6 @@
  * listening tracks.
  */
 import unit1 from "@/data/textbookUnit1.json";
-import unit1Audio from "@/data/lesson-audio/unit1.mp3.asset.json";
-import unit2Audio from "@/data/lesson-audio/unit2.mp3.asset.json";
-import unit3Audio from "@/data/lesson-audio/unit3.mp3.asset.json";
-import unit4Audio from "@/data/lesson-audio/unit4.mp3.asset.json";
-import unit5Audio from "@/data/lesson-audio/unit5.mp3.asset.json";
-import unit6Audio from "@/data/lesson-audio/unit6.mp3.asset.json";
-import unit7Audio from "@/data/lesson-audio/unit7.mp3.asset.json";
-import unit8Audio from "@/data/lesson-audio/unit8.mp3.asset.json";
-import unit9Audio from "@/data/lesson-audio/unit9.mp3.asset.json";
-import unit10Audio from "@/data/lesson-audio/unit10.mp3.asset.json";
-import unit11Audio from "@/data/lesson-audio/unit11.mp3.asset.json";
-import unit12Audio from "@/data/lesson-audio/unit12.mp3.asset.json";
 import { SYLLABUS, type SyllabusUnit } from "@/data/syllabus";
 
 export type LocalLesson = {
@@ -34,21 +22,13 @@ export type LocalLesson = {
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const UNIT1 = unit1 as any;
 
-/** Bundled listening / speaking tracks, keyed by unit number. */
-export const UNIT_AUDIO: Record<number, string> = {
-  1: encodeURI(unit1Audio.url),
-  2: encodeURI(unit2Audio.url),
-  3: encodeURI(unit3Audio.url),
-  4: encodeURI(unit4Audio.url),
-  5: encodeURI(unit5Audio.url),
-  6: encodeURI(unit6Audio.url),
-  7: encodeURI(unit7Audio.url),
-  8: encodeURI(unit8Audio.url),
-  9: encodeURI(unit9Audio.url),
-  10: encodeURI(unit10Audio.url),
-  11: encodeURI(unit11Audio.url),
-  12: encodeURI(unit12Audio.url),
-};
+/**
+ * Bundled listening / speaking tracks, keyed by unit number.
+ * Real MP3 files live in public/audio so they travel with the repo on push/remix.
+ */
+export const UNIT_AUDIO: Record<number, string> = Object.fromEntries(
+  Array.from({ length: 12 }, (_, i) => [i + 1, `/audio/unit${i + 1}.mp3`]),
+);
 
 export function getUnitAudio(unitNumber: number): string | null {
   return UNIT_AUDIO[unitNumber] ?? null;
