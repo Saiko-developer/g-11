@@ -194,11 +194,17 @@ function GuidePage() {
             <HelpCard card={card} />
           </>
         )}
-        {tab === "credits" && (session ? (
-          <TopupPanel showTabs />
-        ) : (
-          <p className={card}>Credit ဝယ်ယူရန် <Link to="/classrooms" className="text-primary underline">Login</Link> ဝင်ပါ။</p>
-        ))}
+        {tab === "credits" && (
+          <>
+            <StepGuide title="💳 Credit ဝယ်ယူနည်း" steps={CREDIT_STEPS} card={card} />
+            {session ? (
+              <TopupPanel showTabs />
+            ) : (
+              <p className={card}>Credit ဝယ်ယူရန် <Link to="/classrooms" className="text-primary underline">Login</Link> ဝင်ပါ။</p>
+            )}
+            <HelpCard card={card} />
+          </>
+        )}
       </main>
     </div>
   );
