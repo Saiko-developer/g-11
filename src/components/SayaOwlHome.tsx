@@ -3,7 +3,7 @@ import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport } from "ai";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { ExternalLink, FileText, Mic, Send, Volume2, VolumeX, X } from "lucide-react";
+import { ChevronDown, ExternalLink, FileText, Maximize2, MessageCircle, Mic, Minimize2, Minus, Plus, Send, Volume2, VolumeX, X } from "lucide-react";
 import { useAuth } from "@/components/AuthGate";
 import { toast } from "sonner";
 
@@ -74,6 +74,10 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false }: SayaOwlHomeProps
   const [voiceOn, setVoiceOn] = useState(true);
   const voiceOnRef = useRef(true);
   const [draft, setDraft] = useState("");
+  const [full, setFull] = useState(false);
+  const [tab, setTab] = useState<"paper" | "chat">("chat");
+  const [zoom, setZoom] = useState(1);
+  const [showDetail, setShowDetail] = useState(false);
   const [open, setOpen] = useState(false);
   const [phase, setPhase] = useState<Phase>("idle");
   const [heardSpeech, setHeardSpeech] = useState(false);
@@ -238,7 +242,7 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false }: SayaOwlHomeProps
         text,
         ...(file ? { files: [{ type: "file" as const, mediaType: file.mediaType, filename: file.name, url: file.url }] } : {}),
       },
-      { body: { mode, lessonContext, sectionContent: readActiveSectionText(), hasUpload: Boolean(file) } },
+      { body: { mode, paperVoice: paperModeRef.current && voiceOnRef.current, lessonContext, sectionContent: readActiveSectionText(), hasUpload: Boolean(file) } },
     );
   };
 
@@ -506,7 +510,7 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false }: SayaOwlHomeProps
     }
     if (status === "error") { t.done = true; maybeFinishTurn(); return; }
     if (!last || last.role !== "assistant" || messages.length <= t.userCount) return;
-    const body = last.parts.map((p) => (p.type === "text" ? p.text : "")).join("");
+    const body = last.parts.map((p) => (p.type === "text" ? p.text : "")).join("").split("@@")[0];
     const final = status === "ready";
     const { chunks, next } = takeSpeakableChunks(body, t.offset, final, t.offset === 0 ? FIRST_CHUNK : NEXT_CHUNK);
     t.offset = next;
@@ -528,11 +532,115 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false }: SayaOwlHomeProps
   if (paperOnly) {
     if (!open || !paper) return null;
     const reply = [...messages].reverse().find((m) => m.role === "assistant");
-    const replyText = (reply?.parts ?? []).map((p) => (p.type === "text" ? p.text : "")).join("").replace(/[*#`]/g, "").trim();
+    const rawReply = (reply?.parts ?? []).map((p) => (p.type === "text" ? p.text : "")).join("").replace(/[*#`]/g, "").trim();
+    const [detailPart, notePart] = rawReply.split("@@NOTE@@");
+    const replyText = detailPart.replace(/@+$/, "").trim();
+    const noteLines = (notePart ?? "").split("\n").map((l) => l.trim()).filter(Boolean);
+    const qLine = noteLines.find((l) => l.startsWith("အမေး"));
+    const aLine = noteLines.find((l) => l.startsWith("အဖြေ"));
+    const bullets = noteLines.filter((l) => l !== qLine && l !== aLine).map((l) => l.replace(/^[•\-]\s*/, ""));
+    const hasNote = Boolean(notePart && (qLine || aLine || bullets.length));
     const asked = messages.some((m) => m.role === "user");
+    const isImage = paper.mediaType.startsWith("image/");
+
+    const replyView = !asked ? (
+      <p className="rounded-2xl bg-primary/10 px-3 py-2 leading-relaxed">
+        မေးခွန်းလွှာ ရောက်ပါပြီ ကျောင်းသား။ ဘယ်မေးခွန်း သို့မဟုတ် ဘယ်နေရာကို ရှင်းပြပေးရမလဲ — စာရိုက်ပြီး ဖြစ်စေ၊ 🎙️ အသံဖြင့် ဖြစ်စေ (မြန်မာ/English) မေးလိုက်ပါနော်။
+      </p>
+    ) : (
+      <>
+        {studentLine && <p className="ml-auto max-w-[85%] rounded-2xl bg-primary px-3 py-2 text-primary-foreground">{studentLine}</p>}
+        {hasNote ? (
+          <div className="space-y-2">
+            <div className="rounded-2xl border border-border bg-primary/10 px-3 py-2">
+              <p className="mb-1 text-xs font-semibold text-primary">🎯 မေးခွန်းနှင့် အဖြေ</p>
+              {qLine && <p className="leading-relaxed">{qLine}</p>}
+              {aLine && <p className="font-semibold leading-relaxed">{aLine}</p>}
+            </div>
+            {bullets.length > 0 && (
+              <div className="rounded-2xl border border-border bg-secondary px-3 py-2">
+                <p className="mb-1 text-xs font-semibold">💡 အဓိက မှတ်သားရန်</p>
+                <ul className="list-disc space-y-1 pl-4 leading-relaxed">{bullets.map((b, i) => <li key={i}>{b}</li>)}</ul>
+              </div>
+            )}
+            <button type="button" onClick={() => setShowDetail((v) => !v)} aria-expanded={showDetail} className="flex w-full items-center justify-between rounded-xl border border-border px-3 py-2 text-xs font-medium hover:bg-secondary">
+              📖 အသေးစိတ် ရှင်းလင်းချက် အပြည့်အစုံ
+              <ChevronDown className={`h-4 w-4 transition ${showDetail ? "rotate-180" : ""}`} />
+            </button>
+            {showDetail && <p className="whitespace-pre-wrap rounded-2xl bg-secondary px-3 py-2 leading-relaxed">{replyText}</p>}
+          </div>
+        ) : voiceOn && busy ? (
+          <p className="rounded-2xl bg-secondary px-3 py-2 text-muted-foreground">ဆရာ အသံဖြင့် ရှင်းပြနေပါတယ် 🔊…</p>
+        ) : voiceOn && phase === "speaking" && notePart === undefined ? (
+          <p className="rounded-2xl bg-secondary px-3 py-2 text-muted-foreground">ဆရာ အသံဖြင့် ရှင်းပြနေပါတယ် 🔊…</p>
+        ) : (
+          <p className="whitespace-pre-wrap rounded-2xl bg-secondary px-3 py-2 leading-relaxed">{replyText || "ဆရာ စဉ်းစားနေပါတယ်…"}</p>
+        )}
+      </>
+    );
+
+    const paperView = (
+      <div className="flex h-full min-h-0 flex-col">
+        <div className="flex items-center justify-between gap-2 border-b border-border px-3 py-2 text-xs">
+          <span className="truncate font-medium">{paper.name}</span>
+          {isImage && (
+            <div className="flex items-center gap-1">
+              <button type="button" aria-label="ချုံ့မည်" onClick={() => setZoom((z) => Math.max(0.5, z - 0.25))} className="flex h-9 w-9 items-center justify-center rounded-lg border border-border hover:bg-secondary"><Minus className="h-4 w-4" /></button>
+              <button type="button" onClick={() => setZoom(1)} className="h-9 rounded-lg border border-border px-2 hover:bg-secondary">{Math.round(zoom * 100)}%</button>
+              <button type="button" aria-label="ချဲ့မည်" onClick={() => setZoom((z) => Math.min(3, z + 0.25))} className="flex h-9 w-9 items-center justify-center rounded-lg border border-border hover:bg-secondary"><Plus className="h-4 w-4" /></button>
+            </div>
+          )}
+        </div>
+        <div className="min-h-0 flex-1 overflow-auto bg-muted p-2">
+          {isImage ? (
+            <img src={paper.url} alt="Uploaded exam paper" style={{ width: `${zoom * 100}%`, maxWidth: "none" }} className="mx-auto block rounded" />
+          ) : (
+            <iframe src={paper.url} title={paper.name} className="h-full w-full rounded bg-background" />
+          )}
+        </div>
+        <button type="button" onClick={() => setTab("chat")} className="flex items-center justify-center gap-1.5 border-t border-border py-3 text-sm font-medium text-primary lg:hidden">
+          <MessageCircle className="h-4 w-4" /> မေးခွန်းတွေ့ပြီလား? ဆရာ့ကို မေးလိုက်ပါ →
+        </button>
+      </div>
+    );
+
+    const chatView = (
+      <div className="flex h-full min-h-0 flex-col">
+        <div className="px-3 pt-2"><TutorQuotaBar lowOnly /></div>
+        <div className="min-h-0 flex-1 space-y-3 overflow-y-auto px-3 py-3 text-sm">
+          {!full && (
+            <button type="button" onClick={() => { setFull(true); setTab("paper"); }} className="flex w-full items-center gap-2 rounded-lg bg-secondary px-2.5 py-2 text-left">
+              {isImage ? <img src={paper.url} alt="Uploaded exam paper" className="h-12 w-12 rounded object-cover" /> : <FileText className="h-6 w-6 text-primary" />}
+              <span className="truncate text-xs font-medium">{paper.name}</span>
+            </button>
+          )}
+          {replyView}
+        </div>
+        <form onSubmit={(e) => { e.preventDefault(); askByText(); }} className="flex items-end gap-2 border-t border-border p-2">
+          <textarea
+            value={draft}
+            onChange={(e) => setDraft(e.target.value)}
+            onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); askByText(); } }}
+            rows={1}
+            placeholder="မေးခွန်း ရိုက်ထည့်ပါ…"
+            className="min-h-11 min-w-0 flex-1 resize-none rounded-xl border border-input bg-background px-3 py-2.5 text-base sm:text-sm"
+          />
+          <button type="button" onClick={askByVoice} aria-label="အသံဖြင့် မေးမည်" aria-pressed={phase === "listening"} className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-border ${phase === "listening" ? "bg-destructive text-destructive-foreground" : "hover:bg-secondary"}`}>
+            <Mic className="h-5 w-5" />
+          </button>
+          <button type="submit" disabled={!draft.trim() || busy} aria-label="ပို့မည်" className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary text-primary-foreground disabled:opacity-50">
+            <Send className="h-5 w-5" />
+          </button>
+        </form>
+        <Link to="/tutor" onClick={openInTutor} className="flex items-center justify-center gap-1.5 border-t border-border py-2 text-xs font-medium text-primary hover:bg-secondary">
+          <ExternalLink className="h-3.5 w-3.5" /> Tutor စာမျက်နှာတွင် ဆက်မေးမည်
+        </Link>
+      </div>
+    );
+
     return (
-      <div className="fixed inset-x-2 bottom-2 z-[60] flex flex-col items-end gap-2 sm:inset-x-auto sm:bottom-4 sm:right-4" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
-        <div className="flex max-h-[min(70vh,34rem)] w-full flex-col overflow-hidden rounded-2xl border border-border bg-card text-card-foreground shadow-xl sm:w-[24rem]">
+      <div className={full ? "fixed inset-0 z-[60] flex flex-col bg-card text-card-foreground" : "fixed inset-x-2 bottom-2 z-[60] flex flex-col items-end gap-2 sm:inset-x-auto sm:bottom-4 sm:right-4"} style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
+        <div className={full ? "flex h-full min-h-0 w-full flex-col" : "flex h-[min(70vh,34rem)] w-full flex-col overflow-hidden rounded-2xl border border-border bg-card text-card-foreground shadow-xl sm:w-[24rem]"}>
           <div className="flex items-center gap-2 border-b border-border px-3 py-2">
             <SayaOwlAvatar state={phase} size={36} />
             <div className="min-w-0 flex-1">
@@ -543,56 +651,27 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false }: SayaOwlHomeProps
               {voiceOn ? <Volume2 className="h-4 w-4" /> : <VolumeX className="h-4 w-4" />}
               {voiceOn ? "အသံ" : "စာသား"}
             </button>
-            <button type="button" onClick={closeCall} aria-label="ပိတ်မည်" className="flex h-9 w-9 items-center justify-center rounded-full hover:bg-secondary">
+            <button type="button" onClick={() => setFull((f) => !f)} aria-label={full ? "ပြန့်ကျဉ်းမည်" : "မျက်နှာပြင်အပြည့်"} className="flex h-9 w-9 items-center justify-center rounded-full hover:bg-secondary">
+              {full ? <Minimize2 className="h-4 w-4" /> : <Maximize2 className="h-4 w-4" />}
+            </button>
+            <button type="button" onClick={() => { setFull(false); closeCall(); }} aria-label="ပိတ်မည်" className="flex h-9 w-9 items-center justify-center rounded-full hover:bg-secondary">
               <X className="h-4 w-4" />
             </button>
           </div>
-          <div className="px-3 pt-2"><TutorQuotaBar lowOnly /></div>
-          <div className="flex-1 space-y-3 overflow-y-auto px-3 py-3 text-sm">
-            <div className="flex items-center gap-2 rounded-lg bg-secondary px-2.5 py-2">
-              {paper.mediaType.startsWith("image/") ? (
-                <img src={paper.url} alt="Uploaded exam paper" className="h-12 w-12 rounded object-cover" />
-              ) : (
-                <FileText className="h-6 w-6 text-primary" />
-              )}
-              <span className="truncate text-xs font-medium">{paper.name}</span>
-            </div>
-            {!asked && (
-              <p className="rounded-2xl bg-primary/10 px-3 py-2 leading-relaxed">
-                မေးခွန်းလွှာ ရောက်ပါပြီ ကျောင်းသား။ ဘယ်မေးခွန်း သို့မဟုတ် ဘယ်နေရာကို ရှင်းပြပေးရမလဲ — စာရိုက်ပြီး ဖြစ်စေ၊ 🎙️ အသံဖြင့် ဖြစ်စေ (မြန်မာ/English) မေးလိုက်ပါနော်။
-              </p>
-            )}
-            {asked && studentLine && (
-              <p className="ml-auto max-w-[85%] rounded-2xl bg-primary px-3 py-2 text-primary-foreground">{studentLine}</p>
-            )}
-            {asked && (
-              <p className="whitespace-pre-wrap rounded-2xl bg-secondary px-3 py-2 leading-relaxed">
-                {replyText || "ဆရာ စဉ်းစားနေပါတယ်…"}
-              </p>
-            )}
-          </div>
-          <form
-            onSubmit={(e) => { e.preventDefault(); askByText(); }}
-            className="flex items-end gap-2 border-t border-border p-2"
-          >
-            <textarea
-              value={draft}
-              onChange={(e) => setDraft(e.target.value)}
-              onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); askByText(); } }}
-              rows={1}
-              placeholder="မေးခွန်း ရိုက်ထည့်ပါ…"
-              className="min-h-11 flex-1 resize-none rounded-xl border border-input bg-background px-3 py-2.5 text-base sm:text-sm"
-            />
-            <button type="button" onClick={askByVoice} aria-label="အသံဖြင့် မေးမည်" aria-pressed={phase === "listening"} className={`flex h-11 w-11 items-center justify-center rounded-xl border border-border ${phase === "listening" ? "bg-destructive text-destructive-foreground" : "hover:bg-secondary"}`}>
-              <Mic className="h-5 w-5" />
-            </button>
-            <button type="submit" disabled={!draft.trim() || busy} aria-label="ပို့မည်" className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary text-primary-foreground disabled:opacity-50">
-              <Send className="h-5 w-5" />
-            </button>
-          </form>
-          <Link to="/tutor" onClick={openInTutor} className="flex items-center justify-center gap-1.5 border-t border-border py-2 text-xs font-medium text-primary hover:bg-secondary">
-            <ExternalLink className="h-3.5 w-3.5" /> Tutor စာမျက်နှာတွင် ဆက်မေးမည်
-          </Link>
+          {full ? (
+            <>
+              <div className="grid grid-cols-2 gap-1 border-b border-border p-1.5 lg:hidden">
+                <button type="button" onClick={() => setTab("paper")} aria-pressed={tab === "paper"} className={`min-h-11 rounded-lg text-sm font-medium ${tab === "paper" ? "bg-primary text-primary-foreground" : "hover:bg-secondary"}`}>📄 မေးခွန်းလွှာ</button>
+                <button type="button" onClick={() => setTab("chat")} aria-pressed={tab === "chat"} className={`min-h-11 rounded-lg text-sm font-medium ${tab === "chat" ? "bg-primary text-primary-foreground" : "hover:bg-secondary"}`}>💬 ဆရာ့ကိုမေးမည်</button>
+              </div>
+              <div className="flex min-h-0 flex-1">
+                <div className={`${tab === "paper" ? "flex" : "hidden"} min-h-0 flex-1 flex-col lg:flex lg:border-r lg:border-border`}>{paperView}</div>
+                <div className={`${tab === "chat" ? "flex" : "hidden"} min-h-0 flex-1 flex-col lg:flex`}>{chatView}</div>
+              </div>
+            </>
+          ) : (
+            chatView
+          )}
         </div>
       </div>
     );
