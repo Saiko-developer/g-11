@@ -345,7 +345,7 @@ function StudentView() {
       ) : (
         <div className="grid gap-4 sm:grid-cols-2">
           {classes.map((c) => (
-            <div key={c.id} className={card}>
+            <div key={c.id} className={`${card} sm:has-[[aria-expanded=true]]:col-span-2`}>
               <div className="flex items-start justify-between gap-2">
                 <div>
                   <h3 className="font-semibold">{c.name}</h3>
