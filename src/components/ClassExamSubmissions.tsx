@@ -138,8 +138,19 @@ export function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper
   if (!row.submitted_at) return <p className="p-6 text-sm text-muted-foreground">{row.display_name} — {row.started_at ? "In progress" : "Not started"}</p>;
 
   return (
+    <div>
+    <div className="sticky top-0 z-10 mb-3 grid grid-cols-2 gap-1 rounded-xl border border-border bg-card p-1 lg:hidden" role="tablist">
+      <button role="tab" aria-selected={view === "paper"} onClick={() => setView("paper")}
+        className={`rounded-lg px-2 py-2 text-sm font-medium ${view === "paper" ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}>
+        📄 Answer Paper ({urls.length})
+      </button>
+      <button role="tab" aria-selected={view === "marks"} onClick={() => setView("marks")}
+        className={`rounded-lg px-2 py-2 text-sm font-medium ${view === "marks" ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}>
+        ✍️ Marks{score !== "" ? ` (${score}/${grade?.totalMarks ?? paper.totalMarks})` : ""}
+      </button>
+    </div>
     <div className="grid items-start gap-4 lg:grid-cols-2">
-      <div className="rounded-2xl border border-border bg-card p-4 lg:sticky lg:top-2 lg:max-h-[calc(100vh-1rem)] lg:overflow-y-auto">
+      <div className={`${view === "paper" ? "block" : "hidden"} lg:block rounded-2xl border border-border bg-card p-4 lg:sticky lg:top-2 lg:max-h-[calc(100vh-1rem)] lg:overflow-y-auto`}>
         <div className="flex flex-wrap items-center justify-between gap-2">
           <div>
             <p className="font-bold">{row.display_name}</p>
@@ -159,11 +170,19 @@ export function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper
                 </button>
               ))}
             </div>
+            {urls.length > 1 && (
+              <div className="mt-2 flex items-center justify-between lg:hidden">
+                <Button size="sm" variant="outline" disabled={page === 0} onClick={() => setPage(page - 1)}>‹ Prev</Button>
+                <span className="text-xs text-muted-foreground">Page {page + 1} of {urls.length}</span>
+                <Button size="sm" variant="outline" disabled={page >= urls.length - 1} onClick={() => setPage(page + 1)}>Next ›</Button>
+              </div>
+            )}
           </>
         ) : <Loader2 className="mx-auto mt-4 h-5 w-5 animate-spin text-primary" />}
+        <Button className="mt-3 w-full lg:hidden" variant="secondary" onClick={() => setView("marks")}>✍️ Enter scores & marks</Button>
       </div>
 
-      <div className="rounded-2xl border-2 border-primary/30 bg-card p-4">
+      <div className={`${view === "marks" ? "block" : "hidden"} lg:block rounded-2xl border-2 border-primary/30 bg-card p-4`}>
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h3 className="font-bold">အမှတ်ပေးခြင်း</h3>
           <Button size="sm" variant="outline" onClick={runAi} disabled={aiBusy || !urls.length}>
@@ -229,6 +248,7 @@ export function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper
           {saving ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />} Confirm & Send to Student
         </Button>
       </div>
+    </div>
     </div>
   );
 }
