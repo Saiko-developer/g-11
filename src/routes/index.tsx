@@ -9,6 +9,10 @@ import {
   Trophy,
 } from "lucide-react";
 import { useRef } from "react";
+import { toast } from "sonner";
+import { useAuth } from "@/components/AuthGate";
+import { signInWithGoogle } from "@/components/RequireSignIn";
+import { SayaOwlPaper } from "@/components/SayaOwlHome";
 
 import heroOwl from "@/assets/hero-owl.jpg";
 import { CurriculumExplorer } from "@/components/CurriculumExplorer";
@@ -51,9 +55,18 @@ const FEATURES = [
 function Landing() {
   const { t } = useI18n();
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const { session } = useAuth();
+  const onUploadClick = () => {
+    if (session) { fileInputRef.current?.click(); return; }
+    toast("စာမေးပွဲ မေးခွန်းလွှာ တင်ရန် Login ဝင်ပါ", {
+      description: "Google ဖြင့် Login ဝင်ပြီး ဆရာဇီးကွက်ကို မေးခွန်းလွှာအကြောင်း မေးနိုင်ပါတယ်။",
+      action: { label: "Google ဖြင့် ဝင်မည်", onClick: () => void signInWithGoogle() },
+    });
+  };
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
+      <SayaOwlPaper />
 
       {/* Hero */}
       <section className="relative overflow-hidden">
@@ -91,7 +104,7 @@ function Landing() {
               />
               <button
                 type="button"
-                onClick={() => fileInputRef.current?.click()}
+                onClick={onUploadClick}
                 className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-border bg-card px-5 py-3 text-sm font-semibold text-foreground transition hover:bg-secondary"
               >
                 <FileUp className="h-4 w-4" />

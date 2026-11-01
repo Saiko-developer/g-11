@@ -2,12 +2,14 @@ import { RequireSignIn } from "@/components/RequireSignIn";
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport } from "ai";
 import { useEffect, useRef, useState } from "react";
-import { X } from "lucide-react";
+import { Link } from "@tanstack/react-router";
+import { ExternalLink, FileText, Mic, Send, Volume2, VolumeX, X } from "lucide-react";
+import { useAuth } from "@/components/AuthGate";
 import { toast } from "sonner";
 
 import { TutorQuotaBar, tutorFetch } from "@/components/TutorQuotaBar";
 import { SayaOwlAvatar } from "@/components/SayaOwlAvatar";
-import { EXAM_UPLOAD_MESSAGE, fileToDataUrl, onExamUpload } from "@/lib/examUpload";
+import { fileToDataUrl, onExamUpload } from "@/lib/examUpload";
 import { cleanForSpeech, takeSpeakableChunks } from "@/lib/voice-sentences";
 
 /**
@@ -22,7 +24,7 @@ function readActiveSectionText(): string | null {
   return text.length > 12000 ? `${text.slice(0, 12000)}…` : text;
 }
 
-type SayaOwlHomeProps = { lessonContext: string };
+type SayaOwlHomeProps = { lessonContext: string; paperOnly?: boolean };
 type Attachment = { name: string; mediaType: string; url: string };
 type Phase = "idle" | "listening" | "thinking" | "speaking" | "muted";
 type NativeRec = {
@@ -64,7 +66,14 @@ async function fetchSpeech(text: string): Promise<{ text: string; url: string | 
   return { text, url: null };
 }
 
-function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
+function SayaOwlHomeInner({ lessonContext, paperOnly = false }: SayaOwlHomeProps) {
+  // Exam-paper mode: the student asks first (text or voice); replies in Burmese, voice optional.
+  const [paper, setPaper] = useState<Attachment | null>(null);
+  const unsentPaperRef = useRef<Attachment | null>(null);
+  const paperModeRef = useRef(false);
+  const [voiceOn, setVoiceOn] = useState(true);
+  const voiceOnRef = useRef(true);
+  const [draft, setDraft] = useState("");
   const [open, setOpen] = useState(false);
   const [phase, setPhase] = useState<Phase>("idle");
   const [heardSpeech, setHeardSpeech] = useState(false);
@@ -72,7 +81,7 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
   const [subtitle, setSubtitle] = useState("");
 
   const [transport] = useState(() => new DefaultChatTransport({ api: "/api/chat-home", fetch: tutorFetch }));
-  const { messages, sendMessage, status } = useChat({
+  const { messages, sendMessage, status, setMessages } = useChat({
     transport,
     onError: (err) => {
       console.error("[saya-owl-voice]", err);
@@ -143,6 +152,7 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
     if (!activeRef.current || speakingRef.current) return;
     if (t.active && t.done && textQueueRef.current.length === 0 && !nextFetchRef.current) {
       t.active = false;
+      if (paperModeRef.current) { setPhase("idle"); return; }
       if (voiceFailedRef.current) {
         toast.error("ဆရာ့အသံ ခဏ မထွက်နိုင်ပါ", { description: "အသံစနစ် အလုပ်များနေပါတယ်။ ခဏနေ ပြန်မေးပါ။" });
       }
@@ -214,7 +224,10 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
     }
   };
 
-  const sendTurn = (text: string, file?: Attachment) => {
+  const sendTurn = (text: string, fileArg?: Attachment) => {
+    const file = fileArg ?? unsentPaperRef.current ?? undefined;
+    unsentPaperRef.current = null;
+    const mode = paperModeRef.current && !voiceOnRef.current ? "text" : "voice";
     voiceFailedRef.current = false;
     textQueueRef.current = [];
     turnRef.current = { active: true, offset: 0, done: false, userCount: -1 };
@@ -225,7 +238,7 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
         text,
         ...(file ? { files: [{ type: "file" as const, mediaType: file.mediaType, filename: file.name, url: file.url }] } : {}),
       },
-      { body: { mode: "voice", lessonContext, sectionContent: readActiveSectionText(), hasUpload: Boolean(file) } },
+      { body: { mode, lessonContext, sectionContent: readActiveSectionText(), hasUpload: Boolean(file) } },
     );
   };
 
@@ -280,7 +293,7 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
         if (nativeRecRef.current === rec) nativeRecRef.current = null;
         if (!activeRef.current || mutedRef.current) return;
         const text = (finalText + " " + interim).trim();
-        if (!text) { listenRef.current(); return; }
+        if (!text) { relisten(); return; }
         setStudentLine(text);
         fillerDoneRef.current = playFiller();
         sendTurn(text);
@@ -311,12 +324,12 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
       if (streamRef.current === stream) streamRef.current = null;
       if (recorderRef.current === recorder) recorderRef.current = null;
       if (!activeRef.current || mutedRef.current) return;
-      if (!spoke) { listenRef.current(); return; }
+      if (!spoke) { relisten(); return; }
       setPhase("thinking");
       fillerDoneRef.current = playFiller();
       const text = await transcribe(new Blob(chunks, { type: recorder.mimeType || "audio/webm" }));
       if (!activeRef.current) return;
-      if (!text) { listenRef.current(); return; }
+      if (!text) { relisten(); return; }
       setStudentLine(text);
       sendTurn(text);
     };
@@ -346,6 +359,7 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
     }, 100);
     vadRef.current = { ctx, timer };
   };
+  const relisten = () => (paperModeRef.current ? setPhase("idle") : listenRef.current());
   const listenRef = useRef<() => void>(() => {});
   listenRef.current = () => void listenOnce();
 
@@ -385,6 +399,48 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
   const closeCall = () => {
     endCall();
     setOpen(false);
+    paperModeRef.current = false;
+    unsentPaperRef.current = null;
+    setPaper(null);
+    setDraft("");
+  };
+
+  /* --------------------------- exam paper ---------------------------- */
+  const busy = status === "submitted" || status === "streaming" || phase === "thinking";
+  const askByText = () => {
+    const q = draft.trim();
+    if (!q || busy) return;
+    releaseMic();
+    activeRef.current = true;
+    mutedRef.current = false;
+    setStudentLine(q);
+    setDraft("");
+    sendTurn(q);
+  };
+  const askByVoice = () => {
+    if (phase === "listening") { releaseMic(); setPhase("idle"); return; }
+    if (busy) return;
+    if (!startCall()) return;
+    stopSpeaking();
+    void listenOnce();
+  };
+  const stopSpeaking = () => {
+    textQueueRef.current = [];
+    nextFetchRef.current = null;
+    audioRef.current?.pause();
+    audioRef.current = null;
+  };
+  const toggleVoice = () => {
+    const next = !voiceOnRef.current;
+    voiceOnRef.current = next;
+    setVoiceOn(next);
+    if (!next) { stopSpeaking(); if (phase === "speaking") setPhase("idle"); }
+  };
+  const openInTutor = () => {
+    if (paper?.mediaType.startsWith("image/")) {
+      try { sessionStorage.setItem("saya-owl:tutor-photo", paper.url); } catch { /* too large */ }
+    }
+    closeCall();
   };
 
   const tapOwl = () => {
@@ -418,12 +474,19 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
     () =>
       onExamUpload(async (file) => {
         try {
+          if (!paperOnly) return;
           const url = await fileToDataUrl(file);
+          endCallRef.current();
+          const a = { name: file.name, mediaType: file.type || "application/octet-stream", url };
+          setMessages([]);
+          unsentPaperRef.current = a;
+          paperModeRef.current = true;
+          activeRef.current = true;
+          prepareFillers();
+          setPaper(a);
+          setDraft("");
           setOpen(true);
-          if (!startCall()) return;
-          releaseMic();
-          setStudentLine(`📄 ${file.name}`);
-          sendTurn(EXAM_UPLOAD_MESSAGE, { name: file.name, mediaType: file.type || "application/octet-stream", url });
+          setPhase("idle");
         } catch {
           toast.error("ဖိုင် ဖတ်၍ မရပါ", { description: "ဖိုင်ကို ပြန်ရွေးကြည့်ပါ။" });
         }
@@ -447,7 +510,7 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
     const final = status === "ready";
     const { chunks, next } = takeSpeakableChunks(body, t.offset, final, t.offset === 0 ? FIRST_CHUNK : NEXT_CHUNK);
     t.offset = next;
-    chunks.forEach(enqueueSpeech);
+    if (!paperModeRef.current || voiceOnRef.current) chunks.forEach(enqueueSpeech);
     if (final) { t.done = true; maybeFinishTurn(); }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [messages, status]);
@@ -461,6 +524,79 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
     speaking: "ဆရာ ရှင်းပြနေပါတယ်… (နှိပ်ပြီး ရပ်နိုင်)",
     muted: "ခဏရပ်ထားပါတယ် — နှိပ်ပြီး ပြန်စပါ",
   };
+
+  if (paperOnly) {
+    if (!open || !paper) return null;
+    const reply = [...messages].reverse().find((m) => m.role === "assistant");
+    const replyText = (reply?.parts ?? []).map((p) => (p.type === "text" ? p.text : "")).join("").replace(/[*#`]/g, "").trim();
+    const asked = messages.some((m) => m.role === "user");
+    return (
+      <div className="fixed inset-x-2 bottom-2 z-[60] flex flex-col items-end gap-2 sm:inset-x-auto sm:bottom-4 sm:right-4" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
+        <div className="flex max-h-[min(70vh,34rem)] w-full flex-col overflow-hidden rounded-2xl border border-border bg-card text-card-foreground shadow-xl sm:w-[24rem]">
+          <div className="flex items-center gap-2 border-b border-border px-3 py-2">
+            <SayaOwlAvatar state={phase} size={36} />
+            <div className="min-w-0 flex-1">
+              <p className="text-sm font-semibold">ဆရာဇီးကွက်</p>
+              <p className="truncate text-xs text-muted-foreground">{busy ? "ဆရာ စဉ်းစားနေပါတယ်…" : phase === "listening" ? (heardSpeech ? "ကြားနေပါတယ်…" : "နားထောင်နေပါတယ်… မေးလိုက်ပါ") : phase === "speaking" ? "ဆရာ ရှင်းပြနေပါတယ်…" : "မေးခွန်းလွှာ လေ့လာရေး"}</p>
+            </div>
+            <button type="button" onClick={toggleVoice} aria-pressed={voiceOn} aria-label={voiceOn ? "အသံ ပိတ်မည်" : "အသံ ဖွင့်မည်"} className="inline-flex h-9 items-center gap-1 rounded-full border border-border px-2.5 text-xs font-medium hover:bg-secondary">
+              {voiceOn ? <Volume2 className="h-4 w-4" /> : <VolumeX className="h-4 w-4" />}
+              {voiceOn ? "အသံ" : "စာသား"}
+            </button>
+            <button type="button" onClick={closeCall} aria-label="ပိတ်မည်" className="flex h-9 w-9 items-center justify-center rounded-full hover:bg-secondary">
+              <X className="h-4 w-4" />
+            </button>
+          </div>
+          <div className="px-3 pt-2"><TutorQuotaBar lowOnly /></div>
+          <div className="flex-1 space-y-3 overflow-y-auto px-3 py-3 text-sm">
+            <div className="flex items-center gap-2 rounded-lg bg-secondary px-2.5 py-2">
+              {paper.mediaType.startsWith("image/") ? (
+                <img src={paper.url} alt="Uploaded exam paper" className="h-12 w-12 rounded object-cover" />
+              ) : (
+                <FileText className="h-6 w-6 text-primary" />
+              )}
+              <span className="truncate text-xs font-medium">{paper.name}</span>
+            </div>
+            {!asked && (
+              <p className="rounded-2xl bg-primary/10 px-3 py-2 leading-relaxed">
+                မေးခွန်းလွှာ ရောက်ပါပြီ ကျောင်းသား။ ဘယ်မေးခွန်း သို့မဟုတ် ဘယ်နေရာကို ရှင်းပြပေးရမလဲ — စာရိုက်ပြီး ဖြစ်စေ၊ 🎙️ အသံဖြင့် ဖြစ်စေ (မြန်မာ/English) မေးလိုက်ပါနော်။
+              </p>
+            )}
+            {asked && studentLine && (
+              <p className="ml-auto max-w-[85%] rounded-2xl bg-primary px-3 py-2 text-primary-foreground">{studentLine}</p>
+            )}
+            {asked && (
+              <p className="whitespace-pre-wrap rounded-2xl bg-secondary px-3 py-2 leading-relaxed">
+                {replyText || "ဆရာ စဉ်းစားနေပါတယ်…"}
+              </p>
+            )}
+          </div>
+          <form
+            onSubmit={(e) => { e.preventDefault(); askByText(); }}
+            className="flex items-end gap-2 border-t border-border p-2"
+          >
+            <textarea
+              value={draft}
+              onChange={(e) => setDraft(e.target.value)}
+              onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); askByText(); } }}
+              rows={1}
+              placeholder="မေးခွန်း ရိုက်ထည့်ပါ…"
+              className="min-h-11 flex-1 resize-none rounded-xl border border-input bg-background px-3 py-2.5 text-base sm:text-sm"
+            />
+            <button type="button" onClick={askByVoice} aria-label="အသံဖြင့် မေးမည်" aria-pressed={phase === "listening"} className={`flex h-11 w-11 items-center justify-center rounded-xl border border-border ${phase === "listening" ? "bg-destructive text-destructive-foreground" : "hover:bg-secondary"}`}>
+              <Mic className="h-5 w-5" />
+            </button>
+            <button type="submit" disabled={!draft.trim() || busy} aria-label="ပို့မည်" className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary text-primary-foreground disabled:opacity-50">
+              <Send className="h-5 w-5" />
+            </button>
+          </form>
+          <Link to="/tutor" onClick={openInTutor} className="flex items-center justify-center gap-1.5 border-t border-border py-2 text-xs font-medium text-primary hover:bg-secondary">
+            <ExternalLink className="h-3.5 w-3.5" /> Tutor စာမျက်နှာတွင် ဆက်မေးမည်
+          </Link>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="fixed bottom-4 right-4 z-50 flex max-w-[calc(100vw-2rem)] flex-col items-end gap-2" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
@@ -496,6 +632,13 @@ function SayaOwlHomeInner({ lessonContext }: SayaOwlHomeProps) {
       </div>
     </div>
   );
+}
+
+/** Home Page exam-paper pop-up: hidden until a paper is uploaded. */
+export function SayaOwlPaper() {
+  const { session } = useAuth();
+  if (!session) return null;
+  return <SayaOwlHomeInner paperOnly lessonContext="Grade 10 English — student's own uploaded exam paper (revision)" />;
 }
 
 export function SayaOwlHome(props: SayaOwlHomeProps) {
