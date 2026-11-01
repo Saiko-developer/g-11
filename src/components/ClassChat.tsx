@@ -101,7 +101,7 @@ export function ChatThread({ cid, peer, teacher, onRead }: { cid: string; peer: 
             <div key={m.id}>
               {showDay && <div className="my-2 flex justify-center"><span className="rounded-full bg-muted px-2 py-0.5 text-[10px] text-muted-foreground">{label}</span></div>}
               <div className={`group flex ${mine ? "justify-end" : "justify-start"}`}>
-                <div className={`max-w-[80%] rounded-2xl px-3 py-1.5 text-sm ${mine ? "rounded-br-sm bg-primary text-primary-foreground" : "rounded-bl-sm bg-card border border-border"}`}>
+                <div className={`max-w-[85%] rounded-2xl px-3 py-1.5 text-sm ${mine ? "rounded-br-sm bg-primary text-primary-foreground" : "rounded-bl-sm bg-card border border-border"}`}>
                   {!mine && (
                     <div className="mb-0.5 text-[11px] font-semibold">
                       {m.sender_name}{m.is_teacher && <span className="ml-1 rounded bg-accent px-1 text-[10px] text-accent-foreground">ဆရာ</span>}
@@ -144,23 +144,33 @@ export function PrivateInbox({ cid, counts, onRead }: { cid: string; counts: Rec
   }, [cid]);
   if (!students) return <div className="flex justify-center py-6"><Loader2 className="h-4 w-4 animate-spin" /></div>;
   if (students.length === 0) return <p className="text-xs text-muted-foreground">No students yet.</p>;
+  const selName = (() => { const s = students.find((x) => x.student_id === sel); return s?.display_name || s?.full_name || "Student"; })();
   return (
     <div className="grid gap-3 md:grid-cols-[240px_1fr]">
-      <ul className="max-h-[28rem] space-y-1 overflow-y-auto rounded-lg border border-border p-1">
+      <ul className={`${sel ? "hidden md:block" : "block"} max-h-[28rem] space-y-1 overflow-y-auto rounded-lg border border-border p-1`}>
         {students.map((s) => {
           const n = counts[s.student_id] ?? 0;
+          const name = s.display_name || s.full_name || "Student";
           return (
             <li key={s.student_id}>
               <button onClick={() => setSel(s.student_id)}
-                className={`flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left text-sm ${sel === s.student_id ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
-                <span className="truncate">{s.display_name || s.full_name || "Student"}</span>
-                {n > 0 && <span className="ml-1 rounded-full bg-destructive px-1.5 text-[10px] text-destructive-foreground">{n}</span>}
+                className={`flex w-full min-w-0 items-center gap-2 rounded-md px-2 py-2.5 text-left text-sm md:py-1.5 ${sel === s.student_id ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}>
+                <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-muted text-xs font-bold text-foreground md:hidden">{name.charAt(0).toUpperCase()}</span>
+                <span className="min-w-0 flex-1 truncate">{name}</span>
+                {n > 0 && <span className="shrink-0 rounded-full bg-destructive px-1.5 text-[10px] text-destructive-foreground">{n}</span>}
               </button>
             </li>
           );
         })}
       </ul>
-      {sel ? <ChatThread cid={cid} peer={sel} teacher onRead={onRead} /> : <p className="self-center text-center text-xs text-muted-foreground">Choose a student to chat privately.</p>}
+      {sel ? (
+        <div className="min-w-0">
+          <button onClick={() => setSel(null)} className="mb-2 inline-flex items-center gap-1 rounded-md px-2 py-1.5 text-sm font-medium hover:bg-muted md:hidden">
+            ← Back <span className="truncate text-muted-foreground">· {selName}</span>
+          </button>
+          <ChatThread cid={cid} peer={sel} teacher onRead={onRead} />
+        </div>
+      ) : <p className="hidden self-center text-center text-xs text-muted-foreground md:block">Choose a student to chat privately.</p>}
     </div>
   );
 }

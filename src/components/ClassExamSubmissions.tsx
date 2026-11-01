@@ -66,6 +66,7 @@ export function ClassExamSubmissions({ aid, paper }: { aid: string; paper: MockE
 export function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper; onSaved: () => Promise<void> | void }) {
   const [urls, setUrls] = useState<string[]>([]);
   const [page, setPage] = useState(0);
+  const [view, setView] = useState<"paper" | "marks">("paper");
   const [grade, setGrade] = useState<GradeResult | null>(row.result);
   const [score, setScore] = useState<string>(row.score?.toString() ?? "");
   const [feedback, setFeedback] = useState(row.teacher_feedback || row.result?.overallFeedback || "");
