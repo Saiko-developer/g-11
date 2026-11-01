@@ -24,10 +24,10 @@ function ClassTabs({ cid, teacher, onChange }: { cid: string; teacher: boolean; 
   const [tab, setTab] = useState<string | null>(null);
   return (
     <div className="mt-3 border-t border-border pt-3">
-      <div className={`${tab ? "mb-3" : ""} -mx-1 flex gap-1.5 overflow-x-auto px-1 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:flex-wrap sm:overflow-visible`}>
-        {tabs.map(([k, label, n]) => (
+      <div className={`${tab ? "mb-3" : ""} grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-1.5`}>
+        {tabs.map(([k, label, n], i) => (
           <button key={k} aria-pressed={tab === k} aria-expanded={tab === k} onClick={() => setTab(tab === k ? null : k)}
-            className={`relative inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-full px-3 py-2 text-xs font-medium ${tab === k ? "bg-primary text-primary-foreground" : "border border-border hover:bg-muted"}`}>
+            className={`relative flex min-h-[42px] min-w-0 items-center justify-center gap-1 rounded-xl px-2 py-2 text-xs font-medium sm:inline-flex sm:min-h-0 sm:rounded-full sm:px-3 ${tabs.length % 2 === 1 && i === tabs.length - 1 ? "col-span-2" : ""} ${tab === k ? "bg-primary text-primary-foreground" : "border border-border hover:bg-muted"}`}>
             {label}
             {n > 0 && <span className="ml-1 rounded-full bg-destructive px-1.5 text-[10px] text-destructive-foreground">{n}</span>}
             {tab === k ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />}
