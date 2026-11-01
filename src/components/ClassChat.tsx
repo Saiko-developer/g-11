@@ -126,9 +126,9 @@ export function ChatThread({ cid, peer, teacher, onRead }: { cid: string; peer: 
       <div className="flex gap-2 border-t border-border p-2">
         <textarea value={body} onChange={(e) => setBody(e.target.value)} rows={1} maxLength={4000}
           onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); void send(); } }}
-          placeholder="Message…" className="flex-1 resize-none rounded-md border border-border bg-background px-2 py-1.5 text-sm" />
+          placeholder="Message… (မြန်မာလို ရေးနိုင်သည်)" className="min-h-11 min-w-0 flex-1 resize-none rounded-xl border border-border bg-background px-3 py-2.5 text-base sm:text-sm" />
         <button onClick={send} disabled={busy || !body.trim()} aria-label="Send"
-          className="rounded-md bg-primary px-3 text-primary-foreground disabled:opacity-50">
+          className="grid min-h-11 min-w-11 shrink-0 place-items-center rounded-xl bg-primary px-3 text-primary-foreground disabled:opacity-50">
           {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
         </button>
       </div>
