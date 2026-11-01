@@ -16,3 +16,5 @@
 - AuthGate owns the single root auth subscription, validates users before restoring internal destinations, and clears cached private data on sign-out — prevents stale sessions and unsafe OAuth redirects.
 - New Google accounts create profiles and protected roles through the auth lifecycle trigger invoking `public.handle_new_user` — keeps account initialization server-owned.
 - Payment settings SELECT access is limited to checkout configuration `id = 1` for authenticated customers and all rows for SQL-verified admins; this preserves credit purchases without exposing other configuration rows.
+# Project Rules
+- Lesson audio MP3s live in public/audio/unitN.mp3 (real files, committed) — asset pointers broke on remix/repo import because they are tied to the old project.
