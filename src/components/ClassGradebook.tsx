@@ -169,7 +169,7 @@ function GradeDialog({ exam, row, onClose, onSaved }: { exam: Exam; row: Row; on
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-background/80 p-2 backdrop-blur-sm sm:p-6" role="dialog" aria-modal="true">
-      <div className="mx-auto max-w-5xl rounded-2xl border border-border bg-background p-3 shadow-xl sm:p-5">
+      <div className="mx-auto max-w-7xl rounded-2xl border border-border bg-background p-3 shadow-xl sm:p-5">
         <div className="mb-3 flex items-start justify-between gap-2">
           <h3 className="font-bold">📝 {row.display_name || "Student"} — {exam.title}</h3>
           <button onClick={onClose} className={ghost} aria-label="Close"><X className="h-4 w-4" /></button>

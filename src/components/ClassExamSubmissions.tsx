@@ -138,8 +138,8 @@ export function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper
   if (!row.submitted_at) return <p className="p-6 text-sm text-muted-foreground">{row.display_name} — {row.started_at ? "In progress" : "Not started"}</p>;
 
   return (
-    <div className="space-y-4">
-      <div className="rounded-2xl border border-border bg-card p-4">
+    <div className="grid items-start gap-4 lg:grid-cols-2">
+      <div className="rounded-2xl border border-border bg-card p-4 lg:sticky lg:top-2 lg:max-h-[calc(100vh-1rem)] lg:overflow-y-auto">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <div>
             <p className="font-bold">{row.display_name}</p>
