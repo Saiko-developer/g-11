@@ -166,7 +166,7 @@ function TeacherView() {
       ) : (
         <div className="grid gap-4 sm:grid-cols-2">
           {rooms.map((r) => (
-            <div key={r.id} className={card}>
+            <div key={r.id} className={`${card} sm:has-[[aria-expanded=true]]:col-span-2`}>
               <div className="flex items-start justify-between gap-2">
                 <div>
                   <h3 className="font-semibold">{r.name}</h3>
