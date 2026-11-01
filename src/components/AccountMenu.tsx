@@ -1,8 +1,10 @@
 import { useCallback, useEffect, useState } from "react";
 import type { Session } from "@supabase/supabase-js";
-import { FileText, LogOut, Zap } from "lucide-react";
+import { CreditCard, FileText, LogOut, Zap } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { TopupPanel } from "@/components/Topup";
 import type { TutorQuota } from "@/components/TutorQuotaBar";
 
 /** Circular SVG ring with an animated fill. */
@@ -48,6 +50,10 @@ export function AccountMenu({ session, onSignOut }: { session: Session; onSignOu
   const avatar = meta.avatar_url as string | undefined;
   const [q, setQ] = useState<TutorQuota | null>(null);
   const [eq, setEq] = useState<{ role: string; limit: number; used: number; extra?: number } | null>(null);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [buyOpenRaw, setBuyOpenRaw] = useState(false);
+  const buyOpen = buyOpenRaw;
+  const setBuyOpen = (o: boolean) => { if (o) setMenuOpen(false); setBuyOpenRaw(o); };
 
   const load = useCallback(async () => {
     const [t, e] = await Promise.all([
@@ -66,7 +72,8 @@ export function AccountMenu({ session, onSignOut }: { session: Session; onSignOu
   const examExtra = eq?.extra ?? 0;
 
   return (
-    <Popover onOpenChange={(o) => { if (o) void load(); }}>
+    <>
+    <Popover open={menuOpen} onOpenChange={(o) => { setMenuOpen(o); if (o) void load(); }}>
       <PopoverTrigger asChild>
         <button
           aria-label="Account"
@@ -102,6 +109,16 @@ export function AccountMenu({ session, onSignOut }: { session: Session; onSignOu
             </div>
           )}
         </div>
+        {!q?.unlimited && (
+          <div className="px-3 pb-3">
+            <button
+              onClick={() => setBuyOpen(true)}
+              className="flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground transition hover:opacity-90"
+            >
+              <CreditCard className="h-4 w-4" /> Credit ဝယ်ယူရန် / Top Up
+            </button>
+          </div>
+        )}
         <button
           onClick={onSignOut}
           className="flex w-full items-center gap-2 border-t border-border px-4 py-3 text-sm text-destructive hover:bg-muted"
@@ -110,5 +127,14 @@ export function AccountMenu({ session, onSignOut }: { session: Session; onSignOu
         </button>
       </PopoverContent>
     </Popover>
+    <Dialog open={buyOpen} onOpenChange={(o) => { setBuyOpen(o); if (!o) void load(); }}>
+      <DialogContent className="max-h-[90vh] overflow-y-auto rounded-2xl sm:max-w-md">
+        <DialogHeader>
+          <DialogTitle>💳 Credit ဝယ်ယူရန်</DialogTitle>
+        </DialogHeader>
+        <TopupPanel kind="tutor" showTabs />
+      </DialogContent>
+    </Dialog>
+    </>
   );
 }
