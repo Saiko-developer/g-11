@@ -5,15 +5,8 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1793524780568,
-      "tag": "0000_restore_signup_trigger",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1793524810615,
-      "tag": "0001_default_checkout_settings",
+      "when": 1793540457726,
+      "tag": "0000_restore_full_schema",
       "breakpoints": true
     }
   ]
