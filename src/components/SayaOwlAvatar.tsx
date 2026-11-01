@@ -24,6 +24,7 @@ export function SayaOwlAvatar({ state, size = 56 }: { state: OwlState; size?: nu
       <img
         src={tutorLogo}
         alt="Sayar Owl"
+        draggable={false}
         className={`relative h-full w-full rounded-full bg-card object-cover shadow-lg ring-2 transition ${ring} ${
           state === "thinking" ? "-rotate-6" : ""
         } ${state === "muted" ? "opacity-60 grayscale" : ""}`}
