@@ -1,3 +1,4 @@
+import { withTone } from "@/lib/tone-rules";
 import { consumeTutorQuota } from "@/lib/tutor-quota.server";
 import { createFileRoute } from "@tanstack/react-router";
 import { convertToModelMessages, streamText, type UIMessage } from "ai";
@@ -123,7 +124,7 @@ export const Route = createFileRoute("/api/chat-home")({
 
         const result = streamText({
           model,
-          system,
+          system: withTone(system),
           messages: await convertToModelMessages(messages as UIMessage[]),
         });
 

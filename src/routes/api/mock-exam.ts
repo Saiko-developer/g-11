@@ -1,3 +1,4 @@
+import { withTone } from "@/lib/tone-rules";
 import { createFileRoute } from "@tanstack/react-router";
 import { createClient } from "@supabase/supabase-js";
 
@@ -101,7 +102,7 @@ No conversational text.`;
 
         try {
           const paper = await generateJson<MockExamPaper>({
-            system,
+            system: withTone(system),
             prompt: `Generate the ${unitLabel} exam paper now. Title: ${unitTitle}. Topics: ${topics}`,
           });
           if (!paper?.sections?.length) throw new Error("Empty exam paper");

@@ -1,3 +1,4 @@
+import { withTone } from "@/lib/tone-rules";
 import { streamText } from "ai";
 import { createLovableGatewayClient, DEFAULT_LOVABLE_CHAT_MODEL } from "@/lib/ai-gateway.server";
 
@@ -14,7 +15,7 @@ export async function generateJson<T>(opts: { system: string; prompt: string }):
 
   const result = streamText({
     model: gateway.chat(modelId),
-    system: `${opts.system}\n\nReply with raw JSON only. No markdown fences, no commentary.`,
+    system: withTone`${opts.system}\n\nReply with raw JSON only. No markdown fences, no commentary.`,
     prompt: opts.prompt,
   });
 

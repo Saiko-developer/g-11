@@ -1,3 +1,4 @@
+import { withTone } from "@/lib/tone-rules";
 import { createFileRoute } from "@tanstack/react-router";
 
 import { generateJson } from "@/lib/ai-json.server";
@@ -37,7 +38,7 @@ Rules:
 
         try {
           const data = await generateJson<{ title?: string; questions?: ExamQuestion[] }>({
-            system,
+            system: withTone(system),
             prompt,
           });
           const questions = (data.questions ?? []).filter(

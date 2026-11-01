@@ -1,3 +1,4 @@
+import { withTone } from "@/lib/tone-rules";
 import { createFileRoute } from "@tanstack/react-router";
 
 import { generateJson } from "@/lib/ai-json.server";
@@ -69,7 +70,7 @@ export const Route = createFileRoute("/api/grammar-questions")({
 
         try {
           const raw = await generateJson<GrammarPracticeQuestion[]>({
-            system: `You are Saya Owl, a Grade 10 English teacher in Myanmar writing grammar practice for the Myanmar Grade 10 English textbook (Unit ${unit}).
+            system: withTone`You are Saya Owl, a Grade 10 English teacher in Myanmar writing grammar practice for the Myanmar Grade 10 English textbook (Unit ${unit}).
 Write exactly ${BATCH_SIZE} multiple-choice questions testing ONLY the given grammar lesson, at the same difficulty as the textbook lesson (Grade 10, exam style).
 Rules:
 - Each question has exactly 4 options and one correct answer that appears verbatim in the options.

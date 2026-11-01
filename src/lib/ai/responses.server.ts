@@ -1,3 +1,4 @@
+import { withTone } from "@/lib/tone-rules";
 import { createOpenAI } from "@ai-sdk/openai";
 import { streamText, type ModelMessage } from "ai";
 
@@ -25,7 +26,7 @@ export function createResponsesCall(
     model: provider.responses(config.model),
     maxRetries: 0,
     // AI SDK 6 lacks `instructions`: rename this key to `system` there.
-    ...(instructions ? { system: instructions } : {}),
+    ...(instructions ? { system: withTone(instructions) } : {}),
     messages,
     abortSignal: request.signal,
     providerOptions: {
