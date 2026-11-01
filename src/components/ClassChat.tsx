@@ -86,7 +86,7 @@ export function ChatThread({ cid, peer, teacher, onRead }: { cid: string; peer: 
           <Lock className="h-3 w-3" /> ဆရာနှင့် ကျောင်းသား နှစ်ဦးတည်းသာ မြင်ရပါသည်
         </div>
       )}
-      <div className="max-h-96 min-h-48 space-y-1.5 overflow-y-auto p-3">
+      <div className="max-h-[28rem] min-h-64 space-y-1.5 overflow-y-auto p-3">
         {msgs === null ? (
           <div className="flex justify-center py-6"><Loader2 className="h-4 w-4 animate-spin" /></div>
         ) : msgs.length === 0 ? (
@@ -145,8 +145,8 @@ export function PrivateInbox({ cid, counts, onRead }: { cid: string; counts: Rec
   if (!students) return <div className="flex justify-center py-6"><Loader2 className="h-4 w-4 animate-spin" /></div>;
   if (students.length === 0) return <p className="text-xs text-muted-foreground">No students yet.</p>;
   return (
-    <div className="grid gap-2 sm:grid-cols-[180px_1fr]">
-      <ul className="max-h-96 space-y-1 overflow-y-auto">
+    <div className="grid gap-3 md:grid-cols-[240px_1fr]">
+      <ul className="max-h-[28rem] space-y-1 overflow-y-auto rounded-lg border border-border p-1">
         {students.map((s) => {
           const n = counts[s.student_id] ?? 0;
           return (
