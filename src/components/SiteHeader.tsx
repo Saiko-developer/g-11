@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { LogIn, LogOut } from "lucide-react";
+import { BookOpen, LogIn } from "lucide-react";
+import { AccountMenu } from "@/components/AccountMenu";
 import tutorLogo from "@/assets/tutor-logo.png";
 import { useI18n } from "@/lib/i18n";
 import { useAuth } from "@/components/AuthGate";
@@ -14,26 +15,7 @@ function AccountButton() {
   const [busy, setBusy] = useState(false);
   if (!ready) return null;
   const btn = "ml-1 inline-flex items-center gap-1.5 rounded-md border border-border px-3 py-2 text-sm text-foreground hover:bg-muted disabled:opacity-60";
-  if (session) {
-    const meta = session.user.user_metadata ?? {};
-    const name = (meta.full_name as string) || session.user.email || "";
-    const avatar = meta.avatar_url as string | undefined;
-    return (
-      <div className="ml-1 flex items-center gap-2">
-        {avatar ? (
-          <img src={avatar} alt={name} title={name} className="h-8 w-8 rounded-full" referrerPolicy="no-referrer" />
-        ) : (
-          <span title={name} className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-xs font-semibold text-primary">
-            {name.charAt(0).toUpperCase()}
-          </span>
-        )}
-        <Button variant="outline" onClick={() => void signOut()} className={btn} aria-label="Sign out">
-          <LogOut className="h-4 w-4" />
-          <span className="hidden sm:inline">Sign out</span>
-        </Button>
-      </div>
-    );
-  }
+  if (session) return <AccountMenu session={session} onSignOut={() => void signOut()} />;
   return (
     <Button variant="outline"
       disabled={busy}
@@ -79,8 +61,14 @@ export function SiteHeader() {
           <Link to="/classrooms" className="hidden rounded-md px-3 py-2 text-muted-foreground hover:text-foreground md:inline-flex" activeProps={{ className: "text-foreground font-medium" }}>
             Classrooms
           </Link>
-          <Link to="/guide" className="rounded-md px-2 py-2 text-muted-foreground hover:text-foreground sm:px-3" activeProps={{ className: "text-foreground font-medium" }}>
-            📖<span className="hidden sm:inline"> Guide</span>
+          <Link
+            to="/guide"
+            aria-label="Guide"
+            className="inline-flex h-9 items-center gap-1.5 rounded-full border border-border bg-card px-2.5 text-muted-foreground shadow-sm transition hover:border-primary/50 hover:text-primary sm:px-3.5"
+            activeProps={{ className: "border-primary/60 bg-primary/10 text-primary font-medium" }}
+          >
+            <BookOpen className="h-4 w-4" />
+            <span className="hidden sm:inline">Guide</span>
           </Link>
           <AccountButton />
           <Link
