@@ -9,6 +9,7 @@ import tutorLogo from "@/assets/tutor-logo.png";
 import { MessageResponse } from "@/components/ai-elements/message";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { useDraggable } from "@/hooks/useDraggable";
 
 /** Strips the <voice_only>/<ui_display> envelope so only the note is shown. */
 function toDisplayText(raw: string): string {
@@ -28,6 +29,7 @@ type SayaOwlProps = {
 };
 
 function SayaOwlInner({ lessonContext, currentQuestion }: SayaOwlProps) {
+  const drag = useDraggable("sayaowl-pos");
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
   const [transport] = useState(() => new DefaultChatTransport({ api: "/api/chat", fetch: tutorFetch }));
@@ -61,21 +63,24 @@ function SayaOwlInner({ lessonContext, currentQuestion }: SayaOwlProps) {
 
   return (
     <>
-      {/* Floating launcher */}
-      <button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        aria-label="Open Saya Owl tutor"
-        className="fixed bottom-5 right-5 z-40 flex items-center gap-2 rounded-full border border-primary/30 bg-card py-2 pl-2 pr-4 shadow-lg transition hover:-translate-y-0.5 hover:shadow-xl"
-      >
-        <img src={tutorLogo} alt="" className="h-9 w-9 rounded-full object-cover" />
-        <span className="text-sm font-semibold">
-          {open ? "Close" : "Ask Saya Owl"}
-        </span>
-      </button>
+      {/* Floating launcher — drag anywhere */}
+      <div ref={drag.ref} className="fixed bottom-20 right-5 z-40 md:bottom-5" style={drag.style}>
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-label="Open Saya Owl tutor"
+          {...drag.handleProps}
+          className="flex cursor-grab items-center gap-2 rounded-full border border-primary/30 bg-card py-2 pl-2 pr-4 shadow-lg transition-shadow hover:shadow-xl active:cursor-grabbing"
+        >
+          <img src={tutorLogo} alt="" draggable={false} className="h-9 w-9 rounded-full object-cover" />
+          <span className="text-sm font-semibold">
+            {open ? "Close" : "Ask Saya Owl"}
+          </span>
+        </button>
+      </div>
 
       {open && (
-        <aside className="fixed bottom-20 right-5 z-40 flex h-[min(70vh,560px)] w-[min(94vw,380px)] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-2xl">
+        <aside className="fixed bottom-36 right-5 z-40 flex h-[min(60vh,560px)] w-[min(94vw,380px)] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-2xl md:bottom-20">
           <header className="flex items-center gap-3 border-b border-border bg-secondary/50 px-4 py-3">
             <img src={tutorLogo} alt="" className="h-8 w-8 rounded-full object-cover" />
             <div className="min-w-0 flex-1">
