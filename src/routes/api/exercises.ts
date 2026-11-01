@@ -1,3 +1,4 @@
+import { withTone } from "@/lib/tone-rules";
 import { createFileRoute } from "@tanstack/react-router";
 
 import { generateJson } from "@/lib/ai-json.server";
@@ -22,7 +23,7 @@ export const Route = createFileRoute("/api/exercises")({
 
         try {
           const questions = await generateJson<GeneratedQuestion[]>({
-            system: `You are Saya Owl, a Grade 10 English teacher in Myanmar writing practice exercises for the Myanmar Grade 10 English textbook.
+            system: withTone`You are Saya Owl, a Grade 10 English teacher in Myanmar writing practice exercises for the Myanmar Grade 10 English textbook.
 Write ${count} multiple-choice questions on the given grammar or vocabulary topic.
 Rules:
 - Each question has exactly 4 options and one correct answer that appears verbatim in the options.

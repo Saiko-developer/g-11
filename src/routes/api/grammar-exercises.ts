@@ -1,3 +1,4 @@
+import { withTone } from "@/lib/tone-rules";
 import { createFileRoute } from "@tanstack/react-router";
 
 import { generateJson } from "@/lib/ai-json.server";
@@ -26,7 +27,7 @@ export const Route = createFileRoute("/api/grammar-exercises")({
         }
         try {
           const raw = await generateJson<Item[]>({
-            system: `You are Saya Owl, a Myanmar Grade 10 English teacher. Write exactly 10 NEW practice items for the textbook grammar exercise below.
+            system: withTone`You are Saya Owl, a Myanmar Grade 10 English teacher. Write exactly 10 NEW practice items for the textbook grammar exercise below.
 Copy the exact task type, format, sentence length and difficulty of the real textbook items. Do not invent a different kind of task, do not add explanations or lessons.
 Each item: "text" (the question, same style as the samples), "translation" (natural Burmese Unicode translation of the question), "answer" (the correct answer in the same style as the sample answers).
 Return a JSON array: [{"text": string, "translation": string, "answer": string}]`,

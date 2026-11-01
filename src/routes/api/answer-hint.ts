@@ -1,3 +1,4 @@
+import { withTone } from "@/lib/tone-rules";
 import { createFileRoute } from "@tanstack/react-router";
 
 import { generateJson } from "@/lib/ai-json.server";
@@ -18,7 +19,7 @@ export const Route = createFileRoute("/api/answer-hint")({
         }
         try {
           const raw = await generateJson<{ hint: string }>({
-            system: `You are Saya Owl, an expert Myanmar Grade 10 English grammar teacher.
+            system: withTone`You are Saya Owl, an expert Myanmar Grade 10 English grammar teacher.
 A student's answer is wrong. Write a direct, targeted explanation in clear Burmese (Unicode) with exactly two parts, formatted like this:
 
 **မှားယွင်းနေသည့် အချက်:**

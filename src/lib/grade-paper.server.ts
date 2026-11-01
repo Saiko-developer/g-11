@@ -1,3 +1,4 @@
+import { withTone } from "@/lib/tone-rules";
 import { streamText } from "ai";
 
 import { createLovableGatewayClient, DEFAULT_LOVABLE_CHAT_MODEL } from "@/lib/ai-gateway.server";
@@ -33,7 +34,7 @@ ${JSON.stringify(body.paper).slice(0, 60000)}`;
   const modelId = process.env.LOVABLE_CHAT_MODEL?.trim() || DEFAULT_LOVABLE_CHAT_MODEL;
   const result = streamText({
     model: gateway.chat(modelId),
-    system,
+    system: withTone(system),
     messages: [{ role: "user", content: [
       { type: "text", text: `Here are my ${images.length} answer page photo(s). Please mark my exam.` },
       ...images.map((url) => ({ type: "image" as const, image: url })),
