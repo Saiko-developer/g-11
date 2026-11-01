@@ -15,6 +15,8 @@ import unit7Audio from "@/data/lesson-audio/unit7.mp3.asset.json";
 import unit8Audio from "@/data/lesson-audio/unit8.mp3.asset.json";
 import unit9Audio from "@/data/lesson-audio/unit9.mp3.asset.json";
 import unit10Audio from "@/data/lesson-audio/unit10.mp3.asset.json";
+import unit11Audio from "@/data/lesson-audio/unit11.mp3.asset.json";
+import unit12Audio from "@/data/lesson-audio/unit12.mp3.asset.json";
 import { SYLLABUS, type SyllabusUnit } from "@/data/syllabus";
 
 export type LocalLesson = {
@@ -44,7 +46,8 @@ export const UNIT_AUDIO: Record<number, string> = {
   8: encodeURI(unit8Audio.url),
   9: encodeURI(unit9Audio.url),
   10: encodeURI(unit10Audio.url),
-  // Units 11–12: recordings pending — players fall back to model pronunciation.
+  11: encodeURI(unit11Audio.url),
+  12: encodeURI(unit12Audio.url),
 };
 
 export function getUnitAudio(unitNumber: number): string | null {
