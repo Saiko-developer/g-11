@@ -15,6 +15,13 @@
       "when": 1793511891657,
       "tag": "0001_full_schema",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793512814666,
+      "tag": "0002_restore_signup_trigger_v2",
+      "breakpoints": true
     }
   ]
 }
