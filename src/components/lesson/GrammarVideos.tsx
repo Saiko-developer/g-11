@@ -5,9 +5,10 @@ import { SyncedVideoPlayer } from "@/components/lesson/SyncedVideoPlayer";
 import { UNIT1_GRAMMAR_SUBTITLES } from "@/data/unit1GrammarSubtitles";
 import { UNIT2_GRAMMAR_SUBTITLES } from "@/data/unit2GrammarSubtitles";
 import { UNIT2_ADJ_PREP_SUBTITLES } from "@/data/unit2AdjPrepSubtitles";
+import { UNIT2_ADJ_EDING_SUBTITLES } from "@/data/unit2AdjEdIngSubtitles";
 import type { SubtitleLine } from "@/data/unit1VideoSubtitles";
 
-const SUBTITLES: Record<string, SubtitleLine[]> = { eWDrDo1Vnc0: UNIT1_GRAMMAR_SUBTITLES, W3HdjN3cLiM: UNIT2_GRAMMAR_SUBTITLES, z5DDa4vBvfA: UNIT2_ADJ_PREP_SUBTITLES };
+const SUBTITLES: Record<string, SubtitleLine[]> = { eWDrDo1Vnc0: UNIT1_GRAMMAR_SUBTITLES, W3HdjN3cLiM: UNIT2_GRAMMAR_SUBTITLES, z5DDa4vBvfA: UNIT2_ADJ_PREP_SUBTITLES, I9tEYgpOQiA: UNIT2_ADJ_EDING_SUBTITLES };
 
 export function GrammarVideos({ unit }: { unit: number }) {
   const videos = UNIT_VIDEOS[unit] ?? [];
