@@ -40,7 +40,7 @@ const raw: [number, string][] = [
 
 export const UNIT3_SUBJ_PRED_SUBTITLES: SubtitleLine[] = raw.map(([start, my], i) => ({
   start,
-  end: raw[i + 1]?.[0] ?? 472,
+  end: raw[i + 1]?.[0] ?? 160,
   en: "",
   my,
 }));
