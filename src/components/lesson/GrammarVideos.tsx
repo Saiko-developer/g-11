@@ -7,9 +7,10 @@ import { UNIT2_GRAMMAR_SUBTITLES } from "@/data/unit2GrammarSubtitles";
 import { UNIT2_ADJ_PREP_SUBTITLES } from "@/data/unit2AdjPrepSubtitles";
 import { UNIT2_ADJ_EDING_SUBTITLES } from "@/data/unit2AdjEdIngSubtitles";
 import { UNIT3_SUBJ_PRED_SUBTITLES } from "@/data/unit3SubjectPredicateSubtitles";
+import { UNIT3_EITHER_NEITHER_SUBTITLES } from "@/data/unit3EitherNeitherSubtitles";
 import type { SubtitleLine } from "@/data/unit1VideoSubtitles";
 
-const SUBTITLES: Record<string, SubtitleLine[]> = { eWDrDo1Vnc0: UNIT1_GRAMMAR_SUBTITLES, W3HdjN3cLiM: UNIT2_GRAMMAR_SUBTITLES, z5DDa4vBvfA: UNIT2_ADJ_PREP_SUBTITLES, I9tEYgpOQiA: UNIT2_ADJ_EDING_SUBTITLES, VuXBh78Jkik: UNIT3_SUBJ_PRED_SUBTITLES };
+const SUBTITLES: Record<string, SubtitleLine[]> = { eWDrDo1Vnc0: UNIT1_GRAMMAR_SUBTITLES, W3HdjN3cLiM: UNIT2_GRAMMAR_SUBTITLES, z5DDa4vBvfA: UNIT2_ADJ_PREP_SUBTITLES, I9tEYgpOQiA: UNIT2_ADJ_EDING_SUBTITLES, VuXBh78Jkik: UNIT3_SUBJ_PRED_SUBTITLES, LToct5dVXDA: UNIT3_EITHER_NEITHER_SUBTITLES };
 
 export function GrammarVideos({ unit }: { unit: number }) {
   const videos = UNIT_VIDEOS[unit] ?? [];
