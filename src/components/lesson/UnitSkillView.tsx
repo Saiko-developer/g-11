@@ -1,5 +1,4 @@
-import { SyncedVideoPlayer } from "@/components/lesson/SyncedVideoPlayer";
-import { UNIT1_VIDEO_SUBTITLES } from "@/data/unit1VideoSubtitles";
+import { GrammarVideos } from "@/components/lesson/GrammarVideos";
 /**
  * Renders one unit + skill using the REAL textbook data in src/data, with the
  * exact same presentation the dedicated Lesson Page uses (shared ExerciseKit).

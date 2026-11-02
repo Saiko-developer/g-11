@@ -1,5 +1,4 @@
-import { SyncedVideoPlayer } from "@/components/lesson/SyncedVideoPlayer";
-import { UNIT1_VIDEO_SUBTITLES } from "@/data/unit1VideoSubtitles";
+import { GrammarVideos } from "@/components/lesson/GrammarVideos";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowLeft, BookOpen, ChevronRight, Languages, ListChecks, Play } from "lucide-react";

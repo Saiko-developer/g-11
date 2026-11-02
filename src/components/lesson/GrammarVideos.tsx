@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Play } from "lucide-react";
 import { UNIT_VIDEOS } from "@/data/unitVideos";
-import { UNIT2_VIDEO_SUBTITLES } from "@/data/unit2VideoSubtitles";
-import { SyncedVideoPlayer } from "@/components/lesson/SyncedVideoPlayer";
 
 export function GrammarVideos({ unit }: { unit: number }) {
   const videos = UNIT_VIDEOS[unit] ?? [];
