@@ -3,9 +3,10 @@ import { Play } from "lucide-react";
 import { UNIT_VIDEOS } from "@/data/unitVideos";
 import { SyncedVideoPlayer } from "@/components/lesson/SyncedVideoPlayer";
 import { UNIT1_GRAMMAR_SUBTITLES } from "@/data/unit1GrammarSubtitles";
+import { UNIT2_GRAMMAR_SUBTITLES } from "@/data/unit2GrammarSubtitles";
 import type { SubtitleLine } from "@/data/unit1VideoSubtitles";
 
-const SUBTITLES: Record<string, SubtitleLine[]> = { eWDrDo1Vnc0: UNIT1_GRAMMAR_SUBTITLES };
+const SUBTITLES: Record<string, SubtitleLine[]> = { eWDrDo1Vnc0: UNIT1_GRAMMAR_SUBTITLES, W3HdjN3cLiM: UNIT2_GRAMMAR_SUBTITLES };
 
 export function GrammarVideos({ unit }: { unit: number }) {
   const videos = UNIT_VIDEOS[unit] ?? [];
