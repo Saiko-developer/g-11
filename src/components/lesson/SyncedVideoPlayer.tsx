@@ -29,11 +29,12 @@ function loadYouTubeApi(): Promise<void> {
 
 const fmt = (t: number) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, "0")}`;
 
-export function SyncedVideoPlayer({ youtubeId, title, subtitles }: { youtubeId: string; title: string; subtitles: SubtitleLine[] }) {
+export function SyncedVideoPlayer({ youtubeId, title, subtitles, burmeseOnly = false }: { youtubeId: string; title: string; subtitles: SubtitleLine[]; burmeseOnly?: boolean }) {
   const hostRef = useRef<HTMLDivElement>(null);
   const playerRef = useRef<YTPlayer | null>(null);
   const [time, setTime] = useState(0);
-  const [showEn, setShowEn] = useState(true);
+  const [showEnState, setShowEn] = useState(true);
+  const showEn = showEnState && !burmeseOnly;
   const [showScript, setShowScript] = useState(false);
 
   useEffect(() => {
@@ -87,9 +88,11 @@ export function SyncedVideoPlayer({ youtubeId, title, subtitles }: { youtubeId: 
       </div>
 
       <div className="flex flex-wrap gap-2">
-        <button type="button" onClick={() => setShowEn((v) => !v)} className="rounded-full border border-border bg-background px-3 py-1 text-xs font-medium hover:bg-accent">
-          {showEn ? "English ဖျောက်မယ်" : "English ပြမယ်"}
-        </button>
+        {!burmeseOnly && (
+          <button type="button" onClick={() => setShowEn((v) => !v)} className="rounded-full border border-border bg-background px-3 py-1 text-xs font-medium hover:bg-accent">
+            {showEn ? "English ဖျောက်မယ်" : "English ပြမယ်"}
+          </button>
+        )}
         <button type="button" onClick={() => setShowScript((v) => !v)} className="rounded-full border border-border bg-background px-3 py-1 text-xs font-medium hover:bg-accent">
           {showScript ? "စာသားအပြည့် ပိတ်မယ်" : "📜 စာသားအပြည့် ကြည့်မယ်"}
         </button>
