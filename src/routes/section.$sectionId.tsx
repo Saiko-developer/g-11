@@ -317,16 +317,7 @@ function Section1C() {
       </section>
 
       {/* YouTube video */}
-      {grammar1C.youtubeId && (
-        <section className="rounded-2xl border border-border bg-card p-5">
-          <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary">
-            <Play className="h-3.5 w-3.5" /> Video — {grammar1C.youtubeTitle}
-          </div>
-          <p className="mt-2 text-sm text-muted-foreground">Watch this video to understand appositives better:</p>
-          <SyncedVideoPlayer youtubeId={grammar1C.youtubeId} title={grammar1C.youtubeTitle ?? "Video"} subtitles={UNIT1_VIDEO_SUBTITLES} />
-          <p className="mt-2 text-xs italic text-muted-foreground">📝 {grammar1C.subtitleNoteMy}</p>
-        </section>
-      )}
+      <GrammarVideos unit={1} />
 
       {/* Exercise A — spot apposition */}
       <section className="rounded-2xl border border-border bg-card p-5">
