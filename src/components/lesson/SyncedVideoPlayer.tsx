@@ -29,11 +29,12 @@ function loadYouTubeApi(): Promise<void> {
 
 const fmt = (t: number) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, "0")}`;
 
-export function SyncedVideoPlayer({ youtubeId, title, subtitles }: { youtubeId: string; title: string; subtitles: SubtitleLine[] }) {
+export function SyncedVideoPlayer({ youtubeId, title, subtitles, burmeseOnly = false }: { youtubeId: string; title: string; subtitles: SubtitleLine[]; burmeseOnly?: boolean }) {
   const hostRef = useRef<HTMLDivElement>(null);
   const playerRef = useRef<YTPlayer | null>(null);
   const [time, setTime] = useState(0);
-  const [showEn, setShowEn] = useState(true);
+  const [showEnState, setShowEn] = useState(true);
+  const showEn = showEnState && !burmeseOnly;
   const [showScript, setShowScript] = useState(false);
 
   useEffect(() => {
