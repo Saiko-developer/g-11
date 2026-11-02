@@ -4,6 +4,7 @@
  * shared ExerciseKit presentation. Fully sandboxed: nothing here reads or
  * changes Unit 1 / Unit 2 data.
  */
+import { GrammarVideos } from "@/components/lesson/GrammarVideos";
 import { useState } from "react";
 import { BookOpen, Languages, ListChecks } from "lucide-react";
 
@@ -269,6 +270,7 @@ function GrammarView3() {
       </header>
 
       <GrammarScriptView grammar={UNIT3_GRAMMAR} />
+      <GrammarVideos unit={3} />
 
       {data.samples?.length ? (
         <section className="rounded-2xl border border-border bg-card p-5">
