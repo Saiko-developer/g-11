@@ -70,12 +70,7 @@ export function SyncedVideoPlayer({ youtubeId, title, subtitles, burmeseOnly = f
     if (t >= subtitles[i].start) activeIdx = i;
     else break;
   }
-  if (activeIdx >= 0) {
-    const cur = subtitles[activeIdx];
-    const next = subtitles[activeIdx + 1];
-    const holdUntil = next ? Math.max(cur.end + HOLD, next.start) : cur.end + HOLD;
-    if (t >= Math.min(holdUntil, next ? next.start : holdUntil) && !(next && t < next.start) && t >= cur.end + HOLD) activeIdx = -1;
-  }
+  if (activeIdx >= 0 && t >= subtitles[activeIdx].end + HOLD) activeIdx = -1;
   const active = activeIdx >= 0 ? subtitles[activeIdx] : null;
 
   const seek = (s: number) => {
