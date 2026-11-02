@@ -88,9 +88,11 @@ export function SyncedVideoPlayer({ youtubeId, title, subtitles, burmeseOnly = f
       </div>
 
       <div className="flex flex-wrap gap-2">
-        <button type="button" onClick={() => setShowEn((v) => !v)} className="rounded-full border border-border bg-background px-3 py-1 text-xs font-medium hover:bg-accent">
-          {showEn ? "English ဖျောက်မယ်" : "English ပြမယ်"}
-        </button>
+        {!burmeseOnly && (
+          <button type="button" onClick={() => setShowEn((v) => !v)} className="rounded-full border border-border bg-background px-3 py-1 text-xs font-medium hover:bg-accent">
+            {showEn ? "English ဖျောက်မယ်" : "English ပြမယ်"}
+          </button>
+        )}
         <button type="button" onClick={() => setShowScript((v) => !v)} className="rounded-full border border-border bg-background px-3 py-1 text-xs font-medium hover:bg-accent">
           {showScript ? "စာသားအပြည့် ပိတ်မယ်" : "📜 စာသားအပြည့် ကြည့်မယ်"}
         </button>
