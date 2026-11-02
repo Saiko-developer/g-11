@@ -61,7 +61,21 @@ export function SyncedVideoPlayer({ youtubeId, title, subtitles, burmeseOnly = f
     };
   }, [youtubeId]);
 
-  const activeIdx = subtitles.findIndex((l) => time >= l.start && time < l.end);
+  // Delay so subtitles land as words are heard; hold each line until the next starts (or +3s).
+  const SUBTITLE_DELAY = 0.5;
+  const HOLD = 3;
+  const t = time - SUBTITLE_DELAY;
+  let activeIdx = -1;
+  for (let i = 0; i < subtitles.length; i++) {
+    if (t >= subtitles[i].start) activeIdx = i;
+    else break;
+  }
+  if (activeIdx >= 0) {
+    const cur = subtitles[activeIdx];
+    const next = subtitles[activeIdx + 1];
+    const holdUntil = next ? Math.max(cur.end + HOLD, next.start) : cur.end + HOLD;
+    if (t >= Math.min(holdUntil, next ? next.start : holdUntil) && !(next && t < next.start) && t >= cur.end + HOLD) activeIdx = -1;
+  }
   const active = activeIdx >= 0 ? subtitles[activeIdx] : null;
 
   const seek = (s: number) => {
