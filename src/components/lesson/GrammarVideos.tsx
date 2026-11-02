@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Play } from "lucide-react";
 import { UNIT_VIDEOS } from "@/data/unitVideos";
-import { UNIT2_VIDEO_SUBTITLES } from "@/data/unit2VideoSubtitles";
-import { SyncedVideoPlayer } from "@/components/lesson/SyncedVideoPlayer";
 
 export function GrammarVideos({ unit }: { unit: number }) {
   const videos = UNIT_VIDEOS[unit] ?? [];
@@ -34,21 +32,17 @@ export function GrammarVideos({ unit }: { unit: number }) {
         </div>
       )}
       <p className="mt-3 text-sm font-semibold">{v.title}</p>
-      {UNIT2_VIDEO_SUBTITLES[v.id] ? (
-        <SyncedVideoPlayer key={v.id} youtubeId={v.id} title={v.title} subtitles={UNIT2_VIDEO_SUBTITLES[v.id]} burmeseOnly />
-      ) : (
-        <div className="mt-2 aspect-video w-full overflow-hidden rounded-xl bg-muted">
-          <iframe
-            key={v.id}
-            className="h-full w-full"
-            src={`https://www.youtube-nocookie.com/embed/${v.id}?rel=0`}
-            title={v.title}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            loading="lazy"
-          />
-        </div>
-      )}
+      <div className="mt-2 aspect-video w-full overflow-hidden rounded-xl bg-muted">
+        <iframe
+          key={v.id}
+          className="h-full w-full"
+          src={`https://www.youtube-nocookie.com/embed/${v.id}?rel=0`}
+          title={v.title}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          loading="lazy"
+        />
+      </div>
     </section>
   );
 }
