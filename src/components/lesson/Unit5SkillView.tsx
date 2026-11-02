@@ -4,6 +4,7 @@
  * shared ExerciseKit presentation. Fully sandboxed: nothing here reads or
  * changes Unit 1–4 data.
  */
+import { GrammarVideos } from "@/components/lesson/GrammarVideos";
 import { useState } from "react";
 import { BookOpen, Languages, ListChecks } from "lucide-react";
 
@@ -295,6 +296,7 @@ function GrammarView5() {
       </header>
 
       <GrammarScriptView grammar={UNIT5_GRAMMAR} />
+      <GrammarVideos unit={5} />
 
       <ExerciseGroup grammarPractice
         title="Exercise A — Rewrite with 'used to'"

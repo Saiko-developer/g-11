@@ -4,6 +4,7 @@
  * `src/data/grammar/unit12.ts`, reusing the shared ExerciseKit presentation.
  * Fully sandboxed: nothing here reads or changes Unit 1–11 data.
  */
+import { GrammarVideos } from "@/components/lesson/GrammarVideos";
 import { useState } from "react";
 import { BookOpen, Languages, ListChecks } from "lucide-react";
 
@@ -472,6 +473,7 @@ function GrammarView12() {
       </header>
 
       <GrammarScriptView grammar={UNIT12_GRAMMAR} />
+      <GrammarVideos unit={12} />
 
       <section className="rounded-2xl border border-border bg-card p-5">
         <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary">

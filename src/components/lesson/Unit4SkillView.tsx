@@ -4,6 +4,7 @@
  * shared ExerciseKit presentation. Fully sandboxed: nothing here reads or
  * changes Unit 1 / 2 / 3 data.
  */
+import { GrammarVideos } from "@/components/lesson/GrammarVideos";
 import { useState } from "react";
 import { BookOpen, Languages, ListChecks } from "lucide-react";
 
@@ -314,6 +315,7 @@ function GrammarView4() {
       </header>
 
       <GrammarScriptView grammar={UNIT4_GRAMMAR} />
+      <GrammarVideos unit={4} />
 
       <ExerciseGroup grammarPractice
         title="Exercise A — Spot the participial phrases"

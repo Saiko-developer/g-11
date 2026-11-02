@@ -4,6 +4,7 @@
  * shared ExerciseKit presentation. Fully sandboxed: nothing here reads or
  * changes Unit 1 data.
  */
+import { GrammarVideos } from "@/components/lesson/GrammarVideos";
 import { useState } from "react";
 import { BookOpen, Languages, ListChecks } from "lucide-react";
 
@@ -230,6 +231,7 @@ function GrammarView2() {
       </header>
 
       <GrammarScriptView grammar={UNIT2_GRAMMAR} />
+      <GrammarVideos unit={2} />
 
       <ExerciseGroup grammarPractice
         title="Exercise A — Box the adjectival phrase"
