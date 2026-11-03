@@ -1,7 +1,7 @@
 import { withTone } from "@/lib/tone-rules";
 import { streamText } from "ai";
 
-import { createLovableGatewayClient, DEFAULT_LOVABLE_CHAT_MODEL } from "@/lib/ai-gateway.server";
+import { getChatModel, DEFAULT_LOVABLE_CHAT_MODEL } from "@/lib/ai-gateway.server";
 import { parseJson } from "@/lib/ai-json.server";
 import type { MockExamPaper } from "@/lib/mockExam";
 import type { GradeResult } from "@/routes/api/grade-exam";
@@ -30,10 +30,9 @@ ANSWER KEY:
 ${JSON.stringify(body.paper).slice(0, 60000)}`;
 
 
-  const gateway = createLovableGatewayClient();
   const modelId = process.env.LOVABLE_CHAT_MODEL?.trim() || DEFAULT_LOVABLE_CHAT_MODEL;
   const result = streamText({
-    model: gateway.chat(modelId),
+    model: getChatModel(modelId),
     system: withTone(system),
     messages: [{ role: "user", content: [
       { type: "text", text: `Here are my ${images.length} answer page photo(s). Please mark my exam.` },

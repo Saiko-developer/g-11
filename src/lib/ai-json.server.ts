@@ -1,20 +1,19 @@
 import { withTone } from "@/lib/tone-rules";
 import { streamText } from "ai";
-import { createLovableGatewayClient, DEFAULT_LOVABLE_CHAT_MODEL } from "@/lib/ai-gateway.server";
+import { getChatModel, DEFAULT_LOVABLE_CHAT_MODEL } from "@/lib/ai-gateway.server";
 
 /**
  * Uses the Lovable AI Gateway and returns parsed JSON.
  * Streaming is required on this endpoint — we consume it server-side.
  */
 export async function generateJson<T>(opts: { system: string; prompt: string }): Promise<T> {
-  const gateway = createLovableGatewayClient();
   const modelId =
     process.env.LOVABLE_JSON_MODEL?.trim() ||
     process.env.LOVABLE_CHAT_MODEL?.trim() ||
     DEFAULT_LOVABLE_CHAT_MODEL;
 
   const result = streamText({
-    model: gateway.chat(modelId),
+    model: getChatModel(modelId),
     system: withTone`${opts.system}\n\nReply with raw JSON only. No markdown fences, no commentary.`,
     prompt: opts.prompt,
   });
