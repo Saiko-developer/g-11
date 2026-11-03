@@ -21,7 +21,8 @@ import { supabase } from "@/integrations/supabase/client";
 import { signInWithGoogle } from "@/components/RequireSignIn";
 import type { ExamQuota } from "@/routes/api/mock-exam";
 import { SYLLABUS, type SyllabusUnit } from "@/data/syllabus";
-import { downloadAnswerKey, downloadExamPaper, type DownloadFormat } from "@/lib/examPrint";
+import { downloadExamPaper, type DownloadFormat } from "@/lib/examPrint";
+import { AnswerKeyDialog } from "@/components/AnswerKeyDialog";
 import { PaperEditor } from "@/components/PaperEditor";
 import {
   DropdownMenu,
@@ -169,8 +170,11 @@ function MockExamPage() {
     setSubmitted(true);
     if (storeKey) localStorage.setItem(`${storeKey}:done`, "1");
   };
-  const remainingMs = genAt ? Math.max(0, genAt + 30 * 60 * 1000 - now) : 30 * 60 * 1000;
-  const keyUnlocked = isStaff || remainingMs === 0;
+  // Students: key unlocks at half the exam duration (or once they submit); staff: immediately.
+  const halfMs = ((paper?.durationMinutes ?? 60) * 60 * 1000) / 2;
+  const remainingMs = genAt ? Math.max(0, genAt + halfMs - now) : halfMs;
+  const keyUnlocked = isStaff || submitted || remainingMs === 0;
+  const [keyOpen, setKeyOpen] = useState(false);
   const keyWait = `${String(Math.floor(remainingMs / 60000)).padStart(2, "0")}:${String(Math.floor((remainingMs % 60000) / 1000)).padStart(2, "0")}`;
   const canShowAnswers = isStaff || submitted;
 
@@ -245,27 +249,18 @@ function MockExamPage() {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="border-primary/50 text-primary hover:bg-primary/10 hover:text-primary"
-                  disabled={!paper || !keyUnlocked}
-                  title={keyUnlocked ? undefined : "မေးခွန်းထုတ်ပြီး မိနစ် ၃၀ ပြည့်မှ ဒေါင်းလုဒ်ရပါမည်"}
-                >
-                  {keyUnlocked ? <FileCheck2 className="h-4 w-4" /> : <Lock className="h-4 w-4" />} Download Answer Key
-                  {!keyUnlocked && paper && <span className="font-mono text-xs">({keyWait})</span>}
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                {FORMATS.map(({ f, label }) => (
-                  <DropdownMenuItem key={f} onSelect={() => paper && keyUnlocked && downloadAnswerKey(paper, f)}>
-                    {label}
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <Button
+              variant="outline"
+              size="sm"
+              className="border-primary/50 text-primary hover:bg-primary/10 hover:text-primary"
+              disabled={!paper || !keyUnlocked}
+              title={keyUnlocked ? undefined : "စာမေးပွဲချိန်၏ ထက်ဝက်ပြည့်မှ (သို့) အဖြေလွှာတင်ပြီးမှ ဖွင့်ပါမည်"}
+              onClick={() => setKeyOpen(true)}
+            >
+              {keyUnlocked ? <FileCheck2 className="h-4 w-4" /> : <Lock className="h-4 w-4" />} View Answer Key
+              {!keyUnlocked && paper && <span className="font-mono text-xs">({keyWait})</span>}
+            </Button>
+            <AnswerKeyDialog paper={keyUnlocked ? paper : null} open={keyOpen && keyUnlocked} onOpenChange={setKeyOpen} />
 
           </div>
         </header>
