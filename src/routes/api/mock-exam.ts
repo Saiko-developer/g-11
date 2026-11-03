@@ -73,8 +73,8 @@ export const Route = createFileRoute("/api/mock-exam")({
           V: `V Reading Passage A — 10 marks, type "passage": an original unseen ~150-word passage expanding the unit theme; partA = 5 text-completion blanks; partB = 5 literal questions with strict ONE-SENTENCE answers.`,
           VI: `VI Extended Reading Passage B — 15 marks, type "passage_extended": an original ~250-word text on the unit's broader themes with the target words written in **bold** inside the passage; "definitions" = 5 definitions whose answers are those boldfaced words; "distractorDefinition" = exactly 1 extra definition with no match; partB = 5 analytical questions with full-sentence answers.`,
           VII: `VII Functional English & Situational Dialogues — 10 marks, type "functional": "dialogue" = one continuous 5-turn dialogue matching the unit's speaking themes, each turn containing a "______" blank filled from "wordBank" (word bank has 6 entries = 5 answers + 1 distractor); "matches" = 5 independent situational speaker prompts answered from "phraseBank" (6 entries).`,
-          VIII: `VIII Directed Guided Writing (Letter) — 10 marks, type "writing", maxWords 200: 2 optional letter-writing scenarios matching the unit's communicative tasks, with "sampleAnswers" (one polished model per prompt).`,
-          IX: `IX Free Composition (Essay) — 10 marks, type "writing", maxWords 300: 3 thematic essay prompts rooted in the unit's core concept, with "sampleAnswers" (one polished model per prompt).`,
+          VIII: `VIII Directed Guided Writing (Letter) — 10 marks, type "writing", maxWords 200: exactly 2 optional letter-writing scenarios matching the unit's communicative tasks. "sampleAnswers" MUST contain exactly 2 complete model letters (about 150 words each), in the same order as the prompts — never fewer, even though students choose only one.`,
+          IX: `IX Free Composition (Essay) — 10 marks, type "writing", maxWords 300: exactly 3 thematic essay prompts rooted in the unit's core concept. "sampleAnswers" MUST contain exactly 3 complete model essays (about 180 words each), one for each prompt (a), (b), (c) in order — never fewer, even though students choose only one.`,
         };
         const sectionLines = config.sections.map((id) => LINES[id]).join("\n");
         const mix = config.units.length > 1 ? `\nMix the units fairly: spread items across ${unitLabel} so every chosen unit is tested.` : "";
@@ -98,6 +98,7 @@ passage: {"id","title","marks","instructions","type":"passage","passage","partA"
 passage_extended: {"id","title","marks","instructions","type":"passage_extended","passage","definitions":[{"number","definition","answer"}],"distractorDefinition","partB":[{"number","question","answer"}]}
 functional: {"id","title","marks","instructions","type":"functional","wordBank":[string],"dialogue":[{"number","speaker","text","answer"}],"phraseBank":[string],"matches":[{"number","question","answer"}]}
 writing: {"id","title","marks","instructions","type":"writing","maxWords","prompts":[string],"sampleAnswers":[string]}
+RULE: for every writing section, sampleAnswers.length MUST equal prompts.length (one full model answer per prompt).
 No conversational text.`;
 
         try {
