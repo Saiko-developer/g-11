@@ -9,6 +9,7 @@ import { StudentProgress } from "@/components/StudentProgress";
 import { AdminTopups } from "@/components/Topup";
 import { AdminTeacherRequests } from "@/components/TeacherRequest";
 import { Button } from "@/components/ui/button";
+import { AdminAiStatus } from "@/components/AdminAiStatus";
 
 export const Route = createFileRoute("/admin")({
   head: () => ({
@@ -76,6 +77,7 @@ function Dashboard({ myId, onSignOut }: { myId: string; onSignOut: () => void })
         </div>
         {isLoading && <p className="text-sm text-muted-foreground">Loading…</p>}
         {error && <p className="text-sm text-destructive">{(error as Error).message}</p>}
+        <AdminAiStatus />
         <AdminTeacherRequests
           emails={Object.fromEntries(data.map((s) => [s.id, s.email ?? s.id]))}
           onChanged={() => qc.invalidateQueries({ queryKey: ["students"] })}

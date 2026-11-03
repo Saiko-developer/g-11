@@ -4,7 +4,7 @@ import type { LanguageModelV3 } from "@ai-sdk/provider";
 
 export const DEFAULT_LOVABLE_CHAT_MODEL = "google/gemini-3-flash-preview";
 /** Model used on the direct Google Gemini fallback (own GEMINI_API_KEY). */
-export const DEFAULT_GEMINI_FALLBACK_MODEL = "gemini-3.8-flash";
+export const DEFAULT_GEMINI_FALLBACK_MODEL = "gemini-3.5-flash";
 
 /** Create a server-only OpenAI-compatible client for Lovable's AI Gateway. */
 export function createLovableGatewayClient() {
