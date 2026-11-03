@@ -8,7 +8,8 @@ import { RequireSignIn } from "@/components/RequireSignIn";
 import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { supabase } from "@/integrations/supabase/client";
-import { downloadAnswerKey, downloadExamPaper, type DownloadFormat } from "@/lib/examPrint";
+import { downloadExamPaper, type DownloadFormat } from "@/lib/examPrint";
+import { AnswerKeyDialog } from "@/components/AnswerKeyDialog";
 import type { MockExamPaper } from "@/lib/mockExam";
 import { SectionCard } from "@/routes/mock-exam.$unit";
 import { ClassExamSubmissions } from "@/components/ClassExamSubmissions";
@@ -97,17 +98,20 @@ function ExamHall() {
   const endAt = exam.started_at ? new Date(exam.started_at).getTime() + exam.duration_minutes * 60000 : 0;
   const left = exam.staff ? exam.duration_minutes * 60000 : Math.max(0, endAt - now);
   const timeUp = !exam.staff && left === 0;
-  const keyReady = exam.key_unlocked || timeUp || (!!exam.due_at && now > new Date(exam.due_at).getTime());
+  const halfAt = exam.started_at ? new Date(exam.started_at).getTime() + (exam.duration_minutes * 60000) / 2 : 0;
+  const halfLeft = exam.staff ? 0 : Math.max(0, halfAt - now);
+  const keyReady = exam.key_unlocked || timeUp || (!!exam.started_at && halfLeft === 0) || (!!exam.due_at && now > new Date(exam.due_at).getTime());
+  const keyWait = `${String(Math.floor(halfLeft / 60000)).padStart(2, "0")}:${String(Math.floor((halfLeft % 60000) / 1000)).padStart(2, "0")}`;
   const clock = `${String(Math.floor(left / 3600000)).padStart(2, "0")}:${String(Math.floor((left % 3600000) / 60000)).padStart(2, "0")}:${String(Math.floor((left % 60000) / 1000)).padStart(2, "0")}`;
 
-  const downloadKey = async (f: DownloadFormat) => {
+  const openKey = async () => {
     // Re-fetch so the server returns the paper with answers once unlocked.
     const { data, error } = await supabase.rpc("class_exam_open", { _aid: id });
     if (error) return toast.error(error.message);
     const fresh = data as unknown as Exam;
     if (!fresh.key_unlocked) return toast.error("အဖြေလွှာ မဖွင့်ရသေးပါ");
     setExam(fresh);
-    void downloadAnswerKey(fresh.paper, f);
+    setKeyOpen(true);
   };
 
   const submit = async () => {
@@ -167,17 +171,12 @@ function ExamHall() {
               {FORMATS.map(({ f, label }) => <DropdownMenuItem key={f} onSelect={() => downloadExamPaper(exam.paper, f)}>{label}</DropdownMenuItem>)}
             </DropdownMenuContent>
           </DropdownMenu>
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button size="sm" variant="outline" disabled={!keyReady}
-                title={keyReady ? undefined : "တင်သွင်းပြီး၊ အချိန်ပြည့် သို့မဟုတ် ရက်ချိန်းကျော်မှ ဖွင့်ပါမည်"}>
-                {keyReady ? <FileCheck2 className="h-4 w-4" /> : <Lock className="h-4 w-4" />} Answer Key
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              {FORMATS.map(({ f, label }) => <DropdownMenuItem key={f} onSelect={() => void downloadKey(f)}>{label}</DropdownMenuItem>)}
-            </DropdownMenuContent>
-          </DropdownMenu></>}
+          <Button size="sm" variant="outline" disabled={!keyReady} onClick={() => void openKey()}
+            title={keyReady ? undefined : "စာမေးပွဲချိန်၏ ထက်ဝက်ပြည့်မှ (သို့) တင်သွင်းပြီးမှ ဖွင့်ပါမည်"}>
+            {keyReady ? <FileCheck2 className="h-4 w-4" /> : <Lock className="h-4 w-4" />} View Answer Key
+            {!keyReady && <span className="font-mono text-xs">({keyWait})</span>}
+          </Button>
+          <AnswerKeyDialog paper={keyOpen ? exam.paper : null} open={keyOpen} onOpenChange={setKeyOpen} /></>}
         </div>
       </header>
 
