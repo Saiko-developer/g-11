@@ -1,3 +1,4 @@
+import { OfflineGuard } from "@/components/Offline";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { Clock, FileText, Rocket, Sparkles } from "lucide-react";
@@ -31,7 +32,7 @@ export const Route = createFileRoute("/exam-builder")({
       ],
     };
   },
-  component: ExamBuilderPage,
+  component: () => <OfflineGuard feature="Exam Generator"><ExamBuilderPage /></OfflineGuard>,
 });
 
 const UNITS = SYLLABUS.filter((n): n is SyllabusUnit => n.type === "unit");

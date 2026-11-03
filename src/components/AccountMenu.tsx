@@ -5,6 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { TopupPanel } from "@/components/Topup";
+import { HelpIcon, SupportThread, useSupportUnread } from "@/components/Support";
 import type { TutorQuota } from "@/components/TutorQuotaBar";
 
 /** Circular SVG ring with an animated fill. */
@@ -51,6 +52,8 @@ export function AccountMenu({ session, onSignOut }: { session: Session; onSignOu
   const [q, setQ] = useState<TutorQuota | null>(null);
   const [eq, setEq] = useState<{ role: string; limit: number; used: number; extra?: number } | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [helpOpen, setHelpOpen] = useState(false);
+  const { unread, reload: reloadUnread } = useSupportUnread(session.user.id);
   const [buyOpenRaw, setBuyOpenRaw] = useState(false);
   const buyOpen = buyOpenRaw;
   const setBuyOpen = (o: boolean) => { if (o) setMenuOpen(false); setBuyOpenRaw(o); };
@@ -77,7 +80,7 @@ export function AccountMenu({ session, onSignOut }: { session: Session; onSignOu
       <PopoverTrigger asChild>
         <button
           aria-label="Account"
-          className="ml-1 rounded-full p-0.5 ring-2 ring-primary/30 shadow-sm transition hover:ring-primary/60 focus:outline-none focus-visible:ring-primary"
+          className="relative ml-1 rounded-full p-0.5 ring-2 ring-primary/30 shadow-sm transition hover:ring-primary/60 focus:outline-none focus-visible:ring-primary"
         >
           {avatar ? (
             <img src={avatar} alt={name} className="h-8 w-8 rounded-full" referrerPolicy="no-referrer" />
@@ -86,6 +89,7 @@ export function AccountMenu({ session, onSignOut }: { session: Session; onSignOu
               {name.charAt(0).toUpperCase()}
             </span>
           )}
+          {unread > 0 && <span className="absolute -right-0.5 -top-0.5 h-3 w-3 rounded-full border-2 border-background bg-destructive" />}
         </button>
       </PopoverTrigger>
       <PopoverContent align="end" className="w-72 rounded-2xl p-0">
@@ -120,6 +124,14 @@ export function AccountMenu({ session, onSignOut }: { session: Session; onSignOu
           </div>
         )}
         <button
+          onClick={() => { setMenuOpen(false); setHelpOpen(true); }}
+          className="flex w-full items-center gap-3 border-t border-border px-4 py-3 text-sm hover:bg-muted"
+        >
+          <span className="rounded-lg bg-primary/10 p-1.5 text-primary"><HelpIcon /></span>
+          <span className="flex-1 text-left">အကူအညီနှင့် အကြံပြုချက်<span className="block text-[11px] text-muted-foreground">Help & Feedback</span></span>
+          {unread > 0 && <span className="rounded-full bg-destructive px-2 text-xs text-destructive-foreground">{unread}</span>}
+        </button>
+        <button
           onClick={onSignOut}
           className="flex w-full items-center gap-2 border-t border-border px-4 py-3 text-sm text-destructive hover:bg-muted"
         >
@@ -133,6 +145,14 @@ export function AccountMenu({ session, onSignOut }: { session: Session; onSignOu
           <DialogTitle>💳 Credit ဝယ်ယူရန်</DialogTitle>
         </DialogHeader>
         <TopupPanel kind="tutor" showTabs />
+      </DialogContent>
+    </Dialog>
+    <Dialog open={helpOpen} onOpenChange={setHelpOpen}>
+      <DialogContent className="max-h-[90vh] overflow-y-auto rounded-2xl sm:max-w-md">
+        <DialogHeader>
+          <DialogTitle className="flex items-center gap-2"><HelpIcon /> အကူအညီနှင့် အကြံပြုချက်</DialogTitle>
+        </DialogHeader>
+        {helpOpen && <SupportThread userId={session.user.id} onRead={reloadUnread} />}
       </DialogContent>
     </Dialog>
     </>

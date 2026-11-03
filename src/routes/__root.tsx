@@ -16,6 +16,8 @@ import { LanguageProvider } from "../lib/i18n";
 import { AuthGate } from "@/components/AuthGate";
 import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { Toaster } from "@/components/ui/sonner";
+import { OfflineBanner } from "@/components/Offline";
+import { AnnouncementBanner } from "@/components/Support";
 
 function NotFoundComponent() {
   return (
@@ -142,6 +144,8 @@ function RootComponent() {
       <LanguageProvider>
         <AuthGate>
           <div className="pb-[calc(4rem+env(safe-area-inset-bottom))] md:pb-0">
+            <OfflineBanner />
+            <AnnouncementBanner />
             <Outlet />
             <Toaster richColors position="top-center" />
           </div>

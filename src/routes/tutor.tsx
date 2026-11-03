@@ -1,3 +1,4 @@
+import { OfflineGuard } from "@/components/Offline";
 import { RequireSignIn } from "@/components/RequireSignIn";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useChat } from "@ai-sdk/react";
@@ -60,7 +61,7 @@ export const Route = createFileRoute("/tutor")({
       },
     ],
   }),
-  component: () => <RequireSignIn><TutorPage /></RequireSignIn>,
+  component: () => <OfflineGuard feature="ဆရာဇီးကွက် (AI Tutor)"><RequireSignIn><TutorPage /></RequireSignIn></OfflineGuard>,
 });
 
 const STARTERS = [
