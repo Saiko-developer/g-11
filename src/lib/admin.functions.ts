@@ -32,10 +32,16 @@ export const listStudents = createServerFn({ method: "POST" })
     const { data: usage } = await (supabaseAdmin as any).from("tutor_usage").select("user_id,used").eq("day", today);
     const wm = new Map((wallets ?? []).map((w: any) => [w.user_id, w]));
     const um = new Map((usage ?? []).map((u: any) => [u.user_id, u.used as number]));
+    // Myanmar day starts at 00:00 UTC+6:30 → 17:30 UTC previous day
+    const dayStartUtc = new Date(new Date(today + "T00:00:00Z").getTime() - 6.5 * 3600000).toISOString();
+    const { data: gens } = await (supabaseAdmin as any).from("exam_generations").select("user_id").gte("created_at", dayStartUtc);
+    const em = new Map<string, number>();
+    for (const g of (gens ?? []) as { user_id: string }[]) em.set(g.user_id, (em.get(g.user_id) ?? 0) + 1);
     return (data ?? []).map((s) => ({
       ...s,
       tutor_bonus: ((wm.get(s.id) as any)?.bonus_left ?? 5) as number,
       exam_bonus: ((wm.get(s.id) as any)?.exam_bonus_left ?? 0) as number,
+      exam_used_today: (em.get(s.id) ?? 0) as number,
       tutor_used_today: (um.get(s.id) ?? 0) as number,
       scholarship: ((wm.get(s.id) as any)?.scholarship ?? "none") as string,
       scholarship_note: ((wm.get(s.id) as any)?.scholarship_note ?? null) as string | null,

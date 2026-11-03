@@ -109,7 +109,14 @@ function Dashboard({ myId, onSignOut }: { myId: string; onSignOut: () => void })
                   <p className="truncate font-semibold">{s.full_name || "—"} {me && <span className="text-xs text-primary">(you)</span>} {s.is_main_admin ? <span className="rounded bg-primary/10 px-1.5 text-xs text-primary">Main Admin</span> : s.is_admin && <span className="rounded bg-primary/10 px-1.5 text-xs text-primary">Admin</span>} {s.is_teacher && <span className="rounded bg-accent px-1.5 text-xs text-accent-foreground">Teacher</span>}</p>
                   <p className="truncate text-sm text-muted-foreground">{s.email}</p>
                   <p className="text-xs text-muted-foreground">Last seen: {new Date(s.last_seen_at).toLocaleString()}</p>
-                  <p className="text-xs text-muted-foreground">Sayar Owl: today {s.tutor_used_today}/{s.is_teacher ? 10 : 20} · bonus {s.tutor_bonus} · 📝 Exam credit {(s as { exam_bonus?: number }).exam_bonus ?? 0}{s.scholarship === "approved" && " · 🎓 unlimited"}</p>
+                  {s.is_admin || s.is_main_admin ? (
+                    <p className="text-xs text-muted-foreground">👑 Admin · အကန့်အသတ်မရှိ (Unlimited)</p>
+                  ) : (
+                    <>
+                      <p className="text-xs text-muted-foreground">💬 Sayar Owl: today {s.tutor_used_today}/{s.is_teacher ? 10 : 20} · bonus {s.tutor_bonus}{s.scholarship === "approved" && " · 🎓 unlimited"}</p>
+                      <p className="text-xs text-muted-foreground">📝 Exam: today {s.exam_used_today}/{s.is_teacher ? 4 : 2} · bonus {s.exam_bonus}</p>
+                    </>
+                  )}
                 </div>
                 <span className={`rounded-full px-3 py-1 text-xs font-semibold ${suspended ? "bg-destructive/10 text-destructive" : "bg-primary/10 text-primary"}`}>
                   {suspended ? `Suspended${s.suspended_until ? " until " + new Date(s.suspended_until).toLocaleDateString() : ""}` : "Active"}
