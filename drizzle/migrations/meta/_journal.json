@@ -15,6 +15,13 @@
       "when": 1793693322347,
       "tag": "0001_restore_new_user_trigger_v2",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793696037796,
+      "tag": "0002_admin_messages_announcements",
+      "breakpoints": true
     }
   ]
 }
