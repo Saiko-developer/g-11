@@ -18,14 +18,6 @@ export const Route = createFileRoute("/guide")({
   component: GuidePage,
 });
 
-const LIMITS = [
-  ["Welcome Gift (အကောင့်သစ်)", "၅ ကြိမ်", "၅ ကြိမ်"],
-  ["AI Tutor မေးခွန်း (နေ့စဉ် အခမဲ့)", "၂၀ ကြိမ်", "၁၀ ကြိမ်"],
-  ["စာမေးပွဲ (နေ့စဉ် အခမဲ့)", "၁ ကြိမ်", "AI ထုတ် ၄ ကြိမ်"],
-  ["ကိုယ်ပိုင် Paper တင်ခြင်း", "—", "အကန့်အသတ်မဲ့"],
-  ["အတန်းဖွင့်ခြင်း", "—", "အကန့်အသတ်မဲ့"],
-];
-
 type Step = { t: string; d: string[]; link?: { to: "/classrooms" | "/progress"; label: string } };
 
 const STUDENT_STEPS: Step[] = [
@@ -62,16 +54,14 @@ const TEACHER_FAQ: [string, string][] = [
   ["Teacher Role ဘယ်လောက်ကြာမှ ရမလဲ?", "Admin စစ်ဆေးပြီးနောက် အတည်ပြုပေးပါမည်။ မြန်စေလိုပါက Admin ထံ ဆက်သွယ်ပါ။"],
   ["ကျောင်းသားအဖြေလွှာ ဓာတ်ပုံများကို ဘယ်သူ မြင်ရလဲ?", "သက်ဆိုင်ရာ ကျောင်းသားနှင့် ထိုအတန်း၏ ဆရာ/မသာ မြင်ရပါသည်။"],
 ];
-const GENERAL_FAQ: [string, string][] = [
-  ["အခမဲ့ Limit ဘယ်အချိန် ပြန်ပြည့်လဲ?", "မြန်မာစံတော်ချိန် ည ၁၂ နာရီတိုင်း အလိုအလျောက် ပြန်ပြည့်ပါသည်။"],
-  ["AI Tutor Credit နှင့် Exam Credit တူလား?", "မတူပါ။ AI Tutor Credit က မေးခွန်းမေးရန်၊ Exam Credit က စာမေးပွဲထုတ်ရန်ဖြစ်ပြီး အခမဲ့ကုန်မှသာ ဝယ်ထားသော Credit ကို နှုတ်ပါမည်။"],
-  ["ဘယ်လို အကောင့်ဝင်ရမလဲ?", "Google အကောင့်ဖြင့်သာ ဝင်ရောက်နိုင်ပါသည်။"],
-  ["ဝယ်ထားသော Credit ဘယ်လောက်ကြာမှ ရောက်လဲ?", "ငွေလွှဲ Txn နံပါတ် တင်ပြီးနောက် Admin အတည်ပြုသည်နှင့် ချက်ချင်း ထည့်ပေးပါမည်။"],
+const CREDIT_FAQ: [string, string][] = [
+  ["ဝယ်ထားသော Credit ဘယ်လောက်ကြာမှ ရောက်လဲ?", "KPay ငွေလွှဲ Txn နံပါတ် တင်ပြီးနောက် Admin အတည်ပြုသည်နှင့် ထည့်ပေးပါမည်။"],
+  ["အခမဲ့ မေးခွင့် ဘယ်အချိန် ပြန်ပြည့်လဲ?", "နေ့စဉ် ည ၁၂ နာရီ (မြန်မာစံတော်ချိန်) တွင် ပြန်ပြည့်ပါသည်။"],
 ];
 
 const CREDIT_STEPS: Step[] = [
   { t: "Package ရွေးပါ", d: ["AI Tutor Credit (မေးခွန်း) သို့မဟုတ် Exam Credit (စာမေးပွဲထုတ်) ကို ရွေးပါ။"] },
-  { t: "ငွေလွှဲပါ", d: ["ပြထားသော KPay / Wave အကောင့်သို့ Package ဈေးနှုန်းအတိုင်း လွှဲပါ။"] },
+  { t: "ငွေလွှဲပါ", d: ["ပြထားသော KPay အကောင့်သို့ Package ဈေးနှုန်းအတိုင်း လွှဲပါ။"] },
   { t: "Txn နံပါတ် တင်ပါ", d: ["ငွေလွှဲ Transaction နံပါတ်ကို ဖြည့်ပြီး Submit နှိပ်ပါ။"] },
   { t: "အတည်ပြုချက် စောင့်ပါ", d: ["Admin အတည်ပြုသည်နှင့် Credit အလိုအလျောက် ထည့်ပေးပါမည်။"] },
 ];
@@ -139,8 +129,8 @@ function StepGuide({ title, steps, card }: { title: string; steps: Step[]; card:
 }
 
 
-type Tab = "student" | "teacher" | "system" | "credits";
-const TABS: [Tab, string][] = [["student", "🎓 ကျောင်းသား"], ["teacher", "👩‍🏫 ဆရာ/မ"], ["system", "📊 စနစ်"], ["credits", "💳 Credit"]];
+type Tab = "student" | "teacher" | "credits";
+const TABS: [Tab, string][] = [["student", "🎓 ကျောင်းသား"], ["teacher", "👩‍🏫 ဆရာ/မ"], ["credits", "💳 Credit"]];
 
 function GuidePage() {
   const [tab, setTab] = useState<Tab>("student");
@@ -151,7 +141,7 @@ function GuidePage() {
       <SiteHeader />
       <main className="mx-auto max-w-3xl space-y-4 px-4 py-6">
         <h1 className="text-2xl font-bold">📖 လမ်းညွှန် & Credits</h1>
-        <div className="grid grid-cols-4 gap-1 rounded-lg bg-muted p-1">
+        <div className="grid grid-cols-3 gap-1 rounded-lg bg-muted p-1">
           {TABS.map(([k, l]) => (
             <button key={k} onClick={() => setTab(k)} className={`rounded-md py-2 text-xs font-medium sm:text-sm ${tab === k ? "bg-background shadow-sm" : "text-muted-foreground"}`}>{l}</button>
           ))}
@@ -161,7 +151,7 @@ function GuidePage() {
           <>
             <StepGuide title="🎓 ကျောင်းသား အသုံးပြုပုံ" steps={STUDENT_STEPS} card={card} />
             <Bullets title="🌟 ကျောင်းသားများ ရရှိမည့် အကျိုးကျေးဇူး" items={STUDENT_BENEFITS} card={card} />
-            <Bullets title="📏 ကျောင်းသား ကန့်သတ်ချက်များ" items={["ကြိုဆိုလက်ဆောင် AI မေးခွန်း ၅ ကြိမ်", "နေ့စဉ် အခမဲ့ AI မေးခွန်း ၂၀", "နေ့စဉ် အခမဲ့ စာမေးပွဲ ၁ ကြိမ်"]} card={card} />
+            <Bullets title="📏 ကျောင်းသား ကန့်သတ်ချက်များ" items={["ကြိုဆိုလက်ဆောင် AI မေးခွန်း ၅ ကြိမ်", "နေ့စဉ် အခမဲ့ AI မေးခွန်း ၂၀", "နေ့စဉ် အခမဲ့ စာမေးပွဲ ၂ ကြိမ်"]} card={card} />
             <FaqList title="❓ ကျောင်းသား FAQs" items={STUDENT_FAQ} card={card} />
             <HelpCard card={card} />
           </>
@@ -175,28 +165,10 @@ function GuidePage() {
             <HelpCard card={card} />
           </>
         )}
-        {tab === "system" && (
-          <>
-            <section className={card}>
-              <h2 className="mb-2 font-semibold">📊 Student နှင့် Teacher နှိုင်းယှဉ်ချက်</h2>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead><tr className="text-left text-muted-foreground"><th className="py-1 pr-2"></th><th className="pr-2">ကျောင်းသား</th><th className="pr-2">ဆရာ</th></tr></thead>
-                  <tbody>{LIMITS.map((r) => <tr key={r[0]} className="border-t border-border">{r.map((c, i) => <td key={i} className={`py-1.5 pr-2 ${i === 0 ? "font-medium" : ""}`}>{c}</td>)}</tr>)}</tbody>
-                </table>
-              </div>
-            </section>
-            <section className={card}>
-              <h2 className="mb-2 font-semibold">🕛 နေ့စဉ် Quota ပြန်ပြည့်ပုံ</h2>
-              <p className="text-sm text-muted-foreground">နေ့စဉ် အခမဲ့ Quota များသည် မြန်မာစံတော်ချိန် ည ၁၂ နာရီတွင် အလိုအလျောက် ပြန်ပြည့်ပါသည်။ အခမဲ့ကုန်မှသာ ဝယ်ထားသော Credit ကို နှုတ်ပါမည်။</p>
-            </section>
-            <FaqList title="❓ အထွေထွေ မေးခွန်းများ" items={GENERAL_FAQ} card={card} />
-            <HelpCard card={card} />
-          </>
-        )}
         {tab === "credits" && (
           <>
             <StepGuide title="💳 Credit ဝယ်ယူနည်း" steps={CREDIT_STEPS} card={card} />
+            <FaqList title="❓ Credit FAQs" items={CREDIT_FAQ} card={card} />
             {session ? (
               <TopupPanel showTabs />
             ) : (
