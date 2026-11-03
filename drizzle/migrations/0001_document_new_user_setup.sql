@@ -1,0 +1,1 @@
+COMMENT ON FUNCTION public.handle_new_user() IS 'Runs on new sign-in: creates profile, protected role and tutor wallet.';
