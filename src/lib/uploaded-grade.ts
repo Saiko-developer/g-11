@@ -4,7 +4,8 @@ export const uploadedGradeSchema = z.object({
   sections: z.array(z.object({ id: z.string(), title: z.string(), score: z.number(), marks: z.number(), feedback: z.string() })),
   items: z.array(z.object({ section: z.string(), number: z.string(), question: z.string(), studentAnswer: z.string(), correctAnswer: z.string(), marks: z.number(), awarded: z.number(), status: z.enum(["correct", "partial", "wrong"]), explanation: z.string() })),
   mistakes: z.array(z.object({ question: z.string(), studentAnswer: z.string(), correctAnswer: z.string(), explanation: z.string() })),
-  writingFeedback: z.string(), overallFeedback: z.string(), unreadable: z.string(),
+  writingFeedback: z.string(),
+  writing: z.array(z.object({ section: z.string(), title: z.string(), chosenTopic: z.string(), studentText: z.string(), rubric: z.array(z.object({ criterion: z.string(), awarded: z.number(), marks: z.number(), comment: z.string() })), score: z.number(), marks: z.number(), aiCritique: z.array(z.string()) })), overallFeedback: z.string(), unreadable: z.string(),
 });
 export function normalizeUploadedGrade(input: z.infer<typeof uploadedGradeSchema>, totalMarks: number) {
   if (!input.items.length) throw new Error("AI could not identify the questions; please review the paper manually.");
