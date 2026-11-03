@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { gradePaper } from "@/lib/grade-paper.server";
 import type { MockExamPaper } from "@/lib/mockExam";
+import type { WritingEval } from "@/lib/writing-eval";
+export type { WritingEval } from "@/lib/writing-eval";
 
 export type GradeItem = {
   section: string;
@@ -22,6 +24,8 @@ export type GradeResult = {
   items?: GradeItem[];
   mistakes: { question: string; studentAnswer: string; correctAnswer: string; explanation: string }[];
   writingFeedback: string;
+  /** Detailed rubric evaluations for Sections VIII and IX (newer results). */
+  writing?: WritingEval[];
   overallFeedback: string;
   unreadable: string;
 };
