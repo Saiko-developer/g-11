@@ -36,7 +36,7 @@ export function CreditPlanInfo({ teacher }: { teacher: boolean }) {
               <li>အကောင့်သစ် Welcome Gift ၅ ကြိမ် + AI Tutor နေ့စဉ် ၂၀ ကြိမ် အခမဲ့ (မြန်မာစံတော်ချိန် ည ၁၂ နာရီ ပြန်ပြည့်)</li>
               <li>Mock Exam ထုတ်ခြင်း နေ့စဉ် ၂ ကြိမ် အခမဲ့</li>
               <li>အတန်းစာမေးပွဲ ဖြေဆိုခြင်း၊ အဖြေလွှာတင်ခြင်း၊ ရလဒ်ကြည့်ခြင်း — အခမဲ့</li>
-              <li>ထပ်မေးလိုပါက KPay / WavePay ဖြင့် မေးခွင့် ဝယ်ယူနိုင် (သို့) ပညာသင်ဆု လျှောက်နိုင်</li>
+              <li>ထပ်မေးလိုပါက KPay ဖြင့် မေးခွင့် ဝယ်ယူနိုင် (သို့) ပညာသင်ဆု လျှောက်နိုင်</li>
             </ul>
             {pkgs.length > 0 && (
               <p className="mt-1 text-muted-foreground">

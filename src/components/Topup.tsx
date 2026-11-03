@@ -89,19 +89,18 @@ export function TopupPanel({ kind: initial = "tutor", showTabs = false }: { kind
             </div>
           </div>
           <div>
-            <p className="mb-1 text-xs font-medium">အဆင့် ၂ — KPay / WavePay ဖြင့် ငွေလွှဲပါ</p>
+            <p className="mb-1 text-xs font-medium">အဆင့် ၂ — KPay ဖြင့် ငွေလွှဲပါ</p>
             <div className="space-y-1 rounded-lg bg-background p-2 text-muted-foreground">
               {s.kpay && <p>KPay: <b className="text-foreground">{s.kpay}</b><CopyBtn text={s.kpay} /></p>}
-              {s.wavepay && <p>WavePay: <b className="text-foreground">{s.wavepay}</b><CopyBtn text={s.wavepay} /></p>}
               {s.account_name && <p>အမည်: <b className="text-foreground">{s.account_name}</b></p>}
-              {!s.kpay && !s.wavepay && <p>ငွေလွှဲ အချက်အလက် မထည့်ရသေးပါ — Admin ထံ ဆက်သွယ်ပါ။</p>}
+              {!s.kpay && <p>ငွေလွှဲ အချက်အလက် မထည့်ရသေးပါ — Admin ထံ ဆက်သွယ်ပါ။</p>}
             </div>
           </div>
           <div>
             <p className="mb-1 text-xs font-medium">အဆင့် ၃ — Transaction နံပါတ် (နောက်ဆုံး ၆ လုံး) ထည့်ပြီး ပို့ပါ</p>
             <div className="flex flex-wrap gap-1">
               <select value={method} onChange={(e) => setMethod(e.target.value)} className="rounded border border-input bg-background p-1">
-                <option value="kpay">KPay</option><option value="wavepay">WavePay</option><option value="other">Other</option>
+                <option value="kpay">KPay</option><option value="other">Other</option>
               </select>
               <input value={ref} onChange={(e) => setRef(e.target.value)} maxLength={64} placeholder="Transaction No." className="min-w-0 flex-1 rounded border border-input bg-background p-1" />
               <button disabled={busy} onClick={submit} className="rounded bg-primary px-3 py-1 text-primary-foreground">{busy ? "…" : "ပို့မည်"}</button>
@@ -178,7 +177,6 @@ export function AdminTopups({ emails, onChanged }: { emails: Record<string, stri
         <p className="text-xs text-muted-foreground">ကျောင်းသားများ မြင်ရမည့် ငွေလွှဲ အချက်အလက်နှင့် ဈေးနှုန်းများ</p>
         <div className="mt-3 grid gap-2 sm:grid-cols-2">
           {field("kpay", "KPay ဖုန်းနံပါတ်")}
-          {field("wavepay", "WavePay ဖုန်းနံပါတ်")}
           {field("account_name", "အကောင့်အမည်")}
           {field("contact", "ဆက်သွယ်ရန် (Viber / Telegram / Phone)")}
           <label className="text-xs sm:col-span-2">📝 Exam Generation Packages (စုံ=ကျပ်, ကော်မာခြား) ဥပမာ 5=1500, 15=4000
