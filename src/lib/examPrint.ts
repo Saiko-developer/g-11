@@ -241,7 +241,7 @@ export function downloadExamPaper(paper: MockExamPaper, format: DownloadFormat =
   deliver(wrap(`${paper.title} — Question Paper`, head, body), `${paper.title} Question Paper`, format);
 }
 
-export function downloadAnswerKey(paper: MockExamPaper, format: DownloadFormat = "pdf") {
+export function answerKeyHtml(paper: MockExamPaper): string {
   const head = `<div class="doc-head"><div class="sub">Sayar Owl Academy · Grade 10 English</div>
     <h1>${esc(paper.title)}</h1>
     <div class="meta">Unit ${esc(paper.unit)} · Total marks: ${esc(paper.totalMarks)}</div></div>
@@ -254,5 +254,9 @@ export function downloadAnswerKey(paper: MockExamPaper, format: DownloadFormat =
         )} marks</span></h2>${answerBody(s)}</section>`,
     )
     .join("");
-  deliver(wrap(`${paper.title} — Answer Key`, head, body), `${paper.title} Answer Key`, format);
+  return wrap(`${paper.title} — Answer Key`, head, body);
+}
+
+export function downloadAnswerKey(paper: MockExamPaper, format: DownloadFormat = "pdf") {
+  deliver(answerKeyHtml(paper), `${paper.title} Answer Key`, format);
 }
