@@ -18,6 +18,7 @@ import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { Toaster } from "@/components/ui/sonner";
 import { OfflineBanner } from "@/components/Offline";
 import { AnnouncementBanner } from "@/components/Support";
+import { registerAppServiceWorker } from "@/lib/registerSW";
 
 function NotFoundComponent() {
   return (
@@ -138,6 +139,10 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  useEffect(() => {
+    registerAppServiceWorker();
+  }, []);
+
 
   return (
     <QueryClientProvider client={queryClient}>
