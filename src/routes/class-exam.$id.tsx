@@ -91,6 +91,7 @@ function ExamHall() {
   };
   useEffect(() => { void load(); }, [id]);
   useEffect(() => { const t = window.setInterval(() => setNow(Date.now()), 1000); return () => window.clearInterval(t); }, []);
+  const [keyOpen, setKeyOpen] = useState(false);
 
   if (err) return <p className="rounded-xl border border-destructive/40 bg-destructive/10 p-4 text-sm">{err}</p>;
   if (!exam) return <Loader2 className="mx-auto h-6 w-6 animate-spin text-primary" />;
