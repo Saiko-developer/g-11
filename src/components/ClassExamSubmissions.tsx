@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
 import type { MockExamPaper } from "@/lib/mockExam";
 import type { GradeResult } from "@/routes/api/grade-exam";
+import { WritingEvalCards } from "@/components/WritingEvalCards";
 
 export type Row = {
   student_id: string; display_name: string; attempt_id: string | null; started_at: string | null;
@@ -225,6 +226,22 @@ export function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper
               );
             })}
           </ul>
+        )}
+        {grade?.writing && grade.writing.length > 0 && (
+          <div className="mt-3">
+            <WritingEvalCards evals={grade.writing} onChange={(writing) => {
+              // Keep the matching writing item in sync with its rubric total.
+              const items = (grade.items ?? []).map((it) => {
+                const w = writing.find((x) => x.section === it.section);
+                if (!w) return it;
+                const v = w.score;
+                return { ...it, awarded: v, status: (v >= it.marks ? "correct" : v > 0 ? "partial" : "wrong") as typeof it.status };
+              });
+              const total = items.length ? items.reduce((s, x) => s + (Number(x.awarded) || 0), 0) : grade.score;
+              setGrade({ ...grade, writing, items, score: total });
+              setScore(String(total));
+            }} />
+          </div>
         )}
         {grade?.writingFeedback !== undefined && grade?.writingFeedback !== null && grade.writingFeedback !== "" && (
           <label className="mt-2 block text-sm font-medium">Writing feedback

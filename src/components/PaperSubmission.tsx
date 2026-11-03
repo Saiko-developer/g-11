@@ -7,6 +7,7 @@ import { supabase } from "@/integrations/supabase/client";
 import type { MockExamPaper } from "@/lib/mockExam";
 import type { GradeItem, GradeResult } from "@/routes/api/grade-exam";
 import { PhotoGallery } from "@/components/PhotoGallery";
+import { WritingEvalCards } from "@/components/WritingEvalCards";
 
 /** Shrink a photo in the browser so uploads stay small on mobile data. */
 async function compressImage(file: File, maxSide = 1600, quality = 0.7): Promise<string> {
@@ -213,6 +214,7 @@ export function ResultView({ r: raw, score, total }: { r: GradeResult | null | u
           </ul>
         </div>
       )}
+      {r.writing && r.writing.length > 0 && <WritingEvalCards evals={r.writing} />}
       {r.writingFeedback && <div><h4 className="font-semibold">Writing အကြံပြုချက်</h4><p>{r.writingFeedback}</p></div>}
       {r.unreadable && <p className="text-muted-foreground">⚠ {r.unreadable}</p>}
     </div>
