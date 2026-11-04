@@ -51,7 +51,6 @@ export function ShadowingTrack({ src, script }: { src: string; script: Listening
     for (let i = 0; i < all.length; i++) if (time >= all[i].start + 0.3) idx = i;
     return idx;
   }, [time, all]);
-  const current = active >= 0 ? all[active] : null;
 
   const finish = () => {
     const i = recIdx.current;
