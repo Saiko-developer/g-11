@@ -76,7 +76,9 @@ async function callRoleplay(body: object) {
   });
   if (!res.ok) {
     if (res.status === 401) toast.error("AI Role-Play သုံးရန် အရင် Login ဝင်ပါ။");
-    else if (res.status === 402 || res.status === 429) toast.error("ယနေ့ AI အသုံးပြုခွင့် ပြည့်သွားပါပြီ။");
+    else if (res.status === 429) toast.error("ဒီ Unit အတွက် ယနေ့ AI စကားပြောခွင့် ၂ ကြိမ် ပြည့်သွားပါပြီ။ တခြား Unit မှာ ဆက်လေ့ကျင့်နိုင်ပါတယ်။");
+    else if (res.status === 402) toast.error("AI Credit ကုန်သွားပါပြီ။ Credit ဝယ်ယူပြီး ပြန်စမ်းပါ။");
+    else if (res.status === 410) toast.error("စကားပြောချိန် ကုန်သွားပါပြီ။ အသစ် ပြန်စပါ။");
     throw new Error(String(res.status));
   }
   return res.json();
@@ -90,7 +92,10 @@ function RolePlay({ unit }: { unit: number }) {
   const [hints, setHints] = useState<string[]>([]);
   const [emotion, setEmotion] = useState("happy");
   const [heard, setHeard] = useState("");
-  const [summary, setSummary] = useState<{ summaryMy: string; good: string[]; improve: string[] } | null>(null);
+  const [summary, setSummary] = useState<{ feedbackMy: string } | null>(null);
+  const [left, setLeft] = useState<number | null>(null);
+  const sessionRef = useRef("");
+  const endingRef = useRef(false);
   const activeRef = useRef(false);
   const phaseRef = useRef<Phase>("idle");
   const turnsRef = useRef<Turn[]>([]);
@@ -140,11 +145,22 @@ function RolePlay({ unit }: { unit: number }) {
     onSilence: () => void send(),
   });
 
-  const aiTurn = async (history: Turn[]) => {
+  const aiTurn = async (history: Turn[], goodbye = false) => {
     set("thinking");
     try {
-      const r = await callRoleplay({ unit, unitTitle, turns: history.map(({ role, text }) => ({ role, text })) });
+      const r = await callRoleplay({
+        unit,
+        unitTitle,
+        session: sessionRef.current || undefined,
+        goodbye,
+        turns: history.map(({ role, text }) => ({ role, text })),
+      });
       if (!activeRef.current) return;
+      if (typeof r.session === "string" && !sessionRef.current) {
+        sessionRef.current = r.session;
+        void refreshLeft();
+      }
+      endingRef.current = goodbye;
       if (r.scenario) setScenario({ partner: "Saya Owl", en: r.scenario, my: r.scenarioMy ?? "" });
       const withTip = [...history];
       if (r.tip && withTip.length) withTip[withTip.length - 1] = { ...withTip[withTip.length - 1], tip: r.tip };
@@ -171,6 +187,10 @@ function RolePlay({ unit }: { unit: number }) {
       return;
     }
     if (sawSpeech.current && activeRef.current) {
+      if (endingRef.current) {
+        void stop();
+        return;
+      }
       set("listening");
       bufRef.current = "";
       interimRef.current = "";
@@ -196,6 +216,26 @@ function RolePlay({ unit }: { unit: number }) {
     activeRef.current = false;
   }, []);
 
+  const refreshLeft = async () => {
+    const { data } = await supabase.rpc("speaking_unit_status" as never, { p_unit: unit } as never);
+    const s = data as unknown as { used: number; limit: number; unlimited: boolean } | null;
+    setLeft(s ? (s.unlimited ? -1 : Math.max(0, s.limit - s.used)) : null);
+  };
+  useEffect(() => {
+    void refreshLeft();
+  }, [unit]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // 15 seconds of silence while listening = the student is done; Saya Owl says goodbye.
+  useEffect(() => {
+    if (phase !== "listening" || heard) return;
+    const t = setTimeout(() => {
+      if (phaseRef.current !== "listening" || !activeRef.current || bufRef.current.trim() || interimRef.current.trim()) return;
+      rec.stop();
+      void aiTurn(turnsRef.current, true);
+    }, 15000);
+    return () => clearTimeout(t);
+  }, [phase, heard]); // eslint-disable-line react-hooks/exhaustive-deps
+
   const start = async () => {
     if (!rec.supported) {
       toast.error("ဒီ browser မှာ အသံဖမ်းလို့ မရပါ။ Chrome ဖြင့် ဖွင့်ကြည့်ပါ။");
@@ -216,6 +256,8 @@ function RolePlay({ unit }: { unit: number }) {
       return;
     }
     activeRef.current = true;
+    sessionRef.current = "";
+    endingRef.current = false;
     turnsRef.current = [];
     setTurns([]);
     setScenario(null);
@@ -230,13 +272,13 @@ function RolePlay({ unit }: { unit: number }) {
     tts.stop();
     setHeard("");
     const said = turnsRef.current.filter((t) => t.role === "student");
-    if (!withSummary || !said.length) {
+    if (!withSummary || !said.length || !sessionRef.current) {
       set("idle");
       return;
     }
     set("summary");
     try {
-      setSummary(await callRoleplay({ unit, unitTitle, turns: turnsRef.current, finish: true }));
+      setSummary(await callRoleplay({ unit, unitTitle, session: sessionRef.current, turns: turnsRef.current, finish: true }));
     } catch {
       setSummary(null);
     }
@@ -339,9 +381,7 @@ function RolePlay({ unit }: { unit: number }) {
             <p className="text-muted-foreground"><Loader2 className="mr-1 inline h-4 w-4 animate-spin" /> စစ်ဆေးနေပါတယ်…</p>
           ) : (
             <>
-              <p>{summary.summaryMy}</p>
-              {summary.good?.map((g) => <p key={g}>✅ {g}</p>)}
-              {summary.improve?.map((g) => <p key={g}>✏️ {g}</p>)}
+              <p>{summary.feedbackMy}</p>
             </>
           )}
         </div>
@@ -365,9 +405,16 @@ function RolePlay({ unit }: { unit: number }) {
             </button>
           </>
         ) : (
-          <button type="button" onClick={start} className="flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-md transition hover:opacity-90">
+          <div className="flex flex-col items-center gap-2">
+          <button type="button" onClick={start} disabled={left === 0} className="flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-md transition hover:opacity-90">
             <Phone className="h-4 w-4" /> {phase === "summary" ? "အသစ် ပြန်စမည်" : "စကားပြော စတင်မည်"}
           </button>
+          {left !== null && left >= 0 && (
+            <p className="text-xs text-muted-foreground">
+              {left > 0 ? `ဒီ Unit မှာ ယနေ့ စကားပြောခွင့် ${left}/2 ကြိမ် ကျန်ပါတယ်` : "ဒီ Unit အတွက် ယနေ့ ၂ ကြိမ် ပြည့်ပါပြီ"}
+            </p>
+          )}
+          </div>
         )}
       </div>
     </div>
