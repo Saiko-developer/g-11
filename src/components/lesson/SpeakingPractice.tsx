@@ -8,26 +8,26 @@ import { getSyllabusUnit } from "@/lib/localData";
 import { cn } from "@/lib/utils";
 import { supabase } from "@/integrations/supabase/client";
 
-type Props = { unit: number; src: string; script: ListeningScript };
+type Props = { unit: number; src: string; script: ListeningScript; original?: React.ReactNode };
 
-/** Dedicated Speaking practice: sentence shadowing + hands-free AI role-play. */
-export function SpeakingPractice({ unit, src, script }: Props) {
-  const [mode, setMode] = useState<"shadow" | "roleplay">("shadow");
+/** Speaking: original textbook player first, plus shadowing + hands-free AI role-play tabs. */
+export function SpeakingPractice({ unit, src, script, original }: Props) {
+  const [mode, setMode] = useState<"lesson" | "shadow" | "roleplay">(original ? "lesson" : "shadow");
+  const tabs = [
+    ...(original ? ([["lesson", "📖 သင်ခန်းစာ"]] as const) : []),
+    ["shadow", "🎯 လိုက်ဆို"],
+    ["roleplay", "💬 AI စကားပြော"],
+  ] as const;
   return (
     <section className="overflow-hidden rounded-2xl border border-border bg-card">
-      <div className="grid grid-cols-2 gap-1 border-b border-border bg-muted/40 p-1">
-        {(
-          [
-            ["shadow", "🎯 လိုက်ဆို လေ့ကျင့်"],
-            ["roleplay", "💬 AI နဲ့ စကားပြော"],
-          ] as const
-        ).map(([k, l]) => (
+      <div className={cn("grid gap-1 border-b border-border bg-muted/40 p-1", original ? "grid-cols-3" : "grid-cols-2")}>
+        {tabs.map(([k, l]) => (
           <button
             key={k}
             type="button"
             onClick={() => setMode(k)}
             className={cn(
-              "rounded-xl px-3 py-2.5 text-sm font-semibold transition",
+              "rounded-xl px-2 py-2.5 text-xs font-semibold transition sm:text-sm",
               mode === k ? "bg-card text-primary shadow-sm" : "text-muted-foreground hover:text-foreground",
             )}
           >
@@ -35,8 +35,8 @@ export function SpeakingPractice({ unit, src, script }: Props) {
           </button>
         ))}
       </div>
-      <div className="p-4">
-        {mode === "shadow" ? <Shadowing src={src} script={script} /> : <RolePlay unit={unit} />}
+      <div className={mode === "lesson" ? "" : "p-4"}>
+        {mode === "lesson" ? original : mode === "shadow" ? <Shadowing src={src} script={script} /> : <RolePlay unit={unit} />}
       </div>
     </section>
   );
