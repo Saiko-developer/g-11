@@ -135,7 +135,7 @@ function RolePlay({ unit }: { unit: number }) {
     try {
       const r = await callRoleplay({ unit, unitTitle, turns: history.map(({ role, text }) => ({ role, text })) });
       if (!activeRef.current) return;
-      if (r.scenario) setScenario({ partner: r.partner ?? "Partner", en: r.scenario, my: r.scenarioMy ?? "" });
+      if (r.scenario) setScenario({ partner: "Saya Owl", en: r.scenario, my: r.scenarioMy ?? "" });
       const withTip = [...history];
       if (r.tip && withTip.length) withTip[withTip.length - 1] = { ...withTip[withTip.length - 1], tip: r.tip };
       const next = [...withTip, { role: "ai" as const, text: r.reply, my: r.replyMy }];
@@ -144,7 +144,7 @@ function RolePlay({ unit }: { unit: number }) {
       setHints(Array.isArray(r.hints) ? r.hints.slice(0, 3) : []);
       sawSpeech.current = false;
       set("speaking");
-      void tts.speak(r.reply, { speed: 1 });
+      void tts.speak(r.reply, { speed: 1, nativeEnglish: true });
     } catch (e) {
       const code = e instanceof Error ? e.message : "";
       toast.error(code === "402" ? "AI credits ကုန်နေပါတယ်" : code === "429" ? "ခဏစောင့်ပြီး ပြန်စမ်းပါ" : "AI ချိတ်ဆက်မရပါ");

@@ -169,14 +169,53 @@ export function useSpeechSynthesis() {
   const stop = useCallback(() => {
     reqIdRef.current += 1; // invalidate any in-flight request
     cleanup();
+    try {
+      if (typeof window !== "undefined" && window.speechSynthesis) window.speechSynthesis.cancel();
+    } catch {
+      // ignore
+    }
     setSpeaking(false);
   }, [cleanup]);
 
   const speak = useCallback(
     async (
       text: string,
-      opts?: { lang?: string; speed?: number; onStart?: () => void },
+      opts?: { lang?: string; speed?: number; onStart?: () => void; nativeEnglish?: boolean },
     ) => {
+      if (typeof window === "undefined") return;
+      // Instant path: built-in English voice, no network round-trip.
+      const synth = window.speechSynthesis;
+      if (opts?.nativeEnglish && synth && typeof SpeechSynthesisUtterance !== "undefined") {
+        const voices = synth.getVoices();
+        const voice =
+          voices.find((v) => /en[-_]US/i.test(v.lang) && /google|samantha|natural/i.test(v.name)) ??
+          voices.find((v) => /^en/i.test(v.lang));
+        if (voice || voices.length === 0) {
+          stop();
+          const myId = ++reqIdRef.current;
+          const u = new SpeechSynthesisUtterance(text.replace(/[*_`#>]/g, "").trim());
+          u.lang = "en-US";
+          if (voice) u.voice = voice;
+          u.rate = opts.speed ?? 1;
+          let started = false;
+          const done = () => {
+            if (myId === reqIdRef.current) setSpeaking(false);
+          };
+          u.onstart = () => {
+            started = true;
+            opts.onStart?.();
+          };
+          u.onend = done;
+          u.onerror = done;
+          setSpeaking(true);
+          synth.speak(u);
+          // Some browsers never fire onstart without a voice; don't hang the call.
+          setTimeout(() => {
+            if (!started && !synth.speaking && myId === reqIdRef.current) setSpeaking(false);
+          }, 2500);
+          return;
+        }
+      }
       if (typeof window === "undefined") return;
 
       // Strip markdown/table noise while keeping Burmese + English characters.
