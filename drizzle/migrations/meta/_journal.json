@@ -29,6 +29,13 @@
       "when": 1793715090029,
       "tag": "0003_answer_key_half_time",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1793751404432,
+      "tag": "0004_fix_teacher_exam_photo_read",
+      "breakpoints": true
     }
   ]
 }
