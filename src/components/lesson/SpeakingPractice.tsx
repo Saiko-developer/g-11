@@ -6,6 +6,7 @@ import { useSpeechRecognition, useSpeechSynthesis } from "@/hooks/use-voice";
 import { scoreShadowing, type WordMark } from "@/lib/shadowing-score";
 import { getSyllabusUnit } from "@/lib/localData";
 import { cn } from "@/lib/utils";
+import { supabase } from "@/integrations/supabase/client";
 
 type Props = { unit: number; src: string; script: ListeningScript };
 
@@ -47,6 +48,7 @@ function Shadowing({ src, script }: { src: string; script: ListeningScript }) {
   const lines = script.lines.filter((l) => l.en.split(/\s+/).length >= 3);
   const [idx, setIdx] = useState(0);
   const [rate, setRate] = useState(1);
+  const [modelPlaying, setModelPlaying] = useState(false);
   const [spoken, setSpoken] = useState("");
   const [interim, setInterim] = useState("");
   const [result, setResult] = useState<{ marks: WordMark[]; percent: number } | null>(null);
@@ -82,9 +84,17 @@ function Shadowing({ src, script }: { src: string; script: ListeningScript }) {
         stopAt.current = null;
       }
     };
+    const onPause = () => setModelPlaying(false);
+    const onPlay = () => setModelPlaying(true);
     a.addEventListener("timeupdate", tick);
+    a.addEventListener("pause", onPause);
+    a.addEventListener("ended", onPause);
+    a.addEventListener("play", onPlay);
     return () => {
       a.removeEventListener("timeupdate", tick);
+      a.removeEventListener("pause", onPause);
+      a.removeEventListener("ended", onPause);
+      a.removeEventListener("play", onPlay);
       a.pause();
     };
   }, []);
@@ -92,11 +102,25 @@ function Shadowing({ src, script }: { src: string; script: ListeningScript }) {
   const playModel = () => {
     const a = audioRef.current;
     if (!a || !line) return;
+    if (!a.paused) {
+      a.pause();
+      return;
+    }
     rec.stop();
-    a.playbackRate = rate;
-    a.currentTime = line.start;
-    stopAt.current = line.end;
-    void a.play();
+    const start = () => {
+      a.playbackRate = rate;
+      a.currentTime = line.start;
+      stopAt.current = line.end;
+      a.play().catch((err) => {
+        console.error("[shadowing-audio]", err);
+        toast.error("အသံဖွင့်လို့ မရပါ။ ထပ်စမ်းကြည့်ပါ။");
+      });
+    };
+    if (a.readyState >= 1) start();
+    else {
+      a.addEventListener("loadedmetadata", start, { once: true });
+      a.load();
+    }
   };
   const record = () => {
     if (rec.listening) {
@@ -121,7 +145,7 @@ function Shadowing({ src, script }: { src: string; script: ListeningScript }) {
   if (!line) return null;
   return (
     <div className="space-y-4">
-      <audio ref={audioRef} src={src} preload="metadata" />
+      <audio ref={audioRef} src={src} preload="auto" />
       <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground">
         <span>စာကြောင်း {idx + 1} / {lines.length}</span>
         <div className="flex gap-1">
@@ -152,7 +176,8 @@ function Shadowing({ src, script }: { src: string; script: ListeningScript }) {
           onClick={playModel}
           className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-card px-3 py-1.5 text-sm font-semibold text-primary shadow-sm"
         >
-          <Play className="h-4 w-4" /> နမူနာ နားထောင်ရန်
+          {modelPlaying ? <Square className="h-4 w-4 animate-pulse" /> : <Play className="h-4 w-4" />}
+          {modelPlaying ? "ရပ်ရန်" : "နမူနာ နားထောင်ရန်"}
         </button>
       </div>
 
@@ -218,12 +243,21 @@ type Turn = { role: "ai" | "student"; text: string; my?: string; tip?: string };
 type Phase = "idle" | "thinking" | "speaking" | "listening" | "summary";
 
 async function callRoleplay(body: object) {
+  const { data } = await supabase.auth.getSession();
+  const token = data.session?.access_token;
   const res = await fetch("/api/roleplay", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      ...(token ? { Authorization: `Bearer ${token}` } : {}),
+    },
     body: JSON.stringify(body),
   });
-  if (!res.ok) throw new Error(String(res.status));
+  if (!res.ok) {
+    if (res.status === 401) toast.error("AI Role-Play သုံးရန် အရင် Login ဝင်ပါ။");
+    else if (res.status === 402 || res.status === 429) toast.error("ယနေ့ AI အသုံးပြုခွင့် ပြည့်သွားပါပြီ။");
+    throw new Error(String(res.status));
+  }
   return res.json();
 }
 
