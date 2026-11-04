@@ -15,6 +15,13 @@
       "when": 1793777397473,
       "tag": "0001_signup_trigger_and_main_admins",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793780065217,
+      "tag": "0002_restore_full_schema",
+      "breakpoints": true
     }
   ]
 }
