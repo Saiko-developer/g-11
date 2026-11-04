@@ -53,6 +53,14 @@ function Shadowing({ src, script }: { src: string; script: ListeningScript }) {
 /* ------------------------------ Mode B ------------------------------ */
 
 type Turn = { role: "ai" | "student"; text: string; my?: string; tip?: string };
+const EMOTIONS: Record<string, string> = {
+  happy: "😊 Happy",
+  excited: "🤩 Excited",
+  curious: "🤔 Curious",
+  encouraging: "💪 Encouraging",
+  calm: "😌 Calm",
+};
+
 type Phase = "idle" | "thinking" | "speaking" | "listening" | "summary";
 
 async function callRoleplay(body: object) {
@@ -80,6 +88,7 @@ function RolePlay({ unit }: { unit: number }) {
   const [turns, setTurns] = useState<Turn[]>([]);
   const [scenario, setScenario] = useState<{ partner: string; en: string; my: string } | null>(null);
   const [hints, setHints] = useState<string[]>([]);
+  const [emotion, setEmotion] = useState("happy");
   const [heard, setHeard] = useState("");
   const [summary, setSummary] = useState<{ summaryMy: string; good: string[]; improve: string[] } | null>(null);
   const activeRef = useRef(false);
@@ -142,6 +151,7 @@ function RolePlay({ unit }: { unit: number }) {
       const next = [...withTip, { role: "ai" as const, text: r.reply, my: r.replyMy }];
       turnsRef.current = next;
       setTurns(next);
+      if (typeof r.emotion === "string" && EMOTIONS[r.emotion]) setEmotion(r.emotion);
       setHints(Array.isArray(r.hints) ? r.hints.slice(0, 3) : []);
       sawSpeech.current = false;
       set("speaking");
@@ -252,54 +262,65 @@ function RolePlay({ unit }: { unit: number }) {
   const lastAi = [...turns].reverse().find((t) => t.role === "ai");
   const caption = phase === "listening" ? heard : lastAi?.text ?? "";
 
+  const emo = EMOTIONS[emotion] ?? EMOTIONS.happy;
+  const waveState = phase === "summary" ? "idle" : phase;
+
   return (
-    <div className="relative overflow-hidden rounded-3xl bg-foreground text-background">
+    <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-gradient-to-b from-card to-muted/40 shadow-sm">
       <div className="flex items-center justify-between px-5 pt-4 text-xs">
-        <span className="font-semibold opacity-80">Unit {unit} · {unitTitle}</span>
-        {live && <span className="flex items-center gap-1.5 opacity-70"><span className="h-1.5 w-1.5 animate-pulse rounded-full bg-destructive" /> Live</span>}
+        <span className="flex items-center gap-2 font-semibold text-foreground">
+          <span className="flex h-7 w-7 items-center justify-center rounded-full bg-primary/10 text-sm">🦉</span>
+          Saya Owl
+          <span className="font-normal text-muted-foreground">· Unit {unit}</span>
+        </span>
+        {live ? (
+          <span className="flex items-center gap-1.5 rounded-full bg-primary/10 px-2.5 py-1 font-medium text-primary">
+            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-primary" /> Live
+          </span>
+        ) : null}
       </div>
 
       {phase !== "summary" && (
-        <div className="flex flex-col items-center px-5 pb-6 pt-8">
-          <div className={cn("voice-orb", `voice-orb--${phase}`)} aria-hidden />
-          <p className="mt-6 text-lg font-semibold">Saya Owl</p>
-          <p className="mt-1 min-h-[1.25rem] text-sm opacity-70">
+        <div className="flex flex-col items-center px-5 pb-4 pt-6">
+          <div className={cn("voice-wave", `voice-wave--${waveState}`)} data-emotion={live ? emotion : undefined} aria-hidden>
+            {Array.from({ length: 7 }).map((_, i) => <span key={i} />)}
+          </div>
+          <p className="mt-3 min-h-[1.25rem] text-sm text-muted-foreground">
             {phase === "idle" ? "English speaking partner" : status[phase]}
           </p>
-
-          {scenario && <p className="mt-4 max-w-md text-center text-xs opacity-60">🎭 {scenario.en}{scenario.my ? ` — ${scenario.my}` : ""}</p>}
-
-          {!live && (
-            <p className="mt-5 max-w-md text-center text-sm leading-relaxed opacity-75">
-              ဖုန်းခေါ်သလို အင်္ဂလိပ်လို စကားပြောကြမယ်။ Saya Owl ပြောပြီးတာနဲ့ မိုက် အလိုလို ပွင့်ပါမယ်။
-            </p>
+          {live && phase !== "thinking" && lastAi && (
+            <span className="mt-2 rounded-full border border-border/60 bg-background/70 px-2.5 py-0.5 text-[11px] text-muted-foreground transition">
+              {emo}
+            </span>
           )}
 
+          {scenario && <p className="mt-4 max-w-md text-center text-xs text-muted-foreground">🎭 {scenario.en}{scenario.my ? ` — ${scenario.my}` : ""}</p>}
+
           {live && (
-            <div className="mt-6 min-h-[4.5rem] w-full max-w-lg text-center">
-              <p className={cn("text-lg font-medium leading-snug", phase === "listening" && "italic opacity-80")}>
+            <div className="mt-5 min-h-[4rem] w-full max-w-lg text-center">
+              <p className={cn("text-lg font-medium leading-snug text-foreground", phase === "listening" && "italic text-muted-foreground")}>
                 {caption || (phase === "listening" ? "🎤 ပြောပါ…" : "")}
               </p>
-              {phase !== "listening" && lastAi?.my && <p className="mt-1 text-xs opacity-60">{lastAi.my}</p>}
+              {phase !== "listening" && lastAi?.my && <p className="mt-1 text-xs text-muted-foreground">{lastAi.my}</p>}
             </div>
           )}
 
           {phase === "listening" && hints.length > 0 && (
             <details className="mt-3 w-full max-w-lg text-sm">
-              <summary className="cursor-pointer text-center text-xs opacity-70">💡 ဘာပြောရမလဲ မသိရင် နှိပ်ပါ</summary>
+              <summary className="cursor-pointer text-center text-xs text-muted-foreground">💡 ဘာပြောရမလဲ မသိရင် နှိပ်ပါ</summary>
               <div className="mt-2 space-y-1.5">
-                {hints.map((h) => <p key={h} className="rounded-xl bg-background/10 px-3 py-2">{h}</p>)}
+                {hints.map((h) => <p key={h} className="rounded-xl bg-muted px-3 py-2">{h}</p>)}
               </div>
             </details>
           )}
 
           {turns.length > 0 && (
             <details className="mt-3 w-full max-w-lg text-sm">
-              <summary className="cursor-pointer text-center text-xs opacity-70">📝 စကားပြော မှတ်တမ်း</summary>
+              <summary className="cursor-pointer text-center text-xs text-muted-foreground">📝 စကားပြော မှတ်တမ်း</summary>
               <div ref={listRef} className="mt-2 max-h-64 space-y-2 overflow-y-auto">
                 {turns.map((t, i) => (
                   <div key={i} className={cn("flex", t.role === "student" ? "justify-end" : "justify-start")}>
-                    <div className={cn("max-w-[85%] rounded-2xl px-3 py-2", t.role === "student" ? "bg-primary text-primary-foreground" : "bg-background/10")}>
+                    <div className={cn("max-w-[85%] rounded-2xl px-3 py-2", t.role === "student" ? "bg-primary text-primary-foreground" : "bg-muted text-foreground")}>
                       <p>{t.text}</p>
                       {t.tip && <p className="mt-1 text-xs opacity-80">💡 {t.tip}</p>}
                     </div>
@@ -312,7 +333,7 @@ function RolePlay({ unit }: { unit: number }) {
       )}
 
       {phase === "summary" && (
-        <div className="m-4 space-y-2 rounded-2xl bg-background p-4 text-sm text-foreground">
+        <div className="m-4 space-y-2 rounded-2xl border border-border/60 bg-background p-4 text-sm text-foreground">
           <p className="font-bold">📋 စကားပြော အကဲဖြတ်ချက်</p>
           {!summary ? (
             <p className="text-muted-foreground"><Loader2 className="mr-1 inline h-4 w-4 animate-spin" /> စစ်ဆေးနေပါတယ်…</p>
@@ -326,26 +347,26 @@ function RolePlay({ unit }: { unit: number }) {
         </div>
       )}
 
-      <div className="flex items-center justify-center gap-5 px-5 pb-6">
+      <div className="flex items-center justify-center gap-4 px-5 pb-6">
         {live ? (
           <>
             {phase === "speaking" && (
-              <button type="button" onClick={interrupt} aria-label="ကြားဖြတ်ပြောမည်" className="flex h-14 w-14 items-center justify-center rounded-full bg-background/15 transition hover:bg-background/25">
-                <Square className="h-5 w-5" />
+              <button type="button" onClick={interrupt} aria-label="ကြားဖြတ်ပြောမည်" className="flex h-12 w-12 items-center justify-center rounded-full border border-border bg-background text-foreground transition hover:bg-muted">
+                <Square className="h-4 w-4" />
               </button>
             )}
             {phase === "listening" && (
-              <button type="button" onClick={() => void send()} disabled={!heard} aria-label="ပို့မည်" className="flex h-14 w-14 items-center justify-center rounded-full bg-background/15 transition hover:bg-background/25 disabled:opacity-40">
+              <button type="button" onClick={() => void send()} disabled={!heard} aria-label="ပို့မည်" className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground transition hover:opacity-90 disabled:opacity-40">
                 <Mic className="h-5 w-5" />
               </button>
             )}
-            <button type="button" onClick={() => void stop()} aria-label="ရပ်မည်" className="flex h-14 w-14 items-center justify-center rounded-full bg-destructive text-destructive-foreground transition hover:opacity-90">
+            <button type="button" onClick={() => void stop()} aria-label="ရပ်မည်" className="flex h-12 w-12 items-center justify-center rounded-full bg-destructive text-destructive-foreground transition hover:opacity-90">
               <PhoneOff className="h-5 w-5" />
             </button>
           </>
         ) : (
-          <button type="button" onClick={start} className="flex items-center gap-2 rounded-full bg-background px-6 py-3.5 text-base font-bold text-foreground transition hover:opacity-90">
-            <Phone className="h-5 w-5" /> {phase === "summary" ? "အသစ် ပြန်စမည်" : "စကားပြော စတင်မည်"}
+          <button type="button" onClick={start} className="flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-md transition hover:opacity-90">
+            <Phone className="h-4 w-4" /> {phase === "summary" ? "အသစ် ပြန်စမည်" : "စကားပြော စတင်မည်"}
           </button>
         )}
       </div>
