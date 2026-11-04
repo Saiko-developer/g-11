@@ -31,7 +31,7 @@ export function SyncedListeningPlayer({ src, script, label, hint }: Props) {
   const active = useMemo(() => {
     let idx = -1;
     // Delay highlights slightly so they land as the words are heard, not before.
-    const SUBTITLE_DELAY = 0.4;
+    const SUBTITLE_DELAY = 0.9;
     for (let i = 0; i < lines.length; i++) if (time >= lines[i].start + SUBTITLE_DELAY) idx = i;
     return idx;
   }, [time, lines]);

@@ -99,9 +99,11 @@ export function useSpeechRecognition(opts: {
       }
       if (interimText && onInterimRef.current) onInterimRef.current(interimText);
       if (finalText) onFinalRef.current(finalText.trim());
-      armSilenceTimer();
+      // Only count silence once the user has actually started speaking.
+      if (interimText || finalText) armSilenceTimer();
     };
-    rec.onerror = () => {
+    rec.onerror = (e) => {
+      console.warn("[speech] error", (e as { error?: string })?.error);
       clearSilenceTimer();
       setListening(false);
     };
@@ -113,7 +115,6 @@ export function useSpeechRecognition(opts: {
     try {
       rec.start();
       setListening(true);
-      armSilenceTimer();
     } catch {
       setListening(false);
     }
