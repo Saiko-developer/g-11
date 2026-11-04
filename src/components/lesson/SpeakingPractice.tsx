@@ -194,7 +194,7 @@ function RolePlay({ unit }: { unit: number }) {
     const { data } = await supabase.auth.getSession();
     if (!data.session) {
       toast.error("AI နဲ့ စကားပြောရန် Google ဖြင့် အရင် Login ဝင်ပါ။", {
-        action: { label: "Login", onClick: () => void signInWithGoogle(window.location.href) },
+        action: { label: "Login", onClick: () => void signInWithGoogle() },
       });
       return;
     }
