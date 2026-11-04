@@ -1,14 +1,25 @@
 import { useState, type ReactNode } from "react";
 import { Lock } from "lucide-react";
 import { lovable } from "@/integrations/lovable/index";
+import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/components/AuthGate";
 import { Button } from "@/components/ui/button";
 
 export async function signInWithGoogle(redirectUri?: string) {
-  try { return await lovable.auth.signInWithOAuth("google", {
-    redirect_uri: redirectUri ?? window.location.origin,
-    extraParams: { prompt: "select_account" },
-  }); } catch (error) {
+  try {
+    const r = await lovable.auth.signInWithOAuth("google", {
+      redirect_uri: redirectUri ?? window.location.origin,
+      extraParams: { prompt: "select_account" },
+    });
+    if (r.error || r.redirected || !("tokens" in r) || !r.tokens) return r;
+    // Make sure the returned tokens actually became the active session (popup flow in preview).
+    const { data } = await supabase.auth.getSession();
+    if (!data.session) {
+      const { error } = await supabase.auth.setSession(r.tokens);
+      if (error) return { error: new Error("Login မအောင်မြင်ပါ။ ထပ်စမ်းပါ။ (" + error.message + ")"), redirected: false };
+    }
+    return r;
+  } catch (error) {
     return { error: error instanceof Error ? error : new Error("Sign-in failed. Please try again."), redirected: false };
   }
 }
