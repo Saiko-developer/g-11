@@ -1,3 +1,4 @@
+import { installApiAuthFetch } from "@/lib/api-auth-fetch";
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import type { Session } from "@supabase/supabase-js";
 import { useRouter } from "@tanstack/react-router";
@@ -22,6 +23,7 @@ export function AuthGate({ children }: { children: ReactNode }) {
   const [access, setAccess] = useState<Access | null>(null);
 
   useEffect(() => {
+    installApiAuthFetch();
     let active = true;
     let revision = 0;
     const applySession = async (s: Session | null, current: number) => {
