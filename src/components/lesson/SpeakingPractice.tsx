@@ -8,6 +8,7 @@ import { getSyllabusUnit } from "@/lib/localData";
 import { cn } from "@/lib/utils";
 import { supabase } from "@/integrations/supabase/client";
 import { ShadowingTrack } from "@/components/lesson/ShadowingTrack";
+import { signInWithGoogle } from "@/components/RequireSignIn";
 
 type Props = { unit: number; src: string; script: ListeningScript; original?: React.ReactNode };
 
@@ -147,7 +148,7 @@ function RolePlay({ unit }: { unit: number }) {
       void tts.speak(r.reply, { speed: 1, voice: "echo", provider: "openai" });
     } catch (e) {
       const code = e instanceof Error ? e.message : "";
-      toast.error(code === "402" ? "AI credits ကုန်နေပါတယ်" : code === "429" ? "ခဏစောင့်ပြီး ပြန်စမ်းပါ" : "AI ချိတ်ဆက်မရပါ");
+      if (!["401", "402", "429"].includes(code)) toast.error("AI ချိတ်ဆက်မရပါ။ Internet စစ်ပြီး ပြန်စမ်းပါ။");
       stop(false);
     }
   };
@@ -185,9 +186,23 @@ function RolePlay({ unit }: { unit: number }) {
     activeRef.current = false;
   }, []);
 
-  const start = () => {
+  const start = async () => {
     if (!rec.supported) {
       toast.error("ဒီ browser မှာ အသံဖမ်းလို့ မရပါ။ Chrome ဖြင့် ဖွင့်ကြည့်ပါ။");
+      return;
+    }
+    const { data } = await supabase.auth.getSession();
+    if (!data.session) {
+      toast.error("AI နဲ့ စကားပြောရန် Google ဖြင့် အရင် Login ဝင်ပါ။", {
+        action: { label: "Login", onClick: () => void signInWithGoogle() },
+      });
+      return;
+    }
+    try {
+      const s = await navigator.mediaDevices?.getUserMedia({ audio: true });
+      s?.getTracks().forEach((t) => t.stop());
+    } catch {
+      toast.error("Microphone ခွင့်ပြုချက် မရပါ။ Browser address bar ဘေးက 🔒 ကိုနှိပ်ပြီး Microphone ကို Allow လုပ်ပါ။");
       return;
     }
     activeRef.current = true;
