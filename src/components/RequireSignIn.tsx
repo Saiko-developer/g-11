@@ -1,14 +1,31 @@
 import { useState, type ReactNode } from "react";
 import { Lock } from "lucide-react";
 import { lovable } from "@/integrations/lovable/index";
+import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/components/AuthGate";
 import { Button } from "@/components/ui/button";
 
+function isLovableHost() {
+  const h = window.location.hostname;
+  return h.endsWith(".lovable.app") || h.endsWith(".lovableproject.com") || h === "localhost";
+}
+
 export async function signInWithGoogle(redirectUri?: string) {
-  try { return await lovable.auth.signInWithOAuth("google", {
-    redirect_uri: redirectUri ?? window.location.origin,
-    extraParams: { prompt: "select_account" },
-  }); } catch (error) {
+  const redirect = redirectUri ?? window.location.origin;
+  try {
+    if (!isLovableHost()) {
+      // External hosting (e.g. Vercel): use direct Google sign-in with own OAuth credentials.
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: "google",
+        options: { redirectTo: redirect, queryParams: { prompt: "select_account" } },
+      });
+      return { error: error ?? null, redirected: !error };
+    }
+    return await lovable.auth.signInWithOAuth("google", {
+      redirect_uri: redirect,
+      extraParams: { prompt: "select_account" },
+    });
+  } catch (error) {
     return { error: error instanceof Error ? error : new Error("Sign-in failed. Please try again."), redirected: false };
   }
 }
