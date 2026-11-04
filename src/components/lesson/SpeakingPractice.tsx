@@ -94,15 +94,19 @@ function RolePlay({ unit }: { unit: number }) {
     setPhase(p);
   };
 
+  const interimRef = useRef("");
   const send = async () => {
-    const text = bufRef.current.trim();
+    if (phaseRef.current !== "listening") return;
+    const text = `${bufRef.current} ${interimRef.current}`.trim();
     bufRef.current = "";
+    interimRef.current = "";
     setHeard("");
     if (!activeRef.current) return;
     if (!text) {
       rec.start();
       return;
     }
+    rec.stop();
     const next = [...turnsRef.current, { role: "student" as const, text }];
     turnsRef.current = next;
     setTurns(next);
@@ -111,12 +115,18 @@ function RolePlay({ unit }: { unit: number }) {
 
   const rec = useSpeechRecognition({
     lang: "en-US",
-    silenceMs: 1800,
+    silenceMs: 2000,
     onFinal: (t) => {
+      if (phaseRef.current !== "listening") return;
       bufRef.current += ` ${t}`;
+      interimRef.current = "";
       setHeard(bufRef.current.trim());
     },
-    onInterim: (t) => setHeard(`${bufRef.current} ${t}`.trim()),
+    onInterim: (t) => {
+      if (phaseRef.current !== "listening") return;
+      interimRef.current = t;
+      setHeard(`${bufRef.current} ${t}`.trim());
+    },
     onSilence: () => void send(),
   });
 
