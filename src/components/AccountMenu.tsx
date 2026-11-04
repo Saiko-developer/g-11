@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import type { Session } from "@supabase/supabase-js";
-import { CreditCard, FileText, LogOut, Zap } from "lucide-react";
+import { BarChart3, CreditCard, FileText, LogOut, Zap } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { supabase } from "@/integrations/supabase/client";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
@@ -123,6 +124,14 @@ export function AccountMenu({ session, onSignOut }: { session: Session; onSignOu
             </button>
           </div>
         )}
+        <Link
+          to="/progress"
+          onClick={() => setMenuOpen(false)}
+          className="flex w-full items-center gap-3 border-t border-border px-4 py-3 text-sm hover:bg-muted"
+        >
+          <span className="rounded-lg bg-primary/10 p-1.5 text-primary"><BarChart3 className="h-4 w-4" /></span>
+          <span className="flex-1 text-left">My Progress<span className="block text-[11px] text-muted-foreground">တိုးတက်မှု မှတ်တမ်း</span></span>
+        </Link>
         <button
           onClick={() => { setMenuOpen(false); setHelpOpen(true); }}
           className="flex w-full items-center gap-3 border-t border-border px-4 py-3 text-sm hover:bg-muted"
