@@ -24,6 +24,7 @@ export function SyncedListeningPlayer({ src, script, label, hint }: Props) {
   const [duration, setDuration] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [rate, setRate] = useState(1);
+  const [showScript, setShowScript] = useState(false);
   const [showMy, setShowMy] = useState(true);
 
   const lines = script.lines;
@@ -189,8 +190,17 @@ export function SyncedListeningPlayer({ src, script, label, hint }: Props) {
         </div>
       </div>
 
-      {/* Script */}
-      <div ref={listRef} className="relative max-h-[60vh] space-y-3 overflow-y-auto p-4">
+      {/* Script (collapsed by default so the live line isn't shown twice) */}
+      <div className="border-t border-border px-4 py-2">
+        <button
+          type="button"
+          onClick={() => setShowScript((v) => !v)}
+          className="text-xs font-semibold text-primary hover:underline"
+        >
+          {showScript ? "▲ စာသားအပြည့် ဝှက်မယ်" : "▼ စာသားအပြည့် ကြည့်မယ်"}
+        </button>
+      </div>
+      <div ref={listRef} className={cn("relative max-h-[60vh] space-y-3 overflow-y-auto p-4", !showScript && "hidden")}>
         {lines.map((l, i) => {
           const isActive = i === active;
           const isPast = active >= 0 && i < active;

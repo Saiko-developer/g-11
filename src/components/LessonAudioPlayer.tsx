@@ -38,10 +38,7 @@ export function LessonAudioPlayer({ src, script, label, hint, unit }: LessonAudi
   if (src && synced) {
     if (label === "Model pronunciation" && unit) {
       return (
-        <div className="space-y-4">
-          <SyncedListeningPlayer src={src} script={synced} label={label} hint={hint} />
-          <SpeakingPractice unit={unit} src={src} script={synced} />
-        </div>
+        <SpeakingPractice unit={unit} src={src} script={synced} />
       );
     }
     return <SyncedListeningPlayer src={src} script={synced} label={label} hint={hint} />;
