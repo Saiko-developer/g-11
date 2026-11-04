@@ -1,3 +1,4 @@
+import { requireUser, untrusted, cleanLine } from "@/lib/api-guard.server";
 import { createFileRoute } from "@tanstack/react-router";
 
 /**
@@ -11,6 +12,8 @@ export const Route = createFileRoute("/api/transcribe")({
   server: {
     handlers: {
       POST: async ({ request }) => {
+        const authed = await requireUser(request);
+        if (authed instanceof Response) return authed;
         const key = process.env.LOVABLE_API_KEY;
         if (!key) return new Response("Missing LOVABLE_API_KEY", { status: 500 });
 

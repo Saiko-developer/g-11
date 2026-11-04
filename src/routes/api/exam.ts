@@ -1,3 +1,4 @@
+import { requireUser, untrusted, cleanLine } from "@/lib/api-guard.server";
 import { withTone } from "@/lib/tone-rules";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -22,6 +23,8 @@ export const Route = createFileRoute("/api/exam")({
   server: {
     handlers: {
       POST: async ({ request }) => {
+        const authed = await requireUser(request);
+        if (authed instanceof Response) return authed;
         const body = (await request.json()) as Body;
         const count = Math.min(Math.max(body.count ?? 15, 5), 25);
         const source = (body.text ?? "").slice(0, 12000).trim();

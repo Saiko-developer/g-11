@@ -1,3 +1,4 @@
+import { untrusted, cleanLine } from "@/lib/api-guard.server";
 import { withTone } from "@/lib/tone-rules";
 import { consumeTutorQuota } from "@/lib/tutor-quota.server";
 import { createFileRoute } from "@tanstack/react-router";
@@ -99,10 +100,10 @@ export const Route = createFileRoute("/api/chat")({
 
         let system = mode === "voice" ? VOICE_PROMPT : mode === "text" ? TEXT_PROMPT : BASE_PROMPT;
         if (lessonContext) {
-          system += `\n\n--- ယခု ကျောင်းသား ဖတ်နေသော သင်ခန်းစာ ---\n${lessonContext}`;
+          system += `\n\n--- ယခု ကျောင်းသား ဖတ်နေသော သင်ခန်းစာ ---\n${untrusted("lesson", lessonContext)}`;
         }
         if (currentQuestion) {
-          system += `\n\n--- ကျောင်းသား လက်ရှိ ဖြေနေသော မေးခွန်း ---\n${currentQuestion}\n(သူဖြေနိုင်အောင် အကြံပြုပါ — အဖြေ တိုက်ရိုက် မပြောပါနှင့်၊ သူ မေးမှသာ ပြောပါ။)`;
+          system += `\n\n--- ကျောင်းသား လက်ရှိ ဖြေနေသော မေးခွန်း ---\n${untrusted("current_question", currentQuestion, 3000)}\n(သူဖြေနိုင်အောင် အကြံပြုပါ — အဖြေ တိုက်ရိုက် မပြောပါနှင့်၊ သူ မေးမှသာ ပြောပါ။)`;
         }
 
         const result = streamText({

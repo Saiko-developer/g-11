@@ -1,3 +1,4 @@
+import { requireUser, untrusted, cleanLine } from "@/lib/api-guard.server";
 import { withTone } from "@/lib/tone-rules";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -16,6 +17,8 @@ export const Route = createFileRoute("/api/exercises")({
   server: {
     handlers: {
       POST: async ({ request }) => {
+        const authed = await requireUser(request);
+        if (authed instanceof Response) return authed;
         const body = (await request.json()) as Body;
         const topic = (body.topic ?? "").trim();
         if (!topic) return new Response("topic is required", { status: 400 });

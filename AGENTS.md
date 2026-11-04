@@ -18,3 +18,4 @@
 - Payment settings SELECT access is limited to checkout configuration `id = 1` for authenticated customers and all rows for SQL-verified admins; this preserves credit purchases without exposing other configuration rows.
 # Project Rules
 - Lesson audio MP3s live in public/audio/unitN.mp3 (real files, committed) — asset pointers broke on remix/repo import because they are tied to the old project.
+- AI /api/* routes call `requireUser` and wrap caller text with `untrusted()` (src/lib/api-guard.server.ts); the browser adds the bearer token to same-origin /api calls via `installApiAuthFetch` — stops anonymous paid AI use and prompt injection.

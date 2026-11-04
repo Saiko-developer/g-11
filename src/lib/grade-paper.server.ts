@@ -1,3 +1,4 @@
+import { requireUser, untrusted, cleanLine } from "@/lib/api-guard.server";
 import { withTone } from "@/lib/tone-rules";
 import { streamText } from "ai";
 
@@ -41,7 +42,7 @@ Keep "question" short (first ~12 words of the question). WRITING SECTIONS (VIII 
 - writingFeedback = one-sentence Burmese summary.
 
 ANSWER KEY:
-${JSON.stringify(body.paper).slice(0, 60000)}`;
+${untrusted("answer_key", body.paper, 60000)}`;
 
 
   const modelId = process.env.LOVABLE_CHAT_MODEL?.trim() || DEFAULT_LOVABLE_CHAT_MODEL;
