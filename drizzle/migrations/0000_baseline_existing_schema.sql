@@ -1,1 +1,0 @@
-COMMENT ON TABLE public.profiles IS 'Baseline: schema already existed in the remixed project database; migration history restarted here.';
