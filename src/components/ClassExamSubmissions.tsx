@@ -76,7 +76,7 @@ export function Viewer({ row, paper, onSaved }: { row: Row; paper: MockExamPaper
 
   useEffect(() => {
     if (!row.image_paths.length) return;
-    void supabase.storage.from("exam-photos").createSignedUrls(row.image_paths, 3600).then(({ data }) => {
+    void supabase.storage.from("exam-photos").createSignedUrls(row.image_paths, 300).then(({ data }) => {
       setUrls((data ?? []).map((d) => d.signedUrl).filter(Boolean) as string[]);
     });
   }, [row.image_paths]);

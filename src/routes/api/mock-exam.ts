@@ -1,3 +1,4 @@
+import { untrusted, cleanLine } from "@/lib/api-guard.server";
 import { withTone } from "@/lib/tone-rules";
 import { createFileRoute } from "@tanstack/react-router";
 import { createClient } from "@supabase/supabase-js";
@@ -60,9 +61,9 @@ export const Route = createFileRoute("/api/mock-exam")({
           );
         }
         const unit = unitNo;
-        const topics = (body.topics ?? "").slice(0, 4000);
+        const topics = cleanLine(body.topics, 1000);
         const unitLabel = config.units.length > 1 ? `Units ${config.units.join(", ")}` : `Unit ${unit}`;
-        const unitTitle = body.unitTitle ?? unitLabel;
+        const unitTitle = cleanLine(body.unitTitle, 120) || unitLabel;
         const n = config.count;
         const totals = examTotals(config);
         const LINES: Record<SectionId, string> = {

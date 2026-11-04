@@ -9,7 +9,7 @@ export function UploadedPaperFiles({ files }: { files: PaperFile[] }) {
   const [error, setError] = useState("");
   useEffect(() => {
     let active = true;
-    void supabase.storage.from("class-papers").createSignedUrls(files.map((file) => file.path), 3600).then(({ data, error: failure }) => {
+    void supabase.storage.from("class-papers").createSignedUrls(files.map((file) => file.path), 300).then(({ data, error: failure }) => {
       if (!active) return;
       if (failure) return setError(failure.message);
       const next: Record<string, string> = {};
