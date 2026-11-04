@@ -1,1 +1,0 @@
-COMMENT ON TABLE public.support_messages IS 'Support chat between users and admins';
