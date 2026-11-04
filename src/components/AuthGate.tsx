@@ -25,9 +25,13 @@ export function AuthGate({ children }: { children: ReactNode }) {
     let active = true;
     let revision = 0;
     const applySession = async (s: Session | null, current: number) => {
-      const { data, error } = s ? await supabase.auth.getUser() : { data: { user: null }, error: null };
+      // Validate the exact token we received; only a definite auth rejection drops the session,
+      // so slow preview storage or a network blip can't silently sign the user out.
+      const { data, error } = s ? await supabase.auth.getUser(s.access_token) : { data: { user: null }, error: null };
       if (!active || current !== revision) return;
-      const validated = !error && data.user ? s : null;
+      const status = (error as { status?: number } | null)?.status;
+      const rejected = !!error && (status === 401 || status === 403);
+      const validated = s && !rejected && (data.user || error) ? s : null;
       setSession(validated);
       setReady(true);
       if (!validated) setAccess(null);

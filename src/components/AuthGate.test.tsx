@@ -50,7 +50,7 @@ describe("Root authentication", () => {
   });
   it("does not authenticate an invalid restored session", async () => {
     mocks.getSession.mockResolvedValue({ data: { session } });
-    mocks.getUser.mockResolvedValue({ data: { user: null }, error: new Error("Invalid session") });
+    mocks.getUser.mockResolvedValue({ data: { user: null }, error: Object.assign(new Error("Invalid session"), { status: 401 }) });
     mount();
     await screen.findByText("Signed out");
     expect(mocks.rpc).not.toHaveBeenCalled();
