@@ -1,41 +1,5 @@
 {
   "version": "7",
   "dialect": "postgresql",
-  "entries": [
-    {
-      "idx": 0,
-      "version": "7",
-      "when": 1793696399744,
-      "tag": "0000_restore_new_user_trigger",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1793697676569,
-      "tag": "0001_document_new_user_setup",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1793710273951,
-      "tag": "0002_rebuild_app_schema",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "7",
-      "when": 1793715090029,
-      "tag": "0003_answer_key_half_time",
-      "breakpoints": true
-    },
-    {
-      "idx": 4,
-      "version": "7",
-      "when": 1793751404432,
-      "tag": "0004_fix_teacher_exam_photo_read",
-      "breakpoints": true
-    }
-  ]
+  "entries": []
 }
