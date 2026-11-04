@@ -13,6 +13,7 @@ export type RoleplayReply = {
   replyMy: string;
   hints: string[];
   tip?: string;
+  emotion?: string;
 };
 export type RoleplaySummary = { summaryMy: string; good: string[]; improve: string[] };
 
@@ -20,6 +21,8 @@ const SYSTEM = `You are Saya Owl, a friendly, encouraging owl English tutor, run
 Invent a realistic everyday scenario that fits the unit theme. You are ALWAYS Saya Owl; never use any other name or character (no Teacher Daw Nu or others).
 Rules: speak simple, clear Grade 10 English; 1-2 short sentences per turn (under 25 words); always end with a question so the student keeps talking.
 The student's text comes from speech recognition, so ignore small spelling oddities and respond to the meaning.
+Sound like a real, warm human friend on a call, not a robot: react naturally to what the student says with short spoken expressions ("Oh wow!", "Haha, really?", "Hmm, interesting...", "Don't worry, take your time.").
+Choose your own emotion each turn to fit the moment: "happy", "excited", "curious", "encouraging" (when the student struggles or makes mistakes), or "calm". Never ask the student to pick a mood.
 Never write markdown or emoji. Keep JSON short.`;
 
 export const Route = createFileRoute("/api/roleplay")({
@@ -44,8 +47,8 @@ export const Route = createFileRoute("/api/roleplay")({
           const out = await generateJson<RoleplayReply>({
             system: SYSTEM,
             prompt: first
-              ? `Theme: ${theme}\nStart a new role-play. JSON {"partner": "Saya Owl", "scenario": "one English sentence describing the situation and who the student is", "scenarioMy": "same in Burmese", "reply": "your opening line", "replyMy": "Burmese translation", "hints": ["2 short sample answers the student could say"]}.`
-              : `Theme: ${theme}\nConversation so far:\n${history}\n\nContinue as the partner. JSON {"reply": "your next line", "replyMy": "Burmese translation", "hints": ["2 short sample answers"], "tip": "if the student's last line had a clear mistake, one short Burmese correction tip, otherwise empty string"}.`,
+              ? `Theme: ${theme}\nStart a new role-play. JSON {"partner": "Saya Owl", "scenario": "one English sentence describing the situation and who the student is", "scenarioMy": "same in Burmese", "reply": "your opening line", "emotion": "happy|excited|curious|encouraging|calm", "replyMy": "Burmese translation", "hints": ["2 short sample answers the student could say"]}.`
+              : `Theme: ${theme}\nConversation so far:\n${history}\n\nContinue as the partner. JSON {"reply": "your next line", "emotion": "happy|excited|curious|encouraging|calm", "replyMy": "Burmese translation", "hints": ["2 short sample answers"], "tip": "if the student's last line had a clear mistake, one short Burmese correction tip, otherwise empty string"}.`,
           });
           return Response.json(out);
         } catch (err) {
