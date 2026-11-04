@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/~oauth/:path*",
-      "destination": "https://id-preview--435710a1-d1a5-4ea8-9e17-fc58c35dc90f.lovable.app/~oauth/:path*"
-    }
-  ]
-}
