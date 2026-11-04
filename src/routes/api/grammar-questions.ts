@@ -1,3 +1,4 @@
+import { requireUser, untrusted, cleanLine } from "@/lib/api-guard.server";
 import { withTone } from "@/lib/tone-rules";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -43,6 +44,8 @@ export const Route = createFileRoute("/api/grammar-questions")({
         return Response.json({ batches: data ?? [] });
       },
       POST: async ({ request }) => {
+        const authed = await requireUser(request);
+        if (authed instanceof Response) return authed;
         const body = (await request.json().catch(() => ({}))) as PostBody;
         const sectionId = (body.sectionId ?? "").trim().slice(0, 120);
         const titleEn = (body.titleEn ?? "").trim().slice(0, 200);

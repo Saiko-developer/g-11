@@ -1,3 +1,4 @@
+import { requireUser, untrusted, cleanLine } from "@/lib/api-guard.server";
 import { createFileRoute } from "@tanstack/react-router";
 
 import { sanitizeForSpeech } from "@/lib/sanitizeSpeech";
@@ -59,6 +60,8 @@ export const Route = createFileRoute("/api/tts")({
   server: {
     handlers: {
       POST: async ({ request }) => {
+        const authed = await requireUser(request);
+        if (authed instanceof Response) return authed;
         const { text, voice, speed, provider } = (await request.json()) as TtsBody;
         if (!text || typeof text !== "string") {
           return new Response("text is required", { status: 400 });
