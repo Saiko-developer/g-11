@@ -6,6 +6,7 @@ type TtsBody = {
   text?: string;
   voice?: string;
   speed?: number;
+  provider?: "openai";
 };
 
 /**
@@ -58,7 +59,7 @@ export const Route = createFileRoute("/api/tts")({
   server: {
     handlers: {
       POST: async ({ request }) => {
-        const { text, voice, speed } = (await request.json()) as TtsBody;
+        const { text, voice, speed, provider } = (await request.json()) as TtsBody;
         if (!text || typeof text !== "string") {
           return new Response("text is required", { status: 400 });
         }
@@ -77,6 +78,7 @@ export const Route = createFileRoute("/api/tts")({
 
         // 1) Gemini TTS — natural Burmese.
         try {
+          if (provider === "openai") throw new Error("openai requested");
           const upstream = await fetch("https://ai.gateway.lovable.dev/v1/audio/speech", {
             method: "POST",
             headers: {
@@ -132,7 +134,7 @@ export const Route = createFileRoute("/api/tts")({
           );
 
           // Male fallback voice to match Sayar Owl.
-          const openaiVoice = "echo";
+          const openaiVoice = provider === "openai" && voice ? voice.toLowerCase() : "echo";
 
           const fallback = await fetch(
             "https://ai.gateway.lovable.dev/v1/audio/speech",

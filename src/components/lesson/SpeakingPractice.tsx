@@ -144,7 +144,7 @@ function RolePlay({ unit }: { unit: number }) {
       setHints(Array.isArray(r.hints) ? r.hints.slice(0, 3) : []);
       sawSpeech.current = false;
       set("speaking");
-      void tts.speak(r.reply, { speed: 1, nativeEnglish: true });
+      void tts.speak(r.reply, { speed: 1, voice: "echo", provider: "openai" });
     } catch (e) {
       const code = e instanceof Error ? e.message : "";
       toast.error(code === "402" ? "AI credits ကုန်နေပါတယ်" : code === "429" ? "ခဏစောင့်ပြီး ပြန်စမ်းပါ" : "AI ချိတ်ဆက်မရပါ");
