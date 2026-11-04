@@ -31,6 +31,7 @@ export function ShadowingTrack({ src, script }: { src: string; script: Listening
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const stopAt = useRef<number | null>(null);
   const rowRefs = useRef<Record<number, HTMLDivElement | null>>({});
+  const listRef = useRef<HTMLDivElement | null>(null);
   const bufRef = useRef("");
   const recIdx = useRef<number | null>(null);
   const [time, setTime] = useState(0);
@@ -114,11 +115,22 @@ export function ShadowingTrack({ src, script }: { src: string; script: Listening
     if (audioRef.current) audioRef.current.playbackRate = rate;
   }, [rate]);
 
-  // Follow the live sentence in the list while the full track plays.
+  // Nearest practice sentence at or before the live audio line.
+  const liveItem = useMemo(() => {
+    if (singleIdx !== null) return singleIdx;
+    let best = items[0]?.i ?? -1;
+    for (const it of items) if (it.i <= active) best = it.i;
+    return best;
+  }, [items, active, singleIdx]);
+
+  // Keep the live sentence centred inside the small teleprompter box (no page scroll).
   useEffect(() => {
-    if (!playing || singleIdx !== null) return;
-    rowRefs.current[active]?.scrollIntoView({ behavior: "smooth", block: "nearest" });
-  }, [active, playing, singleIdx]);
+    if (!playing) return;
+    const box = listRef.current;
+    const row = rowRefs.current[liveItem];
+    if (!box || !row) return;
+    box.scrollTo({ top: row.offsetTop - box.clientHeight / 2 + row.clientHeight / 2, behavior: "smooth" });
+  }, [liveItem, playing]);
 
   const safePlay = (a: HTMLAudioElement) =>
     a.play().catch((err) => {
@@ -233,22 +245,9 @@ export function ShadowingTrack({ src, script }: { src: string; script: Listening
             {showMy ? "မြန်မာပြန် ဝှက်မယ်" : "မြန်မာပြန် ပြမယ်"}
           </button>
         </div>
-        <div className="rounded-xl bg-primary/10 px-3 py-2.5">
-          {current && playing ? (
-            <>
-              <div className="mb-1 inline-flex items-center gap-1.5 text-xs font-semibold text-primary">
-                <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-primary" />
-                {current.speaker === "Narrator" ? "အခု ပြောနေတာ" : current.speaker}
-              </div>
-              <p className="text-base font-bold leading-snug text-foreground md:text-lg">{current.en}</p>
-              {showMy && <p className="mt-1 text-sm leading-relaxed text-primary">{current.my}</p>}
-            </>
-          ) : (
-            <p className="text-sm text-muted-foreground">
-              ▶ နှိပ်ပြီး တစ်ပုဒ်လုံး နားထောင်ပါ။ အောက်က စာကြောင်းတစ်ကြောင်းချင်းကို 🎤 နှိပ်ပြီး လိုက်ဆိုနိုင်ပါတယ်။
-            </p>
-          )}
-        </div>
+        <p className="text-xs text-muted-foreground">
+          ▶ နှိပ်ပြီး နားထောင်ပါ။ ပြောနေတဲ့ စာကြောင်းကို အောက်မှာ အရောင်နဲ့ ပြပါမယ်။ အပေါ်/အောက် scroll ဆွဲကြည့်နိုင်ပါတယ်။
+        </p>
       </div>
 
       {/* Sentence list */}
@@ -258,9 +257,12 @@ export function ShadowingTrack({ src, script }: { src: string; script: Listening
           ဒီ browser မှာ အသံဖမ်းလို့ မရပါ။ Chrome ဖြင့် ဖွင့်ကြည့်ပါ။ နားထောင်တာကတော့ ရပါတယ်။
         </p>
       )}
-      <div className="space-y-2">
+      <div
+        ref={listRef}
+        className="relative max-h-[22rem] space-y-2 overflow-y-auto overscroll-contain rounded-2xl border border-border bg-muted/30 p-2 [mask-image:linear-gradient(to_bottom,transparent,black_12%,black_88%,transparent)] py-10"
+      >
         {items.map((l, n) => {
-          const live = playing && l.i === active;
+          const live = l.i === liveItem;
           const res = results[l.i];
           const isRec = recording === l.i;
           return (
@@ -270,8 +272,11 @@ export function ShadowingTrack({ src, script }: { src: string; script: Listening
                 rowRefs.current[l.i] = el;
               }}
               className={cn(
-                "rounded-xl border p-3 transition",
-                live ? "border-primary bg-primary/10 shadow-sm" : "border-border bg-card",
+                "rounded-xl border p-3 transition-all duration-300",
+                live || isRec || res
+                  ? "border-primary bg-primary/10 opacity-100 shadow-sm"
+                  : "border-border bg-card opacity-50",
+                live && "scale-[1.01]",
               )}
             >
               <div className="flex gap-2">
