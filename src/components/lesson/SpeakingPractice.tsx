@@ -94,15 +94,19 @@ function RolePlay({ unit }: { unit: number }) {
     setPhase(p);
   };
 
+  const interimRef = useRef("");
   const send = async () => {
-    const text = bufRef.current.trim();
+    if (phaseRef.current !== "listening") return;
+    const text = `${bufRef.current} ${interimRef.current}`.trim();
     bufRef.current = "";
+    interimRef.current = "";
     setHeard("");
     if (!activeRef.current) return;
     if (!text) {
       rec.start();
       return;
     }
+    rec.stop();
     const next = [...turnsRef.current, { role: "student" as const, text }];
     turnsRef.current = next;
     setTurns(next);
@@ -111,12 +115,18 @@ function RolePlay({ unit }: { unit: number }) {
 
   const rec = useSpeechRecognition({
     lang: "en-US",
-    silenceMs: 1800,
+    silenceMs: 2000,
     onFinal: (t) => {
+      if (phaseRef.current !== "listening") return;
       bufRef.current += ` ${t}`;
+      interimRef.current = "";
       setHeard(bufRef.current.trim());
     },
-    onInterim: (t) => setHeard(`${bufRef.current} ${t}`.trim()),
+    onInterim: (t) => {
+      if (phaseRef.current !== "listening") return;
+      interimRef.current = t;
+      setHeard(`${bufRef.current} ${t}`.trim());
+    },
     onSilence: () => void send(),
   });
 
@@ -152,6 +162,7 @@ function RolePlay({ unit }: { unit: number }) {
     if (sawSpeech.current && activeRef.current) {
       set("listening");
       bufRef.current = "";
+      interimRef.current = "";
       rec.start();
     }
   }, [tts.speaking]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -264,6 +275,21 @@ function RolePlay({ unit }: { unit: number }) {
             {phase === "thinking" && <Loader2 className="mr-1 inline h-4 w-4 animate-spin" />}
             {status[phase]}
           </p>
+          {phase === "listening" && (
+            <div className="space-y-2">
+              <p className="min-h-[2.5rem] rounded-xl border border-dashed border-primary px-3 py-2 text-center text-sm italic">
+                {heard || (rec.listening ? "🎤 မိုက် ပွင့်နေပါတယ်… ပြောပါ" : "🎤 မိုက် ပြန်ဖွင့်နေပါတယ်…")}
+              </p>
+              <button
+                type="button"
+                onClick={() => void send()}
+                disabled={!heard}
+                className="flex w-full items-center justify-center gap-2 rounded-2xl border border-primary px-4 py-3 text-sm font-bold text-primary disabled:opacity-40"
+              >
+                <Mic className="h-4 w-4" /> ပြောပြီးပါပြီ — ပို့မည်
+              </button>
+            </div>
+          )}
           {phase === "listening" && hints.length > 0 && (
             <div className="space-y-1.5">
               <p className="text-xs font-semibold text-muted-foreground">💡 ဒီလို ပြောကြည့်လို့ရပါတယ်</p>

@@ -48,7 +48,7 @@ export function ShadowingTrack({ src, script }: { src: string; script: Listening
   const items = useMemo(() => practiceLines(all), [all]);
   const active = useMemo(() => {
     let idx = -1;
-    for (let i = 0; i < all.length; i++) if (time >= all[i].start + 0.3) idx = i;
+    for (let i = 0; i < all.length; i++) if (time >= all[i].start + 0.9) idx = i;
     return idx;
   }, [time, all]);
 
