@@ -226,83 +226,78 @@ function RolePlay({ unit }: { unit: number }) {
     summary: "",
   };
 
+  const interrupt = () => {
+    tts.stop();
+    sawSpeech.current = false;
+    set("listening");
+    bufRef.current = "";
+    interimRef.current = "";
+    rec.start();
+  };
+  const lastAi = [...turns].reverse().find((t) => t.role === "ai");
+  const caption = phase === "listening" ? heard : lastAi?.text ?? "";
+
   return (
-    <div className="space-y-4">
-      {!live && phase !== "summary" && (
-        <div className="rounded-2xl bg-primary/10 p-4 text-sm leading-relaxed">
-          <p className="font-semibold text-foreground">Unit {unit} · {unitTitle}</p>
-          <p className="mt-1 text-muted-foreground">
-            AI က ဒီ Unit နဲ့ ဆိုင်တဲ့ အခြေအနေတစ်ခု ဖန်တီးပြီး သင်နဲ့ အပြန်အလှန် စကားပြောပါမယ်။ "စတင်မည်" ကို တစ်ခါနှိပ်ရုံပါပဲ — AI ပြောပြီးတာနဲ့ မိုက် အလိုလို ပွင့်ပြီး သင်ပြောပြီး ခဏရပ်ရင် AI ဆက်ဖြေပါမယ်။
+    <div className="relative overflow-hidden rounded-3xl bg-foreground text-background">
+      <div className="flex items-center justify-between px-5 pt-4 text-xs">
+        <span className="font-semibold opacity-80">Unit {unit} · {unitTitle}</span>
+        {live && <span className="flex items-center gap-1.5 opacity-70"><span className="h-1.5 w-1.5 animate-pulse rounded-full bg-destructive" /> Live</span>}
+      </div>
+
+      {phase !== "summary" && (
+        <div className="flex flex-col items-center px-5 pb-6 pt-8">
+          <div className={cn("voice-orb", `voice-orb--${phase}`)} aria-hidden />
+          <p className="mt-6 text-lg font-semibold">Saya Owl</p>
+          <p className="mt-1 min-h-[1.25rem] text-sm opacity-70">
+            {phase === "idle" ? "English speaking partner" : status[phase]}
           </p>
-        </div>
-      )}
 
-      {scenario && (
-        <div className="rounded-2xl border border-border p-3 text-sm">
-          <p className="font-semibold">🎭 {scenario.en}</p>
-          {scenario.my && <p className="mt-1 text-muted-foreground">{scenario.my}</p>}
-        </div>
-      )}
+          {scenario && <p className="mt-4 max-w-md text-center text-xs opacity-60">🎭 {scenario.en}{scenario.my ? ` — ${scenario.my}` : ""}</p>}
 
-      {turns.length > 0 && (
-        <div ref={listRef} className="max-h-[50vh] space-y-2 overflow-y-auto">
-          {turns.map((t, i) => (
-            <div key={i} className={cn("flex", t.role === "student" ? "justify-end" : "justify-start")}>
-              <div
-                className={cn(
-                  "max-w-[85%] rounded-2xl px-3 py-2",
-                  t.role === "student" ? "bg-primary text-primary-foreground" : "bg-secondary text-secondary-foreground",
-                )}
-              >
-                <p className="text-[11px] font-semibold opacity-70">{t.role === "ai" ? scenario?.partner ?? "AI" : "You"}</p>
-                <p className="text-base font-medium leading-snug">{t.text}</p>
-                {t.my && <p className="mt-1 text-xs opacity-80">{t.my}</p>}
-                {t.tip && <p className="mt-1.5 rounded-lg bg-card/90 px-2 py-1 text-xs text-foreground">💡 {t.tip}</p>}
-              </div>
-            </div>
-          ))}
-          {phase === "listening" && heard && (
-            <div className="flex justify-end">
-              <p className="max-w-[85%] rounded-2xl border border-dashed border-primary px-3 py-2 text-sm italic">{heard}</p>
-            </div>
+          {!live && (
+            <p className="mt-5 max-w-md text-center text-sm leading-relaxed opacity-75">
+              ဖုန်းခေါ်သလို အင်္ဂလိပ်လို စကားပြောကြမယ်။ Saya Owl ပြောပြီးတာနဲ့ မိုက် အလိုလို ပွင့်ပါမယ်။
+            </p>
           )}
-        </div>
-      )}
 
-      {live && (
-        <>
-          <p className={cn("text-center text-sm font-semibold", phase === "listening" ? "text-primary" : "text-muted-foreground")}>
-            {phase === "thinking" && <Loader2 className="mr-1 inline h-4 w-4 animate-spin" />}
-            {status[phase]}
-          </p>
-          {phase === "listening" && (
-            <div className="space-y-2">
-              <p className="min-h-[2.5rem] rounded-xl border border-dashed border-primary px-3 py-2 text-center text-sm italic">
-                {heard || (rec.listening ? "🎤 မိုက် ပွင့်နေပါတယ်… ပြောပါ" : "🎤 မိုက် ပြန်ဖွင့်နေပါတယ်…")}
+          {live && (
+            <div className="mt-6 min-h-[4.5rem] w-full max-w-lg text-center">
+              <p className={cn("text-lg font-medium leading-snug", phase === "listening" && "italic opacity-80")}>
+                {caption || (phase === "listening" ? "🎤 ပြောပါ…" : "")}
               </p>
-              <button
-                type="button"
-                onClick={() => void send()}
-                disabled={!heard}
-                className="flex w-full items-center justify-center gap-2 rounded-2xl border border-primary px-4 py-3 text-sm font-bold text-primary disabled:opacity-40"
-              >
-                <Mic className="h-4 w-4" /> ပြောပြီးပါပြီ — ပို့မည်
-              </button>
+              {phase !== "listening" && lastAi?.my && <p className="mt-1 text-xs opacity-60">{lastAi.my}</p>}
             </div>
           )}
+
           {phase === "listening" && hints.length > 0 && (
-            <div className="space-y-1.5">
-              <p className="text-xs font-semibold text-muted-foreground">💡 ဒီလို ပြောကြည့်လို့ရပါတယ်</p>
-              {hints.map((h) => (
-                <p key={h} className="rounded-xl bg-muted px-3 py-2 text-sm">{h}</p>
-              ))}
-            </div>
+            <details className="mt-3 w-full max-w-lg text-sm">
+              <summary className="cursor-pointer text-center text-xs opacity-70">💡 ဘာပြောရမလဲ မသိရင် နှိပ်ပါ</summary>
+              <div className="mt-2 space-y-1.5">
+                {hints.map((h) => <p key={h} className="rounded-xl bg-background/10 px-3 py-2">{h}</p>)}
+              </div>
+            </details>
           )}
-        </>
+
+          {turns.length > 0 && (
+            <details className="mt-3 w-full max-w-lg text-sm">
+              <summary className="cursor-pointer text-center text-xs opacity-70">📝 စကားပြော မှတ်တမ်း</summary>
+              <div ref={listRef} className="mt-2 max-h-64 space-y-2 overflow-y-auto">
+                {turns.map((t, i) => (
+                  <div key={i} className={cn("flex", t.role === "student" ? "justify-end" : "justify-start")}>
+                    <div className={cn("max-w-[85%] rounded-2xl px-3 py-2", t.role === "student" ? "bg-primary text-primary-foreground" : "bg-background/10")}>
+                      <p>{t.text}</p>
+                      {t.tip && <p className="mt-1 text-xs opacity-80">💡 {t.tip}</p>}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </details>
+          )}
+        </div>
       )}
 
       {phase === "summary" && (
-        <div className="space-y-2 rounded-2xl border border-border p-4 text-sm">
+        <div className="m-4 space-y-2 rounded-2xl bg-background p-4 text-sm text-foreground">
           <p className="font-bold">📋 စကားပြော အကဲဖြတ်ချက်</p>
           {!summary ? (
             <p className="text-muted-foreground"><Loader2 className="mr-1 inline h-4 w-4 animate-spin" /> စစ်ဆေးနေပါတယ်…</p>
@@ -316,23 +311,29 @@ function RolePlay({ unit }: { unit: number }) {
         </div>
       )}
 
-      {live ? (
-        <button
-          type="button"
-          onClick={() => void stop()}
-          className="flex w-full items-center justify-center gap-2 rounded-2xl bg-destructive px-4 py-4 text-base font-bold text-destructive-foreground"
-        >
-          <PhoneOff className="h-5 w-5" /> ရပ်မည်
-        </button>
-      ) : (
-        <button
-          type="button"
-          onClick={start}
-          className="flex w-full items-center justify-center gap-2 rounded-2xl bg-primary px-4 py-4 text-base font-bold text-primary-foreground"
-        >
-          <Phone className="h-5 w-5" /> {phase === "summary" ? "အသစ် ပြန်စမည်" : "စတင်မည်"}
-        </button>
-      )}
+      <div className="flex items-center justify-center gap-5 px-5 pb-6">
+        {live ? (
+          <>
+            {phase === "speaking" && (
+              <button type="button" onClick={interrupt} aria-label="ကြားဖြတ်ပြောမည်" className="flex h-14 w-14 items-center justify-center rounded-full bg-background/15 transition hover:bg-background/25">
+                <Square className="h-5 w-5" />
+              </button>
+            )}
+            {phase === "listening" && (
+              <button type="button" onClick={() => void send()} disabled={!heard} aria-label="ပို့မည်" className="flex h-14 w-14 items-center justify-center rounded-full bg-background/15 transition hover:bg-background/25 disabled:opacity-40">
+                <Mic className="h-5 w-5" />
+              </button>
+            )}
+            <button type="button" onClick={() => void stop()} aria-label="ရပ်မည်" className="flex h-14 w-14 items-center justify-center rounded-full bg-destructive text-destructive-foreground transition hover:opacity-90">
+              <PhoneOff className="h-5 w-5" />
+            </button>
+          </>
+        ) : (
+          <button type="button" onClick={start} className="flex items-center gap-2 rounded-full bg-background px-6 py-3.5 text-base font-bold text-foreground transition hover:opacity-90">
+            <Phone className="h-5 w-5" /> {phase === "summary" ? "အသစ် ပြန်စမည်" : "စကားပြော စတင်မည်"}
+          </button>
+        )}
+      </div>
     </div>
   );
 }
