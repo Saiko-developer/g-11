@@ -180,7 +180,7 @@ export function useSpeechSynthesis() {
   const speak = useCallback(
     async (
       text: string,
-      opts?: { lang?: string; speed?: number; onStart?: () => void; nativeEnglish?: boolean },
+      opts?: { lang?: string; speed?: number; onStart?: () => void; nativeEnglish?: boolean; voice?: string; provider?: "openai" },
     ) => {
       if (typeof window === "undefined") return;
       // Instant path: built-in English voice, no network round-trip.
@@ -266,7 +266,8 @@ export function useSpeechSynthesis() {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             text: payload,
-            voice: "alloy",
+            voice: opts?.voice ?? "alloy",
+            provider: opts?.provider,
             speed: opts?.speed ?? 1.1,
           }),
         });

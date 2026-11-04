@@ -142,3 +142,20 @@
     color: var(--color-foreground);
   }
 }
+
+/* ChatGPT-style voice orb for AI speaking partner */
+.voice-orb {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 30% 30%, var(--background), var(--primary) 55%, var(--accent, var(--primary)));
+  box-shadow: 0 0 60px -10px var(--primary);
+  transition: transform 0.4s ease;
+}
+.voice-orb--idle { animation: orb-breathe 4s ease-in-out infinite; opacity: 0.85; }
+.voice-orb--listening { animation: orb-breathe 1.6s ease-in-out infinite; }
+.voice-orb--thinking { animation: orb-spin 1.4s linear infinite; opacity: 0.7; }
+.voice-orb--speaking { animation: orb-talk 0.5s ease-in-out infinite alternate; }
+@keyframes orb-breathe { 0%,100% { transform: scale(0.94); } 50% { transform: scale(1.04); } }
+@keyframes orb-spin { from { transform: rotate(0) scale(0.85); } to { transform: rotate(360deg) scale(0.85); } }
+@keyframes orb-talk { from { transform: scale(0.96); } to { transform: scale(1.12); } }
