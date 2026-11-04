@@ -106,24 +106,33 @@ function Dashboard({ myId, onSignOut }: { myId: string; onSignOut: () => void })
             const me = s.id === myId;
             const suspended = s.status === "suspended";
             return (
-              <div key={s.id} className="flex flex-wrap items-center gap-3 rounded-xl border border-border bg-card p-4">
-                {s.avatar_url ? <img src={s.avatar_url} alt="" className="h-10 w-10 rounded-full" /> : <div className="h-10 w-10 rounded-full bg-muted" />}
-                <div className="min-w-0 flex-1">
-                  <p className="truncate font-semibold">{s.full_name || "—"} {me && <span className="text-xs text-primary">(you)</span>} {s.is_main_admin ? <span className="rounded bg-primary/10 px-1.5 text-xs text-primary">Main Admin</span> : s.is_admin && <span className="rounded bg-primary/10 px-1.5 text-xs text-primary">Admin</span>} {s.is_teacher && <span className="rounded bg-accent px-1.5 text-xs text-accent-foreground">Teacher</span>}</p>
-                  <p className="truncate text-sm text-muted-foreground">{s.email}</p>
-                  <p className="text-xs text-muted-foreground">Last seen: {new Date(s.last_seen_at).toLocaleString()}</p>
+              <div key={s.id} className="flex flex-wrap items-center gap-2 rounded-xl border border-border bg-card p-4">
+                <div className="flex w-full items-start gap-3">
+                  {s.avatar_url ? <img src={s.avatar_url} alt="" className="h-11 w-11 shrink-0 rounded-full" /> : <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary/15 font-semibold text-primary">{(s.full_name || s.email || "?").charAt(0).toUpperCase()}</div>}
+                  <div className="min-w-0 flex-1">
+                    <p className="break-words font-semibold leading-tight">{s.full_name || "—"}</p>
+                    <p className="break-all text-sm text-muted-foreground">{s.email}</p>
+                    <div className="mt-1 flex flex-wrap gap-1">
+                      {me && <span className="rounded-full bg-muted px-2 py-0.5 text-[11px] text-foreground">You</span>}
+                      {s.is_main_admin ? <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[11px] text-primary">Main Admin</span> : s.is_admin && <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[11px] text-primary">Admin</span>}
+                      {s.is_teacher && <span className="rounded-full bg-accent px-2 py-0.5 text-[11px] text-accent-foreground">Teacher</span>}
+                    </div>
+                  </div>
+                  <span className={`shrink-0 rounded-full px-3 py-1 text-xs font-semibold ${suspended ? "bg-destructive/10 text-destructive" : "bg-primary/10 text-primary"}`}>
+                    {suspended ? `Suspended${s.suspended_until ? " until " + new Date(s.suspended_until).toLocaleDateString() : ""}` : "Active"}
+                  </span>
+                </div>
+                <div className="w-full space-y-1 rounded-lg bg-muted/50 px-3 py-2 text-xs text-muted-foreground">
+                  <p className="whitespace-nowrap">🕒 Last seen: {new Date(s.last_seen_at).toLocaleString()}</p>
                   {s.is_admin || s.is_main_admin ? (
-                    <p className="text-xs text-muted-foreground">👑 Admin · အကန့်အသတ်မရှိ (Unlimited)</p>
+                    <p>👑 Admin · အကန့်အသတ်မရှိ (Unlimited)</p>
                   ) : (
                     <>
-                      <p className="text-xs text-muted-foreground">💬 Sayar Owl: today {s.tutor_used_today}/{s.is_teacher ? 10 : 20} · bonus {s.tutor_bonus}{s.scholarship === "approved" && " · 🎓 unlimited"}</p>
-                      <p className="text-xs text-muted-foreground">📝 Exam: today {s.exam_used_today}/{s.is_teacher ? 4 : 2} · bonus {s.exam_bonus}</p>
+                      <p>💬 Sayar Owl: today {s.tutor_used_today}/{s.is_teacher ? 10 : 20} · bonus {s.tutor_bonus}{s.scholarship === "approved" && " · 🎓 unlimited"}</p>
+                      <p>📝 Exam: today {s.exam_used_today}/{s.is_teacher ? 4 : 2} · bonus {s.exam_bonus}</p>
                     </>
                   )}
                 </div>
-                <span className={`rounded-full px-3 py-1 text-xs font-semibold ${suspended ? "bg-destructive/10 text-destructive" : "bg-primary/10 text-primary"}`}>
-                  {suspended ? `Suspended${s.suspended_until ? " until " + new Date(s.suspended_until).toLocaleDateString() : ""}` : "Active"}
-                </span>
                 <button disabled={busy === s.id} onClick={() => { const n = Number(prompt("အကြိမ် ဘယ်လောက် ထည့်မလဲ?", "50")); if (n) run(s.id, () => tutor({ data: { id: s.id, addBonus: n } })); }} className="rounded-lg border border-input px-3 py-1.5 text-sm">+ Tutor Questions</button>
                 <button disabled={busy === s.id} onClick={() => { const n = Number(prompt("စာမေးပွဲထုတ်ခွင့် ဘယ်နှစ်စုံ ထည့်မလဲ?", "5")); if (n) run(s.id, () => tutor({ data: { id: s.id, addExam: n } })); }} className="rounded-lg border border-input px-3 py-1.5 text-sm">+ Exam Credits</button>
                 {s.scholarship === "approved" && <button disabled={busy === s.id} onClick={() => run(s.id, () => tutor({ data: { id: s.id, scholarship: "none" } }))} className="rounded-lg border border-input px-3 py-1.5 text-sm">End scholarship</button>}
