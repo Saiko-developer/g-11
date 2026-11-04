@@ -288,17 +288,17 @@ function RolePlay({ unit }: { unit: number }) {
           <p className="mt-3 min-h-[1.25rem] text-sm text-muted-foreground">
             {phase === "idle" ? "English speaking partner" : status[phase]}
           </p>
-          {live && phase !== "thinking" && lastAi && (
-            <span className="mt-2 rounded-full border border-border/60 bg-background/70 px-2.5 py-0.5 text-[11px] text-muted-foreground transition">
-              {emo}
+          {live && (
+            <span className={cn("mt-2 rounded-full border border-border/60 bg-background/70 px-2.5 py-0.5 text-[11px] text-muted-foreground transition-opacity duration-300", phase !== "thinking" && lastAi ? "opacity-100" : "opacity-0")}>
+              {emo || "\u00A0"}
             </span>
           )}
 
           {scenario && <p className="mt-4 max-w-md text-center text-xs text-muted-foreground">🎭 {scenario.en}{scenario.my ? ` — ${scenario.my}` : ""}</p>}
 
           {live && (
-            <div className="mt-5 min-h-[4rem] w-full max-w-lg text-center">
-              <p className={cn("text-lg font-medium leading-snug text-foreground", phase === "listening" && "italic text-muted-foreground")}>
+            <div className="mt-5 h-36 w-full max-w-lg overflow-y-auto text-center [scrollbar-width:thin]">
+              <p className={cn("text-lg font-medium leading-snug text-foreground transition-colors duration-300", phase === "listening" && "italic text-muted-foreground")}>
                 {caption || (phase === "listening" ? "🎤 ပြောပါ…" : "")}
               </p>
               {phase !== "listening" && lastAi?.my && <p className="mt-1 text-xs text-muted-foreground">{lastAi.my}</p>}
