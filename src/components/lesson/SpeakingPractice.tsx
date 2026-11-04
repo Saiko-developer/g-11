@@ -162,6 +162,7 @@ function RolePlay({ unit }: { unit: number }) {
     if (sawSpeech.current && activeRef.current) {
       set("listening");
       bufRef.current = "";
+      interimRef.current = "";
       rec.start();
     }
   }, [tts.speaking]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -274,6 +275,21 @@ function RolePlay({ unit }: { unit: number }) {
             {phase === "thinking" && <Loader2 className="mr-1 inline h-4 w-4 animate-spin" />}
             {status[phase]}
           </p>
+          {phase === "listening" && (
+            <div className="space-y-2">
+              <p className="min-h-[2.5rem] rounded-xl border border-dashed border-primary px-3 py-2 text-center text-sm italic">
+                {heard || (rec.listening ? "🎤 မိုက် ပွင့်နေပါတယ်… ပြောပါ" : "🎤 မိုက် ပြန်ဖွင့်နေပါတယ်…")}
+              </p>
+              <button
+                type="button"
+                onClick={() => void send()}
+                disabled={!heard}
+                className="flex w-full items-center justify-center gap-2 rounded-2xl border border-primary px-4 py-3 text-sm font-bold text-primary disabled:opacity-40"
+              >
+                <Mic className="h-4 w-4" /> ပြောပြီးပါပြီ — ပို့မည်
+              </button>
+            </div>
+          )}
           {phase === "listening" && hints.length > 0 && (
             <div className="space-y-1.5">
               <p className="text-xs font-semibold text-muted-foreground">💡 ဒီလို ပြောကြည့်လို့ရပါတယ်</p>
