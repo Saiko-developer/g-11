@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Loader2, Pause, Play, Volume2 } from "lucide-react";
 import { toast } from "sonner";
 import { SyncedListeningPlayer } from "@/components/lesson/SyncedListeningPlayer";
+import { SpeakingPractice } from "@/components/lesson/SpeakingPractice";
 import { LISTENING_SCRIPTS } from "@/data/listeningScripts";
 
 type LessonAudioPlayerProps = {
@@ -35,6 +36,14 @@ export function LessonAudioPlayer({ src, script, label, hint, unit }: LessonAudi
 
   const synced = unit ? LISTENING_SCRIPTS[unit] : undefined;
   if (src && synced) {
+    if (label === "Model pronunciation" && unit) {
+      return (
+        <div className="space-y-4">
+          <SyncedListeningPlayer src={src} script={synced} label={label} hint={hint} />
+          <SpeakingPractice unit={unit} src={src} script={synced} />
+        </div>
+      );
+    }
     return <SyncedListeningPlayer src={src} script={synced} label={label} hint={hint} />;
   }
 

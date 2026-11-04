@@ -172,18 +172,19 @@ export function SyncedListeningPlayer({ src, script, label, hint }: Props) {
             {showMy ? "မြန်မာပြန် ဝှက်မယ်" : "မြန်မာပြန် ပြမယ်"}
           </button>
         </div>
-        {/* Live now-speaking strip */}
-        <div className="rounded-xl bg-primary/10 px-3 py-2 text-sm">
+        {/* Live karaoke card */}
+        <div className="sticky top-16 z-20 rounded-xl border border-primary/30 bg-card px-4 py-3 shadow-md">
           {current ? (
             <>
-              <span className="mr-2 inline-flex items-center gap-1 font-semibold text-primary">
+              <div className="mb-1 inline-flex items-center gap-1.5 text-xs font-semibold text-primary">
                 <span className={cn("inline-block h-2 w-2 rounded-full bg-primary", playing && "animate-pulse")} />
                 {current.speaker === "Narrator" ? "ပြောနေသူ" : current.speaker}
-              </span>
-              <span className="text-foreground">{current.en}</span>
+              </div>
+              <p className="text-lg font-bold leading-snug text-foreground md:text-xl">{current.en}</p>
+              {showMy && <p className="mt-1 text-sm leading-relaxed text-primary md:text-base">{current.my}</p>}
             </>
           ) : (
-            <span className="text-muted-foreground">▶ ကို နှိပ်ပြီး နားထောင်ပါ။ ပြောနေတဲ့ စာကြောင်းကို အရောင်လင်းပြီး ပြပေးပါမယ်။</span>
+            <span className="text-sm text-muted-foreground">▶ ကို နှိပ်ပြီး နားထောင်ပါ။ ပြောနေတဲ့ စာကြောင်းကို အကြီးပြပေးပါမယ်။</span>
           )}
         </div>
       </div>
