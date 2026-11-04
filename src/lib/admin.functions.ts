@@ -1,7 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 
-const MAIN_ADMIN = "saikokayzin123@gmail.com";
+const MAIN_ADMINS = ["saikokayzin123@gmail.com", "kayzinphyo1616@gmail.com"];
 
 async function assertNotMain(supabase: any, id: string) {
   const { data } = await supabase.rpc("is_main_admin", { _user_id: id });
@@ -47,7 +47,7 @@ export const listStudents = createServerFn({ method: "POST" })
       scholarship_note: ((wm.get(s.id) as any)?.scholarship_note ?? null) as string | null,
       is_admin: admins.has(s.id),
       is_teacher: teachers.has(s.id),
-      is_main_admin: (s.email ?? "").toLowerCase() === MAIN_ADMIN,
+      is_main_admin: MAIN_ADMINS.includes((s.email ?? "").toLowerCase()),
     }));
   });
 
