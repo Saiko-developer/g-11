@@ -27,6 +27,7 @@ import { Route as ApiGrammarExercisesRouteImport } from './routes/api/grammar-ex
 import { Route as ApiGrammarQuestionsRouteImport } from './routes/api/grammar-questions'
 import { Route as ApiHealthRouteImport } from './routes/api/health'
 import { Route as ApiMockExamRouteImport } from './routes/api/mock-exam'
+import { Route as ApiRoleplayRouteImport } from './routes/api/roleplay'
 import { Route as ApiTranscribeRouteImport } from './routes/api/transcribe'
 import { Route as ApiTtsRouteImport } from './routes/api/tts'
 import { Route as ClassExamIdRouteImport } from './routes/class-exam.$id'
@@ -127,6 +128,11 @@ const ApiMockExamRoute = ApiMockExamRouteImport.update({
   path: '/api/mock-exam',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiRoleplayRoute = ApiRoleplayRouteImport.update({
+  id: '/api/roleplay',
+  path: '/api/roleplay',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiTranscribeRoute = ApiTranscribeRouteImport.update({
   id: '/api/transcribe',
   path: '/api/transcribe',
@@ -192,6 +198,7 @@ export interface FileRoutesByFullPath {
   '/api/grammar-questions': typeof ApiGrammarQuestionsRoute
   '/api/health': typeof ApiHealthRoute
   '/api/mock-exam': typeof ApiMockExamRoute
+  '/api/roleplay': typeof ApiRoleplayRoute
   '/api/transcribe': typeof ApiTranscribeRoute
   '/api/tts': typeof ApiTtsRoute
   '/class-exam/$id': typeof ClassExamIdRoute
@@ -221,6 +228,7 @@ export interface FileRoutesByTo {
   '/api/grammar-questions': typeof ApiGrammarQuestionsRoute
   '/api/health': typeof ApiHealthRoute
   '/api/mock-exam': typeof ApiMockExamRoute
+  '/api/roleplay': typeof ApiRoleplayRoute
   '/api/transcribe': typeof ApiTranscribeRoute
   '/api/tts': typeof ApiTtsRoute
   '/class-exam/$id': typeof ClassExamIdRoute
@@ -250,6 +258,7 @@ export interface FileRoutesById {
   '/api/grammar-questions': typeof ApiGrammarQuestionsRoute
   '/api/health': typeof ApiHealthRoute
   '/api/mock-exam': typeof ApiMockExamRoute
+  '/api/roleplay': typeof ApiRoleplayRoute
   '/api/transcribe': typeof ApiTranscribeRoute
   '/api/tts': typeof ApiTtsRoute
   '/class-exam/$id': typeof ClassExamIdRoute
@@ -281,6 +290,7 @@ export interface FileRouteTypes {
     | '/api/grammar-questions'
     | '/api/health'
     | '/api/mock-exam'
+    | '/api/roleplay'
     | '/api/transcribe'
     | '/api/tts'
     | '/class-exam/$id'
@@ -310,6 +320,7 @@ export interface FileRouteTypes {
     | '/api/grammar-questions'
     | '/api/health'
     | '/api/mock-exam'
+    | '/api/roleplay'
     | '/api/transcribe'
     | '/api/tts'
     | '/class-exam/$id'
@@ -338,6 +349,7 @@ export interface FileRouteTypes {
     | '/api/grammar-questions'
     | '/api/health'
     | '/api/mock-exam'
+    | '/api/roleplay'
     | '/api/transcribe'
     | '/api/tts'
     | '/class-exam/$id'
@@ -368,6 +380,7 @@ export interface RootRouteChildren {
   ApiGrammarQuestionsRoute: typeof ApiGrammarQuestionsRoute
   ApiHealthRoute: typeof ApiHealthRoute
   ApiMockExamRoute: typeof ApiMockExamRoute
+  ApiRoleplayRoute: typeof ApiRoleplayRoute
   ApiTranscribeRoute: typeof ApiTranscribeRoute
   ApiTtsRoute: typeof ApiTtsRoute
   ClassExamIdRoute: typeof ClassExamIdRoute
@@ -505,6 +518,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiMockExamRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/roleplay': {
+      id: '/api/roleplay'
+      path: '/api/roleplay'
+      fullPath: '/api/roleplay'
+      preLoaderRoute: typeof ApiRoleplayRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/transcribe': {
       id: '/api/transcribe'
       path: '/api/transcribe'
@@ -604,6 +624,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApiGrammarQuestionsRoute: ApiGrammarQuestionsRoute,
   ApiHealthRoute: ApiHealthRoute,
   ApiMockExamRoute: ApiMockExamRoute,
+  ApiRoleplayRoute: ApiRoleplayRoute,
   ApiTranscribeRoute: ApiTranscribeRoute,
   ApiTtsRoute: ApiTtsRoute,
   ClassExamIdRoute: ClassExamIdRoute,
