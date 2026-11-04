@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { BookOpen, LogIn } from "lucide-react";
+import { BookOpen, LogIn, ShieldCheck } from "lucide-react";
 import { AccountMenu } from "@/components/AccountMenu";
 import tutorLogo from "@/assets/tutor-logo.png";
 import { useI18n } from "@/lib/i18n";
@@ -31,6 +31,23 @@ function AccountButton() {
       <LogIn className="h-4 w-4" />
       <span className="hidden min-[400px]:inline">{busy ? "…" : "Login"}</span>
     </Button>
+  );
+}
+
+/** Shown only when the server says the signed-in account is an admin. */
+function AdminLink() {
+  const { session, access } = useAuth();
+  if (!session || !access?.is_admin) return null;
+  return (
+    <Link
+      to="/admin"
+      aria-label="Admin"
+      className="inline-flex h-9 items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-2.5 text-primary shadow-sm transition hover:bg-primary/20 sm:px-3.5"
+      activeProps={{ className: "bg-primary text-primary-foreground" }}
+    >
+      <ShieldCheck className="h-4 w-4" />
+      <span className="hidden sm:inline">Admin</span>
+    </Link>
   );
 }
 
@@ -70,6 +87,7 @@ export function SiteHeader() {
             <BookOpen className="h-4 w-4" />
             <span className="hidden sm:inline">Guide</span>
           </Link>
+          <AdminLink />
           <AccountButton />
           <Link
             to="/tutor"
