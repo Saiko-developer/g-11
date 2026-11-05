@@ -41,7 +41,7 @@ type NativeRec = {
 };
 
 const FIRST_CHUNK = 30;
-const SILENCE_MS = 2000;
+const SILENCE_MS = 2300;
 /** Short Burmese acknowledgements played instantly while the real answer is prepared. */
 const FILLERS = ["ဟုတ်ကဲ့ပါ… ဆရာ ကြည့်ပေးမယ်နော်။", "ကောင်းပြီ… သေချာ ရှင်းပြမယ်နော်။", "အေးပါ… ခဏလေး စဉ်းစားလိုက်ဦးမယ်။"];
 const NEXT_CHUNK = 200;
@@ -322,7 +322,7 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false }: SayaOwlHomeProps
     const mimeType = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/ogg;codecs=opus"].find((t) =>
       MediaRecorder.isTypeSupported(t),
     );
-    const recorder = new MediaRecorder(stream, mimeType ? { mimeType } : undefined);
+    const recorder = new MediaRecorder(stream, { ...(mimeType ? { mimeType } : {}), audioBitsPerSecond: 128000 });
     recorderRef.current = recorder;
     const chunks: Blob[] = [];
     let spoke = false;
