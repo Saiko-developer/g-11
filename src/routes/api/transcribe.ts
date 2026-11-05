@@ -52,12 +52,14 @@ export const Route = createFileRoute("/api/transcribe")({
         // Speaking Practice sends language "en"; everything else keeps the Burmese default.
         const lang = String(form.get("language") ?? "").toLowerCase() === "en" ? "en" : "my";
         const isSpeaking = String(form.get("context") ?? "") === "speaking";
-        upstreamForm.append("language", lang);
+        // The transcriber rejects "my" as a language code — only pin English;
+        // Burmese/mixed speech is auto-detected and guided by the prompt below.
+        if (lang === "en") upstreamForm.append("language", "en");
         upstreamForm.append(
           "prompt",
           isSpeaking
             ? "A Grade 10 Myanmar student practising spoken English in a friendly conversation. Transcribe exactly what is said in English, with correct spelling and punctuation. Do not translate or add words."
-            : "Grade 10 Myanmar student speaking Burmese mixed with English textbook words (Unit, Exercise, Lesson, Grammar, Reading, Vocabulary). Transcribe exactly what is said; keep exercise letters and numbers exactly as spoken.",
+            : "The speaker uses the Burmese (Myanmar) language; write Burmese in Myanmar Unicode script. Grade 10 Myanmar student speaking Burmese mixed with English textbook words (Unit, Exercise, Lesson, Grammar, Reading, Vocabulary). Transcribe exactly what is said; keep exercise letters and numbers exactly as spoken.",
         );
 
         const upstream = await fetch(
