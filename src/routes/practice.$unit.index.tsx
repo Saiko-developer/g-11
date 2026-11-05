@@ -5,6 +5,7 @@ import { ArrowLeft, FileUp, GraduationCap, Loader2, Type } from "lucide-react";
 
 import { QuizRunner, type QuizQuestion } from "@/components/QuizRunner";
 import { SayaOwl } from "@/components/SayaOwl";
+import { emitExamUpload } from "@/lib/examUpload";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Button } from "@/components/ui/button";
 import {
@@ -201,17 +202,17 @@ function UnitPractice() {
 function ExamUploader() {
   const [status, setStatus] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const navigate = useNavigate();
 
   const upload = async (file: File) => {
     setBusy(true);
     setStatus(null);
     try {
-      const form = new FormData();
-      form.set("file", file, file.name);
-      const res = await fetch("/api/exams", { method: "POST", body: form });
-      const data = (await res.json().catch(() => ({}))) as { error?: string };
-      if (!res.ok) throw new Error(data.error ?? "Upload failed");
-      setStatus("Uploaded ✅ Saya Owl will turn it into practice questions.");
+      if (file.size > 20 * 1024 * 1024) throw new Error("File is too large (max 20 MB).");
+      // Hand the paper to Saya Owl on the home page, which reads and explains it.
+      await navigate({ to: "/" });
+      setTimeout(() => emitExamUpload(file), 600);
+      setStatus("Opening Saya Owl with your paper…");
     } catch (err) {
       setStatus(err instanceof Error ? err.message : "Upload failed");
     } finally {

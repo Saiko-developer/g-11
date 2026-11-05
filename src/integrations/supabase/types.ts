@@ -975,6 +975,7 @@ export type Database = {
         Args: { _note: string; _school: string; _subject: string }
         Returns: undefined
       }
+      safe_uuid: { Args: { _t: string }; Returns: string }
       set_member_name: {
         Args: { _cid: string; _name: string; _sid: string }
         Returns: undefined
@@ -984,6 +985,7 @@ export type Database = {
       speaking_unit_status: { Args: { p_unit: number }; Returns: Json }
       start_speaking_session: { Args: { p_unit: number }; Returns: Json }
       strip_answers: { Args: { j: Json }; Returns: Json }
+      teaches_student: { Args: { _student: string }; Returns: boolean }
       tutor_quota: { Args: never; Returns: Json }
     }
     Enums: {

@@ -123,6 +123,27 @@ export const Route = createFileRoute("/api/chat-home")({
           system += `\n\n# အသံဖြင့် စကားပြောနေခြင်း (Hands-Free Voice Mode)\n- ကျောင်းသားက ပါးစပ်ဖြင့် မေးနေခြင်း ဖြစ်သည်၊ အဖြေကို ဝါကျအလိုက် အသံထွက် ဖတ်ပြမည်။ စာသားသည် အသံမှ ပြောင်းထားသဖြင့် စာလုံးပေါင်း လွဲနိုင်သည် — အသံတူစကားလုံးများကို သင်ခန်းစာ အကြောင်းအရာနှင့် တိုက်ဆိုင်၍ ကျောင်းသား ဆိုလိုရင်းကို နားလည်အောင် ယူပါ။\n\n# ဂရုတစိုက် နားထောင်ခြင်း — အရေးအကြီးဆုံး\n- ကျောင်းသား နောက်ဆုံးပြောသော စကားကိုသာ ဖြေရမည်။ မဖြေမီ ကျောင်းသား တကယ် ဘာမေးသလဲ (ဘယ် Exercise၊ ဘယ်နံပါတ်၊ ဘယ်စကားလုံး၊ ဘယ်သံသယ) ကို စိတ်ထဲတွင် ဦးစွာ အတိအကျ ဆုံးဖြတ်ပါ။\n- ပထမဝါကျတွင် ကျောင်းသား မေးခဲ့သည့်အရာကို သူ့စကားလုံးဖြင့် ပြန်ကိုးကား၍ အတည်ပြုပါ (ဥပမာ "ဟုတ်ကဲ့ ကျောင်းသား၊ Exercise A မေးခွန်း ၃ မှာ ဘာကြောင့် past tense သုံးလဲ ဆိုတာ မေးတာနော်။")။\n- ထို့နောက် မေးခွန်းကို တိုက်ရိုက် ချက်ချင်း ဖြေပါ — အဖြေ/အကြောင်းရင်း အဓိကကို ပထမဆုံး ပြောပြီးမှ အသေးစိတ် ရှင်းပါ။ မမေးသော အကြောင်းအရာ၊ သင်ခန်းစာ တစ်ခုလုံး အကျဉ်းချုပ် မပြောရ။ ပုံသေ အဆင့် ၅ ဆင့်ကို လိုအပ်မှသာ သုံးပါ။\n- ကြားရသည့် စကား မရှင်းလျှင်၊ ဆူညံသံသာ ဖြစ်လျှင် သို့မဟုတ် ပေးထားသော စာသားထဲ မတွေ့လျှင် ခန့်မှန်း၍ မဖြေဘဲ "ကျောင်းသား ... ကို မေးတာလား" ဟု တိုတိုလေး ပြန်မေးပါ။\n- ရှင်းလင်းချက်ကို အပြည့်အစုံ အသေးစိတ် ပေးပါ (အကျဉ်းချုပ် မဟုတ်ရ)၊ သို့သော် နားထောင်ရလွယ်အောင် ဝါကျတိုင်းကို "။" ဖြင့် ဆုံးပါ။ ဇယား၊ code၊ markdown၊ သင်္ကေတ အရှည်များ မသုံးရ။`;
         }
 
+        // Word files aren't accepted by the model — extract their text first.
+        const DOCX = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+        for (const m of messages as UIMessage[]) {
+          for (let i = 0; i < (m.parts?.length ?? 0); i++) {
+            const p = m.parts[i] as { type: string; mediaType?: string; url?: string; filename?: string };
+            const isDocx = p.type === "file" && (p.mediaType === DOCX || /\.docx$/i.test(p.filename ?? ""));
+            if (!isDocx || !p.url?.startsWith("data:")) continue;
+            try {
+              const bytes = Uint8Array.from(atob(p.url.split(",")[1] ?? ""), (c) => c.charCodeAt(0));
+              const mammoth = await import("mammoth/mammoth.browser");
+              const text = (await mammoth.extractRawText({ arrayBuffer: bytes.buffer })).value.slice(0, 120000);
+              (m.parts as unknown[])[i] = {
+                type: "text",
+                text: untrusted("uploaded_exam_paper", text.trim() || "(Word file had no readable text)"),
+              };
+            } catch {
+              return new Response("Could not read the Word file. Please upload a PDF or photo.", { status: 400 });
+            }
+          }
+        }
+
         const result = streamText({
           model,
           system: withTone(system),
