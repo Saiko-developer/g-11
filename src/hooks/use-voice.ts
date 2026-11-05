@@ -89,13 +89,41 @@ export function useSpeechRecognition(opts: {
     rec.lang = lang ?? "my-MM";
     rec.continuous = true;
     rec.interimResults = true;
+    // Android Chrome re-emits growing cumulative finals ("I", "I liked", ...)
+    // and may replay old indices; only emit genuinely new words.
+    const emitted = new Set<number>();
+    let lastFinal = "";
+    const norm = (s: string) => s.toLowerCase().replace(/[^\p{L}\p{N}\s']/gu, "").replace(/\s+/g, " ").trim();
     rec.onresult = (e) => {
       let finalText = "";
       let interimText = "";
       for (let i = e.resultIndex; i < e.results.length; i++) {
         const r = e.results[i];
-        if (r.isFinal) finalText += r[0].transcript;
-        else interimText += r[0].transcript;
+        const t = r[0].transcript.trim();
+        if (!r.isFinal) {
+          interimText = t; // latest interim supersedes earlier ones
+          continue;
+        }
+        if (emitted.has(i) || !t) continue;
+        emitted.add(i);
+        const n = norm(t);
+        const prev = norm(lastFinal);
+        let delta = t;
+        if (prev && n.startsWith(prev)) {
+          const words = t.split(/\s+/);
+          delta = words.slice(prev.split(" ").length).join(" ");
+        } else if (prev && (prev.endsWith(n) || prev === n)) {
+          delta = "";
+        }
+        lastFinal = n.length >= prev.length || !prev.startsWith(n) ? t : lastFinal;
+        if (delta) finalText += (finalText ? " " : "") + delta;
+      }
+      // Strip interim words already captured as final.
+      if (interimText && lastFinal) {
+        const p = norm(lastFinal);
+        if (norm(interimText).startsWith(p)) {
+          interimText = interimText.split(/\s+/).slice(p.split(" ").length).join(" ");
+        }
       }
       if (interimText && onInterimRef.current) onInterimRef.current(interimText);
       if (finalText) onFinalRef.current(finalText.trim());

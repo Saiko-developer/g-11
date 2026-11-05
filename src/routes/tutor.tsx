@@ -239,6 +239,7 @@ function Index({
   }, []);
 
   const [voiceMode, setVoiceMode] = useState(false);
+  const replyModeRef = useRef<"voice" | "text">("voice");
   const lessonExplanationRef = useRef(false);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
   useEffect(() => {
@@ -342,7 +343,7 @@ function Index({
     if (!raw) return;
     spokenIdRef.current = last.id;
 
-    if (!voiceMode || !ttsSupported) {
+    if (!voiceMode || !ttsSupported || replyModeRef.current === "text") {
       revealId(last.id); // no audio → show text immediately
       return;
     }
@@ -372,6 +373,7 @@ function Index({
     const prompt = `Please explain the lesson "${lesson}"${category ? ` (${category})` : ""} for a Grade 10 student in Myanmar.
 
 Please teach this as a spoken lesson — natural conversational voice, short sentences, warm Burmese explanation mixed with the key English terms. Do not use tables, diagrams, bullet points, brackets, or grammar tags. End with a short spoken practice question.`;
+    replyModeRef.current = "voice";
     void sendMessage({ text: prompt }, { body: { mode: "voice" } });
   }, [lesson, category, messages.length, sendMessage]);
 
@@ -408,7 +410,9 @@ Please teach this as a spoken lesson — natural conversational voice, short sen
     if (!text) text = "ဒီပုံထဲက မေးခွန်းကို ရှင်းပြပေးပါဆရာ";
     clearError();
     lessonExplanationRef.current = false;
-    const isVoiceInput = micUsedRef.current || voiceMode;
+    // Typed questions get the full detailed answer; mic questions get voice + short note.
+    const isVoiceInput = micUsedRef.current;
+    replyModeRef.current = isVoiceInput ? "voice" : "text";
     micUsedRef.current = false;
     finalBufferRef.current = "";
     const files = photo ? [{ type: "file" as const, mediaType: "image/jpeg", url: photo }] : undefined;
@@ -421,6 +425,7 @@ Please teach this as a spoken lesson — natural conversational voice, short sen
     clearError();
     lessonExplanationRef.current = false;
     micUsedRef.current = false;
+    replyModeRef.current = voiceMode ? "voice" : "text";
     void sendMessage({ text: prompt }, { body: { mode: voiceMode ? "voice" : "text" } });
   };
 
