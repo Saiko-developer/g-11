@@ -46,7 +46,7 @@ export const Route = createFileRoute("/api/transcribe")({
         const upstreamForm = new FormData();
         upstreamForm.append(
           "model",
-          process.env.LOVABLE_TRANSCRIPTION_MODEL?.trim() || "openai/gpt-4o-mini-transcribe",
+          process.env.LOVABLE_TRANSCRIPTION_MODEL?.trim() || "openai/gpt-4o-transcribe",
         );
         upstreamForm.append("file", file, `recording.${ext}`);
         // Speaking Practice sends language "en"; everything else keeps the Burmese default.
@@ -59,7 +59,7 @@ export const Route = createFileRoute("/api/transcribe")({
           "prompt",
           isSpeaking
             ? "A Grade 10 Myanmar student practising spoken English in a friendly conversation. Transcribe exactly what is said in English, with correct spelling and punctuation. Do not translate or add words."
-            : "The speaker uses the Burmese (Myanmar) language; write Burmese in Myanmar Unicode script. Grade 10 Myanmar student speaking Burmese mixed with English textbook words (Unit, Exercise, Lesson, Grammar, Reading, Vocabulary). Transcribe exactly what is said; keep exercise letters and numbers exactly as spoken.",
+            : "The speaker uses the Burmese (Myanmar) language; write Burmese in Myanmar Unicode script. Grade 10 Myanmar student speaking Burmese mixed with English textbook words (Unit, Exercise, Lesson, Grammar, Reading, Vocabulary). Transcribe exactly what is said; keep exercise letters and numbers exactly as spoken. Common English words the student says: Lesson, Paragraph, Passage, Sentence, Question, Answer, Tense, Present Perfect, Past Simple, Exercise A, Exercise B, Exercise C, blank, option, meaning, translate, explain, vocabulary, poem, reading, writing, listening, speaking. Write those English words in English letters.",
         );
 
         const upstream = await fetch(

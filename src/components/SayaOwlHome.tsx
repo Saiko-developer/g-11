@@ -311,7 +311,7 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false }: SayaOwlHomeProps
     }
     let stream: MediaStream;
     try {
-      stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true } });
+      stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true, channelCount: 1 } });
     } catch {
       toast.error("မိုက်ခရိုဖုန်း ခွင့်ပြုချက် မရပါ", { description: "Browser ရဲ့ address bar မှာ microphone ကို Allow လုပ်ပေးပါ။" });
       endCallRef.current();
@@ -348,19 +348,27 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false }: SayaOwlHomeProps
     const ctx = new AudioContext();
     const analyser = ctx.createAnalyser();
     analyser.fftSize = 1024;
-    ctx.createMediaStreamSource(stream).connect(analyser);
+    const hp = ctx.createBiquadFilter(); hp.type = "highpass"; hp.frequency.value = 120;
+    const lp = ctx.createBiquadFilter(); lp.type = "lowpass"; lp.frequency.value = 3800;
+    ctx.createMediaStreamSource(stream).connect(hp);
+    hp.connect(lp); lp.connect(analyser);
     const data = new Uint8Array(analyser.fftSize);
     const startedAt = Date.now();
     let lastVoice = Date.now();
+    let noise = 0.01;
+    let voicedMs = 0;
     const timer = window.setInterval(() => {
       analyser.getByteTimeDomainData(data);
       let sum = 0;
       for (const v of data) sum += ((v - 128) / 128) ** 2;
       const rms = Math.sqrt(sum / data.length);
       const now = Date.now();
-      if (rms > 0.035) {
+      if (now - startedAt < 400) { noise = Math.max(noise, rms); return; }
+      if (!spoke && rms < noise * 1.5) noise = noise * 0.95 + rms * 0.05;
+      if (rms > Math.max(0.02, noise * 2.2)) {
         lastVoice = now;
-        if (!spoke) { spoke = true; setHeardSpeech(true); }
+        voicedMs += 100;
+        if (!spoke && voicedMs >= 250) { spoke = true; setHeardSpeech(true); }
       }
       if ((spoke && now - lastVoice > SILENCE_MS) || now - startedAt > 45000 || (!spoke && now - startedAt > 20000)) {
         if (recorder.state === "recording") recorder.stop();

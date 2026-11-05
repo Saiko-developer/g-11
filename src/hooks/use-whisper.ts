@@ -144,7 +144,11 @@ export function useWhisperRecognition(opts: {
     ctxRef.current = ctx;
     const analyser = ctx.createAnalyser();
     analyser.fftSize = 1024;
-    ctx.createMediaStreamSource(stream).connect(analyser);
+    // Noise reduction for detection: cut fan/AC rumble and hiss, keep the voice band.
+    const hp = ctx.createBiquadFilter(); hp.type = "highpass"; hp.frequency.value = 120;
+    const lp = ctx.createBiquadFilter(); lp.type = "lowpass"; lp.frequency.value = 3800;
+    ctx.createMediaStreamSource(stream).connect(hp);
+    hp.connect(lp); lp.connect(analyser);
     const buf = new Uint8Array(analyser.fftSize);
     const startedAt = Date.now();
     let noise = 0.01;
@@ -180,6 +184,8 @@ export function useWhisperRecognition(opts: {
         noise = Math.max(noise, rms);
         return;
       }
+      // Slowly track the background level while nobody is talking.
+      if (!capturingRef.current && rms < noise * 1.5) noise = noise * 0.95 + rms * 0.05;
       const loud = rms > Math.max(0.02, noise * 2.2);
       if (loud) {
         voicedMs += 100;
