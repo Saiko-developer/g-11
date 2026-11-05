@@ -49,10 +49,15 @@ export const Route = createFileRoute("/api/transcribe")({
           process.env.LOVABLE_TRANSCRIPTION_MODEL?.trim() || "openai/gpt-4o-mini-transcribe",
         );
         upstreamForm.append("file", file, `recording.${ext}`);
-        upstreamForm.append("language", "my");
+        // Speaking Practice sends language "en"; everything else keeps the Burmese default.
+        const lang = String(form.get("language") ?? "").toLowerCase() === "en" ? "en" : "my";
+        const isSpeaking = String(form.get("context") ?? "") === "speaking";
+        upstreamForm.append("language", lang);
         upstreamForm.append(
           "prompt",
-          "Grade 10 Myanmar student speaking Burmese mixed with English textbook words (Unit, Exercise, Lesson, Grammar, Reading, Vocabulary). Transcribe exactly what is said; keep exercise letters and numbers exactly as spoken.",
+          isSpeaking
+            ? "A Grade 10 Myanmar student practising spoken English in a friendly conversation. Transcribe exactly what is said in English, with correct spelling and punctuation. Do not translate or add words."
+            : "Grade 10 Myanmar student speaking Burmese mixed with English textbook words (Unit, Exercise, Lesson, Grammar, Reading, Vocabulary). Transcribe exactly what is said; keep exercise letters and numbers exactly as spoken.",
         );
 
         const upstream = await fetch(
