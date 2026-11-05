@@ -323,9 +323,11 @@ function Index({
   // Parse <voice_only>...</voice_only> and <ui_display>...</ui_display> blocks.
   // If neither tag exists, treat the whole text as ui_display (and, in voice mode, as spoken).
   const parseVoiceReply = (raw: string) => {
-    const voiceMatch = raw.match(/<voice_only>([\s\S]*?)<\/voice_only>/i);
-    const uiMatch = raw.match(/<ui_display>([\s\S]*?)<\/ui_display>/i);
+    // Tolerate unclosed tags while the reply is still streaming.
+    const voiceMatch = raw.match(/<voice_only>([\s\S]*?)(?:<\/voice_only>|$)/i);
+    const uiMatch = raw.match(/<ui_display>([\s\S]*?)(?:<\/ui_display>|$)/i);
     if (!voiceMatch && !uiMatch) return { voice: raw.trim(), ui: raw.trim() };
+    if (voiceMatch && !uiMatch) return { voice: voiceMatch[1].trim(), ui: "" };
     return {
       voice: (voiceMatch?.[1] ?? uiMatch?.[1] ?? "").trim(),
       ui: (uiMatch?.[1] ?? voiceMatch?.[1] ?? "").trim(),
@@ -365,11 +367,8 @@ function Index({
       return;
     }
     const onStart = () => revealId(last.id);
-    if (lessonExplanationRef.current) {
-      void speak(voice, { lang: "my-MM", speed: 1.1, onStart });
-    } else {
-      void speak(voice, { speed: 1.1, onStart });
-    }
+    // Speak Burmese + English terms together (no language filtering).
+    void speak(voice, { speed: 1.1, onStart });
   }, [voiceMode, ttsSupported, status, messages, speak, revealId]);
 
 
@@ -422,8 +421,9 @@ Please teach this as a spoken lesson — natural conversational voice, short sen
     if (!text) text = "ဒီပုံထဲက မေးခွန်းကို ရှင်းပြပေးပါဆရာ";
     clearError();
     lessonExplanationRef.current = false;
-    // Typed questions get the full detailed answer; mic questions get voice + short note.
-    const isVoiceInput = micUsedRef.current;
+    // Voice on (or mic used) → short note on screen + detailed spoken answer.
+    // Voice off → full detailed answer as text on screen.
+    const isVoiceInput = (voiceMode && ttsSupported) || micUsedRef.current;
     replyModeRef.current = isVoiceInput ? "voice" : "text";
     micUsedRef.current = false;
     finalBufferRef.current = "";
@@ -523,12 +523,8 @@ Please teach this as a spoken lesson — natural conversational voice, short sen
                   const isAssistant = m.role === "assistant";
                   // Voice-first: for assistant messages in voice mode, hide the
                   // Short Note until the audio actually starts playing.
-                  const hideForVoice =
-                    isAssistant &&
-                    voiceMode &&
-                    ttsSupported &&
-                    replyModeRef.current === "voice" &&
-                    !revealedIds.has(m.id);
+                  // Short note shows immediately; only hide while the reply is still streaming raw tags.
+                  const hideForVoice = isAssistant && !text && !revealedIds.has(m.id);
 
                   return (
                     <Message from={m.role} key={m.id}>
