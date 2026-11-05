@@ -252,6 +252,7 @@ function Index({
   const finalBufferRef = useRef("");
   const micUsedRef = useRef(false);
   const autoSubmitRef = useRef(false);
+  const manualStopRef = useRef(false);
 
   const submitFromBuffer = useCallback(() => {
     const text = (textareaRef.current?.value ?? finalBufferRef.current).trim();
@@ -261,6 +262,8 @@ function Index({
     micUsedRef.current = false;
     finalBufferRef.current = "";
     if (textareaRef.current) textareaRef.current.value = "";
+    replyModeRef.current = "voice";
+    setVoiceMode(true);
     void sendMessage({ text }, { body: { mode: "voice" } });
   }, [sendMessage, status]);
 
@@ -277,6 +280,10 @@ function Index({
       if (textareaRef.current) {
         textareaRef.current.value = finalBufferRef.current;
         textareaRef.current.focus();
+      }
+      if (manualStopRef.current) {
+        manualStopRef.current = false;
+        setTimeout(() => submitFromBuffer(), 50);
       }
     },
     onInterim: (text) => {
@@ -299,7 +306,10 @@ function Index({
 
   const toggleMic = () => {
     if (recognition.listening) {
+      // Manual stop: send the question once the final transcript arrives.
+      manualStopRef.current = true;
       recognition.stop();
+      setTimeout(() => { manualStopRef.current = false; }, 8000);
     } else {
       stopSpeaking();
       // Force voice mode on so the reply plays back automatically.
@@ -514,7 +524,11 @@ Please teach this as a spoken lesson — natural conversational voice, short sen
                   // Voice-first: for assistant messages in voice mode, hide the
                   // Short Note until the audio actually starts playing.
                   const hideForVoice =
-                    isAssistant && voiceMode && ttsSupported && !revealedIds.has(m.id);
+                    isAssistant &&
+                    voiceMode &&
+                    ttsSupported &&
+                    replyModeRef.current === "voice" &&
+                    !revealedIds.has(m.id);
 
                   return (
                     <Message from={m.role} key={m.id}>
