@@ -35,6 +35,7 @@ import { Route as ClassExamNewRouteImport } from './routes/class-exam.new'
 import { Route as MockExamUnitRouteImport } from './routes/mock-exam.$unit'
 import { Route as PracticeUnitRouteImport } from './routes/practice.$unit'
 import { Route as SectionSectionIdRouteImport } from './routes/section.$sectionId'
+import { Route as ApiPublicCronAutoGradeRouteImport } from './routes/api/public/cron-auto-grade'
 import { Route as PracticeUnitIndexRouteImport } from './routes/practice.$unit.index'
 import { Route as PracticeUnitSkillRouteImport } from './routes/practice.$unit.$skill'
 
@@ -168,6 +169,11 @@ const SectionSectionIdRoute = SectionSectionIdRouteImport.update({
   path: '/section/$sectionId',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicCronAutoGradeRoute = ApiPublicCronAutoGradeRouteImport.update({
+  id: '/api/public/cron-auto-grade',
+  path: '/api/public/cron-auto-grade',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PracticeUnitIndexRoute = PracticeUnitIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -206,6 +212,7 @@ export interface FileRoutesByFullPath {
   '/mock-exam/$unit': typeof MockExamUnitRoute
   '/practice/$unit': typeof PracticeUnitRouteWithChildren
   '/section/$sectionId': typeof SectionSectionIdRoute
+  '/api/public/cron-auto-grade': typeof ApiPublicCronAutoGradeRoute
   '/practice/$unit/$skill': typeof PracticeUnitSkillRoute
   '/practice/$unit/': typeof PracticeUnitIndexRoute
 }
@@ -235,6 +242,7 @@ export interface FileRoutesByTo {
   '/class-exam/new': typeof ClassExamNewRoute
   '/mock-exam/$unit': typeof MockExamUnitRoute
   '/section/$sectionId': typeof SectionSectionIdRoute
+  '/api/public/cron-auto-grade': typeof ApiPublicCronAutoGradeRoute
   '/practice/$unit/$skill': typeof PracticeUnitSkillRoute
   '/practice/$unit': typeof PracticeUnitIndexRoute
 }
@@ -266,6 +274,7 @@ export interface FileRoutesById {
   '/mock-exam/$unit': typeof MockExamUnitRoute
   '/practice/$unit': typeof PracticeUnitRouteWithChildren
   '/section/$sectionId': typeof SectionSectionIdRoute
+  '/api/public/cron-auto-grade': typeof ApiPublicCronAutoGradeRoute
   '/practice/$unit/$skill': typeof PracticeUnitSkillRoute
   '/practice/$unit/': typeof PracticeUnitIndexRoute
 }
@@ -298,6 +307,7 @@ export interface FileRouteTypes {
     | '/mock-exam/$unit'
     | '/practice/$unit'
     | '/section/$sectionId'
+    | '/api/public/cron-auto-grade'
     | '/practice/$unit/$skill'
     | '/practice/$unit/'
   fileRoutesByTo: FileRoutesByTo
@@ -327,6 +337,7 @@ export interface FileRouteTypes {
     | '/class-exam/new'
     | '/mock-exam/$unit'
     | '/section/$sectionId'
+    | '/api/public/cron-auto-grade'
     | '/practice/$unit/$skill'
     | '/practice/$unit'
   id:
@@ -357,6 +368,7 @@ export interface FileRouteTypes {
     | '/mock-exam/$unit'
     | '/practice/$unit'
     | '/section/$sectionId'
+    | '/api/public/cron-auto-grade'
     | '/practice/$unit/$skill'
     | '/practice/$unit/'
   fileRoutesById: FileRoutesById
@@ -388,6 +400,7 @@ export interface RootRouteChildren {
   MockExamUnitRoute: typeof MockExamUnitRoute
   PracticeUnitRoute: typeof PracticeUnitRouteWithChildren
   SectionSectionIdRoute: typeof SectionSectionIdRoute
+  ApiPublicCronAutoGradeRoute: typeof ApiPublicCronAutoGradeRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -574,6 +587,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SectionSectionIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/cron-auto-grade': {
+      id: '/api/public/cron-auto-grade'
+      path: '/api/public/cron-auto-grade'
+      fullPath: '/api/public/cron-auto-grade'
+      preLoaderRoute: typeof ApiPublicCronAutoGradeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/practice/$unit/': {
       id: '/practice/$unit/'
       path: '/'
@@ -632,6 +652,7 @@ const rootRouteChildren: RootRouteChildren = {
   MockExamUnitRoute: MockExamUnitRoute,
   PracticeUnitRoute: PracticeUnitRouteWithChildren,
   SectionSectionIdRoute: SectionSectionIdRoute,
+  ApiPublicCronAutoGradeRoute: ApiPublicCronAutoGradeRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

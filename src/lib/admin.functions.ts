@@ -1,7 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 
-const MAIN_ADMINS = ["saikokayzin123@gmail.com", "kayzinphyo1616@gmail.com"];
+const MAIN_ADMINS = ["saikokayzin123@gmail.com", "jaxsai939@gmail.com", "kayzinphyo1616@gmail.com"];
 
 async function assertNotMain(supabase: any, id: string) {
   const { data } = await supabase.rpc("is_main_admin", { _user_id: id });
