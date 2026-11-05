@@ -1,5 +1,20 @@
 {
   "version": "7",
   "dialect": "postgresql",
-  "entries": []
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1793875423021,
+      "tag": "0000_restore_base_app_schema",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1793875535075,
+      "tag": "0001_add_class_features_and_speaking",
+      "breakpoints": true
+    }
+  ]
 }
