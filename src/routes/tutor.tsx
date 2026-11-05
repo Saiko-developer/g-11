@@ -29,7 +29,8 @@ import {
 } from "@/components/ai-elements/prompt-input";
 import { Shimmer } from "@/components/ai-elements/shimmer";
 import { Button } from "@/components/ui/button";
-import { useSpeechRecognition, useSpeechSynthesis } from "@/hooks/use-voice";
+import { useSpeechSynthesis } from "@/hooks/use-voice";
+import { useWhisperRecognition } from "@/hooks/use-whisper";
 import { useI18n } from "@/lib/i18n";
 import { supabase } from "@/integrations/supabase/client";
 import type { Json } from "@/integrations/supabase/types";
@@ -263,8 +264,9 @@ function Index({
     void sendMessage({ text }, { body: { mode: "voice" } });
   }, [sendMessage, status]);
 
-  const recognition = useSpeechRecognition({
+  const recognition = useWhisperRecognition({
     silenceMs: 2500,
+    flushOnStop: true,
     onFinal: (text) => {
       const trimmed = text.trim();
       if (!trimmed) return;

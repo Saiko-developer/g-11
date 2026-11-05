@@ -160,6 +160,7 @@ export function useWhisperRecognition(opts: {
       busyRef.current = false;
       capturingRef.current = false;
       if (text) cbRef.current.onFinal(text);
+      else cbRef.current.onInterim?.("");
       setListening(false);
       cbRef.current.onSilence?.();
     };
@@ -201,7 +202,9 @@ export function useWhisperRecognition(opts: {
         const clip = await finishRecording();
         setListening(false);
         const text = clip ? await transcribe(clip.blob, clip.type) : "";
-        if (run === runRef.current && text) cbRef.current.onFinal(text);
+        if (run !== runRef.current) return;
+        if (text) cbRef.current.onFinal(text);
+        else cbRef.current.onInterim?.("");
       })();
       return;
     }

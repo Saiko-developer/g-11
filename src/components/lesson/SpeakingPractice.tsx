@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, Loader2, Mic, Phone, PhoneOff, Play, Square } from "lucide-react";
 import { toast } from "sonner";
 import type { ListeningScript } from "@/data/listeningScripts";
-import { useSpeechRecognition, useSpeechSynthesis } from "@/hooks/use-voice";
+import { useSpeechSynthesis } from "@/hooks/use-voice";
+import { useWhisperRecognition } from "@/hooks/use-whisper";
 import { scoreShadowing, type WordMark } from "@/lib/shadowing-score";
 import { getSyllabusUnit } from "@/lib/localData";
 import { cn } from "@/lib/utils";
@@ -128,9 +129,10 @@ function RolePlay({ unit }: { unit: number }) {
     await aiTurn(next);
   };
 
-  const rec = useSpeechRecognition({
-    lang: "en-US",
-    silenceMs: 2000,
+  const rec = useWhisperRecognition({
+    lang: "en",
+    context: "speaking",
+    silenceMs: 2200,
     onFinal: (t) => {
       if (phaseRef.current !== "listening") return;
       bufRef.current += ` ${t}`;
@@ -229,7 +231,7 @@ function RolePlay({ unit }: { unit: number }) {
   useEffect(() => {
     if (phase !== "listening" || heard) return;
     const t = setTimeout(() => {
-      if (phaseRef.current !== "listening" || !activeRef.current || bufRef.current.trim() || interimRef.current.trim()) return;
+      if (phaseRef.current !== "listening" || !activeRef.current || rec.isCapturing() || bufRef.current.trim() || interimRef.current.trim()) return;
       rec.stop();
       void aiTurn(turnsRef.current, true);
     }, 15000);
