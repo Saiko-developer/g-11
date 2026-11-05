@@ -373,6 +373,7 @@ function Index({
     const prompt = `Please explain the lesson "${lesson}"${category ? ` (${category})` : ""} for a Grade 10 student in Myanmar.
 
 Please teach this as a spoken lesson — natural conversational voice, short sentences, warm Burmese explanation mixed with the key English terms. Do not use tables, diagrams, bullet points, brackets, or grammar tags. End with a short spoken practice question.`;
+    replyModeRef.current = "voice";
     void sendMessage({ text: prompt }, { body: { mode: "voice" } });
   }, [lesson, category, messages.length, sendMessage]);
 
@@ -424,6 +425,7 @@ Please teach this as a spoken lesson — natural conversational voice, short sen
     clearError();
     lessonExplanationRef.current = false;
     micUsedRef.current = false;
+    replyModeRef.current = voiceMode ? "voice" : "text";
     void sendMessage({ text: prompt }, { body: { mode: voiceMode ? "voice" : "text" } });
   };
 
