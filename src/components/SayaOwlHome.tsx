@@ -256,7 +256,10 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false }: SayaOwlHomeProps
     // Preferred path: the browser's native Burmese recognizer (same as /tutor).
     const w = window as unknown as { SpeechRecognition?: new () => NativeRec; webkitSpeechRecognition?: new () => NativeRec };
     const Ctor = w.SpeechRecognition ?? w.webkitSpeechRecognition;
-    if (Ctor && !nativeFailedRef.current) {
+    // Native browser recognition duplicates words on mobile and is weak for
+    // Burmese — always use Whisper transcription (recorder path below).
+    const PREFER_NATIVE = false as boolean;
+    if (PREFER_NATIVE && Ctor && !nativeFailedRef.current) {
       const rec = new Ctor();
       rec.lang = "my-MM";
       rec.continuous = true;

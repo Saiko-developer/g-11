@@ -10,6 +10,7 @@ import { MessageResponse } from "@/components/ai-elements/message";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { useDraggable } from "@/hooks/useDraggable";
+import { toast } from "sonner";
 
 /** Strips the <voice_only>/<ui_display> envelope so only the note is shown. */
 function toDisplayText(raw: string): string {
@@ -35,7 +36,19 @@ function SayaOwlInner({ lessonContext, currentQuestion }: SayaOwlProps) {
   const [transport] = useState(() => new DefaultChatTransport({ api: "/api/chat", fetch: tutorFetch }));
   const { messages, sendMessage, status } = useChat({
     transport,
-    onError: (err) => console.error("[saya-owl]", err),
+    onError: (err) => {
+      console.error("[saya-owl]", err);
+      const msg = err instanceof Error ? err.message : String(err);
+      if (/401|unauth/i.test(msg)) {
+        toast.error("Google ဖြင့် အရင် Sign in ဝင်ပေးပါ");
+      } else if (/429|quota|limit/i.test(msg)) {
+        toast.error("ယနေ့ AI credit ကုန်သွားပါပြီ", { description: "မနက်ဖြန် ပြန်သုံးနိုင်ပါသည်။" });
+      } else if (/402/.test(msg)) {
+        toast.error("AI ခဏ ရပ်နားထားပါသည်", { description: "ခဏနေ ပြန်ကြိုးစားပါ။" });
+      } else {
+        toast.error("ဆရာဇီးကွက် အဖြေမပေးနိုင်ပါ", { description: "ခဏနေ ပြန်ကြိုးစားကြည့်ပါ။" });
+      }
+    },
   });
   const scrollRef = useRef<HTMLDivElement | null>(null);
 
