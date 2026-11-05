@@ -19,12 +19,52 @@ export function ClassExamSubmissions({ aid, paper }: { aid: string; paper: MockE
   const [rows, setRows] = useState<Row[] | null>(null);
   const [sel, setSel] = useState<string | null>(null);
 
+  const [drafts, setDrafts] = useState<Record<string, { status: string; score?: number; total?: number }>>({});
   const load = async () => {
     const { data, error } = await supabase.rpc("class_exam_roster", { _aid: aid });
     if (error) return toast.error(error.message);
     setRows(data as unknown as Row[]);
   };
   useEffect(() => { void load(); }, [aid]);
+
+  // Background AI marking: read draft statuses, start missing ones one at a time, poll until all are ready.
+  useEffect(() => {
+    if (!rows) return;
+    const pending = rows.filter((r) => r.submitted_at && r.attempt_id && !r.graded_at);
+    if (!pending.length) return;
+    let stop = false; let timer: ReturnType<typeof setTimeout> | undefined;
+    const started = new Set<string>();
+    const tick = async () => {
+      const ids = pending.map((r) => r.attempt_id as string);
+      const { data } = await supabase.from("class_exam_ai_drafts").select("attempt_id,status,result").in("attempt_id", ids);
+      if (stop) return;
+      const map: Record<string, { status: string; score?: number; total?: number }> = {};
+      for (const d of data ?? []) {
+        const r = d.result as unknown as GradeResult | null;
+        map[d.attempt_id] = { status: d.status, score: r?.score, total: r?.totalMarks };
+      }
+      setDrafts(map);
+      const busy = Object.values(map).some((d) => d.status === "running" || d.status === "pending");
+      const next = ids.find((id) => !map[id] && !started.has(id));
+      if (!busy && next) {
+        started.add(next);
+        map[next] = { status: "running" };
+        setDrafts({ ...map });
+        const { data: s } = await supabase.auth.getSession();
+        await fetch("/api/auto-grade", {
+          method: "POST",
+          headers: { "content-type": "application/json", authorization: `Bearer ${s.session?.access_token ?? ""}` },
+          body: JSON.stringify({ attemptId: next }),
+        }).catch(() => null);
+        if (!stop) void tick();
+        return;
+      }
+      const waiting = ids.some((id) => !map[id] || map[id].status === "running" || map[id].status === "pending");
+      if (waiting) timer = setTimeout(() => void tick(), 6000);
+    };
+    void tick();
+    return () => { stop = true; if (timer) clearTimeout(timer); };
+  }, [rows]);
 
   if (!rows) return <Loader2 className="mx-auto h-6 w-6 animate-spin text-primary" />;
   const submitted = rows.filter((r) => r.submitted_at).length;
@@ -37,7 +77,9 @@ export function ClassExamSubmissions({ aid, paper }: { aid: string; paper: MockE
         {rows.length === 0 && <p className="p-4 text-sm text-muted-foreground">No students in this class yet.</p>}
         <ul>
           {rows.map((r) => {
-            const status = r.graded_at ? "Graded" : r.submitted_at ? "Submitted" : r.started_at ? "In progress" : "Not started";
+            const d = r.attempt_id ? drafts[r.attempt_id] : undefined;
+            const aiLabel = !d ? "🕒 AI queue" : d.status === "done" ? `🟢 AI Ready${d.score != null ? ` (${d.score}/${d.total})` : ""}` : d.status === "running" || d.status === "pending" ? "⏳ AI marking…" : "✍️ Needs marking";
+            const status = r.graded_at ? "✅ Sent" : r.submitted_at ? aiLabel : r.started_at ? "In progress" : "Not started";
             const dot = r.graded_at ? "bg-primary" : r.submitted_at ? "bg-accent" : r.started_at ? "bg-secondary" : "bg-muted";
             return (
               <li key={r.student_id}>
