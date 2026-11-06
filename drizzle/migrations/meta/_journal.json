@@ -1,13 +1,5 @@
 {
   "version": "7",
   "dialect": "postgresql",
-  "entries": [
-    {
-      "idx": 0,
-      "version": "7",
-      "when": 1793941539278,
-      "tag": "0000_teacher_read_exam_photos",
-      "breakpoints": true
-    }
-  ]
+  "entries": []
 }
