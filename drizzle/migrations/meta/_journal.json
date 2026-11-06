@@ -1,41 +1,5 @@
 {
   "version": "7",
   "dialect": "postgresql",
-  "entries": [
-    {
-      "idx": 0,
-      "version": "7",
-      "when": 1793875423021,
-      "tag": "0000_restore_base_app_schema",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1793875535075,
-      "tag": "0001_add_class_features_and_speaking",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1793876567874,
-      "tag": "0002_sync_main_admin_emails",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "7",
-      "when": 1793930060201,
-      "tag": "0003_fix_teacher_upload_and_quota",
-      "breakpoints": true
-    },
-    {
-      "idx": 4,
-      "version": "7",
-      "when": 1793930792137,
-      "tag": "0004_role_credit_limits_and_welcome_gift",
-      "breakpoints": true
-    }
-  ]
+  "entries": []
 }
