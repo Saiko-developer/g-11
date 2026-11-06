@@ -805,6 +805,7 @@ export type Database = {
         Args: { _add_bonus: number; _scholarship: string; _user: string }
         Returns: undefined
       }
+      can_read_exam_photo: { Args: { _path: string }; Returns: boolean }
       claim_class_exam_ai: {
         Args: { _attempt: string; _force?: boolean }
         Returns: boolean

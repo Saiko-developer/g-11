@@ -87,7 +87,7 @@ export function ClassExamSubmissions({ aid, paper }: { aid: string; paper: MockE
                   className={`flex w-full items-center gap-3 border-b border-border px-4 py-3 text-left text-sm hover:bg-muted ${sel === r.student_id ? "bg-muted" : ""}`}>
                   <span className={`h-2.5 w-2.5 shrink-0 rounded-full border border-border ${dot}`} />
                   <span className="min-w-0 flex-1">
-                    <span className="block truncate font-medium">{r.display_name}</span>
+                    <span className="flex items-center gap-1 truncate font-medium">{r.display_name}{!r.graded_at && d?.status === "done" && <span className="rounded-full bg-accent px-1.5 text-[10px] font-bold text-accent-foreground">🔔 NEW</span>}</span>
                     <span className="text-xs text-muted-foreground">
                       {status}{r.submitted_at && ` · ${r.image_paths.length} photos`}{r.graded_at && ` · ${r.score}/${r.total_marks}`}
                     </span>
@@ -100,7 +100,10 @@ export function ClassExamSubmissions({ aid, paper }: { aid: string; paper: MockE
       </aside>
       <section className="min-w-0">
         {cur ? <Viewer key={cur.student_id} row={cur} paper={paper} onSaved={async () => { await load(); }} />
-          : <p className="rounded-2xl border border-dashed border-border p-8 text-center text-sm text-muted-foreground">ကျောင်းသားတစ်ဦးကို ရွေးပြီး အဖြေလွှာ ကြည့်ပါ။</p>}
+          : <div className="rounded-2xl border border-dashed border-border p-8 text-center text-sm text-muted-foreground">
+              <p>👈 ဘယ်ဘက်မှ ကျောင်းသားတစ်ဦးကို ရွေးပြီး အဖြေလွှာ ကြည့်ပါ။</p>
+              <p className="mt-2">တင်သွင်းပြီး: {submitted} ဦး · 🟢 AI အသင့်: {rows.filter((r) => !r.graded_at && r.attempt_id && drafts[r.attempt_id]?.status === "done").length} ဦး</p>
+            </div>}
       </section>
     </div>
   );

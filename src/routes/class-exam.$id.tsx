@@ -76,8 +76,10 @@ function ExamHall() {
   const [files, setFiles] = useState<File[]>([]);
   const [busy, setBusy] = useState(false);
   const [tab, setTab] = useState<"paper" | "subs">("paper");
-  const [mine, setMine] = useState<{ score: number | null; total_marks: number | null; teacher_feedback: string; graded_at: string | null; result: unknown } | null>(null);
+  const [mine, setMine] = useState<{ score: number | null; total_marks: number | null; teacher_feedback: string; graded_at: string | null; result: unknown; image_paths?: string[] } | null>(null);
   const [showDetail, setShowDetail] = useState(false);
+  const [pending, setPending] = useState(0);
+  const [myPhotos, setMyPhotos] = useState<string[] | null>(null);
 
   const load = async () => {
     const { data, error } = await supabase.rpc("class_exam_open", { _aid: id });
@@ -85,8 +87,12 @@ function ExamHall() {
     setExam(data as unknown as Exam);
     const { data: u } = await supabase.auth.getUser();
     if (u.user) {
-      const { data: a } = await supabase.from("class_exam_attempts").select("score, total_marks, teacher_feedback, graded_at, result").eq("assignment_id", id).eq("student_id", u.user.id).maybeSingle();
+      const { data: a } = await supabase.from("class_exam_attempts").select("score, total_marks, teacher_feedback, graded_at, result, image_paths").eq("assignment_id", id).eq("student_id", u.user.id).maybeSingle();
       setMine(a as never);
+    }
+    if ((data as unknown as Exam).staff) {
+      const { data: r } = await supabase.rpc("class_exam_roster", { _aid: id });
+      setPending(((r ?? []) as { submitted_at: string | null; graded_at: string | null }[]).filter((x) => x.submitted_at && !x.graded_at).length);
     }
   };
   useEffect(() => { void load(); }, [id]);
@@ -188,6 +194,15 @@ function ExamHall() {
             <div>
               <p className="font-bold">စာမေးပွဲ အောင်မြင်စွာ တင်သွင်းပြီးပါပြီ</p>
               <p className="text-sm text-muted-foreground">{new Date(exam.submitted_at).toLocaleString()} · {mine?.graded_at ? "" : "ဆရာက စစ်ဆေးပြီး အမှတ်ထုတ်ပေးပါမည်။"}</p>
+              {mine?.image_paths?.length ? (
+                <Button size="sm" variant="outline" className="mt-2" onClick={async () => {
+                  if (myPhotos) return setMyPhotos(null);
+                  const { data } = await supabase.storage.from("exam-photos").createSignedUrls(mine?.image_paths ?? [], 600);
+                  setMyPhotos((data ?? []).map((d) => d.signedUrl).filter(Boolean) as string[]);
+                }}>📄 {myPhotos ? "ပိတ်ရန်" : "တင်သွင်းထားသော အဖြေလွှာ ပြန်ကြည့်မည်"}</Button>
+              ) : null}
+              {myPhotos && <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-3">{myPhotos.map((u, i) => (
+                <a key={u} href={u} target="_blank" rel="noreferrer"><img src={u} alt={`Page ${i + 1}`} className="w-full rounded-lg border border-border object-contain" /></a>))}</div>}
               {mine?.graded_at && (
                 <div className="mt-2">
                   <p className="text-xl font-bold text-primary">ရမှတ်: {mine.score} / {mine.total_marks}</p>
@@ -230,7 +245,8 @@ function ExamHall() {
         <div className="flex gap-2 border-b border-border">
           {([["paper", "📄 Exam Paper"], ["subs", "👥 Student Submissions"]] as const).map(([k, l]) => (
             <button key={k} onClick={() => setTab(k)}
-              className={`-mb-px border-b-2 px-3 py-2 text-sm font-medium ${tab === k ? "border-primary text-primary" : "border-transparent text-muted-foreground"}`}>{l}</button>
+              className={`-mb-px inline-flex items-center gap-2 border-b-2 px-3 py-2 text-sm font-medium ${tab === k ? "border-primary text-primary" : "border-transparent text-muted-foreground"}`}>{l}
+              {k === "subs" && pending > 0 && <span className="rounded-full bg-accent px-2 py-0.5 text-xs font-bold text-accent-foreground">🔔 {pending} ဦး စစ်ရန်</span>}</button>
           ))}
         </div>
       )}
