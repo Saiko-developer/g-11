@@ -113,7 +113,8 @@ function RolePlay({ unit }: { unit: number }) {
   const interimRef = useRef("");
   const send = async () => {
     if (phaseRef.current !== "listening") return;
-    const text = `${bufRef.current} ${interimRef.current}`.trim();
+    const interimClean = interimRef.current.replace(/^[\s.…]+$/, "");
+    const text = `${bufRef.current} ${interimClean}`.trim().replace(/^[\s.…]+$/, "");
     bufRef.current = "";
     interimRef.current = "";
     setHeard("");
@@ -218,10 +219,12 @@ function RolePlay({ unit }: { unit: number }) {
     activeRef.current = false;
   }, []);
 
+  const [limit, setLimit] = useState<number | null>(null);
   const refreshLeft = async () => {
     const { data } = await supabase.rpc("speaking_unit_status" as never, { p_unit: unit } as never);
     const s = data as unknown as { used: number; limit: number; unlimited: boolean } | null;
     setLeft(s ? (s.unlimited ? -1 : Math.max(0, s.limit - s.used)) : null);
+    setLimit(s && !s.unlimited ? s.limit : null);
   };
   useEffect(() => {
     void refreshLeft();
@@ -413,7 +416,7 @@ function RolePlay({ unit }: { unit: number }) {
           </button>
           {left !== null && left >= 0 && (
             <p className="text-xs text-muted-foreground">
-              {left > 0 ? `ဒီ Unit မှာ ယနေ့ စကားပြောခွင့် ${left}/2 ကြိမ် ကျန်ပါတယ်` : "ဒီ Unit အတွက် ယနေ့ ၂ ကြိမ် ပြည့်ပါပြီ"}
+              {left > 0 ? `ဒီ Unit မှာ ယနေ့ စကားပြောခွင့် ${left}/${limit ?? left} ကြိမ် ကျန်ပါတယ်` : "ဒီ Unit အတွက် ယနေ့ စကားပြောခွင့် ပြည့်ပါပြီ"}
             </p>
           )}
           </div>
