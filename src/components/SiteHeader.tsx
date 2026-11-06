@@ -72,6 +72,9 @@ export function SiteHeader() {
           >
             {t("nav.home")}
           </Link>
+          <Link to="/grade-11" className="inline-flex rounded-full border border-primary/40 px-2.5 py-1.5 text-xs font-semibold text-primary hover:bg-primary/10 sm:text-sm" activeProps={{ className: "bg-primary/10" }}>
+            Grade 11
+          </Link>
           <Link to="/progress" className="hidden rounded-md px-3 py-2 text-muted-foreground hover:text-foreground md:inline-flex" activeProps={{ className: "text-foreground font-medium" }}>
             My Progress
           </Link>
