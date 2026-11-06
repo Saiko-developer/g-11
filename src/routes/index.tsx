@@ -18,6 +18,7 @@ import heroOwl from "@/assets/hero-owl.jpg";
 import { CurriculumExplorer } from "@/components/CurriculumExplorer";
 import { SiteHeader } from "@/components/SiteHeader";
 import { HowItWorks } from "@/components/HowItWorks";
+import { GradeSwitcher } from "@/components/grade11/GradeSwitcher";
 import { EXAM_UPLOAD_ACCEPT, emitExamUpload } from "@/lib/examUpload";
 import { useI18n } from "@/lib/i18n";
 
@@ -73,6 +74,7 @@ function Landing() {
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_oklch(0.95_0.05_190)_0%,_transparent_60%)]" />
         <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-2 md:items-center md:gap-10 md:py-24">
           <div>
+            <div className="mb-3"><GradeSwitcher current={10} /></div>
             <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
               <Sparkles className="h-3.5 w-3.5 text-accent" />
               {t("hero.badge")}

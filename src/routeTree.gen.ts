@@ -32,6 +32,8 @@ import { Route as ApiTranscribeRouteImport } from './routes/api/transcribe'
 import { Route as ApiTtsRouteImport } from './routes/api/tts'
 import { Route as ClassExamIdRouteImport } from './routes/class-exam.$id'
 import { Route as ClassExamNewRouteImport } from './routes/class-exam.new'
+import { Route as Grade11IndexRouteImport } from './routes/grade-11.index'
+import { Route as Grade11UnitRouteImport } from './routes/grade-11.$unit'
 import { Route as MockExamUnitRouteImport } from './routes/mock-exam.$unit'
 import { Route as PracticeUnitRouteImport } from './routes/practice.$unit'
 import { Route as SectionSectionIdRouteImport } from './routes/section.$sectionId'
@@ -154,6 +156,16 @@ const ClassExamNewRoute = ClassExamNewRouteImport.update({
   path: '/class-exam/new',
   getParentRoute: () => rootRouteImport,
 } as any)
+const Grade11IndexRoute = Grade11IndexRouteImport.update({
+  id: '/grade-11/',
+  path: '/grade-11/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Grade11UnitRoute = Grade11UnitRouteImport.update({
+  id: '/grade-11/$unit',
+  path: '/grade-11/$unit',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const MockExamUnitRoute = MockExamUnitRouteImport.update({
   id: '/mock-exam/$unit',
   path: '/mock-exam/$unit',
@@ -209,9 +221,11 @@ export interface FileRoutesByFullPath {
   '/api/tts': typeof ApiTtsRoute
   '/class-exam/$id': typeof ClassExamIdRoute
   '/class-exam/new': typeof ClassExamNewRoute
+  '/grade-11/$unit': typeof Grade11UnitRoute
   '/mock-exam/$unit': typeof MockExamUnitRoute
   '/practice/$unit': typeof PracticeUnitRouteWithChildren
   '/section/$sectionId': typeof SectionSectionIdRoute
+  '/grade-11/': typeof Grade11IndexRoute
   '/api/public/cron-auto-grade': typeof ApiPublicCronAutoGradeRoute
   '/practice/$unit/$skill': typeof PracticeUnitSkillRoute
   '/practice/$unit/': typeof PracticeUnitIndexRoute
@@ -240,8 +254,10 @@ export interface FileRoutesByTo {
   '/api/tts': typeof ApiTtsRoute
   '/class-exam/$id': typeof ClassExamIdRoute
   '/class-exam/new': typeof ClassExamNewRoute
+  '/grade-11/$unit': typeof Grade11UnitRoute
   '/mock-exam/$unit': typeof MockExamUnitRoute
   '/section/$sectionId': typeof SectionSectionIdRoute
+  '/grade-11': typeof Grade11IndexRoute
   '/api/public/cron-auto-grade': typeof ApiPublicCronAutoGradeRoute
   '/practice/$unit/$skill': typeof PracticeUnitSkillRoute
   '/practice/$unit': typeof PracticeUnitIndexRoute
@@ -271,9 +287,11 @@ export interface FileRoutesById {
   '/api/tts': typeof ApiTtsRoute
   '/class-exam/$id': typeof ClassExamIdRoute
   '/class-exam/new': typeof ClassExamNewRoute
+  '/grade-11/$unit': typeof Grade11UnitRoute
   '/mock-exam/$unit': typeof MockExamUnitRoute
   '/practice/$unit': typeof PracticeUnitRouteWithChildren
   '/section/$sectionId': typeof SectionSectionIdRoute
+  '/grade-11/': typeof Grade11IndexRoute
   '/api/public/cron-auto-grade': typeof ApiPublicCronAutoGradeRoute
   '/practice/$unit/$skill': typeof PracticeUnitSkillRoute
   '/practice/$unit/': typeof PracticeUnitIndexRoute
@@ -304,9 +322,11 @@ export interface FileRouteTypes {
     | '/api/tts'
     | '/class-exam/$id'
     | '/class-exam/new'
+    | '/grade-11/$unit'
     | '/mock-exam/$unit'
     | '/practice/$unit'
     | '/section/$sectionId'
+    | '/grade-11/'
     | '/api/public/cron-auto-grade'
     | '/practice/$unit/$skill'
     | '/practice/$unit/'
@@ -335,8 +355,10 @@ export interface FileRouteTypes {
     | '/api/tts'
     | '/class-exam/$id'
     | '/class-exam/new'
+    | '/grade-11/$unit'
     | '/mock-exam/$unit'
     | '/section/$sectionId'
+    | '/grade-11'
     | '/api/public/cron-auto-grade'
     | '/practice/$unit/$skill'
     | '/practice/$unit'
@@ -365,9 +387,11 @@ export interface FileRouteTypes {
     | '/api/tts'
     | '/class-exam/$id'
     | '/class-exam/new'
+    | '/grade-11/$unit'
     | '/mock-exam/$unit'
     | '/practice/$unit'
     | '/section/$sectionId'
+    | '/grade-11/'
     | '/api/public/cron-auto-grade'
     | '/practice/$unit/$skill'
     | '/practice/$unit/'
@@ -397,9 +421,11 @@ export interface RootRouteChildren {
   ApiTtsRoute: typeof ApiTtsRoute
   ClassExamIdRoute: typeof ClassExamIdRoute
   ClassExamNewRoute: typeof ClassExamNewRoute
+  Grade11UnitRoute: typeof Grade11UnitRoute
   MockExamUnitRoute: typeof MockExamUnitRoute
   PracticeUnitRoute: typeof PracticeUnitRouteWithChildren
   SectionSectionIdRoute: typeof SectionSectionIdRoute
+  Grade11IndexRoute: typeof Grade11IndexRoute
   ApiPublicCronAutoGradeRoute: typeof ApiPublicCronAutoGradeRoute
 }
 
@@ -566,6 +592,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ClassExamNewRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/grade-11/': {
+      id: '/grade-11/'
+      path: '/grade-11'
+      fullPath: '/grade-11/'
+      preLoaderRoute: typeof Grade11IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/grade-11/$unit': {
+      id: '/grade-11/$unit'
+      path: '/grade-11/$unit'
+      fullPath: '/grade-11/$unit'
+      preLoaderRoute: typeof Grade11UnitRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/mock-exam/$unit': {
       id: '/mock-exam/$unit'
       path: '/mock-exam/$unit'
@@ -649,9 +689,11 @@ const rootRouteChildren: RootRouteChildren = {
   ApiTtsRoute: ApiTtsRoute,
   ClassExamIdRoute: ClassExamIdRoute,
   ClassExamNewRoute: ClassExamNewRoute,
+  Grade11UnitRoute: Grade11UnitRoute,
   MockExamUnitRoute: MockExamUnitRoute,
   PracticeUnitRoute: PracticeUnitRouteWithChildren,
   SectionSectionIdRoute: SectionSectionIdRoute,
+  Grade11IndexRoute: Grade11IndexRoute,
   ApiPublicCronAutoGradeRoute: ApiPublicCronAutoGradeRoute,
 }
 export const routeTree = rootRouteImport
