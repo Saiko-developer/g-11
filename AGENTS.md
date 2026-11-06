@@ -19,3 +19,4 @@
 # Project Rules
 - Lesson audio MP3s live in public/audio/unitN.mp3 (real files, committed) — asset pointers broke on remix/repo import because they are tied to the old project.
 - AI /api/* routes call `requireUser` and wrap caller text with `untrusted()` (src/lib/api-guard.server.ts); the browser adds the bearer token to same-origin /api calls via `installApiAuthFetch` — stops anonymous paid AI use and prompt injection.
+- Grade 11 lessons show the scanned textbook pages (asset URLs in src/assets/grade11-pages.json) mapped per skill in src/data/grade11/syllabus.ts — guarantees content is exactly the official textbook.
