@@ -18,8 +18,20 @@ function ClassTabs({ cid, teacher, onChange }: { cid: string; teacher: boolean; 
   const privN = teacher
     ? Object.entries(counts).reduce((s, [k, v]) => (k === "group" ? s : s + v), 0)
     : (me ? counts[me] ?? 0 : 0);
+  const [toGrade, setToGrade] = useState(0);
+  useEffect(() => {
+    if (!teacher) return;
+    void (async () => {
+      const { data: a } = await supabase.from("classroom_assignments").select("id").eq("classroom_id", cid).eq("kind", "class_exam");
+      const ids = (a ?? []).map((x) => x.id);
+      if (!ids.length) return setToGrade(0);
+      const { count } = await supabase.from("class_exam_attempts").select("id", { count: "exact", head: true })
+        .in("assignment_id", ids).not("submitted_at", "is", null).is("graded_at", null);
+      setToGrade(count ?? 0);
+    })();
+  }, [cid, teacher]);
   const tabs: [string, string, number][] = teacher
-    ? [["feed", "💬 Feed", 0], ["group", "👥 Group Chat", groupN], ["private", "🔒 Private Chat", privN], ["assign", "📋 Assignments", 0], ["grades", "🎓 Students & Grades", 0]]
+    ? [["feed", "💬 Feed", 0], ["group", "👥 Group Chat", groupN], ["private", "🔒 Private Chat", privN], ["assign", "📋 Assignments", 0], ["grades", "🎓 Students & Grades", toGrade]]
     : [["feed", "💬 Feed", 0], ["group", "👥 Group Chat", groupN], ["private", "🔒 Chat with Teacher", privN], ["assign", "📋 Assignments", 0]];
   const [tab, setTab] = useState<string | null>(null);
   return (
