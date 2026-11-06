@@ -80,7 +80,7 @@ export function TutorQuotaBar({ compact = false, lowOnly = false }: { compact?: 
       </p>
       {left <= 0 && (
         <div className="mt-2 space-y-2">
-          <p className="font-medium text-destructive">မေးခွင့် ကုန်သွားပါပြီ။ မနက်ဖြန် ၁၀ ကြိမ် ပြန်ရပါမည်။ ပိုမေးလိုပါက အောက်တွင် အကြိမ်ဝယ်ယူနိုင်ပါသည်။</p>
+          <p className="font-medium text-destructive">မေးခွင့် ကုန်သွားပါပြီ။ ည ၁၂ နာရီ (မြန်မာစံတော်ချိန်) တွင် {q.daily_limit} ကြိမ် ပြန်ရပါမည်။ ပိုမေးလိုပါက အောက်တွင် အကြိမ်ဝယ်ယူနိုင်ပါသည်။</p>
           <TopupPanel />
           {q.scholarship === "pending" ? (
             <p className="text-primary">ပညာသင်ဆု လျှောက်ထားပြီးပါပြီ — Admin စစ်ဆေးနေပါသည်။</p>

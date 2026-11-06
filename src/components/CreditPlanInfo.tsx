@@ -33,7 +33,7 @@ export function CreditPlanInfo({ teacher }: { teacher: boolean }) {
           <div>
             <p className="font-medium">🎓 ကျောင်းသားများ</p>
             <ul className="ml-5 list-disc text-muted-foreground">
-              <li>အကောင့်သစ် Welcome Gift ၅ ကြိမ် + AI Tutor နေ့စဉ် ၂၀ ကြိမ် အခမဲ့ (မြန်မာစံတော်ချိန် ည ၁၂ နာရီ ပြန်ပြည့်)</li>
+              <li>အကောင့်သစ် Welcome Gift AI ၅ ကြိမ် + Exam ၂ စုံ · AI Tutor နေ့စဉ် ၂၀ ကြိမ် အခမဲ့ (မြန်မာစံတော်ချိန် ည ၁၂ နာရီ ပြန်ပြည့်)</li>
               <li>Mock Exam ထုတ်ခြင်း နေ့စဉ် ၂ ကြိမ် အခမဲ့</li>
               <li>အတန်းစာမေးပွဲ ဖြေဆိုခြင်း၊ အဖြေလွှာတင်ခြင်း၊ ရလဒ်ကြည့်ခြင်း — အခမဲ့</li>
               <li>ထပ်မေးလိုပါက KPay ဖြင့် မေးခွင့် ဝယ်ယူနိုင် (သို့) ပညာသင်ဆု လျှောက်နိုင်</li>
@@ -47,7 +47,8 @@ export function CreditPlanInfo({ teacher }: { teacher: boolean }) {
           <div>
             <p className="font-medium">👩‍🏫 ဆရာ/ဆရာမများ</p>
             <ul className="ml-5 list-disc text-muted-foreground">
-              <li>AI Tutor နေ့စဉ် ၁၀ ကြိမ် · စာမေးပွဲထုတ်ခြင်း နေ့စဉ် ၄ ကြိမ် အခမဲ့</li>
+              <li>AI Tutor နေ့စဉ် ၁၀ ကြိမ် · စာမေးပွဲထုတ်ခြင်း နေ့စဉ် ၄ ကြိမ် အခမဲ့ (ည ၁၂ နာရီ ပြန်ပြည့်)</li>
+              <li>အကောင့်သစ် Welcome Gift AI ၅ ကြိမ် + Exam ၂ စုံ</li>
               <li>ထပ်ထုတ်လိုပါက Exam Credit ဝယ်ယူ (သို့) Admin ထံ ဆက်သွယ်ပါ</li>
               <li>အတန်းဖွင့်ခြင်း၊ Class Code ဖြင့် ကျောင်းသားလက်ခံခြင်း</li>
               <li>စနစ်မှ မေးခွန်းထုတ်ခြင်း သို့မဟုတ် ကိုယ်ပိုင် Paper (PDF/Word/Photo) တင်ခြင်း</li>
