@@ -217,9 +217,9 @@ function UploadPaperForm({ cid, onDone }: { cid: string; onDone: () => void }) {
     if (!(total > 0)) return toast.error("စုစုပေါင်း အမှတ် ထည့်ပါ");
     if (!(mins > 0)) return toast.error("ဖြေဆိုချိန် ထည့်ပါ");
     setBusy(true);
+    const uploaded: { path: string; name: string; type: string }[] = [];
     try {
       for (const file of [...files, ...keys]) validatePaperFile(file);
-      const uploaded: { path: string; name: string; type: string }[] = [];
       for (const f of files) {
         const safe = f.name.replace(/[^\w.-]+/g, "_");
         const path = `${cid}/${crypto.randomUUID()}-${safe}`;
@@ -246,6 +246,7 @@ function UploadPaperForm({ cid, onDone }: { cid: string; onDone: () => void }) {
             const { error: uploadError } = await supabase.storage.from("class-papers").upload(path, file, { contentType: file.type || undefined });
             if (uploadError) throw uploadError;
             keyFiles.push({ path, name: file.name, type: file.type });
+            uploaded.push({ path, name: file.name, type: file.type });
           }
           const { error: keyError } = await supabase.from("class_exam_marking_guides").insert({ assignment_id: assignment.id, files: keyFiles });
           if (keyError) throw keyError;
@@ -257,6 +258,7 @@ function UploadPaperForm({ cid, onDone }: { cid: string; onDone: () => void }) {
       toast.success("စာမေးပွဲ အတန်းဆီ ပို့ပြီးပါပြီ");
       onDone();
     } catch (e) {
+      if (uploaded.length) await supabase.storage.from("class-papers").remove(uploaded.map((u) => u.path)).catch(() => {});
       toast.error(e instanceof Error ? e.message : "Upload failed");
     } finally { setBusy(false); }
   };
