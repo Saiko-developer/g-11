@@ -8,6 +8,8 @@ import type { MockExamPaper } from "@/lib/mockExam";
 type Student = { student_id: string; display_name: string; email: string | null; full_name: string | null };
 type Exam = { id: string; title: string };
 type Status = "graded" | "review" | "progress" | "none";
+type Draft = { status: string; score?: number; total?: number };
+type Phase = "ready" | "going" | "done" | "none";
 
 const ghost = "inline-flex items-center gap-1.5 rounded-md border border-border px-2.5 py-1.5 text-xs hover:bg-muted";
 
@@ -24,7 +26,8 @@ export function ClassGradebook({ cid, onChange }: { cid: string; onChange: () =>
   const [exams, setExams] = useState<Exam[]>([]);
   const [rows, setRows] = useState<Record<string, Record<string, Row>>>({});
   const [q, setQ] = useState("");
-  const [onlyReview, setOnlyReview] = useState(false);
+  const [filter, setFilter] = useState<"all" | "ready" | "going" | "done" | "none">("all");
+  const [drafts, setDrafts] = useState<Record<string, Draft>>({});
   const [open, setOpen] = useState<{ exam: Exam; sid: string } | null>(null);
 
   const load = useCallback(async () => {
@@ -38,6 +41,16 @@ export function ClassGradebook({ cid, onChange }: { cid: string; onChange: () =>
     rosters.forEach((res, i) => {
       for (const r of (res.data as unknown as Row[]) ?? []) (map[r.student_id] ??= {})[list[i].id] = r;
     });
+    const ids = Object.values(map).flatMap((m) => Object.values(m)).filter((r) => r.submitted_at && !r.graded_at && r.attempt_id).map((r) => r.attempt_id!);
+    const dm: Record<string, Draft> = {};
+    if (ids.length) {
+      const { data } = await supabase.from("class_exam_ai_drafts").select("attempt_id,status,result").in("attempt_id", ids);
+      for (const d of data ?? []) {
+        const res = d.result as { total_score?: number; score?: number; total_marks?: number; total?: number } | null;
+        dm[d.attempt_id] = { status: d.status, score: res?.total_score ?? res?.score, total: res?.total_marks ?? res?.total };
+      }
+    }
+    setDrafts(dm);
     setExams(list);
     setRows(map);
     setStudents((st as Student[]) ?? []);
