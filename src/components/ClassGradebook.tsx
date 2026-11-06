@@ -8,6 +8,8 @@ import type { MockExamPaper } from "@/lib/mockExam";
 type Student = { student_id: string; display_name: string; email: string | null; full_name: string | null };
 type Exam = { id: string; title: string };
 type Status = "graded" | "review" | "progress" | "none";
+type Draft = { status: string; score?: number; total?: number };
+type Phase = "ready" | "going" | "done" | "none";
 
 const ghost = "inline-flex items-center gap-1.5 rounded-md border border-border px-2.5 py-1.5 text-xs hover:bg-muted";
 
@@ -24,7 +26,8 @@ export function ClassGradebook({ cid, onChange }: { cid: string; onChange: () =>
   const [exams, setExams] = useState<Exam[]>([]);
   const [rows, setRows] = useState<Record<string, Record<string, Row>>>({});
   const [q, setQ] = useState("");
-  const [onlyReview, setOnlyReview] = useState(false);
+  const [filter, setFilter] = useState<"all" | "ready" | "going" | "done" | "none">("all");
+  const [drafts, setDrafts] = useState<Record<string, Draft>>({});
   const [open, setOpen] = useState<{ exam: Exam; sid: string } | null>(null);
 
   const load = useCallback(async () => {
@@ -38,16 +41,36 @@ export function ClassGradebook({ cid, onChange }: { cid: string; onChange: () =>
     rosters.forEach((res, i) => {
       for (const r of (res.data as unknown as Row[]) ?? []) (map[r.student_id] ??= {})[list[i].id] = r;
     });
+    const ids = Object.values(map).flatMap((m) => Object.values(m)).filter((r) => r.submitted_at && !r.graded_at && r.attempt_id).map((r) => r.attempt_id!);
+    const dm: Record<string, Draft> = {};
+    if (ids.length) {
+      const { data } = await supabase.from("class_exam_ai_drafts").select("attempt_id,status,result").in("attempt_id", ids);
+      for (const d of data ?? []) {
+        const res = d.result as { score?: number; totalMarks?: number } | null;
+        dm[d.attempt_id] = { status: d.status, score: res?.score, total: res?.totalMarks };
+      }
+    }
+    setDrafts(dm);
     setExams(list);
     setRows(map);
     setStudents((st as Student[]) ?? []);
   }, [cid]);
   useEffect(() => void load(), [load]);
 
-  const needReview = useMemo(
-    () => (students ?? []).filter((s) => exams.some((e) => statusOf(rows[s.student_id]?.[e.id]) === "review")),
-    [students, exams, rows],
-  );
+  const phaseOf = useCallback((r: Row | undefined): Phase => {
+    const st = statusOf(r);
+    if (st === "graded") return "done";
+    if (st === "review") return drafts[r!.attempt_id ?? ""]?.status === "done" ? "ready" : "going";
+    if (st === "progress") return "going";
+    return "none";
+  }, [drafts]);
+  const has = useCallback((sid: string, p: Phase) => exams.some((e) => phaseOf(rows[sid]?.[e.id]) === p), [exams, rows, phaseOf]);
+  const counts = useMemo(() => {
+    const l = students ?? [];
+    return { ready: l.filter((s) => has(s.student_id, "ready")).length, going: l.filter((s) => has(s.student_id, "going")).length,
+      done: l.filter((s) => exams.length > 0 && exams.every((e) => phaseOf(rows[s.student_id]?.[e.id]) === "done")).length,
+      none: l.filter((s) => has(s.student_id, "none")).length };
+  }, [students, exams, rows, has, phaseOf]);
 
   const kick = async (sid: string) => {
     if (!confirm("ဤကျောင်းသားကို အတန်းမှ ဖယ်မှာလား?")) return;
@@ -68,9 +91,13 @@ export function ClassGradebook({ cid, onChange }: { cid: string; onChange: () =>
   if (!students.length) return <p className="text-xs text-muted-foreground">ကျောင်းသား မရှိသေးပါ။ Class Code ကို ပေးပြီး ဖိတ်ပါ။</p>;
 
   const term = q.trim().toLowerCase();
-  const shown = (onlyReview ? needReview : students).filter(
-    (s) => !term || [s.display_name, s.full_name, s.email].some((v) => v?.toLowerCase().includes(term)),
+  const shown = students.filter((s) =>
+    (filter === "all" || (filter === "done"
+      ? exams.length > 0 && exams.every((e) => phaseOf(rows[s.student_id]?.[e.id]) === "done")
+      : has(s.student_id, filter)))
+    && (!term || [s.display_name, s.full_name, s.email].some((v) => v?.toLowerCase().includes(term))),
   );
+  const chips: [typeof filter, string][] = [["all", `အားလုံး (${students.length})`], ["ready", `🟢 AI Ready (${counts.ready})`], ["going", `⏳ စစ်နေဆဲ (${counts.going})`], ["done", `✅ ပြီးစီး (${counts.done})`], ["none", `⚪ မတင်သေး (${counts.none})`]];
 
   return (
     <div className="space-y-3">
@@ -80,13 +107,20 @@ export function ClassGradebook({ cid, onChange }: { cid: string; onChange: () =>
           <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="ကျောင်းသား ရှာရန်…"
             className="w-full rounded-md border border-input bg-background py-2 pl-8 pr-3 text-sm" />
         </label>
-        <div className="flex overflow-hidden rounded-md border border-border text-xs">
-          <button onClick={() => setOnlyReview(false)} className={`px-2.5 py-2 ${!onlyReview ? "bg-muted font-semibold" : ""}`}>All ({students.length})</button>
-          <button onClick={() => setOnlyReview(true)} className={`px-2.5 py-2 ${onlyReview ? "bg-muted font-semibold" : ""}`}>စစ်ရန်ကျန် ({needReview.length})</button>
-        </div>
       </div>
+      <div className="flex flex-wrap gap-1.5">
+        {chips.map(([k, label]) => (
+          <button key={k} onClick={() => setFilter(k)} aria-pressed={filter === k}
+            className={`rounded-full border px-2.5 py-1 text-xs ${filter === k ? "border-primary bg-primary text-primary-foreground" : "border-border hover:bg-muted"}`}>{label}</button>
+        ))}
+      </div>
+      {counts.ready > 0 && (
+        <div className="rounded-lg border border-primary/40 bg-primary/10 px-3 py-2 text-xs font-medium text-primary">
+          🔔 AI စစ်ပြီး Confirm & Send ရန် ကျောင်းသား {counts.ready} ဦး ရှိပါသည်
+        </div>
+      )}
       <p className="text-xs text-muted-foreground">
-        {students.length} students • {exams.length} class exams • {needReview.length} students waiting for grading
+        {students.length} students • {exams.length} class exams • 🤖 {counts.ready} AI ready • ⏳ {counts.going} on-going
       </p>
 
       <ul className="space-y-2">
@@ -119,21 +153,23 @@ export function ClassGradebook({ cid, onChange }: { cid: string; onChange: () =>
                   {exams.map((e) => {
                     const r = mine[e.id];
                     const st = statusOf(r);
+                    const ph = phaseOf(r);
+                    const d = r?.attempt_id ? drafts[r.attempt_id] : undefined;
+                    const go = () => setOpen({ exam: e, sid: s.student_id });
                     return (
-                      <li key={e.id} className="flex flex-wrap items-center justify-between gap-2 text-xs">
-                        <span className="min-w-0 flex-1 truncate">📄 {e.title}</span>
-                        {st === "graded" && (
-                          <button onClick={() => setOpen({ exam: e, sid: s.student_id })} className="rounded-full bg-primary/15 px-2 py-0.5 font-semibold text-primary hover:opacity-80">
-                            🟢 {r!.score} / {r!.total_marks}
-                          </button>
-                        )}
-                        {st === "review" && (
-                          <button onClick={() => setOpen({ exam: e, sid: s.student_id })} className="rounded-full bg-accent px-2 py-0.5 font-semibold text-accent-foreground hover:opacity-80">
-                            🟡 Uploaded · 📝 Grade Now
-                          </button>
-                        )}
-                        {st === "progress" && <span className="rounded-full bg-secondary px-2 py-0.5 text-secondary-foreground">✍️ ဖြေဆိုနေဆဲ</span>}
-                        {st === "none" && <span className="rounded-full bg-muted px-2 py-0.5 text-muted-foreground">⚪ Not submitted</span>}
+                      <li key={e.id} className="flex flex-wrap items-center justify-between gap-2 rounded-md border border-border bg-muted/30 px-2 py-1.5 text-xs">
+                        <span className="min-w-0 flex-1">
+                          <span className="block truncate">📄 {e.title}</span>
+                          <span className="text-muted-foreground">
+                            {ph === "ready" && `🟢 🤖 AI Ready${d?.score != null ? ` (ရမှတ်: ${d.score}/${d.total ?? "—"})` : ""}`}
+                            {ph === "done" && `✅ Finish (ရမှတ်: ${r!.score}/${r!.total_marks} — ပို့ပြီး)`}
+                            {ph === "going" && (st === "progress" ? "✍️ ဖြေဆိုနေဆဲ" : d?.status === "failed" || d?.status === "error" ? "📝 AI မအောင်မြင် — ဆရာစစ်ရန်" : "⏳ AI စစ်ဆေးနေဆဲ…")}
+                            {ph === "none" && "⚪ Unfinish (အဖြေလွှာ မတင်သေးပါ)"}
+                          </span>
+                        </span>
+                        {ph === "ready" && <button onClick={go} className="rounded-full bg-primary px-2.5 py-1 font-semibold text-primary-foreground hover:opacity-90">Confirm & Send ➔</button>}
+                        {ph === "done" && <button onClick={go} className="rounded-full border border-border px-2.5 py-1 hover:bg-muted">အဖြေလွှာ ကြည့်</button>}
+                        {ph === "going" && st === "review" && <button onClick={go} className="rounded-full bg-accent px-2.5 py-1 font-semibold text-accent-foreground hover:opacity-80">📝 Grade Now</button>}
                       </li>
                     );
                   })}
