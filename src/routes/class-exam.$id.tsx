@@ -76,7 +76,7 @@ function ExamHall() {
   const [files, setFiles] = useState<File[]>([]);
   const [busy, setBusy] = useState(false);
   const [tab, setTab] = useState<"paper" | "subs">("paper");
-  const [mine, setMine] = useState<{ score: number | null; total_marks: number | null; teacher_feedback: string; graded_at: string | null; result: unknown } | null>(null);
+  const [mine, setMine] = useState<{ score: number | null; total_marks: number | null; teacher_feedback: string; graded_at: string | null; result: unknown; image_paths?: string[] } | null>(null);
   const [showDetail, setShowDetail] = useState(false);
   const [pending, setPending] = useState(0);
   const [myPhotos, setMyPhotos] = useState<string[] | null>(null);
@@ -194,10 +194,10 @@ function ExamHall() {
             <div>
               <p className="font-bold">စာမေးပွဲ အောင်မြင်စွာ တင်သွင်းပြီးပါပြီ</p>
               <p className="text-sm text-muted-foreground">{new Date(exam.submitted_at).toLocaleString()} · {mine?.graded_at ? "" : "ဆရာက စစ်ဆေးပြီး အမှတ်ထုတ်ပေးပါမည်။"}</p>
-              {(mine as { image_paths?: string[] } | null)?.image_paths?.length ? (
+              {mine?.image_paths?.length ? (
                 <Button size="sm" variant="outline" className="mt-2" onClick={async () => {
                   if (myPhotos) return setMyPhotos(null);
-                  const { data } = await supabase.storage.from("exam-photos").createSignedUrls((mine as { image_paths: string[] }).image_paths, 600);
+                  const { data } = await supabase.storage.from("exam-photos").createSignedUrls(mine.image_paths, 600);
                   setMyPhotos((data ?? []).map((d) => d.signedUrl).filter(Boolean) as string[]);
                 }}>📄 {myPhotos ? "ပိတ်ရန်" : "တင်သွင်းထားသော အဖြေလွှာ ပြန်ကြည့်မည်"}</Button>
               ) : null}
