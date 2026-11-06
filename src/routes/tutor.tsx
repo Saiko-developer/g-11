@@ -346,6 +346,29 @@ function Index({
     });
   }, []);
 
+  // Voice status for the bubble: preparing → speaking → done (with Replay).
+  const [voicePhase, setVoicePhase] = useState<{ id: string; phase: "preparing" | "speaking" | "done" } | null>(null);
+  const voicedIdsRef = useRef<Set<string>>(new Set());
+  const playVoice = useCallback(
+    async (id: string, voice: string) => {
+      voicedIdsRef.current.add(id);
+      setVoicePhase({ id, phase: "preparing" });
+      await speak(voice, {
+        speed: 1.1,
+        onStart: () => {
+          revealId(id);
+          setVoicePhase({ id, phase: "speaking" });
+        },
+      });
+      // If audio never started (error / stopped), fall back to done.
+      setVoicePhase((p) => (p && p.id === id && p.phase === "preparing" ? { id, phase: "done" } : p));
+    },
+    [speak, revealId],
+  );
+  useEffect(() => {
+    if (!speaking) setVoicePhase((p) => (p && p.phase === "speaking" ? { ...p, phase: "done" } : p));
+  }, [speaking]);
+
   // Auto-speak the assistant's reply when voice mode is on and streaming finishes
   const spokenIdRef = useRef<string | null>(null);
   useEffect(() => {
@@ -366,10 +389,9 @@ function Index({
       revealId(last.id);
       return;
     }
-    const onStart = () => revealId(last.id);
     // Speak Burmese + English terms together (no language filtering).
-    void speak(voice, { speed: 1.1, onStart });
-  }, [voiceMode, ttsSupported, status, messages, speak, revealId]);
+    void playVoice(last.id, voice);
+  }, [voiceMode, ttsSupported, status, messages, playVoice, revealId]);
 
 
   // Auto-send an explanation request when a lesson is selected from /lessons
@@ -544,6 +566,56 @@ Please teach this as a spoken lesson — natural conversational voice, short sen
                           ) : (
                             <MessageResponse>{text}</MessageResponse>
                           )}
+                          {(() => {
+                            const isLast = m.id === lastMessage?.id;
+                            const streamingVoice =
+                              isLast && status === "streaming" && replyModeRef.current === "voice" && voiceMode;
+                            const phase =
+                              voicePhase?.id === m.id ? voicePhase.phase : streamingVoice ? "preparing" : null;
+                            const voiceText = parseVoiceReply(raw).voice;
+                            const canReplay = !!voiceText && voicedIdsRef.current.has(m.id) && ttsSupported;
+                            if (!phase && !canReplay) return null;
+                            return (
+                              <div className="mt-2 flex flex-wrap items-center gap-2 border-t border-border pt-2 text-xs">
+                                {phase === "preparing" && (
+                                  <span className="inline-flex items-center gap-2 rounded-full bg-muted px-3 py-1 text-muted-foreground">
+                                    <span className="h-2 w-2 animate-pulse rounded-full bg-primary" />
+                                    ⏳ ဆရာအသံဖြင့် ရှင်းပြရန် ပြင်ဆင်နေပါသည်...
+                                  </span>
+                                )}
+                                {phase === "speaking" && (
+                                  <>
+                                    <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 font-medium text-primary">
+                                      <span className="flex h-3 items-end gap-0.5" aria-hidden>
+                                        {[0, 1, 2, 3, 4].map((i) => (
+                                          <span
+                                            key={i}
+                                            className="w-0.5 animate-pulse rounded-full bg-primary"
+                                            style={{ height: `${40 + ((i * 37) % 60)}%`, animationDelay: `${i * 120}ms` }}
+                                          />
+                                        ))}
+                                      </span>
+                                      🔊 ဆရာရှင်းပြနေပါသည်...
+                                    </span>
+                                    <Button type="button" variant="outline" size="sm" onClick={stopSpeaking}>
+                                      ⏹️ အသံရပ်မည်
+                                    </Button>
+                                  </>
+                                )}
+                                {phase !== "preparing" && phase !== "speaking" && canReplay && (
+                                  <Button
+                                    type="button"
+                                    variant="outline"
+                                    size="sm"
+                                    disabled={!!voicePhase && voicePhase.phase !== "done"}
+                                    onClick={() => void playVoice(m.id, voiceText)}
+                                  >
+                                    🔄 ပြန်နားထောင်မည်
+                                  </Button>
+                                )}
+                              </div>
+                            );
+                          })()}
                         </MessageContent>
                       )}
                     </Message>
