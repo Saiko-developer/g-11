@@ -33,6 +33,7 @@ export function ShadowingTrack({ src, script }: { src: string; script: Listening
   const rowRefs = useRef<Record<number, HTMLDivElement | null>>({});
   const listRef = useRef<HTMLDivElement | null>(null);
   const bufRef = useRef("");
+  const interimRef = useRef("");
   const recIdx = useRef<number | null>(null);
   const [time, setTime] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -54,7 +55,8 @@ export function ShadowingTrack({ src, script }: { src: string; script: Listening
 
   const finish = () => {
     const i = recIdx.current;
-    const text = bufRef.current.trim();
+    const text = (bufRef.current.trim() || interimRef.current.trim());
+    interimRef.current = "";
     setInterim("");
     setRecording(null);
     recIdx.current = null;
@@ -68,7 +70,11 @@ export function ShadowingTrack({ src, script }: { src: string; script: Listening
       bufRef.current += ` ${t}`;
       setInterim(bufRef.current.trim());
     },
-    onInterim: (t) => setInterim(`${bufRef.current} ${t}`.trim()),
+    onInterim: (t) => {
+      const full = `${bufRef.current} ${t}`.trim();
+      interimRef.current = full;
+      setInterim(full);
+    },
     onSilence: finish,
   });
 
