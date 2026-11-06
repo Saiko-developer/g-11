@@ -46,8 +46,8 @@ export function ClassGradebook({ cid, onChange }: { cid: string; onChange: () =>
     if (ids.length) {
       const { data } = await supabase.from("class_exam_ai_drafts").select("attempt_id,status,result").in("attempt_id", ids);
       for (const d of data ?? []) {
-        const res = d.result as { total_score?: number; score?: number; total_marks?: number; total?: number } | null;
-        dm[d.attempt_id] = { status: d.status, score: res?.total_score ?? res?.score, total: res?.total_marks ?? res?.total };
+        const res = d.result as { score?: number; totalMarks?: number } | null;
+        dm[d.attempt_id] = { status: d.status, score: res?.score, total: res?.totalMarks };
       }
     }
     setDrafts(dm);
