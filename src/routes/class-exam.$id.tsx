@@ -197,7 +197,7 @@ function ExamHall() {
               {mine?.image_paths?.length ? (
                 <Button size="sm" variant="outline" className="mt-2" onClick={async () => {
                   if (myPhotos) return setMyPhotos(null);
-                  const { data } = await supabase.storage.from("exam-photos").createSignedUrls(mine.image_paths, 600);
+                  const { data } = await supabase.storage.from("exam-photos").createSignedUrls(mine?.image_paths ?? [], 600);
                   setMyPhotos((data ?? []).map((d) => d.signedUrl).filter(Boolean) as string[]);
                 }}>📄 {myPhotos ? "ပိတ်ရန်" : "တင်သွင်းထားသော အဖြေလွှာ ပြန်ကြည့်မည်"}</Button>
               ) : null}
