@@ -1,3 +1,4 @@
+import { G11_UNIT1_OVERRIDES } from "./grade11Unit1Structure";
 // Lightweight client-side sentence-structure analyzer for English questions.
 // Used by Saya Owl to break down a question's grammatical pieces on demand,
 // rendered visually as an "Inline Train" by the lesson UI.
@@ -358,7 +359,8 @@ export function buildTrainCars(sentence: string): { sentence: string; cars: Trai
   // Hardcoded overrides for sentences the generic parser cannot split cleanly
   // (e.g. infinitive "to" inside the subject or predicate). Keys are normalized:
   // lowercased, blanks collapsed to "_", trailing punctuation removed.
-  const override = SENTENCE_OVERRIDES[normalizeSentenceKey(sentence)];
+  const key = normalizeSentenceKey(sentence);
+  const override = SENTENCE_OVERRIDES[key] ?? G11_UNIT1_OVERRIDES[key];
   if (override) {
     return {
       sentence: sentence.trim(),
@@ -380,6 +382,7 @@ export function buildTrainCars(sentence: string): { sentence: string; cars: Trai
 function normalizeSentenceKey(s: string): string {
   return s
     .toLowerCase()
+    .replace(/^\(\d+\)\s*/, "")
     .replace(/_+/g, "_")
     .replace(/\s+/g, " ")
     .replace(/[.?!]+$/, "")
