@@ -26,4 +26,4 @@ Source: combined PDF pages 39–49, printed textbook pages 34–44. The final wr
 - Browser checks cover direct unit routes and curriculum explorer, question/answer translations, Check/Reveal, local scans, response progress and all 18 mobile skill views for Units 2–4.
 - Grade 10 and Unit 1 browser regression checks pass. No paid AI calls or authenticated database writes were run.
 
-The shared desktop header still says “English for Grade 10 Myanmar” on Grade 11 pages. Changing that label is a separate UI copy change requiring the user's approval; it is deliberately left unchanged in this update.
+The user subsequently approved the header copy correction. Grade 11 routes now use “English for Grade 11 Myanmar” (and its Burmese equivalent); other routes retain the original Grade 10 tagline. Desktop browser checks cover both route families and client navigation.

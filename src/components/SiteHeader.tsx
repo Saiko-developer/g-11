@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { BookOpen, LogIn, ShieldCheck } from "lucide-react";
 import { AccountMenu } from "@/components/AccountMenu";
 import tutorLogo from "@/assets/tutor-logo.png";
@@ -53,6 +53,8 @@ function AdminLink() {
 
 export function SiteHeader() {
   const { t } = useI18n();
+  const path = useRouterState({ select: (s) => s.location.pathname });
+  const isGrade11 = path === "/grade-11" || path.startsWith("/grade-11/");
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 pt-[env(safe-area-inset-top)] backdrop-blur">
       <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-2 px-3 py-2 sm:px-4 sm:py-3">
@@ -60,7 +62,7 @@ export function SiteHeader() {
           <img src={tutorLogo} alt="Sayar Owl Academy" width={36} height={36} className="h-9 w-9 shrink-0" />
           <div className="min-w-0 leading-tight">
             <div className="truncate text-sm font-semibold">{t("site.title")}</div>
-            <div className="hidden truncate text-[11px] text-muted-foreground sm:block">{t("site.tagline")}</div>
+            <div className="hidden truncate text-[11px] text-muted-foreground sm:block">{t(isGrade11 ? "site.tagline.grade11" : "site.tagline")}</div>
           </div>
         </Link>
         <nav className="flex shrink-0 items-center gap-1 text-sm">
