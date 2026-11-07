@@ -5,107 +5,208 @@
   "blocks": [
    {
     "t": "sub",
-    "x": "Pre-reading"
+    "x": "Pre-reading",
+    "my": "မဖတ်မီ လေ့ကျင့်ခန်း"
    },
    {
     "t": "q",
-    "x": "1. Have you ever bought anything online?"
+    "x": "1. Have you ever bought anything online?",
+    "my": "သင်သည် အွန်လိုင်းမှ ပစ္စည်းတစ်စုံတစ်ရာ ဝယ်ဖူးပါသလား။"
    },
    {
     "t": "q",
-    "x": "2. Do you like online shopping? Why or why not?"
+    "x": "2. Do you like online shopping? Why or why not?",
+    "my": "သင်သည် အွန်လိုင်းဈေးဝယ်ခြင်းကို နှစ်သက်ပါသလား။ အဘယ်ကြောင့် နှစ်သက်သနည်း သို့မဟုတ် မနှစ်သက်သနည်း။"
    },
    {
-    "t": "line",
-    "x": "3. Give one advantage and one disadvantage of online shopping."
+    "t": "q",
+    "x": "3. Give one advantage and one disadvantage of online shopping.",
+    "my": "အွန်လိုင်းဈေးဝယ်ခြင်း၏ ကောင်းကျိုးတစ်ချက်နှင့် ဆိုးကျိုးတစ်ချက်ကို ဖော်ပြပါ။"
    },
    {
     "t": "sub",
-    "x": "Read the passage."
+    "x": "Read the passage.",
+    "my": "အောက်ပါစာပိုဒ်ကို ဖတ်ပါ။"
    },
    {
     "t": "para",
-    "x": "Owing to the rapid advancement of technology, today's buying and selling process has switched over from the traditional mode to the electronic one. The electronic mode of shopping means online shopping that uses the internet as the main vehicle to conduct a commercial business."
+    "x": "Owing to the rapid advancement of technology, today's buying and selling process has switched over from the traditional mode to the electronic one. The electronic mode of shopping means online shopping that uses the internet as the main vehicle to conduct a commercial business.",
+    "my": "နည်းပညာ လျင်မြန်စွာ တိုးတက်လာခြင်းကြောင့် ယနေ့ခေတ် ဝယ်ယူရောင်းချမှုပုံစံသည် သမားရိုးကျနည်းလမ်းမှ အီလက်ထရွန်နစ်နည်းလမ်းသို့ ပြောင်းလဲလာခဲ့သည်။ အီလက်ထရွန်နစ်နည်းဖြင့် ဈေးဝယ်ခြင်းဆိုသည်မှာ စီးပွားရေးလုပ်ငန်း ဆောင်ရွက်ရန် အင်တာနက်ကို အဓိကကြားခံအဖြစ် အသုံးပြုသည့် အွန်လိုင်းဈေးဝယ်ခြင်းကို ဆိုလိုသည်။"
    },
    {
     "t": "para",
-    "x": "Online shopping provides a quick and easy way for the buying and selling process. For buyers, they can shop over the internet without leaving their home or office. They can save time and effort as they can purchase items from their own homes or workplace. Shopping is always available as the mail is usually open 24/7 throughout the year. So, time and place do not act as a hindrance. It is also easy to shop for things online since they can look for the products they want by entering the keywords, using a search engine. They can also cancel the transaction if they do not want the product for any reason. In addition, customers can get discounts or can buy things at lower prices. E-retailers and marketers offer attractive discounts to the customers because through online shopping, they can reduce the money spent on maintaining their shops or stores."
+    "x": "Online shopping provides a quick and easy way for the buying and selling process. For buyers, they can shop over the internet without leaving their home or office. They can save time and effort as they can purchase items from their own homes or workplace. Shopping is always available as the mail is usually open 24/7 throughout the year. So, time and place do not act as a hindrance. It is also easy to shop for things online since they can look for the products they want by entering the keywords, using a search engine. They can also cancel the transaction if they do not want the product for any reason. In addition, customers can get discounts or can buy things at lower prices. E-retailers and marketers offer attractive discounts to the customers because through online shopping, they can reduce the money spent on maintaining their shops or stores.",
+    "my": "အွန်လိုင်းဈေးဝယ်ခြင်းသည် ဝယ်ယူရောင်းချမှုကို လျင်မြန်လွယ်ကူစေသည်။ ဝယ်ယူသူများသည် မိမိတို့၏အိမ် သို့မဟုတ် ရုံးမှ ထွက်ခွာစရာမလိုဘဲ အင်တာနက်မှတစ်ဆင့် ဈေးဝယ်နိုင်သည်။ မိမိတို့အိမ် သို့မဟုတ် အလုပ်ခွင်မှ ပစ္စည်းဝယ်ယူနိုင်သဖြင့် အချိန်နှင့် အားစိုက်ထုတ်မှုကို သက်သာစေသည်။ အွန်လိုင်းဈေးဆိုင်များသည် တစ်နှစ်ပတ်လုံး တစ်ပတ်လျှင် ခုနစ်ရက်၊ တစ်ရက်လျှင် ၂၄ နာရီ ဖွင့်လှစ်ထားလေ့ရှိသောကြောင့် အချိန်မရွေး ဈေးဝယ်နိုင်သည်။ ထို့ကြောင့် အချိန်နှင့် နေရာသည် အတားအဆီး မဖြစ်တော့ပါ။ ရှာဖွေရေးစနစ်တွင် အဓိကစကားလုံးများ ရိုက်ထည့်၍ မိမိလိုချင်သော ကုန်ပစ္စည်းများကို ရှာနိုင်သဖြင့် အွန်လိုင်းမှ ပစ္စည်းဝယ်ယူရန်လည်း လွယ်ကူသည်။ အကြောင်းတစ်စုံတစ်ရာကြောင့် ပစ္စည်းကို မလိုချင်တော့ပါက အရောင်းအဝယ်ကို ပယ်ဖျက်နိုင်သည်။ ထို့ပြင် ဈေးဝယ်သူများသည် လျှော့ဈေးများ ရရှိနိုင်သကဲ့သို့ ဈေးနှုန်းသက်သာစွာလည်း ဝယ်ယူနိုင်သည်။ အွန်လိုင်းလက်လီရောင်းချသူများနှင့် ဈေးကွက်ရှာဖွေရောင်းချသူများသည် အွန်လိုင်းမှ ရောင်းချခြင်းဖြင့် ဆိုင်ထိန်းသိမ်းမှုကုန်ကျစရိတ်ကို လျှော့ချနိုင်သောကြောင့် ဈေးဝယ်သူများအား ဆွဲဆောင်မှုရှိသော လျှော့ဈေးများ ပေးကြသည်။"
    },
    {
     "t": "para",
-    "x": "The fact that makes online shopping more appealing is that customers can get detailed information about a product easily. It helps fussy buyers to purchase a product after a good search. They can also compare various models, brands, and prices. Shoppers can make a good comparison of the things they want to buy because companies display the whole range of products in order to attract customers with different tastes and needs. Sometimes price comparisons are also available online. Large online shopping sites usually offer store comparisons. Through online tracking, online customers can check the order sta- tus and the quality of the products. Moreover, online shopping does not put much pressure on customers because when people go shopping, they may face such problems as sales attendants trying to influence them to buy the products. Another advantage is that customers do not have to stand in queues at checkouts to pay for the products they have bought. For sellers, on the other hand, it is easy to start their online business as it only needs an email account to communicate with clients, customers, and suppliers. Offering services online, sellers can allow customers to make reservations or appointments online, and manage finances such as online banking, tax, and employee pay. They can display a wide variety of products on websites as online stores do not have space constraints. Online shopping can save cost and reduce paper waste. In addition, online shop owners can research their competitors and other businesses that use online tools. They can get customers' feedback on their business, too. It is convenient to buy and sell products online; however, online shopping has some drawbacks. There are several reasons that make people reluctant to buy things online. The major reason is that shopping online is not as quick as it is thought to be. The delivery of the product to the customer's doorstep can sometimes be delayed. This frustrates the customers and prevents them from shopping online. Another significant reason is that online shopping lacks a touch-feel-try process. Online shopping cannot offer customers the opportunity to try on the clothes they buy. Therefore, a customer has to buy a product without close examination, that is, without having a chance to check it as we do in traditional stores. The electronic images of a product are sometimes misleading. The colour and appearance, in reality, may not be the same as the electronic images. One serious drawback of online shopping is that it is unreliable. Sometimes, there is disappearance of shopping itself and online payments are not secure. The rate of cybercrimes has been increasing and the customers' credit card details and bank details have often been hacked. Customers have to be careful in revealing their personal information. Moreover, online shopping does not allow price negotiation between buyers and sellers. In stores and supermarkets, sales attendants provide attention to customers and help them in buying goods. Only a few online shopping marts provide a service for customers to talk to a sales representative. This lack of oral interaction makes online shopping less popular among shoppers. Some prefer traditional shopping to online shopping as traditional stores can provide enjoyable shopping experiences like fun, scent, and sounds. By going out shopping, they can have lots of fun, experiencing a showroom atmosphere, seeing smart sales attendants, and meeting other shoppers of various types. Online shop owners can have more complaints than traditional shopkeepers when there is delay or damage during delivery and they may experience product returns, which can affect their profits. Moreover, as online shopping is a global business, online shop owners must compete with potentially thousands of other online shop owners that offer similar products and services."
+    "x": "The fact that makes online shopping more appealing is that customers can get detailed information about a product easily. It helps fussy buyers to purchase a product after a good search. They can also compare various models, brands, and prices. Shoppers can make a good comparison of the things they want to buy because companies display the whole range of products in order to attract customers with different tastes and needs. Sometimes price comparisons are also available online. Large online shopping sites usually offer store comparisons. Through online tracking, online customers can check the order status and the quality of the products. Moreover, online shopping does not put much pressure on customers because when people go shopping, they may face such problems as sales attendants trying to influence them to buy the products. Another advantage is that customers do not have to stand in queues at checkouts to pay for the products they have bought.",
+    "my": "အွန်လိုင်းဈေးဝယ်ခြင်းကို ပိုမိုဆွဲဆောင်မှုရှိစေသောအချက်မှာ ဈေးဝယ်သူများက ကုန်ပစ္စည်းတစ်ခု၏ အသေးစိတ်အချက်အလက်ကို လွယ်ကူစွာ ရရှိနိုင်ခြင်း ဖြစ်သည်။ ထိုအချက်သည် အရွေးအချယ်များသော ဝယ်ယူသူများကို သေချာစွာ ရှာဖွေလေ့လာပြီးမှ ပစ္စည်းဝယ်ယူနိုင်ရန် အထောက်အကူပြုသည်။ မော်ဒယ်၊ အမှတ်တံဆိပ်နှင့် ဈေးနှုန်းအမျိုးမျိုးကိုလည်း နှိုင်းယှဉ်နိုင်သည်။ ကုမ္ပဏီများသည် အကြိုက်နှင့် လိုအပ်ချက် မတူညီသော ဈေးဝယ်သူများကို ဆွဲဆောင်ရန် ကုန်ပစ္စည်းအစုံအလင်ကို ပြသထားသောကြောင့် ဈေးဝယ်သူများသည် မိမိတို့ဝယ်လိုသော ပစ္စည်းများကို ကောင်းစွာ နှိုင်းယှဉ်နိုင်သည်။ တစ်ခါတစ်ရံ အွန်လိုင်းတွင် ဈေးနှုန်းနှိုင်းယှဉ်ချက်များကိုလည်း ရနိုင်သည်။ ကြီးမားသော အွန်လိုင်းဈေးဝယ်ဝက်ဘ်ဆိုက်များသည် ဆိုင်အချင်းချင်း နှိုင်းယှဉ်နိုင်မှုကို ပေးလေ့ရှိသည်။ အွန်လိုင်းမှ ခြေရာခံစစ်ဆေးခြင်းဖြင့် ဈေးဝယ်သူများသည် မှာယူမှုအခြေအနေနှင့် ကုန်ပစ္စည်းအရည်အသွေးကို စစ်ဆေးနိုင်သည်။ ထို့ပြင် ဆိုင်သို့ ဈေးဝယ်သွားသောအခါ အရောင်းဝန်ထမ်းများက ပစ္စည်းဝယ်ရန် စည်းရုံးဖိအားပေးမှုမျိုး ကြုံနိုင်သော်လည်း အွန်လိုင်းဈေးဝယ်ခြင်းတွင် ထိုသို့သောဖိအား များစွာ မရှိပါ။ အခြားကောင်းကျိုးတစ်ခုမှာ ဝယ်ထားသော ပစ္စည်းများအတွက် ငွေရှင်းကောင်တာတွင် တန်းစီရန် မလိုခြင်း ဖြစ်သည်။"
    },
    {
     "t": "para",
-    "x": "Despite some disadvantages, the growth of online shopping will not be hindered as long as it brings benefits to both buyers and sellers."
+    "x": "For sellers, on the other hand, it is easy to start their online business as it only needs an email account to communicate with clients, customers, and suppliers. Offering services online, sellers can allow customers to make reservations or appointments online, and manage finances such as online banking, tax, and employee pay. They can display a wide variety of products on websites as online stores do not have space constraints. Online shopping can save cost and reduce paper waste. In addition, online shop owners can research their competitors and other businesses that use online tools. They can get customers' feedback on their business, too.",
+    "my": "တစ်ဖက်တွင် ရောင်းချသူများအတွက်လည်း ဖောက်သည်များ၊ ဈေးဝယ်သူများနှင့် ကုန်ပစ္စည်းပေးသွင်းသူများကို ဆက်သွယ်ရန် အီးမေးလ်အကောင့်တစ်ခုသာ လိုအပ်သဖြင့် အွန်လိုင်းစီးပွားရေးလုပ်ငန်း စတင်ရန် လွယ်ကူသည်။ အွန်လိုင်းဝန်ဆောင်မှုများ ပေးခြင်းဖြင့် ရောင်းချသူများသည် ဈေးဝယ်သူများအား ကြိုတင်စာရင်းသွင်းခြင်း သို့မဟုတ် ချိန်းဆိုခြင်းတို့ကို အွန်လိုင်းမှ ပြုလုပ်ခွင့်ပေးနိုင်ပြီး အွန်လိုင်းဘဏ်လုပ်ငန်း၊ အခွန်နှင့် ဝန်ထမ်းလစာပေးချေမှုကဲ့သို့ ငွေကြေးကိစ္စများကိုလည်း စီမံနိုင်သည်။ အွန်လိုင်းဆိုင်များ၌ နေရာအကန့်အသတ် မရှိသောကြောင့် ဝက်ဘ်ဆိုက်များတွင် ကုန်ပစ္စည်းအမျိုးမျိုးကို ပြသနိုင်သည်။ အွန်လိုင်းဈေးဝယ်ခြင်းသည် ကုန်ကျစရိတ်ကို သက်သာစေပြီး စက္ကူအမှိုက်ကိုလည်း လျှော့ချနိုင်သည်။ ထို့ပြင် အွန်လိုင်းဆိုင်ရှင်များသည် မိမိတို့၏ပြိုင်ဘက်များနှင့် အွန်လိုင်းကိရိယာများ အသုံးပြုသော အခြားလုပ်ငန်းများကို လေ့လာနိုင်သည်။ မိမိတို့လုပ်ငန်းအပေါ် ဈေးဝယ်သူများ၏ တုံ့ပြန်အကြံပြုချက်များကိုလည်း ရရှိနိုင်သည်။"
+   },
+   {
+    "t": "para",
+    "x": "It is convenient to buy and sell products online; however, online shopping has some drawbacks. There are several reasons that make people reluctant to buy things online. The major reason is that shopping online is not as quick as it is thought to be. The delivery of the product to the customer's doorstep can sometimes be delayed. This frustrates the customers and prevents them from shopping online.",
+    "my": "အွန်လိုင်းမှ ကုန်ပစ္စည်းဝယ်ယူရောင်းချခြင်းသည် အဆင်ပြေသော်လည်း ဆိုးကျိုးအချို့ ရှိသည်။ လူများကို အွန်လိုင်းမှ ပစ္စည်းဝယ်ရန် တွန့်ဆုတ်စေသော အကြောင်းရင်းများစွာ ရှိသည်။ အဓိကအကြောင်းရင်းမှာ အွန်လိုင်းဈေးဝယ်ခြင်းသည် ထင်ထားသလောက် မမြန်ဆန်ခြင်း ဖြစ်သည်။ ဈေးဝယ်သူ၏အိမ်တံခါးဝအထိ ပစ္စည်းပို့ဆောင်မှုသည် တစ်ခါတစ်ရံ နှောင့်နှေးနိုင်သည်။ ထိုအခြေအနေက ဈေးဝယ်သူများကို စိတ်ပျက်စေပြီး အွန်လိုင်းမှ မဝယ်လိုတော့အောင် ဖြစ်စေသည်။"
+   },
+   {
+    "t": "para",
+    "x": "Another significant reason is that online shopping lacks a touch-feel-try process. Online shopping cannot offer customers the opportunity to try on the clothes they buy. Therefore, a customer has to buy a product without close examination, that is, without having a chance to check it as we do in traditional stores. The electronic images of a product are sometimes misleading. The colour and appearance, in reality, may not be the same as the electronic images.",
+    "my": "အခြားအရေးကြီးသော အကြောင်းရင်းတစ်ခုမှာ အွန်လိုင်းဈေးဝယ်ခြင်း၌ ကိုယ်တိုင်ထိတွေ့ခြင်း၊ အထိအတွေ့ကို ခံစားစစ်ဆေးခြင်းနှင့် စမ်းသပ်ခြင်းတို့ မပြုလုပ်နိုင်ခြင်း ဖြစ်သည်။ ဈေးဝယ်သူများသည် ဝယ်ယူမည့်အဝတ်အစားများကို စမ်းဝတ်ခွင့် မရနိုင်ပါ။ ထို့ကြောင့် သမားရိုးကျဆိုင်များတွင်ကဲ့သို့ အသေးစိတ်စစ်ဆေးခွင့် မရဘဲ ကုန်ပစ္စည်းကို ဝယ်ယူရသည်။ ကုန်ပစ္စည်း၏ ဒစ်ဂျစ်တယ်ပုံများသည် တစ်ခါတစ်ရံ အထင်အမြင်လွဲစေနိုင်သည်။ လက်တွေ့ရှိ အရောင်နှင့် ပုံပန်းသဏ္ဌာန်သည် ဒစ်ဂျစ်တယ်ပုံများနှင့် တူညီချင်မှ တူညီမည် ဖြစ်သည်။"
+   },
+   {
+    "t": "para",
+    "x": "One serious drawback of online shopping is that it is unreliable. Sometimes, there is disappearance of shopping itself and online payments are not secure. The rate of cybercrimes has been increasing and the customers' credit card details and bank details have often been hacked. Customers have to be careful in revealing their personal information.",
+    "my": "အွန်လိုင်းဈေးဝယ်ခြင်း၏ ကြီးမားသော ဆိုးကျိုးတစ်ခုမှာ ယုံကြည်စိတ်ချရမှု မရှိခြင်း ဖြစ်သည်။ တစ်ခါတစ်ရံ အွန်လိုင်းဆိုင်ကိုယ်တိုင် ပျောက်ကွယ်သွားတတ်ပြီး အွန်လိုင်းငွေပေးချေမှုများသည်လည်း လုံခြုံမှု မရှိတတ်ပါ။ ဆိုက်ဘာရာဇဝတ်မှု ဖြစ်ပွားနှုန်း မြင့်တက်လာပြီး ဈေးဝယ်သူများ၏ အကြွေးဝယ်ကတ်နှင့် ဘဏ်ဆိုင်ရာအချက်အလက်များသည် မကြာခဏ ဖောက်ထွင်းခိုးယူခံရသည်။ ဈေးဝယ်သူများသည် မိမိတို့၏ ကိုယ်ရေးအချက်အလက်များကို ထုတ်ဖော်ပေးရာတွင် သတိထားရမည်။"
+   },
+   {
+    "t": "para",
+    "x": "Moreover, online shopping does not allow price negotiation between buyers and sellers. In stores and supermarkets, sales attendants provide attention to customers and help them in buying goods. Only a few online shopping marts provide a service for customers to talk to a sales representative. This lack of oral interaction makes online shopping less popular among shoppers. Some prefer traditional shopping to online shopping as traditional stores can provide enjoyable shopping experiences like fun, scent, and sounds. By going out shopping, they can have lots of fun, experiencing a showroom atmosphere, seeing smart sales attendants, and meeting other shoppers of various types.",
+    "my": "ထို့ပြင် အွန်လိုင်းဈေးဝယ်ခြင်းတွင် ဝယ်သူနှင့် ရောင်းသူအကြား ဈေးနှုန်းညှိနှိုင်းခွင့် မရှိပါ။ ဆိုင်များနှင့် စူပါမားကတ်များတွင် အရောင်းဝန်ထမ်းများက ဈေးဝယ်သူများကို ဂရုစိုက်၍ ကုန်ပစ္စည်းဝယ်ယူရာ၌ ကူညီပေးကြသည်။ အွန်လိုင်းဈေးဆိုင် အနည်းငယ်သာ အရောင်းကိုယ်စားလှယ်နှင့် စကားပြောနိုင်သည့် ဝန်ဆောင်မှုကို ပေးကြသည်။ ဤသို့ တိုက်ရိုက်ပြောဆိုဆက်ဆံမှု မရှိခြင်းသည် အွန်လိုင်းဈေးဝယ်ခြင်းကို ဈေးဝယ်သူများအကြား လူကြိုက်နည်းစေသည်။ သမားရိုးကျဆိုင်များက ပျော်ရွှင်မှု၊ အနံ့အသက်နှင့် အသံတို့ကို ခံစားနိုင်သည့် ဈေးဝယ်အတွေ့အကြုံများ ပေးနိုင်သောကြောင့် အချို့သူများသည် အွန်လိုင်းဈေးဝယ်ခြင်းထက် ဆိုင်သို့သွား၍ ဝယ်ခြင်းကို ပိုနှစ်သက်ကြသည်။ အပြင်ထွက် ဈေးဝယ်ခြင်းဖြင့် အရောင်းပြခန်း၏ အငွေ့အသက်ကို ခံစားခြင်း၊ သပ်ရပ်သော အရောင်းဝန်ထမ်းများကို တွေ့မြင်ခြင်းနှင့် အမျိုးမျိုးသော အခြားဈေးဝယ်သူများကို တွေ့ဆုံခြင်းတို့မှ ပျော်ရွှင်မှုများစွာ ရရှိနိုင်သည်။"
+   },
+   {
+    "t": "para",
+    "x": "Online shop owners can have more complaints than traditional shopkeepers when there is delay or damage during delivery and they may experience product returns, which can affect their profits. Moreover, as online shopping is a global business, online shop owners must compete with potentially thousands of other online shop owners that offer similar products and services.",
+    "my": "ပစ္စည်းပို့ဆောင်စဉ် နှောင့်နှေးမှု သို့မဟုတ် ပျက်စီးမှု ရှိပါက အွန်လိုင်းဆိုင်ရှင်များသည် သမားရိုးကျဆိုင်ရှင်များထက် တိုင်ကြားမှုများ ပိုမိုကြုံတွေ့နိုင်သည်။ ပစ္စည်းပြန်အပ်မှုများကိုလည်း ကြုံတွေ့နိုင်ပြီး ၎င်းတို့က အမြတ်အစွန်းကို ထိခိုက်စေနိုင်သည်။ ထို့ပြင် အွန်လိုင်းဈေးဝယ်ခြင်းသည် ကမ္ဘာတစ်ဝန်း လုပ်ကိုင်သည့် စီးပွားရေးဖြစ်သဖြင့် အွန်လိုင်းဆိုင်ရှင်များသည် အလားတူပစ္စည်းများနှင့် ဝန်ဆောင်မှုများ ပေးနေသော ထောင်ပေါင်းများစွာအထိ ရှိနိုင်သည့် အခြားအွန်လိုင်းဆိုင်ရှင်များနှင့် ယှဉ်ပြိုင်ရမည်။"
+   },
+   {
+    "t": "para",
+    "x": "Despite some disadvantages, the growth of online shopping will not be hindered as long as it brings benefits to both buyers and sellers.",
+    "my": "ဆိုးကျိုးအချို့ ရှိသော်လည်း အွန်လိုင်းဈေးဝယ်ခြင်းသည် ဝယ်သူနှင့် ရောင်းသူ နှစ်ဖက်စလုံးအတွက် အကျိုးရှိနေသရွေ့ ၎င်း၏တိုးတက်မှုကို တားဆီးနိုင်မည် မဟုတ်ပါ။"
    },
    {
     "t": "sub",
-    "x": "Comprehension"
+    "x": "Comprehension",
+    "my": "ဖတ်ရှုနားလည်မှု"
    },
    {
     "t": "ins",
-    "x": "A. Put the following in the correct column (Advantages vs. Disadvantages of Online Shopping):"
+    "x": "Put the following in the correct column.",
+    "my": "အောက်ပါအချက်များကို သက်ဆိုင်ရာကော်လံတွင် ထည့်ပါ။"
    },
    {
     "t": "line",
-    "x": "Advantages: Quick and easy transactions, easy price comparisons, convenience of shopping from home or work, 24/7 availability, lower prices/discounts, and no checkout queues."
+    "x": "Advantages of online shopping | Disadvantages of online shopping",
+    "my": "အွန်လိုင်းဈေးဝယ်ခြင်း၏ ကောင်းကျိုးများ | အွန်လိုင်းဈေးဝယ်ခြင်း၏ ဆိုးကျိုးများ"
    },
    {
-    "t": "line",
-    "x": "Disadvantages: Delayed deliveries, lack of interactivity, inability to closely inspect items or negotiate, loss of an enjoyable shopping experience, and potential personal data insecurity."
+    "t": "q",
+    "x": "1. Buying and selling online is quick and easy.",
+    "my": "အွန်လိုင်းမှ ဝယ်ယူရောင်းချခြင်းသည် လျင်မြန်လွယ်ကူသည်။"
+   },
+   {
+    "t": "q",
+    "x": "2. A comparison of the items we want to buy can be made.",
+    "my": "ဝယ်လိုသော ပစ္စည်းများကို နှိုင်းယှဉ်နိုင်သည်။"
+   },
+   {
+    "t": "q",
+    "x": "3. Shopping can be done from home or workplace.",
+    "my": "အိမ် သို့မဟုတ် အလုပ်ခွင်မှ ဈေးဝယ်နိုင်သည်။"
+   },
+   {
+    "t": "q",
+    "x": "4. Delivery of the product can be delayed.",
+    "my": "ပစ္စည်းပို့ဆောင်မှု နှောင့်နှေးနိုင်သည်။"
+   },
+   {
+    "t": "q",
+    "x": "5. Shopping is available anytime.",
+    "my": "အချိန်မရွေး ဈေးဝယ်နိုင်သည်။"
+   },
+   {
+    "t": "q",
+    "x": "6. Shopping lacks interactivity.",
+    "my": "ဈေးဝယ်ရာတွင် အပြန်အလှန်ဆက်ဆံမှု မရှိပါ။"
+   },
+   {
+    "t": "q",
+    "x": "7. A close investigation of the product we want to buy cannot be made.",
+    "my": "ဝယ်လိုသောပစ္စည်းကို အနီးကပ် အသေးစိတ် မစစ်ဆေးနိုင်ပါ။"
+   },
+   {
+    "t": "q",
+    "x": "8. Things can be bought at lower prices or with attractive discounts.",
+    "my": "ပစ္စည်းများကို ဈေးသက်သာစွာ သို့မဟုတ် ဆွဲဆောင်မှုရှိသော လျှော့ဈေးများဖြင့် ဝယ်ယူနိုင်သည်။"
+   },
+   {
+    "t": "q",
+    "x": "9. Enjoyable shopping experience can be lost.",
+    "my": "ပျော်ရွှင်ဖွယ် ဈေးဝယ်အတွေ့အကြုံကို လက်လွတ်ဆုံးရှုံးနိုင်သည်။"
+   },
+   {
+    "t": "q",
+    "x": "10. Negotiations between buyers and sellers cannot be made.",
+    "my": "ဝယ်သူနှင့် ရောင်းသူအကြား ညှိနှိုင်းမှု မပြုလုပ်နိုင်ပါ။"
+   },
+   {
+    "t": "q",
+    "x": "11. Our personal information can be insecure.",
+    "my": "ကျွန်ုပ်တို့၏ ကိုယ်ရေးအချက်အလက်များ မလုံခြုံနိုင်ပါ။"
+   },
+   {
+    "t": "q",
+    "x": "12. Customers do not need to queue at the checkouts.",
+    "my": "ဈေးဝယ်သူများသည် ငွေရှင်းကောင်တာများတွင် တန်းစီရန် မလိုပါ။"
    },
    {
     "t": "ins",
-    "x": "B. Give a full-sentence answer to each question below."
+    "x": "Give a full-sentence answer to each question below.",
+    "my": "အောက်ပါမေးခွန်းတစ်ခုစီကို ဝါကျအပြည့်အစုံဖြင့် ဖြေပါ။"
    },
    {
     "t": "q",
-    "x": "1. What is online shopping?"
+    "x": "1. What is online shopping?",
+    "my": "အွန်လိုင်းဈေးဝယ်ခြင်းဆိုသည်မှာ အဘယ်နည်း။"
    },
    {
     "t": "q",
-    "x": "2. How can we buy and sell things over the internet?"
+    "x": "2. How can we buy and sell things over the internet?",
+    "my": "အင်တာနက်မှတစ်ဆင့် ပစ္စည်းများကို မည်သို့ ဝယ်ယူရောင်းချနိုင်သနည်း။"
    },
    {
     "t": "q",
-    "x": "3. Where can customers see the products in online shopping?"
+    "x": "3. Where can customers see the products in online shopping?",
+    "my": "အွန်လိုင်းဈေးဝယ်ရာတွင် ဈေးဝယ်သူများသည် ကုန်ပစ္စည်းများကို မည်သည့်နေရာ၌ ကြည့်နိုင်သနည်း။"
    },
    {
     "t": "q",
-    "x": "4. Why do online sellers give discounts to their customers?"
+    "x": "4. Why do online sellers give discounts to their customers?",
+    "my": "အွန်လိုင်းရောင်းချသူများသည် ဈေးဝယ်သူများကို အဘယ်ကြောင့် လျှော့ဈေးပေးကြသနည်း။"
    },
    {
     "t": "q",
-    "x": "5. What is \"touch-feel-try process'?"
+    "x": "5. What is 'touch-feel-try process'?",
+    "my": "ထိတွေ့၊ ခံစားစစ်ဆေး၊ စမ်းသပ်ခြင်းလုပ်ငန်းစဉ်ဆိုသည်မှာ အဘယ်နည်း။"
    },
    {
     "t": "q",
-    "x": "6. What happens when cybercrimes occur?"
+    "x": "6. What happens when cybercrimes occur?",
+    "my": "ဆိုက်ဘာရာဇဝတ်မှုများ ဖြစ်ပွားသောအခါ မည်သို့ ဖြစ်ပျက်သနည်း။"
    },
    {
     "t": "q",
-    "x": "7. How can we have fun by going shopping?"
+    "x": "7. How can we have fun by going shopping?",
+    "my": "အပြင်ထွက် ဈေးဝယ်ခြင်းဖြင့် မည်သို့ ပျော်ရွှင်မှု ရရှိနိုင်သနည်း။"
    },
    {
     "t": "q",
-    "x": "8. What mode do you like to use to buy things you want - traditional or electronic? Why?"
-   },
-   {
-    "t": "line",
-    "x": "9. Among the disadvantages of online shopping mentioned in the passage, which do you"
-   },
-   {
-    "t": "line",
-    "x": "think is the most serious? Why?"
+    "x": "8. What mode do you like to use to buy things you want – traditional or electronic? Why?",
+    "my": "မိမိလိုချင်သောပစ္စည်းများကို ဝယ်ယူရာတွင် သမားရိုးကျနည်းလမ်းနှင့် အီလက်ထရွန်နစ်နည်းလမ်းတို့အနက် မည်သည့်နည်းလမ်းကို နှစ်သက်သနည်း။ အဘယ်ကြောင့်နည်း။"
    },
    {
     "t": "q",
-    "x": "10. Do you think online shopping will completely replace traditional shopping in the future?"
+    "x": "9. Among the disadvantages of online shopping mentioned in the passage, which do you think is the most serious? Why?",
+    "my": "စာပိုဒ်တွင် ဖော်ပြထားသော အွန်လိုင်းဈေးဝယ်ခြင်း၏ ဆိုးကျိုးများအနက် မည်သည့်အချက်သည် အဆိုးရွားဆုံးဟု သင်ထင်သနည်း။ အဘယ်ကြောင့်နည်း။"
    },
    {
-    "t": "line",
-    "x": "Why?"
+    "t": "q",
+    "x": "10. Do you think online shopping will completely replace traditional shopping in the future? Why?",
+    "my": "အနာဂတ်တွင် အွန်လိုင်းဈေးဝယ်ခြင်းသည် သမားရိုးကျဈေးဝယ်ခြင်းကို လုံးဝ အစားထိုးမည်ဟု သင်ထင်ပါသလား။ အဘယ်ကြောင့်နည်း။"
    }
   ]
  },
@@ -114,76 +215,94 @@
   "title": "Vocabulary",
   "blocks": [
    {
-    "t": "line",
-    "x": "Expressions Related to Shopping"
+    "t": "sub",
+    "x": "Expressions Related to Shopping",
+    "my": "ဈေးဝယ်ခြင်းနှင့် သက်ဆိုင်သော အသုံးအနှုန်းများ"
    },
    {
     "t": "line",
-    "x": "In pairs, complete the following sentences with the words given below."
+    "x": "customers",
+    "my": "ဈေးဝယ်သူများ၊ ဖောက်သည်များ"
    },
    {
     "t": "line",
-    "x": "customers"
+    "x": "finances",
+    "my": "ငွေကြေးကိစ္စများ"
    },
    {
     "t": "line",
-    "x": "finances"
+    "x": "negotiation",
+    "my": "ညှိနှိုင်းခြင်း"
    },
    {
     "t": "line",
-    "x": "negotiation"
+    "x": "services",
+    "my": "ဝန်ဆောင်မှုများ"
    },
    {
     "t": "line",
-    "x": "services"
+    "x": "discounts",
+    "my": "လျှော့ဈေးများ"
    },
    {
     "t": "line",
-    "x": "discounts"
+    "x": "appointment",
+    "my": "ချိန်းဆိုမှု"
    },
    {
     "t": "line",
-    "x": "appointment"
+    "x": "problems",
+    "my": "ပြဿနာများ"
    },
    {
     "t": "line",
-    "x": "problems"
+    "x": "transaction",
+    "my": "ငွေပေးငွေယူ၊ အရောင်းအဝယ်လုပ်ဆောင်မှု"
    },
    {
-    "t": "line",
-    "x": "transaction"
+    "t": "ins",
+    "x": "In pairs, complete the following sentences with the words given below.",
+    "my": "နှစ်ယောက်တစ်တွဲ လုပ်ဆောင်ပါ။ ပေးထားသောစကားလုံးများဖြင့် အောက်ပါဝါကျများကို ဖြည့်စွက်ပါ။"
    },
    {
     "t": "q",
-    "x": "Online ------ is a payment method in which the transfer of money happens online."
+    "x": "1. Online ______ is a payment method in which the transfer of money happens online.",
+    "my": "အွန်လိုင်း ______ သည် အင်တာနက်မှတစ်ဆင့် ငွေလွှဲပြောင်းသည့် ငွေပေးချေမှုနည်းလမ်းတစ်ခု ဖြစ်သည်။"
    },
    {
     "t": "q",
-    "x": "The boss made an ------with his business partners to talk about a new product."
+    "x": "2. The boss made a/an ______ with his business partners to talk about a new product.",
+    "my": "အကြီးအကဲသည် ကုန်ပစ္စည်းသစ်တစ်ခုအကြောင်း ဆွေးနွေးရန် စီးပွားဖက်များနှင့် ______ တစ်ခု ပြုလုပ်ခဲ့သည်။"
    },
    {
     "t": "q",
-    "x": "Customers who buy things for fifty thousand kyats and above will get special-----."
+    "x": "3. Customers who buy things for fifty thousand kyats and above will get special ______.",
+    "my": "ကျပ်ငါးသောင်းနှင့်အထက် ဝယ်ယူသော ဈေးဝယ်သူများသည် အထူး ______ ရရှိမည်။"
    },
    {
     "t": "q",
-    "x": "A friendly atmosphere and personal service offered by the hotel attract----."
+    "x": "4. A friendly atmosphere and personal service offered by the hotel attract ______.",
+    "my": "ဟိုတယ်၏ ဖော်ရွေသောပတ်ဝန်းကျင်နှင့် တစ်ဦးချင်းဝန်ဆောင်မှုတို့က ______ ကို ဆွဲဆောင်သည်။"
    },
    {
     "t": "q",
-    "x": "One of the common ----of online shopping is that consumers do not know how to make the payment."
+    "x": "5. One of the common ______ of online shopping is that consumers do not know how to make the payment.",
+    "my": "အွန်လိုင်းဈေးဝယ်ခြင်း၏ အဖြစ်များသော ______ များအနက် တစ်ခုမှာ ဝယ်ယူသူများက ငွေပေးချေနည်းကို မသိခြင်း ဖြစ်သည်။"
    },
    {
     "t": "q",
-    "x": "Our company offers excellent ----to all customers."
+    "x": "6. Our company offers excellent ______ to all customers.",
+    "my": "ကျွန်ုပ်တို့ကုမ္ပဏီသည် ဈေးဝယ်သူအားလုံးအား အလွန်ကောင်းမွန်သော ______ ကို ပေးသည်။"
    },
    {
     "t": "q",
-    "x": "Prices of goods sold in supermarkets are fixed. They do not allow price----."
+    "x": "7. Prices of goods sold in supermarkets are fixed. They do not allow price ______.",
+    "my": "စူပါမားကတ်များတွင် ရောင်းသော ကုန်ပစ္စည်းများ၏ ဈေးနှုန်းကို အသေသတ်မှတ်ထားသည်။ ဈေးနှုန်း ______ ကို ခွင့်မပြုပါ။"
    },
    {
     "t": "q",
-    "x": "Nowadays, large companies use an online system to manage their-----."
+    "x": "8. Nowadays, large companies use an online system to manage their ______.",
+    "my": "ယနေ့ခေတ်တွင် ကုမ္ပဏီကြီးများသည် မိမိတို့၏ ______ ကို စီမံရန် အွန်လိုင်းစနစ်ကို အသုံးပြုကြသည်။"
    }
   ]
  },
@@ -192,510 +311,600 @@
   "title": "Grammar",
   "blocks": [
    {
-    "t": "line",
-    "x": "Present Simple, Present Continuous, Present Perfect Simple and Present"
+    "t": "h",
+    "x": "Present Simple",
+    "my": "ရိုးရိုးပစ္စုပ္ပန်ကာလ"
    },
    {
     "t": "line",
-    "x": "Perfect Continuous"
+    "x": "General truths.",
+    "my": "ယေဘုယျအမှန်တရားများကို ပြောဆိုရေးသားရန် အသုံးပြုသည်။"
    },
    {
     "t": "line",
-    "x": "The Present Simple Tense is used to speak or write about:"
+    "x": "e.g. Gases expand when they are heated.",
+    "my": "ဓာတ်ငွေ့များသည် အပူပေးသောအခါ ပြန့်ကားလာသည်။"
    },
    {
     "t": "line",
-    "x": "• general truths."
+    "x": "e.g. The moon does not shine by itself; it reflects the light from the sun.",
+    "my": "လသည် မိမိဘာသာ အလင်းမထွက်ပါ။ နေ၏အလင်းကို ပြန်ဟပ်ခြင်း ဖြစ်သည်။"
    },
    {
     "t": "line",
-    "x": "e.g. Gases expand when they are heated."
+    "x": "e.g. What temperature does water boil at?",
+    "my": "မည်သည့်အပူချိန်တွင် ရေ ဆူသနည်း။"
    },
    {
     "t": "line",
-    "x": "The moon does not shine by itself; it reflects the light from the sun."
+    "x": "Habitual activities of the present.",
+    "my": "လက်ရှိအချိန်တွင် အလေ့အထအဖြစ် လုပ်ဆောင်မှုများကို ဖော်ပြရန် အသုံးပြုသည်။"
    },
    {
     "t": "line",
-    "x": "What temperature does water boil at?"
+    "x": "e.g. Grandpa usually goes for a walk in the evenings.",
+    "my": "အဘိုးသည် ညနေခင်းများတွင် လမ်းလျှောက်ထွက်လေ့ရှိသည်။"
    },
    {
     "t": "line",
-    "x": "• habitual activities of the present."
+    "x": "e.g. Our family doesn't often go out for meal.",
+    "my": "ကျွန်ုပ်တို့မိသားစုသည် အပြင်ထွက် စားသောက်လေ့ သိပ်မရှိပါ။"
    },
    {
     "t": "line",
-    "x": "e.g. Grandpa usually goes for a walk in the evenings."
+    "x": "e.g. Do your friends usually go to concerts?",
+    "my": "သင့်သူငယ်ချင်းများသည် ဂီတဖျော်ဖြေပွဲများသို့ သွားလေ့ရှိပါသလား။"
    },
    {
     "t": "line",
-    "x": "Our family doesn't often go out for meal."
+    "x": "States or conditions at the present time.",
+    "my": "လက်ရှိအချိန်ရှိ အခြေအနေများကို ဖော်ပြရန် အသုံးပြုသည်။"
    },
    {
     "t": "line",
-    "x": "Do your friends usually go to concerts?"
+    "x": "e.g. My brother plays for Yangon United FC.",
+    "my": "ကျွန်ုပ်၏အစ်ကို သို့မဟုတ် ညီသည် ရန်ကုန်ယူနိုက်တက် ဘောလုံးအသင်းအတွက် ကစားသည်။"
    },
    {
     "t": "line",
-    "x": "• states or conditions at the present time."
+    "x": "e.g. His duties do not include answering phone calls.",
+    "my": "သူ၏တာဝန်များတွင် ဖုန်းဖြေဆိုခြင်း မပါဝင်ပါ။"
    },
    {
     "t": "line",
-    "x": "e.g. My brother plays for Yangon United FC."
+    "x": "e.g. Does this coat belong to you?",
+    "my": "ဤအင်္ကျီသည် သင့်အင်္ကျီလား။"
    },
    {
     "t": "line",
-    "x": "His duties do not include answering phone calls."
+    "x": "Events which are part of a timetable, a regular schedule or something similar.",
+    "my": "အချိန်ဇယား သို့မဟုတ် ပုံမှန်အစီအစဉ်တွင် ပါဝင်သော ဖြစ်ရပ်များကို ဖော်ပြရန် အသုံးပြုသည်။"
    },
    {
     "t": "line",
-    "x": "Does this coat belong to you?"
+    "x": "e.g. The train leaves at 6 a.m. tomorrow.",
+    "my": "ရထားသည် မနက်ဖြန် နံနက် ၆ နာရီတွင် ထွက်မည်။"
    },
    {
     "t": "line",
-    "x": "• events which are part of a timetable, a regular schedule or something similar."
+    "x": "e.g. When does the train leave for Mandalay?",
+    "my": "မန္တလေးသို့သွားမည့် ရထားသည် မည်သည့်အချိန်တွင် ထွက်သနည်း။"
+   },
+   {
+    "t": "h",
+    "x": "Present Continuous",
+    "my": "ပစ္စုပ္ပန်ဆက်လက်ကာလ"
    },
    {
     "t": "line",
-    "x": "e.g. The train leaves at 6 a.m. tomorrow."
+    "x": "Actions that are going on at the moment of speaking.",
+    "my": "ပြောဆိုနေချိန်၌ ဖြစ်ပေါ်နေသော လုပ်ဆောင်ချက်များကို ဖော်ပြရန် အသုံးပြုသည်။"
    },
    {
     "t": "line",
-    "x": "When does the train leave for Mandalay?"
+    "x": "e.g. Look! The sun is shining.",
+    "my": "ကြည့်ပါ။ နေရောင် လင်းနေသည်။"
    },
    {
     "t": "line",
-    "x": "The Present Continuous Tense is used when we wish to speak or write about:"
+    "x": "e.g. He is talking to his friend; he isn't listening to the teacher.",
+    "my": "သူသည် သူငယ်ချင်းနှင့် စကားပြောနေသည်။ ဆရာပြောသည်ကို နားထောင်နေခြင်း မရှိပါ။"
    },
    {
     "t": "line",
-    "x": "• actions that are going on at the moment of speaking."
+    "x": "e.g. Why are you making so much noise?",
+    "my": "သင် ဘာကြောင့် ဒီလောက်ဆူညံနေသနည်း။"
    },
    {
     "t": "line",
-    "x": "e.g. Look! The sun is shining."
+    "x": "Actions that will happen in the near future or future arrangements.",
+    "my": "မကြာမီ ဖြစ်ပေါ်မည့် လုပ်ဆောင်ချက်များ သို့မဟုတ် စီစဉ်ထားသော အနာဂတ်ကိစ္စများကို ဖော်ပြရန် အသုံးပြုသည်။"
    },
    {
     "t": "line",
-    "x": "He is talking to his friend; he isn't listening to the teacher."
+    "x": "e.g. We are spending next summer in Kalaw.",
+    "my": "ကျွန်ုပ်တို့သည် လာမည့်နွေရာသီကို ကလောတွင် ကုန်ဆုံးရန် စီစဉ်ထားသည်။"
    },
    {
     "t": "line",
-    "x": "Why are you making so much noise?"
+    "x": "e.g. Kyaw Thet is not coming home this week.",
+    "my": "ကျော်သက်သည် ယခုအပတ် အိမ်ပြန်လာမည် မဟုတ်ပါ။"
    },
    {
     "t": "line",
-    "x": "• actions that will happen in the near future or future arrangements."
+    "x": "e.g. When are you leaving the hotel?",
+    "my": "သင် ဟိုတယ်မှ မည်သည့်အချိန်တွင် ထွက်ခွာမည်နည်း။"
    },
    {
     "t": "line",
-    "x": "e.g. We are spending next summer in Kalaw."
+    "x": "Repeated actions (with adverbs like always) that are annoying.",
+    "my": "စိတ်အနှောင့်အယှက်ဖြစ်စေသော ထပ်ခါတလဲလဲ လုပ်ဆောင်မှုများကို always ကဲ့သို့ ကြိယာဝိသေသနများနှင့် တွဲ၍ ဖော်ပြသည်။"
    },
    {
     "t": "line",
-    "x": "Kyaw Thet is not coming home this week."
+    "x": "e.g. Pa Pa is always asking silly questions.",
+    "my": "ပါပါသည် အဓိပ္ပာယ်မရှိသော မေးခွန်းများကို အမြဲမေးနေသည်။"
    },
    {
     "t": "line",
-    "x": "When are you leaving the hotel?"
+    "x": "e.g. Why are they always coming around here to borrow things?",
+    "my": "သူတို့သည် ပစ္စည်းငှားရန် ဒီနေရာကို ဘာကြောင့် အမြဲလာနေကြသနည်း။"
+   },
+   {
+    "t": "h",
+    "x": "Present Perfect Simple",
+    "my": "ပစ္စုပ္ပန်ပြီးစီးကာလ"
    },
    {
     "t": "line",
-    "x": "* repeated actions (with adverbs like always) that are annoying."
+    "x": "Completion of an activity.",
+    "my": "လုပ်ဆောင်ချက်တစ်ခု ပြီးစီးမှုကို ဖော်ပြရန် အသုံးပြုသည်။"
    },
    {
     "t": "line",
-    "x": "e.g. Pa Pa is always asking silly questions."
+    "x": "e.g. I have read three books so far this month.",
+    "my": "ယခုလအတွင်း ယခုအချိန်အထိ ကျွန်ုပ်သည် စာအုပ်သုံးအုပ် ဖတ်ပြီးပြီ။"
    },
    {
     "t": "line",
-    "x": "Why are they always coming around here to borrow things?"
+    "x": "e.g. She has not sent the parcel yet.",
+    "my": "သူမသည် ပါဆယ်ထုပ်ကို မပို့ရသေးပါ။"
    },
    {
     "t": "line",
-    "x": "The Present Perfect Tense is used to speak or write about:"
+    "x": "e.g. Have you booked air tickets for the trip?",
+    "my": "ခရီးစဉ်အတွက် လေယာဉ်လက်မှတ်များ ကြိုတင်ဝယ်ထားပြီးပြီလား။"
    },
    {
     "t": "line",
-    "x": "• completion of an activity:"
+    "x": "Experience having had at the moment of expression.",
+    "my": "ပြောဆိုချိန်အထိ ရရှိဖူးသော အတွေ့အကြုံများကို ဖော်ပြရန် အသုံးပြုသည်။"
    },
    {
     "t": "line",
-    "x": "eg. / have read three books so far this month."
+    "x": "e.g. I have been to Thailand twice.",
+    "my": "ကျွန်ုပ်သည် ထိုင်းနိုင်ငံသို့ နှစ်ကြိမ် ရောက်ဖူးသည်။"
    },
    {
     "t": "line",
-    "x": "She has not sent the parcel yet."
+    "x": "e.g. She has never tried a seafood cocktail.",
+    "my": "သူမသည် ပင်လယ်စာကော့တေးကို တစ်ခါမျှ မစားဖူးပါ။"
    },
    {
     "t": "line",
-    "x": "Have you booked air tickets for the trip?"
+    "x": "e.g. Have you ever sailed across the Andaman Sea?",
+    "my": "သင်သည် ကပ္ပလီပင်လယ်ကို သင်္ဘောဖြင့် ဖြတ်သန်းဖူးပါသလား။"
    },
    {
     "t": "line",
-    "x": "• experience having had at the moment of expression."
+    "x": "Continuity of an activity which began sometime in the past but continues up to the moment of expression.",
+    "my": "အတိတ်တစ်ချိန်က စတင်ခဲ့ပြီး ပြောဆိုချိန်အထိ ဆက်လက်ဖြစ်ပေါ်နေမှုကို ဖော်ပြရန် အသုံးပြုသည်။"
    },
    {
     "t": "line",
-    "x": "eg. I have been to Thailand twice."
+    "x": "e.g. I have lived in Yangon for more than 15 years.",
+    "my": "ကျွန်ုပ်သည် ရန်ကုန်တွင် နေထိုင်လာသည်မှာ ၁၅ နှစ်ကျော်ပြီ။"
    },
    {
     "t": "line",
-    "x": "She has never tried a seafood cocktail."
+    "x": "e.g. The two friends have not talked to each other since their quarrel.",
+    "my": "သူငယ်ချင်းနှစ်ယောက်သည် ရန်ဖြစ်ခဲ့ချိန်မှစ၍ အချင်းချင်း စကားမပြောကြတော့ပါ။"
    },
    {
     "t": "line",
-    "x": "Have you ever sailed across the Andaman Sea?"
+    "x": "e.g. How long has Uncle Zaw been in that job?",
+    "my": "ဦးလေးဇော်သည် ထိုအလုပ်ကို လုပ်လာသည်မှာ ဘယ်လောက်ကြာပြီလဲ။"
+   },
+   {
+    "t": "h",
+    "x": "Present Perfect Continuous",
+    "my": "ပစ္စုပ္ပန်ပြီးစီးဆက်လက်ကာလ"
    },
    {
     "t": "line",
-    "x": "• continuity of an activity which began sometime in the past but continues up to the moment"
+    "x": "Something that has been in progress throughout a period.",
+    "my": "အချိန်ကာလတစ်လျှောက် ဆက်တိုက်လုပ်ဆောင်လာမှုကို ဖော်ပြရန် အသုံးပြုသည်။"
    },
    {
     "t": "line",
-    "x": "of expression."
+    "x": "e.g. Mom is still in the kitchen; she has been cooking all morning.",
+    "my": "အမေသည် မီးဖိုချောင်ထဲတွင် ရှိနေဆဲ ဖြစ်သည်။ သူမသည် တစ်မနက်လုံး ချက်ပြုတ်နေခဲ့သည်။"
    },
    {
     "t": "line",
-    "x": "e.g. I have lived in Yangon for more than 15 years."
+    "x": "e.g. What have you been doing these days?",
+    "my": "ယခုရက်ပိုင်းတွင် သင် ဘာတွေလုပ်နေသနည်း။"
    },
    {
     "t": "line",
-    "x": "The two friends have not talked to each other since their quarrel."
+    "x": "Continuity of an activity which began sometime in the past but continues up to the present.",
+    "my": "အတိတ်တစ်ချိန်က စတင်ခဲ့ပြီး ယခုအထိ ဆက်လက်လုပ်ဆောင်နေမှုကို ဖော်ပြရန် အသုံးပြုသည်။"
    },
    {
     "t": "line",
-    "x": "How long has Uncle Zaw been in that job?"
+    "x": "e.g. U Min Maung has been working at that company since 2010.",
+    "my": "ဦးမင်းမောင်သည် ထိုကုမ္ပဏီတွင် ၂၀၁၀ ခုနှစ်မှစ၍ အလုပ်လုပ်လာခဲ့သည်။"
    },
    {
     "t": "line",
-    "x": "The Present Perfect Continuous Tense is used to speak or write about:"
+    "x": "e.g. How long have you been sitting here?",
+    "my": "သင် ဒီနေရာတွင် ထိုင်နေသည်မှာ ဘယ်လောက်ကြာပြီလဲ။"
+   },
+   {
+    "t": "h",
+    "x": "'Must' and 'Have to'",
+    "my": "'Must' နှင့် 'Have to'"
    },
    {
     "t": "line",
-    "x": "•something that has been in progress throughout a period."
+    "x": "'Must' and 'have to' are used to speak or write about what is necessary for someone to do.",
+    "my": "တစ်ဦးတစ်ယောက် လုပ်ဆောင်ရန် လိုအပ်သည့်အရာကို ပြောဆိုရေးသားရာတွင် must နှင့် have to ကို အသုံးပြုသည်။"
    },
    {
     "t": "line",
-    "x": "e.g. Mom is still in the kitchen; she has been cooking all morning."
+    "x": "'Must' can refer to the present or the future.",
+    "my": "Must သည် ပစ္စုပ္ပန် သို့မဟုတ် အနာဂတ်ကို ရည်ညွှန်းနိုင်သည်။"
    },
    {
     "t": "line",
-    "x": "What have you been doing these days?"
+    "x": "'Must' and 'have to' can be used in place of each other but 'have to' is often used to refer to outside authority.",
+    "my": "Must နှင့် have to ကို အပြန်အလှန် အစားထိုးအသုံးပြုနိုင်သော်လည်း ပြင်ပစည်းမျဉ်း သို့မဟုတ် အာဏာပိုင်ညွှန်ကြားချက်ကြောင့် မဖြစ်မနေ လုပ်ရခြင်းကို ဖော်ပြရာတွင် have to ကို အသုံးများသည်။"
    },
    {
     "t": "line",
-    "x": "continuity of an activity (which began sometime in the past but continues up to the present)."
+    "x": "The past tense of 'have to' is 'had to'.",
+    "my": "Have to ၏ အတိတ်ကာလပုံစံမှာ had to ဖြစ်သည်။"
    },
    {
     "t": "line",
-    "x": "e.g. U Min Maung has been working at that company since 2010."
+    "x": "e.g. All visitors must report to reception on arrival.",
+    "my": "ဧည့်သည်အားလုံးသည် ရောက်ရှိချိန်တွင် ဧည့်ကြိုဌာနသို့ သတင်းပို့ရမည်။"
    },
    {
     "t": "line",
-    "x": "How long have you been sitting here?"
+    "x": "e.g. You mustn't stay out late.",
+    "my": "သင်သည် အပြင်တွင် ညနက်သည်အထိ မနေရပါ။"
    },
    {
     "t": "line",
-    "x": "Note:"
+    "x": "e.g. We have to obey school rules.",
+    "my": "ကျွန်ုပ်တို့သည် ကျောင်းစည်းကမ်းများကို လိုက်နာရမည်။"
    },
    {
     "t": "line",
-    "x": "• Some verbs like learn\", 'lie\", live\", 'rain\", 'sit, 'sleep', 'stand\", 'study, wait, etc. naturally suggest"
+    "x": "e.g. You don't have to wear casual clothes on special occasions.",
+    "my": "အထူးအခါသမယများတွင် ပေါ့ပေါ့ပါးပါး နေ့စဉ်ဝတ်စုံကို ဝတ်ရန် မလိုပါ။"
    },
    {
     "t": "line",
-    "x": "continuity:"
+    "x": "e.g. Does everyone have to come to the assembly?",
+    "my": "လူတိုင်း စုဝေးပွဲသို့ လာရမည်လား။"
    },
    {
     "t": "line",
-    "x": ". The Present Perfect and the Present Perfect Continuous"
+    "x": "e.g. Knowing that she had diabetes, she had to change her lifestyle and eating habits.",
+    "my": "သူမတွင် ဆီးချိုရောဂါရှိကြောင်း သိရသောအခါ နေထိုင်မှုပုံစံနှင့် စားသောက်မှုအလေ့အထများကို ပြောင်းလဲခဲ့ရသည်။"
    },
    {
     "t": "line",
-    "x": "e.g. I have painted this room. Doesn't it look better? (The task is definitely finished.)"
+    "x": "e.g. My father did not have to take the university entrance examination when he went to university.",
+    "my": "ကျွန်ုပ်၏ဖခင်သည် တက္ကသိုလ်တက်စဉ်က တက္ကသိုလ်ဝင်ခွင့်စာမေးပွဲကို ဖြေဆိုရန် မလိုခဲ့ပါ။"
    },
    {
     "t": "line",
-    "x": "I have been painting this room. It will look good when it is finished. (The task is unfinished.)"
+    "x": "e.g. Did she have to wear a uniform at her previous job?",
+    "my": "သူမ၏ ယခင်အလုပ်တွင် ယူနီဖောင်း ဝတ်ခဲ့ရသလား။"
+   },
+   {
+    "t": "line",
+    "x": "Some verbs like 'learn', 'lie', 'live', 'rain', 'sit', 'sleep', 'stand', 'study', 'wait', etc. naturally suggest continuity.",
+    "my": "learn၊ lie၊ live၊ rain၊ sit၊ sleep၊ stand၊ study၊ wait စသည့် ကြိယာများသည် သဘာဝအားဖြင့် ဆက်လက်ဖြစ်ပေါ်မှုသဘောကို ဖော်ပြသည်။"
+   },
+   {
+    "t": "line",
+    "x": "The Present Perfect and the Present Perfect Continuous are different in meaning.",
+    "my": "Present Perfect နှင့် Present Perfect Continuous တို့သည် အဓိပ္ပာယ်အလေးပေးပုံ ကွဲပြားသည်။"
+   },
+   {
+    "t": "line",
+    "x": "e.g. I have painted this room. Doesn't it look better?",
+    "my": "ကျွန်ုပ် ဤအခန်းကို ဆေးသုတ်ပြီးပြီ။ ပိုကြည့်ကောင်းလာတယ် မဟုတ်လား။"
+   },
+   {
+    "t": "line",
+    "x": "The task is definitely finished.",
+    "my": "လုပ်ငန်းသည် သေချာပေါက် ပြီးစီးသွားပြီ ဖြစ်သည်။"
+   },
+   {
+    "t": "line",
+    "x": "e.g. I have been painting this room. It will look good when it is finished.",
+    "my": "ကျွန်ုပ် ဤအခန်းကို ဆေးသုတ်နေခဲ့သည်။ ပြီးစီးသွားသောအခါ ကြည့်ကောင်းလိမ့်မည်။"
+   },
+   {
+    "t": "line",
+    "x": "The task is unfinished.",
+    "my": "လုပ်ငန်းသည် မပြီးစီးသေးပါ။"
    },
    {
     "t": "ins",
-    "x": "A. Complete each blank with the correct present tense of the verb given in brackets."
+    "x": "Complete each blank with the correct present tense of the verb given in brackets.",
+    "my": "ကွင်းအတွင်းရှိ ကြိယာကို မှန်ကန်သော ပစ္စုပ္ပန်ကာလပုံစံသို့ ပြောင်း၍ ကွက်လပ်တစ်ခုစီကို ဖြည့်ပါ။"
    },
    {
     "t": "q",
-    "x": "How many glasses of water ___________ (you, drink) a day?"
+    "x": "1. How many glasses of water ______ (you, drink) a day?",
+    "my": "သင် တစ်နေ့လျှင် ရေဘယ်နှခွက် ______ (you, drink) သနည်း။"
    },
    {
     "t": "q",
-    "x": "___________ (you, take) any vitamins at the moment?"
+    "x": "2. ______ (you, take) any vitamins at the moment?",
+    "my": "ယခုအချိန်တွင် သင် ဗီတာမင်ဆေးတစ်မျိုးမျိုး ______ (you, take) သလား။"
    },
    {
     "t": "q",
-    "x": "Po Thar Htoo is tired now; he ___________ (dig) in the garden all day."
+    "x": "3. Po Thar Htoo is tired now; he ______ (dig) in the garden all day.",
+    "my": "ဖိုးသားထူးသည် ယခု ပင်ပန်းနေပြီ။ သူသည် ဥယျာဉ်ထဲတွင် တစ်နေ့လုံး မြေ ______ (dig)။"
    },
    {
     "t": "q",
-    "x": "My uncle is working at a foreign company. Up to now, he ___________ (visit) twenty countries."
+    "x": "4. My uncle is working at a foreign company. Up to now, he ______ (visit) twenty countries.",
+    "my": "ကျွန်ုပ်၏ဦးလေးသည် နိုင်ငံခြားကုမ္ပဏီတစ်ခုတွင် အလုပ်လုပ်နေသည်။ ယခုအချိန်အထိ သူသည် နိုင်ငံနှစ်ဆယ်သို့ ______ (visit)။"
    },
    {
     "t": "q",
-    "x": "Someone ___________ (always, leave) the window open."
+    "x": "5. Someone ______ (always, leave) the window open.",
+    "my": "တစ်ယောက်ယောက်သည် ပြတင်းပေါက်ကို အမြဲ ဖွင့်လျက် ______ (always, leave)။"
    },
    {
     "t": "q",
-    "x": "How long ___________ (your brother, be) in hospital?"
+    "x": "6. How long ______ (your brother, be) in hospital?",
+    "my": "သင့်အစ်ကို သို့မဟုတ် ညီသည် ဆေးရုံတွင် ______ (your brother, be) သည်မှာ ဘယ်လောက်ကြာပြီလဲ။"
    },
    {
     "t": "q",
-    "x": "We ___________ (build) this garage ourselves and now it is ready to be used."
+    "x": "7. We ______ (build) this garage ourselves and now it is ready to be used.",
+    "my": "ကျွန်ုပ်တို့သည် ဤကားဂိုဒေါင်ကို ကိုယ်တိုင် ______ (build) ပြီး ယခု အသုံးပြုရန် အသင့်ဖြစ်နေပြီ။"
    },
    {
     "t": "q",
-    "x": "Doctors ___________ (do) research on the new disease and hope to finish it in the next two months."
+    "x": "8. Doctors ______ (do) research on the new disease and hope to finish it in the next two months.",
+    "my": "ဆရာဝန်များသည် ရောဂါသစ်အကြောင်း သုတေသန ______ (do) ပြီး လာမည့်နှစ်လအတွင်း ပြီးစီးရန် မျှော်လင့်ထားကြသည်။"
    },
    {
     "t": "q",
-    "x": "What time ___________ (the first train, leave)?"
+    "x": "9. What time ______ (the first train, leave)?",
+    "my": "ပထမရထားသည် ဘယ်အချိန် ______ (the first train, leave) သနည်း။"
    },
    {
     "t": "q",
-    "x": "My hands are dirty because I ___________ (garden) the whole morning."
-   },
-   {
-    "t": "line",
-    "x": "'Must' and 'Have to'"
-   },
-   {
-    "t": "line",
-    "x": "'Must' and 'have to' are used to speak or write about what is necessary for someone to do."
-   },
-   {
-    "t": "line",
-    "x": "'Must' can refer to the present or the future."
-   },
-   {
-    "t": "line",
-    "x": "'Must' and 'have to' can be used in place of each other but 'have to' is often used to refer to outside authority."
-   },
-   {
-    "t": "line",
-    "x": "The past tense of 'have to' is 'had to'."
-   },
-   {
-    "t": "line",
-    "x": "e.g. All visitors must report to reception on arrival."
-   },
-   {
-    "t": "line",
-    "x": "You mustn't stay out late."
-   },
-   {
-    "t": "line",
-    "x": "We have to obey school rules."
-   },
-   {
-    "t": "line",
-    "x": "You don't have to wear casual clothes on special occasions."
-   },
-   {
-    "t": "line",
-    "x": "Does everyone have to come to the assembly?"
-   },
-   {
-    "t": "line",
-    "x": "Knowing that she had diabetes, she had to change her lifestyle and eating habits."
-   },
-   {
-    "t": "line",
-    "x": "My father did not have to take the university entrance examination when he went to university."
-   },
-   {
-    "t": "line",
-    "x": "Did she have to wear a uniform at her previous job?"
+    "x": "10. My hands are dirty because I ______ (garden) the whole morning.",
+    "my": "ကျွန်ုပ်သည် တစ်မနက်လုံး ဥယျာဉ်အလုပ် ______ (garden) သောကြောင့် လက်များ ညစ်ပေနေသည်။"
    },
    {
     "t": "ins",
-    "x": "B. Write 'must', 'mustn't', 'have to', 'had to', 'don't have to', or 'didn't have to'."
+    "x": "Write 'must', 'mustn't', 'have to', 'had to', 'don't have to', or 'didn't have to'.",
+    "my": "must၊ mustn't၊ have to၊ had to၊ don't have to သို့မဟုတ် didn't have to ကို ရေးပါ။"
    },
    {
-    "t": "line",
-    "x": "It is necessary to do this.                                          ........................"
+    "t": "q",
+    "x": "1. It is necessary to do this.",
+    "my": "ဤအရာကို လုပ်ရန် လိုအပ်သည်။"
    },
    {
-    "t": "line",
-    "x": "It isn't necessary (but you can do this if you want).       ........................"
+    "t": "q",
+    "x": "2. It isn't necessary (but you can do this if you want).",
+    "my": "လုပ်ရန် မလိုအပ်ပါ။ သို့သော် ဆန္ဒရှိပါက လုပ်နိုင်သည်။"
    },
    {
-    "t": "line",
-    "x": "It was necessary to do that.                                        ........................"
+    "t": "q",
+    "x": "3. It was necessary to do that.",
+    "my": "ထိုအရာကို လုပ်ရန် လိုအပ်ခဲ့သည်။"
    },
    {
-    "t": "line",
-    "x": "It wasn't necessary to do that.                                   ........................"
+    "t": "q",
+    "x": "4. It wasn't necessary to do that.",
+    "my": "ထိုအရာကို လုပ်ရန် မလိုအပ်ခဲ့ပါ။"
    },
    {
-    "t": "line",
-    "x": "Don't do this. It is forbidden.                                      ........................"
+    "t": "q",
+    "x": "5. Don't do this. It is forbidden.",
+    "my": "ဤအရာကို မလုပ်ပါနှင့်။ တားမြစ်ထားသည်။"
    },
    {
     "t": "ins",
-    "x": "C. Rewrite the following with the correct form of 'must', or 'have to'. Use the negative form where necessary."
+    "x": "Rewrite the following with the correct form of 'must' or 'have to'. Use the negative form where necessary.",
+    "my": "must သို့မဟုတ် have to ၏ မှန်ကန်သောပုံစံဖြင့် အောက်ပါဝါကျများကို ပြန်ရေးပါ။ လိုအပ်သောနေရာတွင် အငြင်းပုံစံကို အသုံးပြုပါ။"
    },
    {
     "t": "q",
-    "x": "You ___________ work hard if you want to succeed."
+    "x": "1. You ______ work hard if you want to succeed.",
+    "my": "အောင်မြင်လိုပါက သင် ကြိုးစား ______။"
    },
    {
     "t": "q",
-    "x": "You ___________ carry a mobile phone at all times?"
+    "x": "2. You ______ carry a mobile phone at all times?",
+    "my": "သင် အချိန်တိုင်း မိုဘိုင်းဖုန်းကို ဆောင်ထား ______ လား။"
    },
    {
     "t": "q",
-    "x": "The immigration officers ___________ speak many languages."
+    "x": "3. The immigration officers ______ speak many languages.",
+    "my": "လူဝင်မှုကြီးကြပ်ရေးအရာရှိများသည် ဘာသာစကားများစွာ ပြောတတ် ______။"
    },
    {
     "t": "q",
-    "x": "You ___________ go to the boat club every Sunday last year?"
+    "x": "4. You ______ go to the boat club every Sunday last year?",
+    "my": "မနှစ်က သင် တနင်္ဂနွေနေ့တိုင်း လှေအသင်းသို့ သွား ______ လား။"
    },
    {
     "t": "q",
-    "x": "She ___________ have a computer at home?"
+    "x": "5. She ______ have a computer at home?",
+    "my": "သူမသည် အိမ်တွင် ကွန်ပျူတာတစ်လုံး ရှိ ______ လား။"
    },
    {
     "t": "q",
-    "x": "I ___________ take a taxi this morning because the school bus was late."
+    "x": "6. I ______ take a taxi this morning because the school bus was late.",
+    "my": "ကျောင်းကား နောက်ကျသောကြောင့် ယနေ့နံနက် ကျွန်ုပ် တက္ကစီစီး ______။"
    },
    {
     "t": "q",
-    "x": "I ___________ leave now; I have an important appointment."
+    "x": "7. I ______ leave now; I have an important appointment.",
+    "my": "ကျွန်ုပ် ယခု ထွက်ခွာ ______။ အရေးကြီးသော ချိန်းဆိုမှုတစ်ခု ရှိသည်။"
    },
    {
     "t": "q",
-    "x": "Dad ___________ go to work these days; he works from home."
+    "x": "8. Dad ______ go to work these days; he works from home.",
+    "my": "အဖေသည် ယခုရက်ပိုင်း အလုပ်သို့ သွား ______။ သူသည် အိမ်မှ အလုပ်လုပ်သည်။"
    },
    {
     "t": "q",
-    "x": "Ni Ni ___________ submit assignments weekly."
+    "x": "9. Ni Ni ______ submit assignments weekly.",
+    "my": "နီနီသည် အပတ်စဉ် အိမ်စာတာဝန်များ တင်သွင်း ______။"
    },
    {
     "t": "q",
-    "x": "When we grow up, our mother ___________ do much housework."
+    "x": "10. When we grow up, our mother ______ do much housework.",
+    "my": "ကျွန်ုပ်တို့ အရွယ်ရောက်လာသောအခါ အမေသည် အိမ်မှုကိစ္စများစွာ လုပ် ______။"
    },
    {
     "t": "q",
-    "x": "Mum says that I ___________ clean my room before I go out."
+    "x": "11. Mum says that I ______ clean my room before I go out.",
+    "my": "အပြင်မထွက်မီ ကျွန်ုပ်၏အခန်းကို သန့်ရှင်းရေးလုပ် ______ ဟု အမေက ပြောသည်။"
    },
    {
     "t": "q",
-    "x": "Yesterday, I ___________ go to the dentist because I had a terrible toothache."
+    "x": "12. Yesterday, I ______ go to the dentist because I had a terrible toothache.",
+    "my": "မနေ့က သွားအလွန်ကိုက်သောကြောင့် ကျွန်ုပ် သွားဆရာဝန်ထံ သွား ______။"
    },
    {
     "t": "q",
-    "x": "We really ___________ do something about paying tax."
+    "x": "13. We really ______ do something about paying tax.",
+    "my": "အခွန်ပေးဆောင်ခြင်းနှင့်ပတ်သက်၍ ကျွန်ုပ်တို့ တစ်စုံတစ်ရာ အမှန်တကယ် လုပ်ဆောင် ______။"
    },
    {
     "t": "q",
-    "x": "You ___________ slam the door when you come in."
+    "x": "14. You ______ slam the door when you come in.",
+    "my": "သင် အထဲဝင်လာသောအခါ တံခါးကို ဆောင့်ပိတ် ______။"
    },
    {
     "t": "q",
-    "x": "We ___________ go through the customs at the airport."
+    "x": "15. We ______ go through the customs at the airport.",
+    "my": "ကျွန်ုပ်တို့သည် လေဆိပ်တွင် အကောက်ခွန်စစ်ဆေးမှုကို ဖြတ်သန်း ______။"
    }
   ]
  },
  {
   "code": "2D",
-  "title": "Listening and Speaking",
+  "title": "Listening & Speaking",
   "blocks": [
    {
     "t": "ins",
-    "x": "A. Listen to the three dialogues. Then, write the number of the dialogue under each picture."
+    "x": "Listen to the three dialogues. Then, write the number of the dialogue under each picture.",
+    "my": "စကားပြောခန်းသုံးခုကို နားထောင်ပါ။ ထို့နောက် ပုံတစ်ပုံစီအောက်တွင် သက်ဆိုင်ရာစကားပြောခန်းနံပါတ်ကို ရေးပါ။"
    },
    {
     "t": "line",
-    "x": "(Image 1: Facebook app on a smartphone)"
-   },
-   {
-    "t": "q",
-    "x": "Dialogue ___________"
+    "x": "Using Facebook on a phone.",
+    "my": "ဖုန်းဖြင့် Facebook အသုံးပြုနေခြင်း။"
    },
    {
     "t": "line",
-    "x": "(Image 2: Mobile banking app on a smartphone)"
-   },
-   {
-    "t": "q",
-    "x": "Dialogue ___________"
+    "x": "Using online banking on a phone.",
+    "my": "ဖုန်းဖြင့် အွန်လိုင်းဘဏ်ဝန်ဆောင်မှု အသုံးပြုနေခြင်း။"
    },
    {
     "t": "line",
-    "x": "(Image 3: Online shopping app on a smartphone)"
-   },
-   {
-    "t": "q",
-    "x": "Dialogue ___________"
+    "x": "Shopping online on a phone.",
+    "my": "ဖုန်းဖြင့် အွန်လိုင်းဈေးဝယ်နေခြင်း။"
    },
    {
     "t": "ins",
-    "x": "B. Listen again and complete the following."
+    "x": "Listen again and complete the following.",
+    "my": "ထပ်မံနားထောင်၍ အောက်ပါဝါကျများကို ဖြည့်စွက်ပါ။"
    },
    {
     "t": "q",
-    "x": "Through online banking, one can transfer ___________ easily."
+    "x": "1. Through online banking, one can transfer ______ easily.",
+    "my": "အွန်လိုင်းဘဏ်ဝန်ဆောင်မှုမှတစ်ဆင့် ______ ကို လွယ်ကူစွာ လွှဲပြောင်းနိုင်သည်။"
    },
    {
     "t": "q",
-    "x": "Paying bills online is ___________."
+    "x": "2. Paying bills online is ______.",
+    "my": "အွန်လိုင်းမှ ငွေတောင်းခံလွှာများ ပေးချေခြင်းသည် ______ ဖြစ်သည်။"
    },
    {
     "t": "q",
-    "x": "If you buy things online, the things you order are ___________."
+    "x": "3. If you buy things online, the things you order are ______.",
+    "my": "အွန်လိုင်းမှ ပစ္စည်းဝယ်ပါက သင်မှာယူသောပစ္စည်းများကို ______။"
    },
    {
     "t": "q",
-    "x": "You can find ___________ and flats online."
+    "x": "4. You can find ______ and flats online.",
+    "my": "သင်သည် အွန်လိုင်းတွင် ______ နှင့် တိုက်ခန်းများကို ရှာနိုင်သည်။"
    },
    {
     "t": "q",
-    "x": "People with ___________ usually become friends on Facebook."
+    "x": "5. People with ______ usually become friends on Facebook.",
+    "my": "______ ရှိသူများသည် Facebook တွင် သူငယ်ချင်းဖြစ်လာလေ့ရှိကြသည်။"
    },
    {
     "t": "ins",
-    "x": "C. In pairs, create a dialogue to talk about what you usually do on the net. Choose any idea below and find your own reasons for using the net."
+    "x": "In pairs, create a dialogue to talk about what you usually do on the net. Choose any idea below and find your own reasons for using the net.",
+    "my": "နှစ်ယောက်တစ်တွဲ လုပ်ဆောင်ပါ။ အင်တာနက်ပေါ်တွင် သင် ပုံမှန်လုပ်လေ့ရှိသောအရာများအကြောင်း စကားပြောခန်းတစ်ခု ဖန်တီးပါ။ အောက်ပါအကြံပြုချက်များမှ တစ်ခုကို ရွေး၍ အင်တာနက်အသုံးပြုရသည့် မိမိ၏အကြောင်းရင်းများကို ဖော်ပြပါ။"
    },
    {
     "t": "line",
-    "x": "learn new skills such as communication skills, professional skills and IT skills"
+    "x": "1. Learn new skills such as communication skills, professional skills and IT skills.",
+    "my": "ဆက်သွယ်ပြောဆိုမှုစွမ်းရည်၊ အသက်မွေးဝမ်းကျောင်းစွမ်းရည်နှင့် သတင်းအချက်အလက်နည်းပညာစွမ်းရည်တို့ကဲ့သို့ ကျွမ်းကျင်မှုအသစ်များကို သင်ယူခြင်း။"
    },
    {
     "t": "line",
-    "x": "entertain yourself by viewing videos, listening to music, playing games, etc."
+    "x": "2. Entertain yourself by viewing videos, listening to music, playing games, etc.",
+    "my": "ဗီဒီယိုကြည့်ခြင်း၊ သီချင်းနားထောင်ခြင်း၊ ဂိမ်းကစားခြင်း စသည်တို့ဖြင့် အပန်းဖြေခြင်း။"
    },
    {
     "t": "line",
-    "x": "do business such as selling the things you make"
-   },
-   {
-    "t": "sub",
-    "x": "Useful language"
+    "x": "3. Do business such as selling the things you make.",
+    "my": "မိမိပြုလုပ်သောပစ္စည်းများကို ရောင်းချခြင်းကဲ့သို့ စီးပွားရေးလုပ်ငန်း လုပ်ကိုင်ခြင်း။"
    },
    {
     "t": "line",
-    "x": "What do you do on the net?"
-   },
-   {
-    "t": "q",
-    "x": "What do you usually ___________?"
+    "x": "• What do you do on the net?",
+    "my": "အင်တာနက်ပေါ်မှာ မင်း ဘာလုပ်သလဲ။"
    },
    {
     "t": "line",
-    "x": "Which website do you usually use/visit?"
+    "x": "• What do you usually ______?",
+    "my": "မင်း ပုံမှန် ဘာ ______ သလဲ။"
+   },
+   {
+    "t": "line",
+    "x": "• Which website do you usually use/visit?",
+    "my": "မင်း ဘယ်ဝက်ဘ်ဆိုက်ကို ပုံမှန် အသုံးပြုသလဲ သို့မဟုတ် ဝင်ကြည့်သလဲ။"
    },
    {
     "t": "ins",
-    "x": "D. Role-play the dialogue."
+    "x": "Role-play the dialogue.",
+    "my": "စကားပြောခန်းကို အခန်းကဏ္ဍအလိုက် သရုပ်ဆောင်ပြောဆိုပါ။"
    }
   ]
  },
@@ -704,132 +913,74 @@
   "title": "Writing",
   "blocks": [
    {
-    "t": "line",
-    "x": "Writing a Review"
+    "t": "sub",
+    "x": "Writing a Review",
+    "my": "သုံးသပ်ချက်ရေးသားခြင်း"
    },
    {
     "t": "line",
-    "x": "A review about something (shopping mall, restaurant, film, book, etc.) usually contains"
-   },
-   {
-    "t": "line",
-    "x": "where it is, what it is like, what are available, how it works, good points about it, bad points about"
-   },
-   {
-    "t": "line",
-    "x": "it, how it is different from others, and whether the writer recommends it."
+    "x": "A review about something (shopping mall, restaurant, film, book, etc.) usually contains where it is, what it is like, what are available, how it works, good points about it, bad points about it, how it is different from others, and whether the writer recommends it.",
+    "my": "ဈေးဝယ်စင်တာ၊ စားသောက်ဆိုင်၊ ရုပ်ရှင်၊ စာအုပ် စသည့် အရာတစ်ခုအကြောင်း သုံးသပ်ချက်တွင် ၎င်းတည်ရှိရာ၊ ၎င်း၏သဘောသဘာဝ၊ ရရှိနိုင်သောအရာများ၊ လုပ်ဆောင်ပုံ၊ ကောင်းသည့်အချက်များ၊ မကောင်းသည့်အချက်များ၊ အခြားအရာများနှင့် ကွာခြားပုံ၊ စာရေးသူက အကြံပြုထောက်ခံခြင်း ရှိမရှိတို့ ပါဝင်လေ့ရှိသည်။"
    },
    {
     "t": "ins",
-    "x": "A. Study the following website review and check whether it includes the points"
+    "x": "Study the following website review and check whether it includes the points mentioned above.",
+    "my": "အောက်ပါဝက်ဘ်ဆိုက်သုံးသပ်ချက်ကို လေ့လာ၍ အထက်တွင် ဖော်ပြထားသောအချက်များ ပါဝင်ခြင်း ရှိမရှိ စစ်ဆေးပါ။"
    },
    {
-    "t": "line",
-    "x": "mentioned above."
+    "t": "para",
+    "x": "One of my favourite websites is eiizymusic.com. It is great because I can learn English while I am listening to my favourite songs. I choose a song to listen and complete the lyrics. I can also watch the video of the song.",
+    "my": "ကျွန်ုပ်အကြိုက်ဆုံး ဝက်ဘ်ဆိုက်များအနက် တစ်ခုမှာ eiizymusic.com ဖြစ်သည်။ မိမိနှစ်သက်သော သီချင်းများကို နားထောင်ရင်း အင်္ဂလိပ်စာ လေ့လာနိုင်သောကြောင့် အလွန်ကောင်းသည်။ နားထောင်မည့်သီချင်းကို ရွေးချယ်ပြီး သီချင်းစာသားကွက်လပ်များကို ဖြည့်စွက်ရသည်။ သီချင်းဗီဒီယိုကိုလည်း ကြည့်နိုင်သည်။"
    },
    {
-    "t": "line",
-    "x": "One of my favourite websites is eilzymusic.com. It is great because I can learn English"
+    "t": "para",
+    "x": "The good points include the fact that there are lots of up-to-date groups I can listen to such as BTS or One Direction. In addition, we can choose the level: beginner, intermediate or expert, depending on our level of English. Moreover, the website is very easy to navigate and you can listen to songs in different languages, for instance, in Thai, Korean and Japanese.",
+    "my": "ကောင်းသည့်အချက်များတွင် BTS သို့မဟုတ် One Direction ကဲ့သို့ ခေတ်ပေါ်ဂီတအဖွဲ့များစွာ၏ သီချင်းများကို နားထောင်နိုင်ခြင်း ပါဝင်သည်။ ထို့ပြင် မိမိ၏ အင်္ဂလိပ်စာအဆင့်အလိုက် အခြေခံ၊ အလယ်အလတ် သို့မဟုတ် ကျွမ်းကျင်အဆင့်ကို ရွေးနိုင်သည်။ ဝက်ဘ်ဆိုက်အတွင်း ဝင်ရောက်ကြည့်ရှုအသုံးပြုရန်လည်း အလွန်လွယ်ကူပြီး ထိုင်း၊ ကိုရီးယား၊ ဂျပန် စသည့် ဘာသာစကားအမျိုးမျိုးဖြင့် သီချင်းများကို နားထောင်နိုင်သည်။"
    },
    {
-    "t": "line",
-    "x": "while I am listening to my favourite songs. I choose a song to listen and complete the lyrics."
+    "t": "para",
+    "x": "One of the drawbacks is that some songs are not on the website. Another unwelcome point is that there is a lot of advertising on the website. However, you can just ignore it.",
+    "my": "အားနည်းချက်တစ်ခုမှာ အချို့သီချင်းများကို ဝက်ဘ်ဆိုက်တွင် မရရှိနိုင်ခြင်း ဖြစ်သည်။ အခြားမနှစ်သက်ဖွယ်အချက်မှာ ကြော်ငြာများစွာ ရှိနေခြင်း ဖြစ်သည်။ သို့သော် ၎င်းတို့ကို လျစ်လျူရှုထားနိုင်သည်။"
    },
    {
-    "t": "line",
-    "x": "I can also watch the video of the song."
-   },
-   {
-    "t": "line",
-    "x": "The good points include the fact that there are lots of up-to-date groups I can listen to"
-   },
-   {
-    "t": "line",
-    "x": "such as BTS or One Direction. In addition, we can choose the level: beginner, intermediate"
-   },
-   {
-    "t": "line",
-    "x": "or expert, depending on our level of English. Moreover, the website is very easy to navigate"
-   },
-   {
-    "t": "line",
-    "x": "and you can listen to songs in different languages, for instance, in Thai, Korean and"
-   },
-   {
-    "t": "line",
-    "x": "Japanese."
-   },
-   {
-    "t": "line",
-    "x": "One of the drawbacks is that some songs are not on the website. Another unwelcome"
-   },
-   {
-    "t": "line",
-    "x": "point is that there is a lot of advertising on the website. However, you can just ignore it."
-   },
-   {
-    "t": "line",
-    "x": "To sum up, I think this is an excellent website if you like music and you want to improve"
-   },
-   {
-    "t": "line",
-    "x": "your English. You should check it out!"
+    "t": "para",
+    "x": "To sum up, I think this is an excellent website if you like music and you want to improve your English. You should check it out!",
+    "my": "ခြုံငုံဆိုရလျှင် သင်သည် ဂီတကို နှစ်သက်ပြီး အင်္ဂလိပ်စာ တိုးတက်လိုပါက ဤဝက်ဘ်ဆိုက်သည် အလွန်ကောင်းသည်ဟု ကျွန်ုပ်ထင်သည်။ သင် ဝင်ကြည့်သင့်သည်။"
    },
    {
     "t": "ins",
-    "x": "B. Write a review of the Eiii Mart by using the points given below."
+    "x": "Write a review of the EiiZi Mart by using the points given below.",
+    "my": "အောက်ပါအချက်များကို အသုံးပြု၍ EiiZi Mart အကြောင်း သုံးသပ်ချက်တစ်ပုဒ် ရေးပါ။"
    },
    {
     "t": "line",
-    "x": "• get groceries, frozen foods,"
+    "x": "1. Get groceries, frozen foods, dairy products, garden produce, fresh seafood, clothes, electrical appliances, and cosmetics.",
+    "my": "စားသောက်ကုန်နှင့် အိမ်သုံးကုန်များ၊ အေးခဲအစားအစာများ၊ နို့ထွက်ပစ္စည်းများ၊ ဥယျာဉ်ခြံထွက်သီးနှံများ၊ လတ်ဆတ်သောပင်လယ်စာ၊ အဝတ်အစား၊ လျှပ်စစ်ပစ္စည်းများနှင့် အလှကုန်များကို ဝယ်ယူနိုင်သည်။"
    },
    {
     "t": "line",
-    "x": "dairy products, garden produce,"
+    "x": "2. Order online 24 hours.",
+    "my": "အွန်လိုင်းမှ ၂၄ နာရီလုံး မှာယူနိုင်သည်။"
    },
    {
     "t": "line",
-    "x": "fresh seafood, clothes, electrical"
+    "x": "3. Offer high quality products with the lowest price cheaper than most online shops.",
+    "my": "အွန်လိုင်းဆိုင်အများစုထက် ဈေးသက်သာသော အနိမ့်ဆုံးဈေးနှုန်းဖြင့် အရည်အသွေးမြင့် ကုန်ပစ္စည်းများကို ပေးသည်။"
    },
    {
     "t": "line",
-    "x": "appliances, and cosmetics"
+    "x": "4. The slogan, \"Save money. Live better.\"",
+    "my": "ဆောင်ပုဒ်မှာ “ငွေချွေတာပါ။ ပိုမိုကောင်းမွန်စွာ နေထိုင်ပါ။” ဖြစ်သည်။"
    },
    {
     "t": "line",
-    "x": "• order online 24 hours"
+    "x": "5. Customer service is sometimes bad.",
+    "my": "တစ်ခါတစ်ရံ ဈေးဝယ်သူဝန်ဆောင်မှု မကောင်းပါ။"
    },
    {
     "t": "line",
-    "x": "•offer high quality products with the"
-   },
-   {
-    "t": "line",
-    "x": "lowest price cheaper than most"
-   },
-   {
-    "t": "line",
-    "x": "online shops"
-   },
-   {
-    "t": "line",
-    "x": "• the slogan, \"Save money. Live"
-   },
-   {
-    "t": "line",
-    "x": "better.*"
-   },
-   {
-    "t": "line",
-    "x": "• customer service is sometimes"
-   },
-   {
-    "t": "line",
-    "x": "bad"
-   },
-   {
-    "t": "line",
-    "x": "• worth shopping"
+    "x": "6. Worth shopping.",
+    "my": "ဝယ်ယူအားပေးသင့်သည်။"
    }
   ]
  }
