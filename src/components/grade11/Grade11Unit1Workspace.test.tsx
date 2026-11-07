@@ -2,6 +2,8 @@ import { cleanup, fireEvent, render, screen, waitFor, within } from "@testing-li
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { UNIT1_SECTIONS } from "@/lib/grade11Unit1";
 import {
+  UNIT1_READING_C_ROLES,
+  UNIT1_READING_ROLE_INFO,
   UNIT1_READING_C_WORDS,
   UNIT1_READING_C_STRUCTURE,
 } from "@/data/grade11/unit1ReadingStructure";
@@ -51,14 +53,24 @@ describe("Grade 11 Unit 1 skill drafts", () => {
     expect(group("1A-36").getByText(source("1A-37").my)).toBeVisible();
     expect(group("1A-36").getAllByRole("button", { name: "Sentence Structure" })).toHaveLength(10);
     fireEvent.click(group("1A-36").getAllByRole("button", { name: "Sentence Structure" })[0]);
-    expect(
-      screen.getByRole("table", { name: "စကားလုံးတစ်လုံးချင်း အဓိပ္ပာယ်ဖော်ပြချက်" }),
-    ).toBeVisible();
+    expect(screen.getByRole("button", { name: "Explain Where, word 1" })).toBeVisible();
+    fireEvent.click(screen.getByRole("button", { name: "Explain Where, word 1" }));
+    expect(screen.getByRole("dialog")).toBeVisible();
+    expect(screen.getByRole("heading", { name: "မေးခွန်းစကားလုံး" })).toBeVisible();
+    expect(screen.getByText(UNIT1_READING_ROLE_INFO.wh.explanationMy)).toBeVisible();
+    fireEvent.click(screen.getByRole("button", { name: "Close" }));
+    fireEvent.click(screen.getByRole("button", { name: "Explain are, word 2" }));
+    expect(screen.getByRole("heading", { name: "အကူကြိယာ" })).toBeVisible();
   });
 
   it("covers every C question word in source order with Burmese-only explanations", () => {
     const blocks = UNIT1_SECTIONS.find((s) => s.code === "1A")!.blocks;
     for (const [id, words] of Object.entries(UNIT1_READING_C_WORDS)) {
+      expect(UNIT1_READING_C_ROLES[id]).toHaveLength(words.length);
+      for (const role of UNIT1_READING_C_ROLES[id]) {
+        expect(UNIT1_READING_ROLE_INFO[role]).toBeDefined();
+        expect(UNIT1_READING_ROLE_INFO[role].explanationMy).not.toMatch(/[A-Za-z]/);
+      }
       const question = blocks.find((b) => b.id === id)!;
       expect(words.map(([word]) => word)).toEqual(question.x.match(/[A-Za-z]+/g));
       for (const [, translation] of words) {

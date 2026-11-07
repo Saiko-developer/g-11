@@ -1,7 +1,5 @@
-import {
-  UNIT1_READING_C_WORDS,
-  UNIT1_READING_C_STRUCTURE,
-} from "@/data/grade11/unit1ReadingStructure";
+import { UNIT1_READING_C_WORDS } from "@/data/grade11/unit1ReadingStructure";
+import { Grade11ReadingStructure } from "./Grade11ReadingStructure";
 import { useEffect, useState } from "react";
 import { Languages, PenLine, Sparkles } from "lucide-react";
 import { OwlBadge, StructureBreakdown, ToggleReveal } from "@/components/lesson/ExerciseKit";
@@ -392,36 +390,7 @@ function Question({
           {!noStructure && (
             <ToggleReveal label="Sentence Structure" icon={Sparkles} tone="primary">
               {UNIT1_READING_C_WORDS[block.id] ? (
-                <div className="space-y-3">
-                  <p lang="my">{UNIT1_READING_C_STRUCTURE[block.id]}</p>
-                  <table className="w-full border-collapse text-sm">
-                    <caption className="pb-2 text-left" lang="my">
-                      စကားလုံးတစ်လုံးချင်း အဓိပ္ပာယ်ဖော်ပြချက်
-                    </caption>
-                    <thead>
-                      <tr>
-                        <th scope="col" lang="my" className="border border-border p-2">
-                          အင်္ဂလိပ်စကားလုံး
-                        </th>
-                        <th scope="col" lang="my" className="border border-border p-2">
-                          မြန်မာအဓိပ္ပာယ်
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {UNIT1_READING_C_WORDS[block.id].map(([word, meaning], i) => (
-                        <tr key={i}>
-                          <td lang="en" className="border border-border p-2">
-                            {word}
-                          </td>
-                          <td lang="my" className="border border-border p-2">
-                            {meaning}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
+                <Grade11ReadingStructure questionId={block.id} />
               ) : (
                 <StructureBreakdown questionText={block.x} />
               )}
