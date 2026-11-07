@@ -1,190 +1,471 @@
 {
   "1A-23": {
     "answer": "c; Description",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "ဖော်ပြချက်"
   },
   "1A-24": {
     "answer": "a; Food",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "အစားအစာ"
   },
   "1A-25": {
     "answer": "e; Habitat",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "နေရင်းဒေသ"
   },
   "1A-26": {
     "answer": "d; Characteristics",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "ဝိသေသလက္ခဏာများ"
   },
   "1A-27": {
     "answer": "b; Threats and Conservation",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "ခြိမ်းခြောက်မှုများနှင့် ထိန်းသိမ်းကာကွယ်ခြင်း"
   },
   "1A-29": {
     "answer": "inhabit",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "နေထိုင်သည်"
   },
   "1A-30": {
     "answer": "sanctuary",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "တောရိုင်းတိရစ္ဆာန် ဘေးမဲ့ဒေသ"
   },
   "1A-31": {
     "answer": "extinction",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "မျိုးသုဉ်းပျောက်ကွယ်ခြင်း"
   },
   "1A-32": {
     "answer": "prohibits",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "တားမြစ်သည်"
   },
   "1A-33": {
     "answer": "coastal",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "ကမ်းရိုးတန်းနှင့်ဆိုင်သော"
   },
   "1A-34": {
     "answer": "entangled",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "ငြိတွယ်မိသော"
   },
   "1A-35": {
     "answer": "snout",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "တိရစ္ဆာန်၏ နှာတံရှည်"
   },
   "1B-7": {
     "answer": "b; absolutely necessary",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "လုံးဝလိုအပ်သော"
   },
   "1B-9": {
     "answer": "a; deeply concerned",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "အလွန်စိုးရိမ်ပူပန်သော"
   },
   "1B-11": {
     "answer": "g; highly recommended",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "အလွန်ထောက်ခံအကြံပြုထားသော"
   },
   "1B-13": {
     "answer": "f; badly hurt",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "ပြင်းထန်စွာ ဒဏ်ရာရသော"
   },
   "1B-15": {
     "answer": "i; completely different",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "လုံးဝကွဲပြားသော"
   },
   "1B-17": {
     "answer": "d; fully aware",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "အပြည့်အဝ သိရှိနားလည်သော"
   },
   "1B-19": {
     "answer": "e; happily married",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "ပျော်ရွှင်စွာ အိမ်ထောင်ကျနေသော"
   },
   "1B-21": {
     "answer": "c; actively involved",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "တက်ကြွစွာ ပါဝင်ပတ်သက်သော"
   },
   "1B-23": {
     "answer": "j; deadly serious",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "အလွန်အလေးအနက်ထားသော"
   },
   "1B-25": {
     "answer": "h; mentally ill",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "စိတ်မကျန်းမာသော"
   },
   "1B-28": {
     "answer": "actively involved",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "တက်ကြွစွာ ပါဝင်ပတ်သက်သော"
   },
   "1B-29": {
     "answer": "absolutely necessary",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "လုံးဝလိုအပ်သော"
   },
   "1B-30": {
     "answer": "happily married",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "ပျော်ရွှင်စွာ အိမ်ထောင်ကျနေသော"
   },
   "1B-31": {
     "answer": "badly hurt",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "ပြင်းထန်စွာ ဒဏ်ရာရသော"
   },
   "1B-32": {
     "answer": "fully aware",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "အပြည့်အဝ သိရှိနားလည်သော"
   },
   "1B-33": {
     "answer": "mentally ill",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "စိတ်မကျန်းမာသော"
   },
   "1B-34": {
     "answer": "completely different",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "လုံးဝကွဲပြားသော"
   },
   "1B-35": {
     "answer": "deeply concerned",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "အလွန်စိုးရိမ်ပူပန်သော"
   },
   "1B-36": {
     "answer": "deadly serious",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "အလွန်အလေးအနက်ထားသော"
   },
   "1B-37": {
     "answer": "highly recommended",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "အလွန်ထောက်ခံအကြံပြုထားသော"
   },
   "1C-43": {
     "answer": "before",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "မတိုင်မီ"
   },
   "1C-44": {
     "answer": "after",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "ပြီးနောက်"
   },
   "1C-45": {
     "answer": "After",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "ပြီးနောက်"
   },
   "1C-46": {
     "answer": "after",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "ပြီးနောက်"
   },
   "1C-47": {
     "answer": "After",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "ပြီးနောက်"
   },
   "1C-48": {
     "answer": "before",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "မတိုင်မီ"
   },
   "1C-49": {
     "answer": "after",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "ပြီးနောက်"
   },
   "1C-50": {
     "answer": "before",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "ယခင်က"
   },
   "1C-51": {
     "answer": "After",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "ပြီးနောက်"
   },
   "1C-52": {
     "answer": "Before",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "မတိုင်မီ"
   },
   "1D-20": {
     "answer": "b; How was your trip?",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "မင်းရဲ့ ခရီးစဉ် ဘယ်လိုနေလဲ။"
   },
   "1D-22": {
     "answer": "e; With whom did you go there?",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "မင်း ဘယ်သူနဲ့ အဲဒီကို သွားခဲ့တာလဲ။"
   },
   "1D-24": {
     "answer": "c; What did you do with that group?",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "အဲဒီအဖွဲ့နဲ့ မင်း ဘာလုပ်ခဲ့သလဲ။"
   },
   "1D-26": {
     "answer": "d; What did you do after that?",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "အဲဒီနောက် မင်း ဘာဆက်လုပ်ခဲ့သလဲ။"
   },
   "1D-28": {
     "answer": "a; How did you feel after the trip?",
-    "origin": "source-derived"
+    "origin": "source-derived",
+    "answerMy": "ခရီးစဉ်ပြီးနောက် မင်း ဘယ်လိုခံစားရသလဲ။"
+  },
+  "1A-37": {
+    "answer": "Ayeyarwady dolphins are usually found in coastal areas in South and Southeast Asia and in freshwater rivers in Myanmar, Indonesia, and Laos.",
+    "answerMy": "ဧရာဝတီလင်းပိုင်များကို တောင်အာရှနှင့် အရှေ့တောင်အာရှ ကမ်းရိုးတန်းဒေသများနှင့် မြန်မာ၊ အင်ဒိုနီးရှား၊ လာအိုနိုင်ငံတို့ရှိ ရေချိုမြစ်များတွင် အများအားဖြင့် တွေ့ရသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1A-38": {
+    "answer": "They are called Ayeyarwady dolphins because they were first found in the Ayeyarwady River in Myanmar.",
+    "answerMy": "မြန်မာနိုင်ငံ ဧရာဝတီမြစ်တွင် ပထမဆုံးတွေ့ရှိခဲ့သောကြောင့် ဧရာဝတီလင်းပိုင်ဟု ခေါ်ကြသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1A-39": {
+    "answer": "Unlike other dolphins, Ayeyarwady dolphins have a rounded head, a very bulging forehead and no beak or snout.",
+    "answerMy": "အခြားလင်းပိုင်များနှင့်မတူဘဲ ဧရာဝတီလင်းပိုင်များတွင် ဝိုင်းသောဦးခေါင်း၊ အလွန်ဖောင်းထွက်သောနဖူးရှိပြီး နှုတ်သီး သို့မဟုတ် နှာတံရှည် မရှိပါ။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1A-40": {
+    "answer": "They take food into their mouths by suction.",
+    "answerMy": "၎င်းတို့သည် အစာကို ပါးစပ်ထဲသို့ စုပ်ယူ၍ စားကြသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1A-41": {
+    "answer": "In Myanmar, they inhabit the Ayeyarwady River between Mandalay and Bamaw.",
+    "answerMy": "မြန်မာနိုင်ငံတွင် ၎င်းတို့သည် မန္တလေးနှင့် ဗန်းမော်ကြားရှိ ဧရာဝတီမြစ်အတွင်း နေထိုင်ကြသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1A-42": {
+    "answer": "They communicate with one another by producing sounds such as whistles, clicks and screeches.",
+    "answerMy": "၎င်းတို့သည် လေချွန်သံ၊ ကလစ်ကလစ်သံနှင့် စူးရှအော်သံတို့ကို ထုတ်၍ အချင်းချင်း ဆက်သွယ်ကြသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1A-43": {
+    "answer": "The local fishermen got the attention of the dolphins by striking the sides of their boats with wooden sticks, splashing the surface of the water with their oars and giving their nets several rapid tugs.",
+    "answerMy": "ဒေသခံတံငါသည်များသည် လှေနံဘေးကို တုတ်ဖြင့်ခေါက်ခြင်း၊ လှော်တက်ဖြင့် ရေမျက်နှာပြင်ကို ပက်ခြင်းနှင့် ပိုက်ကို အကြိမ်ကြိမ် မြန်မြန်ဆောင့်ဆွဲခြင်းဖြင့် လင်းပိုင်များ၏ အာရုံကို ဆွဲဆောင်ခဲ့ကြသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1A-44": {
+    "answer": "The dolphin population declines year by year because dolphins get entangled in fishing nets and die as a result of electrofishing and the use of gillnets and explosives.",
+    "answerMy": "လင်းပိုင်များသည် ငါးဖမ်းပိုက်များတွင် ငြိတွယ်မိပြီး လျှပ်စစ်ဖြင့်ငါးဖမ်းခြင်း၊ ပါးဟက်ပိုက်နှင့် ဖောက်ခွဲပစ္စည်းများ အသုံးပြုခြင်းကြောင့် သေဆုံးသဖြင့် အရေအတွက်သည် တစ်နှစ်ထက်တစ်နှစ် လျော့နည်းလာသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1A-45": {
+    "answer": "The region in the Ayeyarwady River between Mingun and Kyaukmyaung is kept as a sanctuary to protect the dolphins.",
+    "answerMy": "မင်းကွန်းနှင့် ကျောက်မြောင်းကြားရှိ ဧရာဝတီမြစ်ဒေသကို လင်းပိုင်များ ကာကွယ်ရန် ဘေးမဲ့ဒေသအဖြစ် သတ်မှတ်ထားသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1A-46": {
+    "answer": "I can help protect Ayeyarwady dolphins by not catching or killing them and by not using electrofishing, gillnets or explosives.",
+    "answerMy": "လင်းပိုင်များကို ဖမ်းဆီးသတ်ဖြတ်ခြင်းမပြုဘဲ လျှပ်စစ်၊ ပါးဟက်ပိုက်နှင့် ဖောက်ခွဲပစ္စည်းများကို အသုံးမပြုခြင်းဖြင့် ဧရာဝတီလင်းပိုင်များကို ကာကွယ်ရာတွင် ပါဝင်နိုင်သည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-15": {
+    "answer": "Both you and Kyaw Zaw are wasting too much time.",
+    "answerMy": "သင်နှင့် ကျော်ဇော နှစ်ဦးစလုံး အချိန်အလွန်ဖြုန်းနေကြသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-16": {
+    "answer": "He played both football and volleyball when he was a student.",
+    "answerMy": "သူ ကျောင်းသားဘဝက ဘောလုံးနှင့် ဘော်လီဘော နှစ်မျိုးစလုံး ကစားခဲ့သည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-17": {
+    "answer": "They are both tired and hungry after shopping.",
+    "answerMy": "ဈေးဝယ်ပြီးနောက် သူတို့ ပင်ပန်းလည်းပင်ပန်း ဆာလည်းဆာကြသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-18": {
+    "answer": "Both Kyi Thar and his brother are guitarists.",
+    "answerMy": "ကြည်သာနှင့် သူ့အစ်ကို နှစ်ဦးစလုံး ဂစ်တာသမားများဖြစ်ကြသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-19": {
+    "answer": "Both Daw Nandar and her sons want to go to Bagan during the Thingyan holiday.",
+    "answerMy": "ဒေါ်နန္ဒာနှင့် သားများအားလုံး သင်္ကြန်ပိတ်ရက်တွင် ပုဂံသို့ သွားလိုကြသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-20": {
+    "answer": "Both Ni Ni and Maw Maw want to put up at the Shwe Myint Mo Hotel.",
+    "answerMy": "နီနီနှင့် မော်မော် နှစ်ဦးစလုံး ရွှေမြင့်မိုရ်ဟိုတယ်တွင် တည်းခိုလိုကြသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-21": {
+    "answer": "Applicants for this post must be able to speak both English and Chinese.",
+    "answerMy": "ဤရာထူးလျှောက်ထားသူများသည် အင်္ဂလိပ်နှင့် တရုတ် နှစ်ဘာသာစလုံး ပြောတတ်ရမည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-22": {
+    "answer": "You should both work harder and have perseverance if you want to be successful.",
+    "answerMy": "အောင်မြင်လိုလျှင် ပိုမိုကြိုးစားပြီး ဇွဲရှိရမည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-23": {
+    "answer": "He donated both money and food to the poor in our community.",
+    "answerMy": "သူသည် ကျွန်ုပ်တို့ရပ်ရွာရှိ ဆင်းရဲနွမ်းပါးသူများအား ငွေနှင့် အစားအစာ နှစ်မျိုးစလုံး လှူဒါန်းခဲ့သည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-24": {
+    "answer": "As we are free this afternoon, we can both go shopping and see a film.",
+    "answerMy": "ယနေ့မွန်းလွဲ အားလပ်သောကြောင့် ဈေးလည်းဝယ် ရုပ်ရှင်လည်းကြည့်နိုင်သည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-54": {
+    "answer": "After throwing out the fishing net, the fisherman waited patiently.",
+    "answerMy": "ငါးဖမ်းပိုက်ချပြီးနောက် တံငါသည်သည် စိတ်ရှည်စွာ စောင့်ခဲ့သည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-55": {
+    "answer": "After telling my mother about my problem, I felt better.",
+    "answerMy": "အမေ့ကို ကျွန်ုပ်၏ပြဿနာ ပြောပြပြီးနောက် စိတ်သက်သာလာသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-56": {
+    "answer": "After packing her lunch, Thet Thet went out to work.",
+    "answerMy": "နေ့လယ်စာထုပ်ပြီးနောက် သက်သက်သည် အလုပ်သို့ ထွက်သွားခဲ့သည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-57": {
+    "answer": "After finishing his homework, Nyi Lay was allowed to watch TV.",
+    "answerMy": "အိမ်စာပြီးနောက် ညီလေးသည် တီဗီကြည့်ခွင့်ရခဲ့သည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-58": {
+    "answer": "After revising all the lessons, Thuta felt confident to take the exam.",
+    "answerMy": "သင်ခန်းစာအားလုံး ပြန်လေ့လာပြီးနောက် သုတသည် စာမေးပွဲဖြေရန် ယုံကြည်မှုရှိလာသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-59": {
+    "answer": "After spending a year in the city, he decided to go back to his hometown.",
+    "answerMy": "မြို့တွင် တစ်နှစ်နေပြီးနောက် သူသည် မွေးရပ်မြို့သို့ ပြန်ရန် ဆုံးဖြတ်ခဲ့သည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-60": {
+    "answer": "After looking at the audience and taking a deep breath, the speaker delivered his speech.",
+    "answerMy": "ပရိသတ်ကိုကြည့်၍ အသက်ပြင်းပြင်းရှူပြီးနောက် ဟောပြောသူသည် မိန့်ခွန်းပြောခဲ့သည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-61": {
+    "answer": "After working for the company for two years, Shwe Yee got promoted.",
+    "answerMy": "ကုမ္ပဏီတွင် နှစ်နှစ်အလုပ်လုပ်ပြီးနောက် ရွှေရည်သည် ရာထူးတိုးရခဲ့သည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-62": {
+    "answer": "After working long hours in the cold, he had sore and cracked hands.",
+    "answerMy": "အအေးထဲတွင် အချိန်ကြာကြာ အလုပ်လုပ်ပြီးနောက် သူ့လက်များ နာကျင်ကွဲအက်လာသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-63": {
+    "answer": "After deciding to take up the job, I started to worry about my decision.",
+    "answerMy": "အလုပ်ကိုလက်ခံရန် ဆုံးဖြတ်ပြီးနောက် ကျွန်ုပ်၏ဆုံးဖြတ်ချက်အတွက် စတင်ပူပန်လာသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-65": {
+    "answer": "Aye Aye washed the vegetables before putting them in the refrigerator.",
+    "answerMy": "အေးအေးသည် ဟင်းသီးဟင်းရွက်များကို ရေခဲသေတ္တာထဲ မထည့်မီ ဆေးကြောခဲ့သည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-66": {
+    "answer": "Ko Naing had attended a computer training course before applying for a job at the company.",
+    "answerMy": "ကိုနိုင်သည် ကုမ္ပဏီတွင် အလုပ်မလျှောက်မီ ကွန်ပျူတာသင်တန်း တက်ခဲ့သည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-67": {
+    "answer": "I had a cup of coffee before leaving for work this morning.",
+    "answerMy": "ယနေ့နံနက် အလုပ်သို့ မထွက်မီ ကျွန်ုပ် ကော်ဖီတစ်ခွက် သောက်ခဲ့သည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-68": {
+    "answer": "We had to queue up for an hour before getting the tickets for the music concert.",
+    "answerMy": "တေးဂီတဖျော်ဖြေပွဲ လက်မှတ်များမရမီ ကျွန်ုပ်တို့ တစ်နာရီကြာ တန်းစီခဲ့ရသည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-69": {
+    "answer": "We have to study a lot on the subject before starting our project.",
+    "answerMy": "ကျွန်ုပ်တို့စီမံကိန်းကို မစတင်မီ ထိုအကြောင်းအရာကို များစွာလေ့လာရမည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-70": {
+    "answer": "He had practised for almost a year before running the Yoma Marathon.",
+    "answerMy": "ရိုးမမာရသွန် မပြေးမီ သူသည် တစ်နှစ်နီးပါး လေ့ကျင့်ခဲ့သည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-72": {
+    "answer": "She had packed her suitcase before going to the bus terminal.",
+    "answerMy": "ဘတ်စ်ကားဂိတ်သို့ မသွားမီ သူမ ခရီးဆောင်အိတ် ထုပ်ပိုးပြီးခဲ့သည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-73": {
+    "answer": "My father always takes physical exercise before having a bath.",
+    "answerMy": "ကျွန်ုပ်အဖေသည် ရေမချိုးမီ အမြဲ ကိုယ်လက်လှုပ်ရှား လေ့ကျင့်ခန်းလုပ်သည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
+  },
+  "1C-74": {
+    "answer": "We had lived in a small town for two years before moving to Yangon.",
+    "answerMy": "ရန်ကုန်သို့ မပြောင်းမီ ကျွန်ုပ်တို့ မြို့ငယ်တစ်မြို့တွင် နှစ်နှစ်နေခဲ့သည်။",
+    "origin": "source-derived",
+    "kind": "suggested"
   }
 }

@@ -17,7 +17,10 @@ export type Unit1Section = { code: string; title: string; blocks: Unit1Block[] }
 export type Unit1Exercise = { instruction: Unit1Block; blocks: Unit1Block[] };
 
 export const UNIT1_SECTIONS = unit as Unit1Section[];
-export const UNIT1_KEYS = keys as Record<string, { answer: string; origin: "source-derived" }>;
+export const UNIT1_KEYS = keys as Record<
+  string,
+  { answer: string; answerMy: string; kind?: "suggested"; origin: "source-derived" }
+>;
 
 /** Explicit source areas keep grammar explanations out of the question list. */
 export function splitUnit1(section: Unit1Section) {

@@ -4,6 +4,15 @@ import { isAnswerMatch } from "@/lib/answerMatch";
 import { splitUnit1, UNIT1_KEYS, UNIT1_SECTIONS, unit1ScanUrl } from "@/lib/grade11Unit1";
 
 describe("Grade 11 Unit 1 source fidelity", () => {
+  it("provides Burmese answers and restores only the PDF's bold vocabulary", () => {
+    for (const key of Object.values(UNIT1_KEYS)) expect(key.answerMy).toMatch(/[က-အ]/);
+    const reading = UNIT1_SECTIONS.find((s) => s.code === "1A")!;
+    expect(reading.blocks.flatMap((b) => b.emphasis ?? []).sort()).toEqual(
+      ["snout", "coastal", "inhabit", "extinction", "entangled", "sanctuary", "prohibits"].sort(),
+    );
+    expect(UNIT1_KEYS["1A-37"].answer).toContain("coastal areas");
+    expect(UNIT1_KEYS["1A-37"].kind).toBe("suggested");
+  });
   it("uses the PDF's shuffled Column B instead of the older Word-file order", () => {
     const vocab = UNIT1_SECTIONS.find((s) => s.code === "1B")!;
     const matching = splitUnit1(vocab).exercises[0];
@@ -65,13 +74,14 @@ describe("Grade 11 Unit 1 source fidelity", () => {
     const all = UNIT1_SECTIONS.flatMap((s) => s.blocks);
     expect(all.filter((b) => b.response === "audio")).toHaveLength(7);
     for (const block of all.filter((b) => b.response)) expect(UNIT1_KEYS[block.id]).toBeUndefined();
-    expect(Object.keys(UNIT1_KEYS)).toHaveLength(47);
+    expect(Object.keys(UNIT1_KEYS)).toHaveLength(86);
     for (const block of all.filter((b) => b.scanPage)) {
       const url = unit1ScanUrl(block.scanPage!);
       expect(url).toBeTruthy();
       expect(existsSync(`public${url}`)).toBe(true);
       expect(block.x).not.toContain("[illegible]");
     }
+    expect(UNIT1_KEYS["1C-71"]).toBeUndefined();
     expect(unit1ScanUrl(1)).toBeNull();
   });
 });

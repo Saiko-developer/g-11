@@ -1,3 +1,4 @@
+import { Grade11Unit1Workspace } from "./Grade11Unit1Workspace";
 import { useState } from "react";
 import { Languages, PenLine, Sparkles } from "lucide-react";
 import {
@@ -11,14 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Progress } from "@/components/ui/progress";
 import type { G11SkillKind } from "@/data/grade11/syllabus";
-import {
-  splitUnit1,
-  UNIT1_KEYS,
-  UNIT1_SECTIONS,
-  unit1ScanUrl,
-  type Unit1Block,
-  type Unit1Section,
-} from "@/lib/grade11Unit1";
+import { splitUnit1, type Unit1Block, type Unit1Section } from "@/lib/grade11Unit1";
 
 const LETTER: Record<G11SkillKind, string> = {
   reading: "A",
@@ -38,15 +32,7 @@ type SourceLessonProps = {
 };
 
 export function Grade11Unit1Lesson({ kind }: { kind: G11SkillKind }) {
-  return (
-    <Grade11SourceLesson
-      kind={kind}
-      unitNumber={1}
-      sections={UNIT1_SECTIONS}
-      answerKeys={UNIT1_KEYS}
-      scanUrl={unit1ScanUrl}
-    />
-  );
+  return <Grade11Unit1Workspace kind={kind} />;
 }
 
 /** Verified Grade 11 content reuses the existing lesson controls and AI calls. */
