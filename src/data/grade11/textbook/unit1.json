@@ -41,7 +41,9 @@
       {
         "t": "q",
         "x": "2. How will you feel if you see a dolphin?",
-        "my": "လင်းပိုင်တစ်ကောင်ကို တွေ့မြင်ရပါက သင် မည်သို့ခံစားရမည်နည်း။"
+        "my": "လင်းပိုင်တစ်ကောင်ကို တွေ့မြင်ရပါက သင် မည်သို့ခံစားရမည်နည်း။",
+        "ma": "I will feel happy and excited if I see a dolphin.",
+        "maMy": "လင်းပိုင်တစ်ကောင်ကို တွေ့ရပါက ကျွန်ုပ်သည် ပျော်ရွှင်၍ စိတ်လှုပ်ရှားမည်။"
       },
       {
         "t": "sub",
@@ -119,44 +121,93 @@
         "my": "e. နေထိုင်ရာဒေသ"
       },
       {
+        "t": "q",
+        "x": "Paragraph 1 → topic ( a / b / c / d / e ) ?",
+        "my": "စာပိုဒ် 1 → ခေါင်းစဉ်",
+        "a": "c; Description",
+        "exMy": "c. Description — ပုံပန်းသဏ္ဌာန်ဖော်ပြချက်"
+      },
+      {
+        "t": "q",
+        "x": "Paragraph 2 → topic ( a / b / c / d / e ) ?",
+        "my": "စာပိုဒ် 2 → ခေါင်းစဉ်",
+        "a": "a; Food",
+        "exMy": "a. Food — အစားအစာ"
+      },
+      {
+        "t": "q",
+        "x": "Paragraph 3 → topic ( a / b / c / d / e ) ?",
+        "my": "စာပိုဒ် 3 → ခေါင်းစဉ်",
+        "a": "e; Habitat",
+        "exMy": "e. Habitat — နေထိုင်ရာဒေသ"
+      },
+      {
+        "t": "q",
+        "x": "Paragraph 4 → topic ( a / b / c / d / e ) ?",
+        "my": "စာပိုဒ် 4 → ခေါင်းစဉ်",
+        "a": "d; Characteristics",
+        "exMy": "d. Characteristics — အမူအကျင့်နှင့် ထူးခြားသောလက္ခဏာများ"
+      },
+      {
+        "t": "q",
+        "x": "Paragraph 5 → topic ( a / b / c / d / e ) ?",
+        "my": "စာပိုဒ် 5 → ခေါင်းစဉ်",
+        "a": "b; Threats and Conservation",
+        "exMy": "b. Threats and Conservation — ခြိမ်းခြောက်မှုများနှင့် ထိန်းသိမ်းကာကွယ်ရေး"
+      },
+      {
         "t": "ins",
         "x": "B. In pairs, find the bold-faced words in the passage that are similar in meaning to the following.",
         "my": "နှစ်ယောက်တစ်တွဲ လုပ်ဆောင်ပါ။ အောက်ပါအဓိပ္ပာယ်များနှင့် ဆင်တူသော စာလုံးမည်းဖြင့် ဖော်ပြထားသည့် စကားလုံးများကို စာပိုဒ်ထဲမှ ရှာပါ။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "1. live in a particular place",
-        "my": "1. သတ်မှတ်ထားသော နေရာတစ်ခုတွင် နေထိုင်သည်"
+        "my": "1. သတ်မှတ်ထားသော နေရာတစ်ခုတွင် နေထိုင်သည်",
+        "a": "inhabit",
+        "exMy": "သတ်မှတ်ထားသောနေရာတစ်ခုတွင် နေထိုင်သည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "2. an area where animals are protected and cannot be hunted",
-        "my": "2. တိရစ္ဆာန်များကို ကာကွယ်ထားပြီး အမဲလိုက်ခွင့် မရှိသော နယ်မြေ"
+        "my": "2. တိရစ္ဆာန်များကို ကာကွယ်ထားပြီး အမဲလိုက်ခွင့် မရှိသော နယ်မြေ",
+        "a": "sanctuary",
+        "exMy": "တိရစ္ဆာန်များကို ကာကွယ်ထားပြီး အမဲလိုက်ခွင့်မရှိသော ဘေးမဲ့နယ်မြေ။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "3. no longer exist in future",
-        "my": "3. အနာဂတ်တွင် မရှိတော့ခြင်း"
+        "my": "3. အနာဂတ်တွင် မရှိတော့ခြင်း",
+        "a": "extinction",
+        "exMy": "မျိုးသုဉ်းပျောက်ကွယ်ခြင်း။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "4. bans",
-        "my": "4. တားမြစ်သည်"
+        "my": "4. တားမြစ်သည်",
+        "a": "prohibits",
+        "exMy": "တားမြစ်သည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "5. near the coast",
-        "my": "5. ကမ်းရိုးတန်းအနီးရှိသော"
+        "my": "5. ကမ်းရိုးတန်းအနီးရှိသော",
+        "a": "coastal",
+        "exMy": "ကမ်းရိုးတန်းနှင့်ဆိုင်သော၊ ကမ်းရိုးတန်းအနီးရှိသော။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "6. caught in a rope, net, etc.",
-        "my": "6. ကြိုး၊ ပိုက် စသည်တို့တွင် ငြိတွယ်မိသော"
+        "my": "6. ကြိုး၊ ပိုက် စသည်တို့တွင် ငြိတွယ်မိသော",
+        "a": "entangled",
+        "exMy": "ကြိုး၊ ပိုက် စသည်တို့တွင် ငြိတွယ်မိသော။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "7. the long nose of some kind of animals; beak",
-        "my": "7. အချို့တိရစ္ဆာန်များ၏ ရှည်လျားသောနှာခေါင်း၊ နှုတ်သီး"
+        "my": "7. အချို့တိရစ္ဆာန်များ၏ ရှည်လျားသောနှာခေါင်း၊ နှုတ်သီး",
+        "a": "snout",
+        "exMy": "တိရစ္ဆာန်အချို့၏ ရှည်လျားသောနှာခေါင်း၊ နှုတ်သီး။"
       },
       {
         "t": "ins",
@@ -166,52 +217,72 @@
       {
         "t": "q",
         "x": "1. Where are Ayeyarwady dolphins usually found?",
-        "my": "1. ဧရာဝတီလင်းပိုင်များကို မည်သည့်နေရာများတွင် တွေ့ရလေ့ရှိသနည်း။"
+        "my": "1. ဧရာဝတီလင်းပိုင်များကို မည်သည့်နေရာများတွင် တွေ့ရလေ့ရှိသနည်း။",
+        "ma": "Ayeyarwady dolphins are usually found in coastal areas in South and Southeast Asia and in freshwater rivers in Myanmar, Indonesia and Laos.",
+        "maMy": "ဧရာဝတီလင်းပိုင်များကို တောင်အာရှနှင့် အရှေ့တောင်အာရှ ကမ်းရိုးတန်းဒေသများ၊ မြန်မာ၊ အင်ဒိုနီးရှားနှင့် လာအိုနိုင်ငံတို့ရှိ ရေချိုမြစ်များတွင် တွေ့ရလေ့ရှိသည်။"
       },
       {
         "t": "q",
         "x": "2. Why are they called Ayeyarwady dolphins?",
-        "my": "2. ၎င်းတို့ကို ဧရာဝတီလင်းပိုင်ဟု အဘယ်ကြောင့် ခေါ်သနည်း။"
+        "my": "2. ၎င်းတို့ကို ဧရာဝတီလင်းပိုင်ဟု အဘယ်ကြောင့် ခေါ်သနည်း။",
+        "ma": "They are called Ayeyarwady dolphins because they were first found in the Ayeyarwady River in Myanmar.",
+        "maMy": "မြန်မာနိုင်ငံရှိ ဧရာဝတီမြစ်တွင် ပထမဆုံးတွေ့ရှိခဲ့သောကြောင့် ၎င်းတို့ကို ဧရာဝတီလင်းပိုင်ဟု ခေါ်သည်။"
       },
       {
         "t": "q",
         "x": "3. What is the difference between Ayeyarwady dolphins and other dolphins?",
-        "my": "3. ဧရာဝတီလင်းပိုင်များနှင့် အခြားလင်းပိုင်များအကြား မည်သည့်ကွာခြားချက် ရှိသနည်း။"
+        "my": "3. ဧရာဝတီလင်းပိုင်များနှင့် အခြားလင်းပိုင်များအကြား မည်သည့်ကွာခြားချက် ရှိသနည်း။",
+        "ma": "Unlike other dolphins, Ayeyarwady dolphins have rounded heads and very bulging foreheads, and they have no beak or snout.",
+        "maMy": "အခြားလင်းပိုင်များနှင့်မတူဘဲ ဧရာဝတီလင်းပိုင်များတွင် လုံးဝန်းသောဦးခေါင်းနှင့် အလွန်ဖောင်းထွက်နေသောနဖူးရှိပြီး နှုတ်သီး မရှိပါ။"
       },
       {
         "t": "q",
         "x": "4. How do they eat their food?",
-        "my": "4. ၎င်းတို့သည် အစာကို မည်သို့ စားသုံးကြသနည်း။"
+        "my": "4. ၎င်းတို့သည် အစာကို မည်သို့ စားသုံးကြသနည်း။",
+        "ma": "They take food into their mouths by suction, that is, by sucking it in.",
+        "maMy": "၎င်းတို့သည် အစာကို ပါးစပ်ထဲသို့ စုပ်ယူစားသုံးကြသည်။"
       },
       {
         "t": "q",
         "x": "5. Where can you find them in Myanmar?",
-        "my": "5. မြန်မာနိုင်ငံတွင် ၎င်းတို့ကို မည်သည့်နေရာ၌ တွေ့နိုင်သနည်း။"
+        "my": "5. မြန်မာနိုင်ငံတွင် ၎င်းတို့ကို မည်သည့်နေရာ၌ တွေ့နိုင်သနည်း။",
+        "ma": "In Myanmar, they can be found in the Ayeyarwady River between Mandalay and Bamaw.",
+        "maMy": "မြန်မာနိုင်ငံတွင် ၎င်းတို့ကို မန္တလေးနှင့် ဗန်းမော်ကြားရှိ ဧရာဝတီမြစ်အတွင်း၌ တွေ့နိုင်သည်။"
       },
       {
         "t": "q",
         "x": "6. How do they communicate with one another?",
-        "my": "6. ၎င်းတို့သည် အချင်းချင်း မည်သို့ ဆက်သွယ်ကြသနည်း။"
+        "my": "6. ၎င်းတို့သည် အချင်းချင်း မည်သို့ ဆက်သွယ်ကြသနည်း။",
+        "ma": "They communicate with one another by producing sounds such as whistles, clicks and screeches.",
+        "maMy": "၎င်းတို့သည် လေချွန်သံ၊ တောက်တောက်မြည်သံနှင့် စူးရှအော်သံများ ပြုလုပ်၍ အချင်းချင်း ဆက်သွယ်ကြသည်။"
       },
       {
         "t": "q",
         "x": "7. How did the local fishermen get the attention of the dolphins?",
-        "my": "7. ဒေသခံတံငါသည်များသည် လင်းပိုင်များ၏ အာရုံစိုက်မှုကို မည်သို့ ရယူခဲ့ကြသနည်း။"
+        "my": "7. ဒေသခံတံငါသည်များသည် လင်းပိုင်များ၏ အာရုံစိုက်မှုကို မည်သို့ ရယူခဲ့ကြသနည်း။",
+        "ma": "The local fishermen got the dolphins' attention by striking the sides of their boats with wooden sticks, splashing the water with their oars and giving their nets several rapid tugs.",
+        "maMy": "ဒေသခံတံငါသည်များသည် သစ်သားတုတ်ဖြင့် လှေနံဘေးကို ရိုက်ခြင်း၊ လှော်တက်ဖြင့် ရေပက်ခြင်းနှင့် ကွန်များကို အကြိမ်အနည်းငယ် ခပ်မြန်မြန်ဆွဲလှုပ်ခြင်းတို့ဖြင့် လင်းပိုင်များ၏ အာရုံစိုက်မှုကို ရယူခဲ့ကြသည်။"
       },
       {
         "t": "q",
         "x": "8. Why does the dolphin population decline year by year?",
-        "my": "8. လင်းပိုင်အကောင်ရေသည် အဘယ်ကြောင့် တစ်နှစ်ထက်တစ်နှစ် လျော့နည်းလာသနည်း။"
+        "my": "8. လင်းပိုင်အကောင်ရေသည် အဘယ်ကြောင့် တစ်နှစ်ထက်တစ်နှစ် လျော့နည်းလာသနည်း။",
+        "ma": "The dolphin population declines year by year because dolphins get entangled in fishing nets and die as a result of electrofishing and the use of gillnets and explosives.",
+        "maMy": "လင်းပိုင်များသည် ငါးဖမ်းပိုက်များတွင် ငြိတွယ်မိခြင်း၊ လျှပ်စစ်ဖြင့်ငါးဖမ်းခြင်း၊ ပါးဟက်ငြိပိုက်နှင့် ပေါက်ကွဲပစ္စည်းများ အသုံးပြုခြင်းတို့ကြောင့် သေဆုံးရသဖြင့် အကောင်ရေသည် တစ်နှစ်ထက်တစ်နှစ် လျော့နည်းလာသည်။"
       },
       {
         "t": "q",
         "x": "9. Which part of the Ayeyarwady River is kept as a sanctuary to protect the dolphins?",
-        "my": "9. လင်းပိုင်များကို ကာကွယ်ရန် ဧရာဝတီမြစ်၏ မည်သည့်အပိုင်းကို ဘေးမဲ့နယ်မြေအဖြစ် သတ်မှတ်ထားသနည်း။"
+        "my": "9. လင်းပိုင်များကို ကာကွယ်ရန် ဧရာဝတီမြစ်၏ မည်သည့်အပိုင်းကို ဘေးမဲ့နယ်မြေအဖြစ် သတ်မှတ်ထားသနည်း။",
+        "ma": "The region of the Ayeyarwady River between Mingun and Kyaukmyaung is kept as a sanctuary to protect the dolphins.",
+        "maMy": "လင်းပိုင်များကို ကာကွယ်ရန် မင်းကွန်းနှင့် ကျောက်မြောင်းကြားရှိ ဧရာဝတီမြစ်ဒေသကို ဘေးမဲ့နယ်မြေအဖြစ် သတ်မှတ်ထားသည်။"
       },
       {
         "t": "q",
         "x": "10. What can you do to protect the decline of Ayeyarwady dolphin population?",
-        "my": "10. ဧရာဝတီလင်းပိုင်အကောင်ရေ လျော့နည်းလာမှုကို တားဆီးရန် သင် ဘာလုပ်နိုင်သနည်း။"
+        "my": "10. ဧရာဝတီလင်းပိုင်အကောင်ရေ လျော့နည်းလာမှုကို တားဆီးရန် သင် ဘာလုပ်နိုင်သနည်း။",
+        "ma": "I can help protect Ayeyarwady dolphins by keeping rivers clean, raising awareness about dolphin conservation and reporting illegal fishing to the relevant authorities.",
+        "maMy": "မြစ်များကို သန့်ရှင်းအောင် ထိန်းသိမ်းခြင်း၊ လင်းပိုင်ထိန်းသိမ်းရေးအကြောင်း အသိပညာပေးခြင်းနှင့် တရားမဝင်ငါးဖမ်းမှုများကို သက်ဆိုင်ရာအာဏာပိုင်များထံ သတင်းပို့ခြင်းတို့ဖြင့် ဧရာဝတီလင်းပိုင်များကို ကာကွယ်ရာတွင် ကူညီနိုင်သည်။"
       }
     ]
   },
@@ -255,9 +326,11 @@
         "my": "ကော်လံ B"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "1. absolutely",
-        "my": "1. လုံးဝ၊ အကြွင်းမဲ့"
+        "my": "1. လုံးဝ၊ အကြွင်းမဲ့",
+        "a": "a; absolutely necessary",
+        "exMy": "a — absolutely necessary (လုံးဝလိုအပ်သော)"
       },
       {
         "t": "line",
@@ -265,9 +338,11 @@
         "my": "a. လိုအပ်သော"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "2. deeply",
-        "my": "2. အလွန်အမင်း၊ နက်နက်ရှိုင်းရှိုင်း"
+        "my": "2. အလွန်အမင်း၊ နက်နက်ရှိုင်းရှိုင်း",
+        "a": "b; deeply concerned",
+        "exMy": "b — deeply concerned (အလွန်အမင်းစိုးရိမ်ပူပန်သော)"
       },
       {
         "t": "line",
@@ -275,9 +350,11 @@
         "my": "b. စိုးရိမ်ပူပန်သော"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "3. highly",
-        "my": "3. အလွန်၊ အထူးပင်"
+        "my": "3. အလွန်၊ အထူးပင်",
+        "a": "c; highly recommended",
+        "exMy": "c — highly recommended (အထူးအကြံပြုထောက်ခံခံရသော)"
       },
       {
         "t": "line",
@@ -285,9 +362,11 @@
         "my": "c. အကြံပြုထောက်ခံခံရသော"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "4. badly",
-        "my": "4. ပြင်းထန်စွာ"
+        "my": "4. ပြင်းထန်စွာ",
+        "a": "d; badly hurt",
+        "exMy": "d — badly hurt (ပြင်းထန်စွာဒဏ်ရာရသော)"
       },
       {
         "t": "line",
@@ -295,9 +374,11 @@
         "my": "d. ထိခိုက်ဒဏ်ရာရသော"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "5. completely",
-        "my": "5. လုံးဝ၊ အပြည့်အဝ"
+        "my": "5. လုံးဝ၊ အပြည့်အဝ",
+        "a": "e; completely different",
+        "exMy": "e — completely different (လုံးဝကွဲပြားသော)"
       },
       {
         "t": "line",
@@ -305,9 +386,11 @@
         "my": "e. ကွဲပြားသော"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "6. fully",
-        "my": "6. အပြည့်အဝ"
+        "my": "6. အပြည့်အဝ",
+        "a": "f; fully aware",
+        "exMy": "f — fully aware (အပြည့်အဝသိရှိနားလည်သော)"
       },
       {
         "t": "line",
@@ -315,9 +398,11 @@
         "my": "f. သိရှိနားလည်သော"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "7. happily",
-        "my": "7. ပျော်ရွှင်စွာ"
+        "my": "7. ပျော်ရွှင်စွာ",
+        "a": "g; happily married",
+        "exMy": "g — happily married (ပျော်ရွှင်သောအိမ်ထောင်ရေးရှိသော)"
       },
       {
         "t": "line",
@@ -325,9 +410,11 @@
         "my": "g. အိမ်ထောင်ရှိသော"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "8. actively",
-        "my": "8. တက်ကြွစွာ"
+        "my": "8. တက်ကြွစွာ",
+        "a": "h; actively involved",
+        "exMy": "h — actively involved (တက်ကြွစွာပါဝင်ဆောင်ရွက်သော)"
       },
       {
         "t": "line",
@@ -335,9 +422,11 @@
         "my": "h. ပါဝင်ဆောင်ရွက်သော"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "9. deadly",
-        "my": "9. အလွန်အမင်း၊ အလေးအနက်"
+        "my": "9. အလွန်အမင်း၊ အလေးအနက်",
+        "a": "i; deadly serious",
+        "exMy": "i — deadly serious (အလွန်အလေးအနက်ထားသော)"
       },
       {
         "t": "line",
@@ -345,9 +434,11 @@
         "my": "i. အလေးအနက်ရှိသော"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "10. mentally",
-        "my": "10. စိတ်ပိုင်းဆိုင်ရာအရ"
+        "my": "10. စိတ်ပိုင်းဆိုင်ရာအရ",
+        "a": "j; mentally ill",
+        "exMy": "j — mentally ill (စိတ်ပိုင်းဆိုင်ရာမကျန်းမာသော)"
       },
       {
         "t": "line",
@@ -362,52 +453,72 @@
       {
         "t": "q",
         "x": "My brother has been _________________ in voluntary work for over two years.",
-        "my": "ကျွန်ုပ်၏အစ်ကိုသည် စေတနာ့ဝန်ထမ်းလုပ်ငန်းများတွင် _________________ ဖြစ်နေသည်မှာ နှစ်နှစ်ကျော်ပြီ။"
+        "my": "ကျွန်ုပ်၏အစ်ကိုသည် စေတနာ့ဝန်ထမ်းလုပ်ငန်းများတွင် _________________ ဖြစ်နေသည်မှာ နှစ်နှစ်ကျော်ပြီ။",
+        "a": "actively involved",
+        "exMy": "My brother has been actively involved in voluntary work for over two years.\nကျွန်ုပ်၏အစ်ကိုသည် စေတနာ့ဝန်ထမ်းလုပ်ငန်းများတွင် တက်ကြွစွာပါဝင်လာသည်မှာ နှစ်နှစ်ကျော်ပြီ။"
       },
       {
         "t": "q",
         "x": "It is _________________ for you to have a balanced diet if you want to be healthy.",
-        "my": "ကျန်းမာလိုပါက အာဟာရမျှတသော အစားအစာကို စားသုံးရန် သင့်အတွက် _________________ ဖြစ်သည်။"
+        "my": "ကျန်းမာလိုပါက အာဟာရမျှတသော အစားအစာကို စားသုံးရန် သင့်အတွက် _________________ ဖြစ်သည်။",
+        "a": "absolutely necessary",
+        "exMy": "It is absolutely necessary for you to have a balanced diet if you want to be healthy.\nကျန်းမာလိုပါက အာဟာရမျှတသောအစားအစာကို စားသုံးရန် သင့်အတွက် လုံးဝလိုအပ်သည်။"
       },
       {
         "t": "q",
         "x": "They had been _________________ for 5 years, but their marriage ended in divorce.",
-        "my": "သူတို့သည် ငါးနှစ်ကြာ _________________ ဖြစ်ခဲ့သော်လည်း နောက်ဆုံးတွင် ကွာရှင်းခဲ့ကြသည်။"
+        "my": "သူတို့သည် ငါးနှစ်ကြာ _________________ ဖြစ်ခဲ့သော်လည်း နောက်ဆုံးတွင် ကွာရှင်းခဲ့ကြသည်။",
+        "a": "happily married",
+        "exMy": "They had been happily married for five years, but their marriage ended in divorce.\nသူတို့သည် ငါးနှစ်ကြာ ပျော်ရွှင်သောအိမ်ထောင်ရေးရှိခဲ့သော်လည်း နောက်ဆုံးတွင် ကွာရှင်းခဲ့ကြသည်။"
       },
       {
         "t": "q",
         "x": "Fortunately, no one was _________________ in the car accident.",
-        "my": "ကံကောင်းထောက်မစွာ ကားမတော်တဆမှုတွင် မည်သူမျှ _________________ မဖြစ်ခဲ့ပါ။"
+        "my": "ကံကောင်းထောက်မစွာ ကားမတော်တဆမှုတွင် မည်သူမျှ _________________ မဖြစ်ခဲ့ပါ။",
+        "a": "badly hurt",
+        "exMy": "Fortunately, no one was badly hurt in the car accident.\nကံကောင်းထောက်မစွာ ကားမတော်တဆမှုတွင် မည်သူမျှ ပြင်းထန်စွာဒဏ်ရာမရခဲ့ပါ။"
       },
       {
         "t": "q",
         "x": "Students must be trained to be _________________ of their responsibilities as good citizens.",
-        "my": "ကျောင်းသားများအား နိုင်ငံသားကောင်းများအဖြစ် မိမိတို့၏ တာဝန်များကို _________________ ဖြစ်စေရန် လေ့ကျင့်ပေးရမည်။"
+        "my": "ကျောင်းသားများအား နိုင်ငံသားကောင်းများအဖြစ် မိမိတို့၏ တာဝန်များကို _________________ ဖြစ်စေရန် လေ့ကျင့်ပေးရမည်။",
+        "a": "fully aware",
+        "exMy": "Students must be trained to be fully aware of their responsibilities as good citizens.\nကျောင်းသားများအား နိုင်ငံသားကောင်းများအဖြစ် မိမိတို့၏တာဝန်များကို အပြည့်အဝသိရှိနားလည်စေရန် လေ့ကျင့်ပေးရမည်။"
       },
       {
         "t": "q",
         "x": "It is very challenging to take care of people who are _________________.",
-        "my": "_________________ ဖြစ်နေသူများကို ပြုစုစောင့်ရှောက်ရခြင်းသည် အလွန်ခက်ခဲသော တာဝန်တစ်ရပ် ဖြစ်သည်။"
+        "my": "_________________ ဖြစ်နေသူများကို ပြုစုစောင့်ရှောက်ရခြင်းသည် အလွန်ခက်ခဲသော တာဝန်တစ်ရပ် ဖြစ်သည်။",
+        "a": "mentally ill",
+        "exMy": "It is very challenging to take care of people who are mentally ill.\nစိတ်ပိုင်းဆိုင်ရာမကျန်းမာသူများကို ပြုစုစောင့်ရှောက်ရခြင်းသည် အလွန်ခက်ခဲသောတာဝန် ဖြစ်သည်။"
       },
       {
         "t": "q",
         "x": "When I look around the surrounding area, it is now _________________ from it was five years ago.",
-        "my": "ပတ်ဝန်းကျင်ကို ကြည့်လိုက်သောအခါ ယခုအခြေအနေသည် လွန်ခဲ့သော ငါးနှစ်ကနှင့် _________________ ဖြစ်နေသည်။"
+        "my": "ပတ်ဝန်းကျင်ကို ကြည့်လိုက်သောအခါ ယခုအခြေအနေသည် လွန်ခဲ့သော ငါးနှစ်ကနှင့် _________________ ဖြစ်နေသည်။",
+        "a": "completely different",
+        "exMy": "When I look around the surrounding area, it is now completely different from what it was five years ago.\nပတ်ဝန်းကျင်ကို ကြည့်လိုက်သောအခါ ယခုအခြေအနေသည် လွန်ခဲ့သောငါးနှစ်ကနှင့် လုံးဝကွဲပြားနေသည်။"
       },
       {
         "t": "q",
         "x": "The townspeople are _________________ about the threat of health problems caused by polluted water in the river.",
-        "my": "မြစ်ရေညစ်ညမ်းမှုကြောင့် ဖြစ်ပေါ်လာသော ကျန်းမာရေးပြဿနာများ၏ ခြိမ်းခြောက်မှုနှင့်ပတ်သက်၍ မြို့သူမြို့သားများသည် _________________ ဖြစ်နေကြသည်။"
+        "my": "မြစ်ရေညစ်ညမ်းမှုကြောင့် ဖြစ်ပေါ်လာသော ကျန်းမာရေးပြဿနာများ၏ ခြိမ်းခြောက်မှုနှင့်ပတ်သက်၍ မြို့သူမြို့သားများသည် _________________ ဖြစ်နေကြသည်။",
+        "a": "deeply concerned",
+        "exMy": "The townspeople are deeply concerned about the threat of health problems caused by polluted water in the river.\nမြစ်ရေညစ်ညမ်းမှုကြောင့် ဖြစ်ပေါ်လာနိုင်သော ကျန်းမာရေးပြဿနာများ၏ အန္တရာယ်ကို မြို့သူမြို့သားများက အလွန်အမင်းစိုးရိမ်ပူပန်နေကြသည်။"
       },
       {
         "t": "q",
         "x": "When he said he was leaving school, we thought he was joking, but he said he was _________________.",
-        "my": "သူ ကျောင်းထွက်တော့မည်ဟု ပြောသောအခါ ကျွန်ုပ်တို့က နောက်ပြောင်နေသည်ဟု ထင်ခဲ့ကြသော်လည်း သူက မိမိသည် _________________ ဖြစ်ကြောင်း ပြောခဲ့သည်။"
+        "my": "သူ ကျောင်းထွက်တော့မည်ဟု ပြောသောအခါ ကျွန်ုပ်တို့က နောက်ပြောင်နေသည်ဟု ထင်ခဲ့ကြသော်လည်း သူက မိမိသည် _________________ ဖြစ်ကြောင်း ပြောခဲ့သည်။",
+        "a": "deadly serious",
+        "exMy": "When he said he was leaving school, we thought he was joking, but he said he was deadly serious.\nသူ ကျောင်းထွက်တော့မည်ဟု ပြောသောအခါ ကျွန်ုပ်တို့က နောက်ပြောင်နေသည်ဟု ထင်ခဲ့ကြသော်လည်း သူက အလွန်အလေးအနက်ပြောခြင်းဖြစ်ကြောင်း ပြောခဲ့သည်။"
       },
       {
         "t": "q",
         "x": "This book was so _________________ by critics that it became one of the bestsellers of the year.",
-        "my": "ဤစာအုပ်ကို ဝေဖန်သုံးသပ်သူများက _________________ ဖြစ်သောကြောင့် ယခုနှစ်၏ အရောင်းရဆုံး စာအုပ်များထဲမှ တစ်အုပ် ဖြစ်လာခဲ့သည်။"
+        "my": "ဤစာအုပ်ကို ဝေဖန်သုံးသပ်သူများက _________________ ဖြစ်သောကြောင့် ယခုနှစ်၏ အရောင်းရဆုံး စာအုပ်များထဲမှ တစ်အုပ် ဖြစ်လာခဲ့သည်။",
+        "a": "highly recommended",
+        "exMy": "This book was so highly recommended by critics that it became one of the bestsellers of the year.\nဤစာအုပ်ကို ဝေဖန်သုံးသပ်သူများက အထူးအကြံပြုထောက်ခံကြသောကြောင့် ယခုနှစ်၏ အရောင်းရဆုံးစာအုပ်များထဲမှ တစ်အုပ်ဖြစ်လာခဲ့သည်။"
       }
     ]
   },
@@ -491,54 +602,74 @@
         "my": "ကျွန်ုပ်သည် ချောကလက်ရေခဲမုန့်ကိုရော ဗနီလာရေခဲမုန့်ကိုပါ နှစ်သက်သည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "You are wasting too much time. Kyaw Zaw is wasting too much time.",
-        "my": "သင်သည် အချိန်အလွန်အကျွံ ဖြုန်းတီးနေသည်။ ကျော်ဇောလည်း အချိန်အလွန်အကျွံ ဖြုန်းတီးနေသည်။"
+        "my": "သင်သည် အချိန်အလွန်အကျွံ ဖြုန်းတီးနေသည်။ ကျော်ဇောလည်း အချိန်အလွန်အကျွံ ဖြုန်းတီးနေသည်။",
+        "ma": "Both you and Kyaw Zaw are wasting too much time.",
+        "maMy": "သင်နှင့် ကျော်ဇော နှစ်ဦးစလုံးသည် အချိန်အလွန်အကျွံ ဖြုန်းတီးနေကြသည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "He played football when he was a student. He played volleyball when he was a student.",
-        "my": "သူသည် ကျောင်းသားဘဝတွင် ဘောလုံးကစားခဲ့သည်။ သူသည် ကျောင်းသားဘဝတွင် ဘော်လီဘောလည်း ကစားခဲ့သည်။"
+        "my": "သူသည် ကျောင်းသားဘဝတွင် ဘောလုံးကစားခဲ့သည်။ သူသည် ကျောင်းသားဘဝတွင် ဘော်လီဘောလည်း ကစားခဲ့သည်။",
+        "ma": "He played both football and volleyball when he was a student.",
+        "maMy": "သူသည် ကျောင်းသားဘဝတွင် ဘောလုံးနှင့် ဘော်လီဘော နှစ်မျိုးစလုံး ကစားခဲ့သည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "They are tired after shopping. They are hungry after shopping.",
-        "my": "သူတို့သည် ဈေးဝယ်ပြီးနောက် ပင်ပန်းနေကြသည်။ သူတို့သည် ဈေးဝယ်ပြီးနောက် ဗိုက်လည်း ဆာနေကြသည်။"
+        "my": "သူတို့သည် ဈေးဝယ်ပြီးနောက် ပင်ပန်းနေကြသည်။ သူတို့သည် ဈေးဝယ်ပြီးနောက် ဗိုက်လည်း ဆာနေကြသည်။",
+        "ma": "They are both tired and hungry after shopping.",
+        "maMy": "သူတို့သည် ဈေးဝယ်ပြီးနောက် ပင်ပန်းလည်းပင်ပန်း၊ ဗိုက်လည်းဆာနေကြသည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "Not only Kyi Thar but also his brother is a guitarist.",
-        "my": "ကြည်သာသာမက သူ၏အစ်ကို သို့မဟုတ် ညီသည်လည်း ဂစ်တာသမား ဖြစ်သည်။"
+        "my": "ကြည်သာသာမက သူ၏အစ်ကို သို့မဟုတ် ညီသည်လည်း ဂစ်တာသမား ဖြစ်သည်။",
+        "ma": "Both Kyi Thar and his brother are guitarists.",
+        "maMy": "ကြည်သာနှင့် သူ၏အစ်ကို သို့မဟုတ် ညီ နှစ်ဦးစလုံးသည် ဂစ်တာသမားများ ဖြစ်ကြသည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "Daw Nandar wants to go to Bagan during the Thingyan holiday. Her sons want to go there too.",
-        "my": "ဒေါ်နန္ဒာသည် သင်္ကြန်အားလပ်ရက်အတွင်း ပုဂံသို့ သွားလိုသည်။ သူမ၏သားများလည်း ထိုနေရာသို့ သွားလိုကြသည်။"
+        "my": "ဒေါ်နန္ဒာသည် သင်္ကြန်အားလပ်ရက်အတွင်း ပုဂံသို့ သွားလိုသည်။ သူမ၏သားများလည်း ထိုနေရာသို့ သွားလိုကြသည်။",
+        "ma": "Both Daw Nandar and her sons want to go to Bagan during the Thingyan holiday.",
+        "maMy": "ဒေါ်နန္ဒာနှင့် သူမ၏သားများသည် သင်္ကြန်အားလပ်ရက်အတွင်း ပုဂံသို့ သွားလိုကြသည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "Ni Ni wants to put up at the Shwe Myint Mo Hotel and so does Maw Maw.",
-        "my": "နီနီသည် ရွှေမြင့်မိုရ်ဟိုတယ်တွင် တည်းခိုလိုသည်။ မော်မော်လည်း ထိုနည်းတူပင် ဖြစ်သည်။"
+        "my": "နီနီသည် ရွှေမြင့်မိုရ်ဟိုတယ်တွင် တည်းခိုလိုသည်။ မော်မော်လည်း ထိုနည်းတူပင် ဖြစ်သည်။",
+        "ma": "Both Ni Ni and Maw Maw want to put up at the Shwe Myint Mo Hotel.",
+        "maMy": "နီနီနှင့် မော်မော် နှစ်ဦးစလုံးသည် ရွှေမြင့်မိုရ်ဟိုတယ်တွင် တည်းခိုလိုကြသည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "Applicants for this post must be able to speak English. Applicants for this post must be able to speak Chinese too.",
-        "my": "ဤရာထူးအတွက် လျှောက်ထားသူများသည် အင်္ဂလိပ်စကား ပြောနိုင်ရမည်။ တရုတ်စကားလည်း ပြောနိုင်ရမည်။"
+        "my": "ဤရာထူးအတွက် လျှောက်ထားသူများသည် အင်္ဂလိပ်စကား ပြောနိုင်ရမည်။ တရုတ်စကားလည်း ပြောနိုင်ရမည်။",
+        "ma": "Applicants for this post must be able to speak both English and Chinese.",
+        "maMy": "ဤရာထူးအတွက် လျှောက်ထားသူများသည် အင်္ဂလိပ်နှင့် တရုတ် ဘာသာစကားနှစ်မျိုးစလုံးကို ပြောနိုင်ရမည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "You should work harder if you want to be successful. You should have perseverance if you want to be successful.",
-        "my": "အောင်မြင်လိုပါက သင် ပို၍ကြိုးစားသင့်သည်။ အောင်မြင်လိုပါက ဇွဲလည်း ရှိသင့်သည်။"
+        "my": "အောင်မြင်လိုပါက သင် ပို၍ကြိုးစားသင့်သည်။ အောင်မြင်လိုပါက ဇွဲလည်း ရှိသင့်သည်။",
+        "ma": "You should both work harder and have perseverance if you want to be successful.",
+        "maMy": "အောင်မြင်လိုပါက သင် ပိုကြိုးစားသင့်သကဲ့သို့ ဇွဲလည်းရှိသင့်သည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "He donated money to the poor in our community. He donated food to the poor in our community.",
-        "my": "သူသည် ကျွန်ုပ်တို့ရပ်ရွာရှိ ဆင်းရဲနွမ်းပါးသူများအား ငွေလှူဒါန်းခဲ့သည်။ အစားအစာလည်း လှူဒါန်းခဲ့သည်။"
+        "my": "သူသည် ကျွန်ုပ်တို့ရပ်ရွာရှိ ဆင်းရဲနွမ်းပါးသူများအား ငွေလှူဒါန်းခဲ့သည်။ အစားအစာလည်း လှူဒါန်းခဲ့သည်။",
+        "ma": "He donated both money and food to the poor in our community.",
+        "maMy": "သူသည် ကျွန်ုပ်တို့ရပ်ရွာရှိ ဆင်းရဲနွမ်းပါးသူများအား ငွေရော အစားအစာပါ လှူဒါန်းခဲ့သည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "As we are free this afternoon, we can go shopping and we can see a film as well.",
-        "my": "ယနေ့မွန်းလွဲပိုင်းတွင် ကျွန်ုပ်တို့ အားလပ်သောကြောင့် ဈေးဝယ်သွားနိုင်သကဲ့သို့ ရုပ်ရှင်လည်း ကြည့်နိုင်သည်။"
+        "my": "ယနေ့မွန်းလွဲပိုင်းတွင် ကျွန်ုပ်တို့ အားလပ်သောကြောင့် ဈေးဝယ်သွားနိုင်သကဲ့သို့ ရုပ်ရှင်လည်း ကြည့်နိုင်သည်။",
+        "ma": "As we are free this afternoon, we can both go shopping and see a film.",
+        "maMy": "ယနေ့မွန်းလွဲပိုင်းတွင် အားလပ်သောကြောင့် ကျွန်ုပ်တို့သည် ဈေးဝယ်လည်းသွားနိုင်၊ ရုပ်ရှင်လည်းကြည့်နိုင်သည်။"
       },
       {
         "t": "line",
@@ -631,54 +762,74 @@
         "my": "'before' သို့မဟုတ် 'after' ကို အသုံးပြု၍ ဝါကျတစ်ခုစီကို ဖြည့်စွက်ပါ။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "I left the cinema ……..the boring film ended.",
-        "my": "ပျင်းစရာကောင်းသော ရုပ်ရှင်ပြီးဆုံးခြင်း ______ ကျွန်ုပ်သည် ရုပ်ရှင်ရုံမှ ထွက်ခဲ့သည်။"
+        "my": "ပျင်းစရာကောင်းသော ရုပ်ရှင်ပြီးဆုံးခြင်း ______ ကျွန်ုပ်သည် ရုပ်ရှင်ရုံမှ ထွက်ခဲ့သည်။",
+        "a": "before",
+        "exMy": "I left the cinema before the boring film ended.\nပျင်းစရာကောင်းသောရုပ်ရှင် မပြီးဆုံးမီ ကျွန်ုပ်သည် ရုပ်ရှင်ရုံမှ ထွက်ခဲ့သည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "My sister usually does the washing-up …..dinner.",
-        "my": "ကျွန်ုပ်၏အစ်မ သို့မဟုတ် ညီမသည် ညစာစားခြင်း ______ ပန်းကန်ဆေးလေ့ရှိသည်။"
+        "my": "ကျွန်ုပ်၏အစ်မ သို့မဟုတ် ညီမသည် ညစာစားခြင်း ______ ပန်းကန်ဆေးလေ့ရှိသည်။",
+        "a": "after",
+        "exMy": "My sister usually does the washing-up after dinner.\nကျွန်ုပ်၏အစ်မ သို့မဟုတ် ညီမသည် ညစာစားပြီးနောက် ပန်းကန်ဆေးလေ့ရှိသည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "………graduating from high school, I would like to attend the University of Computer Studies.",
-        "my": "အထက်တန်းကျောင်းပြီးဆုံးခြင်း ______ ကျွန်ုပ်သည် ကွန်ပျူတာတက္ကသိုလ် တက်လိုသည်။"
+        "my": "အထက်တန်းကျောင်းပြီးဆုံးခြင်း ______ ကျွန်ုပ်သည် ကွန်ပျူတာတက္ကသိုလ် တက်လိုသည်။",
+        "a": "After",
+        "exMy": "After graduating from high school, I would like to attend the University of Computer Studies.\nအထက်တန်းကျောင်းပြီးနောက် ကျွန်ုပ်သည် ကွန်ပျူတာတက္ကသိုလ် တက်လိုသည်။"
       },
       {
         "t": "q",
         "x": "His watch remains in good condition -------- having been used for five years.",
-        "my": "သူ၏နာရီသည် ငါးနှစ်ကြာ အသုံးပြုထားခြင်း ______ အခြေအနေကောင်းနေဆဲ ဖြစ်သည်။"
+        "my": "သူ၏နာရီသည် ငါးနှစ်ကြာ အသုံးပြုထားခြင်း ______ အခြေအနေကောင်းနေဆဲ ဖြစ်သည်။",
+        "a": "after",
+        "exMy": "His watch remains in good condition after having been used for five years.\nသူ၏နာရီသည် ငါးနှစ်အသုံးပြုပြီးနောက်လည်း အခြေအနေကောင်းနေဆဲ ဖြစ်သည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "……..a careful consideration, my parents allowed me to join the dance club.",
-        "my": "သေချာစွာ စဉ်းစားသုံးသပ်ခြင်း ______ မိဘများက ကျွန်ုပ်အား အကအသင်းသို့ ဝင်ခွင့်ပြုခဲ့သည်။"
+        "my": "သေချာစွာ စဉ်းစားသုံးသပ်ခြင်း ______ မိဘများက ကျွန်ုပ်အား အကအသင်းသို့ ဝင်ခွင့်ပြုခဲ့သည်။",
+        "a": "After",
+        "exMy": "After a careful consideration, my parents allowed me to join the dance club.\nသေချာစွာစဉ်းစားသုံးသပ်ပြီးနောက် မိဘများက ကျွန်ုပ်အား အကအသင်းသို့ ဝင်ခွင့်ပြုခဲ့သည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "The new building should be completed ………the end of this month as it is planned to be inaugurated in the first week of next month.",
-        "my": "အဆောက်အအုံသစ်ကို နောက်လ ပထမပတ်တွင် ဖွင့်လှစ်ရန် စီစဉ်ထားသောကြောင့် ယခုလကုန် ______ ဆောက်လုပ်ပြီးစီးသင့်သည်။"
+        "my": "အဆောက်အအုံသစ်ကို နောက်လ ပထမပတ်တွင် ဖွင့်လှစ်ရန် စီစဉ်ထားသောကြောင့် ယခုလကုန် ______ ဆောက်လုပ်ပြီးစီးသင့်သည်။",
+        "a": "before",
+        "exMy": "The new building should be completed before the end of this month as it is planned to be inaugurated in the first week of next month.\nနောက်လပထမပတ်တွင် ဖွင့်လှစ်ရန် စီစဉ်ထားသောကြောင့် အဆောက်အအုံသစ်ကို ယခုလမကုန်မီ ဆောက်လုပ်ပြီးစီးသင့်သည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "The man was arrested by the police two years ……committing the murder.",
-        "my": "ထိုလူကို လူသတ်မှုကျူးလွန်ခြင်း ______ နှစ်နှစ်အကြာတွင် ရဲက ဖမ်းဆီးခဲ့သည်။"
+        "my": "ထိုလူကို လူသတ်မှုကျူးလွန်ခြင်း ______ နှစ်နှစ်အကြာတွင် ရဲက ဖမ်းဆီးခဲ့သည်။",
+        "a": "after",
+        "exMy": "The man was arrested by the police two years after committing the murder.\nလူသတ်မှုကျူးလွန်ပြီး နှစ်နှစ်အကြာတွင် ထိုလူကို ရဲက ဖမ်းဆီးခဲ့သည်။"
       },
       {
         "t": "q",
         "x": "I am looking forward to the trip as I have never been to Japan _______________.",
-        "my": "ကျွန်ုပ်သည် ______ ဂျပန်နိုင်ငံသို့ တစ်ခါမျှ မရောက်ဖူးသောကြောင့် ဤခရီးစဉ်ကို မျှော်လင့်စောင့်စားနေသည်။"
+        "my": "ကျွန်ုပ်သည် ______ ဂျပန်နိုင်ငံသို့ တစ်ခါမျှ မရောက်ဖူးသောကြောင့် ဤခရီးစဉ်ကို မျှော်လင့်စောင့်စားနေသည်။",
+        "a": "before",
+        "exMy": "I am looking forward to the trip as I have never been to Japan before.\nယခင်က ဂျပန်နိုင်ငံသို့ မရောက်ဖူးသောကြောင့် ကျွန်ုပ်သည် ဤခရီးစဉ်ကို မျှော်လင့်စောင့်စားနေသည်။"
       },
       {
         "t": "q",
         "x": "_______________ arriving at the hotel, U Min Aung went straight to the meeting room.",
-        "my": "ဟိုတယ်သို့ ရောက်ရှိခြင်း ______ ဦးမင်းအောင်သည် အစည်းအဝေးခန်းသို့ တန်းသွားခဲ့သည်။"
+        "my": "ဟိုတယ်သို့ ရောက်ရှိခြင်း ______ ဦးမင်းအောင်သည် အစည်းအဝေးခန်းသို့ တန်းသွားခဲ့သည်။",
+        "a": "After",
+        "exMy": "After arriving at the hotel, U Min Aung went straight to the meeting room.\nဟိုတယ်သို့ရောက်ပြီးနောက် ဦးမင်းအောင်သည် အစည်းအဝေးခန်းသို့ တန်းသွားခဲ့သည်။"
       },
       {
         "t": "q",
         "x": "_______________ I gave him the shopping list, he had left for the market.",
-        "my": "ကျွန်ုပ် သူ့ကို ဈေးဝယ်စာရင်းပေးခြင်း ______ သူသည် ဈေးသို့ ထွက်သွားနှင့်ပြီ ဖြစ်သည်။"
+        "my": "ကျွန်ုပ် သူ့ကို ဈေးဝယ်စာရင်းပေးခြင်း ______ သူသည် ဈေးသို့ ထွက်သွားနှင့်ပြီ ဖြစ်သည်။",
+        "a": "Before",
+        "exMy": "Before I gave him the shopping list, he had left for the market.\nကျွန်ုပ်က သူ့ကို ဈေးဝယ်စာရင်းမပေးမီ သူသည် ဈေးသို့ ထွက်သွားနှင့်ပြီး ဖြစ်သည်။"
       },
       {
         "t": "ins",
@@ -741,54 +892,74 @@
         "my": "'before + V-ing' ပုံစံကို အသုံးပြု၍ ဝါကျတစ်စုံစီကို ပေါင်းစပ်ပါ။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "1. Aye Aye washed the vegetables. She put them in the refrigerator.",
-        "my": "1. အေးအေးသည် ဟင်းသီးဟင်းရွက်များကို ဆေးခဲ့သည်။ ထို့နောက် ရေခဲသေတ္တာထဲသို့ ထည့်ခဲ့သည်။"
+        "my": "1. အေးအေးသည် ဟင်းသီးဟင်းရွက်များကို ဆေးခဲ့သည်။ ထို့နောက် ရေခဲသေတ္တာထဲသို့ ထည့်ခဲ့သည်။",
+        "ma": "Aye Aye washed the vegetables before putting them in the refrigerator.",
+        "maMy": "အေးအေးသည် ဟင်းသီးဟင်းရွက်များကို ရေခဲသေတ္တာထဲ မထည့်မီ ဆေးခဲ့သည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "2. Ko Naing applied for a job at the company. He had attended a computer training course.",
-        "my": "2. ကိုနိုင်သည် ကုမ္ပဏီတွင် အလုပ်လျှောက်ခဲ့သည်။ ထိုမတိုင်မီ သူသည် ကွန်ပျူတာသင်တန်း တက်ရောက်ခဲ့ပြီး ဖြစ်သည်။"
+        "my": "2. ကိုနိုင်သည် ကုမ္ပဏီတွင် အလုပ်လျှောက်ခဲ့သည်။ ထိုမတိုင်မီ သူသည် ကွန်ပျူတာသင်တန်း တက်ရောက်ခဲ့ပြီး ဖြစ်သည်။",
+        "ma": "Ko Naing had attended a computer training course before applying for a job at the company.",
+        "maMy": "ကိုနိုင်သည် ကုမ္ပဏီတွင် အလုပ်မလျှောက်မီ ကွန်ပျူတာသင်တန်း တက်ရောက်ခဲ့ပြီး ဖြစ်သည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "3. I had a cup of coffee. I left for work this morning.",
-        "my": "3. ကျွန်ုပ်သည် ကော်ဖီတစ်ခွက် သောက်ခဲ့သည်။ ယနေ့နံနက် အလုပ်သို့ ထွက်ခဲ့သည်။"
+        "my": "3. ကျွန်ုပ်သည် ကော်ဖီတစ်ခွက် သောက်ခဲ့သည်။ ယနေ့နံနက် အလုပ်သို့ ထွက်ခဲ့သည်။",
+        "ma": "I had a cup of coffee before leaving for work this morning.",
+        "maMy": "ယနေ့နံနက် အလုပ်သို့မထွက်မီ ကျွန်ုပ်သည် ကော်ဖီတစ်ခွက် သောက်ခဲ့သည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "4. We had to queue up for an hour. We got the tickets for the music concert.",
-        "my": "4. ကျွန်ုပ်တို့သည် တစ်နာရီကြာ တန်းစီခဲ့ရသည်။ ထို့နောက် ဂီတဖျော်ဖြေပွဲလက်မှတ်များ ရခဲ့သည်။"
+        "my": "4. ကျွန်ုပ်တို့သည် တစ်နာရီကြာ တန်းစီခဲ့ရသည်။ ထို့နောက် ဂီတဖျော်ဖြေပွဲလက်မှတ်များ ရခဲ့သည်။",
+        "ma": "We had to queue up for an hour before getting the tickets for the music concert.",
+        "maMy": "ဂီတဖျော်ဖြေပွဲလက်မှတ်များ မရမီ ကျွန်ုပ်တို့သည် တစ်နာရီကြာ တန်းစီခဲ့ရသည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "5. There is a lot to study on the subject. Only after that we can start our project.",
-        "my": "5. ဤအကြောင်းအရာနှင့်ပတ်သက်၍ လေ့လာစရာ များစွာရှိသည်။ ထိုသို့ လေ့လာပြီးမှသာ ကျွန်ုပ်တို့၏စီမံကိန်းကို စတင်နိုင်မည်။"
+        "my": "5. ဤအကြောင်းအရာနှင့်ပတ်သက်၍ လေ့လာစရာ များစွာရှိသည်။ ထိုသို့ လေ့လာပြီးမှသာ ကျွန်ုပ်တို့၏စီမံကိန်းကို စတင်နိုင်မည်။",
+        "ma": "We have a lot to study on the subject before starting our project.",
+        "maMy": "ကျွန်ုပ်တို့၏စီမံကိန်းကို မစတင်မီ ဤအကြောင်းအရာနှင့်ပတ်သက်၍ များစွာလေ့လာရန် ရှိသည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "6. He ran the Yoma Marathon. He had practised for almost a year.",
-        "my": "6. သူသည် ရိုးမမာရသွန်တွင် ပြေးခဲ့သည်။ ထိုမတိုင်မီ တစ်နှစ်နီးပါး လေ့ကျင့်ခဲ့ပြီး ဖြစ်သည်။"
+        "my": "6. သူသည် ရိုးမမာရသွန်တွင် ပြေးခဲ့သည်။ ထိုမတိုင်မီ တစ်နှစ်နီးပါး လေ့ကျင့်ခဲ့ပြီး ဖြစ်သည်။",
+        "ma": "He had practised for almost a year before running the Yoma Marathon.",
+        "maMy": "ရိုးမမာရသွန်တွင် မပြေးမီ သူသည် တစ်နှစ်နီးပါး လေ့ကျင့်ခဲ့ပြီး ဖြစ်သည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "7. She went throt th her assignment again. She submitted it to the teacher.",
-        "my": "7. သူမသည် မိမိ၏အိမ်စာတာဝန်ကို ထပ်မံစစ်ဆေးခဲ့သည်။ ထို့နောက် ဆရာထံ တင်သွင်းခဲ့သည်။"
+        "my": "7. သူမသည် မိမိ၏အိမ်စာတာဝန်ကို ထပ်မံစစ်ဆေးခဲ့သည်။ ထို့နောက် ဆရာထံ တင်သွင်းခဲ့သည်။",
+        "ma": "She went through her assignment again before submitting it to the teacher.",
+        "maMy": "သူမသည် ဆရာထံမတင်သွင်းမီ မိမိ၏အိမ်စာတာဝန်ကို ထပ်မံစစ်ဆေးခဲ့သည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "8. She had packed her suitcase; she went to the bus terminal.",
-        "my": "8. သူမသည် ခရီးဆောင်အိတ်ကို ထုပ်ပိုးပြီးနောက် အဝေးပြေးကားဂိတ်သို့ သွားခဲ့သည်။"
+        "my": "8. သူမသည် ခရီးဆောင်အိတ်ကို ထုပ်ပိုးပြီးနောက် အဝေးပြေးကားဂိတ်သို့ သွားခဲ့သည်။",
+        "ma": "She had packed her suitcase before going to the bus terminal.",
+        "maMy": "အဝေးပြေးကားဂိတ်သို့ မသွားမီ သူမသည် ခရီးဆောင်အိတ်ကို ထုပ်ပိုးခဲ့ပြီး ဖြစ်သည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "9. My father always takes physical exercise. And then he has a bath.",
-        "my": "9. ကျွန်ုပ်၏ဖခင်သည် အမြဲတမ်း ကိုယ်လက်လှုပ်ရှားလေ့ကျင့်ခန်း ပြုလုပ်သည်။ ထို့နောက် ရေချိုးသည်။"
+        "my": "9. ကျွန်ုပ်၏ဖခင်သည် အမြဲတမ်း ကိုယ်လက်လှုပ်ရှားလေ့ကျင့်ခန်း ပြုလုပ်သည်။ ထို့နောက် ရေချိုးသည်။",
+        "ma": "My father always takes physical exercise before having a bath.",
+        "maMy": "ကျွန်ုပ်၏ဖခင်သည် ရေမချိုးမီ ကိုယ်လက်လှုပ်ရှားလေ့ကျင့်ခန်း အမြဲပြုလုပ်သည်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "10. We had lived in a small town for two years. Then, we moved to Yangon.",
-        "my": "10. ကျွန်ုပ်တို့သည် မြို့ငယ်တစ်မြို့တွင် နှစ်နှစ် နေထိုင်ခဲ့သည်။ ထို့နောက် ရန်ကုန်သို့ ပြောင်းရွှေ့ခဲ့ကြသည်။"
+        "my": "10. ကျွန်ုပ်တို့သည် မြို့ငယ်တစ်မြို့တွင် နှစ်နှစ် နေထိုင်ခဲ့သည်။ ထို့နောက် ရန်ကုန်သို့ ပြောင်းရွှေ့ခဲ့ကြသည်။",
+        "ma": "We had lived in a small town for two years before moving to Yangon.",
+        "maMy": "ရန်ကုန်သို့ မပြောင်းရွှေ့မီ ကျွန်ုပ်တို့သည် မြို့ငယ်တစ်မြို့တွင် နှစ်နှစ်နေထိုင်ခဲ့ကြသည်။"
       }
     ]
   },
@@ -897,9 +1068,11 @@
         "my": "B: ဟုတ်တယ်၊ ပြန်ရောက်လာပြီ။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "A: (1)",
-        "my": "A: (1) _______________"
+        "my": "A: (1) _______________",
+        "a": "b; How was your trip?",
+        "exMy": "(b) How was your trip? — မင်းရဲ့ခရီးစဉ်က ဘယ်လိုလဲ။"
       },
       {
         "t": "line",
@@ -907,9 +1080,11 @@
         "my": "B: အရမ်းကောင်းတယ်။ အတွေ့အကြုံတွေလည်း အများကြီး ရခဲ့တယ်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "A: Did you? (2)",
-        "my": "A: ဟုတ်လား။ (2) _______________"
+        "my": "A: ဟုတ်လား။ (2) _______________",
+        "a": "e; With whom did you go there?",
+        "exMy": "(e) With whom did you go there? — အဲဒီကို မင်း ဘယ်သူတွေနဲ့ သွားခဲ့သလဲ။"
       },
       {
         "t": "line",
@@ -917,9 +1092,11 @@
         "my": "B: ပတ်ဝန်းကျင်ဆိုင်ရာ စီမံကိန်းလုပ်ဖို့ စေတနာ့ဝန်ထမ်းအဖွဲ့တစ်ဖွဲ့နဲ့ သွားခဲ့တာ။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "A: (3)",
-        "my": "A: (3) _______________"
+        "my": "A: (3) _______________",
+        "a": "c; What did you do with that group?",
+        "exMy": "(c) What did you do with that group? — အဲဒီအဖွဲ့နဲ့ မင်း ဘာတွေလုပ်ခဲ့သလဲ။"
       },
       {
         "t": "line",
@@ -927,9 +1104,11 @@
         "my": "B: အဲဒီကို ရောက်တော့ ကမ်းခြေက အမှိုက်တွေကို ကောက်ပြီး ကမ်းခြေနဲ့ဝေးတဲ့နေရာမှာ တူးထားတဲ့ကျင်းထဲ အမှိုက်အိတ်တွေကို မြှုပ်ခဲ့ကြတယ်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "A: What a good deed! (4)",
-        "my": "A: ကောင်းတဲ့အလုပ်ပဲ။ (4) _______________"
+        "my": "A: ကောင်းတဲ့အလုပ်ပဲ။ (4) _______________",
+        "a": "d; What did you do after that?",
+        "exMy": "(d) What did you do after that? — အဲဒီနောက် မင်း ဘာလုပ်ခဲ့သလဲ။"
       },
       {
         "t": "line",
@@ -937,9 +1116,11 @@
         "my": "B: ကမ်းခြေကို ပြန်လာတော့ သဲပေါ်မှာ တွားသွားနေတဲ့ ပင်လယ်လိပ်တစ်ကောင်ကို တွေ့ခဲ့တယ်။ ဒါကြောင့် သူငယ်ချင်းနဲ့အတူ အဲဒီလိပ်ကို သယ်ပြီး ပင်လယ်ထဲ ပြန်လွှတ်ပေးခဲ့တယ်။"
       },
       {
-        "t": "line",
+        "t": "q",
         "x": "A: (5)",
-        "my": "A: (5) _______________"
+        "my": "A: (5) _______________",
+        "a": "a; How did you feel after the trip?",
+        "exMy": "(a) How did you feel after the trip? — ခရီးစဉ်ပြီးနောက် မင်း ဘယ်လိုခံစားရသလဲ။"
       },
       {
         "t": "line",
@@ -955,6 +1136,11 @@
         "t": "ins",
         "x": "D. In pairs, create a dialogue as in Exercise B talking about a trip to a lake in the area you live in for birdwatching.",
         "my": "နှစ်ယောက်တစ်တွဲ လုပ်ဆောင်ပါ။ သင်နေထိုင်ရာဒေသရှိ ရေကန်တစ်ခုသို့ ငှက်ကြည့်ရန် သွားရောက်သည့် ခရီးစဉ်အကြောင်း လေ့ကျင့်ခန်း B ကဲ့သို့ စကားပြောခန်းတစ်ခု ဖန်တီးပါ။"
+      },
+      {
+        "t": "model",
+        "x": "A: You've just come back from a lake near your town, haven't you?\nB: Yes, I have.\nA: How was your trip?\nB: It was wonderful. I saw many different kinds of birds.\nA: With whom did you go there?\nB: I went with my classmates and our teacher.\nA: What did you do there?\nB: We watched birds through binoculars and wrote down what we observed. We kept quiet so that we would not disturb them.\nA: What did you do after that?\nB: We collected litter near the lake and put it in a rubbish bin.\nA: How did you feel after the trip?\nB: I felt happy because I had learned about birds and helped keep their habitat clean.",
+        "my": "A: မင်းနေတဲ့မြို့နားက ရေကန်ကို သွားပြီး အခုလေးတင် ပြန်ရောက်လာတာ မဟုတ်လား။\nB: ဟုတ်တယ်၊ ပြန်ရောက်လာပြီ။\nA: ခရီးစဉ်က ဘယ်လိုလဲ။\nB: အရမ်းကောင်းတယ်။ ငှက်အမျိုးမျိုးကို တွေ့ခဲ့ရတယ်။\nA: အဲဒီကို ဘယ်သူတွေနဲ့ သွားခဲ့သလဲ။\nB: အတန်းဖော်တွေနဲ့ ဆရာတို့အတူ သွားခဲ့တယ်။\nA: အဲဒီမှာ ဘာတွေလုပ်ခဲ့သလဲ။\nB: မှန်ပြောင်းနဲ့ ငှက်တွေကို ကြည့်ပြီး တွေ့ရှိချက်တွေကို မှတ်တမ်းရေးခဲ့ကြတယ်။ ငှက်တွေကို မနှောင့်ယှက်မိအောင် တိတ်တိတ်နေခဲ့ကြတယ်။\nA: အဲဒီနောက် ဘာလုပ်ခဲ့သလဲ။\nB: ရေကန်နားက အမှိုက်တွေကို ကောက်ပြီး အမှိုက်ပုံးထဲ ထည့်ခဲ့ကြတယ်။\nA: ခရီးစဉ်ပြီးနောက် ဘယ်လိုခံစားရသလဲ။\nB: ငှက်တွေအကြောင်း လေ့လာနိုင်ပြီး သူတို့နေရင်းဒေသကို သန့်ရှင်းအောင် ကူညီခဲ့ရလို့ ပျော်ရွှင်မိတယ်။"
       }
     ]
   },
@@ -1011,6 +1197,11 @@
         "t": "line",
         "x": "found in thorn scrubs, bushes, and dry forests located within the dry zone of central Myanmar",
         "my": "မြန်မာနိုင်ငံအလယ်ပိုင်း အပူပိုင်းခြောက်သွေ့ဒေသရှိ ဆူးချုံတောများ၊ ချုံပုတ်များနှင့် ခြောက်သွေ့တောများတွင် တွေ့ရသည်။"
+      },
+      {
+        "t": "model",
+        "x": "Myanmar Star Tortoise\n\nThe Myanmar star tortoise is a distinctive animal found in Myanmar. It is a medium-sized tortoise with an oval-shaped upper shell. The shell is dark brown or black and has attractive star-shaped patterns. These patterns make the tortoise easy to recognise. Its head, limbs and tail have yellowish skin. An adult measures about twenty to thirty centimetres and weighs between 1.3 and 2.2 kilograms.\n\nThis tortoise lives in thorn scrub, bushes and dry forests in the dry zone of central Myanmar. It feeds on different kinds of vegetation, including grass and fruit. It is generally peaceful and charming. When it becomes alarmed, it pulls in its head and remains still to protect itself.\n\nUnfortunately, the Myanmar star tortoise is critically endangered. People have caught it for food, and others have exported it to neighbouring countries as a pet. The loss of its natural habitat is another serious threat. If these problems continue, the species may disappear from the wild.\n\nConservation efforts are therefore essential. Tortoises recovered from illegal trade should be released into suitable wildlife sanctuaries under expert guidance. Breeding programmes can also help increase their numbers. Protecting dry forests and preventing illegal capture are important measures. People should avoid buying wild tortoises and learn more about their conservation. By working together, communities and conservation organisations can give this beautiful animal a safer future and preserve it for the next generation. Everyone has a role in ensuring that these remarkable tortoises continue to live in their natural home.",
+        "my": "မြန်မာ့ကြယ်လိပ်\n\nမြန်မာ့ကြယ်လိပ်သည် မြန်မာနိုင်ငံတွင် တွေ့ရသော ထူးခြားသည့်တိရစ္ဆာန်တစ်မျိုး ဖြစ်သည်။ အပေါ်ခွံသည် ဘဲဥပုံသဏ္ဌာန်ရှိပြီး အလတ်စားကုန်းလိပ် ဖြစ်သည်။ အခွံသည် အညိုရင့် သို့မဟုတ် အနက်ရောင်ဖြစ်ကာ ဆွဲဆောင်မှုရှိသော ကြယ်ပုံအဆင်များ ပါရှိသည်။ ထိုအဆင်များကြောင့် ဤလိပ်ကို အလွယ်တကူ ခွဲခြားသိနိုင်သည်။ ဦးခေါင်း၊ ခြေလက်နှင့် အမြီးတို့၏အရေပြားသည် အဝါရောင်သန်းသည်။ အရွယ်ရောက်လိပ်တစ်ကောင်သည် ၂၀ မှ ၃၀ စင်တီမီတာခန့် ရှိပြီး ၁.၃ မှ ၂.၂ ကီလိုဂရမ်အထိ အလေးချိန်ရှိသည်။\n\nဤလိပ်သည် မြန်မာနိုင်ငံအလယ်ပိုင်း အပူပိုင်းခြောက်သွေ့ဒေသရှိ ဆူးချုံတောများ၊ ချုံပုတ်များနှင့် ခြောက်သွေ့တောများတွင် နေထိုင်သည်။ မြက်နှင့် သစ်သီးများအပါအဝင် အပင်အမျိုးမျိုးကို စားသုံးသည်။ ယေဘုယျအားဖြင့် အေးချမ်း၍ ချစ်စရာကောင်းသည်။ ထိတ်လန့်သောအခါ မိမိကိုယ်ကို ကာကွယ်ရန် ဦးခေါင်းကို အခွံထဲသို့ သွင်းကာ ငြိမ်နေတတ်သည်။\n\nဝမ်းနည်းစရာမှာ မြန်မာ့ကြယ်လိပ်သည် မျိုးသုဉ်းရန် အလွန်အမင်းအန္တရာယ်ရှိနေခြင်း ဖြစ်သည်။ လူများသည် အစားအစာအဖြစ် ဖမ်းယူကြပြီး အချို့က အိမ်မွေးတိရစ္ဆာန်အဖြစ် အိမ်နီးချင်းနိုင်ငံများသို့ တင်ပို့ကြသည်။ သဘာဝနေရင်းဒေသ ဆုံးရှုံးမှုသည်လည်း ကြီးမားသောခြိမ်းခြောက်မှု ဖြစ်သည်။ ထိုပြဿနာများ ဆက်ဖြစ်နေပါက ဤမျိုးစိတ်သည် တောရိုင်းသဘာဝထဲမှ ပျောက်ကွယ်သွားနိုင်သည်။\n\nထို့ကြောင့် ထိန်းသိမ်းကာကွယ်ရေးလုပ်ငန်းများ မရှိမဖြစ်လိုအပ်သည်။ တရားမဝင်ရောင်းဝယ်မှုမှ ပြန်လည်သိမ်းဆည်းရရှိသော လိပ်များကို ကျွမ်းကျင်သူများ၏ လမ်းညွှန်မှုဖြင့် သင့်လျော်သော ဘေးမဲ့တောများတွင် ပြန်လွှတ်သင့်သည်။ မျိုးပွားအစီအစဉ်များကလည်း အကောင်ရေတိုးပွားရန် ကူညီနိုင်သည်။ ခြောက်သွေ့တောများကို ကာကွယ်ခြင်းနှင့် တရားမဝင်ဖမ်းဆီးမှုကို တားဆီးခြင်းတို့သည် အရေးကြီးသည်။ လူများသည် တောရိုင်းလိပ်များကို မဝယ်သင့်ဘဲ ထိန်းသိမ်းရေးအကြောင်း ပိုမိုလေ့လာသင့်သည်။ ရပ်ရွာလူထုနှင့် ထိန်းသိမ်းရေးအဖွဲ့များ ပူးပေါင်းလုပ်ဆောင်ခြင်းဖြင့် ဤလှပသောတိရစ္ဆာန်ကို လုံခြုံသောအနာဂတ် ပေးနိုင်ပြီး နောင်မျိုးဆက်များအတွက် ထိန်းသိမ်းနိုင်သည်။ ဤထူးခြားသောလိပ်များ သဘာဝနေရင်းတွင် ဆက်လက်နေထိုင်နိုင်ရန် လူတိုင်းတွင် တာဝန်ရှိသည်။"
       }
     ]
   }
