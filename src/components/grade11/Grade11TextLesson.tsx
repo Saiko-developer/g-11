@@ -25,7 +25,7 @@ function sentences(text: string) {
   return (text.match(/[^.!?]+[.!?]+["')\]]*|[^.!?]+$/g) ?? []).map((s) => s.trim()).filter((s) => s.split(/\s+/).length >= 3);
 }
 type Section = { code: string; title: string; blocks: Block[] };
-type Exercise = { ins: string; blocks: Block[] };
+type Exercise = { ins: string; insMy?: string; blocks: Block[] };
 
 const UNITS: Record<number, Section[]> = {
   1: unit1 as Section[],
@@ -52,7 +52,7 @@ function split(blocks: Block[]) {
   const lesson: Block[] = [];
   const exercises: Exercise[] = [];
   for (const b of blocks) {
-    if (b.t === "ins") exercises.push({ ins: b.x, blocks: [] });
+    if (b.t === "ins") exercises.push({ ins: b.x, insMy: b.my, blocks: [] });
     else if (exercises.length) exercises[exercises.length - 1].blocks.push(b);
     else lesson.push(b);
   }
@@ -93,7 +93,8 @@ export function Grade11TextLesson({ unit, kind }: { unit: number; kind: G11Skill
           <span className="inline-flex rounded-full bg-primary/10 px-2.5 py-1 text-xs font-bold text-primary">
             {section.code} · {section.title}
           </span>
-          <TranslateSlot label="Translate whole section to Burmese" />
+          <TranslateSlot label="Translate whole section to Burmese"
+            text={lesson.map((b) => b.my).filter(Boolean).join("\n\n") || undefined} />
           {lesson.length === 0 && (
             <p className="text-sm text-muted-foreground">ဒီအပိုင်းမှာ လေ့ကျင့်ခန်းများသာ ပါဝင်ပါတယ်။</p>
           )}
@@ -139,6 +140,8 @@ export function Grade11TextLesson({ unit, kind }: { unit: number; kind: G11Skill
                 <div className="flex items-start gap-2 border-b border-border pb-2 font-semibold">
                   <PenLine className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> <span>{ex.ins}</span>
                 </div>
+                <TranslateSlot label="Translate Instructions" small
+                  text={[ex.insMy, ...ex.blocks.filter((b) => !isTask(b)).map((b) => b.my)].filter(Boolean).join("\n") || undefined} />
                 <div className="mt-3 space-y-3">
                   {ex.blocks.map((b, bi) => {
                     const k = `${ei}-${bi}`;
@@ -183,7 +186,7 @@ function TranslateSlot({ label, small, text }: { label: string; small?: boolean;
         <Languages className="h-3 w-3" /> {open ? "Hide Myanmar Translation" : label}
       </Button>
       {open && (text ? (
-        <p className="mt-2 rounded-lg border border-primary/20 bg-primary/5 p-3 text-sm leading-relaxed">{text}</p>
+        <p className="mt-2 whitespace-pre-line rounded-lg border border-primary/20 bg-primary/5 p-3 text-sm leading-relaxed">{text}</p>
       ) : (
         <p className="mt-2 rounded-lg border border-dashed border-border bg-muted/40 p-2 text-xs text-muted-foreground">
           🔜 မြန်မာဘာသာပြန်ကို မကြာမီ ထည့်ပေးပါမည်။
