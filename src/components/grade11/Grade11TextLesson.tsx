@@ -8,14 +8,20 @@ import { BookOpen, Languages, PenLine } from "lucide-react";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { OwlBadge } from "@/components/lesson/ExerciseKit";
+import { AnswerTryBox, OwlBadge, StructureBreakdown, ToggleReveal } from "@/components/lesson/ExerciseKit";
+import { ListTree } from "lucide-react";
 import { GrammarExerciseGenerator } from "@/components/lesson/GrammarExerciseGenerator";
 import unit1 from "@/data/grade11/textbook/unit1.json";
 import unit2 from "@/data/grade11/textbook/unit2.json";
 import unit3 from "@/data/grade11/textbook/unit3.json";
 import type { G11SkillKind } from "@/data/grade11/syllabus";
 
-type Block = { t: "sub" | "h" | "para" | "ins" | "q" | "line"; x: string };
+/** Optional `a` = answer key (enables Check/Reveal), `my` = Burmese translation. */
+type Block = { t: "sub" | "h" | "para" | "ins" | "q" | "line"; x: string; a?: string; my?: string };
+
+function sentences(text: string) {
+  return (text.match(/[^.!?]+[.!?]+["')\]]*|[^.!?]+$/g) ?? []).map((s) => s.trim()).filter((s) => s.split(/\s+/).length >= 3);
+}
 type Section = { code: string; title: string; blocks: Block[] };
 type Exercise = { ins: string; blocks: Block[] };
 
@@ -102,7 +108,17 @@ export function Grade11TextLesson({ unit, kind }: { unit: number; kind: G11Skill
                 <div key={i} className="rounded-xl bg-secondary/50 p-4">
                   <p className="font-mono text-xs text-muted-foreground">Paragraph {paraNo}</p>
                   <p className="mt-1 text-[15px] leading-relaxed">{b.x}</p>
-                  <TranslateSlot label="Show Burmese translation" small />
+                  <TranslateSlot label="Show Myanmar Translation" small text={b.my} />
+                  <ToggleReveal label="Sentence Structure" hiddenLabel="Hide Sentence Structure" icon={ListTree} tone="primary">
+                    <div className="space-y-4">
+                      {sentences(b.x).map((s, si) => (
+                        <div key={si} className="space-y-2">
+                          <p className="text-xs font-semibold text-muted-foreground">Sentence {si + 1}</p>
+                          <StructureBreakdown questionText={s} />
+                        </div>
+                      ))}
+                    </div>
+                  </ToggleReveal>
                 </div>
               );
             }
@@ -127,8 +143,20 @@ export function Grade11TextLesson({ unit, kind }: { unit: number; kind: G11Skill
                       return (
                         <div key={bi} className="space-y-1.5">
                           <p className="text-[15px] leading-relaxed">{b.x}</p>
-                          <Textarea rows={1} value={answers[k] ?? ""} onChange={(e) => setA(k, e.target.value)}
-                            placeholder="Type your answer…" className="min-h-0 text-sm" />
+                          {b.a ? (
+                            <div onInput={(e) => setA(k, (e.target as HTMLInputElement).value ?? "")}>
+                              <AnswerTryBox correct={b.a} question={b.x} instructions={ex.ins} />
+                            </div>
+                          ) : (
+                            <Textarea rows={1} value={answers[k] ?? ""} onChange={(e) => setA(k, e.target.value)}
+                              placeholder="Type your answer…" className="min-h-0 text-sm" />
+                          )}
+                          {kind === "reading" && (
+                            <ToggleReveal label="Sentence Structure" hiddenLabel="Hide Sentence Structure" icon={ListTree} tone="primary">
+                              <StructureBreakdown questionText={b.x} />
+                            </ToggleReveal>
+                          )}
+                          {b.my && <TranslateSlot label="Show Myanmar Translation" small text={b.my} />}
                         </div>
                       );
                     if (b.t === "sub" || b.t === "h")
@@ -159,18 +187,20 @@ export function Grade11TextLesson({ unit, kind }: { unit: number; kind: G11Skill
   );
 }
 
-function TranslateSlot({ label, small }: { label: string; small?: boolean }) {
+function TranslateSlot({ label, small, text }: { label: string; small?: boolean; text?: string }) {
   const [open, setOpen] = useState(false);
   return (
     <div className={small ? "mt-2" : ""}>
       <Button size="sm" variant={small ? "ghost" : "outline"} className="h-7 gap-1 text-xs" onClick={() => setOpen((v) => !v)}>
-        <Languages className="h-3 w-3" /> {open ? "Hide" : label}
+        <Languages className="h-3 w-3" /> {open ? "Hide Myanmar Translation" : label}
       </Button>
-      {open && (
+      {open && (text ? (
+        <p className="mt-2 rounded-lg border border-primary/20 bg-primary/5 p-3 text-sm leading-relaxed">{text}</p>
+      ) : (
         <p className="mt-2 rounded-lg border border-dashed border-border bg-muted/40 p-2 text-xs text-muted-foreground">
           🔜 မြန်မာဘာသာပြန်ကို မကြာမီ ထည့်ပေးပါမည်။
         </p>
-      )}
+      ))}
     </div>
   );
 }
