@@ -6,6 +6,8 @@
 import { useMemo, useState } from "react";
 import { BookOpen, Languages, PenLine } from "lucide-react";
 import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/components/ui/input";
+import { CheckCircle2, Lightbulb, Loader2, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { AnswerTryBox, OwlBadge, StructureBreakdown, ToggleReveal } from "@/components/lesson/ExerciseKit";
@@ -63,7 +65,8 @@ export function Grade11TextLesson({ unit, kind }: { unit: number; kind: G11Skill
   const [answers, setAnswers] = useState<Record<string, string>>({});
   if (!section) return null;
 
-  const isTask = (b: Block) => b.t === "q" || (kind === "grammar" && b.t === "line" && !/^e\.g\./i.test(b.x));
+  const isTask = (b: Block) => b.t === "q" || (b.t === "line" && (kind === "grammar" ? !/^e\.g\./i.test(b.x) : /^\d+[.)]\s/.test(b.x)));
+  const lessonText = lesson.map((b) => b.x).join("\n").slice(0, 6000);
   const keys: string[] = [];
   exercises.forEach((ex, ei) => ex.blocks.forEach((b, bi) => isTask(b) && keys.push(`${ei}-${bi}`)));
   const freeKey = "free";
@@ -141,23 +144,8 @@ export function Grade11TextLesson({ unit, kind }: { unit: number; kind: G11Skill
                     const k = `${ei}-${bi}`;
                     if (isTask(b))
                       return (
-                        <div key={bi} className="space-y-1.5">
-                          <p className="text-[15px] leading-relaxed">{b.x}</p>
-                          {b.a ? (
-                            <div onInput={(e) => setA(k, (e.target as HTMLInputElement).value ?? "")}>
-                              <AnswerTryBox correct={b.a} question={b.x} instructions={ex.ins} />
-                            </div>
-                          ) : (
-                            <Textarea rows={1} value={answers[k] ?? ""} onChange={(e) => setA(k, e.target.value)}
-                              placeholder="Type your answer…" className="min-h-0 text-sm" />
-                          )}
-                          {kind === "reading" && (
-                            <ToggleReveal label="Sentence Structure" hiddenLabel="Hide Sentence Structure" icon={ListTree} tone="primary">
-                              <StructureBreakdown questionText={b.x} />
-                            </ToggleReveal>
-                          )}
-                          {b.my && <TranslateSlot label="Show Myanmar Translation" small text={b.my} />}
-                        </div>
+                        <QuestionCard key={bi} b={b} instructions={ex.ins} context={lessonText}
+                          onAnswer={(v) => setA(k, v)} />
                       );
                     if (b.t === "sub" || b.t === "h")
                       return <h4 key={bi} className="pt-1 font-semibold text-primary">{b.x}</h4>;
@@ -201,6 +189,94 @@ function TranslateSlot({ label, small, text }: { label: string; small?: boolean;
           🔜 မြန်မာဘာသာပြန်ကို မကြာမီ ထည့်ပေးပါမည်။
         </p>
       ))}
+    </div>
+  );
+}
+
+/** Grade 10-style question card: number, Translate Question + Sentence Structure, answer row with Check/Reveal. */
+function QuestionCard({ b, instructions, context, onAnswer }: {
+  b: Block; instructions: string; context: string; onAnswer: (v: string) => void;
+}) {
+  const m = b.x.match(/^\s*(\d+|[a-z])[.)]\s+(.*)$/is);
+  const num = m?.[1];
+  const text = m ? m[2] : b.x;
+  return (
+    <div className="rounded-xl border border-border bg-background p-3">
+      <div className="flex gap-2">
+        {num && <span className="text-sm font-bold text-primary">{num}.</span>}
+        <p className="text-sm font-medium leading-relaxed">{text}</p>
+      </div>
+      <div className="mt-2 flex flex-wrap gap-2">
+        <ToggleReveal label="Translate Question" icon={Languages}>
+          {b.my || "🔜 မြန်မာဘာသာပြန်ကို မကြာမီ ထည့်ပေးပါမည်။"}
+        </ToggleReveal>
+        <ToggleReveal label="Sentence Structure" icon={Sparkles} tone="primary">
+          <StructureBreakdown questionText={text} />
+        </ToggleReveal>
+      </div>
+      {b.a ? (
+        <div onInput={(e) => onAnswer((e.target as HTMLInputElement).value ?? "")}>
+          <AnswerTryBox correct={b.a} question={text} instructions={instructions} />
+        </div>
+      ) : (
+        <OwlAnswerBox question={text} instructions={instructions} context={context} onAnswer={onAnswer} />
+      )}
+    </div>
+  );
+}
+
+/** Same look as AnswerTryBox; Saya Owl checks / suggests the answer since no answer key exists yet. */
+function OwlAnswerBox({ question, instructions, context, onAnswer }: {
+  question: string; instructions: string; context: string; onAnswer: (v: string) => void;
+}) {
+  const [val, setVal] = useState("");
+  const [busy, setBusy] = useState<null | "check" | "reveal">(null);
+  const [result, setResult] = useState<null | { correct: boolean; feedback: string }>(null);
+  const [answer, setAnswer] = useState<string | null>(null);
+  const [showAnswer, setShowAnswer] = useState(false);
+  const [err, setErr] = useState<string | null>(null);
+
+  const call = async (mode: "check" | "reveal") => {
+    setBusy(mode); setErr(null);
+    try {
+      const res = await fetch("/api/g11-check", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ mode, question, instructions, context, studentAnswer: val }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error();
+      if (mode === "check") setResult({ correct: !!data.correct, feedback: data.feedback ?? "" });
+      else { if (!data.answer) throw new Error(); setAnswer(data.answer); setShowAnswer(true); }
+    } catch {
+      setErr("ဆရာဇီးကွက် အခု မဖြေနိုင်သေးပါ — ခဏနေ ထပ်စမ်းကြည့်ပါ။");
+    } finally { setBusy(null); }
+  };
+
+  return (
+    <div className="mt-2 space-y-2">
+      <div className="flex flex-col gap-2 sm:flex-row">
+        <Input value={val} placeholder="Type your answer here…" className="flex-1"
+          onChange={(e) => { setVal(e.target.value); onAnswer(e.target.value); setResult(null); }} />
+        <Button size="sm" variant="outline" className="gap-1.5" disabled={!val.trim() || !!busy} onClick={() => call("check")}>
+          {busy === "check" ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <CheckCircle2 className="h-3.5 w-3.5" />} Check Answer
+        </Button>
+        <Button size="sm" variant="ghost" className="gap-1.5" disabled={!!busy}
+          onClick={() => (answer ? setShowAnswer((v) => !v) : call("reveal"))}>
+          {busy === "reveal" ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Lightbulb className="h-3.5 w-3.5" />}
+          {showAnswer ? "Hide Answer" : "Reveal Answer"}
+        </Button>
+      </div>
+      {result && (result.correct ? (
+        <div className="rounded-md border border-primary/30 bg-primary/5 px-3 py-2 text-xs">✅ မှန်ပါတယ်! တော်လိုက်တာ။ {result.feedback}</div>
+      ) : (
+        <div className="rounded-md border border-destructive/40 bg-destructive/5 px-3 py-2 text-xs">❌ နည်းနည်းလွဲသွားတယ်နော်။ {result.feedback}</div>
+      ))}
+      {err && <p className="text-xs text-muted-foreground">{err}</p>}
+      {showAnswer && answer && (
+        <div className="rounded-md border border-primary/30 bg-primary/5 px-3 py-2 text-sm">
+          <span className="font-semibold">Answer (Saya Owl): </span>{answer}
+        </div>
+      )}
     </div>
   );
 }
