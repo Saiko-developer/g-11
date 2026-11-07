@@ -19,7 +19,23 @@ import unit3 from "@/data/grade11/textbook/unit3.json";
 import type { G11SkillKind } from "@/data/grade11/syllabus";
 
 /** Optional `a` = answer key (enables Check/Reveal), `my` = Burmese translation. */
-type Block = { t: "sub" | "h" | "para" | "ins" | "q" | "line"; x: string; a?: string; my?: string };
+type Block = {
+  t: "sub" | "h" | "para" | "ins" | "q" | "line" | "model";
+  x: string; a?: string; my?: string;
+  /** model (sample) answer for open questions, with Burmese */
+  ma?: string; maMy?: string;
+  /** Burmese explanation shown after Reveal */
+  exMy?: string;
+};
+
+function ModelAnswer({ en, my, label = "Model Answer" }: { en: string; my?: string; label?: string }) {
+  return (
+    <ToggleReveal label={label} icon={BookOpen} tone="primary">
+      <p className="whitespace-pre-line text-sm leading-relaxed">{en}</p>
+      {my && <p className="mt-2 whitespace-pre-line border-t border-border pt-2 text-sm leading-relaxed">{my}</p>}
+    </ToggleReveal>
+  );
+}
 
 function sentences(text: string) {
   return (text.match(/[^.!?]+[.!?]+["')\]]*|[^.!?]+$/g) ?? []).map((s) => s.trim()).filter((s) => s.split(/\s+/).length >= 3);
@@ -131,7 +147,7 @@ export function Grade11TextLesson({ unit, kind }: { unit: number; kind: G11Skill
                   <PenLine className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> <span>{ex.ins}</span>
                 </div>
                 <TranslateSlot label="Translate Instructions" small
-                  text={[ex.insMy, ...ex.blocks.filter((b) => !isTask(b)).map((b) => b.my)].filter(Boolean).join("\n") || undefined} />
+                  text={[ex.insMy, ...ex.blocks.filter((b) => !isTask(b) && b.t !== "model").map((b) => b.my)].filter(Boolean).join("\n") || undefined} />
                 <div className="mt-3 space-y-3">
                   {ex.blocks.map((b, bi) => {
                     const k = `${ei}-${bi}`;
@@ -141,6 +157,8 @@ export function Grade11TextLesson({ unit, kind }: { unit: number; kind: G11Skill
                           noStructure={/find the bold-faced words/i.test(ex.ins)}
                           onAnswer={(v) => setA(k, v)} />
                       );
+                    if (b.t === "model")
+                      return <ModelAnswer key={bi} en={b.x} my={b.my} label="Sample Answer" />;
                     if (b.t === "sub" || b.t === "h")
                       return <h4 key={bi} className="pt-1 font-semibold text-primary">{b.x}</h4>;
                     return <p key={bi} className="whitespace-pre-line text-sm leading-relaxed text-muted-foreground">{b.x}</p>;
@@ -216,6 +234,14 @@ function QuestionCard({ b, instructions, context, onAnswer, noStructure }: {
         </div>
       ) : (
         <OwlAnswerBox question={text} instructions={instructions} context={context} onAnswer={onAnswer} />
+      )}
+      {(b.ma || b.exMy) && (
+        <div className="mt-2 flex flex-wrap gap-2">
+          {b.ma && <ModelAnswer en={b.ma} my={b.maMy} />}
+          {b.exMy && (
+            <ToggleReveal label="ဘာကြောင့်လဲ? (ရှင်းလင်းချက်)" icon={Sparkles}>{b.exMy}</ToggleReveal>
+          )}
+        </div>
       )}
     </div>
   );
