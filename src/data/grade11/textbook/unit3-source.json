@@ -25,7 +25,7 @@
     31
   ],
   "canonical_content": "PDF transcription and Burmese translation; original printed writing model restored, no added lesson sentences",
-  "answer_keys": "31 source-derived short answers; not an official printed answer key",
+  "answer_keys": "41 source-derived answers (31 short and 10 suggested full-sentence), with Burmese translations, in unit3-answer.json; no official answer key supplied",
   "missing_audio": "No Unit 3 audio supplied; listening answers are not guessed",
   "source_scans": [
     {

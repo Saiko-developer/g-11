@@ -1,0 +1,779 @@
+{
+  "source_files": [
+    {
+      "file": "13575. Grade (11) English New Syllabus-1-48.pdf",
+      "local_pdf_pages": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "file": "13575. Grade (11) English New Syllabus-49-96.pdf",
+      "local_pdf_pages": [
+        1
+      ]
+    }
+  ],
+  "combined_pdf_pages": [
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "textbook_pages": [
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "canonical_content": "Original PDF text with Burmese translation; no added lesson sentences or model essays",
+  "answer_keys": "53 source-derived answers in unit4-answer.json: 24 vocabulary, 20 grammar suggestions, 5 reading suggestions, 4 writing structure suggestions; not an official key",
+  "missing_audio": "Original Grade 11 Unit 4 recording not supplied; eight listening blanks left without keys",
+  "unreadable_source": [
+    {
+      "combined_pdf_page": 47,
+      "section": "4D C report instruction",
+      "handling": "Original scan retained; damaged wording not reconstructed"
+    }
+  ],
+  "source_scans": [
+    42,
+    47
+  ],
+  "blocks": [
+    {
+      "id": "4A-0",
+      "sourcePage": 40
+    },
+    {
+      "id": "4A-1",
+      "sourcePage": 40
+    },
+    {
+      "id": "4A-2",
+      "sourcePage": 40
+    },
+    {
+      "id": "4A-3",
+      "sourcePage": 40
+    },
+    {
+      "id": "4A-4",
+      "sourcePage": 40
+    },
+    {
+      "id": "4A-5",
+      "sourcePage": 40
+    },
+    {
+      "id": "4A-6",
+      "sourcePage": 40
+    },
+    {
+      "id": "4A-7",
+      "sourcePage": 40
+    },
+    {
+      "id": "4A-8",
+      "sourcePage": 40
+    },
+    {
+      "id": "4A-9",
+      "sourcePage": 41
+    },
+    {
+      "id": "4A-10",
+      "sourcePage": 41
+    },
+    {
+      "id": "4A-11",
+      "sourcePage": 41
+    },
+    {
+      "id": "4A-12",
+      "sourcePage": 41
+    },
+    {
+      "id": "4A-13",
+      "sourcePage": 41
+    },
+    {
+      "id": "4A-14",
+      "sourcePage": 41
+    },
+    {
+      "id": "4A-15",
+      "sourcePage": 41
+    },
+    {
+      "id": "4A-16",
+      "sourcePage": 41
+    },
+    {
+      "id": "4A-17",
+      "sourcePage": 41
+    },
+    {
+      "id": "4A-18",
+      "sourcePage": 41
+    },
+    {
+      "id": "4A-19",
+      "sourcePage": 41
+    },
+    {
+      "id": "4A-20",
+      "sourcePage": 41
+    },
+    {
+      "id": "4A-21",
+      "sourcePage": 41
+    },
+    {
+      "id": "4A-22",
+      "sourcePage": 42
+    },
+    {
+      "id": "4A-23",
+      "sourcePage": 42
+    },
+    {
+      "id": "4A-24",
+      "sourcePage": 42
+    },
+    {
+      "id": "4A-25",
+      "sourcePage": 42
+    },
+    {
+      "id": "4A-26",
+      "sourcePage": 42
+    },
+    {
+      "id": "4A-27",
+      "sourcePage": 42
+    },
+    {
+      "id": "4B-0",
+      "sourcePage": 42
+    },
+    {
+      "id": "4B-1",
+      "sourcePage": 42
+    },
+    {
+      "id": "4B-2",
+      "sourcePage": 42
+    },
+    {
+      "id": "4B-3",
+      "sourcePage": 42
+    },
+    {
+      "id": "4B-4",
+      "sourcePage": 42
+    },
+    {
+      "id": "4B-5",
+      "sourcePage": 42
+    },
+    {
+      "id": "4B-6",
+      "sourcePage": 42
+    },
+    {
+      "id": "4B-7",
+      "sourcePage": 42
+    },
+    {
+      "id": "4B-8",
+      "sourcePage": 42
+    },
+    {
+      "id": "4B-9",
+      "sourcePage": 42
+    },
+    {
+      "id": "4B-10",
+      "sourcePage": 42
+    },
+    {
+      "id": "4B-11",
+      "sourcePage": 42
+    },
+    {
+      "id": "4B-12",
+      "sourcePage": 42
+    },
+    {
+      "id": "4B-13",
+      "sourcePage": 42
+    },
+    {
+      "id": "4B-14",
+      "sourcePage": 42
+    },
+    {
+      "id": "4B-15",
+      "sourcePage": 42
+    },
+    {
+      "id": "4B-16",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-17",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-18",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-19",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-20",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-21",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-22",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-23",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-24",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-25",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-26",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-27",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-28",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-29",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-30",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-31",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-32",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-33",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-34",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-35",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-36",
+      "sourcePage": 43
+    },
+    {
+      "id": "4B-37",
+      "sourcePage": 44
+    },
+    {
+      "id": "4B-38",
+      "sourcePage": 44
+    },
+    {
+      "id": "4B-39",
+      "sourcePage": 44
+    },
+    {
+      "id": "4B-40",
+      "sourcePage": 44
+    },
+    {
+      "id": "4B-41",
+      "sourcePage": 44
+    },
+    {
+      "id": "4B-42",
+      "sourcePage": 44
+    },
+    {
+      "id": "4B-43",
+      "sourcePage": 44
+    },
+    {
+      "id": "4B-44",
+      "sourcePage": 44
+    },
+    {
+      "id": "4B-45",
+      "sourcePage": 44
+    },
+    {
+      "id": "4B-46",
+      "sourcePage": 44
+    },
+    {
+      "id": "4B-47",
+      "sourcePage": 44
+    },
+    {
+      "id": "4C-0",
+      "sourcePage": 44
+    },
+    {
+      "id": "4C-1",
+      "sourcePage": 44
+    },
+    {
+      "id": "4C-2",
+      "sourcePage": 44
+    },
+    {
+      "id": "4C-3",
+      "sourcePage": 44
+    },
+    {
+      "id": "4C-4",
+      "sourcePage": 44
+    },
+    {
+      "id": "4C-5",
+      "sourcePage": 44
+    },
+    {
+      "id": "4C-6",
+      "sourcePage": 44
+    },
+    {
+      "id": "4C-7",
+      "sourcePage": 44
+    },
+    {
+      "id": "4C-8",
+      "sourcePage": 44
+    },
+    {
+      "id": "4C-9",
+      "sourcePage": 44
+    },
+    {
+      "id": "4C-10",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-11",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-12",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-13",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-14",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-15",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-16",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-17",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-18",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-19",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-20",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-21",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-22",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-23",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-24",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-25",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-26",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-27",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-28",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-29",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-30",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-31",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-32",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-33",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-34",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-35",
+      "sourcePage": 45
+    },
+    {
+      "id": "4C-36",
+      "sourcePage": 46
+    },
+    {
+      "id": "4C-37",
+      "sourcePage": 46
+    },
+    {
+      "id": "4C-38",
+      "sourcePage": 46
+    },
+    {
+      "id": "4C-39",
+      "sourcePage": 46
+    },
+    {
+      "id": "4C-40",
+      "sourcePage": 46
+    },
+    {
+      "id": "4D-0",
+      "sourcePage": 46
+    },
+    {
+      "id": "4D-1",
+      "sourcePage": 46
+    },
+    {
+      "id": "4D-2",
+      "sourcePage": 46
+    },
+    {
+      "id": "4D-3",
+      "sourcePage": 46
+    },
+    {
+      "id": "4D-4",
+      "sourcePage": 46
+    },
+    {
+      "id": "4D-5",
+      "sourcePage": 46
+    },
+    {
+      "id": "4D-6",
+      "sourcePage": 46
+    },
+    {
+      "id": "4D-7",
+      "sourcePage": 46
+    },
+    {
+      "id": "4D-8",
+      "sourcePage": 46
+    },
+    {
+      "id": "4D-9",
+      "sourcePage": 46
+    },
+    {
+      "id": "4D-10",
+      "sourcePage": 46
+    },
+    {
+      "id": "4D-11",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-12",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-13",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-14",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-15",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-16",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-17",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-18",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-19",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-20",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-21",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-22",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-23",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-24",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-25",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-26",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-27",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-28",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-29",
+      "sourcePage": 47
+    },
+    {
+      "id": "4D-30",
+      "sourcePage": 47
+    },
+    {
+      "id": "4E-0",
+      "sourcePage": 47
+    },
+    {
+      "id": "4E-1",
+      "sourcePage": 47
+    },
+    {
+      "id": "4E-2",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-3",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-4",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-5",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-6",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-7",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-8",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-9",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-10",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-11",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-12",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-13",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-14",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-15",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-16",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-17",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-18",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-19",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-20",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-21",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-22",
+      "sourcePage": 48
+    },
+    {
+      "id": "4E-23",
+      "sourcePage": 49
+    },
+    {
+      "id": "4E-24",
+      "sourcePage": 49
+    },
+    {
+      "id": "4E-25",
+      "sourcePage": 49
+    },
+    {
+      "id": "4E-26",
+      "sourcePage": 49
+    },
+    {
+      "id": "4E-27",
+      "sourcePage": 49
+    },
+    {
+      "id": "4E-28",
+      "sourcePage": 49
+    },
+    {
+      "id": "4E-29",
+      "sourcePage": 49
+    }
+  ]
+}

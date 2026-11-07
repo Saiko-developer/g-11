@@ -1,0 +1,766 @@
+{
+  "unit": 3,
+  "title": "Memory",
+  "official_answer_key": false,
+  "note": "Answers are derived from the supplied textbook. Full-sentence answers are suggestions; equivalent wording is valid. Personal responses and missing audio/source are left unanswered.",
+  "noteMy": "အဖြေများကို ပေးထားသောဖတ်စာအုပ်အပေါ် အခြေခံ၍ ဖြေဆိုထားခြင်းဖြစ်ပြီး တရားဝင်အဖြေလွှာ မဟုတ်ပါ။ ဝါကျပြည့်အဖြေများသည် အကြံပြုအဖြေများဖြစ်၍ အဓိပ္ပာယ်တူသော စကားလုံးအသုံးအနှုန်းများလည်း မှန်နိုင်သည်။ ကိုယ်ပိုင်ဖြေဆိုမှုများနှင့် အသံဖိုင် သို့မဟုတ် စာသားမရှင်းလင်းသော မေးခွန်းများကို အဖြေမခန့်မှန်းထားပါ။",
+  "source_files": [
+    "13575. Grade (11) English New Syllabus-1-48.pdf"
+  ],
+  "sections": [
+    {
+      "code": "3A",
+      "title": "Reading",
+      "items": [
+        {
+          "blockId": "3A-1",
+          "question": "1. Do you still remember any poems you learned from the previous grades? Name them.",
+          "questionMy": "၁။ ယခင်အတန်းများတွင် သင်ခဲ့သော ကဗျာများကို မှတ်မိသေးပါသလား။ အမည်များကို ပြောပါ။",
+          "status": "personal-response",
+          "sourcePages": [
+            28
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        },
+        {
+          "blockId": "3A-2",
+          "question": "2. Are you good at remembering the names and faces of the people you have met?",
+          "questionMy": "၂။ တွေ့ဆုံဖူးသူများ၏ အမည်နှင့် မျက်နှာကို သင် ကောင်းစွာမှတ်မိပါသလား။",
+          "status": "personal-response",
+          "sourcePages": [
+            28
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        },
+        {
+          "blockId": "3A-3",
+          "question": "3. Do you still remember the family holiday trip you went on as a young child?",
+          "questionMy": "၃။ ငယ်စဉ်က မိသားစုနှင့် သွားခဲ့သော အားလပ်ရက်ခရီးကို မှတ်မိသေးပါသလား။",
+          "status": "personal-response",
+          "sourcePages": [
+            28
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        },
+        {
+          "blockId": "3A-4",
+          "question": "4. What did you remember from the lesson you learned yesterday?",
+          "questionMy": "၄။ မနေ့က သင်ခဲ့သော သင်ခန်းစာမှ မည်သည့်အရာများကို မှတ်မိပါသလဲ။",
+          "status": "personal-response",
+          "sourcePages": [
+            28
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        },
+        {
+          "blockId": "3A-17",
+          "question": "a. _______________",
+          "questionMy": "က။ _______________",
+          "status": "source-derived",
+          "sourcePages": [
+            30
+          ],
+          "answer": "memorable",
+          "answerMy": "မမေ့နိုင်သော",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3A-19",
+          "question": "b. _______________",
+          "questionMy": "ခ။ _______________",
+          "status": "source-derived",
+          "sourcePages": [
+            30
+          ],
+          "answer": "memorize",
+          "answerMy": "အလွတ်ကျက်မှတ်သည်",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3A-21",
+          "question": "c. _______________",
+          "questionMy": "ဂ။ _______________",
+          "status": "source-derived",
+          "sourcePages": [
+            30
+          ],
+          "answer": "plain",
+          "answerMy": "ရှင်းလင်းလွယ်ကူသော",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3A-23",
+          "question": "d. _______________",
+          "questionMy": "ဃ။ _______________",
+          "status": "source-derived",
+          "sourcePages": [
+            30
+          ],
+          "answer": "database",
+          "answerMy": "ကွန်ပျူတာတွင် သိမ်းဆည်းထားသော အချက်အလက်အစုအဝေး",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3A-25",
+          "question": "e. _______________",
+          "questionMy": "င။ _______________",
+          "status": "source-derived",
+          "sourcePages": [
+            30
+          ],
+          "answer": "frustrated",
+          "answerMy": "စိတ်အနှောင့်အယှက်ဖြစ်၍ စိတ်မရှည်သော",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3A-27",
+          "question": "f. _______________",
+          "questionMy": "စ။ _______________",
+          "status": "source-derived",
+          "sourcePages": [
+            30
+          ],
+          "answer": "emotional",
+          "answerMy": "ခံစားချက်ပြင်းထန်သော",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3A-29",
+          "question": "1. Everybody understands his article as his writing is _______________ and direct.",
+          "questionMy": "သူ့အရေးအသားသည် _______________ ပြီး တိုက်ရိုက်ဖြစ်သောကြောင့် လူတိုင်း သူ့ဆောင်းပါးကို နားလည်ကြသည်။",
+          "status": "source-derived",
+          "sourcePages": [
+            30
+          ],
+          "answer": "plain",
+          "answerMy": "ရှင်းလင်းလွယ်ကူသော",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3A-30",
+          "question": "2. Her eyes were filled with tears to see a very _______________ moment of her family union.",
+          "questionMy": "မိသားစုပြန်လည်ဆုံစည်းမှု၏ အလွန် _______________ အခိုက်အတန့်ကို မြင်ရသောအခါ သူမမျက်လုံးများတွင် မျက်ရည်ဝဲလာသည်။",
+          "status": "source-derived",
+          "sourcePages": [
+            30
+          ],
+          "answer": "emotional",
+          "answerMy": "ခံစားချက်ပြင်းထန်သော",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3A-31",
+          "question": "3. I can't _______________ that Swe Swe came to visit us last year.",
+          "questionMy": "မနှစ်က ဆွေဆွေ ကျွန်ုပ်တို့ဆီ အလည်လာခဲ့ကြောင်း ကျွန်ုပ် _______________ မရပါ။",
+          "status": "source-derived",
+          "sourcePages": [
+            30
+          ],
+          "answer": "recall",
+          "answerMy": "ပြန်လည်သတိရသည်",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3A-32",
+          "question": "4. Our library keeps a _______________ of over ten thousand books on various subjects.",
+          "questionMy": "ကျွန်ုပ်တို့စာကြည့်တိုက်တွင် ဘာသာရပ်အမျိုးမျိုးဆိုင်ရာ စာအုပ်တစ်သောင်းကျော်၏ _______________ ကို ထားရှိသည်။",
+          "status": "source-derived",
+          "sourcePages": [
+            30
+          ],
+          "answer": "database",
+          "answerMy": "ကွန်ပျူတာတွင် သိမ်းဆည်းထားသော အချက်အလက်အစုအဝေး",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3A-33",
+          "question": "5. My little sister is very intelligent; she can _______________ nursery rhymes in a short time.",
+          "questionMy": "ကျွန်ုပ်၏ညီမငယ်သည် အလွန်ဉာဏ်ကောင်းသည်။ ကလေးကဗျာများကို အချိန်တိုအတွင်း _______________ နိုင်သည်။",
+          "status": "source-derived",
+          "sourcePages": [
+            30
+          ],
+          "answer": "memorize",
+          "answerMy": "အလွတ်ကျက်မှတ်သည်",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3A-34",
+          "question": "6. He felt _______________ when his friend did not understand what he was explaining.",
+          "questionMy": "သူရှင်းပြနေသည်ကို သူ့သူငယ်ချင်း နားမလည်သောအခါ သူ _______________ ခံစားရသည်။",
+          "status": "source-derived",
+          "sourcePages": [
+            30
+          ],
+          "answer": "frustrated",
+          "answerMy": "စိတ်အနှောင့်အယှက်ဖြစ်၍ စိတ်မရှည်သော",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3A-36",
+          "question": "1. According to books on psychology, how many kinds of memory are there? What are they?",
+          "questionMy": "စိတ်ပညာစာအုပ်များအရ မှတ်ဉာဏ်အမျိုးအစား မည်မျှရှိသနည်း။ မည်သည့်အမျိုးအစားများ ဖြစ်သနည်း။",
+          "status": "source-derived",
+          "sourcePages": [
+            28
+          ],
+          "answer": "According to books on psychology, there are three kinds of memory: episodic memory, semantic memory and procedural memory.",
+          "answerMy": "စိတ်ပညာစာအုပ်များအရ ဖြစ်ရပ်ဆိုင်ရာမှတ်ဉာဏ်၊ အဓိပ္ပာယ်နှင့် အထွေထွေအသိပညာဆိုင်ရာမှတ်ဉာဏ်၊ လုပ်ဆောင်မှုကျွမ်းကျင်မှုဆိုင်ရာမှတ်ဉာဏ်ဟူ၍ မှတ်ဉာဏ်သုံးမျိုး ရှိသည်။",
+          "kind": "suggested"
+        },
+        {
+          "blockId": "3A-37",
+          "question": "2. What does semantic memory refer to?",
+          "questionMy": "အဓိပ္ပာယ်နှင့် အထွေထွေအသိပညာဆိုင်ရာမှတ်ဉာဏ်သည် မည်သည့်အရာကို ရည်ညွှန်းသနည်း။",
+          "status": "source-derived",
+          "sourcePages": [
+            29
+          ],
+          "answer": "Semantic memory refers to all of our knowledge of the world around us.",
+          "answerMy": "အဓိပ္ပာယ်နှင့် အထွေထွေအသိပညာဆိုင်ရာမှတ်ဉာဏ်သည် မိမိတို့ပတ်ဝန်းကျင်ကမ္ဘာအကြောင်း သိရှိထားသမျှ အသိပညာကို ရည်ညွှန်းသည်။",
+          "kind": "suggested"
+        },
+        {
+          "blockId": "3A-38",
+          "question": "3. What do you do if you want to store the information in the long-term memory?",
+          "questionMy": "သတင်းအချက်အလက်ကို ကာလရှည်မှတ်ဉာဏ်တွင် သိမ်းဆည်းလိုလျှင် သင် ဘာလုပ်သနည်း။",
+          "status": "source-derived",
+          "sourcePages": [
+            29
+          ],
+          "answer": "To store information in long-term memory, I go over my notes, link up the points and memorize them.",
+          "answerMy": "အချက်အလက်များကို ကာလရှည်မှတ်ဉာဏ်တွင် သိမ်းဆည်းရန် မှတ်စုများကို ပြန်လေ့လာ၍ အချက်များကို ဆက်စပ်ကာ အလွတ်ကျက်မှတ်သည်။",
+          "kind": "suggested"
+        },
+        {
+          "blockId": "3A-39",
+          "question": "4. According to the text, what is memory compared to?",
+          "questionMy": "စာပိုဒ်အရ မှတ်ဉာဏ်ကို မည်သည့်အရာနှင့် နှိုင်းယှဉ်ထားသနည်း။",
+          "status": "source-derived",
+          "sourcePages": [
+            30
+          ],
+          "answer": "According to the text, memory is compared to the database of a computer.",
+          "answerMy": "စာပိုဒ်အရ မှတ်ဉာဏ်ကို ကွန်ပျူတာ၏ ဒေတာဘေ့စ်နှင့် နှိုင်းယှဉ်ထားသည်။",
+          "kind": "suggested"
+        },
+        {
+          "blockId": "3A-40",
+          "question": "5. What will happen to a computer without a database?",
+          "questionMy": "ဒေတာဘေ့စ်မရှိလျှင် ကွန်ပျူတာသည် မည်သို့ဖြစ်မည်နည်း။",
+          "status": "source-derived",
+          "sourcePages": [
+            30
+          ],
+          "answer": "A computer without a database will be useless.",
+          "answerMy": "ဒေတာဘေ့စ်မရှိသော ကွန်ပျူတာသည် အသုံးမဝင်ပါ။",
+          "kind": "suggested"
+        },
+        {
+          "blockId": "3A-41",
+          "question": "6. How would you react when you remember something pleasant?",
+          "questionMy": "ပျော်ရွှင်ဖွယ်အရာတစ်ခုကို သတိရသောအခါ သင် မည်သို့တုံ့ပြန်မည်နည်း။",
+          "status": "source-derived",
+          "sourcePages": [
+            30
+          ],
+          "answer": "I would smile when I remember something pleasant.",
+          "answerMy": "ပျော်ရွှင်ဖွယ်အရာတစ်ခုကို သတိရသောအခါ ပြုံးမိမည်။",
+          "kind": "suggested"
+        },
+        {
+          "blockId": "3A-42",
+          "question": "7. Read the extracts (a) and (b) of the two different poems, and say what type of memory the poets retrieved their information from.",
+          "questionMy": "မတူညီသော ကဗျာနှစ်ပုဒ်မှ ကောက်နုတ်ချက် (a) နှင့် (b) ကိုဖတ်၍ ကဗျာဆရာများသည် မည်သည့်မှတ်ဉာဏ်အမျိုးအစားမှ အချက်အလက်ကို ပြန်လည်ရယူခဲ့ကြောင်း ပြောပါ။",
+          "status": "source-derived",
+          "sourcePages": [
+            28,
+            31
+          ],
+          "answer": "Both poets retrieved their information from episodic memory because the extracts recall events and experiences from their past.",
+          "answerMy": "ကောက်နုတ်ကဗျာများသည် အတိတ်ဖြစ်ရပ်နှင့် အတွေ့အကြုံများကို ပြန်လည်သတိရခြင်းဖြစ်သောကြောင့် ကဗျာဆရာနှစ်ဦးလုံးသည် ဖြစ်ရပ်ဆိုင်ရာမှတ်ဉာဏ်မှ အချက်အလက်များကို ပြန်လည်ရယူခဲ့ကြသည်။",
+          "kind": "suggested"
+        },
+        {
+          "blockId": "3A-65",
+          "question": "8. You are strumming the guitar and singing a song. What type of memory are you drawing information from?",
+          "questionMy": "သင်သည် ဂစ်တာကိုတီး၍ သီချင်းဆိုနေသည်။ မည်သည့်မှတ်ဉာဏ်အမျိုးအစားမှ အချက်အလက်ကို ရယူနေသနည်း။",
+          "status": "source-derived",
+          "sourcePages": [
+            29,
+            32
+          ],
+          "answer": "I am drawing information from procedural memory when I am strumming the guitar and singing a song.",
+          "answerMy": "ဂစ်တာတီး၍ သီချင်းဆိုနေသောအခါ လုပ်ဆောင်မှုကျွမ်းကျင်မှုဆိုင်ရာမှတ်ဉာဏ်မှ အချက်အလက်ကို အသုံးပြုနေသည်။",
+          "kind": "suggested"
+        },
+        {
+          "blockId": "3A-66",
+          "question": "9. Bill and Bob are flying kites. What type of memory are they depending on?",
+          "questionMy": "ဘီလ်နှင့် ဘော့ဘ်တို့သည် စွန်လွှတ်နေကြသည်။ မည်သည့်မှတ်ဉာဏ်အမျိုးအစားကို အားထားနေကြသနည်း။",
+          "status": "source-derived",
+          "sourcePages": [
+            29,
+            32
+          ],
+          "answer": "Bill and Bob are depending on procedural memory when they are flying kites.",
+          "answerMy": "ဘီလ်နှင့် ဘော့ဘ်သည် စွန်လွှတ်နေသောအခါ လုပ်ဆောင်မှုကျွမ်းကျင်မှုဆိုင်ရာမှတ်ဉာဏ်ကို အားထားနေကြသည်။",
+          "kind": "suggested"
+        },
+        {
+          "blockId": "3A-67",
+          "question": "10. You are taking an examination. What type of memory are you depending on?",
+          "questionMy": "သင်သည် စာမေးပွဲဖြေနေသည်။ မည်သည့်မှတ်ဉာဏ်အမျိုးအစားကို အားထားနေသနည်း။",
+          "status": "source-derived",
+          "sourcePages": [
+            29,
+            32
+          ],
+          "answer": "I am depending on semantic memory when I am taking an examination.",
+          "answerMy": "စာမေးပွဲဖြေဆိုသောအခါ အဓိပ္ပာယ်နှင့် အထွေထွေအသိပညာဆိုင်ရာမှတ်ဉာဏ်ကို အားထားနေသည်။",
+          "kind": "suggested"
+        }
+      ]
+    },
+    {
+      "code": "3B",
+      "title": "Vocabulary",
+      "items": [
+        {
+          "blockId": "3B-13",
+          "question": "1. The teacher ___________ the mistakes I had made in my essay.",
+          "questionMy": "ကျွန်ုပ်၏စာစီစာကုံးတွင် လုပ်မိသောအမှားများကို ဆရာက ___________။",
+          "status": "source-derived",
+          "sourcePages": [
+            32
+          ],
+          "answer": "pointed out",
+          "answerMy": "ထောက်ပြခဲ့သည်",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3B-14",
+          "question": "2. Khin Khin ___________ notes while she was listening to the lecture.",
+          "questionMy": "ခင်ခင်သည် ဟောပြောပို့ချမှုကို နားထောင်နေစဉ် မှတ်စုများ ___________။",
+          "status": "source-derived",
+          "sourcePages": [
+            32
+          ],
+          "answer": "jotted down; was jotting down",
+          "answerMy": "အလျင်အမြန် မှတ်စုရေးခဲ့သည် / ရေးနေခဲ့သည်",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3B-15",
+          "question": "3. He was proud of himself when he ___________ to all the things he had done for the company.",
+          "questionMy": "ကုမ္ပဏီအတွက် သူလုပ်ပေးခဲ့သမျှကို ___________ သောအခါ သူသည် မိမိကိုယ်ကို ဂုဏ်ယူမိသည်။",
+          "status": "source-derived",
+          "sourcePages": [
+            32
+          ],
+          "answer": "thought back",
+          "answerMy": "နောက်ကြောင်းပြန်စဉ်းစားခဲ့သည်",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3B-16",
+          "question": "4. You should ___________ your assignment before you submit it to your teacher.",
+          "questionMy": "ဆရာထံ မတင်မီ မိမိအိမ်စာကို ___________ သင့်သည်။",
+          "status": "source-derived",
+          "sourcePages": [
+            32
+          ],
+          "answer": "go over",
+          "answerMy": "ပြန်လည်စစ်ဆေးလေ့လာသည်",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3B-17",
+          "question": "5. Kyu Kyu wrote this article by ___________ her own experience.",
+          "questionMy": "ကြူကြူသည် မိမိအတွေ့အကြုံကို ___________ ခြင်းဖြင့် ဤဆောင်းပါးကို ရေးခဲ့သည်။",
+          "status": "source-derived",
+          "sourcePages": [
+            32
+          ],
+          "answer": "drawing on; drawing upon",
+          "answerMy": "အရင်းအမြစ်အဖြစ် အသုံးပြုခြင်း",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3B-18",
+          "question": "6.",
+          "questionMy": "၆။",
+          "status": "unreadable-source",
+          "sourcePages": [
+            32
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        },
+        {
+          "blockId": "3B-19",
+          "question": "7.",
+          "questionMy": "၇။",
+          "status": "unreadable-source",
+          "sourcePages": [
+            32
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        },
+        {
+          "blockId": "3B-20",
+          "question": "8.",
+          "questionMy": "၈။",
+          "status": "unreadable-source",
+          "sourcePages": [
+            32
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        }
+      ]
+    },
+    {
+      "code": "3C",
+      "title": "Grammar",
+      "items": [
+        {
+          "blockId": "3C-30",
+          "question": "1. I can't help ___________ (think) about my school days in Japan.",
+          "questionMy": "ဂျပန်နိုင်ငံရှိ ကျွန်ုပ်၏ကျောင်းသားဘဝအကြောင်း ___________ (think) မနေနိုင်ပါ။",
+          "status": "source-derived",
+          "sourcePages": [
+            34
+          ],
+          "answer": "thinking",
+          "answerMy": "စဉ်းစားခြင်း",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3C-31",
+          "question": "2. We all agreed ___________ (meet) again next month.",
+          "questionMy": "ကျွန်ုပ်တို့အားလုံး နောက်လတွင် ထပ်မံ ___________ (meet) ရန် သဘောတူခဲ့ကြသည်။",
+          "status": "source-derived",
+          "sourcePages": [
+            34
+          ],
+          "answer": "to meet",
+          "answerMy": "တွေ့ဆုံရန်",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3C-32",
+          "question": "3. I finished ___________ (write) the assignment just before the deadline.",
+          "questionMy": "သတ်မှတ်ချိန်မတိုင်မီလေးတွင် ကျွန်ုပ် အိမ်စာ ___________ (write) ပြီးခဲ့သည်။",
+          "status": "source-derived",
+          "sourcePages": [
+            34
+          ],
+          "answer": "writing",
+          "answerMy": "ရေးသားခြင်း",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3C-33",
+          "question": "4. My mother promises ___________ (buy) me a laptop if I pass the examination.",
+          "questionMy": "ကျွန်ုပ် စာမေးပွဲအောင်လျှင် အမေက လက်ပ်တော့တစ်လုံး ___________ (buy) ရန် ကတိပေးသည်။",
+          "status": "source-derived",
+          "sourcePages": [
+            34
+          ],
+          "answer": "to buy",
+          "answerMy": "ဝယ်ပေးရန်",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3C-34",
+          "question": "5. I dislike ___________ (wait) for someone for a long time.",
+          "questionMy": "တစ်ယောက်ယောက်ကို အချိန်ကြာကြာ ___________ (wait) ရခြင်းကို ကျွန်ုပ် မနှစ်သက်ပါ။",
+          "status": "source-derived",
+          "sourcePages": [
+            34
+          ],
+          "answer": "waiting",
+          "answerMy": "စောင့်ဆိုင်းခြင်း",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3C-35",
+          "question": "6. He decided ___________ (attend) a computer course during the holiday.",
+          "questionMy": "သူသည် အားလပ်ရက်အတွင်း ကွန်ပျူတာသင်တန်းတစ်ခု ___________ (attend) ရန် ဆုံးဖြတ်ခဲ့သည်။",
+          "status": "source-derived",
+          "sourcePages": [
+            34
+          ],
+          "answer": "to attend",
+          "answerMy": "တက်ရောက်ရန်",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3C-36",
+          "question": "7. I offered ___________ (help) the new student with his homework.",
+          "questionMy": "ကျောင်းသားသစ်၏ အိမ်စာအတွက် ___________ (help) ရန် ကျွန်ုပ် ကမ်းလှမ်းခဲ့သည်။",
+          "status": "source-derived",
+          "sourcePages": [
+            34
+          ],
+          "answer": "to help",
+          "answerMy": "ကူညီရန်",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3C-37",
+          "question": "8. It's very hot in here. Do you mind ___________ (open) the window?",
+          "questionMy": "ဒီထဲမှာ အလွန်ပူသည်။ ပြတင်းပေါက် ___________ (open) ပေးလို့ရမလား။",
+          "status": "source-derived",
+          "sourcePages": [
+            34
+          ],
+          "answer": "opening",
+          "answerMy": "ဖွင့်ပေးခြင်း",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3C-38",
+          "question": "9. It is necessary for us to be able ___________ (speak) English well to work in a five-star hotel.",
+          "questionMy": "ကြယ်ငါးပွင့်ဟိုတယ်တွင် အလုပ်လုပ်ရန် အင်္ဂလိပ်စကားကို ကောင်းစွာ ___________ (speak) နိုင်ဖို့ ကျွန်ုပ်တို့ လိုအပ်သည်။",
+          "status": "source-derived",
+          "sourcePages": [
+            34
+          ],
+          "answer": "to speak",
+          "answerMy": "ပြောဆိုရန်",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3C-39",
+          "question": "10. We intended ___________ (go) to the cinema, but in the end we stayed at home.",
+          "questionMy": "ကျွန်ုပ်တို့ ရုပ်ရှင်ရုံသို့ ___________ (go) ရန် ရည်ရွယ်ခဲ့သော်လည်း နောက်ဆုံး အိမ်မှာပဲ နေခဲ့ကြသည်။",
+          "status": "source-derived",
+          "sourcePages": [
+            34
+          ],
+          "answer": "to go",
+          "answerMy": "သွားရန်",
+          "kind": "closed"
+        }
+      ]
+    },
+    {
+      "code": "3D",
+      "title": "Listening and Speaking",
+      "items": [
+        {
+          "blockId": "3D-1",
+          "question": "1. Soe Thu has got a very good memory.",
+          "questionMy": "၁။ စိုးသူသည် အလွန်ကောင်းသော မှတ်ဉာဏ်ရှိသည်။",
+          "status": "missing-audio",
+          "sourcePages": [
+            34
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        },
+        {
+          "blockId": "3D-2",
+          "question": "2. He can recall his childhood days when he gets certain sights, smells, tastes and sounds.",
+          "questionMy": "၂။ အချို့သော မြင်ကွင်း၊ အနံ့၊ အရသာနှင့် အသံများကို အာရုံခံရသောအခါ သူ့ကလေးဘဝနေ့ရက်များကို ပြန်သတိရနိုင်သည်။",
+          "status": "missing-audio",
+          "sourcePages": [
+            34
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        },
+        {
+          "blockId": "3D-3",
+          "question": "3. He is talking about a recent event in his life.",
+          "questionMy": "၃။ သူသည် သူ့ဘဝရှိ မကြာသေးမီက ဖြစ်ရပ်တစ်ခုအကြောင်း ပြောနေသည်။",
+          "status": "missing-audio",
+          "sourcePages": [
+            34
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        },
+        {
+          "blockId": "3D-4",
+          "question": "4. Whenever he gets the smell and taste of mont-hin-gah, he remembers his mother.",
+          "questionMy": "၄။ မုန့်ဟင်းခါး၏အနံ့နှင့် အရသာကို ခံစားရတိုင်း သူ့အမေကို သတိရသည်။",
+          "status": "missing-audio",
+          "sourcePages": [
+            34
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        },
+        {
+          "blockId": "3D-5",
+          "question": "5. When he was young, he liked mont-hin-gah so much that he ate it every day.",
+          "questionMy": "၅။ ငယ်စဉ်က မုန့်ဟင်းခါးကို အလွန်နှစ်သက်သဖြင့် နေ့တိုင်းစားခဲ့သည်။",
+          "status": "missing-audio",
+          "sourcePages": [
+            34
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        },
+        {
+          "blockId": "3D-6",
+          "question": "6. The song 'You are my Sunshine' reminds him of his friend, Cho Cho.",
+          "questionMy": "၆။ “You are my Sunshine” သီချင်းက သူ့သူငယ်ချင်း ချိုချိုကို သတိရစေသည်။",
+          "status": "missing-audio",
+          "sourcePages": [
+            34
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        },
+        {
+          "blockId": "3D-7",
+          "question": "7. Soe Thu and Cho Cho usually sang the song while they were playing.",
+          "questionMy": "၇။ စိုးသူနှင့် ချိုချိုသည် ကစားနေစဉ် ထိုသီချင်းကို များသောအားဖြင့် ဆိုခဲ့ကြသည်။",
+          "status": "missing-audio",
+          "sourcePages": [
+            34
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        },
+        {
+          "blockId": "3D-8",
+          "question": "8. He got a white cat as a present on his 7th birthday.",
+          "questionMy": "၈။ ခုနစ်နှစ်ပြည့်မွေးနေ့တွင် ကြောင်ဖြူတစ်ကောင်ကို လက်ဆောင်ရခဲ့သည်။",
+          "status": "missing-audio",
+          "sourcePages": [
+            34
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        },
+        {
+          "blockId": "3D-9",
+          "question": "9. His cat Mi Phyu used to sleep by his side.",
+          "questionMy": "၉။ သူ့ကြောင် မိဖြူသည် သူ့ဘေးတွင် အိပ်လေ့ရှိခဲ့သည်။",
+          "status": "missing-audio",
+          "sourcePages": [
+            34
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        },
+        {
+          "blockId": "3D-10",
+          "question": "10. Soe Thu played with Mi Phyu before he went to bed.",
+          "questionMy": "၁၀။ စိုးသူသည် အိပ်ရာမဝင်မီ မိဖြူနှင့် ကစားခဲ့သည်။",
+          "status": "missing-audio",
+          "sourcePages": [
+            34
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        },
+        {
+          "blockId": "3D-29",
+          "question": "Thiri            : I think (1) _______________. How about going shopping to the City Mall? We can have a lot of fun there.",
+          "questionMy": "သီရိ — (၁) _______________ လို့ ငါထင်တယ်။ City Mall ကို ဈေးဝယ်သွားရင် ဘယ်လိုလဲ။ အဲဒီမှာ ပျော်စရာအများကြီး ရှိနိုင်တယ်။",
+          "status": "source-derived",
+          "sourcePages": [
+            35
+          ],
+          "answer": "you're right",
+          "answerMy": "နင် မှန်တယ်",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3D-30",
+          "question": "Lin Lin        : (2) _______________. There's a lot of people and it is a bit noisy. I wish to go to a quiet place.",
+          "questionMy": "လင်းလင်း — (၂) _______________။ အဲဒီမှာ လူတွေအများကြီးရှိပြီး နည်းနည်းဆူတယ်။ ငြိမ်သက်တဲ့နေရာကို သွားချင်တယ်။",
+          "status": "source-derived",
+          "sourcePages": [
+            35
+          ],
+          "answer": "I don't think so",
+          "answerMy": "ငါ အဲဒီလို မထင်ဘူး",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3D-31",
+          "question": "Thiri            : (3) _______________, but we can have good food at the Food Court and can also watch movie if you like. You like watching movies, don't you? It's relaxing to watch a comedy.",
+          "questionMy": "သီရိ — (၃) _______________၊ ဒါပေမယ့် Food Court မှာ အစားကောင်းတွေစားနိုင်ပြီး နင်ကြိုက်ရင် ရုပ်ရှင်လည်း ကြည့်နိုင်တယ်။ နင် ရုပ်ရှင်ကြည့်ရတာ ကြိုက်တယ်မဟုတ်လား။ ဟာသရုပ်ရှင်ကြည့်ရတာ အပန်းပြေတယ်။",
+          "status": "source-derived",
+          "sourcePages": [
+            35
+          ],
+          "answer": "I see your point",
+          "answerMy": "နင့်အယူအဆကို ငါနားလည်တယ်",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3D-32",
+          "question": "Lin Lin        : OK. (4) _______________ now. Let's watch a movie after having lunch.",
+          "questionMy": "လင်းလင်း — ကောင်းပြီ။ အခုတော့ (၄) _______________။ နေ့လယ်စာစားပြီး ရုပ်ရှင်ကြည့်ကြရအောင်။",
+          "status": "source-derived",
+          "sourcePages": [
+            35
+          ],
+          "answer": "I agree with you",
+          "answerMy": "ငါ နင်နဲ့ သဘောတူတယ်",
+          "kind": "closed"
+        },
+        {
+          "blockId": "3D-34",
+          "question": "E. Su Su and Nilar are at the canteen. Write a dialogue between Su Su and Nilar talking about junk food and organic food. Use the following information in the dialogue.",
+          "questionMy": "E။ စုစုနှင့် နီလာသည် မုန့်ဈေးတန်းတွင် ရှိနေကြသည်။ ကျန်းမာရေးနှင့်မညီသောအစားအစာနှင့် အော်ဂဲနစ်အစားအစာအကြောင်း ပြောဆိုသော စုစုနှင့်နီလာတို့၏ စကားပြောခန်းတစ်ခု ရေးပါ။ အောက်ပါအချက်အလက်များကို အသုံးပြုပါ။",
+          "status": "personal-response",
+          "sourcePages": [
+            35
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        }
+      ]
+    },
+    {
+      "code": "3E",
+      "title": "Writing",
+      "items": [
+        {
+          "blockId": "3E-3",
+          "question": "Think about an unforgettable event in the past. Write a paragraph on ‘An unforgettable event in my life’. The following questions are given to help you.",
+          "questionMy": "အတိတ်က မမေ့နိုင်သောဖြစ်ရပ်တစ်ခုအကြောင်း စဉ်းစားပါ။ “ကျွန်ုပ်ဘဝ၏ မမေ့နိုင်သောဖြစ်ရပ်တစ်ခု” ခေါင်းစဉ်ဖြင့် စာပိုဒ်တစ်ပိုဒ် ရေးပါ။ အောက်ပါမေးခွန်းများက သင့်ကို ကူညီရန် ဖြစ်သည်။",
+          "status": "personal-response",
+          "sourcePages": [
+            36
+          ],
+          "answer": null,
+          "answerMy": null,
+          "kind": "open"
+        }
+      ]
+    }
+  ]
+}

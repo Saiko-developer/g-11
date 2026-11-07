@@ -33,7 +33,7 @@ type SourceLessonProps = {
   kind: G11SkillKind;
   unitNumber: number;
   sections: Unit1Section[];
-  answerKeys: Record<string, { answer: string; origin: "source-derived" }>;
+  answerKeys: Record<string, { answer: string; answerMy?: string; origin: "source-derived" }>;
   scanUrl: (page: number) => string | null;
 };
 
@@ -268,7 +268,7 @@ function Question({
   onAnswer,
 }: {
   block: Unit1Block;
-  answerKey?: { answer: string };
+  answerKey?: { answer: string; answerMy?: string };
   scanUrl: (page: number) => string | null;
   instructions: string;
   noStructure: boolean;
@@ -297,7 +297,12 @@ function Question({
           <p className="mt-2 text-xs text-muted-foreground">
             သင်ခန်းစာမှ ဆက်စပ်ဖြေဆိုထားသောအဖြေ — တရားဝင်အဖြေလွှာ မဟုတ်ပါ။
           </p>
-          <AnswerTryBox correct={key.answer} question={block.x} instructions={instructions} />
+          <AnswerTryBox
+            correct={key.answer}
+            correctMy={key.answerMy}
+            question={block.x}
+            instructions={instructions}
+          />
         </div>
       ) : (
         <div className="mt-3 space-y-2">

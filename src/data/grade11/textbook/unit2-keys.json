@@ -1,0 +1,252 @@
+{
+  "2A-18": {
+    "answer": "Advantage",
+    "origin": "source-derived",
+    "sourcePage": 19
+  },
+  "2A-19": {
+    "answer": "Advantage",
+    "origin": "source-derived",
+    "sourcePage": 19
+  },
+  "2A-20": {
+    "answer": "Advantage",
+    "origin": "source-derived",
+    "sourcePage": 19
+  },
+  "2A-21": {
+    "answer": "Disadvantage",
+    "origin": "source-derived",
+    "sourcePage": 19
+  },
+  "2A-22": {
+    "answer": "Advantage",
+    "origin": "source-derived",
+    "sourcePage": 19
+  },
+  "2A-23": {
+    "answer": "Disadvantage",
+    "origin": "source-derived",
+    "sourcePage": 19
+  },
+  "2A-24": {
+    "answer": "Disadvantage",
+    "origin": "source-derived",
+    "sourcePage": 19
+  },
+  "2A-25": {
+    "answer": "Advantage",
+    "origin": "source-derived",
+    "sourcePage": 19
+  },
+  "2A-26": {
+    "answer": "Disadvantage",
+    "origin": "source-derived",
+    "sourcePage": 19
+  },
+  "2A-27": {
+    "answer": "Disadvantage",
+    "origin": "source-derived",
+    "sourcePage": 19
+  },
+  "2A-28": {
+    "answer": "Disadvantage",
+    "origin": "source-derived",
+    "sourcePage": 19
+  },
+  "2A-29": {
+    "answer": "Advantage",
+    "origin": "source-derived",
+    "sourcePage": 19
+  },
+  "2B-10": {
+    "answer": "transaction",
+    "origin": "source-derived",
+    "sourcePage": 20
+  },
+  "2B-11": {
+    "answer": "appointment",
+    "origin": "source-derived",
+    "sourcePage": 20
+  },
+  "2B-12": {
+    "answer": "discounts",
+    "origin": "source-derived",
+    "sourcePage": 20
+  },
+  "2B-13": {
+    "answer": "customers",
+    "origin": "source-derived",
+    "sourcePage": 20
+  },
+  "2B-14": {
+    "answer": "problems",
+    "origin": "source-derived",
+    "sourcePage": 20
+  },
+  "2B-15": {
+    "answer": "services",
+    "origin": "source-derived",
+    "sourcePage": 20
+  },
+  "2B-16": {
+    "answer": "negotiation",
+    "origin": "source-derived",
+    "sourcePage": 20
+  },
+  "2B-17": {
+    "answer": "finances",
+    "origin": "source-derived",
+    "sourcePage": 20
+  },
+  "2C-68": {
+    "answer": "do you drink",
+    "origin": "source-derived",
+    "sourcePage": 23
+  },
+  "2C-69": {
+    "answer": "Are you taking",
+    "origin": "source-derived",
+    "sourcePage": 23
+  },
+  "2C-70": {
+    "answer": "has been digging",
+    "origin": "source-derived",
+    "sourcePage": 23
+  },
+  "2C-71": {
+    "answer": "has visited",
+    "origin": "source-derived",
+    "sourcePage": 23
+  },
+  "2C-72": {
+    "answer": "is always leaving",
+    "origin": "source-derived",
+    "sourcePage": 23
+  },
+  "2C-73": {
+    "answer": "has your brother been",
+    "origin": "source-derived",
+    "sourcePage": 23
+  },
+  "2C-74": {
+    "answer": "have built",
+    "origin": "source-derived",
+    "sourcePage": 23
+  },
+  "2C-75": {
+    "answer": "are doing",
+    "origin": "source-derived",
+    "sourcePage": 23
+  },
+  "2C-76": {
+    "answer": "does the first train leave",
+    "origin": "source-derived",
+    "sourcePage": 23
+  },
+  "2C-77": {
+    "answer": "have been gardening",
+    "origin": "source-derived",
+    "sourcePage": 23
+  },
+  "2C-79": {
+    "answer": "must; have to",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-80": {
+    "answer": "don't have to",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-81": {
+    "answer": "had to",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-82": {
+    "answer": "didn't have to",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-83": {
+    "answer": "mustn't",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-85": {
+    "answer": "must; have to",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-86": {
+    "answer": "Do you have to",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-87": {
+    "answer": "have to; must",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-88": {
+    "answer": "Did you have to",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-89": {
+    "answer": "Does she have to",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-90": {
+    "answer": "had to",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-91": {
+    "answer": "must; have to",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-92": {
+    "answer": "doesn't have to",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-93": {
+    "answer": "has to; must",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-94": {
+    "answer": "will not have to; won't have to",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-95": {
+    "answer": "have to; must",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-96": {
+    "answer": "had to",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-97": {
+    "answer": "must; have to",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-98": {
+    "answer": "mustn't",
+    "origin": "source-derived",
+    "sourcePage": 24
+  },
+  "2C-99": {
+    "answer": "have to; must",
+    "origin": "source-derived",
+    "sourcePage": 24
+  }
+}

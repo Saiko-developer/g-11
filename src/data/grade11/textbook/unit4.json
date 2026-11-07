@@ -1,0 +1,1483 @@
+[
+  {
+    "code": "4A",
+    "title": "Reading",
+    "blocks": [
+      {
+        "id": "4A-0",
+        "t": "ins",
+        "x": "Pre-reading",
+        "my": "မဖတ်မီ ဆွေးနွေးရန်",
+        "area": "exercise",
+        "sourcePage": 40
+      },
+      {
+        "id": "4A-1",
+        "t": "q",
+        "x": "1. What do you usually have for breakfast, lunch and dinner?",
+        "my": "နံနက်စာ၊ နေ့လယ်စာနှင့် ညစာအတွက် ပုံမှန် ဘာစားသလဲ။",
+        "area": "exercise",
+        "sourcePage": 40,
+        "response": "personal"
+      },
+      {
+        "id": "4A-2",
+        "t": "q",
+        "x": "2. In addition to Myanmar food, what other food do you sometimes eat?",
+        "my": "မြန်မာအစားအစာအပြင် တစ်ခါတစ်ရံ မည်သည့်အစားအစာများကို စားသလဲ။",
+        "area": "exercise",
+        "sourcePage": 40,
+        "response": "personal"
+      },
+      {
+        "id": "4A-3",
+        "t": "q",
+        "x": "3. What is your favourite food? Why do you like it?",
+        "my": "သင်အနှစ်သက်ဆုံး အစားအစာက ဘာလဲ။ အဘယ်ကြောင့် ကြိုက်သလဲ။",
+        "area": "exercise",
+        "sourcePage": 40,
+        "response": "personal"
+      },
+      {
+        "id": "4A-4",
+        "t": "h",
+        "x": "Read the passage.",
+        "my": "စာပိုဒ်ကို ဖတ်ပါ။",
+        "area": "lesson",
+        "sourcePage": 40
+      },
+      {
+        "id": "4A-5",
+        "t": "para",
+        "x": "Globalization affects all spheres of our lives and thus the food industry is no exemption. If you take a look at the food items you eat, they are so common that you would hardly suspect that they originated in other countries. Actually, most of the foods that we commonly eat today are the product of globalization.",
+        "my": "ကမ္ဘာလုံးဆိုင်ရာချိတ်ဆက်ပြန့်နှံ့မှုသည် ကျွန်ုပ်တို့ဘဝ၏ ကဏ္ဍအားလုံးအပေါ် သက်ရောက်သဖြင့် အစားအစာလုပ်ငန်းလည်း ခြွင်းချက်မဟုတ်ပါ။ မိမိစားသည့် အစားအစာများကို ကြည့်လျှင် အလွန်ရင်းနှီးနေသောကြောင့် အခြားနိုင်ငံများမှ စတင်ပေါ်ပေါက်ခဲ့ကြောင်း သံသယပင်ဖြစ်မိမည် မဟုတ်ပါ။ အမှန်မှာ ယနေ့ ကျွန်ုပ်တို့ ပုံမှန်စားသုံးသော အစားအစာအများစုသည် ကမ္ဘာလုံးဆိုင်ရာပြန့်နှံ့မှု၏ ရလဒ်ဖြစ်သည်။",
+        "area": "lesson",
+        "sourcePage": 40
+      },
+      {
+        "id": "4A-6",
+        "t": "para",
+        "x": "The common breakfast of the Myanmar has been mont-hin-gah, or fried rice, or steamed glutinous rice, or cooked glutinous rice, or vegetable fritters eaten with rice leftover from the previous evening meal. Their lunch and dinner have been rice and various kinds of curries.",
+        "my": "မြန်မာတို့၏ ပုံမှန်နံနက်စာမှာ မုန့်ဟင်းခါး၊ ထမင်းကြော်၊ ကောက်ညှင်းပေါင်း၊ ကောက်ညှင်းထမင်း၊ သို့မဟုတ် ယခင်ညစာမှ ကျန်သည့်ထမင်းနှင့် စားသော ဟင်းသီးဟင်းရွက်အကြော်များ ဖြစ်ခဲ့သည်။ နေ့လယ်စာနှင့် ညစာမှာ ထမင်းနှင့် ဟင်းအမျိုးမျိုး ဖြစ်ခဲ့သည်။",
+        "area": "lesson",
+        "sourcePage": 40
+      },
+      {
+        "id": "4A-7",
+        "t": "para",
+        "x": "However, today there has been a significant change in the food items people eat as a result of globalization. It is having a major impact on the food people eat in terms of availability and access, and at present, the choices of meals for breakfast, lunch, and dinner of people in big cities have become very diverse. The usual breakfast, lunch, and dinner of many people in big cities have been replaced by dim sum, sushi, cereal, nan (Indian flat bread), spaghetti, pizza, fish or chicken and chips, bread and bacon, hamburger, hot dog, Tom Yum soup, a variety of noodles, bento box meals, ramen and all sorts of cuisines originating from different parts of the world.",
+        "my": "သို့သော် ယနေ့တွင် ကမ္ဘာလုံးဆိုင်ရာပြန့်နှံ့မှုကြောင့် လူတို့စားသည့် အစားအစာများ သိသာစွာပြောင်းလဲလာသည်။ အစားအစာ ရရှိနိုင်မှုနှင့် လက်လှမ်းမီနိုင်မှုအပေါ် ကြီးမားစွာသက်ရောက်ပြီး မြို့ကြီးများတွင် နံနက်စာ၊ နေ့လယ်စာနှင့် ညစာ ရွေးချယ်စရာများ အလွန်စုံလင်လာသည်။ ယခင်ပုံမှန်စားစရာများ၏နေရာကို ကမ္ဘာ့ဒေသအသီးသီးမှ ဒင်းဆမ်း၊ ဆူရှီ၊ ကောက်နှံအခြေခံနံနက်စာ၊ နံပြား၊ စပါဂက်တီ၊ ပီဇာ၊ အာလူးကြော်နှင့် ငါး သို့မဟုတ် ကြက်သား၊ ပေါင်မုန့်နှင့် ဘေကွန်၊ ဟမ်ဘာဂါ၊ ဟော့ဒေါ့၊ တုံယမ်းဟင်းချို၊ ခေါက်ဆွဲအမျိုးမျိုး၊ ဘန်တိုထမင်းဘူး၊ ရာမင်နှင့် ဟင်းလျာမျိုးစုံက အစားထိုးလာသည်။",
+        "area": "lesson",
+        "sourcePage": 40
+      },
+      {
+        "id": "4A-8",
+        "t": "para",
+        "x": "Lifestyles of people have changed a lot too. Just look at the restaurants and food stalls in every city, and you will see that they are full of diners, not only at weekends but also throughout the days of the week. Many people in big cities no longer cook and have their meals at home anymore. They prefer to eat out for their breakfast, lunch, and dinner. Some eat out because they love eating out with family and friends, but some do so to show that they can afford to eat at famous international restaurants, others simply do not want to spend their time going to the grocers’, cooking, and doing the washing up.",
+        "my": "လူတို့၏ နေထိုင်မှုပုံစံများလည်း များစွာပြောင်းလဲလာသည်။ မြို့တိုင်းရှိ စားသောက်ဆိုင်နှင့် အစားအသောက်ဆိုင်များကို ကြည့်လျှင် စနေ၊ တနင်္ဂနွေသာမက ရက်သတ္တပတ်တစ်လျှောက် စားသုံးသူများဖြင့် ပြည့်နေသည်ကို တွေ့ရမည်။ မြို့ကြီးများရှိ လူများစွာသည် အိမ်တွင် ချက်ပြုတ်စားသောက်ခြင်း မပြုတော့ဘဲ နံနက်စာ၊ နေ့လယ်စာနှင့် ညစာကို အပြင်ထွက်စားလိုကြသည်။ အချို့က မိသားစု၊ သူငယ်ချင်းများနှင့် အပြင်ထွက်စားရသည်ကို နှစ်သက်သောကြောင့်ဖြစ်ပြီး အချို့က နာမည်ကြီး နိုင်ငံတကာစားသောက်ဆိုင်များတွင် စားနိုင်စွမ်းရှိကြောင်း ပြလိုသောကြောင့် ဖြစ်သည်။ အခြားသူများက ကုန်စုံဆိုင်သွားခြင်း၊ ချက်ပြုတ်ခြင်းနှင့် ပန်းကန်ဆေးခြင်းတို့အတွက် အချိန်မပေးလိုသောကြောင့် ဖြစ်သည်။",
+        "area": "lesson",
+        "sourcePage": 40
+      },
+      {
+        "id": "4A-9",
+        "t": "para",
+        "x": "The effect of the globalization of food can obviously be seen in the increasing popularity of fast-food restaurant chains such as Burger King, Kentucky Fried Chicken (KFC), McDonald’s, Starbucks, Subway, and Pizza Hut to name a few. Many other fast-food chain restaurants are also thriving in many countries all over the globe, as fast food is popular for its taste, flavour, consistency, quick options, and affordable prices. However, we should beware of the fact that fast food is often made from cheaper ingredients such as high fat meat, refined grains, added sugar and fats, instead of nutritious ingredients such as lean proteins, whole grains, fresh fruits, and vegetables.",
+        "my": "Burger King၊ Kentucky Fried Chicken (KFC)၊ McDonald’s၊ Starbucks၊ Subway နှင့် Pizza Hut ကဲ့သို့ အမြန်အစားအစာဆိုင်ခွဲများ လူကြိုက်များလာခြင်းတွင် အစားအစာကမ္ဘာ့ပြန့်နှံ့မှု၏ အကျိုးသက်ရောက်မှုကို ထင်ရှားစွာတွေ့နိုင်သည်။ အရသာ၊ မွှေးရနံ့၊ အရည်အသွေးတစ်သမတ်တည်းရှိမှု၊ လျင်မြန်စွာ ရွေးချယ်ရရှိမှုနှင့် တတ်နိုင်သောဈေးနှုန်းတို့ကြောင့် အမြန်အစားအစာ လူကြိုက်များသဖြင့် အခြားဆိုင်ခွဲများလည်း ကမ္ဘာတစ်ဝန်း နိုင်ငံများစွာတွင် ဖွံ့ဖြိုးလာသည်။ သို့သော် အမြန်အစားအစာကို အဆီနည်းပရိုတင်း၊ အစေ့အဆန်ပြည့်၊ လတ်ဆတ်သောသစ်သီးနှင့် ဟင်းသီးဟင်းရွက်ကဲ့သို့ အာဟာရရှိသည့် ပါဝင်ပစ္စည်းများအစား အဆီများသောအသား၊ ဖွဲနုခွံဖယ်ထားသော ကောက်နှံ၊ ထပ်ဖြည့်သကြားနှင့် အဆီကဲ့သို့ ဈေးသက်သာသော ပါဝင်ပစ္စည်းများဖြင့် မကြာခဏပြုလုပ်ကြောင်း သတိပြုသင့်သည်။",
+        "area": "lesson",
+        "sourcePage": 41
+      },
+      {
+        "id": "4A-10",
+        "t": "para",
+        "x": "In general, globalization of the food industry is in many ways positive, as it adds variety and interest to people’s lives and allows greater access to the variety of food in the whole world. However, the spread of processed food and fast food, and the consumption of such unhealthy food can bring about a negative effect on food safety and nutrition, and increase risks to health.",
+        "my": "ယေဘုယျအားဖြင့် အစားအစာလုပ်ငန်း၏ ကမ္ဘာလုံးဆိုင်ရာပြန့်နှံ့မှုသည် လူတို့ဘဝကို ပိုမိုစုံလင်စိတ်ဝင်စားဖွယ်ဖြစ်စေပြီး ကမ္ဘာတစ်ဝန်းမှ အစားအစာမျိုးစုံကို ပိုမိုလက်လှမ်းမီစေသောကြောင့် ကောင်းကျိုးများစွာ ရှိသည်။ သို့သော် ပြုပြင်ထုတ်လုပ်ထားသော အစားအစာနှင့် အမြန်အစားအစာ ပြန့်ပွားလာခြင်း၊ ထိုကျန်းမာရေးနှင့် မညီသောအစားအစာများကို စားသုံးခြင်းတို့သည် အစားအစာဘေးကင်းမှုနှင့် အာဟာရအပေါ် ဆိုးကျိုးသက်ရောက်စေပြီး ကျန်းမာရေးအန္တရာယ် တိုးစေနိုင်သည်။",
+        "area": "lesson",
+        "sourcePage": 41
+      },
+      {
+        "id": "4A-11",
+        "t": "para",
+        "x": "We should bear in mind that food safety, one aspect of which is the need to maintain proper nutrition, is a universal human right. It is necessary for us to understand how the practices of large global food producers and the food they produce can weaken the state of food safety and nutrition of people in the world. To rebalance a diet or make it more healthful, we can replace ultra-processed foods with whole foods, such as grains, nuts, lean meat, fruits, vegetables, and legumes. Additionally, we must eat the right quantity of it — not too much, not too little.",
+        "my": "သင့်တင့်သောအာဟာရကို ထိန်းသိမ်းရန်လိုအပ်ခြင်း ပါဝင်သည့် အစားအစာဘေးကင်းမှုသည် လူတိုင်းနှင့်ဆိုင်သော လူ့အခွင့်အရေးဖြစ်ကြောင်း မှတ်သားသင့်သည်။ ကမ္ဘာလုံးဆိုင်ရာ အစားအစာထုတ်လုပ်သူကြီးများ၏ လုပ်ထုံးလုပ်နည်းနှင့် ထုတ်ကုန်များသည် ကမ္ဘာ့လူထု၏ အစားအစာဘေးကင်းမှုနှင့် အာဟာရအခြေအနေကို မည်သို့အားနည်းစေနိုင်ကြောင်း နားလည်ရန် လိုသည်။ စားသောက်မှုပုံစံကို ပြန်လည်မျှတ၍ ပိုကျန်းမာစေရန် အလွန်အကျွံပြုပြင်ထုတ်လုပ်ထားသော အစားအစာများအစား ကောက်နှံ၊ အခွံမာသီး၊ အဆီနည်းအသား၊ သစ်သီး၊ ဟင်းသီးဟင်းရွက်နှင့် ပဲမျိုးစုံကဲ့သို့ သဘာဝအာဟာရမပျက်သော အစားအစာများကို အစားထိုးနိုင်သည်။ ထို့ပြင် အလွန်မများ၊ အလွန်မနည်းသော သင့်တင့်သည့်ပမာဏကို စားရမည်။",
+        "area": "lesson",
+        "sourcePage": 41
+      },
+      {
+        "id": "4A-12",
+        "t": "h",
+        "x": "Comprehension",
+        "my": "ဖတ်ရှုနားလည်မှု",
+        "area": "lesson",
+        "sourcePage": 41
+      },
+      {
+        "id": "4A-13",
+        "t": "ins",
+        "x": "A. Give a full-sentence answer to each question below.",
+        "my": "A။ အောက်ပါမေးခွန်းတစ်ခုစီကို ဝါကျပြည့်ဖြင့် ဖြေပါ။",
+        "area": "exercise",
+        "sourcePage": 41
+      },
+      {
+        "id": "4A-14",
+        "t": "q",
+        "x": "1. Name a typical Myanmar breakfast you usually eat.",
+        "my": "သင် ပုံမှန်စားသော မြန်မာနံနက်စာတစ်မျိုးကို ဖော်ပြပါ။",
+        "area": "exercise",
+        "sourcePage": 41,
+        "response": "personal"
+      },
+      {
+        "id": "4A-15",
+        "t": "q",
+        "x": "2. What typical Myanmar breakfast do you eat less frequently these days? Why?",
+        "my": "ယခုအခါ မည်သည့်မြန်မာနံနက်စာကို ယခင်ထက် လျော့စားသနည်း။ အဘယ်ကြောင့်နည်း။",
+        "area": "exercise",
+        "sourcePage": 41,
+        "response": "personal"
+      },
+      {
+        "id": "4A-16",
+        "t": "q",
+        "x": "3. What is your favourite food item whose origin is not Myanmar?",
+        "my": "မြန်မာနိုင်ငံမှ စတင်ပေါ်ပေါက်ခဲ့ခြင်းမဟုတ်သော သင်အနှစ်သက်ဆုံးအစားအစာမှာ ဘာလဲ။",
+        "area": "exercise",
+        "sourcePage": 41,
+        "response": "personal"
+      },
+      {
+        "id": "4A-17",
+        "t": "q",
+        "x": "4. Does your family often eat out? Why or why not?",
+        "my": "သင့်မိသားစု မကြာခဏ အပြင်ထွက်စားသလား။ အဘယ်ကြောင့်နည်း။",
+        "area": "exercise",
+        "sourcePage": 41,
+        "response": "personal"
+      },
+      {
+        "id": "4A-18",
+        "t": "q",
+        "x": "5. Name three items of fast food you know.",
+        "my": "သင်သိသော အမြန်အစားအစာသုံးမျိုးကို ဖော်ပြပါ။",
+        "area": "exercise",
+        "sourcePage": 41
+      },
+      {
+        "id": "4A-19",
+        "t": "q",
+        "x": "6. Why is fast food said to be unhealthy?",
+        "my": "အမြန်အစားအစာသည် ကျန်းမာရေးနှင့်မညီဟု အဘယ်ကြောင့် ပြောသနည်း။",
+        "area": "exercise",
+        "sourcePage": 41
+      },
+      {
+        "id": "4A-20",
+        "t": "q",
+        "x": "7. According to the passage, what are the advantages of the globalization of food?",
+        "my": "စာပိုဒ်အရ အစားအစာကမ္ဘာ့ပြန့်နှံ့မှု၏ ကောင်းကျိုးများမှာ ဘာတွေလဲ။",
+        "area": "exercise",
+        "sourcePage": 41
+      },
+      {
+        "id": "4A-21",
+        "t": "q",
+        "x": "8. What are the effects of the spread of processed food and fast food and the consumption of unhealthy food?",
+        "my": "ပြုပြင်ထုတ်လုပ်အစားအစာနှင့် အမြန်အစားအစာ ပြန့်ပွားလာခြင်း၊ ကျန်းမာရေးနှင့်မညီသော အစားအစာစားသုံးခြင်းတို့၏ အကျိုးဆက်များမှာ ဘာတွေလဲ။",
+        "area": "exercise",
+        "sourcePage": 41
+      },
+      {
+        "id": "4A-22",
+        "t": "q",
+        "x": "9. How can the practices of large global food producers and the food they produce be harmful to people?",
+        "my": "ကမ္ဘာလုံးဆိုင်ရာ အစားအစာထုတ်လုပ်သူကြီးများ၏ လုပ်ထုံးလုပ်နည်းနှင့် ထုတ်ကုန်များသည် လူတို့အတွက် မည်သို့ အန္တရာယ်ဖြစ်စေနိုင်သနည်း။",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4A-23",
+        "t": "q",
+        "x": "10. Do you think you have a healthy eating habit? Why or why not?",
+        "my": "သင့်တွင် ကျန်းမာရေးနှင့်ညီသော စားသောက်အလေ့အထရှိသည်ဟု ထင်ပါသလား။ အဘယ်ကြောင့်နည်း။",
+        "area": "exercise",
+        "sourcePage": 42,
+        "response": "personal"
+      },
+      {
+        "id": "4A-24",
+        "t": "ins",
+        "x": "B. Complete the following table with the typical Myanmar food and the food items people in big cities eat these days as in the examples.",
+        "my": "B။ နမူနာအတိုင်း ပုံမှန်မြန်မာအစားအစာနှင့် ယခုခေတ် မြို့ကြီးများတွင် စားသုံးသောအစားအစာများဖြင့် ဇယားကို ဖြည့်ပါ။",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4A-25",
+        "t": "scan",
+        "x": "",
+        "my": "",
+        "area": "exercise",
+        "sourcePage": 42,
+        "scanPage": 42
+      },
+      {
+        "id": "4A-26",
+        "t": "q",
+        "x": "Typical Myanmar food — breakfast: fried rice; lunch: ______; dinner: ______",
+        "my": "ပုံမှန်မြန်မာအစားအစာ — နံနက်စာ: ထမင်းကြော်၊ နေ့လယ်စာ: ______၊ ညစာ: ______။",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4A-27",
+        "t": "q",
+        "x": "The food items people in big cities eat these days — breakfast: dim sum; lunch: ______; dinner: ______",
+        "my": "ယခုခေတ် မြို့ကြီးများတွင် စားသုံးသောအစားအစာ — နံနက်စာ: ဒင်းဆမ်း၊ နေ့လယ်စာ: ______၊ ညစာ: ______။",
+        "area": "exercise",
+        "sourcePage": 42
+      }
+    ]
+  },
+  {
+    "code": "4B",
+    "title": "Vocabulary",
+    "blocks": [
+      {
+        "id": "4B-0",
+        "t": "h",
+        "x": "Types of food",
+        "my": "အစားအစာအမျိုးအစားများ",
+        "area": "lesson",
+        "sourcePage": 42
+      },
+      {
+        "id": "4B-1",
+        "t": "ins",
+        "x": "A. Match the types of food in Column A with their meanings in Column B.",
+        "my": "A။ Column A မှ အစားအစာအမျိုးအစားများကို Column B မှ အဓိပ္ပာယ်များနှင့် တွဲပါ။",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4B-2",
+        "t": "line",
+        "x": "a) food that is considered healthy because it is grown naturally, has not been processed, and contains no artificial ingredients",
+        "my": "a) သဘာဝအတိုင်း စိုက်ပျိုး၍ ပြုပြင်ထုတ်လုပ်ထားခြင်းမရှိ၊ အတုပြုလုပ်ပစ္စည်းများ မပါသောကြောင့် ကျန်းမာရေးနှင့်ညီဟု ယူဆသည့်အစားအစာ",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4B-3",
+        "t": "line",
+        "x": "b) food that is prepared and served quickly",
+        "my": "b) လျင်မြန်စွာ ပြင်ဆင်တည်ခင်းသော အစားအစာ",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4B-4",
+        "t": "line",
+        "x": "c) food that is believed to be good for your health",
+        "my": "c) ကျန်းမာရေးအတွက် ကောင်းသည်ဟု ယုံကြည်ရသော အစားအစာ",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4B-5",
+        "t": "line",
+        "x": "d) any food that has been altered in some way such as freezing, canning or baking during preparation",
+        "my": "d) ပြင်ဆင်စဉ် အေးခဲခြင်း၊ စည်သွတ်ခြင်း၊ ဖုတ်ခြင်း စသည်ဖြင့် တစ်နည်းနည်း ပြုပြင်ထားသော အစားအစာ",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4B-6",
+        "t": "line",
+        "x": "e) a combination of nutritious ingredients that is easy to digest and absorb by the body",
+        "my": "e) ခန္ဓာကိုယ်က အလွယ်တကူ အစာချေစုပ်ယူနိုင်သော အာဟာရရှိသည့် ပါဝင်ပစ္စည်းများ ပေါင်းစပ်ထားမှု",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4B-7",
+        "t": "line",
+        "x": "f) unhealthy food that is high in calories from sugar or fat, with little nutritional value",
+        "my": "f) သကြား သို့မဟုတ် အဆီမှ ကယ်လိုရီများ၍ အာဟာရတန်ဖိုးနည်းသော ကျန်းမာရေးနှင့်မညီသည့် အစားအစာ",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4B-8",
+        "t": "line",
+        "x": "g) any food whose recipe is altered to reduce fat, carbohydrates, and/or sugar in order to make it part of a weight loss programme or diet",
+        "my": "g) ကိုယ်အလေးချိန်လျှော့ချရေးအတွက် အဆီ၊ ကာဗိုဟိုက်ဒရိတ်နှင့်/သို့မဟုတ် သကြား လျှော့ချရန် ချက်နည်းပြောင်းထားသော အစားအစာ",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4B-9",
+        "t": "q",
+        "x": "1. fast food",
+        "my": "အမြန်အစားအစာ",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4B-10",
+        "t": "q",
+        "x": "2. health food",
+        "my": "ကျန်းမာရေးကောင်းစေသောအစားအစာ",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4B-11",
+        "t": "q",
+        "x": "3. processed food",
+        "my": "ပြုပြင်ထုတ်လုပ်ထားသောအစားအစာ",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4B-12",
+        "t": "q",
+        "x": "4. whole food",
+        "my": "သဘာဝအာဟာရမပျက်သောအစားအစာ",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4B-13",
+        "t": "q",
+        "x": "5. junk food",
+        "my": "အာဟာရနည်းပြီး ကျန်းမာရေးနှင့်မညီသောအစားအစာ",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4B-14",
+        "t": "q",
+        "x": "6. diet food",
+        "my": "ကိုယ်အလေးချိန်ထိန်းအစားအစာ",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4B-15",
+        "t": "q",
+        "x": "7. light food",
+        "my": "အစာချေလွယ်သော ပေါ့ပါးအစားအစာ",
+        "area": "exercise",
+        "sourcePage": 42
+      },
+      {
+        "id": "4B-16",
+        "t": "ins",
+        "x": "B. Complete the following sentences with the types of food in Exercise A.",
+        "my": "B။ လေ့ကျင့်ခန်း A မှ အစားအစာအမျိုးအစားများဖြင့် ဝါကျများကို ဖြည့်ပါ။",
+        "area": "exercise",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-17",
+        "t": "q",
+        "x": "1. He is not healthy because he eats a lot of ______ such as candy and French fries, and he doesn’t have enough rest.",
+        "my": "သူသည် သကြားလုံးနှင့် အာလူးကြော်ကဲ့သို့ ______ များစွာစားပြီး လုံလောက်စွာ မအနားယူသောကြောင့် ကျန်းမာရေးမကောင်းပါ။",
+        "area": "exercise",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-18",
+        "t": "q",
+        "x": "2. On our journey, we stopped at a ______ restaurant and bought some chicken and chips.",
+        "my": "ခရီးတွင် ______ ဆိုင်၌ ရပ်နား၍ ကြက်သားနှင့် အာလူးကြော် ဝယ်ခဲ့သည်။",
+        "area": "exercise",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-19",
+        "t": "q",
+        "x": "3. ______ are usually frozen, canned, dried, baked and pasteurized.",
+        "my": "______ များကို ပုံမှန်အားဖြင့် အေးခဲ၊ စည်သွတ်၊ အခြောက်ခံ၊ ဖုတ်၍ အပူပေးပိုးသတ်ထားသည်။",
+        "area": "exercise",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-20",
+        "t": "q",
+        "x": "4. She has lost a lot of weight by eating ______ and exercising.",
+        "my": "______ စား၍ လေ့ကျင့်ခန်းလုပ်ခြင်းဖြင့် သူမ ကိုယ်အလေးချိန်များစွာ လျော့ခဲ့သည်။",
+        "area": "exercise",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-21",
+        "t": "q",
+        "x": "5. Doctors suggest that we should eat foods from ______ stores and from organic farms.",
+        "my": "ဆရာဝန်များက ______ ဆိုင်များနှင့် အော်ဂဲနစ်စိုက်ခင်းများမှ အစားအစာကို စားသင့်ကြောင်း အကြံပြုသည်။",
+        "area": "exercise",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-22",
+        "t": "q",
+        "x": "6. We are recommended to eat ______ such as almond and sunflower seeds instead of peanut and sunflower oil.",
+        "my": "မြေပဲဆီနှင့် နေကြာဆီအစား ဗာဒံစေ့နှင့် နေကြာစေ့ကဲ့သို့ ______ စားရန် အကြံပြုထားသည်။",
+        "area": "exercise",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-23",
+        "t": "q",
+        "x": "7. She had got a stomach problem, so the doctor dieted her on a ______.",
+        "my": "သူမ အစာအိမ်ပြဿနာရှိသဖြင့် ဆရာဝန်က ______ စားစေခဲ့သည်။",
+        "area": "exercise",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-24",
+        "t": "h",
+        "x": "Linking words",
+        "my": "ဆက်စပ်စကားလုံးများ",
+        "area": "lesson",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-25",
+        "t": "line",
+        "x": "Additional ideas can be introduced with ‘additionally’, ‘and’, ‘also’, ‘furthermore’ and ‘too’.",
+        "my": "ထပ်မံဖြည့်စွက်သော အယူအဆများကို additionally၊ and၊ also၊ furthermore နှင့် too တို့ဖြင့် ဖော်ပြနိုင်သည်။",
+        "area": "lesson",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-26",
+        "t": "line",
+        "x": "e.g. Additionally, we must eat the right quantity of it — not too much, not too little.",
+        "my": "ဥပမာ — ထို့ပြင် အလွန်မများ၊ အလွန်မနည်းသော သင့်တင့်သည့်ပမာဏကို စားရမည်။",
+        "area": "lesson",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-27",
+        "t": "line",
+        "x": "Just look at the restaurants and food stalls, and you will see that they are full of diners.",
+        "my": "စားသောက်ဆိုင်များကို ကြည့်လိုက်လျှင် စားသုံးသူများဖြင့် ပြည့်နေသည်ကို တွေ့ရမည်။",
+        "area": "lesson",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-28",
+        "t": "line",
+        "x": "Many other fast-food chain restaurants are also thriving in many countries all over the globe.",
+        "my": "အခြားအမြန်အစားအစာဆိုင်ခွဲများလည်း ကမ္ဘာတစ်ဝန်း နိုင်ငံများစွာတွင် ဖွံ့ဖြိုးလာသည်။",
+        "area": "lesson",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-29",
+        "t": "line",
+        "x": "Their products are of very good quality; furthermore, the price is reasonable.",
+        "my": "သူတို့၏ထုတ်ကုန်များသည် အရည်အသွေးအလွန်ကောင်းသည်။ ထို့ပြင် ဈေးနှုန်းလည်း သင့်တင့်သည်။",
+        "area": "lesson",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-30",
+        "t": "line",
+        "x": "Because of changes in food industries, lifestyles of people have changed a lot too.",
+        "my": "အစားအစာလုပ်ငန်းများ ပြောင်းလဲလာခြင်းကြောင့် လူတို့၏နေထိုင်မှုပုံစံလည်း များစွာပြောင်းလဲလာသည်။",
+        "area": "lesson",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-31",
+        "t": "line",
+        "x": "Contrasting ideas can be introduced with ‘although’, ‘but’, ‘however’, ‘nevertheless’ and ‘on the other hand’.",
+        "my": "ဆန့်ကျင်သည့် အယူအဆများကို although၊ but၊ however၊ nevertheless နှင့် on the other hand တို့ဖြင့် ဖော်ပြနိုင်သည်။",
+        "area": "lesson",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-32",
+        "t": "line",
+        "x": "e.g. Although life is full of challenges, it is also full of promises.",
+        "my": "ဥပမာ — ဘဝသည် စိန်ခေါ်မှုများနှင့် ပြည့်နေသော်လည်း မျှော်လင့်စရာများနှင့်လည်း ပြည့်နေသည်။",
+        "area": "lesson",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-33",
+        "t": "line",
+        "x": "Globalization of the food industry is in many ways positive, but the spread of processed food and fast food and eating unhealthy food can bring about a negative effect on food safety.",
+        "my": "အစားအစာလုပ်ငန်း၏ ကမ္ဘာ့ပြန့်နှံ့မှုတွင် ကောင်းကျိုးများစွာရှိသော်လည်း ပြုပြင်ထုတ်လုပ်အစားအစာနှင့် အမြန်အစားအစာ ပြန့်ပွားခြင်း၊ ကျန်းမာရေးနှင့်မညီသောအစားအစာ စားခြင်းတို့က အစားအစာဘေးကင်းမှုကို ဆိုးကျိုးသက်ရောက်စေနိုင်သည်။",
+        "area": "lesson",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-34",
+        "t": "line",
+        "x": "The lunch and dinner of Myanmar people used to be rice and various kinds of curries. However, there has been a significant change in the food items people eat.",
+        "my": "မြန်မာတို့၏ နေ့လယ်စာနှင့် ညစာမှာ ယခင်က ထမင်းနှင့် ဟင်းမျိုးစုံဖြစ်ခဲ့သည်။ သို့သော် လူတို့စားသည့် အစားအစာများ သိသာစွာ ပြောင်းလဲလာသည်။",
+        "area": "lesson",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-35",
+        "t": "line",
+        "x": "They were completely exhausted; nevertheless, they went on working.",
+        "my": "သူတို့ လုံးဝမောပန်းနေသော်လည်း ဆက်လက်အလုပ်လုပ်ခဲ့ကြသည်။",
+        "area": "lesson",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-36",
+        "t": "line",
+        "x": "Zaw Zaw is very talkative; his brother, on the other hand, is very quiet.",
+        "my": "ဇော်ဇော်သည် စကားအလွန်များသည်။ တစ်ဖက်တွင် သူ့အစ်ကို/ညီက အလွန်စကားနည်းသည်။",
+        "area": "lesson",
+        "sourcePage": 43
+      },
+      {
+        "id": "4B-37",
+        "t": "ins",
+        "x": "C. Complete the following sentences with the appropriate linking words. More than one linking word can be used to complete some sentences.",
+        "my": "C။ သင့်လျော်သော ဆက်စပ်စကားလုံးများဖြင့် ဖြည့်ပါ။ အချို့ဝါကျများတွင် စကားလုံးတစ်မျိုးထက်ပို၍ သုံးနိုင်သည်။",
+        "area": "exercise",
+        "sourcePage": 44
+      },
+      {
+        "id": "4B-38",
+        "t": "q",
+        "x": "1. The ant is the most industrious animal; ______, it is the quietest one.",
+        "my": "ပုရွက်ဆိတ်သည် အလုပ်ကြိုးစားဆုံးသတ္တဝါဖြစ်သည်။ ______ အငြိမ်သက်ဆုံးလည်း ဖြစ်သည်။",
+        "area": "exercise",
+        "sourcePage": 44
+      },
+      {
+        "id": "4B-39",
+        "t": "q",
+        "x": "2. You can check your balance; ______, you can pay bills over the internet.",
+        "my": "သင့်လက်ကျန်ငွေကို စစ်နိုင်သည်။ ______ အင်တာနက်မှ ငွေတောင်းခံလွှာများ ပေးချေနိုင်သည်။",
+        "area": "exercise",
+        "sourcePage": 44
+      },
+      {
+        "id": "4B-40",
+        "t": "q",
+        "x": "3. Fire and water are good servants, ______ bad masters.",
+        "my": "မီးနှင့်ရေတို့သည် အစေခံကောင်းများဖြစ်ကြသော်လည်း ______ အရှင်သခင်ဆိုးများ ဖြစ်ကြသည်။",
+        "area": "exercise",
+        "sourcePage": 44
+      },
+      {
+        "id": "4B-41",
+        "t": "q",
+        "x": "4. ______ they came from very different backgrounds, they immediately became friends.",
+        "my": "အလွန်မတူညီသော နောက်ခံများမှ လာကြ ______ သူတို့ ချက်ချင်း သူငယ်ချင်းဖြစ်ခဲ့ကြသည်။",
+        "area": "exercise",
+        "sourcePage": 44
+      },
+      {
+        "id": "4B-42",
+        "t": "q",
+        "x": "5. She works very hard, but she ______ goes to the gym every day.",
+        "my": "သူမ အလုပ်အလွန်ကြိုးစားသော်လည်း နေ့တိုင်း အားကစားရုံသို့ ______ သွားသည်။",
+        "area": "exercise",
+        "sourcePage": 44
+      },
+      {
+        "id": "4B-43",
+        "t": "q",
+        "x": "6. Today, the lifestyles of people have become busier, ______ not everyone has time to cook anymore.",
+        "my": "ယနေ့ လူတို့၏နေထိုင်မှုပုံစံ ပိုအလုပ်များလာပြီး ______ လူတိုင်း ချက်ပြုတ်ရန် အချိန်မရတော့ပါ။",
+        "area": "exercise",
+        "sourcePage": 44
+      },
+      {
+        "id": "4B-44",
+        "t": "q",
+        "x": "7. He continued with his plan ______ all his friends advised him to abandon it.",
+        "my": "သူ့သူငယ်ချင်းအားလုံးက စွန့်လွှတ်ရန် အကြံပေးခဲ့ ______ သူ့အစီအစဉ်ကို ဆက်လုပ်ခဲ့သည်။",
+        "area": "exercise",
+        "sourcePage": 44
+      },
+      {
+        "id": "4B-45",
+        "t": "q",
+        "x": "8. I want to go to the party; ______ I ought to be studying for the examination.",
+        "my": "ကျွန်ုပ် ပါတီကို သွားချင်သည်။ ______ စာမေးပွဲအတွက် စာလေ့လာနေသင့်သည်။",
+        "area": "exercise",
+        "sourcePage": 44
+      },
+      {
+        "id": "4B-46",
+        "t": "q",
+        "x": "9. Tun Tun did not just win the gold medal. He broke the record ______.",
+        "my": "ထွန်းထွန်းသည် ရွှေတံဆိပ်ရရုံသာမက စံချိန်ကို ______ ချိုးခဲ့သည်။",
+        "area": "exercise",
+        "sourcePage": 44
+      },
+      {
+        "id": "4B-47",
+        "t": "q",
+        "x": "10. The news may be unexpected; ______, it is true.",
+        "my": "သတင်းသည် မမျှော်လင့်ထားသောသတင်း ဖြစ်နိုင်သည်။ ______ မှန်ကန်သည်။",
+        "area": "exercise",
+        "sourcePage": 44
+      }
+    ]
+  },
+  {
+    "code": "4C",
+    "title": "Grammar",
+    "blocks": [
+      {
+        "id": "4C-0",
+        "t": "h",
+        "x": "‘Too ... to’ and ‘Enough to’",
+        "my": "“Too ... to” နှင့် “Enough to”",
+        "area": "lesson",
+        "sourcePage": 44
+      },
+      {
+        "id": "4C-1",
+        "t": "line",
+        "x": "Too ... to",
+        "my": "လွန်ကဲလွန်း၍ မလုပ်နိုင်ခြင်း",
+        "area": "lesson",
+        "sourcePage": 44
+      },
+      {
+        "id": "4C-2",
+        "t": "line",
+        "x": "‘Too’ has a negative meaning. It means ‘more than is necessary or desirable’. It can be used with an adjective or an adverb.",
+        "my": "“Too” တွင် အငြင်းသဘောဆောင်သော အဓိပ္ပာယ်ရှိသည်။ လိုအပ်သည် သို့မဟုတ် လိုလားသည်ထက် ပိုလွန်ခြင်းကို ဆိုလိုပြီး နာမဝိသေသန သို့မဟုတ် ကြိယာဝိသေသနနှင့် သုံးနိုင်သည်။",
+        "area": "lesson",
+        "sourcePage": 44
+      },
+      {
+        "id": "4C-3",
+        "t": "line",
+        "x": "e.g. The patient was too weak to bear his weight.",
+        "my": "ဥပမာ — လူနာသည် မိမိကိုယ်အလေးချိန်ကို မထိန်းနိုင်လောက်အောင် အားနည်းနေသည်။",
+        "area": "lesson",
+        "sourcePage": 44
+      },
+      {
+        "id": "4C-4",
+        "t": "line",
+        "x": "My neighbours sang too loudly for me to have a sound sleep last night.",
+        "my": "မနေ့ညက အိမ်နီးချင်းများ အလွန်ကျယ်လောင်စွာ သီချင်းဆိုသဖြင့် ကျွန်ုပ် ကောင်းစွာမအိပ်နိုင်ခဲ့ပါ။",
+        "area": "lesson",
+        "sourcePage": 44
+      },
+      {
+        "id": "4C-5",
+        "t": "line",
+        "x": "Enough to",
+        "my": "လုပ်နိုင်လောက်အောင် လုံလောက်ခြင်း",
+        "area": "lesson",
+        "sourcePage": 44
+      },
+      {
+        "id": "4C-6",
+        "t": "line",
+        "x": "‘Enough’ means ‘as much as necessary’. It can be used with an adjective or an adverb.",
+        "my": "“Enough” ဆိုသည်မှာ လိုအပ်သလောက်ဟု အဓိပ္ပာယ်ရပြီး နာမဝိသေသန သို့မဟုတ် ကြိယာဝိသေသနနှင့် သုံးနိုင်သည်။",
+        "area": "lesson",
+        "sourcePage": 44
+      },
+      {
+        "id": "4C-7",
+        "t": "line",
+        "x": "e.g. The patient was not strong enough to bear his weight.",
+        "my": "ဥပမာ — လူနာသည် မိမိကိုယ်အလေးချိန်ကို ထိန်းနိုင်လောက်အောင် မသန်မာပါ။",
+        "area": "lesson",
+        "sourcePage": 44
+      },
+      {
+        "id": "4C-8",
+        "t": "line",
+        "x": "We are not acting quickly enough to prevent climate change.",
+        "my": "ရာသီဥတုပြောင်းလဲမှုကို တားဆီးရန် ကျွန်ုပ်တို့ လုံလောက်စွာ လျင်မြန်စွာ မဆောင်ရွက်နေပါ။",
+        "area": "lesson",
+        "sourcePage": 44
+      },
+      {
+        "id": "4C-9",
+        "t": "line",
+        "x": "Note that the adjective or adverb comes between ‘too’ and ‘to’, and ‘enough’ comes after the adjective or adverb it modifies.",
+        "my": "နာမဝိသေသန သို့မဟုတ် ကြိယာဝိသေသနသည် too နှင့် to ကြားတွင် ရှိပြီး enough သည် ၎င်းကအထူးပြုသော နာမဝိသေသန သို့မဟုတ် ကြိယာဝိသေသနနောက်တွင် ရှိကြောင်း မှတ်သားပါ။",
+        "area": "lesson",
+        "sourcePage": 44
+      },
+      {
+        "id": "4C-10",
+        "t": "ins",
+        "x": "A. Combine the following sentences according to the instructions given in brackets as in the examples.",
+        "my": "A။ နမူနာများအတိုင်း ကွင်းအတွင်းညွှန်ကြားချက်နှင့်အညီ ဝါကျများကို ပေါင်းပါ။",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-11",
+        "t": "line",
+        "x": "e.g. My grandfather is very fit and strong. He can walk four miles at a stretch. (Use ‘enough to’.)",
+        "my": "ဥပမာ — ကျွန်ုပ်အဘိုးသည် အလွန်ကျန်းမာသန်စွမ်းသည်။ တစ်ဆက်တည်း လေးမိုင် လမ်းလျှောက်နိုင်သည်။ (enough to သုံးပါ။)",
+        "area": "lesson",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-12",
+        "t": "line",
+        "x": "My grandfather is fit and strong enough to walk four miles at a stretch.",
+        "my": "ကျွန်ုပ်အဘိုးသည် တစ်ဆက်တည်း လေးမိုင်လမ်းလျှောက်နိုင်လောက်အောင် ကျန်းမာသန်စွမ်းသည်။",
+        "area": "lesson",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-13",
+        "t": "line",
+        "x": "The presenter spoke very softly. We could not hear him. (Use ‘too ... to’.)",
+        "my": "တင်ဆက်သူသည် အလွန်တိုးတိုးပြောခဲ့သည်။ ကျွန်ုပ်တို့ မကြားနိုင်ပါ။ (too ... to သုံးပါ။)",
+        "area": "lesson",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-14",
+        "t": "line",
+        "x": "The presenter spoke too softly for us to hear him. (Note the use of the words for us.)",
+        "my": "တင်ဆက်သူသည် ကျွန်ုပ်တို့ မကြားနိုင်လောက်အောင် တိုးတိုးပြောခဲ့သည်။ (for us အသုံးကို သတိပြုပါ။)",
+        "area": "lesson",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-15",
+        "t": "q",
+        "x": "1. The girl was not confident. She could not perform well on the stage. (Use ‘enough to’.)",
+        "my": "မိန်းကလေးသည် မိမိကိုယ်ကို ယုံကြည်မှုမရှိခဲ့ပါ။ စင်မြင့်ပေါ်တွင် ကောင်းစွာ မဖျော်ဖြေနိုင်ခဲ့ပါ။ (enough to သုံးပါ။)",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-16",
+        "t": "q",
+        "x": "2. U Ba was not well-paid. He cannot keep his family in comfort. (Use ‘enough to’.)",
+        "my": "ဦးဘသည် လစာကောင်းကောင်း မရခဲ့ပါ။ သူ့မိသားစုကို သက်သောင့်သက်သာ မထားနိုင်ပါ။ (enough to သုံးပါ။)",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-17",
+        "t": "q",
+        "x": "3. The task was very difficult. It could not be done without the help of others. (Use ‘too ... to’.)",
+        "my": "အလုပ်သည် အလွန်ခက်ခဲခဲ့သည်။ အခြားသူများ မကူညီဘဲ မလုပ်နိုင်ခဲ့ပါ။ (too ... to သုံးပါ။)",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-18",
+        "t": "q",
+        "x": "4. The theory is very complicated. I do not understand it. (Use ‘too ... to’.)",
+        "my": "သီအိုရီသည် အလွန်ရှုပ်ထွေးသည်။ ကျွန်ုပ် နားမလည်ပါ။ (too ... to သုံးပါ။)",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-19",
+        "t": "q",
+        "x": "5. The room is not large. It cannot accommodate a hundred people. (Use ‘enough to’.)",
+        "my": "အခန်းသည် မကျယ်ပါ။ လူတစ်ရာ မဆံ့ပါ။ (enough to သုံးပါ။)",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-20",
+        "t": "q",
+        "x": "6. I sometimes crowd my days with many activities. I have no time to relax. (Use ‘too ... to’.)",
+        "my": "တစ်ခါတစ်ရံ နေ့ရက်များတွင် လုပ်စရာများစွာ ပြည့်နေစေသည်။ အပန်းဖြေရန် အချိန်မရှိပါ။ (too ... to သုံးပါ။)",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-21",
+        "t": "q",
+        "x": "7. The café was very crowded. I couldn’t find a place to sit. (Use ‘too ... to’.)",
+        "my": "ကော်ဖီဆိုင်တွင် လူအလွန်များခဲ့သည်။ ထိုင်စရာ မရှာနိုင်ခဲ့ပါ။ (too ... to သုံးပါ။)",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-22",
+        "t": "q",
+        "x": "8. The coffee powder is not very fine. It cannot dissolve in hot water. (Use ‘enough to’.)",
+        "my": "ကော်ဖီမှုန့်သည် သိပ်မညက်ပါ။ ရေနွေးတွင် မပျော်ဝင်နိုင်ပါ။ (enough to သုံးပါ။)",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-23",
+        "t": "q",
+        "x": "9. There is little time. We cannot finish the project. (Use ‘too ... to’.)",
+        "my": "အချိန်နည်းသည်။ စီမံကိန်းကို မပြီးနိုင်ပါ။ (too ... to သုံးပါ။)",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-24",
+        "t": "q",
+        "x": "10. My grandfather lived long. He could see his great grandchildren. (Use ‘enough to’.)",
+        "my": "အဘိုးသည် အသက်ရှည်ခဲ့သည်။ သူ၏မြစ်များကို တွေ့မြင်နိုင်ခဲ့သည်။ (enough to သုံးပါ။)",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-25",
+        "t": "ins",
+        "x": "B. Rewrite the following sentences using ‘enough to’.",
+        "my": "B။ enough to သုံး၍ အောက်ပါဝါကျများကို ပြန်ရေးပါ။",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-26",
+        "t": "line",
+        "x": "e.g. The place was too noisy to relax peacefully.",
+        "my": "ဥပမာ — ထိုနေရာသည် အေးချမ်းစွာအပန်းမဖြေနိုင်လောက်အောင် ဆူညံခဲ့သည်။",
+        "area": "lesson",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-27",
+        "t": "line",
+        "x": "The place was not quiet enough to relax peacefully.",
+        "my": "ထိုနေရာသည် အေးချမ်းစွာ အပန်းဖြေနိုင်လောက်အောင် မငြိမ်သက်ခဲ့ပါ။",
+        "area": "lesson",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-28",
+        "t": "q",
+        "x": "1. It is too expensive to transform saltwater into useful freshwater.",
+        "my": "ဆားငန်ရေကို အသုံးဝင်သောရေချိုအဖြစ် ပြောင်းရန် ကုန်ကျစရိတ်အလွန်များသည်။",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-29",
+        "t": "q",
+        "x": "2. The boy was too far from me to identify who he was.",
+        "my": "ထိုကောင်လေးသည် မည်သူဖြစ်ကြောင်း မသိနိုင်လောက်အောင် ကျွန်ုပ်နှင့် ဝေးခဲ့သည်။",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-30",
+        "t": "q",
+        "x": "3. Your suitcase is too large to be taken on the plane.",
+        "my": "သင့်ခရီးဆောင်အိတ်သည် လေယာဉ်ပေါ်သို့ ယူမသွားနိုင်လောက်အောင် ကြီးသည်။",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-31",
+        "t": "q",
+        "x": "4. This organism is too small to be seen with the naked eye.",
+        "my": "ဤသက်ရှိသည် သာမန်မျက်စိဖြင့် မမြင်နိုင်လောက်အောင် သေးသည်။",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-32",
+        "t": "q",
+        "x": "5. The earthquake was too weak to be registered on the Richter scale.",
+        "my": "ငလျင်သည် ရစ်ချ်တာစကေးပေါ်တွင် မမှတ်တမ်းတင်နိုင်လောက်အောင် အားနည်းခဲ့သည်။",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-33",
+        "t": "ins",
+        "x": "C. Rewrite the following sentences using ‘too ... to’.",
+        "my": "C။ too ... to သုံး၍ အောက်ပါဝါကျများကို ပြန်ရေးပါ။",
+        "area": "exercise",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-34",
+        "t": "line",
+        "x": "e.g. You are not old enough to decide what you should do next.",
+        "my": "ဥပမာ — နောက်ဘာလုပ်သင့်သည်ကို ဆုံးဖြတ်နိုင်လောက်အောင် သင် အသက်မကြီးသေးပါ။",
+        "area": "lesson",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-35",
+        "t": "line",
+        "x": "You are too young to decide what you should do next.",
+        "my": "နောက်ဘာလုပ်သင့်သည်ကို မဆုံးဖြတ်နိုင်လောက်အောင် သင် ငယ်သေးသည်။",
+        "area": "lesson",
+        "sourcePage": 45
+      },
+      {
+        "id": "4C-36",
+        "t": "q",
+        "x": "1. The clay was not hard enough to be moulded into the desired shape.",
+        "my": "ရွှံ့စေးသည် လိုချင်သောပုံစံသို့ ပုံသွင်းနိုင်လောက်အောင် မမာခဲ့ပါ။",
+        "area": "exercise",
+        "sourcePage": 46
+      },
+      {
+        "id": "4C-37",
+        "t": "q",
+        "x": "2. It is not safe enough to swim across the stream at this time of the year.",
+        "my": "ယခုနှစ်၏ ဤအချိန်တွင် ချောင်းကို ဖြတ်ကူးရေကူးရန် လုံလောက်စွာ မဘေးကင်းပါ။",
+        "area": "exercise",
+        "sourcePage": 46
+      },
+      {
+        "id": "4C-38",
+        "t": "q",
+        "x": "3. The man did not speak slowly enough for me to understand what he was saying.",
+        "my": "ထိုသူသည် သူပြောသည်ကို ကျွန်ုပ် နားလည်နိုင်လောက်အောင် ဖြည်းဖြည်းမပြောခဲ့ပါ။",
+        "area": "exercise",
+        "sourcePage": 46
+      },
+      {
+        "id": "4C-39",
+        "t": "q",
+        "x": "4. The sum is not easy enough for us to solve.",
+        "my": "ပုစ္ဆာသည် ကျွန်ုပ်တို့ ဖြေရှင်းနိုင်လောက်အောင် မလွယ်ပါ။",
+        "area": "exercise",
+        "sourcePage": 46
+      },
+      {
+        "id": "4C-40",
+        "t": "q",
+        "x": "5. The novel was not interesting enough for me to continue reading.",
+        "my": "ဝတ္ထုသည် ကျွန်ုပ် ဆက်ဖတ်လိုလောက်အောင် စိတ်ဝင်စားဖွယ် မကောင်းခဲ့ပါ။",
+        "area": "exercise",
+        "sourcePage": 46
+      }
+    ]
+  },
+  {
+    "code": "4D",
+    "title": "Listening and Speaking",
+    "blocks": [
+      {
+        "id": "4D-0",
+        "t": "ins",
+        "x": "A. Listen to a presenter talking about the advantages and disadvantages of fast food and complete the sentences in the table. The first one is done for you as an example.",
+        "my": "A။ အမြန်အစားအစာ၏ ကောင်းကျိုးဆိုးကျိုးများအကြောင်း တင်ဆက်သူပြောသည်ကို နားထောင်ပြီး ဇယားရှိဝါကျများကို ဖြည့်ပါ။ ပထမတစ်ခုကို နမူနာဖြေထားသည်။",
+        "area": "exercise",
+        "sourcePage": 46
+      },
+      {
+        "id": "4D-1",
+        "t": "h",
+        "x": "The advantages and disadvantages of fast food",
+        "my": "အမြန်အစားအစာ၏ ကောင်းကျိုးနှင့် ဆိုးကျိုးများ",
+        "area": "lesson",
+        "sourcePage": 46
+      },
+      {
+        "id": "4D-2",
+        "t": "line",
+        "x": "It’s (1) fast.",
+        "my": "(၁) လျင်မြန်သည်။",
+        "area": "exercise",
+        "sourcePage": 46
+      },
+      {
+        "id": "4D-3",
+        "t": "q",
+        "x": "At fast-food restaurants, it takes only a few minutes to (2) ______ your hunger.",
+        "my": "အမြန်အစားအစာဆိုင်များတွင် သင့်ဆာလောင်မှုကို (၂) ______ ရန် မိနစ်အနည်းငယ်သာ ကြာသည်။",
+        "area": "exercise",
+        "sourcePage": 46,
+        "response": "audio"
+      },
+      {
+        "id": "4D-4",
+        "t": "q",
+        "x": "It’s delicious. Fast food normally (3) ______ very good.",
+        "my": "အရသာရှိသည်။ အမြန်အစားအစာသည် ပုံမှန်အားဖြင့် အလွန်ကောင်းစွာ (၃) ______။",
+        "area": "exercise",
+        "sourcePage": 46,
+        "response": "audio"
+      },
+      {
+        "id": "4D-5",
+        "t": "q",
+        "x": "It’s (4) ______. The prices of meals offered by fast-food chains are affordable.",
+        "my": "(၄) ______ ဖြစ်သည်။ အမြန်အစားအစာဆိုင်ခွဲများ၏ ဈေးနှုန်းကို တတ်နိုင်ကြသည်။",
+        "area": "exercise",
+        "sourcePage": 46,
+        "response": "audio"
+      },
+      {
+        "id": "4D-6",
+        "t": "q",
+        "x": "It is not as bad as many people think. Some (5) ______ are available these days, on the fast-food menus.",
+        "my": "လူအများထင်သလောက် မဆိုးပါ။ ယခုခေတ် မီနူးများတွင် (၅) ______ အချို့ ရနိုင်သည်။",
+        "area": "exercise",
+        "sourcePage": 46,
+        "response": "audio"
+      },
+      {
+        "id": "4D-7",
+        "t": "q",
+        "x": "It’s unhealthy. The ingredients of fast food are said to be bad for our (6) ______.",
+        "my": "ကျန်းမာရေးနှင့်မညီပါ။ ပါဝင်ပစ္စည်းများသည် မိမိတို့၏ (၆) ______ အတွက် မကောင်းဟု ဆိုကြသည်။",
+        "area": "exercise",
+        "sourcePage": 46,
+        "response": "audio"
+      },
+      {
+        "id": "4D-8",
+        "t": "q",
+        "x": "It can make you feel sick. You might (7) ______ a bit sick after eating fast food, that contains unhealthy ingredients.",
+        "my": "နေမကောင်းဖြစ်စေနိုင်သည်။ ကျန်းမာရေးနှင့်မညီသော ပါဝင်ပစ္စည်းများပါသည့် အမြန်အစားအစာစားပြီးနောက် အနည်းငယ် နေမကောင်း (၇) ______ နိုင်သည်။",
+        "area": "exercise",
+        "sourcePage": 46,
+        "response": "audio"
+      },
+      {
+        "id": "4D-9",
+        "t": "q",
+        "x": "It’s addictive. Eating fast food too often could lead to many health (8) ______.",
+        "my": "စွဲလမ်းစေသည်။ မကြာခဏ အလွန်အကျွံစားခြင်းက ကျန်းမာရေး (၈) ______ များစွာ ဖြစ်စေနိုင်သည်။",
+        "area": "exercise",
+        "sourcePage": 46,
+        "response": "audio"
+      },
+      {
+        "id": "4D-10",
+        "t": "q",
+        "x": "It makes families spend less and less time together. Eating at fast-food restaurants is quickly taking away the (9) ______ of families.",
+        "my": "မိသားစု အတူရှိချိန် တဖြည်းဖြည်းနည်းစေသည်။ အမြန်အစားအစာဆိုင်၌ စားခြင်းက မိသားစုတို့၏ (၉) ______ ကို လျင်မြန်စွာ ယူဆောင်သွားသည်။",
+        "area": "exercise",
+        "sourcePage": 46,
+        "response": "audio"
+      },
+      {
+        "id": "4D-11",
+        "t": "ins",
+        "x": "B. Do the healthy eating survey in your class by asking four students these questions.",
+        "my": "B။ အတန်းထဲတွင် ကျောင်းသားလေးဦးအား ဤမေးခွန်းများမေး၍ ကျန်းမာရေးနှင့်ညီသော စားသောက်မှုစစ်တမ်း ကောက်ယူပါ။",
+        "area": "exercise",
+        "sourcePage": 47
+      },
+      {
+        "id": "4D-12",
+        "t": "scan",
+        "x": "",
+        "my": "",
+        "area": "lesson",
+        "sourcePage": 47,
+        "scanPage": 47
+      },
+      {
+        "id": "4D-13",
+        "t": "q",
+        "x": "1. Do you like sugary drinks? Why?",
+        "my": "သကြားပါသော အချိုရည်များကို ကြိုက်သလား။ ဘာကြောင့်လဲ။",
+        "area": "exercise",
+        "sourcePage": 47,
+        "response": "personal"
+      },
+      {
+        "id": "4D-14",
+        "t": "line",
+        "x": "Yes, I do. I like the taste and flavour.",
+        "my": "ကြိုက်ပါတယ်။ အရသာနဲ့ ရနံ့ကို ကြိုက်ပါတယ်။",
+        "area": "exercise",
+        "sourcePage": 47
+      },
+      {
+        "id": "4D-15",
+        "t": "q",
+        "x": "2. Do you eat vegetables every day? Why?",
+        "my": "နေ့တိုင်း ဟင်းသီးဟင်းရွက် စားသလား။ ဘာကြောင့်လဲ။",
+        "area": "exercise",
+        "sourcePage": 47,
+        "response": "personal"
+      },
+      {
+        "id": "4D-16",
+        "t": "line",
+        "x": "No, I don’t. I don’t think they are tasty.",
+        "my": "မစားပါဘူး။ အရသာရှိတယ်လို့ မထင်ပါဘူး။",
+        "area": "exercise",
+        "sourcePage": 47
+      },
+      {
+        "id": "4D-17",
+        "t": "q",
+        "x": "3. Do you eat a lot of ice creams? Why?",
+        "my": "ရေခဲမုန့် အများကြီးစားသလား။ ဘာကြောင့်လဲ။",
+        "area": "exercise",
+        "sourcePage": 47,
+        "response": "personal"
+      },
+      {
+        "id": "4D-18",
+        "t": "line",
+        "x": "No, I don’t, because I am sensitive to cold foods.",
+        "my": "မစားပါဘူး။ အအေးစာတွေနဲ့ မတည့်လို့ပါ။",
+        "area": "exercise",
+        "sourcePage": 47
+      },
+      {
+        "id": "4D-19",
+        "t": "q",
+        "x": "4. Do you eat fruits every day? Why?",
+        "my": "နေ့တိုင်း သစ်သီးစားသလား။ ဘာကြောင့်လဲ။",
+        "area": "exercise",
+        "sourcePage": 47,
+        "response": "personal"
+      },
+      {
+        "id": "4D-20",
+        "t": "line",
+        "x": "Yes, I do. I like almost all kinds of fruits.",
+        "my": "စားပါတယ်။ သစ်သီးအမျိုးအစား အားလုံးနီးပါးကို ကြိုက်ပါတယ်။",
+        "area": "exercise",
+        "sourcePage": 47
+      },
+      {
+        "id": "4D-21",
+        "t": "q",
+        "x": "5. Do you often eat deep fried meat? Why?",
+        "my": "ဆီနှစ်ကြော်အသားကို မကြာခဏစားသလား။ ဘာကြောင့်လဲ။",
+        "area": "exercise",
+        "sourcePage": 47,
+        "response": "personal"
+      },
+      {
+        "id": "4D-22",
+        "t": "line",
+        "x": "Yes, I do. I don’t like eating rice with curries. I eat rice with deep fried meat.",
+        "my": "စားပါတယ်။ ထမင်းကို ဟင်းတွေနဲ့ စားရတာ မကြိုက်ပါဘူး။ ဆီနှစ်ကြော်အသားနဲ့ စားပါတယ်။",
+        "area": "exercise",
+        "sourcePage": 47
+      },
+      {
+        "id": "4D-23",
+        "t": "q",
+        "x": "6. Do you often eat potato chips? Why?",
+        "my": "အာလူးကြော်ကို မကြာခဏစားသလား။ ဘာကြောင့်လဲ။",
+        "area": "exercise",
+        "sourcePage": 47,
+        "response": "personal"
+      },
+      {
+        "id": "4D-24",
+        "t": "line",
+        "x": "Yes, I do, because they are my favourite snacks.",
+        "my": "စားပါတယ်။ အကြိုက်ဆုံးမုန့်ဖြစ်လို့ပါ။",
+        "area": "exercise",
+        "sourcePage": 47
+      },
+      {
+        "id": "4D-25",
+        "t": "q",
+        "x": "7. How often do you eat fast food such as hamburger, fish and chips? Why?",
+        "my": "ဟမ်ဘာဂါ၊ ငါးနှင့်အာလူးကြော်ကဲ့သို့ အမြန်အစားအစာကို ဘယ်လောက်မကြာခဏစားသလဲ။ ဘာကြောင့်လဲ။",
+        "area": "exercise",
+        "sourcePage": 47,
+        "response": "personal"
+      },
+      {
+        "id": "4D-26",
+        "t": "line",
+        "x": "I do not often eat fast food. I eat them once or twice a month only because not many fast food items are available in our small town.",
+        "my": "မကြာခဏ မစားပါဘူး။ မြို့ငယ်လေးမှာ အမြန်အစားအစာအမျိုးအစား မများလို့ တစ်လတစ်ကြိမ်၊ နှစ်ကြိမ်ပဲ စားပါတယ်။",
+        "area": "exercise",
+        "sourcePage": 47
+      },
+      {
+        "id": "4D-27",
+        "t": "q",
+        "x": "8. Do you eat a lot of cakes and cookies? Why?",
+        "my": "ကိတ်မုန့်နဲ့ ကွတ်ကီး အများကြီးစားသလား။ ဘာကြောင့်လဲ။",
+        "area": "exercise",
+        "sourcePage": 47,
+        "response": "personal"
+      },
+      {
+        "id": "4D-28",
+        "t": "line",
+        "x": "Yes, I do, because cakes and cookies are my favourite food.",
+        "my": "စားပါတယ်။ ကိတ်မုန့်နဲ့ ကွတ်ကီးက အကြိုက်ဆုံးအစားအစာဖြစ်လို့ပါ။",
+        "area": "exercise",
+        "sourcePage": 47
+      },
+      {
+        "id": "4D-29",
+        "t": "ins",
+        "x": "C.",
+        "my": "C။",
+        "area": "exercise",
+        "sourcePage": 47
+      },
+      {
+        "id": "4D-30",
+        "t": "scan",
+        "x": "",
+        "my": "",
+        "area": "exercise",
+        "sourcePage": 47,
+        "scanPage": 47
+      }
+    ]
+  },
+  {
+    "code": "4E",
+    "title": "Writing",
+    "blocks": [
+      {
+        "id": "4E-0",
+        "t": "h",
+        "x": "Cause and effect essays",
+        "my": "အကြောင်းရင်းနှင့် အကျိုးဆက် စာစီစာကုံးများ",
+        "area": "lesson",
+        "sourcePage": 47
+      },
+      {
+        "id": "4E-1",
+        "t": "para",
+        "x": "A cause and effect essay explores how an event, a state or a situation came into being and what is happening because of it. In other words, the purpose of this type of essay is to discover the ‘why’ or ‘how’ of a situation.",
+        "my": "အကြောင်းရင်းနှင့် အကျိုးဆက် စာစီစာကုံးသည် ဖြစ်ရပ်၊ အခြေအနေတစ်ခု မည်သို့ဖြစ်ပေါ်လာပြီး ၎င်းကြောင့် ဘာများဖြစ်နေသည်ကို လေ့လာဖော်ပြသည်။ တစ်နည်းအားဖြင့် ဤစာစီစာကုံးအမျိုးအစား၏ ရည်ရွယ်ချက်မှာ အခြေအနေတစ်ခု၏ “ဘာကြောင့်” သို့မဟုတ် “မည်သို့” ကို ရှာဖွေရန်ဖြစ်သည်။",
+        "area": "lesson",
+        "sourcePage": 47
+      },
+      {
+        "id": "4E-2",
+        "t": "ins",
+        "x": "A. Study the sample cause and effect essay and points to include in each section of it. Then put the points next to the appropriate section title in the table.",
+        "my": "A။ နမူနာစာစီစာကုံးနှင့် အပိုင်းတစ်ခုစီတွင် ထည့်ရမည့်အချက်များကို လေ့လာပါ။ ထို့နောက် သင့်လျော်သော ခေါင်းစဉ်ဘေး၌ အချက်များကို ဖြည့်ပါ။",
+        "area": "exercise",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-3",
+        "t": "h",
+        "x": "Online Game Addiction",
+        "my": "အွန်လိုင်းဂိမ်း စွဲလမ်းခြင်း",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-4",
+        "t": "h",
+        "x": "Introduction",
+        "my": "နိဒါန်း",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-5",
+        "t": "para",
+        "x": "Online game addiction is a serious problem in many parts of the world today. It is a common problem for children, youths and adults. Many players are not able to limit the time they play and thus, they have developed an addiction to playing online games and suffer harmful effects.",
+        "my": "အွန်လိုင်းဂိမ်းစွဲလမ်းမှုသည် ယနေ့ ကမ္ဘာ့ဒေသများစွာတွင် ကြီးမားသောပြဿနာဖြစ်သည်။ ကလေး၊ လူငယ်နှင့် လူကြီးများတွင် တွေ့ရသော ပြဿနာဖြစ်သည်။ ကစားသူများစွာသည် ကစားချိန်ကို မကန့်သတ်နိုင်သဖြင့် စွဲလမ်းလာကာ ဆိုးကျိုးများ ခံစားရသည်။",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-6",
+        "t": "h",
+        "x": "Causes",
+        "my": "အကြောင်းရင်းများ",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-7",
+        "t": "para",
+        "x": "Online game addiction typically involves playing games uncontrollably for many hours at a time. It is common for an online game addict to spend over 10 hours a day gaming, usually well into the night. Initially, gamers play online video games to relieve their tiredness, and some to avoid boredom. Some play them because of peer pressure and some because they consider the games to be modern, realistic and varied.",
+        "my": "အွန်လိုင်းဂိမ်းစွဲလမ်းမှုတွင် ပုံမှန်အားဖြင့် တစ်ခါကစားလျှင် နာရီများစွာ မထိန်းနိုင်ဘဲ ကစားခြင်း ပါဝင်သည်။ စွဲလမ်းသူတစ်ဦးသည် ပုံမှန်အားဖြင့် ညနက်သည်အထိ တစ်နေ့ ဆယ်နာရီကျော် ကစားတတ်သည်။ အစပိုင်းတွင် ပင်ပန်းမှုဖြေဖျောက်ရန် သို့မဟုတ် ပျင်းရိမှုရှောင်ရန် ကစားကြသည်။ အချို့က သူငယ်ချင်းအုပ်စု၏ ဖိအားကြောင့်၊ အချို့က ဂိမ်းများ ခေတ်မီ၊ လက်တွေ့ဆန်၍ မျိုးစုံရှိသည်ဟု ယူဆသောကြောင့် ကစားကြသည်။",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-8",
+        "t": "h",
+        "x": "Effects",
+        "my": "အကျိုးဆက်များ",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-9",
+        "t": "para",
+        "x": "One common effect of online video game addiction is isolation and withdrawal from social experiences. The addicts often hide in their homes or in internet cafés for days. The effect of this isolation can lead to a breakdown of communication skills and often a loss in socialization. Some may experience a result of poorer performance in their studies or work, or others may end up losing their opportunities to study or their jobs altogether. Playing online games for extended periods of time often causes sleep deprivation, and may result in a decline in the overall health of the gamers.",
+        "my": "အွန်လိုင်းဗီဒီယိုဂိမ်းစွဲလမ်းမှု၏ အများတွေ့ရသော အကျိုးဆက်တစ်ခုမှာ အထီးကျန်နေ၍ လူမှုအတွေ့အကြုံများမှ ဆုတ်ခွာခြင်းဖြစ်သည်။ စွဲလမ်းသူများသည် အိမ် သို့မဟုတ် အင်တာနက်ဆိုင်များတွင် ရက်ပေါင်းများစွာ ပုန်းကွယ်နေတတ်သည်။ ထို့ကြောင့် ဆက်သွယ်ပြောဆိုမှုစွမ်းရည် ယိုယွင်းကာ လူမှုဆက်ဆံရေးလည်း လျော့နည်းနိုင်သည်။ အချို့က ပညာရေး သို့မဟုတ် အလုပ်စွမ်းဆောင်ရည်ကျဆင်း၍ အချို့က ပညာသင်ခွင့် သို့မဟုတ် အလုပ်ကို လုံးဝဆုံးရှုံးနိုင်သည်။ ကြာရှည်ကစားခြင်းသည် အိပ်ရေးပျက်စေတတ်ပြီး ကစားသူ၏ အလုံးစုံကျန်းမာရေး ကျဆင်းနိုင်သည်။",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-10",
+        "t": "h",
+        "x": "Conclusion",
+        "my": "နိဂုံး",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-11",
+        "t": "para",
+        "x": "Online game addiction is complex and can vary greatly, but the effects have the potential to be very severe. Playing online games can and should only be a fun activity. But just like everything else, the amount of time one spends playing online games needs to be balanced with personal and social responsibilities.",
+        "my": "အွန်လိုင်းဂိမ်းစွဲလမ်းမှုသည် ရှုပ်ထွေး၍ အမျိုးမျိုးကွဲပြားနိုင်သော်လည်း အကျိုးဆက်များ အလွန်ပြင်းထန်နိုင်သည်။ အွန်လိုင်းဂိမ်းကစားခြင်းသည် ပျော်ရွှင်စရာလုပ်ဆောင်မှုတစ်ခုသာ ဖြစ်နိုင်ပြီး ထိုသို့သာ ဖြစ်သင့်သည်။ သို့သော် အခြားအရာများကဲ့သို့ ကစားချိန်ကို မိမိတာဝန်နှင့် လူမှုတာဝန်များနှင့် မျှတအောင် ထိန်းရမည်။",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-12",
+        "t": "h",
+        "x": "Points to include in each section",
+        "my": "အပိုင်းတစ်ခုစီတွင် ထည့်သွင်းရန်အချက်များ",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-13",
+        "t": "line",
+        "x": "the thesis statement (the main idea) of the event, state or situation you are writing about",
+        "my": "မိမိရေးသားသည့် ဖြစ်ရပ်၊ အခြေအနေ၏ အဓိကအယူအဆဖော်ပြချက်",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-14",
+        "t": "line",
+        "x": " the main cause",
+        "my": "အဓိကအကြောင်းရင်း",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-15",
+        "t": "line",
+        "x": " the main cause and effect of the event, state or situation",
+        "my": "ဖြစ်ရပ်၊ အခြေအနေ၏ အဓိကအကြောင်းရင်းနှင့် အကျိုးဆက်",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-16",
+        "t": "line",
+        "x": " other causes (supporting arguments / evidence)",
+        "my": "အခြားအကြောင်းရင်းများ (ပံ့ပိုးသောအဆိုများ/အထောက်အထားများ)",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-17",
+        "t": "line",
+        "x": " restating the thesis statement",
+        "my": "အဓိကအယူအဆဖော်ပြချက်ကို ပြန်လည်ဖော်ပြခြင်း",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-18",
+        "t": "line",
+        "x": " other effects (supporting arguments / evidence)",
+        "my": "အခြားအကျိုးဆက်များ (ပံ့ပိုးသောအဆိုများ/အထောက်အထားများ)",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-19",
+        "t": "line",
+        "x": " summary of the main points of your essay, and your concluding remarks",
+        "my": "စာစီစာကုံး၏ အဓိကအချက်အကျဉ်းနှင့် နိဂုံးချုပ်မှတ်ချက်များ",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-20",
+        "t": "line",
+        "x": " supporting arguments / evidence to back up the cause you state",
+        "my": "ဖော်ပြသောအကြောင်းရင်းကို ထောက်ခံရန် အဆိုများ/အထောက်အထားများ",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-21",
+        "t": "line",
+        "x": " the biggest or most important effect",
+        "my": "အကြီးမားဆုံး သို့မဟုတ် အရေးအကြီးဆုံး အကျိုးဆက်",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-22",
+        "t": "line",
+        "x": " supporting arguments / evidence to back up the effect you state",
+        "my": "ဖော်ပြသောအကျိုးဆက်ကို ထောက်ခံရန် အဆိုများ/အထောက်အထားများ",
+        "area": "lesson",
+        "sourcePage": 48
+      },
+      {
+        "id": "4E-23",
+        "t": "h",
+        "x": "The general structure of a cause and effect essay",
+        "my": "အကြောင်းရင်းနှင့် အကျိုးဆက် စာစီစာကုံး၏ ယေဘုယျဖွဲ့စည်းပုံ",
+        "area": "exercise",
+        "sourcePage": 49
+      },
+      {
+        "id": "4E-24",
+        "t": "q",
+        "x": "1. Introduction\n• .........................\n• .........................",
+        "my": "နိဒါန်း",
+        "area": "exercise",
+        "sourcePage": 49
+      },
+      {
+        "id": "4E-25",
+        "t": "q",
+        "x": "2. Body paragraph (Causes)\n• .........................\n• .........................\n• .........................",
+        "my": "စာကိုယ် (အကြောင်းရင်းများ)",
+        "area": "exercise",
+        "sourcePage": 49
+      },
+      {
+        "id": "4E-26",
+        "t": "q",
+        "x": "3. Body paragraph (Effects)\n• .........................\n• .........................\n• .........................",
+        "my": "စာကိုယ် (အကျိုးဆက်များ)",
+        "area": "exercise",
+        "sourcePage": 49
+      },
+      {
+        "id": "4E-27",
+        "t": "q",
+        "x": "4. Conclusion\n• .........................\n• .........................",
+        "my": "နိဂုံး",
+        "area": "exercise",
+        "sourcePage": 49
+      },
+      {
+        "id": "4E-28",
+        "t": "ins",
+        "x": "B. Write an essay on ‘Causes and effects of obesity’. You can begin your essay like this.",
+        "my": "B။ “အဝလွန်ခြင်း၏ အကြောင်းရင်းနှင့် အကျိုးဆက်များ” ခေါင်းစဉ်ဖြင့် စာစီစာကုံးရေးပါ။ အောက်ပါအတိုင်း စနိုင်သည်။",
+        "area": "exercise",
+        "sourcePage": 49
+      },
+      {
+        "id": "4E-29",
+        "t": "para",
+        "x": "Obesity is generally caused by eating too much and moving too little. If you are obese, it can cause a lot of damage to your body.",
+        "my": "အဝလွန်ခြင်းသည် ယေဘုယျအားဖြင့် အလွန်အကျွံစား၍ လှုပ်ရှားမှု အလွန်နည်းခြင်းကြောင့် ဖြစ်သည်။ အဝလွန်လျှင် ခန္ဓာကိုယ်ကို များစွာထိခိုက်စေနိုင်သည်။",
+        "area": "exercise",
+        "sourcePage": 49
+      }
+    ]
+  }
+]

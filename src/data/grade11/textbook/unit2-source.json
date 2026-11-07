@@ -1,0 +1,824 @@
+{
+  "source_file": "13575. Grade (11) English New Syllabus-1-48.pdf",
+  "pdf_pages": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "textbook_pages": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "fixes": [
+    "Removed added model answers/dialogue/review not printed in PDF",
+    "Restored original listening pictures and three editable picture responses",
+    "Separated grammar explanations from 30 actual questions; restored tense introductions",
+    "Moved continuity note back before Exercise A"
+  ],
+  "answer_keys": "50 source-derived short answers; not an official printed key",
+  "source_typo_preserved": "Writing notes: diary products",
+  "missing_audio": "Eight listening responses cannot be keyed without original Grade 11 audio",
+  "blocks": [
+    {
+      "id": "2A-0",
+      "sourcePage": 17
+    },
+    {
+      "id": "2A-1",
+      "sourcePage": 17
+    },
+    {
+      "id": "2A-2",
+      "sourcePage": 17
+    },
+    {
+      "id": "2A-3",
+      "sourcePage": 17
+    },
+    {
+      "id": "2A-4",
+      "sourcePage": 17
+    },
+    {
+      "id": "2A-5",
+      "sourcePage": 17
+    },
+    {
+      "id": "2A-6",
+      "sourcePage": 17
+    },
+    {
+      "id": "2A-7",
+      "sourcePage": 17
+    },
+    {
+      "id": "2A-8",
+      "sourcePage": 17
+    },
+    {
+      "id": "2A-9",
+      "sourcePage": 18
+    },
+    {
+      "id": "2A-10",
+      "sourcePage": 18
+    },
+    {
+      "id": "2A-11",
+      "sourcePage": 18
+    },
+    {
+      "id": "2A-12",
+      "sourcePage": 18
+    },
+    {
+      "id": "2A-13",
+      "sourcePage": 19
+    },
+    {
+      "id": "2A-14",
+      "sourcePage": 19
+    },
+    {
+      "id": "2A-15",
+      "sourcePage": 19
+    },
+    {
+      "id": "2A-16",
+      "sourcePage": 19
+    },
+    {
+      "id": "2A-17",
+      "sourcePage": 19
+    },
+    {
+      "id": "2A-18",
+      "sourcePage": 19
+    },
+    {
+      "id": "2A-19",
+      "sourcePage": 19
+    },
+    {
+      "id": "2A-20",
+      "sourcePage": 19
+    },
+    {
+      "id": "2A-21",
+      "sourcePage": 19
+    },
+    {
+      "id": "2A-22",
+      "sourcePage": 19
+    },
+    {
+      "id": "2A-23",
+      "sourcePage": 19
+    },
+    {
+      "id": "2A-24",
+      "sourcePage": 19
+    },
+    {
+      "id": "2A-25",
+      "sourcePage": 19
+    },
+    {
+      "id": "2A-26",
+      "sourcePage": 19
+    },
+    {
+      "id": "2A-27",
+      "sourcePage": 19
+    },
+    {
+      "id": "2A-28",
+      "sourcePage": 19
+    },
+    {
+      "id": "2A-29",
+      "sourcePage": 19
+    },
+    {
+      "id": "2A-30",
+      "sourcePage": 20
+    },
+    {
+      "id": "2A-31",
+      "sourcePage": 20
+    },
+    {
+      "id": "2A-32",
+      "sourcePage": 20
+    },
+    {
+      "id": "2A-33",
+      "sourcePage": 20
+    },
+    {
+      "id": "2A-34",
+      "sourcePage": 20
+    },
+    {
+      "id": "2A-35",
+      "sourcePage": 20
+    },
+    {
+      "id": "2A-36",
+      "sourcePage": 20
+    },
+    {
+      "id": "2A-37",
+      "sourcePage": 20
+    },
+    {
+      "id": "2A-38",
+      "sourcePage": 20
+    },
+    {
+      "id": "2A-39",
+      "sourcePage": 20
+    },
+    {
+      "id": "2A-40",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-0",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-1",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-2",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-3",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-4",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-5",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-6",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-7",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-8",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-9",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-10",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-11",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-12",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-13",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-14",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-15",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-16",
+      "sourcePage": 20
+    },
+    {
+      "id": "2B-17",
+      "sourcePage": 20
+    },
+    {
+      "id": "2C-0",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-intro-0",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-1",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-2",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-3",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-4",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-5",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-6",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-7",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-8",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-9",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-10",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-11",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-12",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-13",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-14",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-15",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-16",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-intro-16",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-17",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-18",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-19",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-20",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-21",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-22",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-23",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-24",
+      "sourcePage": 21
+    },
+    {
+      "id": "2C-25",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-26",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-27",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-28",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-intro-28",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-29",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-30",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-31",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-32",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-33",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-34",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-35",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-36",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-37",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-38",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-39",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-40",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-41",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-intro-41",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-42",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-43",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-44",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-45",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-46",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-47",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-48",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-49",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-50",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-51",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-52",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-53",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-54",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-55",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-56",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-57",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-58",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-59",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-60",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-61",
+      "sourcePage": 22
+    },
+    {
+      "id": "2C-62",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-63",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-64",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-65",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-66",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-67",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-68",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-69",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-70",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-71",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-72",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-73",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-74",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-75",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-76",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-77",
+      "sourcePage": 23
+    },
+    {
+      "id": "2C-78",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-79",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-80",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-81",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-82",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-83",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-84",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-85",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-86",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-87",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-88",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-89",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-90",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-91",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-92",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-93",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-94",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-95",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-96",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-97",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-98",
+      "sourcePage": 24
+    },
+    {
+      "id": "2C-99",
+      "sourcePage": 24
+    },
+    {
+      "id": "2D-0",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-pictures",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-1",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-2",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-3",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-4",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-5",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-6",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-7",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-8",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-9",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-10",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-12",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-13",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-14",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-15",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-16",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-17",
+      "sourcePage": 25
+    },
+    {
+      "id": "2D-18",
+      "sourcePage": 25
+    },
+    {
+      "id": "2E-0",
+      "sourcePage": 26
+    },
+    {
+      "id": "2E-1",
+      "sourcePage": 26
+    },
+    {
+      "id": "2E-2",
+      "sourcePage": 26
+    },
+    {
+      "id": "2E-4",
+      "sourcePage": 26
+    },
+    {
+      "id": "2E-5",
+      "sourcePage": 26
+    },
+    {
+      "id": "2E-6",
+      "sourcePage": 26
+    },
+    {
+      "id": "2E-7",
+      "sourcePage": 26
+    },
+    {
+      "id": "2E-8",
+      "sourcePage": 26
+    },
+    {
+      "id": "2E-10",
+      "sourcePage": 26
+    },
+    {
+      "id": "2E-11",
+      "sourcePage": 26
+    },
+    {
+      "id": "2E-12",
+      "sourcePage": 26
+    },
+    {
+      "id": "2E-13",
+      "sourcePage": 26
+    },
+    {
+      "id": "2E-14",
+      "sourcePage": 26
+    },
+    {
+      "id": "2E-15",
+      "sourcePage": 26
+    }
+  ]
+}

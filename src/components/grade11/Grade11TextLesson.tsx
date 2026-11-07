@@ -1,3 +1,5 @@
+import { Grade11Unit2Lesson } from "@/components/grade11/Grade11Unit2Lesson";
+import { Grade11Unit4Lesson } from "@/components/grade11/Grade11Unit4Lesson";
 /**
  * Renders a Grade 11 unit skill as text, from the teacher-provided DOCX
  * transcriptions (src/data/grade11/textbook/unitN.json), checked against the textbook PDF.
@@ -63,7 +65,7 @@ const OWL_NOTE: Record<G11SkillKind, string> = {
 };
 
 export function hasGrade11Text(unit: number) {
-  return unit in UNITS;
+  return unit === 4 || unit in UNITS;
 }
 
 function split(blocks: Block[]) {
@@ -78,6 +80,8 @@ function split(blocks: Block[]) {
 }
 
 export function Grade11TextLesson({ unit, kind }: { unit: number; kind: G11SkillKind }) {
+  if (unit === 2) return <Grade11Unit2Lesson key={kind} kind={kind} />;
+  if (unit === 4) return <Grade11Unit4Lesson key={kind} kind={kind} />;
   if (unit === 3) return <Grade11Unit3Lesson key={kind} kind={kind} />;
   if (unit === 1) return <Grade11Unit1Lesson key={kind} kind={kind} />;
   return <LegacyGrade11TextLesson key={`${unit}-${kind}`} unit={unit} kind={kind} />;

@@ -55,7 +55,7 @@ describe("Grade 11 Unit 3 source fidelity", () => {
     expect(audio[0].x).toBe("1. Soe Thu has got a very good memory.");
     expect(audio[6].x).toContain("usually sang the song while they were playing");
     for (const b of all.filter((b) => b.response)) expect(UNIT3_KEYS[b.id]).toBeUndefined();
-    expect(Object.keys(UNIT3_KEYS)).toHaveLength(31);
+    expect(Object.keys(UNIT3_KEYS)).toHaveLength(41);
     for (const [id, key] of Object.entries(UNIT3_KEYS)) {
       expect(all.some((b) => b.id === id && b.t === "q")).toBe(true);
       expect(key.origin).toBe("source-derived");

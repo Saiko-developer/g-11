@@ -67,7 +67,7 @@ export const G11_SYLLABUS: G11Node[] = [
     writing: "Writing a cause and effect essay",
     vocabulary: "Types of food, linking words",
     grammar: "‘Too … to’ and ‘enough to’",
-  }, { r: range(39, 41), v: [42, 43], g: [44, 45], ls: [46], w: [47, 48] }),
+  }, { r: range(39, 41), v: [42, 43], g: [44, 45], ls: [46], w: [47, 48, 49] }),
   unit(5, "Travel in Southeast Asia I", {
     listening: "Listening to the benefits of travelling abroad",
     reading: "Reading about the top tourist attractions of five ASEAN countries",

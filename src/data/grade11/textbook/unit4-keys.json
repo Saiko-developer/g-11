@@ -1,0 +1,146 @@
+{
+  "4B-9": {
+    "answer": "b",
+    "answerMy": "အမြန်အစားအစာ",
+    "origin": "source-derived",
+    "sourcePage": 42
+  },
+  "4B-10": {
+    "answer": "c",
+    "answerMy": "ကျန်းမာရေးကောင်းစေသောအစားအစာ",
+    "origin": "source-derived",
+    "sourcePage": 42
+  },
+  "4B-11": {
+    "answer": "d",
+    "answerMy": "ပြုပြင်ထုတ်လုပ်ထားသောအစားအစာ",
+    "origin": "source-derived",
+    "sourcePage": 42
+  },
+  "4B-12": {
+    "answer": "a",
+    "answerMy": "သဘာဝအာဟာရမပျက်သောအစားအစာ",
+    "origin": "source-derived",
+    "sourcePage": 42
+  },
+  "4B-13": {
+    "answer": "f",
+    "answerMy": "အာဟာရနည်းပြီး ကျန်းမာရေးနှင့်မညီသောအစားအစာ",
+    "origin": "source-derived",
+    "sourcePage": 42
+  },
+  "4B-14": {
+    "answer": "g",
+    "answerMy": "ကိုယ်အလေးချိန်ထိန်းအစားအစာ",
+    "origin": "source-derived",
+    "sourcePage": 42
+  },
+  "4B-15": {
+    "answer": "e",
+    "answerMy": "အစာချေလွယ်သော ပေါ့ပါးအစားအစာ",
+    "origin": "source-derived",
+    "sourcePage": 42
+  },
+  "4B-17": {
+    "answer": "junk food",
+    "answerMy": "အာဟာရနည်းပြီး ကျန်းမာရေးနှင့်မညီသောအစားအစာ",
+    "origin": "source-derived",
+    "sourcePage": 43
+  },
+  "4B-18": {
+    "answer": "fast-food; fast food",
+    "answerMy": "အမြန်အစားအစာ",
+    "origin": "source-derived",
+    "sourcePage": 43
+  },
+  "4B-19": {
+    "answer": "Processed foods",
+    "answerMy": "ပြုပြင်ထုတ်လုပ်ထားသောအစားအစာများ",
+    "origin": "source-derived",
+    "sourcePage": 43
+  },
+  "4B-20": {
+    "answer": "diet food",
+    "answerMy": "ကိုယ်အလေးချိန်ထိန်းအစားအစာ",
+    "origin": "source-derived",
+    "sourcePage": 43
+  },
+  "4B-21": {
+    "answer": "health food",
+    "answerMy": "ကျန်းမာရေးကောင်းစေသောအစားအစာ",
+    "origin": "source-derived",
+    "sourcePage": 43
+  },
+  "4B-22": {
+    "answer": "whole food; whole foods",
+    "answerMy": "သဘာဝအာဟာရမပျက်သောအစားအစာ",
+    "origin": "source-derived",
+    "sourcePage": 43
+  },
+  "4B-23": {
+    "answer": "light food",
+    "answerMy": "အစာချေလွယ်သော ပေါ့ပါးအစားအစာ",
+    "origin": "source-derived",
+    "sourcePage": 43
+  },
+  "4B-38": {
+    "answer": "furthermore; additionally; also",
+    "answerMy": "ထို့ပြင်",
+    "origin": "source-derived",
+    "sourcePage": 44
+  },
+  "4B-39": {
+    "answer": "additionally; furthermore; also",
+    "answerMy": "ထို့ပြင်",
+    "origin": "source-derived",
+    "sourcePage": 44
+  },
+  "4B-40": {
+    "answer": "but",
+    "answerMy": "သို့သော်",
+    "origin": "source-derived",
+    "sourcePage": 44
+  },
+  "4B-41": {
+    "answer": "Although",
+    "answerMy": "သော်လည်း",
+    "origin": "source-derived",
+    "sourcePage": 44
+  },
+  "4B-42": {
+    "answer": "also",
+    "answerMy": "လည်း",
+    "origin": "source-derived",
+    "sourcePage": 44
+  },
+  "4B-43": {
+    "answer": "and",
+    "answerMy": "နှင့်/ပြီး",
+    "origin": "source-derived",
+    "sourcePage": 44
+  },
+  "4B-44": {
+    "answer": "although",
+    "answerMy": "သော်လည်း",
+    "origin": "source-derived",
+    "sourcePage": 44
+  },
+  "4B-45": {
+    "answer": "however; nevertheless; on the other hand",
+    "answerMy": "သို့သော် / တစ်ဖက်တွင်",
+    "origin": "source-derived",
+    "sourcePage": 44
+  },
+  "4B-46": {
+    "answer": "too",
+    "answerMy": "လည်း",
+    "origin": "source-derived",
+    "sourcePage": 44
+  },
+  "4B-47": {
+    "answer": "nevertheless; however",
+    "answerMy": "သို့သော်",
+    "origin": "source-derived",
+    "sourcePage": 44
+  }
+}

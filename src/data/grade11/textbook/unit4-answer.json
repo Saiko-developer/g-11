@@ -1,0 +1,1011 @@
+{
+  "unit": 4,
+  "title": "Globalization of Food",
+  "official_answer_key": false,
+  "note": "Source-derived answers; full-sentence responses are suggestions, not an official answer key. Personal responses, audio-dependent questions and the open essay have no invented answer.",
+  "source_files": [
+    "13575. Grade (11) English New Syllabus-1-48.pdf",
+    "13575. Grade (11) English New Syllabus-49-96.pdf"
+  ],
+  "sections": [
+    {
+      "code": "4A",
+      "title": "Reading",
+      "items": [
+        {
+          "blockId": "4A-1",
+          "question": "1. What do you usually have for breakfast, lunch and dinner?",
+          "questionMy": "နံနက်စာ၊ နေ့လယ်စာနှင့် ညစာအတွက် ပုံမှန် ဘာစားသလဲ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            40
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4A-2",
+          "question": "2. In addition to Myanmar food, what other food do you sometimes eat?",
+          "questionMy": "မြန်မာအစားအစာအပြင် တစ်ခါတစ်ရံ မည်သည့်အစားအစာများကို စားသလဲ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            40
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4A-3",
+          "question": "3. What is your favourite food? Why do you like it?",
+          "questionMy": "သင်အနှစ်သက်ဆုံး အစားအစာက ဘာလဲ။ အဘယ်ကြောင့် ကြိုက်သလဲ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            40
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4A-14",
+          "question": "1. Name a typical Myanmar breakfast you usually eat.",
+          "questionMy": "သင် ပုံမှန်စားသော မြန်မာနံနက်စာတစ်မျိုးကို ဖော်ပြပါ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            41
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4A-15",
+          "question": "2. What typical Myanmar breakfast do you eat less frequently these days? Why?",
+          "questionMy": "ယခုအခါ မည်သည့်မြန်မာနံနက်စာကို ယခင်ထက် လျော့စားသနည်း။ အဘယ်ကြောင့်နည်း။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            41
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4A-16",
+          "question": "3. What is your favourite food item whose origin is not Myanmar?",
+          "questionMy": "မြန်မာနိုင်ငံမှ စတင်ပေါ်ပေါက်ခဲ့ခြင်းမဟုတ်သော သင်အနှစ်သက်ဆုံးအစားအစာမှာ ဘာလဲ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            41
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4A-17",
+          "question": "4. Does your family often eat out? Why or why not?",
+          "questionMy": "သင့်မိသားစု မကြာခဏ အပြင်ထွက်စားသလား။ အဘယ်ကြောင့်နည်း။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            41
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4A-18",
+          "question": "5. Name three items of fast food you know.",
+          "questionMy": "သင်သိသော အမြန်အစားအစာသုံးမျိုးကို ဖော်ပြပါ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            40,
+            41
+          ],
+          "answer": "Hamburgers, hot dogs and pizza are three items of fast food.",
+          "answerMy": "ဟမ်ဘာဂါ၊ ဟော့ဒေါ့နှင့် ပီဇာတို့သည် အမြန်အစားအစာသုံးမျိုး ဖြစ်သည်။"
+        },
+        {
+          "blockId": "4A-19",
+          "question": "6. Why is fast food said to be unhealthy?",
+          "questionMy": "အမြန်အစားအစာသည် ကျန်းမာရေးနှင့်မညီဟု အဘယ်ကြောင့် ပြောသနည်း။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            40,
+            41
+          ],
+          "answer": "Fast food is said to be unhealthy because it is often made from cheaper ingredients such as high fat meat, refined grains, added sugar and fats instead of nutritious ingredients.",
+          "answerMy": "အမြန်အစားအစာကို အာဟာရရှိသောပစ္စည်းများအစား အဆီများသောအသား၊ ဖွဲနုခွံဖယ်ထားသော ကောက်နှံ၊ ထပ်ဖြည့်သကြားနှင့် အဆီကဲ့သို့ ဈေးသက်သာသောပစ္စည်းများဖြင့် မကြာခဏပြုလုပ်သောကြောင့် ကျန်းမာရေးနှင့်မညီဟု ဆိုကြသည်။"
+        },
+        {
+          "blockId": "4A-20",
+          "question": "7. According to the passage, what are the advantages of the globalization of food?",
+          "questionMy": "စာပိုဒ်အရ အစားအစာကမ္ဘာ့ပြန့်နှံ့မှု၏ ကောင်းကျိုးများမှာ ဘာတွေလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            40,
+            41
+          ],
+          "answer": "The globalization of food adds variety and interest to people’s lives and allows greater access to the variety of food in the whole world.",
+          "answerMy": "အစားအစာကမ္ဘာ့ပြန့်နှံ့မှုသည် လူတို့ဘဝကို ပိုမိုစုံလင်စိတ်ဝင်စားဖွယ်ဖြစ်စေပြီး ကမ္ဘာတစ်ဝန်း အစားအစာမျိုးစုံကို ပိုလက်လှမ်းမီစေသည်။"
+        },
+        {
+          "blockId": "4A-21",
+          "question": "8. What are the effects of the spread of processed food and fast food and the consumption of unhealthy food?",
+          "questionMy": "ပြုပြင်ထုတ်လုပ်အစားအစာနှင့် အမြန်အစားအစာ ပြန့်ပွားလာခြင်း၊ ကျန်းမာရေးနှင့်မညီသော အစားအစာစားသုံးခြင်းတို့၏ အကျိုးဆက်များမှာ ဘာတွေလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            40,
+            41
+          ],
+          "answer": "They can bring about a negative effect on food safety and nutrition and increase risks to health.",
+          "answerMy": "အစားအစာဘေးကင်းမှုနှင့် အာဟာရအပေါ် ဆိုးကျိုးသက်ရောက်စေပြီး ကျန်းမာရေးအန္တရာယ်များ တိုးစေနိုင်သည်။"
+        },
+        {
+          "blockId": "4A-22",
+          "question": "9. How can the practices of large global food producers and the food they produce be harmful to people?",
+          "questionMy": "ကမ္ဘာလုံးဆိုင်ရာ အစားအစာထုတ်လုပ်သူကြီးများ၏ လုပ်ထုံးလုပ်နည်းနှင့် ထုတ်ကုန်များသည် လူတို့အတွက် မည်သို့ အန္တရာယ်ဖြစ်စေနိုင်သနည်း။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            40,
+            41
+          ],
+          "answer": "Their practices and the food they produce can weaken the state of food safety and nutrition of people in the world.",
+          "answerMy": "၎င်းတို့၏ လုပ်ထုံးလုပ်နည်းနှင့် ထုတ်ကုန်များသည် ကမ္ဘာ့လူထု၏ အစားအစာဘေးကင်းမှုနှင့် အာဟာရအခြေအနေကို အားနည်းစေနိုင်သည်။"
+        },
+        {
+          "blockId": "4A-23",
+          "question": "10. Do you think you have a healthy eating habit? Why or why not?",
+          "questionMy": "သင့်တွင် ကျန်းမာရေးနှင့်ညီသော စားသောက်အလေ့အထရှိသည်ဟု ထင်ပါသလား။ အဘယ်ကြောင့်နည်း။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            42
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4A-26",
+          "question": "Typical Myanmar food — breakfast: fried rice; lunch: ______; dinner: ______",
+          "questionMy": "ပုံမှန်မြန်မာအစားအစာ — နံနက်စာ: ထမင်းကြော်၊ နေ့လယ်စာ: ______၊ ညစာ: ______။",
+          "status": "open-response",
+          "kind": "open",
+          "sourcePages": [
+            42
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4A-27",
+          "question": "The food items people in big cities eat these days — breakfast: dim sum; lunch: ______; dinner: ______",
+          "questionMy": "ယခုခေတ် မြို့ကြီးများတွင် စားသုံးသောအစားအစာ — နံနက်စာ: ဒင်းဆမ်း၊ နေ့လယ်စာ: ______၊ ညစာ: ______။",
+          "status": "open-response",
+          "kind": "open",
+          "sourcePages": [
+            42
+          ],
+          "answer": null,
+          "answerMy": null
+        }
+      ]
+    },
+    {
+      "code": "4B",
+      "title": "Vocabulary",
+      "items": [
+        {
+          "blockId": "4B-9",
+          "question": "1. fast food",
+          "questionMy": "အမြန်အစားအစာ",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            42
+          ],
+          "answer": "b",
+          "answerMy": "အမြန်အစားအစာ"
+        },
+        {
+          "blockId": "4B-10",
+          "question": "2. health food",
+          "questionMy": "ကျန်းမာရေးကောင်းစေသောအစားအစာ",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            42
+          ],
+          "answer": "c",
+          "answerMy": "ကျန်းမာရေးကောင်းစေသောအစားအစာ"
+        },
+        {
+          "blockId": "4B-11",
+          "question": "3. processed food",
+          "questionMy": "ပြုပြင်ထုတ်လုပ်ထားသောအစားအစာ",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            42
+          ],
+          "answer": "d",
+          "answerMy": "ပြုပြင်ထုတ်လုပ်ထားသောအစားအစာ"
+        },
+        {
+          "blockId": "4B-12",
+          "question": "4. whole food",
+          "questionMy": "သဘာဝအာဟာရမပျက်သောအစားအစာ",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            42
+          ],
+          "answer": "a",
+          "answerMy": "သဘာဝအာဟာရမပျက်သောအစားအစာ"
+        },
+        {
+          "blockId": "4B-13",
+          "question": "5. junk food",
+          "questionMy": "အာဟာရနည်းပြီး ကျန်းမာရေးနှင့်မညီသောအစားအစာ",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            42
+          ],
+          "answer": "f",
+          "answerMy": "အာဟာရနည်းပြီး ကျန်းမာရေးနှင့်မညီသောအစားအစာ"
+        },
+        {
+          "blockId": "4B-14",
+          "question": "6. diet food",
+          "questionMy": "ကိုယ်အလေးချိန်ထိန်းအစားအစာ",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            42
+          ],
+          "answer": "g",
+          "answerMy": "ကိုယ်အလေးချိန်ထိန်းအစားအစာ"
+        },
+        {
+          "blockId": "4B-15",
+          "question": "7. light food",
+          "questionMy": "အစာချေလွယ်သော ပေါ့ပါးအစားအစာ",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            42
+          ],
+          "answer": "e",
+          "answerMy": "အစာချေလွယ်သော ပေါ့ပါးအစားအစာ"
+        },
+        {
+          "blockId": "4B-17",
+          "question": "1. He is not healthy because he eats a lot of ______ such as candy and French fries, and he doesn’t have enough rest.",
+          "questionMy": "သူသည် သကြားလုံးနှင့် အာလူးကြော်ကဲ့သို့ ______ များစွာစားပြီး လုံလောက်စွာ မအနားယူသောကြောင့် ကျန်းမာရေးမကောင်းပါ။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            43
+          ],
+          "answer": "junk food",
+          "answerMy": "အာဟာရနည်းပြီး ကျန်းမာရေးနှင့်မညီသောအစားအစာ"
+        },
+        {
+          "blockId": "4B-18",
+          "question": "2. On our journey, we stopped at a ______ restaurant and bought some chicken and chips.",
+          "questionMy": "ခရီးတွင် ______ ဆိုင်၌ ရပ်နား၍ ကြက်သားနှင့် အာလူးကြော် ဝယ်ခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            43
+          ],
+          "answer": "fast-food; fast food",
+          "answerMy": "အမြန်အစားအစာ"
+        },
+        {
+          "blockId": "4B-19",
+          "question": "3. ______ are usually frozen, canned, dried, baked and pasteurized.",
+          "questionMy": "______ များကို ပုံမှန်အားဖြင့် အေးခဲ၊ စည်သွတ်၊ အခြောက်ခံ၊ ဖုတ်၍ အပူပေးပိုးသတ်ထားသည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            43
+          ],
+          "answer": "Processed foods",
+          "answerMy": "ပြုပြင်ထုတ်လုပ်ထားသောအစားအစာများ"
+        },
+        {
+          "blockId": "4B-20",
+          "question": "4. She has lost a lot of weight by eating ______ and exercising.",
+          "questionMy": "______ စား၍ လေ့ကျင့်ခန်းလုပ်ခြင်းဖြင့် သူမ ကိုယ်အလေးချိန်များစွာ လျော့ခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            43
+          ],
+          "answer": "diet food",
+          "answerMy": "ကိုယ်အလေးချိန်ထိန်းအစားအစာ"
+        },
+        {
+          "blockId": "4B-21",
+          "question": "5. Doctors suggest that we should eat foods from ______ stores and from organic farms.",
+          "questionMy": "ဆရာဝန်များက ______ ဆိုင်များနှင့် အော်ဂဲနစ်စိုက်ခင်းများမှ အစားအစာကို စားသင့်ကြောင်း အကြံပြုသည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            43
+          ],
+          "answer": "health food",
+          "answerMy": "ကျန်းမာရေးကောင်းစေသောအစားအစာ"
+        },
+        {
+          "blockId": "4B-22",
+          "question": "6. We are recommended to eat ______ such as almond and sunflower seeds instead of peanut and sunflower oil.",
+          "questionMy": "မြေပဲဆီနှင့် နေကြာဆီအစား ဗာဒံစေ့နှင့် နေကြာစေ့ကဲ့သို့ ______ စားရန် အကြံပြုထားသည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            43
+          ],
+          "answer": "whole food; whole foods",
+          "answerMy": "သဘာဝအာဟာရမပျက်သောအစားအစာ"
+        },
+        {
+          "blockId": "4B-23",
+          "question": "7. She had got a stomach problem, so the doctor dieted her on a ______.",
+          "questionMy": "သူမ အစာအိမ်ပြဿနာရှိသဖြင့် ဆရာဝန်က ______ စားစေခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            43
+          ],
+          "answer": "light food",
+          "answerMy": "အစာချေလွယ်သော ပေါ့ပါးအစားအစာ"
+        },
+        {
+          "blockId": "4B-38",
+          "question": "1. The ant is the most industrious animal; ______, it is the quietest one.",
+          "questionMy": "ပုရွက်ဆိတ်သည် အလုပ်ကြိုးစားဆုံးသတ္တဝါဖြစ်သည်။ ______ အငြိမ်သက်ဆုံးလည်း ဖြစ်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            44
+          ],
+          "answer": "furthermore; additionally; also",
+          "answerMy": "ထို့ပြင်"
+        },
+        {
+          "blockId": "4B-39",
+          "question": "2. You can check your balance; ______, you can pay bills over the internet.",
+          "questionMy": "သင့်လက်ကျန်ငွေကို စစ်နိုင်သည်။ ______ အင်တာနက်မှ ငွေတောင်းခံလွှာများ ပေးချေနိုင်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            44
+          ],
+          "answer": "additionally; furthermore; also",
+          "answerMy": "ထို့ပြင်"
+        },
+        {
+          "blockId": "4B-40",
+          "question": "3. Fire and water are good servants, ______ bad masters.",
+          "questionMy": "မီးနှင့်ရေတို့သည် အစေခံကောင်းများဖြစ်ကြသော်လည်း ______ အရှင်သခင်ဆိုးများ ဖြစ်ကြသည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            44
+          ],
+          "answer": "but",
+          "answerMy": "သို့သော်"
+        },
+        {
+          "blockId": "4B-41",
+          "question": "4. ______ they came from very different backgrounds, they immediately became friends.",
+          "questionMy": "အလွန်မတူညီသော နောက်ခံများမှ လာကြ ______ သူတို့ ချက်ချင်း သူငယ်ချင်းဖြစ်ခဲ့ကြသည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            44
+          ],
+          "answer": "Although",
+          "answerMy": "သော်လည်း"
+        },
+        {
+          "blockId": "4B-42",
+          "question": "5. She works very hard, but she ______ goes to the gym every day.",
+          "questionMy": "သူမ အလုပ်အလွန်ကြိုးစားသော်လည်း နေ့တိုင်း အားကစားရုံသို့ ______ သွားသည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            44
+          ],
+          "answer": "also",
+          "answerMy": "လည်း"
+        },
+        {
+          "blockId": "4B-43",
+          "question": "6. Today, the lifestyles of people have become busier, ______ not everyone has time to cook anymore.",
+          "questionMy": "ယနေ့ လူတို့၏နေထိုင်မှုပုံစံ ပိုအလုပ်များလာပြီး ______ လူတိုင်း ချက်ပြုတ်ရန် အချိန်မရတော့ပါ။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            44
+          ],
+          "answer": "and",
+          "answerMy": "နှင့်/ပြီး"
+        },
+        {
+          "blockId": "4B-44",
+          "question": "7. He continued with his plan ______ all his friends advised him to abandon it.",
+          "questionMy": "သူ့သူငယ်ချင်းအားလုံးက စွန့်လွှတ်ရန် အကြံပေးခဲ့ ______ သူ့အစီအစဉ်ကို ဆက်လုပ်ခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            44
+          ],
+          "answer": "although",
+          "answerMy": "သော်လည်း"
+        },
+        {
+          "blockId": "4B-45",
+          "question": "8. I want to go to the party; ______ I ought to be studying for the examination.",
+          "questionMy": "ကျွန်ုပ် ပါတီကို သွားချင်သည်။ ______ စာမေးပွဲအတွက် စာလေ့လာနေသင့်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            44
+          ],
+          "answer": "however; nevertheless; on the other hand",
+          "answerMy": "သို့သော် / တစ်ဖက်တွင်"
+        },
+        {
+          "blockId": "4B-46",
+          "question": "9. Tun Tun did not just win the gold medal. He broke the record ______.",
+          "questionMy": "ထွန်းထွန်းသည် ရွှေတံဆိပ်ရရုံသာမက စံချိန်ကို ______ ချိုးခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            44
+          ],
+          "answer": "too",
+          "answerMy": "လည်း"
+        },
+        {
+          "blockId": "4B-47",
+          "question": "10. The news may be unexpected; ______, it is true.",
+          "questionMy": "သတင်းသည် မမျှော်လင့်ထားသောသတင်း ဖြစ်နိုင်သည်။ ______ မှန်ကန်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            44
+          ],
+          "answer": "nevertheless; however",
+          "answerMy": "သို့သော်"
+        }
+      ]
+    },
+    {
+      "code": "4C",
+      "title": "Grammar",
+      "items": [
+        {
+          "blockId": "4C-15",
+          "question": "1. The girl was not confident. She could not perform well on the stage. (Use ‘enough to’.)",
+          "questionMy": "မိန်းကလေးသည် မိမိကိုယ်ကို ယုံကြည်မှုမရှိခဲ့ပါ။ စင်မြင့်ပေါ်တွင် ကောင်းစွာ မဖျော်ဖြေနိုင်ခဲ့ပါ။ (enough to သုံးပါ။)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            45
+          ],
+          "answer": "The girl was not confident enough to perform well on the stage.",
+          "answerMy": "မိန်းကလေးသည် စင်မြင့်ပေါ်တွင် ကောင်းစွာဖျော်ဖြေနိုင်လောက်အောင် မိမိကိုယ်ကို ယုံကြည်မှုမရှိခဲ့ပါ။"
+        },
+        {
+          "blockId": "4C-16",
+          "question": "2. U Ba was not well-paid. He cannot keep his family in comfort. (Use ‘enough to’.)",
+          "questionMy": "ဦးဘသည် လစာကောင်းကောင်း မရခဲ့ပါ။ သူ့မိသားစုကို သက်သောင့်သက်သာ မထားနိုင်ပါ။ (enough to သုံးပါ။)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            45
+          ],
+          "answer": "U Ba was not well-paid enough to keep his family in comfort.",
+          "answerMy": "ဦးဘသည် မိသားစုကို သက်သောင့်သက်သာထားနိုင်လောက်အောင် လစာမကောင်းခဲ့ပါ။"
+        },
+        {
+          "blockId": "4C-17",
+          "question": "3. The task was very difficult. It could not be done without the help of others. (Use ‘too ... to’.)",
+          "questionMy": "အလုပ်သည် အလွန်ခက်ခဲခဲ့သည်။ အခြားသူများ မကူညီဘဲ မလုပ်နိုင်ခဲ့ပါ။ (too ... to သုံးပါ။)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            45
+          ],
+          "answer": "The task was too difficult to be done without the help of others.",
+          "answerMy": "အလုပ်သည် အခြားသူများ မကူညီဘဲ မလုပ်နိုင်လောက်အောင် ခက်ခဲခဲ့သည်။"
+        },
+        {
+          "blockId": "4C-18",
+          "question": "4. The theory is very complicated. I do not understand it. (Use ‘too ... to’.)",
+          "questionMy": "သီအိုရီသည် အလွန်ရှုပ်ထွေးသည်။ ကျွန်ုပ် နားမလည်ပါ။ (too ... to သုံးပါ။)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            45
+          ],
+          "answer": "The theory is too complicated for me to understand.",
+          "answerMy": "သီအိုရီသည် ကျွန်ုပ် နားမလည်နိုင်လောက်အောင် ရှုပ်ထွေးသည်။"
+        },
+        {
+          "blockId": "4C-19",
+          "question": "5. The room is not large. It cannot accommodate a hundred people. (Use ‘enough to’.)",
+          "questionMy": "အခန်းသည် မကျယ်ပါ။ လူတစ်ရာ မဆံ့ပါ။ (enough to သုံးပါ။)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            45
+          ],
+          "answer": "The room is not large enough to accommodate a hundred people.",
+          "answerMy": "အခန်းသည် လူတစ်ရာဆံ့လောက်အောင် မကျယ်ပါ။"
+        },
+        {
+          "blockId": "4C-20",
+          "question": "6. I sometimes crowd my days with many activities. I have no time to relax. (Use ‘too ... to’.)",
+          "questionMy": "တစ်ခါတစ်ရံ နေ့ရက်များတွင် လုပ်စရာများစွာ ပြည့်နေစေသည်။ အပန်းဖြေရန် အချိန်မရှိပါ။ (too ... to သုံးပါ။)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            45
+          ],
+          "answer": "I sometimes crowd my days with too many activities to have time to relax.",
+          "answerMy": "တစ်ခါတစ်ရံ အပန်းဖြေရန် အချိန်မရှိလောက်အောင် လုပ်စရာများကို မိမိနေ့ရက်များတွင် ပြည့်နေစေသည်။"
+        },
+        {
+          "blockId": "4C-21",
+          "question": "7. The café was very crowded. I couldn’t find a place to sit. (Use ‘too ... to’.)",
+          "questionMy": "ကော်ဖီဆိုင်တွင် လူအလွန်များခဲ့သည်။ ထိုင်စရာ မရှာနိုင်ခဲ့ပါ။ (too ... to သုံးပါ။)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            45
+          ],
+          "answer": "The café was too crowded for me to find a place to sit.",
+          "answerMy": "ကော်ဖီဆိုင်သည် ကျွန်ုပ် ထိုင်စရာမရှာနိုင်လောက်အောင် လူများခဲ့သည်။"
+        },
+        {
+          "blockId": "4C-22",
+          "question": "8. The coffee powder is not very fine. It cannot dissolve in hot water. (Use ‘enough to’.)",
+          "questionMy": "ကော်ဖီမှုန့်သည် သိပ်မညက်ပါ။ ရေနွေးတွင် မပျော်ဝင်နိုင်ပါ။ (enough to သုံးပါ။)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            45
+          ],
+          "answer": "The coffee powder is not fine enough to dissolve in hot water.",
+          "answerMy": "ကော်ဖီမှုန့်သည် ရေနွေးတွင် ပျော်ဝင်နိုင်လောက်အောင် မညက်ပါ။"
+        },
+        {
+          "blockId": "4C-23",
+          "question": "9. There is little time. We cannot finish the project. (Use ‘too ... to’.)",
+          "questionMy": "အချိန်နည်းသည်။ စီမံကိန်းကို မပြီးနိုင်ပါ။ (too ... to သုံးပါ။)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            45
+          ],
+          "answer": "There is too little time for us to finish the project.",
+          "answerMy": "စီမံကိန်းကို ကျွန်ုပ်တို့ မပြီးနိုင်လောက်အောင် အချိန်နည်းသည်။"
+        },
+        {
+          "blockId": "4C-24",
+          "question": "10. My grandfather lived long. He could see his great grandchildren. (Use ‘enough to’.)",
+          "questionMy": "အဘိုးသည် အသက်ရှည်ခဲ့သည်။ သူ၏မြစ်များကို တွေ့မြင်နိုင်ခဲ့သည်။ (enough to သုံးပါ။)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            45
+          ],
+          "answer": "My grandfather lived long enough to see his great grandchildren.",
+          "answerMy": "အဘိုးသည် မိမိ၏မြစ်များကို တွေ့ရလောက်အောင် အသက်ရှည်ခဲ့သည်။"
+        },
+        {
+          "blockId": "4C-28",
+          "question": "1. It is too expensive to transform saltwater into useful freshwater.",
+          "questionMy": "ဆားငန်ရေကို အသုံးဝင်သောရေချိုအဖြစ် ပြောင်းရန် ကုန်ကျစရိတ်အလွန်များသည်။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            45
+          ],
+          "answer": "It is not cheap enough to transform saltwater into useful freshwater.",
+          "answerMy": "ဆားငန်ရေကို အသုံးဝင်သောရေချိုအဖြစ် ပြောင်းလဲရန် လုံလောက်စွာ ကုန်ကျစရိတ်မသက်သာပါ။"
+        },
+        {
+          "blockId": "4C-29",
+          "question": "2. The boy was too far from me to identify who he was.",
+          "questionMy": "ထိုကောင်လေးသည် မည်သူဖြစ်ကြောင်း မသိနိုင်လောက်အောင် ကျွန်ုပ်နှင့် ဝေးခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            45
+          ],
+          "answer": "The boy was not near enough for me to identify who he was.",
+          "answerMy": "ကောင်လေးသည် မည်သူဖြစ်ကြောင်း ကျွန်ုပ်သိနိုင်လောက်အောင် အနီးတွင် မရှိခဲ့ပါ။"
+        },
+        {
+          "blockId": "4C-30",
+          "question": "3. Your suitcase is too large to be taken on the plane.",
+          "questionMy": "သင့်ခရီးဆောင်အိတ်သည် လေယာဉ်ပေါ်သို့ ယူမသွားနိုင်လောက်အောင် ကြီးသည်။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            45
+          ],
+          "answer": "Your suitcase is not small enough to be taken on the plane.",
+          "answerMy": "သင့်ခရီးဆောင်အိတ်သည် လေယာဉ်ပေါ် ယူနိုင်လောက်အောင် မသေးပါ။"
+        },
+        {
+          "blockId": "4C-31",
+          "question": "4. This organism is too small to be seen with the naked eye.",
+          "questionMy": "ဤသက်ရှိသည် သာမန်မျက်စိဖြင့် မမြင်နိုင်လောက်အောင် သေးသည်။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            45
+          ],
+          "answer": "This organism is not large enough to be seen with the naked eye.",
+          "answerMy": "ဤသက်ရှိသည် သာမန်မျက်စိဖြင့် မြင်နိုင်လောက်အောင် မကြီးပါ။"
+        },
+        {
+          "blockId": "4C-32",
+          "question": "5. The earthquake was too weak to be registered on the Richter scale.",
+          "questionMy": "ငလျင်သည် ရစ်ချ်တာစကေးပေါ်တွင် မမှတ်တမ်းတင်နိုင်လောက်အောင် အားနည်းခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            45
+          ],
+          "answer": "The earthquake was not strong enough to be registered on the Richter scale.",
+          "answerMy": "ငလျင်သည် ရစ်ချ်တာစကေးပေါ်တွင် မှတ်တမ်းတင်နိုင်လောက်အောင် မပြင်းခဲ့ပါ။"
+        },
+        {
+          "blockId": "4C-36",
+          "question": "1. The clay was not hard enough to be moulded into the desired shape.",
+          "questionMy": "ရွှံ့စေးသည် လိုချင်သောပုံစံသို့ ပုံသွင်းနိုင်လောက်အောင် မမာခဲ့ပါ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            46
+          ],
+          "answer": "The clay was too soft to be moulded into the desired shape.",
+          "answerMy": "ရွှံ့စေးသည် လိုချင်သောပုံစံသို့ မပုံသွင်းနိုင်လောက်အောင် ပျော့ခဲ့သည်။"
+        },
+        {
+          "blockId": "4C-37",
+          "question": "2. It is not safe enough to swim across the stream at this time of the year.",
+          "questionMy": "ယခုနှစ်၏ ဤအချိန်တွင် ချောင်းကို ဖြတ်ကူးရေကူးရန် လုံလောက်စွာ မဘေးကင်းပါ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            46
+          ],
+          "answer": "It is too dangerous to swim across the stream at this time of the year.",
+          "answerMy": "ယခုနှစ်၏ ဤအချိန်တွင် ချောင်းကို ဖြတ်ကူးရေကူးရန် အလွန်အန္တရာယ်များသည်။"
+        },
+        {
+          "blockId": "4C-38",
+          "question": "3. The man did not speak slowly enough for me to understand what he was saying.",
+          "questionMy": "ထိုသူသည် သူပြောသည်ကို ကျွန်ုပ် နားလည်နိုင်လောက်အောင် ဖြည်းဖြည်းမပြောခဲ့ပါ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            46
+          ],
+          "answer": "The man spoke too quickly for me to understand what he was saying.",
+          "answerMy": "ထိုသူသည် သူပြောသည်ကို ကျွန်ုပ် နားမလည်နိုင်လောက်အောင် မြန်မြန်ပြောခဲ့သည်။"
+        },
+        {
+          "blockId": "4C-39",
+          "question": "4. The sum is not easy enough for us to solve.",
+          "questionMy": "ပုစ္ဆာသည် ကျွန်ုပ်တို့ ဖြေရှင်းနိုင်လောက်အောင် မလွယ်ပါ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            46
+          ],
+          "answer": "The sum is too difficult for us to solve.",
+          "answerMy": "ပုစ္ဆာသည် ကျွန်ုပ်တို့ မဖြေရှင်းနိုင်လောက်အောင် ခက်ခဲသည်။"
+        },
+        {
+          "blockId": "4C-40",
+          "question": "5. The novel was not interesting enough for me to continue reading.",
+          "questionMy": "ဝတ္ထုသည် ကျွန်ုပ် ဆက်ဖတ်လိုလောက်အောင် စိတ်ဝင်စားဖွယ် မကောင်းခဲ့ပါ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            46
+          ],
+          "answer": "The novel was too boring for me to continue reading.",
+          "answerMy": "ဝတ္ထုသည် ကျွန်ုပ် ဆက်မဖတ်နိုင်လောက်အောင် ငြီးငွေ့ဖွယ်ကောင်းခဲ့သည်။"
+        }
+      ]
+    },
+    {
+      "code": "4D",
+      "title": "Listening and Speaking",
+      "items": [
+        {
+          "blockId": "4D-3",
+          "question": "At fast-food restaurants, it takes only a few minutes to (2) ______ your hunger.",
+          "questionMy": "အမြန်အစားအစာဆိုင်များတွင် သင့်ဆာလောင်မှုကို (၂) ______ ရန် မိနစ်အနည်းငယ်သာ ကြာသည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            46
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4D-4",
+          "question": "It’s delicious. Fast food normally (3) ______ very good.",
+          "questionMy": "အရသာရှိသည်။ အမြန်အစားအစာသည် ပုံမှန်အားဖြင့် အလွန်ကောင်းစွာ (၃) ______။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            46
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4D-5",
+          "question": "It’s (4) ______. The prices of meals offered by fast-food chains are affordable.",
+          "questionMy": "(၄) ______ ဖြစ်သည်။ အမြန်အစားအစာဆိုင်ခွဲများ၏ ဈေးနှုန်းကို တတ်နိုင်ကြသည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            46
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4D-6",
+          "question": "It is not as bad as many people think. Some (5) ______ are available these days, on the fast-food menus.",
+          "questionMy": "လူအများထင်သလောက် မဆိုးပါ။ ယခုခေတ် မီနူးများတွင် (၅) ______ အချို့ ရနိုင်သည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            46
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4D-7",
+          "question": "It’s unhealthy. The ingredients of fast food are said to be bad for our (6) ______.",
+          "questionMy": "ကျန်းမာရေးနှင့်မညီပါ။ ပါဝင်ပစ္စည်းများသည် မိမိတို့၏ (၆) ______ အတွက် မကောင်းဟု ဆိုကြသည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            46
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4D-8",
+          "question": "It can make you feel sick. You might (7) ______ a bit sick after eating fast food, that contains unhealthy ingredients.",
+          "questionMy": "နေမကောင်းဖြစ်စေနိုင်သည်။ ကျန်းမာရေးနှင့်မညီသော ပါဝင်ပစ္စည်းများပါသည့် အမြန်အစားအစာစားပြီးနောက် အနည်းငယ် နေမကောင်း (၇) ______ နိုင်သည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            46
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4D-9",
+          "question": "It’s addictive. Eating fast food too often could lead to many health (8) ______.",
+          "questionMy": "စွဲလမ်းစေသည်။ မကြာခဏ အလွန်အကျွံစားခြင်းက ကျန်းမာရေး (၈) ______ များစွာ ဖြစ်စေနိုင်သည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            46
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4D-10",
+          "question": "It makes families spend less and less time together. Eating at fast-food restaurants is quickly taking away the (9) ______ of families.",
+          "questionMy": "မိသားစု အတူရှိချိန် တဖြည်းဖြည်းနည်းစေသည်။ အမြန်အစားအစာဆိုင်၌ စားခြင်းက မိသားစုတို့၏ (၉) ______ ကို လျင်မြန်စွာ ယူဆောင်သွားသည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            46
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4D-13",
+          "question": "1. Do you like sugary drinks? Why?",
+          "questionMy": "သကြားပါသော အချိုရည်များကို ကြိုက်သလား။ ဘာကြောင့်လဲ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            47
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4D-15",
+          "question": "2. Do you eat vegetables every day? Why?",
+          "questionMy": "နေ့တိုင်း ဟင်းသီးဟင်းရွက် စားသလား။ ဘာကြောင့်လဲ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            47
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4D-17",
+          "question": "3. Do you eat a lot of ice creams? Why?",
+          "questionMy": "ရေခဲမုန့် အများကြီးစားသလား။ ဘာကြောင့်လဲ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            47
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4D-19",
+          "question": "4. Do you eat fruits every day? Why?",
+          "questionMy": "နေ့တိုင်း သစ်သီးစားသလား။ ဘာကြောင့်လဲ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            47
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4D-21",
+          "question": "5. Do you often eat deep fried meat? Why?",
+          "questionMy": "ဆီနှစ်ကြော်အသားကို မကြာခဏစားသလား။ ဘာကြောင့်လဲ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            47
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4D-23",
+          "question": "6. Do you often eat potato chips? Why?",
+          "questionMy": "အာလူးကြော်ကို မကြာခဏစားသလား။ ဘာကြောင့်လဲ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            47
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4D-25",
+          "question": "7. How often do you eat fast food such as hamburger, fish and chips? Why?",
+          "questionMy": "ဟမ်ဘာဂါ၊ ငါးနှင့်အာလူးကြော်ကဲ့သို့ အမြန်အစားအစာကို ဘယ်လောက်မကြာခဏစားသလဲ။ ဘာကြောင့်လဲ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            47
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "4D-27",
+          "question": "8. Do you eat a lot of cakes and cookies? Why?",
+          "questionMy": "ကိတ်မုန့်နဲ့ ကွတ်ကီး အများကြီးစားသလား။ ဘာကြောင့်လဲ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            47
+          ],
+          "answer": null,
+          "answerMy": null
+        }
+      ]
+    },
+    {
+      "code": "4E",
+      "title": "Writing",
+      "items": [
+        {
+          "blockId": "4E-24",
+          "question": "1. Introduction\n• .........................\n• .........................",
+          "questionMy": "နိဒါန်း",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            48,
+            49
+          ],
+          "answer": "The thesis statement (the main idea) of the event, state or situation; the main cause and effect of the event, state or situation.",
+          "answerMy": "ဖြစ်ရပ်၊ အခြေအနေ၏ အဓိကအယူအဆဖော်ပြချက်၊ အဓိကအကြောင်းရင်းနှင့် အကျိုးဆက်။"
+        },
+        {
+          "blockId": "4E-25",
+          "question": "2. Body paragraph (Causes)\n• .........................\n• .........................\n• .........................",
+          "questionMy": "စာကိုယ် (အကြောင်းရင်းများ)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            48,
+            49
+          ],
+          "answer": "The main cause; other causes (supporting arguments / evidence); supporting arguments / evidence to back up the cause you state.",
+          "answerMy": "အဓိကအကြောင်းရင်း၊ အခြားအကြောင်းရင်းများနှင့် အထောက်အထားများ၊ ဖော်ပြသောအကြောင်းရင်းကို ထောက်ခံသည့် အဆိုများနှင့် အထောက်အထားများ။"
+        },
+        {
+          "blockId": "4E-26",
+          "question": "3. Body paragraph (Effects)\n• .........................\n• .........................\n• .........................",
+          "questionMy": "စာကိုယ် (အကျိုးဆက်များ)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            48,
+            49
+          ],
+          "answer": "The biggest or most important effect; other effects (supporting arguments / evidence); supporting arguments / evidence to back up the effect you state.",
+          "answerMy": "အကြီးမားဆုံး သို့မဟုတ် အရေးအကြီးဆုံးအကျိုးဆက်၊ အခြားအကျိုးဆက်များနှင့် အထောက်အထားများ၊ ဖော်ပြသောအကျိုးဆက်ကို ထောက်ခံသည့် အဆိုများနှင့် အထောက်အထားများ။"
+        },
+        {
+          "blockId": "4E-27",
+          "question": "4. Conclusion\n• .........................\n• .........................",
+          "questionMy": "နိဂုံး",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            48,
+            49
+          ],
+          "answer": "Restating the thesis statement; summary of the main points of your essay, and your concluding remarks.",
+          "answerMy": "အဓိကအယူအဆကို ပြန်လည်ဖော်ပြခြင်း၊ စာစီစာကုံး၏ အဓိကအချက်အကျဉ်းနှင့် နိဂုံးချုပ်မှတ်ချက်များ။"
+        },
+        {
+          "blockId": "4E-28",
+          "question": "B. Write an essay on ‘Causes and effects of obesity’. You can begin your essay like this.",
+          "questionMy": "B။ “အဝလွန်ခြင်း၏ အကြောင်းရင်းနှင့် အကျိုးဆက်များ” ခေါင်းစဉ်ဖြင့် စာစီစာကုံးရေးပါ။ အောက်ပါအတိုင်း စနိုင်သည်။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            49
+          ],
+          "answer": null,
+          "answerMy": null
+        }
+      ]
+    }
+  ]
+}
