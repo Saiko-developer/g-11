@@ -837,54 +837,74 @@
         "my": "'after + V-ing' ပုံစံကို အသုံးပြု၍ ဝါကျတစ်စုံစီကို ပေါင်းစပ်ပါ။"
       },
       {
-        "t": "line",
-        "x": "After throwing out the fishing net, the fisherman waited patiently.",
-        "my": "ငါးဖမ်းကွန်ကို ပစ်ချပြီးနောက် တံငါသည်သည် စိတ်ရှည်စွာ စောင့်နေခဲ့သည်။"
+        "t": "q",
+        "x": "The fisherman threw out the fishing net. He waited patiently.",
+        "my": "တံငါသည်သည် ငါးဖမ်းကွန်ကို ပစ်ချခဲ့သည်။ သူသည် စိတ်ရှည်စွာ စောင့်နေခဲ့သည်။",
+        "a": "After throwing out the fishing net, the fisherman waited patiently.",
+        "exMy": "After throwing out the fishing net, the fisherman waited patiently.\nငါးဖမ်းကွန်ကို ပစ်ချပြီးနောက် တံငါသည်သည် စိတ်ရှည်စွာ စောင့်နေခဲ့သည်။"
       },
       {
-        "t": "line",
-        "x": "After telling my mother about my problem, I felt better.",
-        "my": "ကျွန်ုပ်၏ပြဿနာကို မိခင်အား ပြောပြပြီးနောက် စိတ်သက်သာရာ ရခဲ့သည်။"
+        "t": "q",
+        "x": "I told my mother about my problem. Then, I felt better.",
+        "my": "ကျွန်ုပ်သည် ကျွန်ုပ်၏ပြဿနာကို မိခင်အား ပြောပြခဲ့သည်။ ထို့နောက် စိတ်သက်သာရာ ရခဲ့သည်။",
+        "a": "After telling my mother about my problem, I felt better.",
+        "exMy": "After telling my mother about my problem, I felt better.\nကျွန်ုပ်၏ပြဿနာကို မိခင်အား ပြောပြပြီးနောက် စိတ်သက်သာရာ ရခဲ့သည်။"
       },
       {
-        "t": "line",
-        "x": "After packing her lunch, Thet Thet went out to work.",
-        "my": "နေ့လယ်စာထုပ်ကို ပြင်ဆင်ပြီးနောက် သက်သက်သည် အလုပ်သို့ ထွက်သွားခဲ့သည်။"
+        "t": "q",
+        "x": "Thet Thet packed her lunch. Then, she went out to work.",
+        "my": "သက်သက်သည် နေ့လယ်စာထုပ်ကို ပြင်ဆင်ခဲ့သည်။ ထို့နောက် အလုပ်သို့ ထွက်သွားခဲ့သည်။",
+        "a": "After packing her lunch, Thet Thet went out to work.",
+        "exMy": "After packing her lunch, Thet Thet went out to work.\nနေ့လယ်စာထုပ်ကို ပြင်ဆင်ပြီးနောက် သက်သက်သည် အလုပ်သို့ ထွက်သွားခဲ့သည်။"
       },
       {
-        "t": "line",
-        "x": "After finishing her/his homework, Nyi Lay was allowed to watch TV.",
-        "my": "အိမ်စာလုပ်ပြီးနောက် ညီလေးအား ရုပ်မြင်သံကြား ကြည့်ခွင့်ပြုခဲ့သည်။"
+        "t": "q",
+        "x": "Nyi Lay was allowed to watch TV. He had finished his homework.",
+        "my": "ညီလေးအား ရုပ်မြင်သံကြား ကြည့်ခွင့်ပြုခဲ့သည်။ သူသည် အိမ်စာ လုပ်ပြီးခဲ့ပြီ ဖြစ်သည်။",
+        "a": "After finishing his homework, Nyi Lay was allowed to watch TV.; After finishing her/his homework, Nyi Lay was allowed to watch TV.; After finishing her homework, Nyi Lay was allowed to watch TV.",
+        "exMy": "After finishing his homework, Nyi Lay was allowed to watch TV.\nအိမ်စာလုပ်ပြီးနောက် ညီလေးအား ရုပ်မြင်သံကြား ကြည့်ခွင့်ပြုခဲ့သည်။"
       },
       {
-        "t": "line",
-        "x": "After revising all the lessons, Thuta felt confident to take the exam.",
-        "my": "သင်ခန်းစာအားလုံးကို ပြန်လည်လေ့လာပြီးနောက် သုတသည် စာမေးပွဲဖြေဆိုရန် မိမိကိုယ်ကို ယုံကြည်မှုရှိလာခဲ့သည်။"
+        "t": "q",
+        "x": "Thuta revised all the lessons. Then, he felt confident to take the exam.",
+        "my": "သုတသည် သင်ခန်းစာအားလုံးကို ပြန်လည်လေ့လာခဲ့သည်။ ထို့နောက် စာမေးပွဲဖြေဆိုရန် ယုံကြည်မှုရှိလာခဲ့သည်။",
+        "a": "After revising all the lessons, Thuta felt confident to take the exam.",
+        "exMy": "After revising all the lessons, Thuta felt confident to take the exam.\nသင်ခန်းစာအားလုံးကို ပြန်လည်လေ့လာပြီးနောက် သုတသည် စာမေးပွဲဖြေဆိုရန် မိမိကိုယ်ကို ယုံကြည်မှုရှိလာခဲ့သည်။"
       },
       {
-        "t": "line",
-        "x": "After spending a year in the city, he decided to go back to his hometown.",
-        "my": "မြို့ကြီးတွင် တစ်နှစ်နေထိုင်ပြီးနောက် သူသည် ဇာတိမြို့သို့ ပြန်ရန် ဆုံးဖြတ်ခဲ့သည်။"
+        "t": "q",
+        "x": "He spent a year in the city. Then, he decided to go back to his hometown.",
+        "my": "သူသည် မြို့ကြီးတွင် တစ်နှစ် နေထိုင်ခဲ့သည်။ ထို့နောက် ဇာတိမြို့သို့ ပြန်ရန် ဆုံးဖြတ်ခဲ့သည်။",
+        "a": "After spending a year in the city, he decided to go back to his hometown.",
+        "exMy": "After spending a year in the city, he decided to go back to his hometown.\nမြို့ကြီးတွင် တစ်နှစ်နေထိုင်ပြီးနောက် သူသည် ဇာတိမြို့သို့ ပြန်ရန် ဆုံးဖြတ်ခဲ့သည်။"
       },
       {
-        "t": "line",
-        "x": "After looking at the audience and taking a deep breath, the speaker delivered his speech.",
-        "my": "ပရိသတ်ကို ကြည့်၍ အသက်ပြင်းပြင်း ရှူပြီးနောက် ဟောပြောသူသည် မိန့်ခွန်းပြောကြားခဲ့သည်။"
+        "t": "q",
+        "x": "The speaker looked at the audience and took a deep breath. Then, he delivered his speech.",
+        "my": "ဟောပြောသူသည် ပရိသတ်ကို ကြည့်၍ အသက်ပြင်းပြင်း ရှူခဲ့သည်။ ထို့နောက် မိန့်ခွန်း ပြောကြားခဲ့သည်။",
+        "a": "After looking at the audience and taking a deep breath, the speaker delivered his speech.",
+        "exMy": "After looking at the audience and taking a deep breath, the speaker delivered his speech.\nပရိသတ်ကို ကြည့်၍ အသက်ပြင်းပြင်း ရှူပြီးနောက် ဟောပြောသူသည် မိန့်ခွန်းပြောကြားခဲ့သည်။"
       },
       {
-        "t": "line",
-        "x": "After working for the company for two years, Shwe Yee got promoted.",
-        "my": "ကုမ္ပဏီတွင် နှစ်နှစ်အလုပ်လုပ်ပြီးနောက် ရွှေရည်သည် ရာထူးတိုးမြှင့်ခံခဲ့ရသည်။"
+        "t": "q",
+        "x": "Shwe Yee got promoted. She had worked for the company for two years.",
+        "my": "ရွှေရည်သည် ရာထူးတိုးမြှင့်ခံခဲ့ရသည်။ သူမသည် ကုမ္ပဏီတွင် နှစ်နှစ် အလုပ်လုပ်ခဲ့ပြီး ဖြစ်သည်။",
+        "a": "After working for the company for two years, Shwe Yee got promoted.",
+        "exMy": "After working for the company for two years, Shwe Yee got promoted.\nကုမ္ပဏီတွင် နှစ်နှစ်အလုပ်လုပ်ပြီးနောက် ရွှေရည်သည် ရာထူးတိုးမြှင့်ခံခဲ့ရသည်။"
       },
       {
-        "t": "line",
-        "x": "After working long hours in the cold, his hands were sore and cracked.",
-        "my": "အေးသောနေရာတွင် နာရီပေါင်းများစွာ အလုပ်လုပ်ပြီးနောက် သူ၏လက်များသည် နာကျင်၍ အက်ကွဲနေခဲ့သည်။"
+        "t": "q",
+        "x": "He worked long hours in the cold. His hands were sore and cracked.",
+        "my": "သူသည် အေးသောနေရာတွင် နာရီပေါင်းများစွာ အလုပ်လုပ်ခဲ့သည်။ သူ၏လက်များသည် နာကျင်၍ အက်ကွဲနေခဲ့သည်။",
+        "a": "After working long hours in the cold, he had sore and cracked hands.; After working long hours in the cold, his hands were sore and cracked.",
+        "exMy": "After working long hours in the cold, he had sore and cracked hands.\nအေးသောနေရာတွင် နာရီပေါင်းများစွာ အလုပ်လုပ်ပြီးနောက် သူ၏လက်များသည် နာကျင်၍ အက်ကွဲနေခဲ့သည်။"
       },
       {
-        "t": "line",
-        "x": "After deciding to take up the job, I started to worry about my decision.",
-        "my": "ထိုအလုပ်ကို လက်ခံရန် ဆုံးဖြတ်ပြီးနောက် ကျွန်ုပ်သည် မိမိ၏ဆုံးဖြတ်ချက်နှင့်ပတ်သက်၍ စတင်စိုးရိမ်လာခဲ့သည်။"
+        "t": "q",
+        "x": "I decided to take up the job. I started to worry about my decision.",
+        "my": "ကျွန်ုပ်သည် ထိုအလုပ်ကို လက်ခံရန် ဆုံးဖြတ်ခဲ့သည်။ ကျွန်ုပ်သည် မိမိ၏ဆုံးဖြတ်ချက်အတွက် စတင်စိုးရိမ်လာခဲ့သည်။",
+        "a": "After deciding to take up the job, I started to worry about my decision.",
+        "exMy": "After deciding to take up the job, I started to worry about my decision.\nထိုအလုပ်ကို လက်ခံရန် ဆုံးဖြတ်ပြီးနောက် ကျွန်ုပ်သည် မိမိ၏ဆုံးဖြတ်ချက်နှင့်ပတ်သက်၍ စတင်စိုးရိမ်လာခဲ့သည်။"
       },
       {
         "t": "ins",
