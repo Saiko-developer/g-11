@@ -113,16 +113,6 @@ export function Grade11TextLesson({ unit, kind }: { unit: number; kind: G11Skill
                   <p className="font-mono text-xs text-muted-foreground">Paragraph {paraNo}</p>
                   <p className="mt-1 text-[15px] leading-relaxed">{b.x}</p>
                   <TranslateSlot label="Show Myanmar Translation" small text={b.my} />
-                  <ToggleReveal label="Sentence Structure" hiddenLabel="Hide Sentence Structure" icon={ListTree} tone="primary">
-                    <div className="space-y-4">
-                      {sentences(b.x).map((s, si) => (
-                        <div key={si} className="space-y-2">
-                          <p className="text-xs font-semibold text-muted-foreground">Sentence {si + 1}</p>
-                          <StructureBreakdown questionText={s} />
-                        </div>
-                      ))}
-                    </div>
-                  </ToggleReveal>
                 </div>
               );
             }
@@ -148,6 +138,7 @@ export function Grade11TextLesson({ unit, kind }: { unit: number; kind: G11Skill
                     if (isTask(b))
                       return (
                         <QuestionCard key={bi} b={b} instructions={ex.ins} context={lessonText}
+                          noStructure={/find the bold-faced words/i.test(ex.ins)}
                           onAnswer={(v) => setA(k, v)} />
                       );
                     if (b.t === "sub" || b.t === "h")
@@ -197,8 +188,8 @@ function TranslateSlot({ label, small, text }: { label: string; small?: boolean;
 }
 
 /** Grade 10-style question card: number, Translate Question + Sentence Structure, answer row with Check/Reveal. */
-function QuestionCard({ b, instructions, context, onAnswer }: {
-  b: Block; instructions: string; context: string; onAnswer: (v: string) => void;
+function QuestionCard({ b, instructions, context, onAnswer, noStructure }: {
+  b: Block; instructions: string; context: string; onAnswer: (v: string) => void; noStructure?: boolean;
 }) {
   const m = b.x.match(/^\s*(\d+|[a-z])[.)]\s+(.*)$/is);
   const num = m?.[1];
@@ -213,9 +204,11 @@ function QuestionCard({ b, instructions, context, onAnswer }: {
         <ToggleReveal label="Translate Question" icon={Languages}>
           {b.my || "🔜 မြန်မာဘာသာပြန်ကို မကြာမီ ထည့်ပေးပါမည်။"}
         </ToggleReveal>
-        <ToggleReveal label="Sentence Structure" icon={Sparkles} tone="primary">
-          <StructureBreakdown questionText={text} />
-        </ToggleReveal>
+        {!noStructure && (
+          <ToggleReveal label="Sentence Structure" icon={Sparkles} tone="primary">
+            <StructureBreakdown questionText={text} sentenceMy={b.my?.replace(/^\s*(\d+|[a-z])[.)]\s+/i, "")} />
+          </ToggleReveal>
+        )}
       </div>
       {b.a ? (
         <div onInput={(e) => onAnswer((e.target as HTMLInputElement).value ?? "")}>
