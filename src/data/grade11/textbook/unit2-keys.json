@@ -2,251 +2,350 @@
   "2A-18": {
     "answer": "Advantage",
     "origin": "source-derived",
-    "sourcePage": 19
+    "sourcePage": 19,
+    "answerMy": "ကောင်းကျိုး"
   },
   "2A-19": {
     "answer": "Advantage",
     "origin": "source-derived",
-    "sourcePage": 19
+    "sourcePage": 19,
+    "answerMy": "ကောင်းကျိုး"
   },
   "2A-20": {
     "answer": "Advantage",
     "origin": "source-derived",
-    "sourcePage": 19
+    "sourcePage": 19,
+    "answerMy": "ကောင်းကျိုး"
   },
   "2A-21": {
     "answer": "Disadvantage",
     "origin": "source-derived",
-    "sourcePage": 19
+    "sourcePage": 19,
+    "answerMy": "ဆိုးကျိုး"
   },
   "2A-22": {
     "answer": "Advantage",
     "origin": "source-derived",
-    "sourcePage": 19
+    "sourcePage": 19,
+    "answerMy": "ကောင်းကျိုး"
   },
   "2A-23": {
     "answer": "Disadvantage",
     "origin": "source-derived",
-    "sourcePage": 19
+    "sourcePage": 19,
+    "answerMy": "ဆိုးကျိုး"
   },
   "2A-24": {
     "answer": "Disadvantage",
     "origin": "source-derived",
-    "sourcePage": 19
+    "sourcePage": 19,
+    "answerMy": "ဆိုးကျိုး"
   },
   "2A-25": {
     "answer": "Advantage",
     "origin": "source-derived",
-    "sourcePage": 19
+    "sourcePage": 19,
+    "answerMy": "ကောင်းကျိုး"
   },
   "2A-26": {
     "answer": "Disadvantage",
     "origin": "source-derived",
-    "sourcePage": 19
+    "sourcePage": 19,
+    "answerMy": "ဆိုးကျိုး"
   },
   "2A-27": {
     "answer": "Disadvantage",
     "origin": "source-derived",
-    "sourcePage": 19
+    "sourcePage": 19,
+    "answerMy": "ဆိုးကျိုး"
   },
   "2A-28": {
     "answer": "Disadvantage",
     "origin": "source-derived",
-    "sourcePage": 19
+    "sourcePage": 19,
+    "answerMy": "ဆိုးကျိုး"
   },
   "2A-29": {
     "answer": "Advantage",
     "origin": "source-derived",
-    "sourcePage": 19
+    "sourcePage": 19,
+    "answerMy": "ကောင်းကျိုး"
   },
   "2B-10": {
     "answer": "transaction",
     "origin": "source-derived",
-    "sourcePage": 20
+    "sourcePage": 20,
+    "answerMy": "အရောင်းအဝယ်"
   },
   "2B-11": {
     "answer": "appointment",
     "origin": "source-derived",
-    "sourcePage": 20
+    "sourcePage": 20,
+    "answerMy": "ချိန်းဆိုမှု"
   },
   "2B-12": {
     "answer": "discounts",
     "origin": "source-derived",
-    "sourcePage": 20
+    "sourcePage": 20,
+    "answerMy": "လျှော့ဈေးများ"
   },
   "2B-13": {
     "answer": "customers",
     "origin": "source-derived",
-    "sourcePage": 20
+    "sourcePage": 20,
+    "answerMy": "ဖောက်သည်များ"
   },
   "2B-14": {
     "answer": "problems",
     "origin": "source-derived",
-    "sourcePage": 20
+    "sourcePage": 20,
+    "answerMy": "ပြဿနာများ"
   },
   "2B-15": {
     "answer": "services",
     "origin": "source-derived",
-    "sourcePage": 20
+    "sourcePage": 20,
+    "answerMy": "ဝန်ဆောင်မှုများ"
   },
   "2B-16": {
     "answer": "negotiation",
     "origin": "source-derived",
-    "sourcePage": 20
+    "sourcePage": 20,
+    "answerMy": "ဈေးနှုန်းညှိနှိုင်းခြင်း"
   },
   "2B-17": {
     "answer": "finances",
     "origin": "source-derived",
-    "sourcePage": 20
+    "sourcePage": 20,
+    "answerMy": "ငွေကြေးကိစ္စများ"
   },
   "2C-68": {
     "answer": "do you drink",
     "origin": "source-derived",
-    "sourcePage": 23
+    "sourcePage": 23,
+    "answerMy": "သင် သောက်သလဲ"
   },
   "2C-69": {
     "answer": "Are you taking",
     "origin": "source-derived",
-    "sourcePage": 23
+    "sourcePage": 23,
+    "answerMy": "သင် သောက်သုံးနေသလား"
   },
   "2C-70": {
     "answer": "has been digging",
     "origin": "source-derived",
-    "sourcePage": 23
+    "sourcePage": 23,
+    "answerMy": "တစ်နေ့လုံး မြေတူးနေခဲ့သည်"
   },
   "2C-71": {
     "answer": "has visited",
     "origin": "source-derived",
-    "sourcePage": 23
+    "sourcePage": 23,
+    "answerMy": "ယခုအချိန်အထိ သွားရောက်ခဲ့ပြီးဖြစ်သည်"
   },
   "2C-72": {
     "answer": "is always leaving",
     "origin": "source-derived",
-    "sourcePage": 23
+    "sourcePage": 23,
+    "answerMy": "အမြဲဖွင့်လျက်ထားနေတတ်သည်"
   },
   "2C-73": {
     "answer": "has your brother been",
     "origin": "source-derived",
-    "sourcePage": 23
+    "sourcePage": 23,
+    "answerMy": "သင့်အစ်ကို သို့မဟုတ် ညီသည် ရှိနေသည်မှာ"
   },
   "2C-74": {
     "answer": "have built",
     "origin": "source-derived",
-    "sourcePage": 23
+    "sourcePage": 23,
+    "answerMy": "ဆောက်လုပ်ပြီးဖြစ်သည်"
   },
   "2C-75": {
     "answer": "are doing",
     "origin": "source-derived",
-    "sourcePage": 23
+    "sourcePage": 23,
+    "answerMy": "သုတေသနလုပ်နေကြသည်"
   },
   "2C-76": {
     "answer": "does the first train leave",
     "origin": "source-derived",
-    "sourcePage": 23
+    "sourcePage": 23,
+    "answerMy": "ပထမရထား ထွက်ခွာသလဲ"
   },
   "2C-77": {
     "answer": "have been gardening",
     "origin": "source-derived",
-    "sourcePage": 23
+    "sourcePage": 23,
+    "answerMy": "တစ်မနက်လုံး ဥယျာဉ်အလုပ်လုပ်နေခဲ့သည်"
   },
   "2C-79": {
     "answer": "must; have to",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "မဖြစ်မနေ လုပ်ရမည်"
   },
   "2C-80": {
     "answer": "don't have to",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "လုပ်ရန် မလိုအပ်ပါ"
   },
   "2C-81": {
     "answer": "had to",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "လုပ်ရန် လိုအပ်ခဲ့သည်"
   },
   "2C-82": {
     "answer": "didn't have to",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "လုပ်ရန် မလိုအပ်ခဲ့ပါ"
   },
   "2C-83": {
     "answer": "mustn't",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "မလုပ်ရပါ၊ တားမြစ်ထားသည်"
   },
   "2C-85": {
-    "answer": "must; have to",
+    "answer": "You must work hard if you want to succeed.; You have to work hard if you want to succeed.",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "အောင်မြင်လိုပါက သင် ကြိုးစားရမည်။"
   },
   "2C-86": {
-    "answer": "Do you have to",
+    "answer": "Do you have to carry a mobile phone at all times?",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "သင်သည် အချိန်တိုင်း မိုဘိုင်းဖုန်း ဆောင်ထားရန် လိုအပ်ပါသလား။"
   },
   "2C-87": {
-    "answer": "have to; must",
+    "answer": "The immigration officers have to speak many languages.; The immigration officers must speak many languages.",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "လူဝင်မှုကြီးကြပ်ရေးအရာရှိများသည် ဘာသာစကားများစွာ ပြောတတ်ရမည်။"
   },
   "2C-88": {
-    "answer": "Did you have to",
+    "answer": "Did you have to go to the boat club every Sunday last year?",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "မနှစ်က သင် တနင်္ဂနွေနေ့တိုင်း လှေအသင်းသို့ သွားရန် လိုအပ်ခဲ့ပါသလား။"
   },
   "2C-89": {
-    "answer": "Does she have to",
+    "answer": "Does she have to have a computer at home?",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "သူမသည် အိမ်တွင် ကွန်ပျူတာတစ်လုံး ရှိရန် လိုအပ်ပါသလား။"
   },
   "2C-90": {
-    "answer": "had to",
+    "answer": "I had to take a taxi this morning because the school bus was late.",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "ကျောင်းကားနောက်ကျသောကြောင့် ယနေ့နံနက် ကျွန်ုပ် တက္ကစီစီးခဲ့ရသည်။"
   },
   "2C-91": {
-    "answer": "must; have to",
+    "answer": "I must leave now; I have an important appointment.; I have to leave now; I have an important appointment.",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "အရေးကြီးသော ချိန်းဆိုမှုရှိသောကြောင့် ကျွန်ုပ် ယခု ထွက်ခွာရမည်။"
   },
   "2C-92": {
-    "answer": "doesn't have to",
+    "answer": "Dad doesn't have to go to work these days; he works from home.",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "အဖေသည် အိမ်မှအလုပ်လုပ်သောကြောင့် ယခုရက်ပိုင်း အလုပ်သို့ သွားရန် မလိုပါ။"
   },
   "2C-93": {
-    "answer": "has to; must",
+    "answer": "Ni Ni has to submit assignments weekly.; Ni Ni must submit assignments weekly.",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "နီနီသည် အပတ်စဉ် အိမ်စာတာဝန်များ တင်သွင်းရမည်။"
   },
   "2C-94": {
-    "answer": "will not have to; won't have to",
+    "answer": "When we grow up, our mother will not have to do much housework.; When we grow up, our mother won't have to do much housework.",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "ကျွန်ုပ်တို့ အရွယ်ရောက်လာသောအခါ အမေသည် အိမ်မှုကိစ္စများစွာ လုပ်ရန် လိုတော့မည်မဟုတ်ပါ။"
   },
   "2C-95": {
-    "answer": "have to; must",
+    "answer": "Mum says that I have to clean my room before I go out.; Mum says that I must clean my room before I go out.",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "အပြင်မထွက်မီ ကျွန်ုပ်၏အခန်းကို သန့်ရှင်းရေးလုပ်ရမည်ဟု အမေက ပြောသည်။"
   },
   "2C-96": {
-    "answer": "had to",
+    "answer": "Yesterday, I had to go to the dentist because I had a terrible toothache.",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "မနေ့က သွားအလွန်ကိုက်သောကြောင့် ကျွန်ုပ် သွားဆရာဝန်ထံ သွားခဲ့ရသည်။"
   },
   "2C-97": {
-    "answer": "must; have to",
+    "answer": "We really must do something about paying tax.; We really have to do something about paying tax.",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "အခွန်ပေးဆောင်ခြင်းနှင့်ပတ်သက်၍ ကျွန်ုပ်တို့ တစ်စုံတစ်ရာ အမှန်တကယ် လုပ်ဆောင်ရမည်။"
   },
   "2C-98": {
-    "answer": "mustn't",
+    "answer": "You mustn't slam the door when you come in.",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "သင် အထဲဝင်လာသောအခါ တံခါးကို ဆောင့်မပိတ်ရပါ။"
   },
   "2C-99": {
-    "answer": "have to; must",
+    "answer": "We have to go through the customs at the airport.; We must go through the customs at the airport.",
     "origin": "source-derived",
-    "sourcePage": 24
+    "sourcePage": 24,
+    "answerMy": "ကျွန်ုပ်တို့သည် လေဆိပ်တွင် အကောက်ခွန်စစ်ဆေးမှုကို ဖြတ်သန်းရမည်။"
+  },
+  "2A-31": {
+    "answer": "Online shopping is an electronic mode of shopping that uses the internet as the main vehicle to conduct a commercial business.",
+    "answerMy": "အွန်လိုင်းဈေးဝယ်ခြင်းသည် စီးပွားရေးလုပ်ငန်း ဆောင်ရွက်ရန် အင်တာနက်ကို အဓိကကြားခံအဖြစ် အသုံးပြုသည့် အီလက်ထရွန်နစ်ဈေးဝယ်နည်းဖြစ်သည်။",
+    "origin": "source-derived",
+    "sourcePage": 20,
+    "kind": "suggested"
+  },
+  "2A-32": {
+    "answer": "We can buy and sell things over the internet by using online shopping websites.",
+    "answerMy": "အွန်လိုင်းဈေးဝယ်ဝက်ဘ်ဆိုက်များကို အသုံးပြု၍ အင်တာနက်မှတစ်ဆင့် ပစ္စည်းဝယ်ယူရောင်းချနိုင်သည်။",
+    "origin": "source-derived",
+    "sourcePage": 20,
+    "kind": "suggested"
+  },
+  "2A-33": {
+    "answer": "Customers can see the products on websites.",
+    "answerMy": "ဈေးဝယ်သူများသည် ကုန်ပစ္စည်းများကို ဝက်ဘ်ဆိုက်များပေါ်တွင် ကြည့်ရှုနိုင်သည်။",
+    "origin": "source-derived",
+    "sourcePage": 20,
+    "kind": "suggested"
+  },
+  "2A-34": {
+    "answer": "Online sellers give discounts to their customers because they can reduce the money spent on maintaining their shops or stores.",
+    "answerMy": "အွန်လိုင်းရောင်းချသူများသည် ဆိုင်ထိန်းသိမ်းမှုကုန်ကျစရိတ်ကို လျှော့ချနိုင်သောကြောင့် ဈေးဝယ်သူများအား လျှော့ဈေးပေးကြသည်။",
+    "origin": "source-derived",
+    "sourcePage": 20,
+    "kind": "suggested"
+  },
+  "2A-35": {
+    "answer": "The touch-feel-try process means touching, feeling and trying a product before buying it.",
+    "answerMy": "ထိတွေ့ခံစားစမ်းသပ်ခြင်းဆိုသည်မှာ ကုန်ပစ္စည်းကို မဝယ်မီ ထိတွေ့ခြင်း၊ အထိအတွေ့ကို ခံစားစစ်ဆေးခြင်းနှင့် စမ်းသပ်ခြင်းတို့ကို ဆိုလိုသည်။",
+    "origin": "source-derived",
+    "sourcePage": 20,
+    "kind": "suggested"
+  },
+  "2A-36": {
+    "answer": "Customers' credit card details and bank details are hacked when cybercrimes occur.",
+    "answerMy": "ဆိုက်ဘာရာဇဝတ်မှုများ ဖြစ်ပွားသောအခါ ဈေးဝယ်သူများ၏ အကြွေးဝယ်ကတ်နှင့် ဘဏ်ဆိုင်ရာအချက်အလက်များ ဖောက်ထွင်းခိုးယူခံရသည်။",
+    "origin": "source-derived",
+    "sourcePage": 20,
+    "kind": "suggested"
+  },
+  "2A-37": {
+    "answer": "We can have fun by experiencing a showroom atmosphere, seeing smart sales attendants and meeting other shoppers of various types.",
+    "answerMy": "အရောင်းပြခန်းပတ်ဝန်းကျင်ကို ခံစားခြင်း၊ သပ်ရပ်သော အရောင်းဝန်ထမ်းများကို တွေ့မြင်ခြင်းနှင့် ဈေးဝယ်သူအမျိုးမျိုးကို တွေ့ဆုံခြင်းဖြင့် ပျော်ရွှင်နိုင်သည်။",
+    "origin": "source-derived",
+    "sourcePage": 20,
+    "kind": "suggested"
   }
 }

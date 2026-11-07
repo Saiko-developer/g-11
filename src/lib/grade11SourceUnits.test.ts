@@ -22,7 +22,7 @@ describe("Grade 11 source lessons and bilingual answers", () => {
     expect(all.filter((b) => b.response === "audio")).toHaveLength(8);
     expect(all.some((b) => b.id === "2D-pictures" && b.scanPage === 25)).toBe(true);
     expect(existsSync(`public${unit2ScanUrl(25)}`)).toBe(true);
-    expect(Object.keys(UNIT2_KEYS)).toHaveLength(50);
+    expect(Object.keys(UNIT2_KEYS)).toHaveLength(57);
     expect(all.some((b) => "ma" in b || b.x.startsWith("A Review of EiiZi Mart"))).toBe(false);
     expect(get(UNIT2_SECTIONS, "2E").blocks.filter((b) => b.t === "para")).toHaveLength(4);
   });

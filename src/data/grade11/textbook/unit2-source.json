@@ -32,7 +32,7 @@
     "Separated grammar explanations from 30 actual questions; restored tense introductions",
     "Moved continuity note back before Exercise A"
   ],
-  "answer_keys": "50 source-derived short answers; not an official printed key",
+  "answer_keys": "57 source-derived answers/suggestions with Burmese translations; not an official printed key",
   "source_typo_preserved": "Writing notes: diary products",
   "missing_audio": "Eight listening responses cannot be keyed without original Grade 11 audio",
   "blocks": [
@@ -820,5 +820,6 @@
       "id": "2E-15",
       "sourcePage": 26
     }
-  ]
+  ],
+  "answer_notes": "Reading B1–7 are passage-derived suggestions. B8–10 remain personal opinions without fixed keys. Grammar C accepts complete rewritten sentences."
 }
