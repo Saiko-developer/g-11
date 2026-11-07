@@ -1,0 +1,199 @@
+{
+  "official_answer_key": false,
+  "note": "Answers are derived from the supplied poem. Personal descriptions and composition are deliberately left open. Line numbers count the 15 original verse lines, excluding title and author.",
+  "sections": [
+    {
+      "code": "Pre-reading",
+      "items": [
+        {
+          "blockId": "poem1-Pre-reading-1",
+          "question": "Name some bridges you know.",
+          "questionMy": "သင်သိသော တံတားအချို့၏အမည်ကို ဖော်ပြပါ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            38
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "poem1-Pre-reading-2",
+          "question": "What are they made of?",
+          "questionMy": "၎င်းတို့ကို ဘာနှင့်တည်ဆောက်ထားသနည်း။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            38
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "poem1-Pre-reading-3",
+          "question": "Which bridge do you like most? Why?",
+          "questionMy": "ဘယ်တံတားကို အကြိုက်ဆုံးလဲ။ ဘာကြောင့်လဲ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            38
+          ],
+          "answer": null,
+          "answerMy": null
+        }
+      ]
+    },
+    {
+      "code": "A",
+      "items": [
+        {
+          "blockId": "poem1-A-1",
+          "question": "Name the kinds of bridges the poet likes.",
+          "questionMy": "ကဗျာဆရာနှစ်သက်သည့် တံတားအမျိုးအစားများကို ဖော်ပြပါ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            38
+          ],
+          "answer": "The poet likes steel bridges, old covered bridges, hewn-stone bridges, railroad bridges, wooden bridges and cement bridges.",
+          "answerMy": "ကဗျာဆရာသည် သံမဏိတံတား၊ အမိုးအကာပါတံတားဟောင်း၊ ထုဆစ်ကျောက်သားတံတား၊ မီးရထားတံတား၊ သစ်သားတံတားနှင့် ဘိလပ်မြေတံတားတို့ကို နှစ်သက်သည်။"
+        },
+        {
+          "blockId": "poem1-A-2",
+          "question": "Which word is repeated in the poem and in which line does it appear?",
+          "questionMy": "ကဗျာတွင် မည်သည့်စကားလုံးကို ထပ်သုံးထားပြီး မည်သည့်စာကြောင်းများတွင် ပါသနည်း။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            38
+          ],
+          "answer": "The word “bridge” is repeated in lines 1, 2, 3, 5, 7, 9, 11, 12, 14 and 15.",
+          "answerMy": "bridge ဟူသောစကားလုံးကို စာကြောင်း ၁၊ ၂၊ ၃၊ ၅၊ ၇၊ ၉၊ ၁၁၊ ၁၂၊ ၁၄ နှင့် ၁၅ တို့တွင် ထပ်သုံးထားသည်။"
+        },
+        {
+          "blockId": "poem1-A-3",
+          "question": "Find the rhyming words and their line numbers.",
+          "questionMy": "ကာရန်တူစကားလုံးများနှင့် စာကြောင်းနံပါတ်များကို ရှာပါ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            38
+          ],
+          "answer": "The rhyming words are all (lines 2 and 15), tall (line 4), waterfall (line 6), wall (line 8), crawl (line 10) and small (line 13).",
+          "answerMy": "ကာရန်တူစကားလုံးများမှာ all (စာကြောင်း ၂၊ ၁၅)၊ tall (၄)၊ waterfall (၆)၊ wall (၈)၊ crawl (၁၀) နှင့် small (၁၃) တို့ဖြစ်သည်။"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "items": [
+        {
+          "blockId": "poem1-B-1",
+          "question": "b. An old covered bridge",
+          "questionMy": "b။ အမိုးအကာပါ တံတားဟောင်းတစ်စင်း",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            38
+          ],
+          "answer": "That spans a waterfall",
+          "answerMy": "ရေတံခွန်ကို ဖြတ်သန်းဆက်သွယ်ထားသော"
+        },
+        {
+          "blockId": "poem1-B-2",
+          "question": "c. A hewn-stone bridge",
+          "questionMy": "c။ ထုဆစ်ကျောက်သားတံတားတစ်စင်း",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            38
+          ],
+          "answer": "With its rugged floor and wall",
+          "answerMy": "ကြမ်းတမ်းမညီသော ကြမ်းပြင်နှင့်နံရံပါသော"
+        },
+        {
+          "blockId": "poem1-B-3",
+          "question": "d. A railroad bridge",
+          "questionMy": "d။ မီးရထားတံတားတစ်စင်း",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            38
+          ],
+          "answer": "Where freight trains slowly crawl",
+          "answerMy": "ကုန်ရထားများ ဖြည်းဖြည်းချင်း ဖြတ်သွားရာ"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "items": [
+        {
+          "blockId": "poem1-C-1",
+          "question": "b. A sweet red apple",
+          "questionMy": "b။ ချိုသောပန်းသီးနီတစ်လုံး",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            38
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "poem1-C-2",
+          "question": "c. A small singing bird",
+          "questionMy": "c။ သီချင်းဆိုသော ငှက်ငယ်တစ်ကောင်",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            38
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "poem1-C-3",
+          "question": "d. An expensive car",
+          "questionMy": "d။ ဈေးကြီးသောကားတစ်စီး",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            38
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "poem1-C-4",
+          "question": "e. A tiny blue cottage",
+          "questionMy": "e။ အပြာရောင်အိမ်ငယ်လေးတစ်လုံး",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            38
+          ],
+          "answer": null,
+          "answerMy": null
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "items": [
+        {
+          "blockId": "poem1-D-1",
+          "question": "I like a ...\nAny kind of ... at all.",
+          "questionMy": "ကျွန်ုပ် ... တစ်ခုကို နှစ်သက်သည်။\nမည်သည့် ... အမျိုးအစားမဆိုပေါ့။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            38
+          ],
+          "answer": null,
+          "answerMy": null
+        }
+      ]
+    }
+  ]
+}

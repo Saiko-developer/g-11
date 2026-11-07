@@ -1,0 +1,247 @@
+{
+  "title": "Bridges",
+  "author": "James S. Tippett",
+  "sourcePage": 38,
+  "textbookPage": 33,
+  "source_file": "13575. Grade (11) English New Syllabus-1-48.pdf",
+  "stanzas": [
+    [
+      {
+        "english": "I like a bridge —",
+        "myanmar": "ကျွန်ုပ် တံတားတစ်စင်းကို နှစ်သက်သည် —"
+      },
+      {
+        "english": "Any kind of bridge at all.",
+        "myanmar": "မည်သည့်တံတားအမျိုးအစားမဆိုပေါ့။"
+      },
+      {
+        "english": "A great steel bridge",
+        "myanmar": "ကြီးမားသော သံမဏိတံတားတစ်စင်း၊"
+      },
+      {
+        "english": "With towers stiff and tall;",
+        "myanmar": "ခိုင်မာမြင့်မားသော တာဝါတိုင်များနှင့်၊"
+      },
+      {
+        "english": "An old covered bridge",
+        "myanmar": "အမိုးအကာပါ တံတားဟောင်းတစ်စင်း၊"
+      },
+      {
+        "english": "That spans a waterfall;",
+        "myanmar": "ရေတံခွန်ကို ဖြတ်သန်းဆက်သွယ်ထားလျက်၊"
+      },
+      {
+        "english": "A hewn-stone bridge",
+        "myanmar": "ထုဆစ်ထားသော ကျောက်သားတံတားတစ်စင်း၊"
+      },
+      {
+        "english": "With its rugged floor and wall;",
+        "myanmar": "ကြမ်းတမ်းမညီသော ကြမ်းပြင်နှင့် နံရံပါလျက်၊"
+      },
+      {
+        "english": "A railroad bridge",
+        "myanmar": "မီးရထားတံတားတစ်စင်း၊"
+      },
+      {
+        "english": "Where freight trains slowly crawl;",
+        "myanmar": "ကုန်ရထားများ ဖြည်းဖြည်းချင်း တွားသွားသကဲ့သို့ ဖြတ်သွားရာ၊"
+      },
+      {
+        "english": "A wooden bridge,",
+        "myanmar": "သစ်သားတံတားတစ်စင်း၊"
+      },
+      {
+        "english": "A cement bridge,",
+        "myanmar": "ဘိလပ်မြေတံတားတစ်စင်း၊"
+      },
+      {
+        "english": "Whether big or small;",
+        "myanmar": "ကြီးသည်ဖြစ်စေ ငယ်သည်ဖြစ်စေ၊"
+      },
+      {
+        "english": "Yes, I like a bridge —",
+        "myanmar": "ဟုတ်သည်၊ ကျွန်ုပ် တံတားကို နှစ်သက်သည် —"
+      },
+      {
+        "english": "Just any kind of bridge at all.",
+        "myanmar": "မည်သည့်တံတားအမျိုးအစားကိုမဆိုပေါ့။"
+      }
+    ]
+  ],
+  "glossary": [
+    {
+      "word": "freight train",
+      "meaning": "a train used to transport goods or materials (not used for carrying passengers)",
+      "meaningMy": "ကုန်ပစ္စည်း သို့မဟုတ် ပစ္စည်းများကို သယ်ယူသည့်ရထား၊ ခရီးသည်တင်ရန် မဟုတ်ပါ။"
+    },
+    {
+      "word": "hewn-stone bridge",
+      "meaning": "a bridge cut and shaped out of a slab of stone",
+      "meaningMy": "ကျောက်ပြားမှ ဖြတ်ထု၍ ပုံဖော်ထားသော တံတား။"
+    },
+    {
+      "word": "rugged",
+      "meaning": "having an uneven surface",
+      "meaningMy": "မျက်နှာပြင် မညီညာသော။"
+    }
+  ],
+  "groups": [
+    {
+      "code": "Pre-reading",
+      "instruction": "Pre-reading",
+      "instructionMy": "မဖတ်မီ ဆွေးနွေးရန်",
+      "items": [
+        {
+          "id": "poem1-Pre-reading-1",
+          "number": 1,
+          "question": "Name some bridges you know.",
+          "translationMy": "သင်သိသော တံတားအချို့၏အမည်ကို ဖော်ပြပါ။",
+          "sourcePage": 38
+        },
+        {
+          "id": "poem1-Pre-reading-2",
+          "number": 2,
+          "question": "What are they made of?",
+          "translationMy": "၎င်းတို့ကို ဘာနှင့်တည်ဆောက်ထားသနည်း။",
+          "sourcePage": 38
+        },
+        {
+          "id": "poem1-Pre-reading-3",
+          "number": 3,
+          "question": "Which bridge do you like most? Why?",
+          "translationMy": "ဘယ်တံတားကို အကြိုက်ဆုံးလဲ။ ဘာကြောင့်လဲ။",
+          "sourcePage": 38
+        }
+      ]
+    },
+    {
+      "code": "A",
+      "instruction": "Answer the following questions:",
+      "instructionMy": "အောက်ပါမေးခွန်းများကို ဖြေပါ။",
+      "items": [
+        {
+          "id": "poem1-A-1",
+          "number": 1,
+          "question": "Name the kinds of bridges the poet likes.",
+          "translationMy": "ကဗျာဆရာနှစ်သက်သည့် တံတားအမျိုးအစားများကို ဖော်ပြပါ။",
+          "sourcePage": 38
+        },
+        {
+          "id": "poem1-A-2",
+          "number": 2,
+          "question": "Which word is repeated in the poem and in which line does it appear?",
+          "translationMy": "ကဗျာတွင် မည်သည့်စကားလုံးကို ထပ်သုံးထားပြီး မည်သည့်စာကြောင်းများတွင် ပါသနည်း။",
+          "sourcePage": 38
+        },
+        {
+          "id": "poem1-A-3",
+          "number": 3,
+          "question": "Find the rhyming words and their line numbers.",
+          "translationMy": "ကာရန်တူစကားလုံးများနှင့် စာကြောင်းနံပါတ်များကို ရှာပါ။",
+          "sourcePage": 38
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "instruction": "Complete the following table with the descriptions of the bridges. The first one is done for you as an example.",
+      "instructionMy": "တံတားများ၏ဖော်ပြချက်ဖြင့် ဇယားကို ဖြည့်ပါ။ ပထမတစ်ခုကို နမူနာဖြေထားသည်။",
+      "items": [
+        {
+          "id": "poem1-B-1",
+          "number": 1,
+          "question": "b. An old covered bridge",
+          "translationMy": "b။ အမိုးအကာပါ တံတားဟောင်းတစ်စင်း",
+          "sourcePage": 38
+        },
+        {
+          "id": "poem1-B-2",
+          "number": 2,
+          "question": "c. A hewn-stone bridge",
+          "translationMy": "c။ ထုဆစ်ကျောက်သားတံတားတစ်စင်း",
+          "sourcePage": 38
+        },
+        {
+          "id": "poem1-B-3",
+          "number": 3,
+          "question": "d. A railroad bridge",
+          "translationMy": "d။ မီးရထားတံတားတစ်စင်း",
+          "sourcePage": 38
+        }
+      ],
+      "example": {
+        "english": "a. A great steel bridge — With towers stiff and tall",
+        "myanmar": "a။ ကြီးမားသောသံမဏိတံတား — ခိုင်မာမြင့်မားသောတာဝါတိုင်များနှင့်"
+      }
+    },
+    {
+      "code": "C",
+      "instruction": "Refer to the descriptions of the bridges and describe the following as in Exercise B. The first one is done for you as an example.",
+      "instructionMy": "တံတားဖော်ပြချက်များကို ကိုးကားပြီး လေ့ကျင့်ခန်း B အတိုင်း အောက်ပါတို့ကို ဖော်ပြပါ။ ပထမတစ်ခုကို နမူနာဖြေထားသည်။",
+      "items": [
+        {
+          "id": "poem1-C-1",
+          "number": 1,
+          "question": "b. A sweet red apple",
+          "translationMy": "b။ ချိုသောပန်းသီးနီတစ်လုံး",
+          "sourcePage": 38
+        },
+        {
+          "id": "poem1-C-2",
+          "number": 2,
+          "question": "c. A small singing bird",
+          "translationMy": "c။ သီချင်းဆိုသော ငှက်ငယ်တစ်ကောင်",
+          "sourcePage": 38
+        },
+        {
+          "id": "poem1-C-3",
+          "number": 3,
+          "question": "d. An expensive car",
+          "translationMy": "d။ ဈေးကြီးသောကားတစ်စီး",
+          "sourcePage": 38
+        },
+        {
+          "id": "poem1-C-4",
+          "number": 4,
+          "question": "e. A tiny blue cottage",
+          "translationMy": "e။ အပြာရောင်အိမ်ငယ်လေးတစ်လုံး",
+          "sourcePage": 38
+        }
+      ],
+      "example": {
+        "english": "a. A red rose — With beautiful petals and sweet fragrance",
+        "myanmar": "a။ နှင်းဆီနီတစ်ပွင့် — လှပသောပွင့်ဖတ်များနှင့် မွှေးပျံ့သောရနံ့ပါလျက်"
+      }
+    },
+    {
+      "code": "D",
+      "instruction": "In groups, choose one of the following in the box and compose a similar six-line verse to ‘Bridges’. Begin your poem like this:",
+      "instructionMy": "အုပ်စုလိုက် အကွက်ထဲမှ အကြောင်းအရာတစ်ခုကို ရွေး၍ Bridges နှင့်ပုံစံတူ ခြောက်ကြောင်းကဗျာ ရေးပါ။ အောက်ပါအတိုင်း စပါ။",
+      "items": [
+        {
+          "id": "poem1-D-1",
+          "number": 1,
+          "question": "I like a ...\nAny kind of ... at all.",
+          "translationMy": "ကျွန်ုပ် ... တစ်ခုကို နှစ်သက်သည်။\nမည်သည့် ... အမျိုးအစားမဆိုပေါ့။",
+          "sourcePage": 38
+        }
+      ],
+      "wordBox": [
+        "bird",
+        "car",
+        "flower",
+        "friend",
+        "fruit",
+        "song"
+      ],
+      "wordBoxMy": [
+        "ငှက်",
+        "ကား",
+        "ပန်း",
+        "သူငယ်ချင်း",
+        "သစ်သီး",
+        "သီချင်း"
+      ]
+    }
+  ]
+}

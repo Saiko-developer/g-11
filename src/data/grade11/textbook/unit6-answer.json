@@ -1,0 +1,986 @@
+{
+  "unit": 6,
+  "title": "Travel in Southeast Asia II",
+  "official_answer_key": false,
+  "note": "Answers derived from the supplied textbook, not an official answer key. Equivalent full-sentence wording is valid. Personal work and missing audio/damaged source have no invented answers.",
+  "sections": [
+    {
+      "code": "6A",
+      "title": "Reading",
+      "items": [
+        {
+          "blockId": "6A-27",
+          "question": "1. Myanmar",
+          "questionMy": "မြန်မာ",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            67
+          ],
+          "answer": "Nay Pyi Taw; Naypyidaw",
+          "answerMy": "နေပြည်တော်"
+        },
+        {
+          "blockId": "6A-28",
+          "question": "2. The Philippines",
+          "questionMy": "ဖိလစ်ပိုင်",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            67
+          ],
+          "answer": "Manila",
+          "answerMy": "မနီလာ"
+        },
+        {
+          "blockId": "6A-29",
+          "question": "3. Singapore",
+          "questionMy": "စင်ကာပူ",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            67
+          ],
+          "answer": "Singapore",
+          "answerMy": "စင်ကာပူ"
+        },
+        {
+          "blockId": "6A-30",
+          "question": "4. Thailand",
+          "questionMy": "ထိုင်း",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            67
+          ],
+          "answer": "Bangkok",
+          "answerMy": "ဘန်ကောက်"
+        },
+        {
+          "blockId": "6A-31",
+          "question": "5. Vietnam",
+          "questionMy": "ဗီယက်နမ်",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            67
+          ],
+          "answer": "Hanoi",
+          "answerMy": "ဟနွိုင်း"
+        },
+        {
+          "blockId": "6A-34",
+          "question": "2. Mount Popa",
+          "questionMy": "ပုပ္ပားတောင်",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            64
+          ],
+          "answer": "Myanmar — an extinct volcano, hiking and trekking.",
+          "answerMy": "မြန်မာ — ငြိမ်းနေသောမီးတောင်၊ တောင်တက်လမ်းလျှောက်ခြင်း။"
+        },
+        {
+          "blockId": "6A-35",
+          "question": "3. The Puerto Princesa Subterranean River National Park",
+          "questionMy": "Puerto Princesa မြေအောက်မြစ် အမျိုးသားဥယျာဉ်",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            65
+          ],
+          "answer": "The Philippines — impressive cave systems, unspoilt natural beauty, old-growth forests and unique wildlife.",
+          "answerMy": "ဖိလစ်ပိုင် — ဂူစနစ်၊ မပျက်သဘာဝအလှ၊ သက်တမ်းရင့်တောနှင့် ထူးခြားတောရိုင်းသတ္တဝါများ။"
+        },
+        {
+          "blockId": "6A-36",
+          "question": "4. Boracay Island",
+          "questionMy": "Boracay ကျွန်း",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            65
+          ],
+          "answer": "The Philippines — White Beach, powdery white sand, clear waters and stunning sunsets.",
+          "answerMy": "ဖိလစ်ပိုင် — White Beach၊ နူးညံ့ဖြူဖွေးသဲ၊ ကြည်လင်သောရေ၊ လှပသောနေဝင်ချိန်။"
+        },
+        {
+          "blockId": "6A-37",
+          "question": "5. The Flower Dome",
+          "questionMy": "Flower Dome",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            65
+          ],
+          "answer": "Singapore — the largest greenhouse in the world with exotic plants from five continents.",
+          "answerMy": "စင်ကာပူ — တိုက်ကြီးငါးတိုက်မှ ထူးခြားအပင်များပါ ကမ္ဘာ့အကြီးဆုံးဖန်လုံအိမ်။"
+        },
+        {
+          "blockId": "6A-38",
+          "question": "6. Singapore Botanic Gardens",
+          "questionMy": "စင်ကာပူရုက္ခဗေဒဥယျာဉ်",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            65
+          ],
+          "answer": "Singapore — a UNESCO World Heritage Site with the National Orchid Garden.",
+          "answerMy": "စင်ကာပူ — အမျိုးသားသစ်ခွဥယျာဉ်ပါ UNESCO အမွေအနှစ်။"
+        },
+        {
+          "blockId": "6A-39",
+          "question": "7. Chiang Mai",
+          "questionMy": "ချင်းမိုင်",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            66
+          ],
+          "answer": "Thailand — an old cultural and religious centre with walls, moats and Buddhist temples.",
+          "answerMy": "ထိုင်း — နံရံ၊ ကျုံးနှင့် ဗုဒ္ဓဘာသာဘုရားကျောင်းများရှိ ယဉ်ကျေးမှုဘာသာရေးမြို့ဟောင်း။"
+        },
+        {
+          "blockId": "6A-40",
+          "question": "8. Pattaya and Phuket",
+          "questionMy": "ပတ္တယားနှင့်ဖူးခက်",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            66
+          ],
+          "answer": "Thailand — beach resorts offering scuba diving, windsurfing and golf.",
+          "answerMy": "ထိုင်း — ရေငုပ်၊ လေလှိုင်းစီးနှင့် ဂေါက်ကစားနိုင်သော အပန်းဖြေကမ်းခြေများ။"
+        },
+        {
+          "blockId": "6A-41",
+          "question": "9. Halong Bay",
+          "questionMy": "Halong ပင်လယ်အော်",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            66
+          ],
+          "answer": "Vietnam — thousands of limestone islands and a prime cruising territory.",
+          "answerMy": "ဗီယက်နမ် — ထုံးကျောက်ကျွန်းထောင်ပေါင်းများစွာနှင့် အပျော်စီးခရီးအတွက် အကောင်းဆုံးနယ်မြေ။"
+        },
+        {
+          "blockId": "6A-42",
+          "question": "10. My Son Sanctuary",
+          "questionMy": "My Son Sanctuary",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            66
+          ],
+          "answer": "Vietnam — Hindu temple remains and a UNESCO World Heritage Site.",
+          "answerMy": "ဗီယက်နမ် — ဟိန္ဒူဘုရားကျောင်းအကြွင်းအကျန်နှင့် UNESCO အမွေအနှစ်။"
+        },
+        {
+          "blockId": "6A-44",
+          "question": "1. Why was Bagan named as a UNESCO Heritage Site?",
+          "questionMy": "ပုဂံကို UNESCO အမွေအနှစ်အဖြစ် ဘာကြောင့် သတ်မှတ်ခဲ့သလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            64
+          ],
+          "answer": "Bagan was named as a UNESCO Heritage Site because it has more than 2,500 old pagodas and unique murals inside over 300 temples.",
+          "answerMy": "ပုဂံတွင် ဘုရားဟောင်း ၂,၅၀၀ ကျော်နှင့် ဘုရားကျောင်း ၃၀၀ ကျော်အတွင်း ထူးခြားသောနံရံပန်းချီများ ရှိသဖြင့် UNESCO အမွေအနှစ်အဖြစ် သတ်မှတ်ခဲ့သည်။"
+        },
+        {
+          "blockId": "6A-45",
+          "question": "2. Give a description of the Golden Rock Pagoda, or Kyaiktiyo.",
+          "questionMy": "ရွှေကျောက်တုံးဘုရား သို့မဟုတ် ကျိုက်ထီးရိုးကို ဖော်ပြပါ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            64
+          ],
+          "answer": "The Golden Rock Pagoda, or Kyaiktiyo, sits atop a huge boulder that appears as if it were about to fall off the edge of a cliff.",
+          "answerMy": "ရွှေကျောက်တုံးဘုရား သို့မဟုတ် ကျိုက်ထီးရိုးသည် ချောက်ကမ်းပါးမှ ကျတော့မည့်သဖွယ်ရှိ ကျောက်လုံးကြီးပေါ်တွင် တည်ထားသည်။"
+        },
+        {
+          "blockId": "6A-46",
+          "question": "3. What are the most popular tourist destinations in the Philippines?",
+          "questionMy": "ဖိလစ်ပိုင်တွင် လူကြိုက်အများဆုံး ခရီးသွားနေရာများက ဘာတွေလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            64
+          ],
+          "answer": "The most popular tourist destinations in the Philippines include its beaches, heritage towns and monuments, mountains, rainforests and islands.",
+          "answerMy": "ဖိလစ်ပိုင်တွင် လူကြိုက်အများဆုံးခရီးသွားနေရာများမှာ ကမ်းခြေ၊ အမွေအနှစ်မြို့နှင့်အထိမ်းအမှတ်၊ တောင်၊ မိုးသစ်တောနှင့် ကျွန်းများဖြစ်သည်။"
+        },
+        {
+          "blockId": "6A-47",
+          "question": "4. Why is Boracay Island famous?",
+          "questionMy": "Boracay ကျွန်း ဘာကြောင့်ကျော်ကြားသလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            65
+          ],
+          "answer": "Boracay Island is famous for White Beach with its long stretch of powdery white sand, clear waters and stunning sunsets.",
+          "answerMy": "Boracay ကျွန်းသည် နူးညံ့ဖြူဖွေးသဲသောင်ရှည်၊ ကြည်လင်သောရေနှင့် လှပသောနေဝင်ချိန်ရှိ White Beach ကြောင့် ကျော်ကြားသည်။"
+        },
+        {
+          "blockId": "6A-48",
+          "question": "5. Why is the S.E.A. Aquarium in Singapore one of the biggest draws of Sentosa Island?",
+          "questionMy": "စင်ကာပူ S.E.A. ငါးပြတိုက်သည် Sentosa ကျွန်း၏ အကြီးဆုံးဆွဲဆောင်မှုတစ်ခု အဘယ်ကြောင့်ဖြစ်သနည်း။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            65
+          ],
+          "answer": "The S.E.A. Aquarium is one of the biggest draws because it features 800 species of marine life in a variety of habitats.",
+          "answerMy": "S.E.A. ငါးပြတိုက်တွင် နေရင်းဒေသမျိုးစုံ၌ ပင်လယ်မျိုးစိတ် ၈၀၀ ကို ပြထားသဖြင့် အကြီးမားဆုံးဆွဲဆောင်မှုတစ်ခု ဖြစ်သည်။"
+        },
+        {
+          "blockId": "6A-49",
+          "question": "6. What is special about the Flower Dome in Gardens by the Bay?",
+          "questionMy": "Gardens by the Bay ရှိ Flower Dome ၏ ထူးခြားချက်က ဘာလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            65
+          ],
+          "answer": "The Flower Dome is the largest greenhouse in the world and showcases exotic plants from five continents in nine different gardens.",
+          "answerMy": "Flower Dome သည် ကမ္ဘာ့အကြီးဆုံးဖန်လုံအိမ်ဖြစ်ပြီး ဥယျာဉ်ကိုးခုတွင် တိုက်ကြီးငါးတိုက်မှ ထူးခြားအပင်များကို ပြထားသည်။"
+        },
+        {
+          "blockId": "6A-50",
+          "question": "7. Where did Thai art, architecture and language originate?",
+          "questionMy": "ထိုင်းအနုပညာ၊ ဗိသုကာနှင့် ဘာသာစကား ဘယ်မှာစတင်ပေါ်ပေါက်ခဲ့သလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            66
+          ],
+          "answer": "Thai art, architecture and language originated in the Sukhothai Kingdom.",
+          "answerMy": "ထိုင်းအနုပညာ၊ ဗိသုကာနှင့် ဘာသာစကားသည် ဆူခိုထိုင်းဘုရင့်နိုင်ငံတွင် စတင်ပေါ်ပေါက်ခဲ့သည်။"
+        },
+        {
+          "blockId": "6A-51",
+          "question": "8. Who usually visits Sam Phan Bok (The Grand Canyon of Thailand)?",
+          "questionMy": "Sam Phan Bok (ထိုင်း Grand Canyon) ကို ပုံမှန် ဘယ်သူတွေ သွားသလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            66
+          ],
+          "answer": "Lovers of travel and adventure usually visit Sam Phan Bok.",
+          "answerMy": "ခရီးနှင့်စွန့်စားမှုနှစ်သက်သူများက Sam Phan Bok သို့ ပုံမှန်သွားကြသည်။"
+        },
+        {
+          "blockId": "6A-52",
+          "question": "9. What makes up wonderful scenic spots of Vietnam?",
+          "questionMy": "ဗီယက်နမ်၏ လှပသောရှုခင်းနေရာများကို ဘယ်အရာတွေ ဖွဲ့စည်းထားသလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            66
+          ],
+          "answer": "Lakes, rivers, streams, waterfalls and grottoes make up wonderful scenic spots of Vietnam.",
+          "answerMy": "ကန်၊ မြစ်၊ ချောင်း၊ ရေတံခွန်နှင့် လှိုဏ်ဂူများက ဗီယက်နမ်၏ လှပသောရှုခင်းနေရာများကို ဖွဲ့စည်းထားသည်။"
+        },
+        {
+          "blockId": "6A-53",
+          "question": "10. Why should visitors to Vietnam visit Hanoi first?",
+          "questionMy": "ဗီယက်နမ်သို့ လာသူများ ဟနွိုင်းကို ဘာကြောင့် အရင်သွားသင့်သလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            66
+          ],
+          "answer": "Visitors should visit Hanoi first because many cultural monuments still exist there and museums, theatres, exhibition halls and libraries are concentrated in the city.",
+          "answerMy": "ဟနွိုင်းတွင် ယဉ်ကျေးမှုအထိမ်းအမှတ်များ ကျန်ရှိပြီး ပြတိုက်၊ ဇာတ်ရုံ၊ ပြပွဲခန်းမနှင့် စာကြည့်တိုက်များ စုဝေးရှိသဖြင့် အရင်သွားသင့်သည်။"
+        },
+        {
+          "blockId": "6A-54",
+          "question": "11. Choose a place you would like to visit most from the five countries and give reasons for your choice.",
+          "questionMy": "၁၁။ ငါးနိုင်ငံမှ အလိုချင်ဆုံးခရီးနေရာတစ်ခု ရွေး၍ ရွေးချယ်ရသည့်အကြောင်းရင်းများကို ပြောပါ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            68
+          ],
+          "answer": null,
+          "answerMy": null
+        }
+      ]
+    },
+    {
+      "code": "6B",
+      "title": "Vocabulary",
+      "items": [
+        {
+          "blockId": "6B-12",
+          "question": "1. archaeological",
+          "questionMy": "ရှေးဟောင်းသုတေသနဆိုင်ရာ",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            68
+          ],
+          "answer": "e",
+          "answerMy": "ရှေးဟောင်းသုတေသနနှင့်ဆိုင်သော"
+        },
+        {
+          "blockId": "6B-13",
+          "question": "2. classical",
+          "questionMy": "ရိုးရာစံပုံစံဖြစ်သော",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            68
+          ],
+          "answer": "f",
+          "answerMy": "ရိုးရာပုံစံဖြစ်သော"
+        },
+        {
+          "blockId": "6B-14",
+          "question": "3. cultural",
+          "questionMy": "ယဉ်ကျေးမှုဆိုင်ရာ",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            68
+          ],
+          "answer": "h",
+          "answerMy": "လူ့အဖွဲ့အစည်း၏ ဓလေ့၊ အစဉ်အလာ၊ ယုံကြည်မှုတို့နှင့်ဆိုင်သော"
+        },
+        {
+          "blockId": "6B-15",
+          "question": "4. elegant",
+          "questionMy": "ကျော့ရှင်းလှပသော",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            68
+          ],
+          "answer": "g",
+          "answerMy": "ကျော့ရှင်းဆွဲဆောင်မှုရှိသော"
+        },
+        {
+          "blockId": "6B-16",
+          "question": "5. exotic",
+          "questionMy": "နိုင်ငံရပ်ခြားမှ ထူးခြားသော",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            68
+          ],
+          "answer": "a",
+          "answerMy": "ဝေးလံသောနိုင်ငံမှလာသဖြင့် ထူးဆန်းစိတ်ဝင်စားဖွယ်ဖြစ်သော"
+        },
+        {
+          "blockId": "6B-17",
+          "question": "6. unique",
+          "questionMy": "တစ်မူထူးခြားသော",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            68
+          ],
+          "answer": "i",
+          "answerMy": "သာမန်မဟုတ်သဖြင့် ထင်ရှားသော"
+        },
+        {
+          "blockId": "6B-18",
+          "question": "7. marvellous",
+          "questionMy": "အံ့သြဖွယ်ကောင်းသော",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            68
+          ],
+          "answer": "b",
+          "answerMy": "ထူးကဲကောင်းမွန်သော"
+        },
+        {
+          "blockId": "6B-19",
+          "question": "8. prime",
+          "questionMy": "အကောင်းဆုံး၊ အဓိကဖြစ်သော",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            68
+          ],
+          "answer": "j",
+          "answerMy": "အရည်အသွေး သို့မဟုတ် တန်ဖိုးအမြင့်ဆုံးဖြစ်သော"
+        },
+        {
+          "blockId": "6B-20",
+          "question": "9. primitive",
+          "questionMy": "ရှေးဦးမူလဖြစ်သော",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            68
+          ],
+          "answer": "c",
+          "answerMy": "ပထမဆုံး သို့မဟုတ် အစောဆုံးအမျိုးအစားဖြစ်သော"
+        },
+        {
+          "blockId": "6B-21",
+          "question": "10. pristine",
+          "questionMy": "မပျက်စီးသေးသော သဘာဝအတိုင်းဖြစ်သော",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            68
+          ],
+          "answer": "d",
+          "answerMy": "မပျက်စီး၊ မညစ်ညမ်းသေးသော"
+        },
+        {
+          "blockId": "6B-23",
+          "question": "1. ______ exchange is a way of strengthening ties between countries.",
+          "questionMy": "______ ဖလှယ်မှုသည် နိုင်ငံများအကြား ဆက်ဆံရေးခိုင်မာစေသောနည်းဖြစ်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            68
+          ],
+          "answer": "Cultural",
+          "answerMy": "ယဉ်ကျေးမှုဆိုင်ရာ"
+        },
+        {
+          "blockId": "6B-24",
+          "question": "2. My dream is to travel to all kinds of ______ faraway places all over the world.",
+          "questionMy": "ကျွန်ုပ်အိပ်မက်မှာ ကမ္ဘာတစ်ဝန်းရှိ ______ ဝေးလံသောနေရာမျိုးစုံသို့ ခရီးသွားရန်ဖြစ်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            68
+          ],
+          "answer": "exotic",
+          "answerMy": "နိုင်ငံရပ်ခြားမှ ထူးခြားသော"
+        },
+        {
+          "blockId": "6B-25",
+          "question": "3. ______ men used tools and weapons made from stones and bones.",
+          "questionMy": "______ လူများသည် ကျောက်နှင့်အရိုးဖြင့်လုပ်သော ကိရိယာ၊ လက်နက်များ သုံးခဲ့ကြသည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            68
+          ],
+          "answer": "Primitive",
+          "answerMy": "ရှေးဦးမူလဖြစ်သော"
+        },
+        {
+          "blockId": "6B-26",
+          "question": "4. Hanlin, a village near Shwebo, is famous for its ______ sites.",
+          "questionMy": "ရွှေဘိုအနီး ဟန်လင်းရွာသည် ______ နယ်မြေများကြောင့် ကျော်ကြားသည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            68
+          ],
+          "answer": "archaeological",
+          "answerMy": "ရှေးဟောင်းသုတေသနဆိုင်ရာ"
+        },
+        {
+          "blockId": "6B-27",
+          "question": "5. In some remote parts of our country, we still have ______ forests that are left in their natural condition.",
+          "questionMy": "နိုင်ငံ၏ ဝေးလံဒေသအချို့တွင် သဘာဝအတိုင်းကျန်သော ______ သစ်တောများ ရှိနေဆဲဖြစ်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            69
+          ],
+          "answer": "pristine",
+          "answerMy": "မပျက်စီးသေးသော"
+        },
+        {
+          "blockId": "6B-28",
+          "question": "6. Both the interior and the exterior of the temple were ______ and graceful.",
+          "questionMy": "ဘုရားကျောင်း၏ အတွင်းနှင့်အပြင် နှစ်ခုလုံးသည် ______ ၍ ကျော့ရှင်းလှပသည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            69
+          ],
+          "answer": "elegant",
+          "answerMy": "ကျော့ရှင်းလှပသော"
+        },
+        {
+          "blockId": "6B-29",
+          "question": "7. Each of the national races in Myanmar has its ______ culture and traditions.",
+          "questionMy": "မြန်မာတိုင်းရင်းသားတစ်မျိုးစီတွင် မိမိ၏ ______ ယဉ်ကျေးမှုနှင့် အစဉ်အလာများရှိသည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            69
+          ],
+          "answer": "unique",
+          "answerMy": "တစ်မူထူးခြားသော"
+        },
+        {
+          "blockId": "6B-30",
+          "question": "8. Myanmar dance in its ______ form requires a great deal of symmetry and balance.",
+          "questionMy": "မြန်မာအက၏ ______ ပုံစံတွင် အချိုးညီမှုနှင့် ဟန်ချက်များစွာ လိုအပ်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            69
+          ],
+          "answer": "classical",
+          "answerMy": "ရိုးရာစံပုံစံဖြစ်သော"
+        },
+        {
+          "blockId": "6B-31",
+          "question": "9. Our trip to Indawgyi Lake was really ______. We all enjoyed ourselves.",
+          "questionMy": "အင်းတော်ကြီးကန်ခရီးက တကယ် ______ ဖြစ်သည်။ ကျွန်ုပ်တို့အားလုံး ပျော်ခဲ့ကြသည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            69
+          ],
+          "answer": "marvellous",
+          "answerMy": "အံ့သြဖွယ်ကောင်းသော"
+        },
+        {
+          "blockId": "6B-32",
+          "question": "10. The ______ exports of Myanmar include precious gems.",
+          "questionMy": "မြန်မာ၏ ______ ပို့ကုန်များတွင် အဖိုးတန်ကျောက်မျက်များ ပါဝင်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            69
+          ],
+          "answer": "prime",
+          "answerMy": "အဓိက၊ တန်ဖိုးအမြင့်ဆုံးဖြစ်သော"
+        }
+      ]
+    },
+    {
+      "code": "6C",
+      "title": "Grammar",
+      "items": [
+        {
+          "blockId": "6C-5",
+          "question": "1. Some young people hurry into marriage. They do not consider their responsibilities.",
+          "questionMy": "လူငယ်အချို့ အလျင်အမြန်လက်ထပ်ကြသည်။ တာဝန်များကို မစဉ်းစားကြပါ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            69
+          ],
+          "answer": "Some young people hurry into marriage without considering their responsibilities.",
+          "answerMy": "လူငယ်အချို့ အလျင်အမြန်လက်ထပ်ကြသည်။ တာဝန်များကို မစဉ်းစားကြပါ။"
+        },
+        {
+          "blockId": "6C-6",
+          "question": "2. The boys went swimming in the river. They did not think of the danger it could cause.",
+          "questionMy": "ကောင်လေးများ မြစ်ထဲရေကူးသွားခဲ့ကြသည်။ ဖြစ်နိုင်သောအန္တရာယ်ကို မစဉ်းစားခဲ့ကြပါ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            69
+          ],
+          "answer": "The boys went swimming in the river without thinking of the danger it could cause.",
+          "answerMy": "ကောင်လေးများ မြစ်ထဲရေကူးသွားခဲ့ကြသည်။ ဖြစ်နိုင်သောအန္တရာယ်ကို မစဉ်းစားခဲ့ကြပါ။"
+        },
+        {
+          "blockId": "6C-7",
+          "question": "3. The vegetables were fried. They were not washed properly.",
+          "questionMy": "ဟင်းသီးဟင်းရွက်များကို ကြော်ခဲ့သည်။ သေချာမဆေးခဲ့ပါ။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            69
+          ],
+          "answer": "The vegetables were fried without being washed properly.",
+          "answerMy": "ဟင်းသီးဟင်းရွက်များကို ကြော်ခဲ့သည်။ သေချာမဆေးခဲ့ပါ။"
+        },
+        {
+          "blockId": "6C-8",
+          "question": "4. My father drove five hours this morning. He did not stop anywhere.",
+          "questionMy": "အဖေ ဒီမနက် ငါးနာရီကားမောင်းခဲ့သည်။ ဘယ်မှာမျှမရပ်ခဲ့ပါ။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            69
+          ],
+          "answer": "My father drove five hours this morning without stopping anywhere.",
+          "answerMy": "အဖေ ဒီမနက် ငါးနာရီကားမောင်းခဲ့သည်။ ဘယ်မှာမျှမရပ်ခဲ့ပါ။"
+        },
+        {
+          "blockId": "6C-9",
+          "question": "5. We climbed the mountain. We were not led by any guide.",
+          "questionMy": "တောင်တက်ခဲ့ကြသည်။ လမ်းညွှန်တစ်ယောက်မျှ မဦးဆောင်ခဲ့ပါ။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            69
+          ],
+          "answer": "We climbed the mountain without being led by any guide.",
+          "answerMy": "တောင်တက်ခဲ့ကြသည်။ လမ်းညွှန်တစ်ယောက်မျှ မဦးဆောင်ခဲ့ပါ။"
+        },
+        {
+          "blockId": "6C-10",
+          "question": "6. I like drinking coffee with lime. I do not add milk or sugar.",
+          "questionMy": "သံပုရာနှင့်ကော်ဖီသောက်ရတာ နှစ်သက်သည်။ နို့၊ သကြား မထည့်ပါ။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            69
+          ],
+          "answer": "I like drinking coffee with lime without adding milk or sugar.",
+          "answerMy": "သံပုရာနှင့်ကော်ဖီသောက်ရတာ နှစ်သက်သည်။ နို့၊ သကြား မထည့်ပါ။"
+        },
+        {
+          "blockId": "6C-11",
+          "question": "7. The nurse had to care for a seriously ill patient. She did not have a single hour of sleep.",
+          "questionMy": "သူနာပြုသည် အပြင်းအထန်နေမကောင်းသူကို စောင့်ရှောက်ခဲ့ရသည်။ တစ်နာရီမျှ မအိပ်ခဲ့ရပါ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            69
+          ],
+          "answer": "The nurse had to care for a seriously ill patient without having a single hour of sleep.",
+          "answerMy": "သူနာပြုသည် အပြင်းအထန်နေမကောင်းသူကို စောင့်ရှောက်ခဲ့ရသည်။ တစ်နာရီမျှ မအိပ်ခဲ့ရပါ။"
+        },
+        {
+          "blockId": "6C-12",
+          "question": "8. My brother climbed over the fence. Nobody saw him.",
+          "questionMy": "အစ်ကို/ညီက ခြံစည်းရိုးကျော်တက်ခဲ့သည်။ ဘယ်သူမျှမမြင်ခဲ့ပါ။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            69
+          ],
+          "answer": "My brother climbed over the fence without being seen by anybody.",
+          "answerMy": "အစ်ကို/ညီက ခြံစည်းရိုးကျော်တက်ခဲ့သည်။ ဘယ်သူမျှမမြင်ခဲ့ပါ။"
+        },
+        {
+          "blockId": "6C-13",
+          "question": "9. Nilar got on her bicycle and rode off. She did not say a word.",
+          "questionMy": "နီလာက စက်ဘီးပေါ်တက်၍ စီးထွက်သွားခဲ့သည်။ စကားတစ်ခွန်းမျှ မပြောခဲ့ပါ။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            69
+          ],
+          "answer": "Nilar got on her bicycle and rode off without saying a word.",
+          "answerMy": "နီလာက စက်ဘီးပေါ်တက်၍ စီးထွက်သွားခဲ့သည်။ စကားတစ်ခွန်းမျှ မပြောခဲ့ပါ။"
+        },
+        {
+          "blockId": "6C-14",
+          "question": "10. The forest fire started last night. It was not noticed by anyone.",
+          "questionMy": "မနေ့ညက တောမီးစလောင်ခဲ့သည်။ ဘယ်သူမျှ သတိမထားမိခဲ့ပါ။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            69
+          ],
+          "answer": "The forest fire started last night without being noticed by anyone.",
+          "answerMy": "မနေ့ညက တောမီးစလောင်ခဲ့သည်။ ဘယ်သူမျှ သတိမထားမိခဲ့ပါ။"
+        },
+        {
+          "blockId": "6C-15",
+          "question": "11. Some people tend to see only others’ weaknesses. They do not recognize their strengths.",
+          "questionMy": "အချို့က သူတစ်ပါးအားနည်းချက်ကိုသာ မြင်တတ်သည်။ အားသာချက်များကို မအသိအမှတ်ပြုကြပါ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            69
+          ],
+          "answer": "Some people tend to see only others’ weaknesses without recognizing their strengths.",
+          "answerMy": "အချို့က သူတစ်ပါးအားနည်းချက်ကိုသာ မြင်တတ်သည်။ အားသာချက်များကို မအသိအမှတ်ပြုကြပါ။"
+        },
+        {
+          "blockId": "6C-16",
+          "question": "12. Nilar always tries to do the right things. She is not told by anyone.",
+          "questionMy": "နီလာ အမြဲမှန်ကန်ရာလုပ်ရန် ကြိုးစားသည်။ ဘယ်သူမှမပြောရပါ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            69
+          ],
+          "answer": "Nilar always tries to do the right things without being told by anyone.",
+          "answerMy": "နီလာ အမြဲမှန်ကန်ရာလုပ်ရန် ကြိုးစားသည်။ ဘယ်သူမှမပြောရပါ။"
+        },
+        {
+          "blockId": "6C-25",
+          "question": "2. Ko Gyi ate his lunch greedily. (not eat for days)",
+          "questionMy": "ကိုကြီး နေ့လယ်စာကို အငမ်းမရစားခဲ့သည်။ (ရက်များစွာမစားခဲ့သကဲ့သို့)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            70
+          ],
+          "answer": "Ko Gyi ate his lunch greedily as if he had not eaten for days.; Ko Gyi ate his lunch greedily as though he had not eaten for days.",
+          "answerMy": "ကိုကြီး နေ့လယ်စာကို အငမ်းမရစားခဲ့သည်။ (ရက်များစွာမစားခဲ့သကဲ့သို့)"
+        },
+        {
+          "blockId": "6C-26",
+          "question": "3. The patient looked extremely pale. (will collapse)",
+          "questionMy": "လူနာသည် အလွန်ဖြူဖျော့နေခဲ့သည်။ (လဲကျတော့မည့်အလား)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            70
+          ],
+          "answer": "The patient looked extremely pale as if he would collapse.; The patient looked extremely pale as though he would collapse.",
+          "answerMy": "လူနာသည် အလွန်ဖြူဖျော့နေခဲ့သည်။ (လဲကျတော့မည့်အလား)"
+        },
+        {
+          "blockId": "6C-27",
+          "question": "4. He screamed in great fright. (see a ghost)",
+          "questionMy": "သူ အလွန်ကြောက်လန့်စွာ အော်ခဲ့သည်။ (တစ္ဆေမြင်ခဲ့သကဲ့သို့)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            70
+          ],
+          "answer": "He screamed in great fright as if he had seen a ghost.; He screamed in great fright as though he had seen a ghost.",
+          "answerMy": "သူ အလွန်ကြောက်လန့်စွာ အော်ခဲ့သည်။ (တစ္ဆေမြင်ခဲ့သကဲ့သို့)"
+        },
+        {
+          "blockId": "6C-28",
+          "question": "5. My friend, Su Su, spends a lot on clothes and cosmetics. (be a millionaire)",
+          "questionMy": "သူငယ်ချင်းစုစုက အဝတ်အစားနှင့်အလှကုန်တွင် ငွေအများကြီးသုံးသည်။ (သန်းကြွယ်သူဌေးဖြစ်သကဲ့သို့)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            70
+          ],
+          "answer": "My friend, Su Su, spends a lot on clothes and cosmetics as if she were a millionaire.; My friend, Su Su, spends a lot on clothes and cosmetics as though she were a millionaire.",
+          "answerMy": "သူငယ်ချင်းစုစုက အဝတ်အစားနှင့်အလှကုန်တွင် ငွေအများကြီးသုံးသည်။ (သန်းကြွယ်သူဌေးဖြစ်သကဲ့သို့)"
+        },
+        {
+          "blockId": "6C-29",
+          "question": "6. Nyi Lay looks worried. (do something wrong)",
+          "questionMy": "ညီလေးက စိုးရိမ်ပုံပေါက်သည်။ (တစ်ခုခုမှားလုပ်ခဲ့သကဲ့သို့)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            70
+          ],
+          "answer": "Nyi Lay looks worried as if he had done something wrong.; Nyi Lay looks worried as though he had done something wrong.",
+          "answerMy": "ညီလေးက စိုးရိမ်ပုံပေါက်သည်။ (တစ်ခုခုမှားလုပ်ခဲ့သကဲ့သို့)"
+        },
+        {
+          "blockId": "6C-30",
+          "question": "7. The old man and the little boy are very fond of each other. (be father and son)",
+          "questionMy": "အဘိုးအိုနှင့် ကောင်လေးသည် အချင်းချင်း အလွန်ချစ်ခင်သည်။ (သားအဖဖြစ်သကဲ့သို့)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            70
+          ],
+          "answer": "The old man and the little boy are very fond of each other as if they were father and son.; The old man and the little boy are very fond of each other as though they were father and son.",
+          "answerMy": "အဘိုးအိုနှင့် ကောင်လေးသည် အချင်းချင်း အလွန်ချစ်ခင်သည်။ (သားအဖဖြစ်သကဲ့သို့)"
+        },
+        {
+          "blockId": "6C-31",
+          "question": "8. The man is climbing the coconut palm. (be a monkey)",
+          "questionMy": "ထိုသူသည် အုန်းပင်တက်နေသည်။ (မျောက်ဖြစ်သကဲ့သို့)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            70
+          ],
+          "answer": "The man is climbing the coconut palm as if he were a monkey.; The man is climbing the coconut palm as though he were a monkey.",
+          "answerMy": "ထိုသူသည် အုန်းပင်တက်နေသည်။ (မျောက်ဖြစ်သကဲ့သို့)"
+        },
+        {
+          "blockId": "6C-32",
+          "question": "9. Mom is always fussing over me. (be a little girl)",
+          "questionMy": "အမေက ကျွန်ုပ်အတွက် အမြဲစိုးရိမ်အလုပ်များနေသည်။ (ကလေးမလေးဖြစ်သကဲ့သို့)",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            70
+          ],
+          "answer": "Mom is always fussing over me as if I were a little girl.; Mom is always fussing over me as though I were a little girl.",
+          "answerMy": "အမေက ကျွန်ုပ်အတွက် အမြဲစိုးရိမ်အလုပ်များနေသည်။ (ကလေးမလေးဖြစ်သကဲ့သို့)"
+        }
+      ]
+    },
+    {
+      "code": "6D",
+      "title": "Listening and Speaking",
+      "items": [
+        {
+          "blockId": "6D-1",
+          "question": "1. Responsible travellers reduce the ______ impact they make on the environment.",
+          "questionMy": "တာဝန်သိခရီးသွားများက ပတ်ဝန်းကျင်အပေါ် မိမိတို့၏ ______ သက်ရောက်မှုကို လျှော့ချသည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            70
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "6D-2",
+          "question": "2. We can make a positive impact on the lives of the ______ by buying their products.",
+          "questionMy": "______ တို့၏ထုတ်ကုန်ကို ဝယ်ခြင်းဖြင့် သူတို့ဘဝကို ကောင်းကျိုးသက်ရောက်စေနိုင်သည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            70
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "6D-3",
+          "question": "3. Garbage on the beach and in the water is really harmful to ______ and the environment.",
+          "questionMy": "ကမ်းခြေနှင့်ရေထဲမှအမှိုက်က ______ နှင့် ပတ်ဝန်းကျင်ကို တကယ်ထိခိုက်စေသည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            70
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "6D-4",
+          "question": "4. We can help reduce our waste by using ______ bags and containers.",
+          "questionMy": "______ အိတ်နှင့်ဘူးများသုံး၍ အမှိုက်လျှော့ရန် ကူညီနိုင်သည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            70
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "6D-5",
+          "question": "5. If we need to take a taxi, we should try to ______ the ride with someone else.",
+          "questionMy": "တက္ကစီစီးရန်လိုလျှင် အခြားသူနှင့် ခရီးကို ______ ရန် ကြိုးစားသင့်သည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            70
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "6D-6",
+          "question": "6. We must respect the culture and customs of the ______ we travel to.",
+          "questionMy": "သွားရောက်ရာ ______ ၏ယဉ်ကျေးမှုနှင့် ဓလေ့ကို လေးစားရမည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            70
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "6D-7",
+          "question": "7. Travellers must be ______ according to the culture and customs of the local people.",
+          "questionMy": "ခရီးသွားများသည် ဒေသခံယဉ်ကျေးမှုနှင့် ဓလေ့အတိုင်း ______ ဖြစ်ရမည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            71
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "6D-8",
+          "question": "8. To be responsible travellers, we should visit less ______ places.",
+          "questionMy": "တာဝန်သိခရီးသွားဖြစ်ရန် ပိုနည်းစွာ ______ သောနေရာများသို့ သွားသင့်သည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            71
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "6D-9",
+          "question": "9. If we visit lesser-known places, we will not have to deal with ______ streets.",
+          "questionMy": "လူသိနည်းရာသို့သွားလျှင် ______ လမ်းများနှင့် ရင်ဆိုင်စရာမလိုပါ။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            71
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "6D-10",
+          "question": "10. There are many simple ways in which we can help out the ______ and the local people.",
+          "questionMy": "______ နှင့် ဒေသခံများကို ကူညီရန် ရိုးရှင်းသောနည်းများစွာ ရှိသည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            71
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "6D-11",
+          "question": "B. Work in groups of 4. Make a list of ‘travel tips to make you responsible travellers’ using the useful language given below. Then, present your group’s tips to the class.",
+          "questionMy": "B။ လေးယောက်အုပ်စုဖွဲ့၍ အောက်ပါအသုံးအနှုန်းများဖြင့် တာဝန်သိခရီးသွားဖြစ်စေရန် ခရီးအကြံပြုချက်များ စာရင်းပြုစုပါ။ ထို့နောက် အတန်းကိုတင်ပြပါ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            71
+          ],
+          "answer": null,
+          "answerMy": null
+        }
+      ]
+    },
+    {
+      "code": "6E",
+      "title": "Writing",
+      "items": [
+        {
+          "blockId": "6E-2",
+          "question": "Advantages: ______",
+          "questionMy": "ကောင်းကျိုးများ: ______",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            71
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "6E-3",
+          "question": "Disadvantages: ______",
+          "questionMy": "ဆိုးကျိုးများ: ______",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            71
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "6E-4",
+          "question": "B. Write a composition of about 200-250 words on ‘Advantages and disadvantages of tourism industry’. Refer to the information in Exercise A and the useful language given below.",
+          "questionMy": "B။ လေ့ကျင့်ခန်း A နှင့် အောက်ပါအသုံးအနှုန်းများကို ကိုးကား၍ “ခရီးသွားလုပ်ငန်း၏ ကောင်းကျိုးနှင့်ဆိုးကျိုးများ” အကြောင်း စာလုံးရေ ၂၀၀–၂၅၀ ခန့် ရေးပါ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            72
+          ],
+          "answer": null,
+          "answerMy": null
+        }
+      ]
+    }
+  ]
+}

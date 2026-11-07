@@ -1,0 +1,1389 @@
+{
+  "unit": 5,
+  "title": "Travel in Southeast Asia I",
+  "official_answer_key": false,
+  "note": "Answers derived from the supplied textbook, not an official answer key. Equivalent full-sentence wording is valid. Personal work and missing audio/damaged source have no invented answers.",
+  "sections": [
+    {
+      "code": "5A",
+      "title": "Reading",
+      "items": [
+        {
+          "blockId": "5A-1",
+          "question": "1. If you have a chance to visit a foreign country, where will you go or what will you do first?",
+          "questionMy": "နိုင်ငံခြားသို့ သွားခွင့်ရလျှင် ဘယ်သွားမည်၊ သို့မဟုတ် ဘာကို အရင်လုပ်မည်နည်း။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            51
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "5A-2",
+          "question": "2. Make a list of Myanmar’s neighbouring countries.",
+          "questionMy": "မြန်မာနိုင်ငံ၏ အိမ်နီးချင်းနိုင်ငံများကို စာရင်းပြုစုပါ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            51
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "5A-3",
+          "question": "3. Tick the Southeast Asian countries.\n(a) Bangladesh (b) China (c) India (d) Laos (e) Thailand (f) Vietnam",
+          "questionMy": "၃။ အရှေ့တောင်အာရှနိုင်ငံများကို အမှန်ခြစ်ပါ။ (a) ဘင်္ဂလားဒေ့ရှ် (b) တရုတ် (c) အိန္ဒိယ (d) လာအို (e) ထိုင်း (f) ဗီယက်နမ်",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            51
+          ],
+          "answer": "d, e, f",
+          "answerMy": "လာအို၊ ထိုင်းနှင့် ဗီယက်နမ်"
+        },
+        {
+          "blockId": "5A-6",
+          "question": "1. ______",
+          "questionMy": "1။ ______",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            51
+          ],
+          "answer": "Myanmar",
+          "answerMy": "မြန်မာ"
+        },
+        {
+          "blockId": "5A-7",
+          "question": "2. ______",
+          "questionMy": "2။ ______",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            51
+          ],
+          "answer": "Thailand",
+          "answerMy": "ထိုင်း"
+        },
+        {
+          "blockId": "5A-8",
+          "question": "3. ______",
+          "questionMy": "3။ ______",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            51
+          ],
+          "answer": "Malaysia",
+          "answerMy": "မလေးရှား"
+        },
+        {
+          "blockId": "5A-9",
+          "question": "4. ______",
+          "questionMy": "4။ ______",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            51
+          ],
+          "answer": "Singapore",
+          "answerMy": "စင်ကာပူ"
+        },
+        {
+          "blockId": "5A-10",
+          "question": "5. ______",
+          "questionMy": "5။ ______",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            51
+          ],
+          "answer": "Indonesia",
+          "answerMy": "အင်ဒိုနီးရှား"
+        },
+        {
+          "blockId": "5A-11",
+          "question": "6. ______",
+          "questionMy": "6။ ______",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            51
+          ],
+          "answer": "Laos",
+          "answerMy": "လာအို"
+        },
+        {
+          "blockId": "5A-12",
+          "question": "7. ______",
+          "questionMy": "7။ ______",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            51
+          ],
+          "answer": "Vietnam",
+          "answerMy": "ဗီယက်နမ်"
+        },
+        {
+          "blockId": "5A-13",
+          "question": "8. ______",
+          "questionMy": "8။ ______",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            51
+          ],
+          "answer": "The Philippines; Philippines",
+          "answerMy": "ဖိလစ်ပိုင်"
+        },
+        {
+          "blockId": "5A-14",
+          "question": "9. ______",
+          "questionMy": "9။ ______",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            51
+          ],
+          "answer": "Cambodia",
+          "answerMy": "ကမ္ဘောဒီးယား"
+        },
+        {
+          "blockId": "5A-15",
+          "question": "10. ______",
+          "questionMy": "10။ ______",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            51
+          ],
+          "answer": "Brunei Darussalam; Brunei",
+          "answerMy": "ဘရူနိုင်း"
+        },
+        {
+          "blockId": "5A-50",
+          "question": "(1) ______",
+          "questionMy": "(1) ______",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            54
+          ],
+          "answer": "e; It is known for",
+          "answerMy": "၎င်းသည် ... ကြောင့် လူသိများသည်"
+        },
+        {
+          "blockId": "5A-51",
+          "question": "(2) ______",
+          "questionMy": "(2) ______",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            54
+          ],
+          "answer": "b; There is plenty to see",
+          "answerMy": "ကြည့်စရာအများအပြားရှိသည်"
+        },
+        {
+          "blockId": "5A-52",
+          "question": "(3) ______",
+          "questionMy": "(3) ______",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            54
+          ],
+          "answer": "d; With its rich variety of animal species and plants",
+          "answerMy": "ကြွယ်ဝစုံလင်သော တိရစ္ဆာန်နှင့်အပင်များရှိသဖြင့်"
+        },
+        {
+          "blockId": "5A-53",
+          "question": "(4) ______",
+          "questionMy": "(4) ______",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            54
+          ],
+          "answer": "c; The most popular place to visit",
+          "answerMy": "သွားလည်ရန် အကျော်ကြားဆုံးနေရာ"
+        },
+        {
+          "blockId": "5A-54",
+          "question": "(5) ______",
+          "questionMy": "(5) ______",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            54
+          ],
+          "answer": "a; Visitors must not miss",
+          "answerMy": "လာရောက်သူများ လက်မလွတ်သင့်ပါ"
+        },
+        {
+          "blockId": "5A-56",
+          "question": "1. get shopping experience or buy souvenirs",
+          "questionMy": "ဈေးဝယ်အတွေ့အကြုံရရန် သို့မဟုတ် အမှတ်တရပစ္စည်းဝယ်ရန်",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            52,
+            53,
+            54
+          ],
+          "answer": "Kuala Lumpur; Phnom Penh",
+          "answerMy": "ကွာလာလမ်ပူ သို့မဟုတ် ဖနွမ်းပင်"
+        },
+        {
+          "blockId": "5A-57",
+          "question": "2. observe ancient architecture or paintings",
+          "questionMy": "ရှေးဟောင်းဗိသုကာ သို့မဟုတ် ပန်းချီများ လေ့လာရန်",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            52,
+            53,
+            54
+          ],
+          "answer": "Angkor Wat; National Museum in Phnom Penh",
+          "answerMy": "အန်ကောဝပ် သို့မဟုတ် ဖနွမ်းပင်အမျိုးသားပြတိုက်"
+        },
+        {
+          "blockId": "5A-58",
+          "question": "3. learn about culture and religion",
+          "questionMy": "ယဉ်ကျေးမှုနှင့် ဘာသာရေးကို လေ့လာရန်",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            52,
+            53,
+            54
+          ],
+          "answer": "Borobudur; Yogyakarta",
+          "answerMy": "ဘောရောဗုဒ္ဓေါ သို့မဟုတ် ယိုဂျာကာတာ"
+        },
+        {
+          "blockId": "5A-59",
+          "question": "4. do water sports",
+          "questionMy": "ရေကစားနည်းများ ကစားရန်",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            52,
+            53,
+            54
+          ],
+          "answer": "Langkawi; Pangkor; Tioman Island; Damai Beach; Penang",
+          "answerMy": "လန်ကာဝီ၊ ပန်ကော်၊ တီယိုမန်၊ Damai သို့မဟုတ် ပီနန်"
+        },
+        {
+          "blockId": "5A-60",
+          "question": "5. study history",
+          "questionMy": "သမိုင်းကို လေ့လာရန်",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            52,
+            53,
+            54
+          ],
+          "answer": "Brunei Museum; Royal Regalia Museum; National Museum in Phnom Penh",
+          "answerMy": "ဘရူနိုင်းပြတိုက်၊ Royal Regalia သို့မဟုတ် ဖနွမ်းပင်အမျိုးသားပြတိုက်"
+        },
+        {
+          "blockId": "5A-61",
+          "question": "6. observe a variety of animal species and plants",
+          "questionMy": "တိရစ္ဆာန်မျိုးစိတ်နှင့် အပင်အမျိုးမျိုး လေ့လာရန်",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            52,
+            53,
+            54
+          ],
+          "answer": "Komodo National Park; Cardamom Mountains",
+          "answerMy": "Komodo အမျိုးသားဥယျာဉ် သို့မဟုတ် Cardamom တောင်တန်းများ"
+        },
+        {
+          "blockId": "5A-63",
+          "question": "1. Brunei Darussalam",
+          "questionMy": "ဘရူနိုင်းဒါရုဆလမ်",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            55
+          ],
+          "answer": "Bandar Seri Begawan",
+          "answerMy": "ဘန်ဒါဆရီဘဂါဝမ်"
+        },
+        {
+          "blockId": "5A-64",
+          "question": "2. Cambodia",
+          "questionMy": "ကမ္ဘောဒီးယား",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            55
+          ],
+          "answer": "Phnom Penh",
+          "answerMy": "ဖနွမ်းပင်"
+        },
+        {
+          "blockId": "5A-65",
+          "question": "3. Indonesia",
+          "questionMy": "အင်ဒိုနီးရှား",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            55
+          ],
+          "answer": "Jakarta",
+          "answerMy": "ဂျကာတာ"
+        },
+        {
+          "blockId": "5A-66",
+          "question": "4. Laos",
+          "questionMy": "လာအို",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            55
+          ],
+          "answer": "Vientiane",
+          "answerMy": "ဗီယင်ကျန်း"
+        },
+        {
+          "blockId": "5A-67",
+          "question": "5. Malaysia",
+          "questionMy": "မလေးရှား",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            55
+          ],
+          "answer": "Kuala Lumpur",
+          "answerMy": "ကွာလာလမ်ပူ"
+        },
+        {
+          "blockId": "5A-69",
+          "question": "1. makes somebody / something come somewhere or take part in something",
+          "questionMy": "လူ/အရာတစ်ခုကို နေရာတစ်ခုသို့ လာစေ သို့မဟုတ် ပါဝင်စေသည်",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            55
+          ],
+          "answer": "attracts",
+          "answerMy": "ဆွဲဆောင်သည်"
+        },
+        {
+          "blockId": "5A-70",
+          "question": "2. shows something to people; puts something in a place where people can see it easily",
+          "questionMy": "လူတို့ကို ပြသသည်၊ အလွယ်တကူမြင်နိုင်ရာတွင် ထားသည်",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            55
+          ],
+          "answer": "displays",
+          "answerMy": "ခင်းကျင်းပြသသည်"
+        },
+        {
+          "blockId": "5A-71",
+          "question": "3. includes a particular person or thing as a special part",
+          "questionMy": "လူ/အရာတစ်ခုကို အထူးအစိတ်အပိုင်းအဖြစ် ပါဝင်စေသည်",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            55
+          ],
+          "answer": "features",
+          "answerMy": "အထူးပါဝင်ဖော်ပြသည်"
+        },
+        {
+          "blockId": "5A-72",
+          "question": "4. provides opportunities for something",
+          "questionMy": "အခွင့်အလမ်းများ ပေးသည်",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            55
+          ],
+          "answer": "offers",
+          "answerMy": "ပေးသည်"
+        },
+        {
+          "blockId": "5A-73",
+          "question": "5. was suitable for a particular use",
+          "questionMy": "သီးခြားအသုံးတစ်ခုအတွက် သင့်လျော်ခဲ့သည်",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            55
+          ],
+          "answer": "served",
+          "answerMy": "အသုံးတော်ခံခဲ့သည်"
+        },
+        {
+          "blockId": "5A-74",
+          "question": "6. shows the best qualities or parts of something",
+          "questionMy": "တစ်စုံတစ်ခု၏ အကောင်းဆုံးအရည်အသွေး/အစိတ်အပိုင်းများကို ပြသည်",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            55
+          ],
+          "answer": "showcases",
+          "answerMy": "အကောင်းဆုံးလက်ရာများကို ပြသသည်"
+        },
+        {
+          "blockId": "5A-76",
+          "question": "1. There was no hotel or inn nearby; the monastery offered / served as a resting place for our family.",
+          "questionMy": "အနီးတွင် ဟိုတယ်/တည်းခိုခန်းမရှိ၍ ဘုန်းကြီးကျောင်းက မိသားစုနားနေရာအဖြစ် offered / served ခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            55
+          ],
+          "answer": "served",
+          "answerMy": "အသုံးတော်ခံခဲ့သည်"
+        },
+        {
+          "blockId": "5A-77",
+          "question": "2. The old market attracts / features a variety of local products such as cane baskets, bamboo hats and necklaces made of seashells.",
+          "questionMy": "ဈေးဟောင်းတွင် ကြိမ်ခြင်း၊ ဝါးဦးထုပ်၊ ပင်လယ်ခွံလည်ဆွဲကဲ့သို့ ဒေသထွက်ပစ္စည်းစုံကို attracts / features သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            55
+          ],
+          "answer": "features",
+          "answerMy": "အထူးပါဝင်ပြသသည်"
+        },
+        {
+          "blockId": "5A-78",
+          "question": "3. Ngwe Thaung Yan Beach attracts / showcases visitors with its stretch of silvery sand.",
+          "questionMy": "ငွေသောင်ယံကမ်းခြေက ငွေရောင်သဲသောင်ပြင်ဖြင့် လာရောက်သူများကို attracts / showcases သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            55
+          ],
+          "answer": "attracts",
+          "answerMy": "ဆွဲဆောင်သည်"
+        },
+        {
+          "blockId": "5A-79",
+          "question": "4. The aquarium offers / showcases a wide variety of colourful tropical fish.",
+          "questionMy": "ငါးပြတိုက်တွင် အရောင်စုံအပူပိုင်းငါးမျိုးစုံကို offers / showcases သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            56
+          ],
+          "answer": "showcases",
+          "answerMy": "ပြသသည်"
+        },
+        {
+          "blockId": "5A-80",
+          "question": "5. During low season, the hotel displays / offers a special discount.",
+          "questionMy": "ခရီးသွားနည်းရာသီတွင် ဟိုတယ်က အထူးလျှော့ဈေးကို displays / offers သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            56
+          ],
+          "answer": "offers",
+          "answerMy": "ပေးသည်"
+        },
+        {
+          "blockId": "5A-81",
+          "question": "6. The art gallery displays / serves a collection of art and antiques of the 13th century.",
+          "questionMy": "ပန်းချီပြခန်းက ၁၃ ရာစု အနုပညာနှင့်ရှေးဟောင်းပစ္စည်းစုကို displays / serves သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            56
+          ],
+          "answer": "displays",
+          "answerMy": "ခင်းကျင်းပြသသည်"
+        },
+        {
+          "blockId": "5A-83",
+          "question": "1. What is Jame’ Asr Hassanal Bolkiah Mosque in Brunei like?",
+          "questionMy": "ဘရူနိုင်းရှိ Jame’ Asr Hassanal Bolkiah ဗလီက ဘယ်လိုရှိသလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            52
+          ],
+          "answer": "Jame’ Asr Hassanal Bolkiah Mosque is an impressive building adorned with 29 golden domes.",
+          "answerMy": "Jame’ Asr Hassanal Bolkiah ဗလီသည် ရွှေရောင်အမိုးခုံး ၂၉ ခုဖြင့် အလှဆင်ထားသော ခမ်းနားသည့်အဆောက်အအုံဖြစ်သည်။"
+        },
+        {
+          "blockId": "5A-84",
+          "question": "2. What should we do if we want to experience the life of local people in Brunei?",
+          "questionMy": "ဘရူနိုင်းဒေသခံတို့၏ဘဝကို တွေ့ကြုံလိုလျှင် ဘာလုပ်သင့်သလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            52
+          ],
+          "answer": "We should take a river cruise to experience the daily life of local people in Brunei.",
+          "answerMy": "ဘရူနိုင်းဒေသခံတို့၏ နေ့စဉ်ဘဝကို တွေ့ကြုံရန် မြစ်ကြောင်းအပျော်စီးခရီး သွားသင့်သည်။"
+        },
+        {
+          "blockId": "5A-85",
+          "question": "3. How can we learn the luxurious lifestyle of a Sultan?",
+          "questionMy": "ဆူလတန်၏ ဇိမ်ခံနေထိုင်မှုကို ဘယ်လိုလေ့လာနိုင်သလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            52
+          ],
+          "answer": "We can learn about the luxurious lifestyle of a Sultan by visiting the Royal Regalia Museum.",
+          "answerMy": "Royal Regalia ပြတိုက်သို့ သွားခြင်းဖြင့် ဆူလတန်၏ ဇိမ်ခံနေထိုင်မှုကို လေ့လာနိုင်သည်။"
+        },
+        {
+          "blockId": "5A-86",
+          "question": "4. What do the five central towers of Angkor Wat represent?",
+          "questionMy": "အန်ကောဝပ် ဗဟိုမျှော်စင်ငါးခုက ဘာကို ကိုယ်စားပြုသလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            53
+          ],
+          "answer": "The five central towers of Angkor Wat represent the peaks of Mount Meru, the dwelling place of the gods according to Hindu mythology.",
+          "answerMy": "အန်ကောဝပ် ဗဟိုမျှော်စင်ငါးခုသည် ဟိန္ဒူဒဏ္ဍာရီအရ နတ်ဘုရားတို့နေရာ မြင့်မိုရ်တောင်၏ ထိပ်များကို ကိုယ်စားပြုသည်။"
+        },
+        {
+          "blockId": "5A-87",
+          "question": "5. Why is Borobudur a must-visit place?",
+          "questionMy": "ဘောရောဗုဒ္ဓေါသို့ အဘယ်ကြောင့် မဖြစ်မနေသွားသင့်သလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            53
+          ],
+          "answer": "Borobudur is a must-visit place because it is the world’s biggest Buddhist temple and one of the top UNESCO World Heritage Sites.",
+          "answerMy": "ဘောရောဗုဒ္ဓေါသည် ကမ္ဘာ့အကြီးဆုံးဗုဒ္ဓဘာသာဘုရားကျောင်းနှင့် ထိပ်တန်း UNESCO အမွေအနှစ်တစ်ခုဖြစ်၍ မဖြစ်မနေသွားသင့်သည်။"
+        },
+        {
+          "blockId": "5A-88",
+          "question": "6. List the things a visitor can do on the islands in Komodo National Park.",
+          "questionMy": "Komodo National Park ကျွန်းများတွင် ခရီးသည်လုပ်နိုင်သောအရာများကို စာရင်းပြုစုပါ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            53
+          ],
+          "answer": "Visitors can hike, snorkel, go canoeing or visit small villages on the islands in Komodo National Park.",
+          "answerMy": "Komodo National Park ကျွန်းများတွင် ခရီးသည်များ တောင်တက်၊ ရေငုပ်ကြည့်၊ လှေလှော် သို့မဟုတ် ရွာငယ်များသို့ သွားနိုင်သည်။"
+        },
+        {
+          "blockId": "5A-89",
+          "question": "7. What is special about Kuang Si Falls?",
+          "questionMy": "Kuang Si ရေတံခွန်၏ ထူးခြားချက်က ဘာလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            53
+          ],
+          "answer": "Kuang Si Falls is a multi-level waterfall with multiple fast-flowing pools.",
+          "answerMy": "Kuang Si သည် ရေစီးသန်သောရေကန်များစွာပါ အဆင့်ဆင့်ရေတံခွန်ဖြစ်သည်။"
+        },
+        {
+          "blockId": "5A-90",
+          "question": "8. Name four tourist destinations in Laos.",
+          "questionMy": "လာအိုရှိ ခရီးသွားနေရာလေးခုကို အမည်ဖော်ပြပါ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            53,
+            54
+          ],
+          "answer": "Four tourist destinations in Laos are the Plain of Jars, Luang Prabang, Kuang Si Falls and That Luang.",
+          "answerMy": "လာအိုရှိ ခရီးသွားနေရာလေးခုမှာ Plain of Jars၊ လွမ်ပရာဘန်၊ Kuang Si ရေတံခွန်နှင့် That Luang တို့ဖြစ်သည်။"
+        },
+        {
+          "blockId": "5A-91",
+          "question": "9. Why do tourists like to visit Penang in Malaysia?",
+          "questionMy": "မလေးရှားရှိ ပီနန်သို့ ခရီးသည်များ ဘာကြောင့် သွားလိုကြသလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            54
+          ],
+          "answer": "Tourists like to visit Penang because of its fascinating fusion of eastern and western influences.",
+          "answerMy": "ပီနန်သည် အရှေ့နှင့်အနောက်လွှမ်းမိုးမှု စိတ်ဝင်စားဖွယ်ပေါင်းစပ်ထားသောကြောင့် ခရီးသည်များ သွားလိုကြသည်။"
+        },
+        {
+          "blockId": "5A-92",
+          "question": "10. What is Malaysia famous for?",
+          "questionMy": "မလေးရှားသည် ဘာကြောင့် ကျော်ကြားသလဲ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            54
+          ],
+          "answer": "Malaysia is famous for its pleasant beach resorts.",
+          "answerMy": "မလေးရှားသည် သာယာသော အပန်းဖြေကမ်းခြေများကြောင့် ကျော်ကြားသည်။"
+        }
+      ]
+    },
+    {
+      "code": "5B",
+      "title": "Vocabulary",
+      "items": [
+        {
+          "blockId": "5B-7",
+          "question": "1. adventure ______",
+          "questionMy": "စွန့်စားမှု ______",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            56,
+            57
+          ],
+          "answer": "lovers; adventure lovers",
+          "answerMy": "စွန့်စားမှုနှစ်သက်သူများ"
+        },
+        {
+          "blockId": "5B-8",
+          "question": "2. art ______",
+          "questionMy": "အနုပညာ ______",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            56,
+            57
+          ],
+          "answer": "gallery, museum; art gallery, art museum; gallery; museum; art gallery; art museum",
+          "answerMy": "အနုပညာပြခန်း၊ အနုပညာပြတိုက်"
+        },
+        {
+          "blockId": "5B-9",
+          "question": "3. city ______",
+          "questionMy": "မြို့ ______",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            56,
+            57
+          ],
+          "answer": "centre, dwellers; city centre, city dwellers; centre; center; dwellers; city centre; city center; city dwellers",
+          "answerMy": "မြို့လယ်၊ မြို့နေသူများ"
+        },
+        {
+          "blockId": "5B-10",
+          "question": "4. health ______",
+          "questionMy": "ကျန်းမာရေး ______",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            56,
+            57
+          ],
+          "answer": "care, condition; health care, health condition; care; condition; health care; health condition",
+          "answerMy": "ကျန်းမာရေးစောင့်ရှောက်မှု၊ ကျန်းမာရေးအခြေအနေ"
+        },
+        {
+          "blockId": "5B-11",
+          "question": "5. mountain ______",
+          "questionMy": "တောင် ______",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            56,
+            57
+          ],
+          "answer": "ranges, sceneries; mountain ranges, mountain sceneries; ranges; sceneries; mountain ranges; mountain sceneries",
+          "answerMy": "တောင်တန်းများ၊ တောင်ပေါ်ရှုခင်းများ"
+        },
+        {
+          "blockId": "5B-12",
+          "question": "6. tourist ______",
+          "questionMy": "ခရီးသွား ______",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            56,
+            57
+          ],
+          "answer": "attractions, destination; tourist attractions, tourist destination; attractions; destination; tourist attractions; tourist destination",
+          "answerMy": "ခရီးသွားဆွဲဆောင်ရာနေရာများ၊ ခရီးသွားနေရာ"
+        },
+        {
+          "blockId": "5B-14",
+          "question": "1. By taking the cable car, we can enjoy the ______.",
+          "questionMy": "ကေဘယ်ကားစီးခြင်းဖြင့် ______ ကို ခံစားနိုင်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            57
+          ],
+          "answer": "mountain sceneries",
+          "answerMy": "တောင်ပေါ်ရှုခင်းများ"
+        },
+        {
+          "blockId": "5B-15",
+          "question": "2. Htet Aung is willing to take risks and he always tries new ideas; he is really a/an ______.",
+          "questionMy": "ထက်အောင်က စွန့်စားလိုပြီး အတွေးသစ်များကို အမြဲစမ်းသပ်သည်။ သူက တကယ် ______ ဖြစ်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            57
+          ],
+          "answer": "adventure lover",
+          "answerMy": "စွန့်စားမှုနှစ်သက်သူ"
+        },
+        {
+          "blockId": "5B-16",
+          "question": "3. Standards of ______ in developing countries have improved a great deal in the last decade.",
+          "questionMy": "ဖွံ့ဖြိုးဆဲနိုင်ငံများတွင် လွန်ခဲ့သောဆယ်နှစ်၌ ______ စံနှုန်းများ များစွာတိုးတက်ခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            57
+          ],
+          "answer": "health care; healthcare",
+          "answerMy": "ကျန်းမာရေးစောင့်ရှောက်မှု"
+        },
+        {
+          "blockId": "5B-17",
+          "question": "4. Many ______ come to the countryside to seek peace and serenity.",
+          "questionMy": "______ များစွာက အေးချမ်းငြိမ်သက်မှုရှာရန် ကျေးလက်သို့လာကြသည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            57
+          ],
+          "answer": "city dwellers",
+          "answerMy": "မြို့နေသူများ"
+        },
+        {
+          "blockId": "5B-18",
+          "question": "5. Selected paintings are available for sale in the ______.",
+          "questionMy": "ရွေးထားသောပန်းချီများကို ______ တွင် ဝယ်ယူနိုင်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            57
+          ],
+          "answer": "art gallery",
+          "answerMy": "အနုပညာပြခန်း"
+        },
+        {
+          "blockId": "5B-19",
+          "question": "6. Bangkok is one of the most popular ______.",
+          "questionMy": "ဘန်ကောက်သည် လူကြိုက်အများဆုံး ______ များထဲမှ တစ်ခုဖြစ်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            57
+          ],
+          "answer": "tourist destinations",
+          "answerMy": "ခရီးသွားနေရာများ"
+        },
+        {
+          "blockId": "5B-20",
+          "question": "7. An integrated rail network will link the airport to the ______.",
+          "questionMy": "ပေါင်းစည်းရထားကွန်ရက်က လေဆိပ်ကို ______ နှင့် ဆက်သွယ်မည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            57
+          ],
+          "answer": "city centre; city center",
+          "answerMy": "မြို့လယ်"
+        },
+        {
+          "blockId": "5B-21",
+          "question": "8. Karakoram in Pakistan is one of the highest ______ of Central Asia.",
+          "questionMy": "ပါကစ္စတန်ရှိ Karakoram သည် ဗဟိုအာရှ၏ အမြင့်ဆုံး ______ များထဲမှ တစ်ခုဖြစ်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            57
+          ],
+          "answer": "mountain ranges",
+          "answerMy": "တောင်တန်းများ"
+        },
+        {
+          "blockId": "5B-22",
+          "question": "9. An ______ is one that involves some physically challenging activities such as canoeing and rock climbing.",
+          "questionMy": "______ တွင် လှေလှော်၊ ကျောက်တောင်တက်ကဲ့သို့ ကိုယ်ခန္ဓာစိန်ခေါ်မှုရှိ လုပ်ဆောင်ချက်များ ပါဝင်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            57
+          ],
+          "answer": "adventure holiday",
+          "answerMy": "စွန့်စားအပန်းဖြေခရီး"
+        },
+        {
+          "blockId": "5B-23",
+          "question": "10. His ______ has not improved significantly because he is still using a wheel chair.",
+          "questionMy": "ဘီးတပ်ကုလားထိုင် သုံးနေဆဲဖြစ်သောကြောင့် သူ၏ ______ သိသာစွာ မတိုးတက်သေးပါ။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            57
+          ],
+          "answer": "health condition",
+          "answerMy": "ကျန်းမာရေးအခြေအနေ"
+        }
+      ]
+    },
+    {
+      "code": "5C",
+      "title": "Grammar",
+      "items": [
+        {
+          "blockId": "5C-10",
+          "question": "2. A delivery van came round the corner.",
+          "questionMy": "ပစ္စည်းပို့ဗင်ကားတစ်စီး လမ်းထောင့်ကို ကွေ့လာခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            58
+          ],
+          "answer": "Round the corner came a delivery van.",
+          "answerMy": "ပစ္စည်းပို့ဗင်ကားတစ်စီး လမ်းထောင့်ကို ကွေ့လာခဲ့သည်။"
+        },
+        {
+          "blockId": "5C-11",
+          "question": "3. A cardboard box was on the doorstep.",
+          "questionMy": "အိမ်တံခါးဝလှေကားပေါ်၌ ကတ်ထူပုံးတစ်ပုံး ရှိခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            58
+          ],
+          "answer": "On the doorstep was a cardboard box.",
+          "answerMy": "အိမ်တံခါးဝလှေကားပေါ်၌ ကတ်ထူပုံးတစ်ပုံး ရှိခဲ့သည်။"
+        },
+        {
+          "blockId": "5C-12",
+          "question": "4. A strange bird was on the branch of the Eucalyptus tree.",
+          "questionMy": "ယူကလစ်ပင်ကိုင်းပေါ်၌ ထူးဆန်းသောငှက်တစ်ကောင် ရှိခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            58
+          ],
+          "answer": "On the branch of the Eucalyptus tree was a strange bird.",
+          "answerMy": "ယူကလစ်ပင်ကိုင်းပေါ်၌ ထူးဆန်းသောငှက်တစ်ကောင် ရှိခဲ့သည်။"
+        },
+        {
+          "blockId": "5C-13",
+          "question": "5. A drone flew just above the building.",
+          "questionMy": "အဆောက်အအုံအထက်နားတွင် ဒရုန်းတစ်စီး ပျံသွားခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            58
+          ],
+          "answer": "Just above the building flew a drone.",
+          "answerMy": "အဆောက်အအုံအထက်နားတွင် ဒရုန်းတစ်စီး ပျံသွားခဲ့သည်။"
+        },
+        {
+          "blockId": "5C-14",
+          "question": "6. A great castle stood directly in front of the park.",
+          "questionMy": "ပန်းခြံရှေ့တည့်တည့်၌ ရဲတိုက်ကြီးတစ်ခု တည်ရှိခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            58
+          ],
+          "answer": "Directly in front of the park stood a great castle.",
+          "answerMy": "ပန်းခြံရှေ့တည့်တည့်၌ ရဲတိုက်ကြီးတစ်ခု တည်ရှိခဲ့သည်။"
+        },
+        {
+          "blockId": "5C-15",
+          "question": "7. The patient recovered under the care of physicians.",
+          "questionMy": "ဆရာဝန်များစောင့်ရှောက်မှုအောက်တွင် လူနာ ပြန်ကောင်းခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            58
+          ],
+          "answer": "Under the care of physicians recovered the patient.",
+          "answerMy": "ဆရာဝန်များစောင့်ရှောက်မှုအောက်တွင် လူနာ ပြန်ကောင်းခဲ့သည်။"
+        },
+        {
+          "blockId": "5C-16",
+          "question": "8. A hidden tribe dwelled in the remote areas of the Amazonian rainforest.",
+          "questionMy": "အမေဇုန်မိုးသစ်တော ဝေးလံရာဒေသ၌ ပုန်းကွယ်နေသောမျိုးနွယ်တစ်ခု နေခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            58
+          ],
+          "answer": "In the remote areas of the Amazonian rainforest dwelled a hidden tribe.",
+          "answerMy": "အမေဇုန်မိုးသစ်တော ဝေးလံရာဒေသ၌ ပုန်းကွယ်နေသောမျိုးနွယ်တစ်ခု နေခဲ့သည်။"
+        },
+        {
+          "blockId": "5C-17",
+          "question": "9. The bridge collapsed without any warning.",
+          "questionMy": "မည်သည့်သတိပေးချက်မျှမရှိဘဲ တံတား ပြိုခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            58
+          ],
+          "answer": "Without any warning collapsed the bridge.",
+          "answerMy": "မည်သည့်သတိပေးချက်မျှမရှိဘဲ တံတား ပြိုခဲ့သည်။"
+        },
+        {
+          "blockId": "5C-18",
+          "question": "10. Her big diamond necklace sparkled in the moonlight.",
+          "questionMy": "လရောင်အောက်တွင် သူမ၏စိန်လည်ဆွဲကြီး တောက်ပခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            58
+          ],
+          "answer": "In the moonlight sparkled her big diamond necklace.",
+          "answerMy": "လရောင်အောက်တွင် သူမ၏စိန်လည်ဆွဲကြီး တောက်ပခဲ့သည်။"
+        },
+        {
+          "blockId": "5C-29",
+          "question": "1. Some paintings that were stolen from the museum have not been found yet.",
+          "questionMy": "ပြတိုက်မှ အခိုးခံရသောပန်းချီအချို့ကို မတွေ့ရသေးပါ။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            59
+          ],
+          "answer": "Some paintings stolen from the museum have not been found yet.",
+          "answerMy": "ပြတိုက်မှ အခိုးခံရသောပန်းချီအချို့ကို မတွေ့ရသေးပါ။"
+        },
+        {
+          "blockId": "5C-30",
+          "question": "2. Some of the people who were invited to the party cannot come.",
+          "questionMy": "ပါတီသို့ ဖိတ်ထားသူအချို့ မလာနိုင်ပါ။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            59
+          ],
+          "answer": "Some of the people invited to the party cannot come.",
+          "answerMy": "ပါတီသို့ ဖိတ်ထားသူအချို့ မလာနိုင်ပါ။"
+        },
+        {
+          "blockId": "5C-31",
+          "question": "3. Life must be very unpleasant for people who live near busy airports.",
+          "questionMy": "စည်ကားသောလေဆိပ်အနီး နေသူများအတွက် ဘဝသည် မနှစ်မြို့ဖွယ်ဖြစ်မည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            59
+          ],
+          "answer": "Life must be very unpleasant for people living near busy airports.",
+          "answerMy": "စည်ကားသောလေဆိပ်အနီး နေသူများအတွက် ဘဝသည် မနှစ်မြို့ဖွယ်ဖြစ်မည်။"
+        },
+        {
+          "blockId": "5C-32",
+          "question": "4. A few days after the interview, I received an email which offered me a job.",
+          "questionMy": "အင်တာဗျူးပြီး ရက်အနည်းငယ်တွင် အလုပ်ကမ်းလှမ်းသောအီးမေးလ် ရခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            59
+          ],
+          "answer": "A few days after the interview, I received an email offering me a job.",
+          "answerMy": "အင်တာဗျူးပြီး ရက်အနည်းငယ်တွင် အလုပ်ကမ်းလှမ်းသောအီးမေးလ် ရခဲ့သည်။"
+        },
+        {
+          "blockId": "5C-33",
+          "question": "5. The waiting room was empty except for a young man who was reading by the window.",
+          "questionMy": "စောင့်ခန်းတွင် ပြတင်းပေါက်နား စာဖတ်နေသောလူငယ်မှလွဲ၍ ဘယ်သူမျှမရှိပါ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            59
+          ],
+          "answer": "The waiting room was empty except for a young man reading by the window.",
+          "answerMy": "စောင့်ခန်းတွင် ပြတင်းပေါက်နား စာဖတ်နေသောလူငယ်မှလွဲ၍ ဘယ်သူမျှမရှိပါ။"
+        },
+        {
+          "blockId": "5C-34",
+          "question": "6. A number of suggestions which were made at the meeting were not practical.",
+          "questionMy": "အစည်းအဝေးတွင် ပေးခဲ့သည့်အကြံပြုချက်အချို့ လက်တွေ့မကျခဲ့ပါ။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            59
+          ],
+          "answer": "A number of suggestions made at the meeting were not practical.",
+          "answerMy": "အစည်းအဝေးတွင် ပေးခဲ့သည့်အကြံပြုချက်အချို့ လက်တွေ့မကျခဲ့ပါ။"
+        },
+        {
+          "blockId": "5C-35",
+          "question": "7. Kyaw Kyaw has a brother who is working at ABC Bank and a sister who is studying economics at the university.",
+          "questionMy": "ကျော်ကျော်တွင် ABC ဘဏ်၌ အလုပ်လုပ်သောအစ်ကို/ညီနှင့် တက္ကသိုလ်၌ စီးပွားရေးပညာသင်နေသော အစ်မ/ညီမရှိသည်။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            59
+          ],
+          "answer": "Kyaw Kyaw has a brother working at ABC Bank and a sister studying economics at the university.",
+          "answerMy": "ကျော်ကျော်တွင် ABC ဘဏ်၌ အလုပ်လုပ်သောအစ်ကို/ညီနှင့် တက္ကသိုလ်၌ စီးပွားရေးပညာသင်နေသော အစ်မ/ညီမရှိသည်။"
+        },
+        {
+          "blockId": "5C-36",
+          "question": "8. The boy who had been injured in the accident was sent to the hospital.",
+          "questionMy": "မတော်တဆမှုတွင် ဒဏ်ရာရခဲ့သောကောင်လေးကို ဆေးရုံပို့ခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            59
+          ],
+          "answer": "The boy injured in the accident was sent to the hospital.",
+          "answerMy": "မတော်တဆမှုတွင် ဒဏ်ရာရခဲ့သောကောင်လေးကို ဆေးရုံပို့ခဲ့သည်။"
+        },
+        {
+          "blockId": "5C-37",
+          "question": "9. The train which she was about to take was late.",
+          "questionMy": "သူမစီးမည့်ရထား နောက်ကျခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            59
+          ],
+          "answer": "The train she was about to take was late.",
+          "answerMy": "သူမစီးမည့်ရထား နောက်ကျခဲ့သည်။"
+        },
+        {
+          "blockId": "5C-38",
+          "question": "10. The roof of the shed which was damaged by the storm last night has now been repaired.",
+          "questionMy": "မနေ့ညမုန်တိုင်းကြောင့် ပျက်စီးသောတဲခေါင်မိုးကို ယခု ပြင်ပြီးပြီ။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            59
+          ],
+          "answer": "The roof of the shed damaged by the storm last night has now been repaired.",
+          "answerMy": "မနေ့ညမုန်တိုင်းကြောင့် ပျက်စီးသောတဲခေါင်မိုးကို ယခု ပြင်ပြီးပြီ။"
+        },
+        {
+          "blockId": "5C-39",
+          "question": "11. An ambulance came to take the climber whom I helped.",
+          "questionMy": "ကျွန်ုပ်ကူညီခဲ့သော တောင်တက်သမားကို ခေါ်ရန် လူနာတင်ယာဉ် ရောက်လာခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            59
+          ],
+          "answer": "An ambulance came to take the climber I helped.",
+          "answerMy": "ကျွန်ုပ်ကူညီခဲ့သော တောင်တက်သမားကို ခေါ်ရန် လူနာတင်ယာဉ် ရောက်လာခဲ့သည်။"
+        },
+        {
+          "blockId": "5C-40",
+          "question": "12. The man who was arrested by the police was a great gambler.",
+          "questionMy": "ရဲဖမ်းဆီးခဲ့သောသူသည် လောင်းကစားသမားကြီးဖြစ်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            59
+          ],
+          "answer": "The man arrested by the police was a great gambler.",
+          "answerMy": "ရဲဖမ်းဆီးခဲ့သောသူသည် လောင်းကစားသမားကြီးဖြစ်သည်။"
+        },
+        {
+          "blockId": "5C-41",
+          "question": "13. The dress that my aunt bought for me yesterday does not fit me.",
+          "questionMy": "မနေ့က အဒေါ်ဝယ်ပေးသောဝတ်စုံသည် ကျွန်ုပ်နှင့် မတော်ပါ။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            59
+          ],
+          "answer": "The dress my aunt bought for me yesterday does not fit me.",
+          "answerMy": "မနေ့က အဒေါ်ဝယ်ပေးသောဝတ်စုံသည် ကျွန်ုပ်နှင့် မတော်ပါ။"
+        },
+        {
+          "blockId": "5C-42",
+          "question": "14. The men who we saw in the woods were skilful hunters.",
+          "questionMy": "တောထဲတွင် တွေ့ခဲ့သူများသည် ကျွမ်းကျင်မုဆိုးများ ဖြစ်ကြသည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            59
+          ],
+          "answer": "The men we saw in the woods were skilful hunters.",
+          "answerMy": "တောထဲတွင် တွေ့ခဲ့သူများသည် ကျွမ်းကျင်မုဆိုးများ ဖြစ်ကြသည်။"
+        },
+        {
+          "blockId": "5C-43",
+          "question": "15. The man who I spoke to just now is really helpful.",
+          "questionMy": "ယခုပင် စကားပြောခဲ့သူသည် တကယ်အကူအညီပေးတတ်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            59
+          ],
+          "answer": "The man I spoke to just now is really helpful.",
+          "answerMy": "ယခုပင် စကားပြောခဲ့သူသည် တကယ်အကူအညီပေးတတ်သည်။"
+        },
+        {
+          "blockId": "5C-46",
+          "question": "2. Blood is stored in the blood bank. It has been tested for HIV and other infections.\nThe blood ______.",
+          "questionMy": "သွေးဘဏ်တွင် သွေးသိမ်းထားသည်။ HIV နှင့် အခြားကူးစက်ရောဂါများအတွက် စစ်ထားသည်။\nThe blood ______။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            59
+          ],
+          "answer": "The blood tested for HIV and other infections is stored in the blood bank.",
+          "answerMy": "သွေးဘဏ်တွင် သွေးသိမ်းထားသည်။ HIV နှင့် အခြားကူးစက်ရောဂါများအတွက် စစ်ထားသည်။"
+        },
+        {
+          "blockId": "5C-47",
+          "question": "3. A girl came and gave me some cakes last night. She lives next door.\nThe girl ______.",
+          "questionMy": "မိန်းကလေးတစ်ဦး မနေ့ညက ကိတ်မုန့်များပေးခဲ့သည်။ သူမ အိမ်နီးချင်းတွင် နေသည်။\nThe girl ______။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            60
+          ],
+          "answer": "The girl living next door came and gave me some cakes last night.",
+          "answerMy": "မိန်းကလေးတစ်ဦး မနေ့ညက ကိတ်မုန့်များပေးခဲ့သည်။ သူမ အိမ်နီးချင်းတွင် နေသည်။"
+        },
+        {
+          "blockId": "5C-48",
+          "question": "4. The guest singer was pleased to see her fans. They were cheering and waving their scarves.\nThe guest singer was pleased to see her fans ______.",
+          "questionMy": "ဧည့်သည်အဆိုတော်က ပရိသတ်များကိုတွေ့၍ ဝမ်းသာခဲ့သည်။ သူတို့ အားပေးအော်ဟစ်ကာ ပဝါဝှေ့ရမ်းနေကြသည်။",
+          "status": "source-derived",
+          "kind": "suggested",
+          "sourcePages": [
+            60
+          ],
+          "answer": "The guest singer was pleased to see her fans cheering and waving their scarves.",
+          "answerMy": "ဧည့်သည်အဆိုတော်က ပရိသတ်များကိုတွေ့၍ ဝမ်းသာခဲ့သည်။ သူတို့ အားပေးအော်ဟစ်ကာ ပဝါဝှေ့ရမ်းနေကြသည်။"
+        },
+        {
+          "blockId": "5C-49",
+          "question": "5. They were rowing in the stream. It flows into a river.\nThey were rowing in the stream ______.",
+          "questionMy": "သူတို့ ချောင်းထဲ လှေလှော်နေသည်။ ချောင်းသည် မြစ်တစ်ခုထဲ စီးဝင်သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            60
+          ],
+          "answer": "They were rowing in the stream flowing into a river.",
+          "answerMy": "သူတို့ ချောင်းထဲ လှေလှော်နေသည်။ ချောင်းသည် မြစ်တစ်ခုထဲ စီးဝင်သည်။"
+        },
+        {
+          "blockId": "5C-50",
+          "question": "6. The students went on an excursion to a factory. They were led by their teachers.\nThe students ______.",
+          "questionMy": "ကျောင်းသားများ စက်ရုံသို့ လေ့လာရေးသွားခဲ့သည်။ ဆရာများက ဦးဆောင်ခဲ့သည်။",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            60
+          ],
+          "answer": "The students led by their teachers went on an excursion to a factory.",
+          "answerMy": "ကျောင်းသားများ စက်ရုံသို့ လေ့လာရေးသွားခဲ့သည်။ ဆရာများက ဦးဆောင်ခဲ့သည်။"
+        }
+      ]
+    },
+    {
+      "code": "5D",
+      "title": "Listening and Speaking",
+      "items": [
+        {
+          "blockId": "5D-1",
+          "question": "1. We can absorb a foreign language.",
+          "questionMy": "နိုင်ငံခြားဘာသာစကားကို သင်ယူစုပ်ယူနိုင်သည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            60
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "5D-2",
+          "question": "2. We can get opportunities to network.",
+          "questionMy": "အဆက်အသွယ်တည်ဆောက်ရန် အခွင့်အလမ်းရနိုင်သည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            60
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "5D-4",
+          "question": "4. We can build confidence.",
+          "questionMy": "မိမိကိုယ်ကို ယုံကြည်မှုတည်ဆောက်နိုင်သည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            60
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "5D-5",
+          "question": "5. We become aware of the culture of a country.",
+          "questionMy": "နိုင်ငံတစ်ခု၏ယဉ်ကျေးမှုကို သိရှိလာသည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            60
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "5D-7",
+          "question": "1. At home, we feel comfortable because we are in a ______ that has known us.",
+          "questionMy": "အိမ်တွင် မိမိကိုသိသော ______ အတွင်းရှိသဖြင့် သက်သောင့်သက်သာ ခံစားရသည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            60
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "5D-8",
+          "question": "2. The discomfort we experience in a foreign environment will help us ______.",
+          "questionMy": "နိုင်ငံခြားဝန်းကျင်တွင် တွေ့ရသော အဆင်မပြေမှုက မိမိတို့ကို ______ ရန် ကူညီမည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            60
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "5D-9",
+          "question": "3. If we can ______ ourselves to foreign situations, we will realize that we can do things.",
+          "questionMy": "နိုင်ငံခြားအခြေအနေများနှင့် မိမိကိုယ်ကို ______ နိုင်လျှင် လုပ်နိုင်စွမ်းရှိကြောင်း သိလာမည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            60
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "5D-10",
+          "question": "4. The obstacles we face when travelling become ______.",
+          "questionMy": "ခရီးသွားစဉ် တွေ့သောအတားအဆီးများသည် ______ ဖြစ်လာသည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            60
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "5D-11",
+          "question": "5. By travelling to a foreign country, we can understand its cultural norms and ______.",
+          "questionMy": "နိုင်ငံခြားသို့ ခရီးသွားခြင်းဖြင့် ထိုနိုင်ငံ၏ ယဉ်ကျေးမှုစံများနှင့် ______ ကို နားလည်နိုင်သည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            60
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "5D-12",
+          "question": "6. Making friendships can make the world ______ and connected to its people.",
+          "questionMy": "မိတ်ဖွဲ့ခြင်းက ကမ္ဘာကို ______ ဖြစ်စေပြီး လူတို့နှင့် ဆက်သွယ်စေသည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            60
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "5D-13",
+          "question": "7. Travelling abroad is really the best way to practise foreign language ______.",
+          "questionMy": "နိုင်ငံခြားခရီးသွားခြင်းသည် နိုင်ငံခြားဘာသာစကား ______ ကို လေ့ကျင့်ရန် အကောင်းဆုံးနည်းဖြစ်သည်။",
+          "status": "missing-audio",
+          "kind": "open",
+          "sourcePages": [
+            60
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "5D-14",
+          "question": "C. In pairs, ask each other about a place you would like to visit. Choose a place from one of the five ASEAN countries you have studied. Include the following points:",
+          "questionMy": "C။ လေ့လာခဲ့သော အာဆီယံငါးနိုင်ငံမှ သွားလိုသည့်နေရာတစ်ခုကို ရွေး၍ နှစ်ယောက်တွဲ အပြန်အလှန်မေးပါ။ အောက်ပါအချက်များ ပါဝင်စေပါ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            60
+          ],
+          "answer": null,
+          "answerMy": null
+        }
+      ]
+    },
+    {
+      "code": "5E",
+      "title": "Writing",
+      "items": [
+        {
+          "blockId": "5E-23",
+          "question": "A–E: ______",
+          "questionMy": "A–E: ______",
+          "status": "source-derived",
+          "kind": "closed",
+          "sourcePages": [
+            62
+          ],
+          "answer": "D, A, E, C, B",
+          "answerMy": "D → A → E → C → B"
+        },
+        {
+          "blockId": "5E-25",
+          "question": "______",
+          "questionMy": "______",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            62
+          ],
+          "answer": null,
+          "answerMy": null
+        },
+        {
+          "blockId": "5E-26",
+          "question": "C. In groups, choose an interesting place you have visited and write a travelogue about it.",
+          "questionMy": "C။ အုပ်စုလိုက် ရောက်ဖူးသောစိတ်ဝင်စားဖွယ်နေရာတစ်ခု ရွေး၍ ခရီးသွားမှတ်တမ်းရေးပါ။",
+          "status": "personal-response",
+          "kind": "open",
+          "sourcePages": [
+            62
+          ],
+          "answer": null,
+          "answerMy": null
+        }
+      ]
+    }
+  ]
+}

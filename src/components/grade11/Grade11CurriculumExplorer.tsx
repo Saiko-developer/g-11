@@ -1,3 +1,4 @@
+import { Grade11Review1View, Grade11Poem1View } from "@/components/grade11/Grade11Revision";
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import {
@@ -17,7 +18,7 @@ const GROUPS: { title: string; hint: string; kinds: G11SkillKind[] }[] = [
   { title: "Knowledge about Language", hint: "Build the system", kinds: ["vocabulary", "grammar"] },
 ];
 
-type View = { eyebrow: string; title: string; detail?: string; pages: number[]; list?: boolean; unit?: number; kind?: G11SkillKind };
+type View = { extra?: "review1" | "poem1"; eyebrow: string; title: string; detail?: string; pages: number[]; list?: boolean; unit?: number; kind?: G11SkillKind };
 
 export function Grade11CurriculumExplorer() {
   const [openUnit, setOpenUnit] = useState<number | null>(1);
@@ -40,7 +41,9 @@ export function Grade11CurriculumExplorer() {
             {view.detail && <p className="mt-1 text-sm text-muted-foreground">{view.detail}</p>}
           </div>
         </header>
-        {view.unit && view.kind && hasGrade11Text(view.unit) ? (
+        {view.extra ? (
+          <div className="mt-5" data-saya-home-section>{view.extra === "review1" ? <Grade11Review1View /> : <Grade11Poem1View />}</div>
+        ) : view.unit && view.kind && hasGrade11Text(view.unit) ? (
           <div data-saya-home-section>
             <Grade11TextLesson unit={view.unit} kind={view.kind} />
           </div>
@@ -86,13 +89,13 @@ export function Grade11CurriculumExplorer() {
             <div key={node.id} className="flex items-center gap-3 rounded-xl border border-dashed border-accent/60 bg-accent/15 px-4 py-2.5">
               <Sparkles className="h-4 w-4 shrink-0 text-accent-foreground" />
               <button type="button"
-                onClick={() => setView({ eyebrow: "Revision", title: node.review, pages: node.reviewPages, list: true })}
+                onClick={() => setView({ eyebrow: "Revision", title: node.review, pages: node.reviewPages, list: true, extra: node.id === "r1" ? "review1" : undefined })}
                 className="cursor-pointer text-xs font-bold uppercase tracking-[0.18em] text-accent-foreground underline-offset-4 hover:underline">
                 {node.review}
               </button>
               <span className="h-px flex-1 bg-accent/50" />
               <button type="button"
-                onClick={() => setView({ eyebrow: "Poetry", title: node.poem, pages: node.poemPages })}
+                onClick={() => setView({ eyebrow: "Poetry", title: node.poem, pages: node.poemPages, extra: node.id === "r1" ? "poem1" : undefined })}
                 className="cursor-pointer text-xs font-semibold uppercase tracking-[0.14em] text-accent-foreground underline-offset-4 hover:underline">
                 {node.poem}
               </button>
