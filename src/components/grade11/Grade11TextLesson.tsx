@@ -17,6 +17,7 @@ import unit1 from "@/data/grade11/textbook/unit1.json";
 import unit2 from "@/data/grade11/textbook/unit2.json";
 import unit3 from "@/data/grade11/textbook/unit3.json";
 import type { G11SkillKind } from "@/data/grade11/syllabus";
+import { Grade11Unit1Lesson } from "@/components/grade11/Grade11Unit1Lesson";
 
 /** Optional `a` = answer key (enables Check/Reveal), `my` = Burmese translation. */
 type Block = {
@@ -76,6 +77,11 @@ function split(blocks: Block[]) {
 }
 
 export function Grade11TextLesson({ unit, kind }: { unit: number; kind: G11SkillKind }) {
+  if (unit === 1) return <Grade11Unit1Lesson key={kind} kind={kind} />;
+  return <LegacyGrade11TextLesson key={`${unit}-${kind}`} unit={unit} kind={kind} />;
+}
+
+function LegacyGrade11TextLesson({ unit, kind }: { unit: number; kind: G11SkillKind }) {
   const section = UNITS[unit]?.find((s) => s.code === `${unit}${LETTER[kind]}`);
   const { lesson, exercises } = useMemo(() => split(section?.blocks ?? []), [section]);
   const [answers, setAnswers] = useState<Record<string, string>>({});
