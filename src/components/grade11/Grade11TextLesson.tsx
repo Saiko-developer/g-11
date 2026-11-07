@@ -187,18 +187,20 @@ export function Grade11TextLesson({ unit, kind }: { unit: number; kind: G11Skill
   );
 }
 
-function TranslateSlot({ label, small }: { label: string; small?: boolean }) {
+function TranslateSlot({ label, small, text }: { label: string; small?: boolean; text?: string }) {
   const [open, setOpen] = useState(false);
   return (
     <div className={small ? "mt-2" : ""}>
       <Button size="sm" variant={small ? "ghost" : "outline"} className="h-7 gap-1 text-xs" onClick={() => setOpen((v) => !v)}>
-        <Languages className="h-3 w-3" /> {open ? "Hide" : label}
+        <Languages className="h-3 w-3" /> {open ? "Hide Myanmar Translation" : label}
       </Button>
-      {open && (
+      {open && (text ? (
+        <p className="mt-2 rounded-lg border border-primary/20 bg-primary/5 p-3 text-sm leading-relaxed">{text}</p>
+      ) : (
         <p className="mt-2 rounded-lg border border-dashed border-border bg-muted/40 p-2 text-xs text-muted-foreground">
           🔜 မြန်မာဘာသာပြန်ကို မကြာမီ ထည့်ပေးပါမည်။
         </p>
-      )}
+      ))}
     </div>
   );
 }

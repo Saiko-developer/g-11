@@ -4,6 +4,7 @@ import {
   ArrowLeft, BookOpen, ChevronDown, Headphones, ListChecks, MessageSquare, PenLine, SpellCheck, Sparkles, Type,
 } from "lucide-react";
 import { Grade11TextLesson, hasGrade11Text } from "@/components/grade11/Grade11TextLesson";
+import { SayaOwlHome } from "@/components/SayaOwlHome";
 import { G11_SYLLABUS, pageUrl, type G11SkillKind } from "@/data/grade11/syllabus";
 
 const SKILL_ICONS: Record<G11SkillKind, typeof BookOpen> = {
@@ -40,7 +41,9 @@ export function Grade11CurriculumExplorer() {
           </div>
         </header>
         {view.unit && view.kind && hasGrade11Text(view.unit) ? (
-          <Grade11TextLesson unit={view.unit} kind={view.kind} />
+          <div data-saya-home-section>
+            <Grade11TextLesson unit={view.unit} kind={view.kind} />
+          </div>
         ) : view.pages.length > 0 ? (
           <div className="mt-5 space-y-4">
             {view.pages.map((n) => (
@@ -58,6 +61,8 @@ export function Grade11CurriculumExplorer() {
         <Link to="/tutor" className="mt-5 inline-flex rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">
           🦉 ဆရာဇီးကွက်ကို မေးမည်
         </Link>
+        <SayaOwlHome lessonContext={`Grade 11 English · ${view.eyebrow} · ${view.title}`} />
+        {/* SayaOwlHome reads the visible lesson text from [data-saya-home-section]. */}
       </div>
     );
   }
