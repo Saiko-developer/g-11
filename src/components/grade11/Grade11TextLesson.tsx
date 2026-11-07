@@ -206,7 +206,7 @@ function QuestionCard({ b, instructions, context, onAnswer, noStructure }: {
         </ToggleReveal>
         {!noStructure && (
           <ToggleReveal label="Sentence Structure" icon={Sparkles} tone="primary">
-            <StructureBreakdown questionText={text} sentenceMy={b.my?.replace(/^\s*(\d+|[a-z])[.)]\s+/i, "")} />
+            <StructureBreakdown questionText={text} />
           </ToggleReveal>
         )}
       </div>
