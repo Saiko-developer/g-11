@@ -1,3 +1,7 @@
+import {
+  UNIT1_READING_C_WORDS,
+  UNIT1_READING_C_STRUCTURE,
+} from "@/data/grade11/unit1ReadingStructure";
 import { useEffect, useState } from "react";
 import { Languages, PenLine, Sparkles } from "lucide-react";
 import { OwlBadge, StructureBreakdown, ToggleReveal } from "@/components/lesson/ExerciseKit";
@@ -150,10 +154,10 @@ export function Grade11Unit1Workspace({ kind }: { kind: G11SkillKind }) {
                   <PenLine className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                   {ex.instruction.x}
                 </h3>
-                {kind === "writing" || ex.instruction.id === "1A-36" ? (
+                {kind === "writing" || ["1A-0", "1A-28"].includes(ex.instruction.id) ? (
                   <p className="mt-2 text-sm text-muted-foreground">{ex.instruction.my}</p>
                 ) : (
-                  !(kind === "reading" && ex.instruction.id !== "1A-0") && (
+                  (kind !== "reading" || ex.instruction.id === "1A-36") && (
                     <ToggleReveal label="Translate Instructions" icon={Languages}>
                       {ex.instruction.my}
                     </ToggleReveal>
@@ -173,12 +177,18 @@ export function Grade11Unit1Workspace({ kind }: { kind: G11SkillKind }) {
                           instructions={ex.instruction.x}
                           value={answers[block.id] ?? ""}
                           textarea={kind === "reading"}
-                          directMy={ex.instruction.id === "1A-36"}
-                          translate={kind !== "reading" || ex.instruction.id === "1A-0"}
+                          directMy={false}
+                          translate={
+                            kind !== "reading" ||
+                            ["1A-0", "1A-28", "1A-36"].includes(ex.instruction.id)
+                          }
                           reveal={
                             !(kind === "reading" && ["1A-16", "1A-28"].includes(ex.instruction.id))
                           }
-                          noStructure={kind !== "vocabulary" || ex.instruction.id === "1B-4"}
+                          noStructure={
+                            ex.instruction.id !== "1A-36" &&
+                            (kind !== "vocabulary" || ex.instruction.id === "1B-4")
+                          }
                           onAnswer={(value) => setAnswer(block.id, value)}
                         />
                       );
@@ -188,8 +198,12 @@ export function Grade11Unit1Workspace({ kind }: { kind: G11SkillKind }) {
                         key={block.id}
                         block={block}
                         scanUrl={scanUrl}
-                        directMy={kind === "writing"}
-                        hideMy={kind === "reading" && ex.instruction.id !== "1A-0"}
+                        directMy={kind === "writing" || /^1A-(18|19|20|21|22)$/.test(block.id)}
+                        hideMy={
+                          kind === "reading" &&
+                          ex.instruction.id !== "1A-0" &&
+                          !/^1A-(18|19|20|21|22)$/.test(block.id)
+                        }
                       />
                     );
                   })}
@@ -377,7 +391,40 @@ function Question({
           )}
           {!noStructure && (
             <ToggleReveal label="Sentence Structure" icon={Sparkles} tone="primary">
-              <StructureBreakdown questionText={block.x} />
+              {UNIT1_READING_C_WORDS[block.id] ? (
+                <div className="space-y-3">
+                  <p lang="my">{UNIT1_READING_C_STRUCTURE[block.id]}</p>
+                  <table className="w-full border-collapse text-sm">
+                    <caption className="pb-2 text-left" lang="my">
+                      စကားလုံးတစ်လုံးချင်း အဓိပ္ပာယ်ဖော်ပြချက်
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th scope="col" lang="my" className="border border-border p-2">
+                          အင်္ဂလိပ်စကားလုံး
+                        </th>
+                        <th scope="col" lang="my" className="border border-border p-2">
+                          မြန်မာအဓိပ္ပာယ်
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {UNIT1_READING_C_WORDS[block.id].map(([word, meaning], i) => (
+                        <tr key={i}>
+                          <td lang="en" className="border border-border p-2">
+                            {word}
+                          </td>
+                          <td lang="my" className="border border-border p-2">
+                            {meaning}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              ) : (
+                <StructureBreakdown questionText={block.x} />
+              )}
             </ToggleReveal>
           )}
         </div>
