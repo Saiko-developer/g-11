@@ -1,5 +1,20 @@
 {
   "version": "7",
   "dialect": "postgresql",
-  "entries": []
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1794029262186,
+      "tag": "0000_restore_full_schema",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1794029317193,
+      "tag": "0001_support_and_announcements",
+      "breakpoints": true
+    }
+  ]
 }
