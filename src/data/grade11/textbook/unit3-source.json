@@ -1,0 +1,789 @@
+{
+  "source_file": "13575. Grade (11) English New Syllabus-1-48.pdf",
+  "pdf_pages": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "textbook_pages": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "canonical_content": "PDF transcription and Burmese translation; original printed writing model restored, no added lesson sentences",
+  "answer_keys": "31 source-derived short answers; not an official printed answer key",
+  "missing_audio": "No Unit 3 audio supplied; listening answers are not guessed",
+  "source_scans": [
+    {
+      "pdf_page": 29,
+      "purpose": "Original memory diagram; full page retained"
+    },
+    {
+      "pdf_page": 32,
+      "purpose": "Damaged fragments in Vocabulary B6–B8; numbered responses refer to original scan"
+    },
+    {
+      "pdf_page": 35,
+      "purpose": "Damaged fragment in Nilar speaking notes; original scan retained"
+    }
+  ],
+  "corrections": [
+    "Restored H₂O formula and numbered questions",
+    "Restored ten bracketed grammar verbs",
+    "Replaced paraphrased listening statements with original text",
+    "Replaced writing summary with full printed model",
+    "Restored memory diagram and bold words"
+  ],
+  "blocks": [
+    {
+      "id": "3A-0",
+      "sourcePage": 28
+    },
+    {
+      "id": "3A-1",
+      "sourcePage": 28
+    },
+    {
+      "id": "3A-2",
+      "sourcePage": 28
+    },
+    {
+      "id": "3A-3",
+      "sourcePage": 28
+    },
+    {
+      "id": "3A-4",
+      "sourcePage": 28
+    },
+    {
+      "id": "3A-5",
+      "sourcePage": 28
+    },
+    {
+      "id": "3A-6",
+      "sourcePage": 28
+    },
+    {
+      "id": "3A-memory-types",
+      "sourcePage": 28
+    },
+    {
+      "id": "3A-7",
+      "sourcePage": 28
+    },
+    {
+      "id": "3A-8",
+      "sourcePage": 28
+    },
+    {
+      "id": "3A-9",
+      "sourcePage": 29
+    },
+    {
+      "id": "3A-10",
+      "sourcePage": 29
+    },
+    {
+      "id": "3A-11",
+      "sourcePage": 29
+    },
+    {
+      "id": "3A-12",
+      "sourcePage": 29
+    },
+    {
+      "id": "3A-short-long-term",
+      "sourcePage": 29
+    },
+    {
+      "id": "3A-memory-diagram",
+      "sourcePage": 29
+    },
+    {
+      "id": "3A-13",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-emotions",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-14",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-15",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-16",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-17",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-18",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-19",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-20",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-21",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-22",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-23",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-24",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-25",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-26",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-27",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-28",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-29",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-30",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-31",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-32",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-33",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-34",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-35",
+      "sourcePage": 30
+    },
+    {
+      "id": "3A-36",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-37",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-38",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-39",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-40",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-41",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-42",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-43",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-44",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-45",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-46",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-47",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-48",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-49",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-50",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-51",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-52",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-53",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-54",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-55",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-56",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-57",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-58",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-59",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-60",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-61",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-62",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-63",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-64",
+      "sourcePage": 31
+    },
+    {
+      "id": "3A-65",
+      "sourcePage": 32
+    },
+    {
+      "id": "3A-66",
+      "sourcePage": 32
+    },
+    {
+      "id": "3A-67",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-0",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-1",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-2",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-3",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-4",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-5",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-6",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-7",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-8",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-9",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-10",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-11",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-source-page",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-12",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-13",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-14",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-15",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-16",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-17",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-18",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-19",
+      "sourcePage": 32
+    },
+    {
+      "id": "3B-20",
+      "sourcePage": 32
+    },
+    {
+      "id": "3C-0",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-1",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-2",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-3",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-4",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-5",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-6",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-7",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-8",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-9",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-10",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-11",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-12",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-13",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-14",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-15",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-16",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-17",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-18",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-19",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-20",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-21",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-22",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-23",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-24",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-25",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-26",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-27",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-28",
+      "sourcePage": 33
+    },
+    {
+      "id": "3C-29",
+      "sourcePage": 34
+    },
+    {
+      "id": "3C-30",
+      "sourcePage": 34
+    },
+    {
+      "id": "3C-31",
+      "sourcePage": 34
+    },
+    {
+      "id": "3C-32",
+      "sourcePage": 34
+    },
+    {
+      "id": "3C-33",
+      "sourcePage": 34
+    },
+    {
+      "id": "3C-34",
+      "sourcePage": 34
+    },
+    {
+      "id": "3C-35",
+      "sourcePage": 34
+    },
+    {
+      "id": "3C-36",
+      "sourcePage": 34
+    },
+    {
+      "id": "3C-37",
+      "sourcePage": 34
+    },
+    {
+      "id": "3C-38",
+      "sourcePage": 34
+    },
+    {
+      "id": "3C-39",
+      "sourcePage": 34
+    },
+    {
+      "id": "3D-0",
+      "sourcePage": 34
+    },
+    {
+      "id": "3D-1",
+      "sourcePage": 34
+    },
+    {
+      "id": "3D-2",
+      "sourcePage": 34
+    },
+    {
+      "id": "3D-3",
+      "sourcePage": 34
+    },
+    {
+      "id": "3D-4",
+      "sourcePage": 34
+    },
+    {
+      "id": "3D-5",
+      "sourcePage": 34
+    },
+    {
+      "id": "3D-6",
+      "sourcePage": 34
+    },
+    {
+      "id": "3D-7",
+      "sourcePage": 34
+    },
+    {
+      "id": "3D-8",
+      "sourcePage": 34
+    },
+    {
+      "id": "3D-9",
+      "sourcePage": 34
+    },
+    {
+      "id": "3D-10",
+      "sourcePage": 34
+    },
+    {
+      "id": "3D-11",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-12",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-14",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-15",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-16",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-17",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-18",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-13",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-19",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-20",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-21",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-22",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-23",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-24",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-25",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-26",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-27",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-28",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-29",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-30",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-31",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-32",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-33",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-34",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-35",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-36",
+      "sourcePage": 35
+    },
+    {
+      "id": "3D-37",
+      "sourcePage": 36
+    },
+    {
+      "id": "3D-38",
+      "sourcePage": 36
+    },
+    {
+      "id": "3D-39",
+      "sourcePage": 36
+    },
+    {
+      "id": "3D-40",
+      "sourcePage": 36
+    },
+    {
+      "id": "3E-0",
+      "sourcePage": 36
+    },
+    {
+      "id": "3E-1",
+      "sourcePage": 36
+    },
+    {
+      "id": "3E-2",
+      "sourcePage": 36
+    },
+    {
+      "id": "3E-3",
+      "sourcePage": 36
+    },
+    {
+      "id": "3E-5",
+      "sourcePage": 36
+    },
+    {
+      "id": "3E-6",
+      "sourcePage": 36
+    },
+    {
+      "id": "3E-7",
+      "sourcePage": 36
+    },
+    {
+      "id": "3E-8",
+      "sourcePage": 36
+    },
+    {
+      "id": "3E-9",
+      "sourcePage": 36
+    }
+  ]
+}

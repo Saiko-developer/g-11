@@ -17,6 +17,7 @@ import {
   UNIT1_SECTIONS,
   unit1ScanUrl,
   type Unit1Block,
+  type Unit1Section,
 } from "@/lib/grade11Unit1";
 
 const LETTER: Record<G11SkillKind, string> = {
@@ -28,9 +29,35 @@ const LETTER: Record<G11SkillKind, string> = {
   writing: "E",
 };
 
-/** Source-faithful Unit 1 pilot; shared Grade 10 lesson and AI code stays unchanged. */
+type SourceLessonProps = {
+  kind: G11SkillKind;
+  unitNumber: number;
+  sections: Unit1Section[];
+  answerKeys: Record<string, { answer: string; origin: "source-derived" }>;
+  scanUrl: (page: number) => string | null;
+};
+
 export function Grade11Unit1Lesson({ kind }: { kind: G11SkillKind }) {
-  const section = UNIT1_SECTIONS.find((s) => s.code === `1${LETTER[kind]}`)!;
+  return (
+    <Grade11SourceLesson
+      kind={kind}
+      unitNumber={1}
+      sections={UNIT1_SECTIONS}
+      answerKeys={UNIT1_KEYS}
+      scanUrl={unit1ScanUrl}
+    />
+  );
+}
+
+/** Verified Grade 11 content reuses the existing lesson controls and AI calls. */
+export function Grade11SourceLesson({
+  kind,
+  unitNumber,
+  sections,
+  answerKeys,
+  scanUrl,
+}: SourceLessonProps) {
+  const section = sections.find((s) => s.code === `${unitNumber}${LETTER[kind]}`)!;
   const { lesson, exercises } = splitUnit1(section);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const tasks = exercises.flatMap((ex) => ex.blocks.filter((b) => b.t === "q"));
@@ -66,7 +93,7 @@ export function Grade11Unit1Lesson({ kind }: { kind: G11SkillKind }) {
             </p>
           </ToggleReveal>
           {lesson.map((block) => (
-            <SourceBlock key={block.id} block={block} />
+            <SourceBlock key={block.id} block={block} scanUrl={scanUrl} />
           ))}
         </article>
         <section className="min-w-0 space-y-4" aria-label={`${section.title} exercises`}>
@@ -91,13 +118,15 @@ export function Grade11Unit1Lesson({ kind }: { kind: G11SkillKind }) {
                         <Question
                           key={block.id}
                           block={block}
+                          answerKey={answerKeys[block.id]}
+                          scanUrl={scanUrl}
                           instructions={ex.instruction.x}
                           noStructure={/find the bold-faced words/i.test(ex.instruction.x)}
                           onAnswer={(value) => setAnswer(block.id, value)}
                         />
                       );
                     if (matching) return null;
-                    return <SourceBlock key={block.id} block={block} />;
+                    return <SourceBlock key={block.id} block={block} scanUrl={scanUrl} />;
                   })}
                 </div>
                 {kind === "grammar" && questions.length > 0 && (
@@ -117,11 +146,11 @@ export function Grade11Unit1Lesson({ kind }: { kind: G11SkillKind }) {
           })}
           {writeFree && (
             <div className="rounded-2xl border border-border bg-card p-4">
-              <label htmlFor={`unit1-${kind}-response`} className="font-semibold">
+              <label htmlFor={`unit${unitNumber}-${kind}-response`} className="font-semibold">
                 ✍️ Your answer
               </label>
               <Textarea
-                id={`unit1-${kind}-response`}
+                id={`unit${unitNumber}-${kind}-response`}
                 rows={8}
                 value={answers.free ?? ""}
                 onChange={(event) => setAnswer("free", event.target.value)}
@@ -136,15 +165,15 @@ export function Grade11Unit1Lesson({ kind }: { kind: G11SkillKind }) {
   );
 }
 
-function SourceScan({ page }: { page: number }) {
-  const url = unit1ScanUrl(page);
+function SourceScan({ page, scanUrl }: { page: number; scanUrl: (page: number) => string | null }) {
+  const url = scanUrl(page);
   if (!url) return null;
   return (
     <figure className="mt-3 overflow-hidden rounded-xl border border-border">
       <a href={url} target="_blank" rel="noreferrer" aria-label={`Open textbook page ${page - 5}`}>
         <img
           src={url}
-          alt={`Grade 11 Unit 1 textbook page ${page - 5}`}
+          alt={`Grade 11 textbook page ${page - 5}`}
           loading="lazy"
           className="h-auto w-full"
         />
@@ -156,14 +185,32 @@ function SourceScan({ page }: { page: number }) {
   );
 }
 
-function SourceBlock({ block }: { block: Unit1Block }) {
-  if (block.t === "scan") return <SourceScan page={block.scanPage!} />;
+function SourceBlock({
+  block,
+  scanUrl,
+}: {
+  block: Unit1Block;
+  scanUrl: (page: number) => string | null;
+}) {
+  if (block.t === "scan")
+    return (
+      <div>
+        <SourceScan page={block.scanPage!} scanUrl={scanUrl} />
+        {block.my && (
+          <ToggleReveal label="Show Myanmar Translation" icon={Languages}>
+            <p className="whitespace-pre-line">{block.my}</p>
+          </ToggleReveal>
+        )}
+      </div>
+    );
   return (
     <div className={block.t === "para" ? "rounded-xl bg-secondary/50 p-4" : ""}>
       {block.t === "sub" || block.t === "h" ? (
         <h4 className="pt-2 font-semibold text-primary">{block.x}</h4>
       ) : (
-        <p className="whitespace-pre-line text-sm leading-relaxed">{block.x}</p>
+        <p className="whitespace-pre-line text-sm leading-relaxed">
+          <SourceText block={block} />
+        </p>
       )}
       {block.my && (
         <ToggleReveal label="Show Myanmar Translation" icon={Languages}>
@@ -172,6 +219,16 @@ function SourceBlock({ block }: { block: Unit1Block }) {
       )}
     </div>
   );
+}
+
+/** Preserve the textbook's bold-faced vocabulary without HTML in source data. */
+function SourceText({ block }: { block: Unit1Block }) {
+  const words = block.emphasis ?? [];
+  if (!words.length) return block.x;
+  const escaped = words.map((word) => word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  return block.x
+    .split(new RegExp(`(${escaped.join("|")})`, "g"))
+    .map((part, i) => (words.includes(part) ? <strong key={i}>{part}</strong> : part));
 }
 
 function MatchingColumns({ blocks }: { blocks: Unit1Block[] }) {
@@ -204,21 +261,25 @@ function MatchingColumns({ blocks }: { blocks: Unit1Block[] }) {
 
 function Question({
   block,
+  answerKey,
+  scanUrl,
   instructions,
   noStructure,
   onAnswer,
 }: {
   block: Unit1Block;
+  answerKey?: { answer: string };
+  scanUrl: (page: number) => string | null;
   instructions: string;
   noStructure: boolean;
   onAnswer: (value: string) => void;
 }) {
-  const key = UNIT1_KEYS[block.id];
+  const key = answerKey;
   const label = `Your answer: ${block.x}`;
   return (
     <div className="min-w-0 rounded-xl border border-border bg-background p-3">
       <p className="whitespace-pre-line text-sm font-medium leading-relaxed">{block.x}</p>
-      {block.scanPage && <SourceScan page={block.scanPage} />}
+      {block.scanPage && <SourceScan page={block.scanPage} scanUrl={scanUrl} />}
       {!block.scanPage && (
         <div className="mt-2 flex flex-wrap gap-2">
           <ToggleReveal label="Translate Question" icon={Languages}>

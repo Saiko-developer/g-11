@@ -1,752 +1,1537 @@
 [
- {
-  "code": "3A",
-  "title": "Reading",
-  "blocks": [
-   {
-    "t": "sub",
-    "x": "Pre-reading"
-   },
-   {
-    "t": "line",
-    "x": "1. Do you still remember any poems you learned from the previous grades? Name them."
-   },
-   {
-    "t": "q",
-    "x": "2. Are you good at remembering the names and faces of the people you have met?"
-   },
-   {
-    "t": "q",
-    "x": "3. Do you still remember the family holiday trip you went on as a young child?"
-   },
-   {
-    "t": "q",
-    "x": "4. What did you remember from the lesson you learned yesterday?"
-   },
-   {
-    "t": "sub",
-    "x": "Read the passage."
-   },
-   {
-    "t": "para",
-    "x": "The word 'memory' has three non-technical meanings: (1) something that we remember, e.g. a name, a number, a colour, or a taste; (2) the ability to remember or recall something as in: Yes, I remember that poem; and (3) the period of time that somebody is able to remember events as in: a frightful storm in recent memory. Technically, all books on psychology would say that there are three kinds of memory: (1) Episodic memory, (2) Semantic memory, and (3) Procedural memory."
-   },
-   {
-    "t": "h",
-    "x": "Episodic memory"
-   },
-   {
-    "t": "para",
-    "x": "This is our memory of events, situations, and places of our past. For instance, when we are asked about our first day at school, we think back and try to recall how old we were, who took us to school, what the name of the school was, whether we cried silently or aloud, etc. Similarly, when wishing to talk about a memorable family vacation, we draw upon our episodic memory to recall as much as possible all the details of that vacation."
-   },
-   {
-    "t": "h",
-    "x": "Semantic memory"
-   },
-   {
-    "t": "para",
-    "x": "This memory refers to all of our knowledge of the world around us. For instance, we know that cats and dogs are four-legged animals but at the same time we know that they are not the same. In the same way, we know that milk, coffee, and tea are liquid but one is different from the other two. We also know that fire is hot and ice is cold. Then, we are taught and we learn that two times two is four; five minus three leaves two; the molecular formula for water is HO; the chemical formula for the common salt is NaCl; and many, many more."
-   },
-   {
-    "t": "h",
-    "x": "Procedural memory"
-   },
-   {
-    "t": "para",
-    "x": "This memory helps us perform skills such as riding a bicycle or driving a car; playing the guitar or the piano; playing tennis, badminton, golf, soccer, etc.; and baking a cake or arranging flowers. In most cases, we just do not forget as we tend to in episodic or semantic memory. At most, our ability to perform those skills declines as we advance in years, and maybe one day we just do not have the strength to perform at all. Books on psychology also point out that there are short-term memory and long-term memory. For instance, when we are following a lecture, we store the incoming information in our short-term memory as we jot down notes as fast as we can. Then, when we can find time later, we go over our notes, link up the points and memorize them to store the information in our long-term memory. The diagram below should help you understand better the notions of short-term memory and long-term memory."
-   },
-   {
-    "t": "para",
-    "x": "From what has been presented so far, it should be quite plain to us that our memory is just like the database of a computer where a large amount of information on a large variety of subjects is stored and used as and when necessary. Without a database, the computer is useless. Similarly, without memory, we would be utterly helpless and useless. Just imagine how frustrated and upset we get when we cannot remember where we have put our car keys. Put yourself in the place of a student taking an examination and imagine he cannot recall a thing he has studied. You will then be able to understand how helpless he would feel. There is another role that memory plays in our lives. Very often, we \"take a stroll down memory's lane' - figuratively speaking - and go through various emotional states. Sometimes, we smile when we remember something pleasant, or frown when we recall something unpleasant. Thus, depending on what we happen to remember, our memories may be sweet or bitter."
-   },
-   {
-    "t": "sub",
-    "x": "Comprehension"
-   },
-   {
-    "t": "ins",
-    "x": "A. In pairs, find the bold-faced words in the passage that are similar in meaning to the following. There are two extra bold-faced words in the text."
-   },
-   {
-    "t": "line",
-    "x": "1. unforgettable"
-   },
-   {
-    "t": "q",
-    "x": "a. _______________"
-   },
-   {
-    "t": "line",
-    "x": "2. learn something so that you will remember it exactly"
-   },
-   {
-    "t": "q",
-    "x": "b. _______________"
-   },
-   {
-    "t": "line",
-    "x": "3. easy to understand"
-   },
-   {
-    "t": "q",
-    "x": "c. _______________"
-   },
-   {
-    "t": "line",
-    "x": "4. a collection of pieces of information stored in a computer system"
-   },
-   {
-    "t": "q",
-    "x": "d. _______________"
-   },
-   {
-    "t": "line",
-    "x": "5. feeling annoyed and impatient"
-   },
-   {
-    "t": "q",
-    "x": "e. _______________"
-   },
-   {
-    "t": "line",
-    "x": "6. having a strong feeling"
-   },
-   {
-    "t": "q",
-    "x": "f. _______________"
-   },
-   {
-    "t": "ins",
-    "x": "B. Complete each sentence below with a suitable word from Exercise A."
-   },
-   {
-    "t": "q",
-    "x": "Everybody understands his article as his writing is _______________ and direct."
-   },
-   {
-    "t": "q",
-    "x": "Her eyes were filled with tears to see a very _______________ moment of her family union."
-   },
-   {
-    "t": "q",
-    "x": "I can't _______________ that Swe Swe came to visit us last year."
-   },
-   {
-    "t": "q",
-    "x": "Our library keeps a _______________ of over ten thousand books on various subjects."
-   },
-   {
-    "t": "q",
-    "x": "My little sister is very intelligent; she can _______________ nursery rhymes in a short time."
-   },
-   {
-    "t": "q",
-    "x": "He felt _______________ when his friend did not understand what he was explaining."
-   },
-   {
-    "t": "ins",
-    "x": "C. Give a full-sentence answer to each question below."
-   },
-   {
-    "t": "line",
-    "x": "According to books on psychology, how many kinds of memory are there? What are they?"
-   },
-   {
-    "t": "line",
-    "x": "What does semantic memory refer to?"
-   },
-   {
-    "t": "line",
-    "x": "What do you do if you want to store the information in the long-term memory?"
-   },
-   {
-    "t": "line",
-    "x": "According to the text, what is memory compared to?"
-   },
-   {
-    "t": "line",
-    "x": "What will happen to a computer without a database?"
-   },
-   {
-    "t": "line",
-    "x": "How would you react when you remember something pleasant?"
-   },
-   {
-    "t": "line",
-    "x": "Read the extracts (a) and (b) of the two different poems, and say what type of memory the poets retrieved their information from."
-   },
-   {
-    "t": "line",
-    "x": "(a)"
-   },
-   {
-    "t": "line",
-    "x": "I wandered lonely as a cloud"
-   },
-   {
-    "t": "line",
-    "x": "That floats on high o'er vales and hills,"
-   },
-   {
-    "t": "line",
-    "x": "When all at once I saw a crowd,"
-   },
-   {
-    "t": "line",
-    "x": "A host of golden daffodils;"
-   },
-   {
-    "t": "line",
-    "x": "Beside the lake, beneath the trees,"
-   },
-   {
-    "t": "line",
-    "x": "Fluttering and dancing in the breeze."
-   },
-   {
-    "t": "line",
-    "x": "(b)"
-   },
-   {
-    "t": "line",
-    "x": "Oft in the stilly night,"
-   },
-   {
-    "t": "line",
-    "x": "Ere Slumber's chain has bound me,"
-   },
-   {
-    "t": "line",
-    "x": "Fond Memory brings the light"
-   },
-   {
-    "t": "line",
-    "x": "Of other days around me;"
-   },
-   {
-    "t": "line",
-    "x": "The smiles, the tears,"
-   },
-   {
-    "t": "line",
-    "x": "Of boyhood's years,"
-   },
-   {
-    "t": "line",
-    "x": "The words of love then spoken;"
-   },
-   {
-    "t": "line",
-    "x": "The eyes that shone,"
-   },
-   {
-    "t": "line",
-    "x": "Now dimmed and gone,"
-   },
-   {
-    "t": "line",
-    "x": "The cheerful hearts now broken!"
-   },
-   {
-    "t": "line",
-    "x": "Thus, in the stilly night,"
-   },
-   {
-    "t": "line",
-    "x": "Ere Slumber's chain has bound me,"
-   },
-   {
-    "t": "line",
-    "x": "Sad Memory brings the light"
-   },
-   {
-    "t": "line",
-    "x": "Of other days around me."
-   },
-   {
-    "t": "line",
-    "x": "You are strumming the guitar and singing a song. What type of memory are you drawing information from?"
-   },
-   {
-    "t": "line",
-    "x": "Bill and Bob are flying kites. What type of memory are they depending on?"
-   },
-   {
-    "t": "line",
-    "x": "You are taking an examination. What type of memory are you depending on?"
-   }
-  ]
- },
- {
-  "code": "3B",
-  "title": "Vocabulary",
-  "blocks": [
-   {
-    "t": "line",
-    "x": "Phrasal Verbs"
-   },
-   {
-    "t": "line",
-    "x": "A phrasal verb is a verb followed by an adverb, a preposition, or both. It is usually used with an idiomatic meaning. This meaning is often quite different from the literal meaning of the individual words."
-   },
-   {
-    "t": "line",
-    "x": "e.g. Books on psychology point out that there are short-term memory and long-term memory."
-   },
-   {
-    "t": "ins",
-    "x": "A. Study the following phrasal verbs."
-   },
-   {
-    "t": "line",
-    "x": "think back = remember"
-   },
-   {
-    "t": "line",
-    "x": "draw on / upon = use something as a source of supply"
-   },
-   {
-    "t": "line",
-    "x": "point out = make someone aware of something"
-   },
-   {
-    "t": "line",
-    "x": "jot down = write something quickly"
-   },
-   {
-    "t": "line",
-    "x": "go over = review"
-   },
-   {
-    "t": "line",
-    "x": "link up = join or become joined with something"
-   },
-   {
-    "t": "line",
-    "x": "go through = experience something"
-   },
-   {
-    "t": "line",
-    "x": "depend on = rely on something"
-   },
-   {
-    "t": "ins",
-    "x": "B. Complete the sentences with the correct forms of the phrasal verbs in Exercise A."
-   },
-   {
-    "t": "q",
-    "x": "The teacher ___________ the mistakes I had made in my essay."
-   },
-   {
-    "t": "q",
-    "x": "Khin Khin ___________ notes while she was listening to the lecture."
-   },
-   {
-    "t": "q",
-    "x": "He was proud of himself when he ___________ to all the things he had done for the company."
-   },
-   {
-    "t": "q",
-    "x": "You should ___________ your assignment before you submit it to your teacher."
-   },
-   {
-    "t": "q",
-    "x": "Kyu Kyu wrote this article by ___________ her own experience."
-   },
-   {
-    "t": "q",
-    "x": "The amount of money he has saved ___________ the job he is doing."
-   },
-   {
-    "t": "q",
-    "x": "The two universities have ___________ to do a project on rural development."
-   },
-   {
-    "t": "q",
-    "x": "To be able to do the job, you have to ___________ several months of training."
-   }
-  ]
- },
- {
-  "code": "3C",
-  "title": "Grammar",
-  "blocks": [
-   {
-    "t": "line",
-    "x": "Gerund and Infinitive with 'to'"
-   },
-   {
-    "t": "line",
-    "x": "Gerund"
-   },
-   {
-    "t": "line",
-    "x": "A gerund is a noun made from a verb by adding '-ing'. Gerunds can be used:"
-   },
-   {
-    "t": "line",
-    "x": "as the subject of a sentence."
-   },
-   {
-    "t": "line",
-    "x": "e.g. Smoking is not good for health."
-   },
-   {
-    "t": "line",
-    "x": "as the object of a sentence."
-   },
-   {
-    "t": "line",
-    "x": "e.g. I have finished cooking; dinner is ready."
-   },
-   {
-    "t": "line",
-    "x": "as the complement of a sentence."
-   },
-   {
-    "t": "line",
-    "x": "e.g. My favourite hobby is cooking."
-   },
-   {
-    "t": "line",
-    "x": "as the object of a preposition."
-   },
-   {
-    "t": "line",
-    "x": "e.g. She is afraid of going out alone at night."
-   },
-   {
-    "t": "line",
-    "x": "Infinitive with 'to'"
-   },
-   {
-    "t": "line",
-    "x": "An infinitive is the basic form of a verb, used with 'to'. Infinitives can be used:"
-   },
-   {
-    "t": "line",
-    "x": "as a subject at the beginning of a sentence."
-   },
-   {
-    "t": "line",
-    "x": "e.g. To travel around the country is my dream."
-   },
-   {
-    "t": "line",
-    "x": "as an object of the verb."
-   },
-   {
-    "t": "line",
-    "x": "e.g. He promised to return my book."
-   },
-   {
-    "t": "line",
-    "x": "after 'It + be + adjective'."
-   },
-   {
-    "t": "line",
-    "x": "e.g. It is important to study hard."
-   },
-   {
-    "t": "line",
-    "x": "It is necessary for students to wear uniforms every day."
-   },
-   {
-    "t": "line",
-    "x": "Note:"
-   },
-   {
-    "t": "line",
-    "x": "Some verbs such as 'begin', 'continue', 'hate', 'like', 'start' can be followed by an infinitive or a gerund without changing the meaning."
-   },
-   {
-    "t": "line",
-    "x": "e.g. He continued studying until after midnight."
-   },
-   {
-    "t": "line",
-    "x": "He continued to study until after midnight."
-   },
-   {
-    "t": "line",
-    "x": "Some verbs such as 'forget', 'remember', 'stop' can be followed by a gerund or an infinitive with 'to' but with a change in meaning."
-   },
-   {
-    "t": "line",
-    "x": "e.g. She stopped drinking coffee. (She never drinks coffee again.)"
-   },
-   {
-    "t": "line",
-    "x": "She stopped to drink coffee. (She stopped what she was doing and drank coffee.)"
-   },
-   {
-    "t": "line",
-    "x": "Verbs such as 'avoid', 'can't help', 'discuss', 'dislike', 'enjoy', 'finish', 'keep', 'mind', 'spend time', 'stop' are generally followed by gerunds."
-   },
-   {
-    "t": "line",
-    "x": "Verbs such as 'agree', 'arrange', 'decide', 'expect', 'forget', 'intend', 'offer', 'promise', 'remember', 'wish' are generally followed by infinitives with 'to'."
-   },
-   {
-    "t": "line",
-    "x": "Complete each sentence with an infinitive with 'to' or a gerund of the verbs given in brackets."
-   },
-   {
-    "t": "q",
-    "x": "I can't help -----about my school days in Japan."
-   },
-   {
-    "t": "q",
-    "x": "We all agreed ---- again next month."
-   },
-   {
-    "t": "q",
-    "x": "I finished ------the assignment just before the deadline."
-   },
-   {
-    "t": "q",
-    "x": "My mother promises ---- me a laptop if I pass the examination."
-   },
-   {
-    "t": "q",
-    "x": "I dislike -----for someone for a long time."
-   },
-   {
-    "t": "q",
-    "x": "He decided ---- a computer course during the holiday."
-   },
-   {
-    "t": "q",
-    "x": "I offered ---- the new student with his homework."
-   },
-   {
-    "t": "q",
-    "x": "It's very hot in here. Do you mind -----the window?"
-   },
-   {
-    "t": "q",
-    "x": "It is necessary for us to be able ---- English well to work in a five-star hotel."
-   },
-   {
-    "t": "q",
-    "x": "We intended ---- to the cinema, but in the end we stayed at home."
-   }
-  ]
- },
- {
-  "code": "3D",
-  "title": "Listening and Speaking",
-  "blocks": [
-   {
-    "t": "ins",
-    "x": "A. Listen to Soe Thu talking about his childhood events and determine if the following statements are TRUE or FALSE:"
-   },
-   {
-    "t": "line",
-    "x": "Soe Thu has a very good memory."
-   },
-   {
-    "t": "line",
-    "x": "Certain sights, smells, tastes, and sounds help him recall his childhood."
-   },
-   {
-    "t": "line",
-    "x": "He is discussing a recent event in his life."
-   },
-   {
-    "t": "line",
-    "x": "The smell and taste of mont-hin-gah remind him of his mother."
-   },
-   {
-    "t": "line",
-    "x": "In his youth, he loved mont-hin-gah so much that he ate it daily."
-   },
-   {
-    "t": "line",
-    "x": "The song 'You are my Sunshine' reminds him of his friend, Cho Cho."
-   },
-   {
-    "t": "line",
-    "x": "Soe Thu and Cho Cho typically sang the song while playing."
-   },
-   {
-    "t": "line",
-    "x": "He received a white cat as a present for his 7th birthday."
-   },
-   {
-    "t": "line",
-    "x": "His cat, Mi Phyu, used to sleep beside him."
-   },
-   {
-    "t": "line",
-    "x": "Soe Thu played with Mi Phyu before going to bed."
-   },
-   {
-    "t": "ins",
-    "x": "B. Study the expressions used in agreeing and disagreeing."
-   },
-   {
-    "t": "line",
-    "x": "Agreeing"
-   },
-   {
-    "t": "line",
-    "x": "Disagreeing"
-   },
-   {
-    "t": "line",
-    "x": "I agree with you."
-   },
-   {
-    "t": "line",
-    "x": "I totally agree."
-   },
-   {
-    "t": "line",
-    "x": "That's what I think too."
-   },
-   {
-    "t": "line",
-    "x": "I think you are right."
-   },
-   {
-    "t": "line",
-    "x": "Absolutely!"
-   },
-   {
-    "t": "line",
-    "x": "I'm afraid I disagree."
-   },
-   {
-    "t": "line",
-    "x": "I'm not sure about that."
-   },
-   {
-    "t": "line",
-    "x": "I see your point but ..."
-   },
-   {
-    "t": "line",
-    "x": "No, I don't think so."
-   },
-   {
-    "t": "ins",
-    "x": "C. Complete the following dialogue with the expressions given in the box."
-   },
-   {
-    "t": "line",
-    "x": "I don't think so"
-   },
-   {
-    "t": "line",
-    "x": "you're right"
-   },
-   {
-    "t": "line",
-    "x": "I agree with you"
-   },
-   {
-    "t": "line",
-    "x": "I see your point"
-   },
-   {
-    "t": "line",
-    "x": "Lin Lin        : We should have a time to relax after the exam. What do you think?"
-   },
-   {
-    "t": "q",
-    "x": "Thiri            : I think (1) _______________. How about going shopping to the City Mall? We can have a lot of fun there."
-   },
-   {
-    "t": "q",
-    "x": "Lin Lin        : (2) _______________. There's a lot of people and it is a bit noisy. I wish to go to a quiet place."
-   },
-   {
-    "t": "q",
-    "x": "Thiri            : (3) _______________, but we can have good food at the Food Court and can also watch movie if you like. You like watching movies, don't you? It's relaxing to watch a comedy."
-   },
-   {
-    "t": "q",
-    "x": "Lin Lin        : OK. (4) _______________ now. Let's watch a movie after having lunch."
-   },
-   {
-    "t": "ins",
-    "x": "D. In pairs, practise the dialogue."
-   },
-   {
-    "t": "ins",
-    "x": "E. Su Su and Nilar are at the canteen. Write a dialogue between Su Su and Nilar talking about junk food and organic food. Use the following information in the dialogue."
-   },
-   {
-    "t": "line",
-    "x": "Su Su          - likes to eat junk food; thinks they are tasty; thinks organic food is expensive."
-   },
-   {
-    "t": "line",
-    "x": "Nilar           - prefers to eat organic food; thinks junk food is not good for health; worried that her friend will become sick."
-   },
-   {
-    "t": "line",
-    "x": "You can begin the dialogue like this."
-   },
-   {
-    "t": "line",
-    "x": "Su Su        : Would you like to eat some crisps?"
-   },
-   {
-    "t": "line",
-    "x": "Nilar        : No, I try to avoid junk food."
-   },
-   {
-    "t": "line",
-    "x": "Su Su        : ........................."
-   }
-  ]
- },
- {
-  "code": "3E",
-  "title": "Writing",
-  "blocks": [
-   {
-    "t": "line",
-    "x": "Describing a past event"
-   },
-   {
-    "t": "line",
-    "x": "Study a past event written by a student."
-   },
-   {
-    "t": "line",
-    "x": "On a Sunday afternoon at a quiet bookshop, the writer noticed a girl closely following them from shelf to shelf. Suspicious that she might be a pickpocket, the writer turned around to confront her, only to discover she was actually trying to block the view of a tear in the back of the writer's skirt."
-   },
-   {
-    "t": "line",
-    "x": "Think about an unforgettable event in the past. Write a paragraph on 'An unforgettable"
-   },
-   {
-    "t": "line",
-    "x": "event in my life'. The following questions are given to help you."
-   },
-   {
-    "t": "line",
-    "x": "• What was the event and when did it happen?"
-   },
-   {
-    "t": "line",
-    "x": "• Where were you at that time and what were you doing there?"
-   },
-   {
-    "t": "line",
-    "x": "• How did you feel when it happened?"
-   },
-   {
-    "t": "line",
-    "x": "• What did you do then?"
-   },
-   {
-    "t": "line",
-    "x": "• How did the event end?"
-   }
-  ]
- }
+  {
+    "code": "3A",
+    "title": "Reading",
+    "blocks": [
+      {
+        "t": "ins",
+        "x": "Pre-reading",
+        "id": "3A-0",
+        "my": "မဖတ်မီ ဆွေးနွေးရန်",
+        "sourcePage": 28,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "1. Do you still remember any poems you learned from the previous grades? Name them.",
+        "id": "3A-1",
+        "my": "၁။ ယခင်အတန်းများတွင် သင်ခဲ့သော ကဗျာများကို မှတ်မိသေးပါသလား။ အမည်များကို ပြောပါ။",
+        "sourcePage": 28,
+        "area": "exercise",
+        "response": "personal"
+      },
+      {
+        "t": "q",
+        "x": "2. Are you good at remembering the names and faces of the people you have met?",
+        "id": "3A-2",
+        "my": "၂။ တွေ့ဆုံဖူးသူများ၏ အမည်နှင့် မျက်နှာကို သင် ကောင်းစွာမှတ်မိပါသလား။",
+        "sourcePage": 28,
+        "area": "exercise",
+        "response": "personal"
+      },
+      {
+        "t": "q",
+        "x": "3. Do you still remember the family holiday trip you went on as a young child?",
+        "id": "3A-3",
+        "my": "၃။ ငယ်စဉ်က မိသားစုနှင့် သွားခဲ့သော အားလပ်ရက်ခရီးကို မှတ်မိသေးပါသလား။",
+        "sourcePage": 28,
+        "area": "exercise",
+        "response": "personal"
+      },
+      {
+        "t": "q",
+        "x": "4. What did you remember from the lesson you learned yesterday?",
+        "id": "3A-4",
+        "my": "၄။ မနေ့က သင်ခဲ့သော သင်ခန်းစာမှ မည်သည့်အရာများကို မှတ်မိပါသလဲ။",
+        "sourcePage": 28,
+        "area": "exercise",
+        "response": "personal"
+      },
+      {
+        "t": "sub",
+        "x": "Read the passage.",
+        "id": "3A-5",
+        "my": "စာပိုဒ်ကို ဖတ်ပါ။",
+        "sourcePage": 28,
+        "area": "lesson"
+      },
+      {
+        "t": "para",
+        "x": "The word 'memory' has three non-technical meanings: (1) something that we remember, e.g. a name, a number, a colour, or a taste; (2) the ability to remember or recall something as in: Yes, I remember that poem; and (3) the period of time that somebody is able to remember events as in: a frightful storm in recent memory.",
+        "id": "3A-6",
+        "my": "“memory” ဟူသော စကားလုံးတွင် နည်းပညာရပ်ဆိုင်ရာ မဟုတ်သည့် အဓိပ္ပာယ်သုံးမျိုး ရှိသည်။ (၁) အမည်၊ နံပါတ်၊ အရောင်၊ အရသာ စသည့် မိမိမှတ်မိသောအရာ၊ (၂) “ဟုတ်ကဲ့၊ အဲဒီကဗျာကို ကျွန်ုပ် မှတ်မိပါတယ်” ဟူသည့် ဥပမာကဲ့သို့ တစ်စုံတစ်ခုကို မှတ်မိနိုင်ခြင်း သို့မဟုတ် ပြန်လည်သတိရနိုင်ခြင်း၊ (၃) “မကြာသေးမီ မှတ်မိသမျှကာလအတွင်း ကြောက်မက်ဖွယ်မုန်တိုင်းတစ်ခု” ဟူသကဲ့သို့ လူတစ်ဦးက ဖြစ်ရပ်များကို မှတ်မိနိုင်သည့် အချိန်ကာလ ဖြစ်သည်။",
+        "sourcePage": 28,
+        "area": "lesson"
+      },
+      {
+        "t": "para",
+        "x": "Technically, all books on psychology would say that there are three kinds of memory: (1) Episodic memory, (2) Semantic memory, and (3) Procedural memory.",
+        "my": "စိတ်ပညာရှုထောင့်အရ စာအုပ်များတွင် မှတ်ဉာဏ်သုံးမျိုးရှိကြောင်း ဖော်ပြကြသည်။ ၎င်းတို့မှာ (၁) ဖြစ်ရပ်ဆိုင်ရာမှတ်ဉာဏ်၊ (၂) အဓိပ္ပာယ်နှင့် အထွေထွေအသိပညာဆိုင်ရာမှတ်ဉာဏ်၊ (၃) လုပ်ဆောင်မှုကျွမ်းကျင်မှုဆိုင်ရာမှတ်ဉာဏ် တို့ဖြစ်သည်။",
+        "id": "3A-memory-types",
+        "area": "lesson",
+        "sourcePage": 28
+      },
+      {
+        "t": "h",
+        "x": "Episodic memory",
+        "id": "3A-7",
+        "my": "ဖြစ်ရပ်ဆိုင်ရာမှတ်ဉာဏ်",
+        "sourcePage": 28,
+        "area": "lesson"
+      },
+      {
+        "t": "para",
+        "x": "This is our memory of events, situations, and places of our past. For instance, when we are asked about our first day at school, we think back and try to recall how old we were, who took us to school, what the name of the school was, whether we cried silently or aloud, etc. Similarly, when wishing to talk about a memorable family vacation, we draw upon our episodic memory to recall as much as possible all the details of that vacation.",
+        "id": "3A-8",
+        "my": "ဤမှတ်ဉာဏ်သည် မိမိ၏အတိတ်က ဖြစ်ရပ်များ၊ အခြေအနေများနှင့် နေရာများကို မှတ်မိခြင်းဖြစ်သည်။ ဥပမာ ကျောင်းစတက်သည့်နေ့အကြောင်း မေးခံရသောအခါ မိမိအသက်ဘယ်လောက်ရှိခဲ့သလဲ၊ ဘယ်သူကျောင်းပို့ခဲ့သလဲ၊ ကျောင်းအမည်က ဘာလဲ၊ တိတ်တိတ်ငိုခဲ့သလား သို့မဟုတ် အသံထွက်ငိုခဲ့သလား စသည်တို့ကို နောက်ကြောင်းပြန်စဉ်းစား၍ မှတ်မိရန် ကြိုးစားကြသည်။ အလားတူ မမေ့နိုင်သော မိသားစုအားလပ်ရက်ခရီးအကြောင်း ပြောလိုသောအခါ ထိုခရီး၏ အသေးစိတ်အချက်အလက်များကို တတ်နိုင်သမျှ ပြန်သတိရရန် ဖြစ်ရပ်ဆိုင်ရာမှတ်ဉာဏ်ကို အသုံးပြုကြသည်။",
+        "sourcePage": 28,
+        "area": "lesson",
+        "emphasis": [
+          "memorable"
+        ]
+      },
+      {
+        "t": "h",
+        "x": "Semantic memory",
+        "id": "3A-9",
+        "my": "အဓိပ္ပာယ်နှင့် အထွေထွေအသိပညာဆိုင်ရာမှတ်ဉာဏ်",
+        "sourcePage": 29,
+        "area": "lesson"
+      },
+      {
+        "t": "para",
+        "x": "This memory refers to all of our knowledge of the world around us. For instance, we know that cats and dogs are four-legged animals but at the same time we know that they are not the same. In the same way, we know that milk, coffee, and tea are liquid but one is different from the other two. We also know that fire is hot and ice is cold. Then, we are taught and we learn that two times two is four; five minus three leaves two; the molecular formula for water is H₂O; the chemical formula for the common salt is NaCl; and many, many more.",
+        "id": "3A-10",
+        "my": "ဤမှတ်ဉာဏ်သည် မိမိပတ်ဝန်းကျင်ရှိ ကမ္ဘာအကြောင်း သိရှိထားသမျှ အသိပညာကို ရည်ညွှန်းသည်။ ဥပမာ ကြောင်နှင့်ခွေးတို့သည် ခြေလေးချောင်းသတ္တဝါများဖြစ်ကြောင်း သိသော်လည်း တစ်မျိုးတည်းမဟုတ်ကြောင်းလည်း သိကြသည်။ အလားတူ နို့၊ ကော်ဖီနှင့် လက်ဖက်ရည်တို့သည် အရည်များဖြစ်သော်လည်း တစ်ခုသည် အခြားနှစ်ခုနှင့် ကွဲပြားကြောင်း သိကြသည်။ မီးသည်ပူ၍ ရေခဲသည်အေးကြောင်းလည်း သိကြသည်။ ထို့နောက် နှစ်ကိုနှစ်နှင့်မြှောက်လျှင် လေး၊ ငါးထဲမှသုံးနုတ်လျှင် နှစ်၊ ရေ၏မော်လီကျူးဖော်မြူလာမှာ H₂O၊ စားပွဲတင်ဆား၏ ဓာတုဖော်မြူလာမှာ NaCl ဖြစ်ကြောင်းနှင့် အခြားအကြောင်းအရာများစွာကို သင်ကြားသင်ယူကြသည်။",
+        "sourcePage": 29,
+        "area": "lesson"
+      },
+      {
+        "t": "h",
+        "x": "Procedural memory",
+        "id": "3A-11",
+        "my": "လုပ်ဆောင်မှုကျွမ်းကျင်မှုဆိုင်ရာမှတ်ဉာဏ်",
+        "sourcePage": 29,
+        "area": "lesson"
+      },
+      {
+        "t": "para",
+        "x": "This memory helps us perform skills such as riding a bicycle or driving a car; playing the guitar or the piano; playing tennis, badminton, golf, soccer, etc.; and baking a cake or arranging flowers. In most cases, we just do not forget as we tend to in episodic or semantic memory. At most, our ability to perform those skills declines as we advance in years, and maybe one day we just do not have the strength to perform at all.",
+        "id": "3A-12",
+        "my": "ဤမှတ်ဉာဏ်သည် စက်ဘီးစီးခြင်း၊ ကားမောင်းခြင်း၊ ဂစ်တာ သို့မဟုတ် စန္ဒရားတီးခြင်း၊ တင်းနစ်၊ ကြက်တောင်၊ ဂေါက်သီး၊ ဘောလုံး စသည်တို့ကစားခြင်း၊ ကိတ်မုန့်ဖုတ်ခြင်း၊ ပန်းအလှဆင်ခြင်း စသည့် ကျွမ်းကျင်မှုများကို လုပ်ဆောင်နိုင်ရန် ကူညီသည်။ များသောအားဖြင့် ဖြစ်ရပ်ဆိုင်ရာ သို့မဟုတ် အသိပညာဆိုင်ရာမှတ်ဉာဏ်တွင် မေ့တတ်သကဲ့သို့ ကျွန်ုပ်တို့ မမေ့ကြပါ။ အများဆုံးအနေဖြင့် အသက်အရွယ်ကြီးလာသည်နှင့် ထိုကျွမ်းကျင်မှုများကို လုပ်ဆောင်နိုင်စွမ်း လျော့ကျလာပြီး တစ်နေ့တွင် လုံးဝလုပ်ဆောင်ရန်ပင် အင်အားမရှိတော့ခြင်း ဖြစ်နိုင်သည်။",
+        "sourcePage": 29,
+        "area": "lesson"
+      },
+      {
+        "t": "para",
+        "x": "Books on psychology also point out that there are short-term memory and long-term memory. For instance, when we are following a lecture, we store the incoming information in our short-term memory as we jot down notes as fast as we can. Then, when we can find time later, we go over our notes, link up the points and memorize them to store the information in our long-term memory. The diagram below should help you understand better the notions of short-term memory and long-term memory.",
+        "my": "စိတ်ပညာစာအုပ်များတွင် ကာလတိုမှတ်ဉာဏ်နှင့် ကာလရှည်မှတ်ဉာဏ်လည်း ရှိကြောင်း ထောက်ပြထားသည်။ ဥပမာ ဟောပြောပို့ချမှုကို နားထောင်စဉ် မှတ်စုများကို တတ်နိုင်သမျှ မြန်မြန်ရေးမှတ်ရင်း ဝင်လာသောသတင်းအချက်အလက်များကို ကာလတိုမှတ်ဉာဏ်တွင် သိမ်းဆည်းကြသည်။ နောက်ပိုင်း အချိန်ရသောအခါ မှတ်စုများကို ပြန်လေ့လာ၊ အချက်များကို ဆက်စပ်၍ အချက်အလက်များကို ကာလရှည်မှတ်ဉာဏ်တွင် သိမ်းဆည်းနိုင်ရန် အလွတ်ကျက်မှတ်ကြသည်။ အောက်ပါပုံသည် ကာလတိုနှင့် ကာလရှည်မှတ်ဉာဏ်တို့၏ သဘောတရားကို ပိုမိုနားလည်စေရန် ကူညီမည်ဖြစ်သည်။",
+        "id": "3A-short-long-term",
+        "area": "lesson",
+        "sourcePage": 29,
+        "emphasis": [
+          "memorize"
+        ]
+      },
+      {
+        "t": "scan",
+        "x": "",
+        "my": "သတင်းအချက်အလက် → အာရုံခံမှတ်ဉာဏ် (မြင်ကွင်းနှင့်အသံတို့၏ ခဏတာမှတ်တမ်း) → အာရုံစိုက်မှု → လုပ်ငန်းဆောင်ရွက်ဆဲမှတ်ဉာဏ် = ကာလတိုမှတ်ဉာဏ် (အချက်အလက်ကို ယာယီသိမ်းဆည်း၍ လုပ်ဆောင်ခြင်း) → ကုဒ်သွင်းသိမ်းဆည်းခြင်း → ကာလရှည်မှတ်ဉာဏ် (ရေရှည်နှင့် အမြဲတမ်းသိမ်းဆည်းခြင်း)။ ပြန်လည်ထုတ်ယူခြင်းဖြင့် ကာလရှည်မှတ်ဉာဏ်မှ လုပ်ငန်းဆောင်ရွက်ဆဲမှတ်ဉာဏ်သို့ ပြန်လည်ရောက်ရှိသည်။",
+        "id": "3A-memory-diagram",
+        "area": "lesson",
+        "sourcePage": 29,
+        "scanPage": 29
+      },
+      {
+        "t": "para",
+        "x": "From what has been presented so far, it should be quite plain to us that our memory is just like the database of a computer where a large amount of information on a large variety of subjects is stored and used as and when necessary. Without a database, the computer is useless. Similarly, without memory, we would be utterly helpless and useless. Just imagine how frustrated and upset we get when we cannot remember where we have put our car keys. Put yourself in the place of a student taking an examination and imagine he cannot recall a thing he has studied. You will then be able to understand how helpless he would feel.",
+        "id": "3A-13",
+        "my": "ယခုအထိ ဖော်ပြခဲ့သည့်အကြောင်းအရာများအရ မိမိတို့၏မှတ်ဉာဏ်သည် အကြောင်းအရာမျိုးစုံနှင့် ပတ်သက်သည့် သတင်းအချက်အလက်အများအပြားကို သိမ်းဆည်းပြီး လိုအပ်သည့်အချိန်၌ အသုံးပြုသော ကွန်ပျူတာဒေတာဘေ့စ်နှင့် တူကြောင်း ရှင်းလင်းစွာ သိနိုင်သည်။ ဒေတာဘေ့စ်မရှိလျှင် ကွန်ပျူတာသည် အသုံးမဝင်ပါ။ အလားတူ မှတ်ဉာဏ်မရှိလျှင် ကျွန်ုပ်တို့သည် လုံးဝ အကူအညီမဲ့၍ အသုံးမဝင်ဖြစ်သွားမည်။ ကားသော့ကို ဘယ်နေရာထားခဲ့သလဲ မမှတ်မိသောအခါ မည်မျှစိတ်အနှောင့်အယှက်ဖြစ်ပြီး စိတ်မချမ်းမသာဖြစ်ကြောင်း စဉ်းစားကြည့်ပါ။ စာမေးပွဲဖြေနေသည့် ကျောင်းသားတစ်ဦး၏နေရာတွင် မိမိကိုယ်ကိုထား၍ သူသင်ယူထားသမျှ တစ်ခုမျှမမှတ်မိဟု တွေးကြည့်ပါ။ သူမည်မျှ အကူအညီမဲ့သလို ခံစားရမည်ကို ထိုအခါ နားလည်နိုင်မည်။",
+        "sourcePage": 30,
+        "area": "lesson",
+        "emphasis": [
+          "plain",
+          "database",
+          "frustrated",
+          "recall"
+        ]
+      },
+      {
+        "t": "para",
+        "x": "There is another role that memory plays in our lives. Very often, we 'take a stroll down memory's lane' - figuratively speaking - and go through various emotional states. Sometimes, we smile when we remember something pleasant, or frown when we recall something unpleasant. Thus, depending on what we happen to remember, our memories may be sweet or bitter.",
+        "my": "မှတ်ဉာဏ်သည် မိမိတို့ဘဝတွင် အခြားအခန်းကဏ္ဍတစ်ခုလည်း ပါဝင်သည်။ ပုံဆောင်ပြောရလျှင် ကျွန်ုပ်တို့သည် “အမှတ်တရလမ်းကလေးအတိုင်း လမ်းလျှောက်ခြင်း” ကို မကြာခဏပြုလုပ်၍ ခံစားချက်အမျိုးမျိုးကို တွေ့ကြုံကြသည်။ ပျော်စရာကို သတိရသောအခါ ပြုံးမိ၍ မနှစ်မြို့ဖွယ်အရာကို သတိရသောအခါ မျက်မှောင်ကြုတ်မိတတ်သည်။ ထို့ကြောင့် သတိရသည့်အရာပေါ်မူတည်၍ အမှတ်တရများသည် ချိုမြိန်ခြင်း သို့မဟုတ် ခါးသီးခြင်း ရှိနိုင်သည်။",
+        "id": "3A-emotions",
+        "area": "lesson",
+        "sourcePage": 30,
+        "emphasis": [
+          "emotional",
+          "bitter"
+        ]
+      },
+      {
+        "t": "sub",
+        "x": "Comprehension",
+        "id": "3A-14",
+        "my": "ဖတ်ရှုနားလည်မှု",
+        "sourcePage": 30,
+        "area": "lesson"
+      },
+      {
+        "t": "ins",
+        "x": "A. In pairs, find the bold-faced words in the passage that are similar in meaning to the following. There are two extra bold-faced words in the text.",
+        "id": "3A-15",
+        "my": "A။ နှစ်ယောက်တွဲ၍ အောက်ပါအဓိပ္ပာယ်များနှင့် ဆင်တူသော စာလုံးမည်းများကို စာပိုဒ်ထဲတွင် ရှာပါ။ စာထဲတွင် အပိုစာလုံးမည်း နှစ်လုံး ပါသည်။",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "1. unforgettable",
+        "id": "3A-16",
+        "my": "၁။ မမေ့နိုင်သော",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "a. _______________",
+        "id": "3A-17",
+        "my": "က။ _______________",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "2. learn something so that you will remember it exactly",
+        "id": "3A-18",
+        "my": "၂။ အတိအကျ မှတ်မိနေစေရန် တစ်စုံတစ်ခုကို သင်ယူကျက်မှတ်သည်",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "b. _______________",
+        "id": "3A-19",
+        "my": "ခ။ _______________",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "3. easy to understand",
+        "id": "3A-20",
+        "my": "၃။ နားလည်ရန် လွယ်ကူသော",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "c. _______________",
+        "id": "3A-21",
+        "my": "ဂ။ _______________",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "4. a collection of pieces of information stored in a computer system",
+        "id": "3A-22",
+        "my": "၄။ ကွန်ပျူတာစနစ်တစ်ခုတွင် သိမ်းဆည်းထားသော သတင်းအချက်အလက်အစုအဝေး",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "d. _______________",
+        "id": "3A-23",
+        "my": "ဃ။ _______________",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "5. feeling annoyed and impatient",
+        "id": "3A-24",
+        "my": "၅။ စိတ်အနှောင့်အယှက်ဖြစ်၍ စိတ်မရှည်ဖြစ်နေသော",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "e. _______________",
+        "id": "3A-25",
+        "my": "င။ _______________",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "6. having a strong feeling",
+        "id": "3A-26",
+        "my": "၆။ ပြင်းထန်သော ခံစားချက်ရှိသော",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "f. _______________",
+        "id": "3A-27",
+        "my": "စ။ _______________",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "ins",
+        "x": "B. Complete each sentence below with a suitable word from Exercise A.",
+        "id": "3A-28",
+        "my": "B။ အောက်ပါဝါကျတစ်ကြောင်းစီကို လေ့ကျင့်ခန်း A မှ သင့်လျော်သော စကားလုံးတစ်လုံးဖြင့် ဖြည့်ပါ။",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "1. Everybody understands his article as his writing is _______________ and direct.",
+        "id": "3A-29",
+        "my": "သူ့အရေးအသားသည် _______________ ပြီး တိုက်ရိုက်ဖြစ်သောကြောင့် လူတိုင်း သူ့ဆောင်းပါးကို နားလည်ကြသည်။",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "2. Her eyes were filled with tears to see a very _______________ moment of her family union.",
+        "id": "3A-30",
+        "my": "မိသားစုပြန်လည်ဆုံစည်းမှု၏ အလွန် _______________ အခိုက်အတန့်ကို မြင်ရသောအခါ သူမမျက်လုံးများတွင် မျက်ရည်ဝဲလာသည်။",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "3. I can't _______________ that Swe Swe came to visit us last year.",
+        "id": "3A-31",
+        "my": "မနှစ်က ဆွေဆွေ ကျွန်ုပ်တို့ဆီ အလည်လာခဲ့ကြောင်း ကျွန်ုပ် _______________ မရပါ။",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "4. Our library keeps a _______________ of over ten thousand books on various subjects.",
+        "id": "3A-32",
+        "my": "ကျွန်ုပ်တို့စာကြည့်တိုက်တွင် ဘာသာရပ်အမျိုးမျိုးဆိုင်ရာ စာအုပ်တစ်သောင်းကျော်၏ _______________ ကို ထားရှိသည်။",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "5. My little sister is very intelligent; she can _______________ nursery rhymes in a short time.",
+        "id": "3A-33",
+        "my": "ကျွန်ုပ်၏ညီမငယ်သည် အလွန်ဉာဏ်ကောင်းသည်။ ကလေးကဗျာများကို အချိန်တိုအတွင်း _______________ နိုင်သည်။",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "6. He felt _______________ when his friend did not understand what he was explaining.",
+        "id": "3A-34",
+        "my": "သူရှင်းပြနေသည်ကို သူ့သူငယ်ချင်း နားမလည်သောအခါ သူ _______________ ခံစားရသည်။",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "ins",
+        "x": "C. Give a full-sentence answer to each question below.",
+        "id": "3A-35",
+        "my": "C။ အောက်ပါမေးခွန်းတစ်ခုစီကို ဝါကျပြည့်ဖြင့် ဖြေပါ။",
+        "sourcePage": 30,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "1. According to books on psychology, how many kinds of memory are there? What are they?",
+        "id": "3A-36",
+        "my": "စိတ်ပညာစာအုပ်များအရ မှတ်ဉာဏ်အမျိုးအစား မည်မျှရှိသနည်း။ မည်သည့်အမျိုးအစားများ ဖြစ်သနည်း။",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "2. What does semantic memory refer to?",
+        "id": "3A-37",
+        "my": "အဓိပ္ပာယ်နှင့် အထွေထွေအသိပညာဆိုင်ရာမှတ်ဉာဏ်သည် မည်သည့်အရာကို ရည်ညွှန်းသနည်း။",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "3. What do you do if you want to store the information in the long-term memory?",
+        "id": "3A-38",
+        "my": "သတင်းအချက်အလက်ကို ကာလရှည်မှတ်ဉာဏ်တွင် သိမ်းဆည်းလိုလျှင် သင် ဘာလုပ်သနည်း။",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "4. According to the text, what is memory compared to?",
+        "id": "3A-39",
+        "my": "စာပိုဒ်အရ မှတ်ဉာဏ်ကို မည်သည့်အရာနှင့် နှိုင်းယှဉ်ထားသနည်း။",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "5. What will happen to a computer without a database?",
+        "id": "3A-40",
+        "my": "ဒေတာဘေ့စ်မရှိလျှင် ကွန်ပျူတာသည် မည်သို့ဖြစ်မည်နည်း။",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "6. How would you react when you remember something pleasant?",
+        "id": "3A-41",
+        "my": "ပျော်ရွှင်ဖွယ်အရာတစ်ခုကို သတိရသောအခါ သင် မည်သို့တုံ့ပြန်မည်နည်း။",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "7. Read the extracts (a) and (b) of the two different poems, and say what type of memory the poets retrieved their information from.",
+        "id": "3A-42",
+        "my": "မတူညီသော ကဗျာနှစ်ပုဒ်မှ ကောက်နုတ်ချက် (a) နှင့် (b) ကိုဖတ်၍ ကဗျာဆရာများသည် မည်သည့်မှတ်ဉာဏ်အမျိုးအစားမှ အချက်အလက်ကို ပြန်လည်ရယူခဲ့ကြောင်း ပြောပါ။",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "(a)",
+        "id": "3A-43",
+        "my": "(a)",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "I wandered lonely as a cloud",
+        "id": "3A-44",
+        "my": "တိမ်တိုက်တစ်ခုလို ကျွန်ုပ် တစ်ယောက်တည်း လှည့်လည်ခဲ့၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "That floats on high o'er vales and hills,",
+        "id": "3A-45",
+        "my": "ချိုင့်ဝှမ်းတောင်ကုန်းများအထက် မြင့်မြင့်မျောလွင့်သည့် တိမ်တိုက်လို၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "When all at once I saw a crowd,",
+        "id": "3A-46",
+        "my": "ရုတ်တရက် အစုအဝေးတစ်ခုကို ကျွန်ုပ် မြင်တွေ့လိုက်၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "A host of golden daffodils;",
+        "id": "3A-47",
+        "my": "ရွှေရောင် ဒက်ဖိုဒယ်ပန်းများ အများအပြား၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "Beside the lake, beneath the trees,",
+        "id": "3A-48",
+        "my": "ကန်နံဘေး သစ်ပင်များအောက်မှာ၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "Fluttering and dancing in the breeze.",
+        "id": "3A-49",
+        "my": "လေပြည်ထဲ တဖျပ်ဖျပ်လှုပ်ကာ ကခုန်လျက်ရှိကြ။",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "(b)",
+        "id": "3A-50",
+        "my": "(b)",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "Oft in the stilly night,",
+        "id": "3A-51",
+        "my": "ငြိမ်သက်သည့် ညအချိန်တွင် မကြာခဏ၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "Ere Slumber's chain has bound me,",
+        "id": "3A-52",
+        "my": "အိပ်စက်ခြင်း၏ သံကြိုးက ကျွန်ုပ်ကို မချည်နှောင်မီ၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "Fond Memory brings the light",
+        "id": "3A-53",
+        "my": "ချစ်ခင်မြတ်နိုးရသော အမှတ်တရတို့က အလင်းကို ယူဆောင်လာ၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "Of other days around me;",
+        "id": "3A-54",
+        "my": "လွန်ခဲ့သော နေ့ရက်များ၏အလင်းက ကျွန်ုပ်အနား ဝန်းရံလာ၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "The smiles, the tears,",
+        "id": "3A-55",
+        "my": "အပြုံးများ၊ မျက်ရည်များ၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "Of boyhood's years,",
+        "id": "3A-56",
+        "my": "ငယ်စဉ်ဘဝနှစ်များက၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "The words of love then spoken;",
+        "id": "3A-57",
+        "my": "ထိုစဉ် ပြောခဲ့ကြသည့် မေတ္တာစကားများ၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "The eyes that shone,",
+        "id": "3A-58",
+        "my": "တောက်ပခဲ့သော မျက်ဝန်းများ၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "Now dimmed and gone,",
+        "id": "3A-59",
+        "my": "ယခု မှေးမှိန်ကွယ်ပျောက်သွားကြ၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "The cheerful hearts now broken!",
+        "id": "3A-60",
+        "my": "ရွှင်လန်းခဲ့သော နှလုံးသားများ ယခု ကြေကွဲနေကြ၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "Thus, in the stilly night,",
+        "id": "3A-61",
+        "my": "ဤသို့ ငြိမ်သက်သည့် ညအချိန်တွင်၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "Ere Slumber's chain has bound me,",
+        "id": "3A-62",
+        "my": "အိပ်စက်ခြင်း၏ သံကြိုးက ကျွန်ုပ်ကို မချည်နှောင်မီ၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "Sad Memory brings the light",
+        "id": "3A-63",
+        "my": "ဝမ်းနည်းဖွယ် အမှတ်တရတို့က အလင်းကို ယူဆောင်လာ၊",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "Of other days around me.",
+        "id": "3A-64",
+        "my": "လွန်ခဲ့သော နေ့ရက်များ၏အလင်းက ကျွန်ုပ်အနား ဝန်းရံလာ။",
+        "sourcePage": 31,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "8. You are strumming the guitar and singing a song. What type of memory are you drawing information from?",
+        "id": "3A-65",
+        "my": "သင်သည် ဂစ်တာကိုတီး၍ သီချင်းဆိုနေသည်။ မည်သည့်မှတ်ဉာဏ်အမျိုးအစားမှ အချက်အလက်ကို ရယူနေသနည်း။",
+        "sourcePage": 32,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "9. Bill and Bob are flying kites. What type of memory are they depending on?",
+        "id": "3A-66",
+        "my": "ဘီလ်နှင့် ဘော့ဘ်တို့သည် စွန်လွှတ်နေကြသည်။ မည်သည့်မှတ်ဉာဏ်အမျိုးအစားကို အားထားနေကြသနည်း။",
+        "sourcePage": 32,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "10. You are taking an examination. What type of memory are you depending on?",
+        "id": "3A-67",
+        "my": "သင်သည် စာမေးပွဲဖြေနေသည်။ မည်သည့်မှတ်ဉာဏ်အမျိုးအစားကို အားထားနေသနည်း။",
+        "sourcePage": 32,
+        "area": "exercise"
+      }
+    ]
+  },
+  {
+    "code": "3B",
+    "title": "Vocabulary",
+    "blocks": [
+      {
+        "t": "h",
+        "x": "Phrasal Verbs",
+        "id": "3B-0",
+        "my": "စကားစုကြိယာများ",
+        "sourcePage": 32,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "A phrasal verb is a verb followed by an adverb, a preposition, or both. It is usually used with an idiomatic meaning. This meaning is often quite different from the literal meaning of the individual words.",
+        "id": "3B-1",
+        "my": "စကားစုကြိယာဆိုသည်မှာ ကြိယာနောက်တွင် ကြိယာဝိသေသန၊ ဝိဘတ် သို့မဟုတ် နှစ်မျိုးလုံး လိုက်ပါသော ကြိယာဖြစ်သည်။ ပုံမှန်အားဖြင့် အီဒီယမ်သဘော အဓိပ္ပာယ်ဖြင့် သုံးသည်။ ဤအဓိပ္ပာယ်သည် စကားလုံးတစ်လုံးချင်း၏ တိုက်ရိုက်အဓိပ္ပာယ်နှင့် မကြာခဏ အလွန်ကွဲပြားသည်။",
+        "sourcePage": 32,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "e.g. Books on psychology point out that there are short-term memory and long-term memory.",
+        "id": "3B-2",
+        "my": "ဥပမာ — ကာလတိုမှတ်ဉာဏ်နှင့် ကာလရှည်မှတ်ဉာဏ် ရှိကြောင်း စိတ်ပညာစာအုပ်များက ထောက်ပြထားသည်။",
+        "sourcePage": 32,
+        "area": "lesson"
+      },
+      {
+        "t": "ins",
+        "x": "A. Study the following phrasal verbs.",
+        "id": "3B-3",
+        "my": "A။ အောက်ပါစကားစုကြိယာများကို လေ့လာပါ။",
+        "sourcePage": 32,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "1. think back = remember",
+        "id": "3B-4",
+        "my": "think back = ပြန်လည်သတိရသည်",
+        "sourcePage": 32,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "2. draw on / upon = use something as a source of supply",
+        "id": "3B-5",
+        "my": "draw on / upon = တစ်စုံတစ်ခုကို အရင်းအမြစ်အဖြစ် အသုံးပြုသည်",
+        "sourcePage": 32,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "3. point out = make someone aware of something",
+        "id": "3B-6",
+        "my": "point out = တစ်စုံတစ်ခုကို တစ်ဦးတစ်ယောက် သိရှိစေရန် ထောက်ပြသည်",
+        "sourcePage": 32,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "4. jot down = write something quickly",
+        "id": "3B-7",
+        "my": "jot down = တစ်စုံတစ်ခုကို အလျင်အမြန် ရေးမှတ်သည်",
+        "sourcePage": 32,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "5. go over = review",
+        "id": "3B-8",
+        "my": "go over = ပြန်လည်လေ့လာသည်",
+        "sourcePage": 32,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "6. link up = join or become joined with something",
+        "id": "3B-9",
+        "my": "link up = တစ်စုံတစ်ခုနှင့် ဆက်စပ်ပေါင်းစည်းသည်",
+        "sourcePage": 32,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "7. go through = experience something",
+        "id": "3B-10",
+        "my": "go through = တစ်စုံတစ်ခုကို တွေ့ကြုံဖြတ်သန်းသည်",
+        "sourcePage": 32,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "8. depend on = rely on something",
+        "id": "3B-11",
+        "my": "depend on = တစ်စုံတစ်ခုကို အားထားသည်",
+        "sourcePage": 32,
+        "area": "lesson"
+      },
+      {
+        "t": "scan",
+        "x": "",
+        "my": "",
+        "id": "3B-source-page",
+        "area": "lesson",
+        "sourcePage": 32,
+        "scanPage": 32
+      },
+      {
+        "t": "ins",
+        "x": "B. Complete the sentences with the correct forms of the phrasal verbs in Exercise A.",
+        "id": "3B-12",
+        "my": "B။ လေ့ကျင့်ခန်း A မှ စကားစုကြိယာများ၏ မှန်ကန်သောပုံစံဖြင့် ဝါကျများကို ဖြည့်ပါ။",
+        "sourcePage": 32,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "1. The teacher ___________ the mistakes I had made in my essay.",
+        "id": "3B-13",
+        "my": "ကျွန်ုပ်၏စာစီစာကုံးတွင် လုပ်မိသောအမှားများကို ဆရာက ___________။",
+        "sourcePage": 32,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "2. Khin Khin ___________ notes while she was listening to the lecture.",
+        "id": "3B-14",
+        "my": "ခင်ခင်သည် ဟောပြောပို့ချမှုကို နားထောင်နေစဉ် မှတ်စုများ ___________။",
+        "sourcePage": 32,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "3. He was proud of himself when he ___________ to all the things he had done for the company.",
+        "id": "3B-15",
+        "my": "ကုမ္ပဏီအတွက် သူလုပ်ပေးခဲ့သမျှကို ___________ သောအခါ သူသည် မိမိကိုယ်ကို ဂုဏ်ယူမိသည်။",
+        "sourcePage": 32,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "4. You should ___________ your assignment before you submit it to your teacher.",
+        "id": "3B-16",
+        "my": "ဆရာထံ မတင်မီ မိမိအိမ်စာကို ___________ သင့်သည်။",
+        "sourcePage": 32,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "5. Kyu Kyu wrote this article by ___________ her own experience.",
+        "id": "3B-17",
+        "my": "ကြူကြူသည် မိမိအတွေ့အကြုံကို ___________ ခြင်းဖြင့် ဤဆောင်းပါးကို ရေးခဲ့သည်။",
+        "sourcePage": 32,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "6.",
+        "id": "3B-18",
+        "my": "၆။",
+        "sourcePage": 32,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "7.",
+        "id": "3B-19",
+        "my": "၇။",
+        "sourcePage": 32,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "8.",
+        "id": "3B-20",
+        "my": "၈။",
+        "sourcePage": 32,
+        "area": "exercise"
+      }
+    ]
+  },
+  {
+    "code": "3C",
+    "title": "Grammar",
+    "blocks": [
+      {
+        "t": "h",
+        "x": "Gerund and Infinitive with 'to'",
+        "id": "3C-0",
+        "my": "Gerund နှင့် “to” ပါသော Infinitive",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "h",
+        "x": "Gerund",
+        "id": "3C-1",
+        "my": "Gerund (ကြိယာနာမ်)",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "A gerund is a noun made from a verb by adding '-ing'. Gerunds can be used:",
+        "id": "3C-2",
+        "my": "Gerund ဆိုသည်မှာ ကြိယာတွင် “-ing” ပေါင်းထည့်၍ ပြုလုပ်ထားသော နာမ်ဖြစ်သည်။ Gerund များကို အောက်ပါအတိုင်း သုံးနိုင်သည်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "as the subject of a sentence.",
+        "id": "3C-3",
+        "my": "ဝါကျ၏ ကတ္တားအဖြစ်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "e.g. Smoking is not good for health.",
+        "id": "3C-4",
+        "my": "ဥပမာ — ဆေးလိပ်သောက်ခြင်းသည် ကျန်းမာရေးအတွက် မကောင်းပါ။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "as the object of a sentence.",
+        "id": "3C-5",
+        "my": "ဝါကျ၏ ကံပုဒ်အဖြစ်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "e.g. I have finished cooking; dinner is ready.",
+        "id": "3C-6",
+        "my": "ဥပမာ — ကျွန်ုပ် ချက်ပြုတ်ပြီးပါပြီ။ ညစာ အဆင်သင့်ဖြစ်ပါပြီ။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "as the complement of a sentence.",
+        "id": "3C-7",
+        "my": "ဝါကျ၏ အဖြည့်ပုဒ်အဖြစ်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "e.g. My favourite hobby is cooking.",
+        "id": "3C-8",
+        "my": "ဥပမာ — ကျွန်ုပ်အနှစ်သက်ဆုံး ဝါသနာမှာ ချက်ပြုတ်ခြင်းဖြစ်သည်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "as the object of a preposition.",
+        "id": "3C-9",
+        "my": "ဝိဘတ်၏ ကံပုဒ်အဖြစ်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "e.g. She is afraid of going out alone at night.",
+        "id": "3C-10",
+        "my": "ဥပမာ — သူမသည် ညဘက် တစ်ယောက်တည်း အပြင်ထွက်ရခြင်းကို ကြောက်သည်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "h",
+        "x": "Infinitive with 'to'",
+        "id": "3C-11",
+        "my": "“to” ပါသော Infinitive",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "An infinitive is the basic form of a verb, used with 'to'. Infinitives can be used:",
+        "id": "3C-12",
+        "my": "Infinitive ဆိုသည်မှာ “to” နှင့်တွဲသုံးသော ကြိယာ၏ အခြေခံပုံစံဖြစ်သည်။ အောက်ပါအတိုင်း သုံးနိုင်သည်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "as a subject at the beginning of a sentence.",
+        "id": "3C-13",
+        "my": "ဝါကျအစတွင် ကတ္တားအဖြစ်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "e.g. To travel around the country is my dream.",
+        "id": "3C-14",
+        "my": "ဥပမာ — နိုင်ငံတစ်ဝန်း ခရီးသွားရန်မှာ ကျွန်ုပ်၏အိပ်မက်ဖြစ်သည်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "as an object of the verb.",
+        "id": "3C-15",
+        "my": "ကြိယာ၏ ကံပုဒ်အဖြစ်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "e.g. He promised to return my book.",
+        "id": "3C-16",
+        "my": "ဥပမာ — သူသည် ကျွန်ုပ်၏စာအုပ်ကို ပြန်ပေးရန် ကတိပေးခဲ့သည်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "after 'It + be + adjective'.",
+        "id": "3C-17",
+        "my": "“It + be + adjective” နောက်တွင်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "e.g. It is important to study hard.",
+        "id": "3C-18",
+        "my": "ဥပမာ — ကြိုးစားစာလေ့လာရန် အရေးကြီးသည်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "It is necessary for students to wear uniforms every day.",
+        "id": "3C-19",
+        "my": "ကျောင်းသားများ နေ့စဉ် ယူနီဖောင်းဝတ်ရန် လိုအပ်သည်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "h",
+        "x": "Note:",
+        "id": "3C-20",
+        "my": "မှတ်ချက်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "Some verbs such as 'begin', 'continue', 'hate', 'like', 'start' can be followed by an infinitive or a gerund without changing the meaning.",
+        "id": "3C-21",
+        "my": "“begin”, “continue”, “hate”, “like”, “start” ကဲ့သို့သော ကြိယာအချို့၏ နောက်တွင် infinitive သို့မဟုတ် gerund လိုက်နိုင်ပြီး အဓိပ္ပာယ် မပြောင်းလဲပါ။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "e.g. He continued studying until after midnight.",
+        "id": "3C-22",
+        "my": "ဥပမာ — သူသည် ညသန်းခေါင်ကျော်သည်အထိ ဆက်လက်စာလေ့လာခဲ့သည်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "He continued to study until after midnight.",
+        "id": "3C-23",
+        "my": "သူသည် ညသန်းခေါင်ကျော်သည်အထိ ဆက်လက်စာလေ့လာခဲ့သည်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "Some verbs such as 'forget', 'remember', 'stop' can be followed by a gerund or an infinitive with 'to' but with a change in meaning.",
+        "id": "3C-24",
+        "my": "“forget”, “remember”, “stop” ကဲ့သို့သော ကြိယာအချို့၏ နောက်တွင် gerund သို့မဟုတ် “to” ပါသော infinitive လိုက်နိုင်သော်လည်း အဓိပ္ပာယ် ပြောင်းလဲသည်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "e.g. She stopped drinking coffee. (She never drinks coffee again.)",
+        "id": "3C-25",
+        "my": "ဥပမာ — သူမသည် ကော်ဖီသောက်ခြင်းကို ရပ်လိုက်သည်။ (သူမ ကော်ဖီ ထပ်မသောက်တော့ပါ။)",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "She stopped to drink coffee. (She stopped what she was doing and drank coffee.)",
+        "id": "3C-26",
+        "my": "သူမသည် ကော်ဖီသောက်ရန် ရပ်နားလိုက်သည်။ (လုပ်နေသည့်အလုပ်ကို ရပ်၍ ကော်ဖီသောက်ခဲ့သည်။)",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "Verbs such as 'avoid', 'can't help', 'discuss', 'dislike', 'enjoy', 'finish', 'keep', 'mind', 'spend time', 'stop' are generally followed by gerunds.",
+        "id": "3C-27",
+        "my": "“avoid”, “can't help”, “discuss”, “dislike”, “enjoy”, “finish”, “keep”, “mind”, “spend time”, “stop” ကဲ့သို့သော ကြိယာများနောက်တွင် ယေဘုယျအားဖြင့် gerund လိုက်သည်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "Verbs such as 'agree', 'arrange', 'decide', 'expect', 'forget', 'intend', 'offer', 'promise', 'remember', 'wish' are generally followed by infinitives with 'to'.",
+        "id": "3C-28",
+        "my": "“agree”, “arrange”, “decide”, “expect”, “forget”, “intend”, “offer”, “promise”, “remember”, “wish” ကဲ့သို့သော ကြိယာများနောက်တွင် ယေဘုယျအားဖြင့် “to” ပါသော infinitive လိုက်သည်။",
+        "sourcePage": 33,
+        "area": "lesson"
+      },
+      {
+        "t": "ins",
+        "x": "Complete each sentence with an infinitive with 'to' or a gerund of the verbs given in brackets.",
+        "id": "3C-29",
+        "my": "ကွင်းအတွင်းပေးထားသော ကြိယာများ၏ “to” ပါသော infinitive သို့မဟုတ် gerund ဖြင့် ဝါကျတစ်ကြောင်းစီကို ဖြည့်ပါ။",
+        "sourcePage": 34,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "1. I can't help ___________ (think) about my school days in Japan.",
+        "id": "3C-30",
+        "my": "ဂျပန်နိုင်ငံရှိ ကျွန်ုပ်၏ကျောင်းသားဘဝအကြောင်း ___________ (think) မနေနိုင်ပါ။",
+        "sourcePage": 34,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "2. We all agreed ___________ (meet) again next month.",
+        "id": "3C-31",
+        "my": "ကျွန်ုပ်တို့အားလုံး နောက်လတွင် ထပ်မံ ___________ (meet) ရန် သဘောတူခဲ့ကြသည်။",
+        "sourcePage": 34,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "3. I finished ___________ (write) the assignment just before the deadline.",
+        "id": "3C-32",
+        "my": "သတ်မှတ်ချိန်မတိုင်မီလေးတွင် ကျွန်ုပ် အိမ်စာ ___________ (write) ပြီးခဲ့သည်။",
+        "sourcePage": 34,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "4. My mother promises ___________ (buy) me a laptop if I pass the examination.",
+        "id": "3C-33",
+        "my": "ကျွန်ုပ် စာမေးပွဲအောင်လျှင် အမေက လက်ပ်တော့တစ်လုံး ___________ (buy) ရန် ကတိပေးသည်။",
+        "sourcePage": 34,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "5. I dislike ___________ (wait) for someone for a long time.",
+        "id": "3C-34",
+        "my": "တစ်ယောက်ယောက်ကို အချိန်ကြာကြာ ___________ (wait) ရခြင်းကို ကျွန်ုပ် မနှစ်သက်ပါ။",
+        "sourcePage": 34,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "6. He decided ___________ (attend) a computer course during the holiday.",
+        "id": "3C-35",
+        "my": "သူသည် အားလပ်ရက်အတွင်း ကွန်ပျူတာသင်တန်းတစ်ခု ___________ (attend) ရန် ဆုံးဖြတ်ခဲ့သည်။",
+        "sourcePage": 34,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "7. I offered ___________ (help) the new student with his homework.",
+        "id": "3C-36",
+        "my": "ကျောင်းသားသစ်၏ အိမ်စာအတွက် ___________ (help) ရန် ကျွန်ုပ် ကမ်းလှမ်းခဲ့သည်။",
+        "sourcePage": 34,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "8. It's very hot in here. Do you mind ___________ (open) the window?",
+        "id": "3C-37",
+        "my": "ဒီထဲမှာ အလွန်ပူသည်။ ပြတင်းပေါက် ___________ (open) ပေးလို့ရမလား။",
+        "sourcePage": 34,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "9. It is necessary for us to be able ___________ (speak) English well to work in a five-star hotel.",
+        "id": "3C-38",
+        "my": "ကြယ်ငါးပွင့်ဟိုတယ်တွင် အလုပ်လုပ်ရန် အင်္ဂလိပ်စကားကို ကောင်းစွာ ___________ (speak) နိုင်ဖို့ ကျွန်ုပ်တို့ လိုအပ်သည်။",
+        "sourcePage": 34,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "10. We intended ___________ (go) to the cinema, but in the end we stayed at home.",
+        "id": "3C-39",
+        "my": "ကျွန်ုပ်တို့ ရုပ်ရှင်ရုံသို့ ___________ (go) ရန် ရည်ရွယ်ခဲ့သော်လည်း နောက်ဆုံး အိမ်မှာပဲ နေခဲ့ကြသည်။",
+        "sourcePage": 34,
+        "area": "exercise"
+      }
+    ]
+  },
+  {
+    "code": "3D",
+    "title": "Listening and Speaking",
+    "blocks": [
+      {
+        "t": "ins",
+        "x": "A. Listen to Soe Thu talking about his childhood events and say whether the following statements are TRUE or FALSE.",
+        "id": "3D-0",
+        "my": "A။ စိုးသူက သူ့ကလေးဘဝဖြစ်ရပ်များအကြောင်း ပြောနေသည်ကို နားထောင်ပြီး အောက်ပါဖော်ပြချက်များ မှန်သလား၊ မှားသလား ပြောပါ။",
+        "sourcePage": 34,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "1. Soe Thu has got a very good memory.",
+        "id": "3D-1",
+        "my": "၁။ စိုးသူသည် အလွန်ကောင်းသော မှတ်ဉာဏ်ရှိသည်။",
+        "sourcePage": 34,
+        "area": "exercise",
+        "response": "audio"
+      },
+      {
+        "t": "q",
+        "x": "2. He can recall his childhood days when he gets certain sights, smells, tastes and sounds.",
+        "id": "3D-2",
+        "my": "၂။ အချို့သော မြင်ကွင်း၊ အနံ့၊ အရသာနှင့် အသံများကို အာရုံခံရသောအခါ သူ့ကလေးဘဝနေ့ရက်များကို ပြန်သတိရနိုင်သည်။",
+        "sourcePage": 34,
+        "area": "exercise",
+        "response": "audio"
+      },
+      {
+        "t": "q",
+        "x": "3. He is talking about a recent event in his life.",
+        "id": "3D-3",
+        "my": "၃။ သူသည် သူ့ဘဝရှိ မကြာသေးမီက ဖြစ်ရပ်တစ်ခုအကြောင်း ပြောနေသည်။",
+        "sourcePage": 34,
+        "area": "exercise",
+        "response": "audio"
+      },
+      {
+        "t": "q",
+        "x": "4. Whenever he gets the smell and taste of mont-hin-gah, he remembers his mother.",
+        "id": "3D-4",
+        "my": "၄။ မုန့်ဟင်းခါး၏အနံ့နှင့် အရသာကို ခံစားရတိုင်း သူ့အမေကို သတိရသည်။",
+        "sourcePage": 34,
+        "area": "exercise",
+        "response": "audio"
+      },
+      {
+        "t": "q",
+        "x": "5. When he was young, he liked mont-hin-gah so much that he ate it every day.",
+        "id": "3D-5",
+        "my": "၅။ ငယ်စဉ်က မုန့်ဟင်းခါးကို အလွန်နှစ်သက်သဖြင့် နေ့တိုင်းစားခဲ့သည်။",
+        "sourcePage": 34,
+        "area": "exercise",
+        "response": "audio"
+      },
+      {
+        "t": "q",
+        "x": "6. The song 'You are my Sunshine' reminds him of his friend, Cho Cho.",
+        "id": "3D-6",
+        "my": "၆။ “You are my Sunshine” သီချင်းက သူ့သူငယ်ချင်း ချိုချိုကို သတိရစေသည်။",
+        "sourcePage": 34,
+        "area": "exercise",
+        "response": "audio"
+      },
+      {
+        "t": "q",
+        "x": "7. Soe Thu and Cho Cho usually sang the song while they were playing.",
+        "id": "3D-7",
+        "my": "၇။ စိုးသူနှင့် ချိုချိုသည် ကစားနေစဉ် ထိုသီချင်းကို များသောအားဖြင့် ဆိုခဲ့ကြသည်။",
+        "sourcePage": 34,
+        "area": "exercise",
+        "response": "audio"
+      },
+      {
+        "t": "q",
+        "x": "8. He got a white cat as a present on his 7th birthday.",
+        "id": "3D-8",
+        "my": "၈။ ခုနစ်နှစ်ပြည့်မွေးနေ့တွင် ကြောင်ဖြူတစ်ကောင်ကို လက်ဆောင်ရခဲ့သည်။",
+        "sourcePage": 34,
+        "area": "exercise",
+        "response": "audio"
+      },
+      {
+        "t": "q",
+        "x": "9. His cat Mi Phyu used to sleep by his side.",
+        "id": "3D-9",
+        "my": "၉။ သူ့ကြောင် မိဖြူသည် သူ့ဘေးတွင် အိပ်လေ့ရှိခဲ့သည်။",
+        "sourcePage": 34,
+        "area": "exercise",
+        "response": "audio"
+      },
+      {
+        "t": "q",
+        "x": "10. Soe Thu played with Mi Phyu before he went to bed.",
+        "id": "3D-10",
+        "my": "၁၀။ စိုးသူသည် အိပ်ရာမဝင်မီ မိဖြူနှင့် ကစားခဲ့သည်။",
+        "sourcePage": 34,
+        "area": "exercise",
+        "response": "audio"
+      },
+      {
+        "t": "ins",
+        "x": "B. Study the expressions used in agreeing and disagreeing.",
+        "id": "3D-11",
+        "my": "B။ သဘောတူခြင်းနှင့် သဘောမတူခြင်းတွင် သုံးသော အသုံးအနှုန်းများကို လေ့လာပါ။",
+        "sourcePage": 35,
+        "area": "lesson"
+      },
+      {
+        "t": "h",
+        "x": "Agreeing",
+        "id": "3D-12",
+        "my": "သဘောတူခြင်း",
+        "sourcePage": 35,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "I agree with you.",
+        "id": "3D-14",
+        "my": "ကျွန်ုပ် သင်နှင့် သဘောတူပါသည်။",
+        "sourcePage": 35,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "I totally agree.",
+        "id": "3D-15",
+        "my": "ကျွန်ုပ် လုံးဝသဘောတူပါသည်။",
+        "sourcePage": 35,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "That's what I think too.",
+        "id": "3D-16",
+        "my": "ကျွန်ုပ်လည်း အဲဒီလိုပဲ ထင်ပါသည်။",
+        "sourcePage": 35,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "I think you are right.",
+        "id": "3D-17",
+        "my": "သင် မှန်တယ်လို့ ကျွန်ုပ် ထင်ပါသည်။",
+        "sourcePage": 35,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "Absolutely!",
+        "id": "3D-18",
+        "my": "လုံးဝပါပဲ။",
+        "sourcePage": 35,
+        "area": "lesson"
+      },
+      {
+        "t": "h",
+        "x": "Disagreeing",
+        "id": "3D-13",
+        "my": "သဘောမတူခြင်း",
+        "sourcePage": 35,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "I'm afraid I disagree.",
+        "id": "3D-19",
+        "my": "အားနာပေမယ့် ကျွန်ုပ် သဘောမတူပါ။",
+        "sourcePage": 35,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "I'm not sure about that.",
+        "id": "3D-20",
+        "my": "အဲဒီအကြောင်းတော့ ကျွန်ုပ် မသေချာပါ။",
+        "sourcePage": 35,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "I see your point but ...",
+        "id": "3D-21",
+        "my": "သင့်အယူအဆကို ကျွန်ုပ် နားလည်ပါတယ်၊ ဒါပေမယ့် ...",
+        "sourcePage": 35,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "No, I don't think so.",
+        "id": "3D-22",
+        "my": "ဟင့်အင်း၊ ကျွန်ုပ် အဲဒီလို မထင်ပါ။",
+        "sourcePage": 35,
+        "area": "lesson"
+      },
+      {
+        "t": "ins",
+        "x": "C. Complete the following dialogue with the expressions given in the box.",
+        "id": "3D-23",
+        "my": "C။ အကွက်ထဲတွင် ပေးထားသော အသုံးအနှုန်းများဖြင့် အောက်ပါစကားပြောခန်းကို ဖြည့်ပါ။",
+        "sourcePage": 35,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "I don't think so",
+        "id": "3D-24",
+        "my": "ကျွန်ုပ် အဲဒီလို မထင်ပါ",
+        "sourcePage": 35,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "you're right",
+        "id": "3D-25",
+        "my": "သင် မှန်ပါသည်",
+        "sourcePage": 35,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "I agree with you",
+        "id": "3D-26",
+        "my": "ကျွန်ုပ် သင်နှင့် သဘောတူပါသည်",
+        "sourcePage": 35,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "I see your point",
+        "id": "3D-27",
+        "my": "သင့်အယူအဆကို ကျွန်ုပ် နားလည်ပါသည်",
+        "sourcePage": 35,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "Lin Lin        : We should have a time to relax after the exam. What do you think?",
+        "id": "3D-28",
+        "my": "လင်းလင်း — စာမေးပွဲပြီးရင် အပန်းဖြေဖို့ အချိန်ယူသင့်တယ်။ နင် ဘယ်လိုထင်လဲ။",
+        "sourcePage": 35,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "Thiri            : I think (1) _______________. How about going shopping to the City Mall? We can have a lot of fun there.",
+        "id": "3D-29",
+        "my": "သီရိ — (၁) _______________ လို့ ငါထင်တယ်။ City Mall ကို ဈေးဝယ်သွားရင် ဘယ်လိုလဲ။ အဲဒီမှာ ပျော်စရာအများကြီး ရှိနိုင်တယ်။",
+        "sourcePage": 35,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "Lin Lin        : (2) _______________. There's a lot of people and it is a bit noisy. I wish to go to a quiet place.",
+        "id": "3D-30",
+        "my": "လင်းလင်း — (၂) _______________။ အဲဒီမှာ လူတွေအများကြီးရှိပြီး နည်းနည်းဆူတယ်။ ငြိမ်သက်တဲ့နေရာကို သွားချင်တယ်။",
+        "sourcePage": 35,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "Thiri            : (3) _______________, but we can have good food at the Food Court and can also watch movie if you like. You like watching movies, don't you? It's relaxing to watch a comedy.",
+        "id": "3D-31",
+        "my": "သီရိ — (၃) _______________၊ ဒါပေမယ့် Food Court မှာ အစားကောင်းတွေစားနိုင်ပြီး နင်ကြိုက်ရင် ရုပ်ရှင်လည်း ကြည့်နိုင်တယ်။ နင် ရုပ်ရှင်ကြည့်ရတာ ကြိုက်တယ်မဟုတ်လား။ ဟာသရုပ်ရှင်ကြည့်ရတာ အပန်းပြေတယ်။",
+        "sourcePage": 35,
+        "area": "exercise"
+      },
+      {
+        "t": "q",
+        "x": "Lin Lin        : OK. (4) _______________ now. Let's watch a movie after having lunch.",
+        "id": "3D-32",
+        "my": "လင်းလင်း — ကောင်းပြီ။ အခုတော့ (၄) _______________။ နေ့လယ်စာစားပြီး ရုပ်ရှင်ကြည့်ကြရအောင်။",
+        "sourcePage": 35,
+        "area": "exercise"
+      },
+      {
+        "t": "ins",
+        "x": "D. In pairs, practise the dialogue.",
+        "id": "3D-33",
+        "my": "D။ နှစ်ယောက်တွဲ၍ စကားပြောခန်းကို လေ့ကျင့်ပါ။",
+        "sourcePage": 35,
+        "area": "exercise"
+      },
+      {
+        "t": "ins",
+        "x": "E. Su Su and Nilar are at the canteen. Write a dialogue between Su Su and Nilar talking about junk food and organic food. Use the following information in the dialogue.",
+        "id": "3D-34",
+        "my": "E။ စုစုနှင့် နီလာသည် မုန့်ဈေးတန်းတွင် ရှိနေကြသည်။ ကျန်းမာရေးနှင့်မညီသောအစားအစာနှင့် အော်ဂဲနစ်အစားအစာအကြောင်း ပြောဆိုသော စုစုနှင့်နီလာတို့၏ စကားပြောခန်းတစ်ခု ရေးပါ။ အောက်ပါအချက်အလက်များကို အသုံးပြုပါ။",
+        "sourcePage": 35,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "Su Su          - likes to eat junk food; thinks they are tasty; thinks organic food is expensive.",
+        "id": "3D-35",
+        "my": "စုစု — ကျန်းမာရေးနှင့်မညီသော အစားအစာများကို စားလိုသည်။ အရသာရှိသည်ဟု ထင်သည်။ အော်ဂဲနစ်အစားအစာမှာ ဈေးကြီးသည်ဟု ထင်သည်။",
+        "sourcePage": 35,
+        "area": "exercise"
+      },
+      {
+        "t": "scan",
+        "x": "",
+        "id": "3D-36",
+        "my": "",
+        "sourcePage": 35,
+        "area": "exercise",
+        "scanPage": 35
+      },
+      {
+        "t": "line",
+        "x": "You can begin the dialogue like this.",
+        "id": "3D-37",
+        "my": "စကားပြောခန်းကို အောက်ပါအတိုင်း စနိုင်သည်။",
+        "sourcePage": 36,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "Su Su        : Would you like to eat some crisps?",
+        "id": "3D-38",
+        "my": "စုစု — အာလူးကြော်နည်းနည်း စားမလား။",
+        "sourcePage": 36,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "Nilar        : No, I try to avoid junk food.",
+        "id": "3D-39",
+        "my": "နီလာ — မစားတော့ပါဘူး။ ကျန်းမာရေးနှင့်မညီတဲ့ အစားအစာတွေကို ရှောင်ဖို့ ကြိုးစားနေတာ။",
+        "sourcePage": 36,
+        "area": "exercise"
+      },
+      {
+        "t": "line",
+        "x": "Su Su        : .........................",
+        "id": "3D-40",
+        "my": "စုစု — .........................",
+        "sourcePage": 36,
+        "area": "exercise"
+      }
+    ]
+  },
+  {
+    "code": "3E",
+    "title": "Writing",
+    "blocks": [
+      {
+        "t": "h",
+        "x": "Describing a past event",
+        "id": "3E-0",
+        "my": "အတိတ်ဖြစ်ရပ်တစ်ခုကို ဖော်ပြခြင်း",
+        "sourcePage": 36,
+        "area": "lesson"
+      },
+      {
+        "t": "ins",
+        "x": "Study a past event written by a student.",
+        "id": "3E-1",
+        "my": "ကျောင်းသားတစ်ဦး ရေးထားသော အတိတ်ဖြစ်ရပ်တစ်ခုကို လေ့လာပါ။",
+        "sourcePage": 36,
+        "area": "lesson"
+      },
+      {
+        "t": "para",
+        "x": "One Sunday afternoon, I went to a bookshop to buy some books. When I arrived at the bookshop, there were not many people. I went around the bookshelves to look for the book I wanted to buy. At that time, I noticed a girl behind me. Whenever I stopped at a bookshelf, she also stopped behind me. I thought that she was a pickpocket. At first, I did not know what to do. Then, I got an idea and turned round to look straight at her. Suddenly, she said, “Your skirt was torn at the back. I’m trying to cover that tear not to be seen by others.”",
+        "id": "3E-2",
+        "my": "တနင်္ဂနွေနေ့ နေ့လယ်ခင်းတစ်ခုမှာ စာအုပ်အချို့ဝယ်ဖို့ ကျွန်ုပ် စာအုပ်ဆိုင်တစ်ဆိုင်ကို သွားခဲ့သည်။ ဆိုင်ကိုရောက်သောအခါ လူများများ မရှိပါ။ ဝယ်ချင်သောစာအုပ်ကို ရှာရန် စာအုပ်စင်များပတ်၍ ကြည့်ခဲ့သည်။ ထိုအချိန်တွင် ကျွန်ုပ်နောက်က မိန်းကလေးတစ်ဦးကို သတိထားမိသည်။ ကျွန်ုပ် စာအုပ်စင်တစ်ခုတွင် ရပ်လိုက်တိုင်း သူမလည်း နောက်မှာ ရပ်လိုက်သည်။ သူမကို ခါးပိုက်နှိုက်ဟု ကျွန်ုပ် ထင်ခဲ့သည်။ ပထမတော့ ဘာလုပ်ရမှန်း မသိပါ။ ထို့နောက် အကြံတစ်ခုရ၍ သူမကို တည့်တည့်ကြည့်ရန် လှည့်လိုက်သည်။ ရုတ်တရက် သူမက “ရှင့်စကတ်က နောက်ဘက်မှာ ပြဲနေတယ်။ အဲဒီအပြဲကို တခြားသူတွေ မမြင်အောင် ကျွန်မ ကာပေးဖို့ ကြိုးစားနေတာပါ” ဟု ပြောလိုက်သည်။",
+        "sourcePage": 36,
+        "area": "lesson"
+      },
+      {
+        "t": "ins",
+        "x": "Think about an unforgettable event in the past. Write a paragraph on ‘An unforgettable event in my life’. The following questions are given to help you.",
+        "id": "3E-3",
+        "my": "အတိတ်က မမေ့နိုင်သောဖြစ်ရပ်တစ်ခုအကြောင်း စဉ်းစားပါ။ “ကျွန်ုပ်ဘဝ၏ မမေ့နိုင်သောဖြစ်ရပ်တစ်ခု” ခေါင်းစဉ်ဖြင့် စာပိုဒ်တစ်ပိုဒ် ရေးပါ။ အောက်ပါမေးခွန်းများက သင့်ကို ကူညီရန် ဖြစ်သည်။",
+        "sourcePage": 36,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "• What was the event and when did it happen?",
+        "id": "3E-5",
+        "my": "• မည်သည့်ဖြစ်ရပ်ဖြစ်ပြီး မည်သည့်အချိန်တွင် ဖြစ်ခဲ့သနည်း။",
+        "sourcePage": 36,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "• Where were you at that time and what were you doing there?",
+        "id": "3E-6",
+        "my": "• ထိုအချိန်တွင် သင် ဘယ်နေရာ၌ရှိပြီး ထိုနေရာတွင် ဘာလုပ်နေသနည်း။",
+        "sourcePage": 36,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "• How did you feel when it happened?",
+        "id": "3E-7",
+        "my": "• ဖြစ်ပွားချိန်တွင် သင် မည်သို့ခံစားရသနည်း။",
+        "sourcePage": 36,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "• What did you do then?",
+        "id": "3E-8",
+        "my": "• ထို့နောက် သင် ဘာလုပ်ခဲ့သနည်း။",
+        "sourcePage": 36,
+        "area": "lesson"
+      },
+      {
+        "t": "line",
+        "x": "• How did the event end?",
+        "id": "3E-9",
+        "my": "• ဖြစ်ရပ်သည် မည်သို့အဆုံးသတ်ခဲ့သနည်း။",
+        "sourcePage": 36,
+        "area": "lesson"
+      }
+    ]
+  }
 ]

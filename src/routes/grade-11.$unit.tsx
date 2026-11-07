@@ -3,6 +3,7 @@ import { useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { G11QuizBlock } from "@/components/grade11/G11Quiz";
 import { getG11Unit } from "@/data/grade11/part1";
+import { Grade11Unit3Lesson } from "@/components/grade11/Grade11Unit3Lesson";
 import { Grade11Unit1Lesson } from "@/components/grade11/Grade11Unit1Lesson";
 import { SayaOwlHome } from "@/components/SayaOwlHome";
 import type { G11SkillKind } from "@/data/grade11/syllabus";
@@ -34,7 +35,7 @@ function UnitPage() {
   const { unit } = Route.useLoaderData();
   const tabs = [...(unit.reading ? ["Reading"] : []), ...unit.sections.map((s) => s.title.split(":")[0])];
   const [tab, setTab] = useState(0);
-  if (unit.id === "unit-1") return <SourceUnit1Page title={unit.title} mmTitle={unit.mmTitle} />;
+  if (unit.id === "unit-1" || unit.id === "unit-3") return <SourceUnitPage key={unit.id} unitNumber={unit.id === "unit-3" ? 3 : 1} title={unit.title} mmTitle={unit.mmTitle} />;
   const readingOffset = unit.reading ? 1 : 0;
   const section = tab >= readingOffset ? unit.sections[tab - readingOffset] : null;
 
@@ -93,7 +94,7 @@ function UnitPage() {
   );
 }
 
-const UNIT1_SKILLS: { kind: G11SkillKind; label: string }[] = [
+const SOURCE_SKILLS: { kind: G11SkillKind; label: string }[] = [
   { kind: "reading", label: "Reading" },
   { kind: "vocabulary", label: "Vocabulary" },
   { kind: "grammar", label: "Grammar" },
@@ -102,27 +103,27 @@ const UNIT1_SKILLS: { kind: G11SkillKind; label: string }[] = [
   { kind: "writing", label: "Writing" },
 ];
 
-/** Direct Unit 1 links use the same verified content as the curriculum explorer. */
-function SourceUnit1Page({ title, mmTitle }: { title: string; mmTitle: string }) {
+/** Direct links use the same verified content as the curriculum explorer. */
+function SourceUnitPage({ title, mmTitle, unitNumber }: { title: string; mmTitle: string; unitNumber: 1 | 3 }) {
   const [skill, setSkill] = useState<G11SkillKind>("reading");
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
       <main className="mx-auto max-w-6xl px-4 py-6">
         <Link to="/grade-11" className="text-sm text-primary">← Grade 11 Units</Link>
-        <p className="mt-3 text-sm font-semibold text-primary">Unit 1</p>
+        <p className="mt-3 text-sm font-semibold text-primary">Unit {unitNumber}</p>
         <h1 className="text-3xl font-bold">{title}</h1>
         <p className="text-muted-foreground">{mmTitle}</p>
-        <nav aria-label="Unit 1 skills" className="mt-5 flex flex-wrap gap-2">
-          {UNIT1_SKILLS.map(({ kind, label }) => (
+        <nav aria-label={`Unit ${unitNumber} skills`} className="mt-5 flex flex-wrap gap-2">
+          {SOURCE_SKILLS.map(({ kind, label }) => (
             <button key={kind} type="button" aria-pressed={kind === skill} onClick={() => setSkill(kind)}
               className={`rounded-full border px-3 py-1.5 text-sm ${kind === skill ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card hover:bg-muted"}`}>
               {label}
             </button>
           ))}
         </nav>
-        <div data-saya-home-section><Grade11Unit1Lesson key={skill} kind={skill} /></div>
-        <SayaOwlHome lessonContext={`Grade 11 English · Unit 1 · ${title} · ${skill}`} />
+        <div data-saya-home-section>{unitNumber === 3 ? <Grade11Unit3Lesson key={skill} kind={skill} /> : <Grade11Unit1Lesson key={skill} kind={skill} />}</div>
+        <SayaOwlHome lessonContext={`Grade 11 English · Unit ${unitNumber} · ${title} · ${skill}`} />
       </main>
     </div>
   );

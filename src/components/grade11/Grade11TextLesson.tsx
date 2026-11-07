@@ -17,6 +17,7 @@ import unit1 from "@/data/grade11/textbook/unit1.json";
 import unit2 from "@/data/grade11/textbook/unit2.json";
 import unit3 from "@/data/grade11/textbook/unit3.json";
 import type { G11SkillKind } from "@/data/grade11/syllabus";
+import { Grade11Unit3Lesson } from "@/components/grade11/Grade11Unit3Lesson";
 import { Grade11Unit1Lesson } from "@/components/grade11/Grade11Unit1Lesson";
 
 /** Optional `a` = answer key (enables Check/Reveal), `my` = Burmese translation. */
@@ -77,6 +78,7 @@ function split(blocks: Block[]) {
 }
 
 export function Grade11TextLesson({ unit, kind }: { unit: number; kind: G11SkillKind }) {
+  if (unit === 3) return <Grade11Unit3Lesson key={kind} kind={kind} />;
   if (unit === 1) return <Grade11Unit1Lesson key={kind} kind={kind} />;
   return <LegacyGrade11TextLesson key={`${unit}-${kind}`} unit={unit} kind={kind} />;
 }

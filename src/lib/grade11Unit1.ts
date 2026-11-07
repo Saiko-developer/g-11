@@ -9,6 +9,7 @@ export type Unit1Block = {
   area: "lesson" | "exercise";
   sourcePage: number;
   scanPage?: number;
+  emphasis?: string[];
   response?: "personal" | "audio";
 };
 
