@@ -168,11 +168,13 @@ export function AnswerTryBox({
   placeholder = "Type your answer here…",
   question,
   instructions,
+  correctMy,
 }: {
   correct: string;
   placeholder?: string;
   question?: string;
   instructions?: string;
+  correctMy?: string;
 }) {
   const [val, setVal] = useState("");
   const [revealed, setRevealed] = useState(false);
@@ -296,6 +298,7 @@ export function AnswerTryBox({
         <div className="rounded-md border border-primary/30 bg-primary/5 px-3 py-2 text-sm">
           <span className="font-semibold">Answer: </span>
           {correct}
+          {correctMy && <p className="mt-1 text-muted-foreground">🇲🇲 {correctMy}</p>}
         </div>
       )}
     </div>

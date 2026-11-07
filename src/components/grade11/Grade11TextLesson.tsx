@@ -228,16 +228,18 @@ function QuestionCard({ b, instructions, context, onAnswer, noStructure }: {
           </ToggleReveal>
         )}
       </div>
-      {b.a ? (
+      {b.a || b.ma ? (
         <div onInput={(e) => onAnswer((e.target as HTMLInputElement).value ?? "")}>
-          <AnswerTryBox correct={b.a} question={text} instructions={instructions} />
+          <AnswerTryBox correct={(b.a || b.ma) as string} correctMy={b.a ? undefined : b.maMy}
+            question={text} instructions={instructions} />
         </div>
       ) : (
-        <OwlAnswerBox question={text} instructions={instructions} context={context} onAnswer={onAnswer} />
+        <p className="mt-2 rounded-lg border border-dashed border-border bg-muted/40 p-2 text-xs text-muted-foreground">
+          🎧 ဒီမေးခွန်းအတွက် အဖြေကို နားထောင်ရန်အသံဖိုင် ရပြီးမှ ထည့်ပေးပါမည်။
+        </p>
       )}
-      {(b.ma || b.exMy) && (
+      {b.exMy && (
         <div className="mt-2 flex flex-wrap gap-2">
-          {b.ma && <ModelAnswer en={b.ma} my={b.maMy} />}
           {b.exMy && (
             <ToggleReveal label="ဘာကြောင့်လဲ? (ရှင်းလင်းချက်)" icon={Sparkles}>{b.exMy}</ToggleReveal>
           )}
