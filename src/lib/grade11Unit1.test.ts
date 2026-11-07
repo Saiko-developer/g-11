@@ -74,14 +74,14 @@ describe("Grade 11 Unit 1 source fidelity", () => {
     const all = UNIT1_SECTIONS.flatMap((s) => s.blocks);
     expect(all.filter((b) => b.response === "audio")).toHaveLength(7);
     for (const block of all.filter((b) => b.response)) expect(UNIT1_KEYS[block.id]).toBeUndefined();
-    expect(Object.keys(UNIT1_KEYS)).toHaveLength(86);
+    expect(Object.keys(UNIT1_KEYS)).toHaveLength(87);
     for (const block of all.filter((b) => b.scanPage)) {
       const url = unit1ScanUrl(block.scanPage!);
       expect(url).toBeTruthy();
       expect(existsSync(`public${url}`)).toBe(true);
       expect(block.x).not.toContain("[illegible]");
     }
-    expect(UNIT1_KEYS["1C-71"]).toBeUndefined();
+    expect(UNIT1_KEYS["1C-71"].answer).toContain("before delivering his speech");
     expect(unit1ScanUrl(1)).toBeNull();
   });
 });

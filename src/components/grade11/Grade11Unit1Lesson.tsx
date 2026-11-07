@@ -1,3 +1,4 @@
+import { Grade11GrammarVideos } from "./Grade11GrammarVideos";
 import { Grade11Unit1Workspace } from "./Grade11Unit1Workspace";
 import { useState } from "react";
 import { Languages, PenLine, Sparkles } from "lucide-react";
@@ -65,6 +66,7 @@ export function Grade11SourceLesson({
         </div>
         <Progress value={total ? (done / total) * 100 : 0} className="mt-2 h-2" />
       </div>
+      {kind === "grammar" && <Grade11GrammarVideos unit={unitNumber} />}
       <div className="grid gap-5 lg:grid-cols-2">
         <article className="space-y-3 rounded-2xl border border-border bg-card p-5 lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto">
           <span className="inline-flex rounded-full bg-primary/10 px-2.5 py-1 text-xs font-bold text-primary">

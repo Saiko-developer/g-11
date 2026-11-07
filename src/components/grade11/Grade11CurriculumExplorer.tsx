@@ -1,3 +1,4 @@
+import { Grade11GrammarVideos } from "./Grade11GrammarVideos";
 import { Grade11Review1View, Grade11Poem1View } from "@/components/grade11/Grade11Revision";
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
@@ -60,6 +61,9 @@ export function Grade11CurriculumExplorer() {
           <div className="mt-5 rounded-2xl border border-dashed border-border bg-muted/40 p-6 text-center text-sm text-muted-foreground">
             🔜 ဒီအပိုင်းကို ဖတ်စာအုပ် Part 2 ရရှိပြီးနောက် ထည့်သွင်းပေးပါမည်။
           </div>
+        )}
+        {view.kind === "grammar" && view.unit && !hasGrade11Text(view.unit) && (
+          <Grade11GrammarVideos unit={view.unit} />
         )}
         <Link to="/tutor" className="mt-5 inline-flex rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">
           🦉 ဆရာဇီးကွက်ကို မေးမည်

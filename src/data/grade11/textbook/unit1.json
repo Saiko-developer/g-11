@@ -821,7 +821,7 @@
       {
         "t": "line",
         "x": "e.g. I like chocolate ice cream. I like vanilla ice cream.",
-        "my": "I like chocolate ice cream. I like vanilla ice cream.",
+        "my": "ဥပမာ။ ကျွန်ုပ်သည် ချောကလက်ရေခဲမုန့်ကို နှစ်သက်သည်။ ကျွန်ုပ်သည် ဗနီလာရေခဲမုန့်ကို နှစ်သက်သည်။",
         "id": "1C-13",
         "area": "exercise",
         "sourcePage": 11
@@ -1284,12 +1284,11 @@
       },
       {
         "t": "q",
-        "x": "7.",
-        "my": "7.",
+        "x": "7. The speaker looked at the audience and took a deep breath. Then, he delivered his speech.",
+        "my": "7. ဟောပြောသူသည် ပရိသတ်ကိုကြည့်ပြီး အသက်ပြင်းပြင်းရှူခဲ့သည်။ ထို့နောက် သူ၏မိန့်ခွန်းကို ပြောခဲ့သည်။",
         "id": "1C-71",
         "area": "exercise",
-        "sourcePage": 13,
-        "scanPage": 13
+        "sourcePage": 13
       },
       {
         "t": "q",

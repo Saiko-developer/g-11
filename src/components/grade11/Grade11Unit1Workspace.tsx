@@ -1,3 +1,6 @@
+import { Grade11Unit1ExerciseBlocks } from "./Grade11Unit1ExerciseBlocks";
+import { Grade11GrammarVideos } from "./Grade11GrammarVideos";
+import { Grade11Pronunciation } from "./Grade11Pronunciation";
 import { UNIT1_READING_C_WORDS } from "@/data/grade11/unit1ReadingStructure";
 import { Grade11ReadingStructure } from "./Grade11ReadingStructure";
 import { useEffect, useState } from "react";
@@ -131,16 +134,19 @@ export function Grade11Unit1Workspace({ kind }: { kind: G11SkillKind }) {
                   hint="နမူနာ အသံထွက်ကို နားထောင်ပြီး လိုက်ဆိုကြည့်ပါ။"
                 />
               )}
-              {lesson.map((block) => (
-                <SourceBlock
-                  key={block.id}
-                  block={block}
-                  scanUrl={scanUrl}
-                  directMy={kind === "writing"}
-                />
-              ))}
+              {lesson
+                .filter((block) => !(kind === "writing" && block.t === "scan"))
+                .map((block) => (
+                  <SourceBlock
+                    key={block.id}
+                    block={block}
+                    scanUrl={scanUrl}
+                    directMy={kind === "writing"}
+                  />
+                ))}
             </article>
           ))}
+        {kind === "grammar" && <Grade11GrammarVideos unit={1} />}
         <section className="min-w-0 space-y-4" aria-label={`${section.title} exercises`}>
           <OwlBadge>သင်ခန်းစာကို အရင်လေ့လာပြီး လေ့ကျင့်ခန်းများကို ကိုယ်တိုင်ဖြေကြည့်ပါ။</OwlBadge>
           {exercises.map((ex) => {
@@ -155,7 +161,8 @@ export function Grade11Unit1Workspace({ kind }: { kind: G11SkillKind }) {
                 {kind === "writing" || ["1A-0", "1A-28"].includes(ex.instruction.id) ? (
                   <p className="mt-2 text-sm text-muted-foreground">{ex.instruction.my}</p>
                 ) : (
-                  (kind !== "reading" || ex.instruction.id === "1A-36") && (
+                  (kind !== "reading" || ex.instruction.id === "1A-36") &&
+                  ex.instruction.id !== "1C-12" && (
                     <ToggleReveal label="Translate Instructions" icon={Languages}>
                       {ex.instruction.my}
                     </ToggleReveal>
@@ -163,8 +170,16 @@ export function Grade11Unit1Workspace({ kind }: { kind: G11SkillKind }) {
                 )}
 
                 {matching && <MatchingColumns blocks={ex.blocks} />}
-                <div className="mt-3 space-y-3">
-                  {ex.blocks.map((block) => {
+                <Grade11Unit1ExerciseBlocks
+                  blocks={ex.blocks}
+                  layout={
+                    ex.instruction.id === "1D-0"
+                      ? "listening"
+                      : ex.instruction.id === "1D-12"
+                        ? "dialogue"
+                        : undefined
+                  }
+                  renderBlock={(block) => {
                     if (block.t === "q")
                       return (
                         <Question
@@ -183,10 +198,7 @@ export function Grade11Unit1Workspace({ kind }: { kind: G11SkillKind }) {
                           reveal={
                             !(kind === "reading" && ["1A-16", "1A-28"].includes(ex.instruction.id))
                           }
-                          noStructure={
-                            ex.instruction.id !== "1A-36" &&
-                            (kind !== "vocabulary" || ex.instruction.id === "1B-4")
-                          }
+                          noStructure={ex.instruction.id !== "1A-36"}
                           onAnswer={(value) => setAnswer(block.id, value)}
                         />
                       );
@@ -204,13 +216,10 @@ export function Grade11Unit1Workspace({ kind }: { kind: G11SkillKind }) {
                         }
                       />
                     );
-                  })}
-                </div>
+                  }}
+                />
                 {kind === "grammar" && questions.length > 0 && (
                   <div className="mt-4">
-                    <p className="text-xs text-muted-foreground">
-                      အောက်ပါ AI အပိုလေ့ကျင့်ခန်းများသည် မူရင်းဖတ်စာအုပ်ထဲမှ မဟုတ်ပါ။
-                    </p>
                     <GrammarExerciseGenerator
                       title={`Grade 11 ${section.code} ${ex.instruction.x.slice(0, 60)}`}
                       instructions={ex.instruction.x}
@@ -339,8 +348,18 @@ function MatchingColumns({ blocks }: { blocks: Unit1Block[] }) {
       <tbody>
         {left.map((block, i) => (
           <tr key={block.id}>
-            <td className="border border-border p-2">{block.x}</td>
-            <td className="border border-border p-2">{right[i]?.x}</td>
+            <td className="border border-border p-2">
+              <div className="flex items-center justify-between gap-1">
+                <span>{block.x}</span>
+                <Grade11Pronunciation text={block.x} />
+              </div>
+            </td>
+            <td className="border border-border p-2">
+              <div className="flex items-center justify-between gap-1">
+                <span>{right[i]?.x}</span>
+                {right[i] && <Grade11Pronunciation text={right[i].x} />}
+              </div>
+            </td>
           </tr>
         ))}
       </tbody>
