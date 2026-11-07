@@ -83,9 +83,12 @@ export function ToggleReveal({
 export function StructureBreakdown({
   questionText,
   breakdown,
+  sentenceMy,
 }: {
   questionText: string;
   breakdown?: SentenceBreakdown;
+  /** Real Burmese translation of the whole sentence; replaces word-by-word auto translations. */
+  sentenceMy?: string;
 }) {
   const [activeTag, setActiveTag] = useState<string | null>(null);
   const info = activeTag ? TAG_INFO[activeTag] : null;
@@ -112,9 +115,11 @@ export function StructureBreakdown({
             className="flex min-w-0 flex-col items-center justify-center rounded-lg border border-slate-200 bg-slate-50 p-3"
           >
             <span className="text-sm font-bold leading-tight text-slate-900">{car.word}</span>
-            <span className="mt-1 break-words text-[11px] leading-tight text-slate-600">
-              ({car.translation})
-            </span>
+            {!sentenceMy && (
+              <span className="mt-1 break-words text-[11px] leading-tight text-slate-600">
+                ({car.translation})
+              </span>
+            )}
             <button
               type="button"
               onClick={() => setActiveTag(car.tag)}
@@ -126,7 +131,11 @@ export function StructureBreakdown({
           </div>
         ))}
       </div>
-
+      {sentenceMy && (
+        <p className="mt-3 rounded-lg border border-primary/20 bg-primary/5 p-3 text-sm leading-relaxed">
+          🇲🇲 {sentenceMy}
+        </p>
+      )}
 
       <Sheet open={!!activeTag} onOpenChange={(o) => !o && setActiveTag(null)}>
         <SheetContent side="right" className="w-[88vw] sm:max-w-md">
