@@ -1,824 +1,1017 @@
 [
- {
-  "code": "1A",
-  "title": "Reading",
-  "blocks": [
-   {
-    "t": "sub",
-    "x": "Pre-reading"
-   },
-   {
-    "t": "line",
-    "x": "1. Which of these sentences is / are true for you? Put a tick or a cross in the box."
-   },
-   {
-    "t": "line",
-    "x": "a. I have seen a dolphin."
-   },
-   {
-    "t": "line",
-    "x": "b. I have seen a dolphin in the movies."
-   },
-   {
-    "t": "line",
-    "x": "c. I have seen a picture of a dolphin."
-   },
-   {
-    "t": "line",
-    "x": "d. I have seen an Ayeyarwady dolphin."
-   },
-   {
-    "t": "line",
-    "x": "e. I have never seen a dolphin."
-   },
-   {
-    "t": "q",
-    "x": "2. How will you feel if you see a dolphin?"
-   },
-   {
-    "t": "sub",
-    "x": "Read the passage."
-   },
-   {
-    "t": "para",
-    "x": "The dolphin is a kind of sea animal that looks like a large fish with a long pointed snout. Dolphins are both intelligent and friendly towards humans. There are several types of dolphins. Among them, the Ayeyarwady dolphin is a popular kind in Southeast Asia. Dolphins of this type are usually found in coastal areas in South and Southeast Asia and in freshwater rivers in Myanmar, Indonesia, and Laos. This species is called the Ayeyarwady dolphin as it was first found in the Ayeyarwady River in Myanmar, Its scientific name is Orcaella brevirostris and it is one of the endangered species among the freshwater dolphins in the world."
-   },
-   {
-    "t": "para",
-    "x": "The Ayeyarwady dolphin is quite different from other well-known dolphins. Its colour may be dark blue or dark or pale gray. It has a rounded head and a very bulging forehead. Unlike other dolphins, it has no beak, or snout. The dorsal fin is short, blunt and triangular. The flippers are long and broad. The average length is 2.3 metres and the weight can range from 90 kg to 200 kg."
-   },
-   {
-    "t": "para",
-    "x": "They feed on bony fish, fish eggs, and crustaceans which are crabs, lobsters and shrimps. They also eat octopuses and squids. They take food into the mouth by suction, that is, by sucking in it."
-   },
-   {
-    "t": "para",
-    "x": "Ayeyarwady dolphins like to stay in tropical and subtropical waters and near shallow coastal waters. In other words, they live near coasts and river mouths. They are also found in freshwater rivers: the Ayeyarwady in Myanmar, the Mahakam in Indonesia and the Mekong in Laos. They are mostly seen about 1.6 kilometres away from the shore and they do not usually live in deep waters. In Myanmar, they inhabit the Ayeyarwady River between Mandalay and Bamaw."
-   },
-   {
-    "t": "para",
-    "x": "Ayeyarwady dolphins are slow swimmers and they are generally found in groups of 3 to 6 members, but sometimes up to 15 dolphins are seen together. They usually breathe, bringing only the head out of the water. They produce sounds such as whistles, clicks and screeches to communicate with one another. They can be seen jumping, making bubbles. and hitting the water with their flippers and tails. They can squirt streams of water that can reach up to 1.5 metres above the surface of the water. One of the most distinctive characteristics of these dolphins is the mutual relationship they have with the local fishermen. By making a tapping sound against the sides of their boats, the local fishermen used to call the dolphins to drive fish into their cast nets. In return. they rewarded the dolphins with a share of the fish that they had caught. The fishermen tried to get the attention of the dolphins in various ways - by striking the sides of their boats with their wooden sticks, by splashing the surface of the water with their oars and by giving their nets several rapid tugs."
-   },
-   {
-    "t": "para",
-    "x": "Ayeyarwady dolphins are now on the verge of extinction. They are listed as a critically endangered species, that is, it may no longer exist in the future as the dolphin population declines year by year. They often get entangled in the fishing nets and they also die as a result of electrofishing, and the use of gillnets and explosives. Now, in Myanmar the dolphins are under protection. The region in the Ayeyarwady River between Mingun and Kyaukmyaung is officially recognized as a sanctuary to protect the decline of the dolphin population. The Department of Fisheries prohibits the catching or killing of dolphins. The local fishermen are not allowed to use electrofishing, gillnets and explosives, which lead to a steady decline of the population of Ayeyarwady dolphins."
-   },
-   {
-    "t": "sub",
-    "x": "Comprehension"
-   },
-   {
-    "t": "ins",
-    "x": "A. Read the passage and choose the appropriate topic for each paragraph."
-   },
-   {
-    "t": "line",
-    "x": "Match the paragraphs (1-5) with the topics (a-e)."
-   },
-   {
-    "t": "line",
-    "x": "a. Food"
-   },
-   {
-    "t": "line",
-    "x": "b. Threats and Conservation."
-   },
-   {
-    "t": "ins",
-    "x": "C. Description"
-   },
-   {
-    "t": "line",
-    "x": "d. Characteristics"
-   },
-   {
-    "t": "line",
-    "x": "e. Habitat"
-   },
-   {
-    "t": "ins",
-    "x": "B. In pairs, find the bold-faced words in the passage that are similar in meaning to the"
-   },
-   {
-    "t": "line",
-    "x": "following."
-   },
-   {
-    "t": "line",
-    "x": "1. live in a particular place"
-   },
-   {
-    "t": "line",
-    "x": "2. an area where animals are protected and cannot be hunted"
-   },
-   {
-    "t": "line",
-    "x": "3. no longer exist in future"
-   },
-   {
-    "t": "line",
-    "x": "4. bans"
-   },
-   {
-    "t": "line",
-    "x": "5. near the coast"
-   },
-   {
-    "t": "line",
-    "x": "6. caught in a rope, net, etc."
-   },
-   {
-    "t": "line",
-    "x": "7. the long nose of some kind of animals; beak"
-   },
-   {
-    "t": "ins",
-    "x": "C. Give a full-sentence answer to each question below."
-   },
-   {
-    "t": "q",
-    "x": "1. Where are Ayeyarwady dolphins usually found?"
-   },
-   {
-    "t": "q",
-    "x": "2. Why are they called Ayeyarwady dolphins?"
-   },
-   {
-    "t": "q",
-    "x": "3. What is the difference between Ayeyarwady dolphins and other dolphins?"
-   },
-   {
-    "t": "q",
-    "x": "4. How do they eat their food?"
-   },
-   {
-    "t": "q",
-    "x": "5. Where can you find them in Myanmar?"
-   },
-   {
-    "t": "q",
-    "x": "6. How do they communicate with one another?"
-   },
-   {
-    "t": "q",
-    "x": "7. How did the local fishermen get the attention of the dolphins?"
-   },
-   {
-    "t": "q",
-    "x": "8. Why does the dolphin population decline year by year?"
-   },
-   {
-    "t": "q",
-    "x": "9. Which part of the Ayeyarwady River is kept as a sanctuary to protect the dolphins?"
-   },
-   {
-    "t": "q",
-    "x": "10. What can you do to protect the decline of Ayeyarwady dolphin population?"
-   }
-  ]
- },
- {
-  "code": "1B",
-  "title": "Vocabulary",
-  "blocks": [
-   {
-    "t": "line",
-    "x": "Adverb Adjective Collocations"
-   },
-   {
-    "t": "line",
-    "x": "Certain adverbs and adjectives often go together in sentences as collocation. Sometimes, they can also be used as compound adjectives."
-   },
-   {
-    "t": "line",
-    "x": "e.g. Ayeyarwady dolphins are listed as a critically endangered species."
-   },
-   {
-    "t": "line",
-    "x": "U Aung Tin is a highly respected teacher in our school."
-   },
-   {
-    "t": "ins",
-    "x": "A. Match an adverb from Column A with an adjective from Column B."
-   },
-   {
-    "t": "line",
-    "x": "Column A"
-   },
-   {
-    "t": "line",
-    "x": "Column B"
-   },
-   {
-    "t": "line",
-    "x": "1. absolutely"
-   },
-   {
-    "t": "line",
-    "x": "a. necessary"
-   },
-   {
-    "t": "line",
-    "x": "2. deeply"
-   },
-   {
-    "t": "line",
-    "x": "b. concerned"
-   },
-   {
-    "t": "line",
-    "x": "3. highly"
-   },
-   {
-    "t": "line",
-    "x": "c. recommended"
-   },
-   {
-    "t": "line",
-    "x": "4. badly"
-   },
-   {
-    "t": "line",
-    "x": "d. hurt"
-   },
-   {
-    "t": "line",
-    "x": "5. completely"
-   },
-   {
-    "t": "line",
-    "x": "e. different"
-   },
-   {
-    "t": "line",
-    "x": "6. fully"
-   },
-   {
-    "t": "line",
-    "x": "f. aware"
-   },
-   {
-    "t": "line",
-    "x": "7. happily"
-   },
-   {
-    "t": "line",
-    "x": "g. married"
-   },
-   {
-    "t": "line",
-    "x": "8. actively"
-   },
-   {
-    "t": "line",
-    "x": "h. involved"
-   },
-   {
-    "t": "line",
-    "x": "9. deadly"
-   },
-   {
-    "t": "line",
-    "x": "i. serious"
-   },
-   {
-    "t": "line",
-    "x": "10. mentally"
-   },
-   {
-    "t": "line",
-    "x": "j. ill"
-   },
-   {
-    "t": "ins",
-    "x": "B. Complete each sentence with an appropriate adverb and adjective collocation from Exercise A."
-   },
-   {
-    "t": "q",
-    "x": "My brother has been _________________ in voluntary work for over two years."
-   },
-   {
-    "t": "q",
-    "x": "It is _________________ for you to have a balanced diet if you want to be healthy."
-   },
-   {
-    "t": "q",
-    "x": "They had been _________________ for 5 years, but their marriage ended in divorce."
-   },
-   {
-    "t": "q",
-    "x": "Fortunately, no one was _________________ in the car accident."
-   },
-   {
-    "t": "q",
-    "x": "Students must be trained to be _________________ of their responsibilities as good citizens."
-   },
-   {
-    "t": "q",
-    "x": "It is very challenging to take care of people who are _________________."
-   },
-   {
-    "t": "q",
-    "x": "When I look around the surrounding area, it is now _________________ from it was five years ago."
-   },
-   {
-    "t": "q",
-    "x": "The townspeople are _________________ about the threat of health problems caused by polluted water in the river."
-   },
-   {
-    "t": "q",
-    "x": "When he said he was leaving school, we thought he was joking, but he said he was _________________."
-   },
-   {
-    "t": "q",
-    "x": "This book was so _________________ by critics that it became one of the bestsellers of the year."
-   }
-  ]
- },
- {
-  "code": "1C",
-  "title": "Grammar",
-  "blocks": [
-   {
-    "t": "line",
-    "x": "Both ... and"
-   },
-   {
-    "t": "line",
-    "x": "The 'both ... and' construction is used to emphasize that something is true not just of one person, thing or situation, but also of another."
-   },
-   {
-    "t": "line",
-    "x": "It indicates that the two items are equally presented and included."
-   },
-   {
-    "t": "line",
-    "x": "e.g. I like both the novel and the movie."
-   },
-   {
-    "t": "line",
-    "x": "Both Ko Zaw and Soe Thu are good students.*"
-   },
-   {
-    "t": "line",
-    "x": "She can both speak and write Chinese."
-   },
-   {
-    "t": "line",
-    "x": "Dolphins are both intelligent and friendly towards humans."
-   },
-   {
-    "t": "line",
-    "x": "If 'both ... and' is used in the subject of a sentence, the plural verb is used."
-   },
-   {
-    "t": "line",
-    "x": "e.g. Both the movie and the play were good."
-   },
-   {
-    "t": "line",
-    "x": "NB 'Both ... and' is not usually used in negative sentences. 'Neither ... nor' is used instead."
-   },
-   {
-    "t": "line",
-    "x": "e.g. My father neither drinks nor smokes."
-   },
-   {
-    "t": "line",
-    "x": "(Not) My father does not both drink and smoke."
-   },
-   {
-    "t": "ins",
-    "x": "A. Rewrite the sentences using 'both ... and'."
-   },
-   {
-    "t": "line",
-    "x": "e.g. I like chocolate ice cream. I like vanilla ice cream."
-   },
-   {
-    "t": "line",
-    "x": "I like both chocolate ice cream and vanilla ice cream."
-   },
-   {
-    "t": "line",
-    "x": "You are wasting too much time. Kyaw Zaw is wasting too much time."
-   },
-   {
-    "t": "line",
-    "x": "He played football when he was a student. He played volleyball when he was a student."
-   },
-   {
-    "t": "line",
-    "x": "They are tired after shopping. They are hungry after shopping."
-   },
-   {
-    "t": "line",
-    "x": "Not only Kyi Thar but also his brother is a guitarist."
-   },
-   {
-    "t": "line",
-    "x": "Daw Nandar wants to go to Bagan during the Thingyan holiday. Her sons want to go there too."
-   },
-   {
-    "t": "line",
-    "x": "Ni Ni wants to put up at the Shwe Myint Mo Hotel and so does Maw Maw."
-   },
-   {
-    "t": "line",
-    "x": "Applicants for this post must be able to speak English. Applicants for this post must be able to speak Chinese too."
-   },
-   {
-    "t": "line",
-    "x": "You should work harder if you want to be successful. You should have perseverance if you want to be successful."
-   },
-   {
-    "t": "line",
-    "x": "He donated money to the poor in our community. He donated food to the poor in our community."
-   },
-   {
-    "t": "line",
-    "x": "As we are free this afternoon, we can go shopping and we can see a film as well."
-   },
-   {
-    "t": "line",
-    "x": "'Before' and 'After'"
-   },
-   {
-    "t": "line",
-    "x": "'Before' is used:"
-   },
-   {
-    "t": "line",
-    "x": "as a preposition (followed by a noun) meaning 'earlier than the time'; as an adverb (without a following noun) to refer to 'the previous time'; and as a conjunction (connecting two clauses) to indicate that the second event happened soon after the first one."
-   },
-   {
-    "t": "line",
-    "x": "e.g. Could you come to me before lunch? (preposition)"
-   },
-   {
-    "t": "line",
-    "x": "He has written about this subject before. (adverb)"
-   },
-   {
-    "t": "line",
-    "x": "She gave everyone a present before she left. (conjunction)"
-   },
-   {
-    "t": "line",
-    "x": "with present perfect or past perfect tense to emphasize the idea of completion and with 'V-ing' in a formal style."
-   },
-   {
-    "t": "line",
-    "x": "e.g. He went out before I had finished talking."
-   },
-   {
-    "t": "line",
-    "x": "Please switch off all the lights before leaving the office."
-   },
-   {
-    "t": "line",
-    "x": "'After' is used:"
-   },
-   {
-    "t": "line",
-    "x": "as a preposition (followed by a noun) meaning 'at a later time'; as an adverb (without a following noun) meaning 'following in time or place'; and as a conjunction (connecting two clauses) meaning 'when an action or an event has ended'."
-   },
-   {
-    "t": "line",
-    "x": "e.g. I went for a walk after dinner. (preposition)"
-   },
-   {
-    "t": "line",
-    "x": "They started the job on 17th June and finished a week after. (adverb)"
-   },
-   {
-    "t": "line",
-    "x": "After you had left, I got a phone call from Thuzar. (conjunction)"
-   },
-   {
-    "t": "line",
-    "x": "with present perfect or past perfect tense to show that one thing is completed before another starts and with 'V-ing' in a formal style."
-   },
-   {
-    "t": "line",
-    "x": "e.g. I will call you after I have done my homework."
-   },
-   {
-    "t": "line",
-    "x": "After completing this form, give it to the secretary."
-   },
-   {
-    "t": "ins",
-    "x": "B. Complete each sentence with 'before' or 'after'."
-   },
-   {
-    "t": "line",
-    "x": "I left the cinema ……..the boring film ended."
-   },
-   {
-    "t": "line",
-    "x": "My sister usually does the washing-up …..dinner."
-   },
-   {
-    "t": "line",
-    "x": "………graduating from high school, I would like to attend the University of Computer Studies."
-   },
-   {
-    "t": "q",
-    "x": "His watch remains in good condition -------- having been used for five years."
-   },
-   {
-    "t": "line",
-    "x": "……..a careful consideration, my parents allowed me to join the dance club."
-   },
-   {
-    "t": "line",
-    "x": "The new building should be completed ………the end of this month as it is planned to be inaugurated in the first week of next month."
-   },
-   {
-    "t": "line",
-    "x": "The man was arrested by the police two years ……committing the murder."
-   },
-   {
-    "t": "q",
-    "x": "I am looking forward to the trip as I have never been to Japan _______________."
-   },
-   {
-    "t": "q",
-    "x": "_______________ arriving at the hotel, U Min Aung went straight to the meeting room."
-   },
-   {
-    "t": "q",
-    "x": "_______________ I gave him the shopping list, he had left for the market."
-   },
-   {
-    "t": "ins",
-    "x": "C. Combine each pair of sentences using 'after + V-ing' construction."
-   },
-   {
-    "t": "line",
-    "x": "After throwing out the fishing net, the fisherman waited patiently."
-   },
-   {
-    "t": "line",
-    "x": "After telling my mother about my problem, I felt better."
-   },
-   {
-    "t": "line",
-    "x": "After packing her lunch, Thet Thet went out to work."
-   },
-   {
-    "t": "line",
-    "x": "After finishing her/his homework, Nyi Lay was allowed to watch TV."
-   },
-   {
-    "t": "line",
-    "x": "After revising all the lessons, Thuta felt confident to take the exam."
-   },
-   {
-    "t": "line",
-    "x": "After spending a year in the city, he decided to go back to his hometown."
-   },
-   {
-    "t": "line",
-    "x": "After looking at the audience and taking a deep breath, the speaker delivered his speech."
-   },
-   {
-    "t": "line",
-    "x": "After working for the company for two years, Shwe Yee got promoted."
-   },
-   {
-    "t": "line",
-    "x": "After working long hours in the cold, his hands were sore and cracked."
-   },
-   {
-    "t": "line",
-    "x": "After deciding to take up the job, I started to worry about my decision."
-   },
-   {
-    "t": "ins",
-    "x": "D. Combine each pair of sentences using 'before + V-ing' construction."
-   },
-   {
-    "t": "line",
-    "x": "1. Aye Aye washed the vegetables. She put them in the refrigerator."
-   },
-   {
-    "t": "line",
-    "x": "2. Ko Naing applied for a job at the company. He had attended a computer training course."
-   },
-   {
-    "t": "line",
-    "x": "3. I had a cup of coffee. I left for work this morning."
-   },
-   {
-    "t": "line",
-    "x": "4. We had to queue up for an hour. We got the tickets for the music concert."
-   },
-   {
-    "t": "line",
-    "x": "5. There is a lot to study on the subject. Only after that we can start our project."
-   },
-   {
-    "t": "line",
-    "x": "6. He ran the Yoma Marathon. He had practised for almost a year."
-   },
-   {
-    "t": "line",
-    "x": "7. She went throt th her assignment again. She submitted it to the teacher."
-   },
-   {
-    "t": "line",
-    "x": "8. She had packed her suitcase; she went to the bus terminal."
-   },
-   {
-    "t": "line",
-    "x": "9. My father always takes physical exercise. And then he has a bath."
-   },
-   {
-    "t": "line",
-    "x": "10. We had lived in a small town for two years. Then, we moved to Yangon."
-   }
-  ]
- },
- {
-  "code": "1D",
-  "title": "Listening and Speaking",
-  "blocks": [
-   {
-    "t": "ins",
-    "x": "A. Listen to a talk on 'Wildlife Conservation'. Then, complete the following table."
-   },
-   {
-    "t": "line",
-    "x": "'Wildlife'"
-   },
-   {
-    "t": "q",
-    "x": "(1) animals, birds and plants that are found in their _______________"
-   },
-   {
-    "t": "line",
-    "x": "'Wildlife conservation'"
-   },
-   {
-    "t": "q",
-    "x": "(2) the practice of protecting _______________ and animal species and their habitats"
-   },
-   {
-    "t": "line",
-    "x": "How to protect wildlife from being extinct"
-   },
-   {
-    "t": "q",
-    "x": "(3) to _______________ and collect information about wildlife"
-   },
-   {
-    "t": "q",
-    "x": "(4) to _______________ of endangered animals and birds"
-   },
-   {
-    "t": "q",
-    "x": "(5) to _______________ about the importance of wildlife"
-   },
-   {
-    "t": "line",
-    "x": "How to maintain the number of wildlife in balance with their habitats"
-   },
-   {
-    "t": "q",
-    "x": "(6) to prohibit _______________ forest trees and to grow more trees for the animals"
-   },
-   {
-    "t": "q",
-    "x": "(7) _______________ protected areas like national parks and wildlife sanctuaries"
-   },
-   {
-    "t": "ins",
-    "x": "B. Complete the following dialogue using the questions given below."
-   },
-   {
-    "t": "line",
-    "x": "(a) How did you feel after the trip?"
-   },
-   {
-    "t": "line",
-    "x": "(b) How was your trip?"
-   },
-   {
-    "t": "line",
-    "x": "(c) What did you do with that group?"
-   },
-   {
-    "t": "line",
-    "x": "(d) What did you do after that?"
-   },
-   {
-    "t": "line",
-    "x": "(e) With whom did you go there?"
-   },
-   {
-    "t": "line",
-    "x": "A: Hi! Kyaw Swar, you've just come back from Chaung Tha, haven't you?"
-   },
-   {
-    "t": "line",
-    "x": "B: Yes, I have."
-   },
-   {
-    "t": "line",
-    "x": "A: (1)"
-   },
-   {
-    "t": "line",
-    "x": "B: Fantastic! I got a lot of experience from it."
-   },
-   {
-    "t": "line",
-    "x": "A: Did you? (2)"
-   },
-   {
-    "t": "line",
-    "x": "B: I went there with a voluntary group to do the project on the environment."
-   },
-   {
-    "t": "line",
-    "x": "A: (3)"
-   },
-   {
-    "t": "line",
-    "x": "B: When we arrived there, we collected litter on the beach and buried the garbage bags in the hole that we dug away from the beach."
-   },
-   {
-    "t": "line",
-    "x": "A: What a good deed! (4)"
-   },
-   {
-    "t": "line",
-    "x": "B: When I came back to the beach, I saw a sea turtle crawling on the sand. So my friend and I carried it and released it into the sea."
-   },
-   {
-    "t": "line",
-    "x": "A: (5)"
-   },
-   {
-    "t": "line",
-    "x": "B: Well, I was pleased for what I had done in Chaung Tha. I hope you can join us when we go on the next trip."
-   },
-   {
-    "t": "ins",
-    "x": "C. In pairs, practise the dialogue."
-   },
-   {
-    "t": "ins",
-    "x": "D. In pairs, create a dialogue as in Exercise B talking about a trip to a lake in the area you live in for birdwatching."
-   }
-  ]
- },
- {
-  "code": "1E",
-  "title": "Writing",
-  "blocks": [
-   {
-    "t": "line",
-    "x": "Write an essay on 'Myanmar Star Tortoise' in about 250 words using the points given below."
-   },
-   {
-    "t": "line",
-    "x": "Appearance"
-   },
-   {
-    "t": "line",
-    "x": "medium-sized tortoise with an oval-shaped top shell"
-   },
-   {
-    "t": "line",
-    "x": "star-shaped patterns on the top shell"
-   },
-   {
-    "t": "line",
-    "x": "size : 20 cm – 30 cm"
-   },
-   {
-    "t": "line",
-    "x": "weight : 1.3 kg – 2.2 kg"
-   },
-   {
-    "t": "line",
-    "x": "colour : top shell – dark brown or black"
-   },
-   {
-    "t": "line",
-    "x": "skin of the head, limbs and tail – yellowish"
-   },
-   {
-    "t": "line",
-    "x": "Habitat"
-   },
-   {
-    "t": "line",
-    "x": "found in thorn scrubs, bushes, and dry forests located within the dry zone of central Myanmar"
-   }
-  ]
- }
+  {
+    "code": "1A",
+    "title": "Reading",
+    "blocks": [
+      {
+        "t": "sub",
+        "x": "Pre-reading",
+        "my": "မဖတ်မီ လေ့ကျင့်ခန်း"
+      },
+      {
+        "t": "line",
+        "x": "1. Which of these sentences is / are true for you? Put a tick or a cross in the box.",
+        "my": "အောက်ပါဝါကျများအနက် မည်သည့်ဝါကျများသည် သင်နှင့် ကိုက်ညီသနည်း။ သက်ဆိုင်ရာအကွက်တွင် အမှန်ခြစ် သို့မဟုတ် အမှားခြစ် ထည့်ပါ။"
+      },
+      {
+        "t": "line",
+        "x": "a. I have seen a dolphin.",
+        "my": "a. ကျွန်ုပ်သည် လင်းပိုင်တစ်ကောင်ကို မြင်ဖူးသည်။"
+      },
+      {
+        "t": "line",
+        "x": "b. I have seen a dolphin in the movies.",
+        "my": "b. ကျွန်ုပ်သည် ရုပ်ရှင်များထဲတွင် လင်းပိုင်ကို မြင်ဖူးသည်။"
+      },
+      {
+        "t": "line",
+        "x": "c. I have seen a picture of a dolphin.",
+        "my": "c. ကျွန်ုပ်သည် လင်းပိုင်ပုံတစ်ပုံကို မြင်ဖူးသည်။"
+      },
+      {
+        "t": "line",
+        "x": "d. I have seen an Ayeyarwady dolphin.",
+        "my": "d. ကျွန်ုပ်သည် ဧရာဝတီလင်းပိုင်ကို မြင်ဖူးသည်။"
+      },
+      {
+        "t": "line",
+        "x": "e. I have never seen a dolphin.",
+        "my": "e. ကျွန်ုပ်သည် လင်းပိုင်ကို တစ်ခါမျှ မမြင်ဖူးပါ။"
+      },
+      {
+        "t": "q",
+        "x": "2. How will you feel if you see a dolphin?",
+        "my": "လင်းပိုင်တစ်ကောင်ကို တွေ့မြင်ရပါက သင် မည်သို့ခံစားရမည်နည်း။"
+      },
+      {
+        "t": "sub",
+        "x": "Read the passage.",
+        "my": "အောက်ပါစာပိုဒ်ကို ဖတ်ပါ။"
+      },
+      {
+        "t": "para",
+        "x": "The dolphin is a kind of sea animal that looks like a large fish with a long pointed snout. Dolphins are both intelligent and friendly towards humans. There are several types of dolphins. Among them, the Ayeyarwady dolphin is a popular kind in Southeast Asia. Dolphins of this type are usually found in coastal areas in South and Southeast Asia and in freshwater rivers in Myanmar, Indonesia, and Laos. This species is called the Ayeyarwady dolphin as it was first found in the Ayeyarwady River in Myanmar, Its scientific name is Orcaella brevirostris and it is one of the endangered species among the freshwater dolphins in the world.",
+        "my": "လင်းပိုင်သည် ရှည်လျားချွန်ထက်သော နှုတ်သီးရှိပြီး ငါးကြီးတစ်ကောင်နှင့် ဆင်တူသည့် ပင်လယ်သတ္တဝါတစ်မျိုး ဖြစ်သည်။ လင်းပိုင်များသည် ဉာဏ်ရည်ထက်မြက်သကဲ့သို့ လူတို့အပေါ်လည်း ဖော်ရွေကြသည်။ လင်းပိုင်အမျိုးအစား များစွာရှိသည်။ ၎င်းတို့အနက် ဧရာဝတီလင်းပိုင်သည် အရှေ့တောင်အာရှတွင် လူသိများသော အမျိုးအစားတစ်မျိုး ဖြစ်သည်။ ဤလင်းပိုင်မျိုးကို တောင်အာရှနှင့် အရှေ့တောင်အာရှ ကမ်းရိုးတန်းဒေသများအပြင် မြန်မာ၊ အင်ဒိုနီးရှားနှင့် လာအိုနိုင်ငံတို့ရှိ ရေချိုမြစ်များတွင်လည်း တွေ့ရလေ့ရှိသည်။ မြန်မာနိုင်ငံရှိ ဧရာဝတီမြစ်တွင် ပထမဆုံး တွေ့ရှိခဲ့သောကြောင့် ဤမျိုးစိတ်ကို ဧရာဝတီလင်းပိုင်ဟု ခေါ်သည်။ ၎င်း၏ သိပ္ပံအမည်မှာ Orcaella brevirostris ဖြစ်ပြီး ကမ္ဘာပေါ်ရှိ ရေချိုလင်းပိုင်များအနက် မျိုးသုဉ်းရန် အန္တရာယ်ရှိနေသော မျိုးစိတ်တစ်မျိုး ဖြစ်သည်။"
+      },
+      {
+        "t": "para",
+        "x": "The Ayeyarwady dolphin is quite different from other well-known dolphins. Its colour may be dark blue or dark or pale gray. It has a rounded head and a very bulging forehead. Unlike other dolphins, it has no beak, or snout. The dorsal fin is short, blunt and triangular. The flippers are long and broad. The average length is 2.3 metres and the weight can range from 90 kg to 200 kg.",
+        "my": "ဧရာဝတီလင်းပိုင်သည် အခြားလူသိများသော လင်းပိုင်များနှင့် အတော်ပင် ကွဲပြားသည်။ ၎င်း၏အရောင်မှာ နက်ပြာရောင်၊ မီးခိုးရင့်ရောင် သို့မဟုတ် မီးခိုးဖျော့ရောင် ဖြစ်နိုင်သည်။ ၎င်းတွင် လုံးဝန်းသောဦးခေါင်းနှင့် သိသိသာသာ ဖောင်းထွက်နေသော နဖူးရှိသည်။ အခြားလင်းပိုင်များနှင့်မတူဘဲ နှုတ်သီး မရှိပါ။ ကျောဆူးတောင်သည် တို၍ ထိပ်တုံးပြီး တြိဂံပုံသဏ္ဌာန် ရှိသည်။ ရေယက်များသည် ရှည်လျားကျယ်ပြန့်သည်။ ပျမ်းမျှအလျားမှာ ၂.၃ မီတာရှိပြီး ကိုယ်အလေးချိန်မှာ ၉၀ ကီလိုဂရမ်မှ ၂၀၀ ကီလိုဂရမ်အထိ ရှိနိုင်သည်။"
+      },
+      {
+        "t": "para",
+        "x": "They feed on bony fish, fish eggs, and crustaceans which are crabs, lobsters and shrimps. They also eat octopuses and squids. They take food into the mouth by suction, that is, by sucking in it.",
+        "my": "၎င်းတို့သည် အရိုးမာငါးများ၊ ငါးဥများနှင့် ကဏန်း၊ ပုစွန်ထုပ်၊ ပုစွန်တို့ကဲ့သို့ အခွံမာရေနေသတ္တဝါများကို စားသုံးကြသည်။ ရေဘဝဲများနှင့် ပြည်ကြီးငါးများကိုလည်း စားကြသည်။ အစာကို ပါးစပ်ထဲသို့ စုပ်ယူစားသုံးကြသည်။"
+      },
+      {
+        "t": "para",
+        "x": "Ayeyarwady dolphins like to stay in tropical and subtropical waters and near shallow coastal waters. In other words, they live near coasts and river mouths. They are also found in freshwater rivers: the Ayeyarwady in Myanmar, the Mahakam in Indonesia and the Mekong in Laos. They are mostly seen about 1.6 kilometres away from the shore and they do not usually live in deep waters. In Myanmar, they inhabit the Ayeyarwady River between Mandalay and Bamaw.",
+        "my": "ဧရာဝတီလင်းပိုင်များသည် အပူပိုင်းနှင့် အပူလျော့ပိုင်း ရေပြင်များ၊ ရေတိမ်သော ကမ်းရိုးတန်းရေပြင်များအနီးတွင် နေထိုင်လိုကြသည်။ တစ်နည်းအားဖြင့် ပင်လယ်ကမ်းခြေများနှင့် မြစ်ဝများအနီးတွင် နေထိုင်ကြသည်။ မြန်မာနိုင်ငံရှိ ဧရာဝတီမြစ်၊ အင်ဒိုနီးရှားနိုင်ငံရှိ မဟာကမ်မြစ်နှင့် လာအိုနိုင်ငံရှိ မဲခေါင်မြစ်တို့ကဲ့သို့ ရေချိုမြစ်များတွင်လည်း တွေ့ရသည်။ ၎င်းတို့ကို ကမ်းမှ ၁.၆ ကီလိုမီတာခန့် အကွာတွင် အများဆုံးတွေ့ရပြီး ရေနက်ပိုင်းတွင် နေထိုင်လေ့မရှိပါ။ မြန်မာနိုင်ငံတွင် မန္တလေးနှင့် ဗန်းမော်ကြား ဧရာဝတီမြစ်အတွင်း၌ နေထိုင်ကြသည်။"
+      },
+      {
+        "t": "para",
+        "x": "Ayeyarwady dolphins are slow swimmers and they are generally found in groups of 3 to 6 members, but sometimes up to 15 dolphins are seen together. They usually breathe, bringing only the head out of the water. They produce sounds such as whistles, clicks and screeches to communicate with one another. They can be seen jumping, making bubbles. and hitting the water with their flippers and tails. They can squirt streams of water that can reach up to 1.5 metres above the surface of the water. One of the most distinctive characteristics of these dolphins is the mutual relationship they have with the local fishermen. By making a tapping sound against the sides of their boats, the local fishermen used to call the dolphins to drive fish into their cast nets. In return. they rewarded the dolphins with a share of the fish that they had caught. The fishermen tried to get the attention of the dolphins in various ways - by striking the sides of their boats with their wooden sticks, by splashing the surface of the water with their oars and by giving their nets several rapid tugs.",
+        "my": "ဧရာဝတီလင်းပိုင်များသည် ဖြည်းညင်းစွာ ရေကူးကြပြီး ပုံမှန်အားဖြင့် ၃ ကောင်မှ ၆ ကောင်ပါသော အုပ်စုများဖြင့် တွေ့ရသည်။ သို့သော် တစ်ခါတစ်ရံ ၁၅ ကောင်အထိ အတူတကွ တွေ့ရတတ်သည်။ အသက်ရှူရာတွင် များသောအားဖြင့် ဦးခေါင်းကိုသာ ရေပေါ်သို့ ဖော်ကြသည်။ အချင်းချင်း ဆက်သွယ်ရန် လေချွန်သံ၊ တောက်တောက်မြည်သံနှင့် စူးရှအော်သံများကို ပြုလုပ်ကြသည်။ ခုန်ခြင်း၊ ရေပူဖောင်းများ ပြုလုပ်ခြင်း၊ ရေယက်နှင့် အမြီးတို့ဖြင့် ရေပြင်ကို ရိုက်ခြင်းတို့ ပြုလုပ်နေသည်ကိုလည်း တွေ့နိုင်သည်။ ရေမျက်နှာပြင်အထက် ၁.၅ မီတာအထိ ရောက်နိုင်သော ရေတန်းများကို ပန်းထုတ်နိုင်ကြသည်။\n\nဤလင်းပိုင်များ၏ အထူးခြားဆုံး လက္ခဏာများအနက် တစ်ခုမှာ ဒေသခံတံငါသည်များနှင့် အပြန်အလှန် အကျိုးပြုသော ဆက်ဆံရေးရှိခြင်း ဖြစ်သည်။ ဒေသခံတံငါသည်များသည် လှေနံဘေးကို တောက်ခေါက်သံပေး၍ လင်းပိုင်များကို ခေါ်ကာ ငါးများကို မိမိတို့၏ ပစ်ကွန်များထဲသို့ မောင်းသွင်းစေလေ့ရှိခဲ့ကြသည်။ အပြန်အလှန်အားဖြင့် ဖမ်းမိသောငါးအချို့ကို လင်းပိုင်များအား ဝေမျှပေးခဲ့ကြသည်။ တံငါသည်များသည် သစ်သားတုတ်များဖြင့် လှေနံဘေးကို ရိုက်ခြင်း၊ လှော်တက်များဖြင့် ရေမျက်နှာပြင်ကို ပုတ်၍ ရေပက်ခြင်းနှင့် ကွန်များကို အကြိမ်အနည်းငယ် ခပ်မြန်မြန် ဆွဲလှုပ်ခြင်းတို့ဖြင့် လင်းပိုင်များ၏ အာရုံစိုက်မှုကို ရယူရန် ကြိုးစားခဲ့ကြသည်။"
+      },
+      {
+        "t": "para",
+        "x": "Ayeyarwady dolphins are now on the verge of extinction. They are listed as a critically endangered species, that is, it may no longer exist in the future as the dolphin population declines year by year. They often get entangled in the fishing nets and they also die as a result of electrofishing, and the use of gillnets and explosives. Now, in Myanmar the dolphins are under protection. The region in the Ayeyarwady River between Mingun and Kyaukmyaung is officially recognized as a sanctuary to protect the decline of the dolphin population. The Department of Fisheries prohibits the catching or killing of dolphins. The local fishermen are not allowed to use electrofishing, gillnets and explosives, which lead to a steady decline of the population of Ayeyarwady dolphins.",
+        "my": "ယခုအခါ ဧရာဝတီလင်းပိုင်များသည် မျိုးသုဉ်းပျောက်ကွယ်လုနီးပါး ဖြစ်နေကြသည်။ အကောင်ရေသည် တစ်နှစ်ထက်တစ်နှစ် လျော့နည်းလာသဖြင့် အနာဂတ်တွင် လုံးဝ မရှိတော့နိုင်သော မျိုးသုဉ်းရန် အလွန်အမင်း အန္တရာယ်ရှိသည့် မျိုးစိတ်အဖြစ် စာရင်းသွင်းထားသည်။ ၎င်းတို့သည် ငါးဖမ်းပိုက်များတွင် မကြာခဏ ငြိတွယ်မိကြပြီး လျှပ်စစ်ဖြင့် ငါးဖမ်းခြင်း၊ ပါးဟက်ငြိပိုက်များနှင့် ပေါက်ကွဲပစ္စည်းများ အသုံးပြုခြင်းတို့ကြောင့်လည်း သေဆုံးကြသည်။\n\nယခုအခါ မြန်မာနိုင်ငံတွင် လင်းပိုင်များကို ကာကွယ်စောင့်ရှောက်ထားသည်။ လင်းပိုင်အကောင်ရေ လျော့နည်းလာမှုကို တားဆီးရန် ဧရာဝတီမြစ်ရှိ မင်းကွန်းနှင့် ကျောက်မြောင်းကြားဒေသကို ဘေးမဲ့နယ်မြေအဖြစ် တရားဝင် သတ်မှတ်ထားသည်။ ငါးလုပ်ငန်းဦးစီးဌာနသည် လင်းပိုင်များကို ဖမ်းဆီးခြင်း သို့မဟုတ် သတ်ဖြတ်ခြင်းကို တားမြစ်ထားသည်။ ဒေသခံတံငါသည်များအား ဧရာဝတီလင်းပိုင်အကောင်ရေ တဖြည်းဖြည်း လျော့နည်းလာစေသည့် လျှပ်စစ်ဖြင့် ငါးဖမ်းခြင်း၊ ပါးဟက်ငြိပိုက်များနှင့် ပေါက်ကွဲပစ္စည်းများ အသုံးပြုခြင်းတို့ကို ခွင့်မပြုထားပါ။"
+      },
+      {
+        "t": "sub",
+        "x": "Comprehension",
+        "my": "ဖတ်ရှုနားလည်မှု"
+      },
+      {
+        "t": "ins",
+        "x": "A. Read the passage and choose the appropriate topic for each paragraph.",
+        "my": "စာပိုဒ်ကိုဖတ်၍ စာပိုဒ်တစ်ပိုဒ်စီအတွက် သင့်လျော်သော ခေါင်းစဉ်ကို ရွေးပါ။ စာပိုဒ် ၁ မှ ၅ ကို ခေါင်းစဉ် a မှ e နှင့် တွဲဖက်ပါ။"
+      },
+      {
+        "t": "line",
+        "x": "Match the paragraphs (1-5) with the topics (a-e).",
+        "my": "စာပိုဒ်ကိုဖတ်၍ စာပိုဒ်တစ်ပိုဒ်စီအတွက် သင့်လျော်သော ခေါင်းစဉ်ကို ရွေးပါ။ စာပိုဒ် ၁ မှ ၅ ကို ခေါင်းစဉ် a မှ e နှင့် တွဲဖက်ပါ။"
+      },
+      {
+        "t": "line",
+        "x": "a. Food",
+        "my": "a. အစားအစာ"
+      },
+      {
+        "t": "line",
+        "x": "b. Threats and Conservation.",
+        "my": "b. ခြိမ်းခြောက်မှုများနှင့် ထိန်းသိမ်းကာကွယ်ရေး"
+      },
+      {
+        "t": "line",
+        "x": "c. Description",
+        "my": "c. ပုံပန်းသဏ္ဌာန်ဖော်ပြချက်"
+      },
+      {
+        "t": "line",
+        "x": "d. Characteristics",
+        "my": "d. အမူအကျင့်နှင့် ထူးခြားသောလက္ခဏာများ"
+      },
+      {
+        "t": "line",
+        "x": "e. Habitat",
+        "my": "e. နေထိုင်ရာဒေသ"
+      },
+      {
+        "t": "ins",
+        "x": "B. In pairs, find the bold-faced words in the passage that are similar in meaning to the following.",
+        "my": "နှစ်ယောက်တစ်တွဲ လုပ်ဆောင်ပါ။ အောက်ပါအဓိပ္ပာယ်များနှင့် ဆင်တူသော စာလုံးမည်းဖြင့် ဖော်ပြထားသည့် စကားလုံးများကို စာပိုဒ်ထဲမှ ရှာပါ။"
+      },
+      {
+        "t": "line",
+        "x": "1. live in a particular place",
+        "my": "1. သတ်မှတ်ထားသော နေရာတစ်ခုတွင် နေထိုင်သည်"
+      },
+      {
+        "t": "line",
+        "x": "2. an area where animals are protected and cannot be hunted",
+        "my": "2. တိရစ္ဆာန်များကို ကာကွယ်ထားပြီး အမဲလိုက်ခွင့် မရှိသော နယ်မြေ"
+      },
+      {
+        "t": "line",
+        "x": "3. no longer exist in future",
+        "my": "3. အနာဂတ်တွင် မရှိတော့ခြင်း"
+      },
+      {
+        "t": "line",
+        "x": "4. bans",
+        "my": "4. တားမြစ်သည်"
+      },
+      {
+        "t": "line",
+        "x": "5. near the coast",
+        "my": "5. ကမ်းရိုးတန်းအနီးရှိသော"
+      },
+      {
+        "t": "line",
+        "x": "6. caught in a rope, net, etc.",
+        "my": "6. ကြိုး၊ ပိုက် စသည်တို့တွင် ငြိတွယ်မိသော"
+      },
+      {
+        "t": "line",
+        "x": "7. the long nose of some kind of animals; beak",
+        "my": "7. အချို့တိရစ္ဆာန်များ၏ ရှည်လျားသောနှာခေါင်း၊ နှုတ်သီး"
+      },
+      {
+        "t": "ins",
+        "x": "C. Give a full-sentence answer to each question below.",
+        "my": "အောက်ပါမေးခွန်းတစ်ခုစီကို ဝါကျအပြည့်အစုံဖြင့် ဖြေပါ။"
+      },
+      {
+        "t": "q",
+        "x": "1. Where are Ayeyarwady dolphins usually found?",
+        "my": "1. ဧရာဝတီလင်းပိုင်များကို မည်သည့်နေရာများတွင် တွေ့ရလေ့ရှိသနည်း။"
+      },
+      {
+        "t": "q",
+        "x": "2. Why are they called Ayeyarwady dolphins?",
+        "my": "2. ၎င်းတို့ကို ဧရာဝတီလင်းပိုင်ဟု အဘယ်ကြောင့် ခေါ်သနည်း။"
+      },
+      {
+        "t": "q",
+        "x": "3. What is the difference between Ayeyarwady dolphins and other dolphins?",
+        "my": "3. ဧရာဝတီလင်းပိုင်များနှင့် အခြားလင်းပိုင်များအကြား မည်သည့်ကွာခြားချက် ရှိသနည်း။"
+      },
+      {
+        "t": "q",
+        "x": "4. How do they eat their food?",
+        "my": "4. ၎င်းတို့သည် အစာကို မည်သို့ စားသုံးကြသနည်း။"
+      },
+      {
+        "t": "q",
+        "x": "5. Where can you find them in Myanmar?",
+        "my": "5. မြန်မာနိုင်ငံတွင် ၎င်းတို့ကို မည်သည့်နေရာ၌ တွေ့နိုင်သနည်း။"
+      },
+      {
+        "t": "q",
+        "x": "6. How do they communicate with one another?",
+        "my": "6. ၎င်းတို့သည် အချင်းချင်း မည်သို့ ဆက်သွယ်ကြသနည်း။"
+      },
+      {
+        "t": "q",
+        "x": "7. How did the local fishermen get the attention of the dolphins?",
+        "my": "7. ဒေသခံတံငါသည်များသည် လင်းပိုင်များ၏ အာရုံစိုက်မှုကို မည်သို့ ရယူခဲ့ကြသနည်း။"
+      },
+      {
+        "t": "q",
+        "x": "8. Why does the dolphin population decline year by year?",
+        "my": "8. လင်းပိုင်အကောင်ရေသည် အဘယ်ကြောင့် တစ်နှစ်ထက်တစ်နှစ် လျော့နည်းလာသနည်း။"
+      },
+      {
+        "t": "q",
+        "x": "9. Which part of the Ayeyarwady River is kept as a sanctuary to protect the dolphins?",
+        "my": "9. လင်းပိုင်များကို ကာကွယ်ရန် ဧရာဝတီမြစ်၏ မည်သည့်အပိုင်းကို ဘေးမဲ့နယ်မြေအဖြစ် သတ်မှတ်ထားသနည်း။"
+      },
+      {
+        "t": "q",
+        "x": "10. What can you do to protect the decline of Ayeyarwady dolphin population?",
+        "my": "10. ဧရာဝတီလင်းပိုင်အကောင်ရေ လျော့နည်းလာမှုကို တားဆီးရန် သင် ဘာလုပ်နိုင်သနည်း။"
+      }
+    ]
+  },
+  {
+    "code": "1B",
+    "title": "Vocabulary",
+    "blocks": [
+      {
+        "t": "line",
+        "x": "Adverb Adjective Collocations",
+        "my": "ကြိယာဝိသေသနနှင့် နာမဝိသေသန တွဲဖက်အသုံးအနှုန်းများ"
+      },
+      {
+        "t": "line",
+        "x": "Certain adverbs and adjectives often go together in sentences as collocation. Sometimes, they can also be used as compound adjectives.",
+        "my": "အချို့သော ကြိယာဝိသေသနများနှင့် နာမဝိသေသနများသည် ဝါကျများထဲတွင် တွဲဖက်အသုံးအနှုန်းများအဖြစ် အတူတကွ ပါဝင်လေ့ရှိသည်။ တစ်ခါတစ်ရံ ၎င်းတို့ကို ပေါင်းစပ်နာမဝိသေသနများအဖြစ်လည်း အသုံးပြုနိုင်သည်။"
+      },
+      {
+        "t": "line",
+        "x": "e.g. Ayeyarwady dolphins are listed as a critically endangered species.",
+        "my": "ဧရာဝတီလင်းပိုင်များကို မျိုးသုဉ်းရန် အလွန်အမင်း အန္တရာယ်ရှိသော မျိုးစိတ်အဖြစ် စာရင်းသွင်းထားသည်။"
+      },
+      {
+        "t": "line",
+        "x": "U Aung Tin is a highly respected teacher in our school.",
+        "my": "ဦးအောင်တင်သည် ကျွန်ုပ်တို့ကျောင်းတွင် အလွန်လေးစားခံရသော ဆရာတစ်ဦး ဖြစ်သည်။"
+      },
+      {
+        "t": "ins",
+        "x": "A. Match an adverb from Column A with an adjective from Column B.",
+        "my": "ကော်လံ A မှ ကြိယာဝိသေသနတစ်ခုကို ကော်လံ B မှ နာမဝိသေသနတစ်ခုနှင့် တွဲဖက်ပါ။"
+      },
+      {
+        "t": "line",
+        "x": "Column A",
+        "my": "ကော်လံ A"
+      },
+      {
+        "t": "line",
+        "x": "Column B",
+        "my": "ကော်လံ B"
+      },
+      {
+        "t": "line",
+        "x": "1. absolutely",
+        "my": "1. လုံးဝ၊ အကြွင်းမဲ့"
+      },
+      {
+        "t": "line",
+        "x": "a. necessary",
+        "my": "a. လိုအပ်သော"
+      },
+      {
+        "t": "line",
+        "x": "2. deeply",
+        "my": "2. အလွန်အမင်း၊ နက်နက်ရှိုင်းရှိုင်း"
+      },
+      {
+        "t": "line",
+        "x": "b. concerned",
+        "my": "b. စိုးရိမ်ပူပန်သော"
+      },
+      {
+        "t": "line",
+        "x": "3. highly",
+        "my": "3. အလွန်၊ အထူးပင်"
+      },
+      {
+        "t": "line",
+        "x": "c. recommended",
+        "my": "c. အကြံပြုထောက်ခံခံရသော"
+      },
+      {
+        "t": "line",
+        "x": "4. badly",
+        "my": "4. ပြင်းထန်စွာ"
+      },
+      {
+        "t": "line",
+        "x": "d. hurt",
+        "my": "d. ထိခိုက်ဒဏ်ရာရသော"
+      },
+      {
+        "t": "line",
+        "x": "5. completely",
+        "my": "5. လုံးဝ၊ အပြည့်အဝ"
+      },
+      {
+        "t": "line",
+        "x": "e. different",
+        "my": "e. ကွဲပြားသော"
+      },
+      {
+        "t": "line",
+        "x": "6. fully",
+        "my": "6. အပြည့်အဝ"
+      },
+      {
+        "t": "line",
+        "x": "f. aware",
+        "my": "f. သိရှိနားလည်သော"
+      },
+      {
+        "t": "line",
+        "x": "7. happily",
+        "my": "7. ပျော်ရွှင်စွာ"
+      },
+      {
+        "t": "line",
+        "x": "g. married",
+        "my": "g. အိမ်ထောင်ရှိသော"
+      },
+      {
+        "t": "line",
+        "x": "8. actively",
+        "my": "8. တက်ကြွစွာ"
+      },
+      {
+        "t": "line",
+        "x": "h. involved",
+        "my": "h. ပါဝင်ဆောင်ရွက်သော"
+      },
+      {
+        "t": "line",
+        "x": "9. deadly",
+        "my": "9. အလွန်အမင်း၊ အလေးအနက်"
+      },
+      {
+        "t": "line",
+        "x": "i. serious",
+        "my": "i. အလေးအနက်ရှိသော"
+      },
+      {
+        "t": "line",
+        "x": "10. mentally",
+        "my": "10. စိတ်ပိုင်းဆိုင်ရာအရ"
+      },
+      {
+        "t": "line",
+        "x": "j. ill",
+        "my": "j. မကျန်းမာသော"
+      },
+      {
+        "t": "ins",
+        "x": "B. Complete each sentence with an appropriate adverb and adjective collocation from Exercise A.",
+        "my": "လေ့ကျင့်ခန်း A မှ သင့်လျော်သော ကြိယာဝိသေသနနှင့် နာမဝိသေသန တွဲဖက်အသုံးအနှုန်းကို အသုံးပြု၍ ဝါကျတစ်ခုစီကို ဖြည့်စွက်ပါ။"
+      },
+      {
+        "t": "q",
+        "x": "My brother has been _________________ in voluntary work for over two years.",
+        "my": "ကျွန်ုပ်၏အစ်ကိုသည် စေတနာ့ဝန်ထမ်းလုပ်ငန်းများတွင် _________________ ဖြစ်နေသည်မှာ နှစ်နှစ်ကျော်ပြီ။"
+      },
+      {
+        "t": "q",
+        "x": "It is _________________ for you to have a balanced diet if you want to be healthy.",
+        "my": "ကျန်းမာလိုပါက အာဟာရမျှတသော အစားအစာကို စားသုံးရန် သင့်အတွက် _________________ ဖြစ်သည်။"
+      },
+      {
+        "t": "q",
+        "x": "They had been _________________ for 5 years, but their marriage ended in divorce.",
+        "my": "သူတို့သည် ငါးနှစ်ကြာ _________________ ဖြစ်ခဲ့သော်လည်း နောက်ဆုံးတွင် ကွာရှင်းခဲ့ကြသည်။"
+      },
+      {
+        "t": "q",
+        "x": "Fortunately, no one was _________________ in the car accident.",
+        "my": "ကံကောင်းထောက်မစွာ ကားမတော်တဆမှုတွင် မည်သူမျှ _________________ မဖြစ်ခဲ့ပါ။"
+      },
+      {
+        "t": "q",
+        "x": "Students must be trained to be _________________ of their responsibilities as good citizens.",
+        "my": "ကျောင်းသားများအား နိုင်ငံသားကောင်းများအဖြစ် မိမိတို့၏ တာဝန်များကို _________________ ဖြစ်စေရန် လေ့ကျင့်ပေးရမည်။"
+      },
+      {
+        "t": "q",
+        "x": "It is very challenging to take care of people who are _________________.",
+        "my": "_________________ ဖြစ်နေသူများကို ပြုစုစောင့်ရှောက်ရခြင်းသည် အလွန်ခက်ခဲသော တာဝန်တစ်ရပ် ဖြစ်သည်။"
+      },
+      {
+        "t": "q",
+        "x": "When I look around the surrounding area, it is now _________________ from it was five years ago.",
+        "my": "ပတ်ဝန်းကျင်ကို ကြည့်လိုက်သောအခါ ယခုအခြေအနေသည် လွန်ခဲ့သော ငါးနှစ်ကနှင့် _________________ ဖြစ်နေသည်။"
+      },
+      {
+        "t": "q",
+        "x": "The townspeople are _________________ about the threat of health problems caused by polluted water in the river.",
+        "my": "မြစ်ရေညစ်ညမ်းမှုကြောင့် ဖြစ်ပေါ်လာသော ကျန်းမာရေးပြဿနာများ၏ ခြိမ်းခြောက်မှုနှင့်ပတ်သက်၍ မြို့သူမြို့သားများသည် _________________ ဖြစ်နေကြသည်။"
+      },
+      {
+        "t": "q",
+        "x": "When he said he was leaving school, we thought he was joking, but he said he was _________________.",
+        "my": "သူ ကျောင်းထွက်တော့မည်ဟု ပြောသောအခါ ကျွန်ုပ်တို့က နောက်ပြောင်နေသည်ဟု ထင်ခဲ့ကြသော်လည်း သူက မိမိသည် _________________ ဖြစ်ကြောင်း ပြောခဲ့သည်။"
+      },
+      {
+        "t": "q",
+        "x": "This book was so _________________ by critics that it became one of the bestsellers of the year.",
+        "my": "ဤစာအုပ်ကို ဝေဖန်သုံးသပ်သူများက _________________ ဖြစ်သောကြောင့် ယခုနှစ်၏ အရောင်းရဆုံး စာအုပ်များထဲမှ တစ်အုပ် ဖြစ်လာခဲ့သည်။"
+      }
+    ]
+  },
+  {
+    "code": "1C",
+    "title": "Grammar",
+    "blocks": [
+      {
+        "t": "line",
+        "x": "Both ... and",
+        "my": "Both ... and"
+      },
+      {
+        "t": "line",
+        "x": "The 'both ... and' construction is used to emphasize that something is true not just of one person, thing or situation, but also of another.",
+        "my": "'both ... and' ပုံစံကို လူတစ်ဦး၊ အရာဝတ္ထုတစ်ခု သို့မဟုတ် အခြေအနေတစ်ခုအတွက်သာမက အခြားတစ်ခုအတွက်လည်း မှန်ကန်ကြောင်း အလေးပေးဖော်ပြရန် အသုံးပြုသည်။"
+      },
+      {
+        "t": "line",
+        "x": "It indicates that the two items are equally presented and included.",
+        "my": "ဤပုံစံသည် အချက်နှစ်ခုစလုံးကို တန်းတူ ထည့်သွင်းဖော်ပြကြောင်း ပြသည်။"
+      },
+      {
+        "t": "line",
+        "x": "e.g. I like both the novel and the movie.",
+        "my": "ကျွန်ုပ်သည် ဝတ္ထုကိုရော ရုပ်ရှင်ကိုပါ နှစ်သက်သည်။"
+      },
+      {
+        "t": "line",
+        "x": "Both Ko Zaw and Soe Thu are good students.*",
+        "my": "ကိုဇော်နှင့် စိုးသူ နှစ်ဦးစလုံးသည် ကျောင်းသားကောင်းများ ဖြစ်ကြသည်။"
+      },
+      {
+        "t": "line",
+        "x": "She can both speak and write Chinese.",
+        "my": "သူမသည် တရုတ်ဘာသာကို ပြောလည်းပြောနိုင်၊ ရေးလည်းရေးနိုင်သည်။"
+      },
+      {
+        "t": "line",
+        "x": "Dolphins are both intelligent and friendly towards humans.",
+        "my": "လင်းပိုင်များသည် ဉာဏ်ရည်ထက်မြက်သကဲ့သို့ လူတို့အပေါ်လည်း ဖော်ရွေကြသည်။"
+      },
+      {
+        "t": "line",
+        "x": "If 'both ... and' is used in the subject of a sentence, the plural verb is used.",
+        "my": "'both ... and' ကို ဝါကျ၏ ကတ္တားနေရာတွင် အသုံးပြုပါက အများကိန်းကြိယာကို အသုံးပြုရသည်။"
+      },
+      {
+        "t": "line",
+        "x": "e.g. Both the movie and the play were good.",
+        "my": "ရုပ်ရှင်နှင့် ပြဇာတ် နှစ်ခုစလုံး ကောင်းခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "NB 'Both ... and' is not usually used in negative sentences. 'Neither ... nor' is used instead.",
+        "my": "မှတ်ချက်။ 'both ... and' ကို အငြင်းဝါကျများတွင် ပုံမှန်အားဖြင့် အသုံးမပြုဘဲ 'neither ... nor' ကို အစားထိုး အသုံးပြုသည်။"
+      },
+      {
+        "t": "line",
+        "x": "e.g. My father neither drinks nor smokes.",
+        "my": "ကျွန်ုပ်၏ဖခင်သည် အရက်လည်း မသောက်၊ ဆေးလိပ်လည်း မသောက်ပါ။"
+      },
+      {
+        "t": "line",
+        "x": "(Not) My father does not both drink and smoke.",
+        "my": "(ဤသို့ မသုံးပါ)"
+      },
+      {
+        "t": "ins",
+        "x": "A. Rewrite the sentences using 'both ... and'.",
+        "my": "'both ... and' ကို အသုံးပြု၍ ဝါကျများကို ပြန်ရေးပါ။"
+      },
+      {
+        "t": "line",
+        "x": "e.g. I like chocolate ice cream. I like vanilla ice cream.",
+        "my": "I like chocolate ice cream. I like vanilla ice cream."
+      },
+      {
+        "t": "line",
+        "x": "I like both chocolate ice cream and vanilla ice cream.",
+        "my": "ကျွန်ုပ်သည် ချောကလက်ရေခဲမုန့်ကိုရော ဗနီလာရေခဲမုန့်ကိုပါ နှစ်သက်သည်။"
+      },
+      {
+        "t": "line",
+        "x": "You are wasting too much time. Kyaw Zaw is wasting too much time.",
+        "my": "သင်သည် အချိန်အလွန်အကျွံ ဖြုန်းတီးနေသည်။ ကျော်ဇောလည်း အချိန်အလွန်အကျွံ ဖြုန်းတီးနေသည်။"
+      },
+      {
+        "t": "line",
+        "x": "He played football when he was a student. He played volleyball when he was a student.",
+        "my": "သူသည် ကျောင်းသားဘဝတွင် ဘောလုံးကစားခဲ့သည်။ သူသည် ကျောင်းသားဘဝတွင် ဘော်လီဘောလည်း ကစားခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "They are tired after shopping. They are hungry after shopping.",
+        "my": "သူတို့သည် ဈေးဝယ်ပြီးနောက် ပင်ပန်းနေကြသည်။ သူတို့သည် ဈေးဝယ်ပြီးနောက် ဗိုက်လည်း ဆာနေကြသည်။"
+      },
+      {
+        "t": "line",
+        "x": "Not only Kyi Thar but also his brother is a guitarist.",
+        "my": "ကြည်သာသာမက သူ၏အစ်ကို သို့မဟုတ် ညီသည်လည်း ဂစ်တာသမား ဖြစ်သည်။"
+      },
+      {
+        "t": "line",
+        "x": "Daw Nandar wants to go to Bagan during the Thingyan holiday. Her sons want to go there too.",
+        "my": "ဒေါ်နန္ဒာသည် သင်္ကြန်အားလပ်ရက်အတွင်း ပုဂံသို့ သွားလိုသည်။ သူမ၏သားများလည်း ထိုနေရာသို့ သွားလိုကြသည်။"
+      },
+      {
+        "t": "line",
+        "x": "Ni Ni wants to put up at the Shwe Myint Mo Hotel and so does Maw Maw.",
+        "my": "နီနီသည် ရွှေမြင့်မိုရ်ဟိုတယ်တွင် တည်းခိုလိုသည်။ မော်မော်လည်း ထိုနည်းတူပင် ဖြစ်သည်။"
+      },
+      {
+        "t": "line",
+        "x": "Applicants for this post must be able to speak English. Applicants for this post must be able to speak Chinese too.",
+        "my": "ဤရာထူးအတွက် လျှောက်ထားသူများသည် အင်္ဂလိပ်စကား ပြောနိုင်ရမည်။ တရုတ်စကားလည်း ပြောနိုင်ရမည်။"
+      },
+      {
+        "t": "line",
+        "x": "You should work harder if you want to be successful. You should have perseverance if you want to be successful.",
+        "my": "အောင်မြင်လိုပါက သင် ပို၍ကြိုးစားသင့်သည်။ အောင်မြင်လိုပါက ဇွဲလည်း ရှိသင့်သည်။"
+      },
+      {
+        "t": "line",
+        "x": "He donated money to the poor in our community. He donated food to the poor in our community.",
+        "my": "သူသည် ကျွန်ုပ်တို့ရပ်ရွာရှိ ဆင်းရဲနွမ်းပါးသူများအား ငွေလှူဒါန်းခဲ့သည်။ အစားအစာလည်း လှူဒါန်းခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "As we are free this afternoon, we can go shopping and we can see a film as well.",
+        "my": "ယနေ့မွန်းလွဲပိုင်းတွင် ကျွန်ုပ်တို့ အားလပ်သောကြောင့် ဈေးဝယ်သွားနိုင်သကဲ့သို့ ရုပ်ရှင်လည်း ကြည့်နိုင်သည်။"
+      },
+      {
+        "t": "line",
+        "x": "'Before' and 'After'",
+        "my": "'Before' နှင့် 'After'"
+      },
+      {
+        "t": "line",
+        "x": "'Before' is used:",
+        "my": "'Before' ကို အသုံးပြုပုံ"
+      },
+      {
+        "t": "line",
+        "x": "as a preposition (followed by a noun) meaning 'earlier than the time'; as an adverb (without a following noun) to refer to 'the previous time'; and as a conjunction (connecting two clauses) to indicate that the second event happened soon after the first one.",
+        "my": "ဝိဘတ်အဖြစ် အသုံးပြုသောအခါ နောက်တွင် နာမ်လိုက်ပြီး 'အချိန်တစ်ခုထက် စော၍' ဟု အဓိပ္ပာယ်ရသည်။ ကြိယာဝိသေသနအဖြစ် အသုံးပြုသောအခါ နောက်တွင် နာမ်မလိုက်ဘဲ 'ယခင်က' ဟု အဓိပ္ပာယ်ရသည်။ သမ္ဗန္ဓအဖြစ် ဝါကျခွဲနှစ်ခုကို ဆက်သွယ်ရာတွင် ဖြစ်ရပ်တစ်ခုသည် အခြားဖြစ်ရပ်တစ်ခု မဖြစ်မီ ဖြစ်ပေါ်ကြောင်း ဖော်ပြသည်။"
+      },
+      {
+        "t": "line",
+        "x": "e.g. Could you come to me before lunch? (preposition)",
+        "my": "နေ့လယ်စာမစားမီ ကျွန်ုပ်ထံ လာနိုင်မလား။"
+      },
+      {
+        "t": "line",
+        "x": "He has written about this subject before. (adverb)",
+        "my": "သူသည် ဤအကြောင်းအရာနှင့်ပတ်သက်၍ ယခင်က ရေးသားဖူးသည်။"
+      },
+      {
+        "t": "line",
+        "x": "She gave everyone a present before she left. (conjunction)",
+        "my": "သူမသည် မထွက်ခွာမီ လူတိုင်းကို လက်ဆောင်တစ်ခုစီ ပေးခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "with present perfect or past perfect tense to emphasize the idea of completion and with 'V-ing' in a formal style.",
+        "my": "ပြီးစီးမှုကို အလေးပေးရန် present perfect သို့မဟုတ် past perfect tense နှင့် အသုံးပြုနိုင်ပြီး တရားဝင်ရေးသားဟန်တွင် V-ing နှင့်လည်း အသုံးပြုနိုင်သည်။"
+      },
+      {
+        "t": "line",
+        "x": "e.g. He went out before I had finished talking.",
+        "my": "ကျွန်ုပ် စကားပြော၍ မပြီးမီ သူ အပြင်ထွက်သွားခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "Please switch off all the lights before leaving the office.",
+        "my": "ရုံးမှ မထွက်ခွာမီ မီးအားလုံးကို ပိတ်ပေးပါ။"
+      },
+      {
+        "t": "line",
+        "x": "'After' is used:",
+        "my": "'After' ကို အသုံးပြုပုံ"
+      },
+      {
+        "t": "line",
+        "x": "as a preposition (followed by a noun) meaning 'at a later time'; as an adverb (without a following noun) meaning 'following in time or place'; and as a conjunction (connecting two clauses) meaning 'when an action or an event has ended'.",
+        "my": "ဝိဘတ်အဖြစ် အသုံးပြုသောအခါ နောက်တွင် နာမ်လိုက်ပြီး 'အချိန်တစ်ခု၏ နောက်တွင်' ဟု အဓိပ္ပာယ်ရသည်။ ကြိယာဝိသေသနအဖြစ် အသုံးပြုသောအခါ နောက်တွင် နာမ်မလိုက်ဘဲ အချိန် သို့မဟုတ် နေရာအရ နောက်မှလိုက်ခြင်းကို ဆိုလိုသည်။ သမ္ဗန္ဓအဖြစ် ဝါကျခွဲနှစ်ခုကို ဆက်သွယ်ရာတွင် လုပ်ဆောင်ချက် သို့မဟုတ် ဖြစ်ရပ်တစ်ခု ပြီးဆုံးပြီးနောက်ဟု အဓိပ္ပာယ်ရသည်။"
+      },
+      {
+        "t": "line",
+        "x": "e.g. I went for a walk after dinner. (preposition)",
+        "my": "ကျွန်ုပ်သည် ညစာစားပြီးနောက် လမ်းလျှောက်ထွက်ခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "They started the job on 17th June and finished a week after. (adverb)",
+        "my": "သူတို့သည် ဇွန်လ ၁၇ ရက်တွင် အလုပ်ကို စတင်ခဲ့ပြီး တစ်ပတ်အကြာတွင် ပြီးစီးခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "After you had left, I got a phone call from Thuzar. (conjunction)",
+        "my": "သင် ထွက်သွားပြီးနောက် သူဇာထံမှ ဖုန်းခေါ်ဆိုမှုတစ်ခု ရရှိခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "with present perfect or past perfect tense to show that one thing is completed before another starts and with 'V-ing' in a formal style.",
+        "my": "လုပ်ဆောင်ချက်တစ်ခု မစတင်မီ အခြားတစ်ခု ပြီးစီးကြောင်း ဖော်ပြရန် present perfect သို့မဟုတ် past perfect tense နှင့် အသုံးပြုနိုင်ပြီး တရားဝင်ရေးသားဟန်တွင် V-ing နှင့်လည်း အသုံးပြုနိုင်သည်။"
+      },
+      {
+        "t": "line",
+        "x": "e.g. I will call you after I have done my homework.",
+        "my": "အိမ်စာလုပ်ပြီးနောက် သင့်ထံ ဖုန်းခေါ်မည်။"
+      },
+      {
+        "t": "line",
+        "x": "After completing this form, give it to the secretary.",
+        "my": "ဤပုံစံကို ဖြည့်စွက်ပြီးနောက် အတွင်းရေးမှူးထံ ပေးပါ။"
+      },
+      {
+        "t": "ins",
+        "x": "B. Complete each sentence with 'before' or 'after'.",
+        "my": "'before' သို့မဟုတ် 'after' ကို အသုံးပြု၍ ဝါကျတစ်ခုစီကို ဖြည့်စွက်ပါ။"
+      },
+      {
+        "t": "line",
+        "x": "I left the cinema ……..the boring film ended.",
+        "my": "ပျင်းစရာကောင်းသော ရုပ်ရှင်ပြီးဆုံးခြင်း ______ ကျွန်ုပ်သည် ရုပ်ရှင်ရုံမှ ထွက်ခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "My sister usually does the washing-up …..dinner.",
+        "my": "ကျွန်ုပ်၏အစ်မ သို့မဟုတ် ညီမသည် ညစာစားခြင်း ______ ပန်းကန်ဆေးလေ့ရှိသည်။"
+      },
+      {
+        "t": "line",
+        "x": "………graduating from high school, I would like to attend the University of Computer Studies.",
+        "my": "အထက်တန်းကျောင်းပြီးဆုံးခြင်း ______ ကျွန်ုပ်သည် ကွန်ပျူတာတက္ကသိုလ် တက်လိုသည်။"
+      },
+      {
+        "t": "q",
+        "x": "His watch remains in good condition -------- having been used for five years.",
+        "my": "သူ၏နာရီသည် ငါးနှစ်ကြာ အသုံးပြုထားခြင်း ______ အခြေအနေကောင်းနေဆဲ ဖြစ်သည်။"
+      },
+      {
+        "t": "line",
+        "x": "……..a careful consideration, my parents allowed me to join the dance club.",
+        "my": "သေချာစွာ စဉ်းစားသုံးသပ်ခြင်း ______ မိဘများက ကျွန်ုပ်အား အကအသင်းသို့ ဝင်ခွင့်ပြုခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "The new building should be completed ………the end of this month as it is planned to be inaugurated in the first week of next month.",
+        "my": "အဆောက်အအုံသစ်ကို နောက်လ ပထမပတ်တွင် ဖွင့်လှစ်ရန် စီစဉ်ထားသောကြောင့် ယခုလကုန် ______ ဆောက်လုပ်ပြီးစီးသင့်သည်။"
+      },
+      {
+        "t": "line",
+        "x": "The man was arrested by the police two years ……committing the murder.",
+        "my": "ထိုလူကို လူသတ်မှုကျူးလွန်ခြင်း ______ နှစ်နှစ်အကြာတွင် ရဲက ဖမ်းဆီးခဲ့သည်။"
+      },
+      {
+        "t": "q",
+        "x": "I am looking forward to the trip as I have never been to Japan _______________.",
+        "my": "ကျွန်ုပ်သည် ______ ဂျပန်နိုင်ငံသို့ တစ်ခါမျှ မရောက်ဖူးသောကြောင့် ဤခရီးစဉ်ကို မျှော်လင့်စောင့်စားနေသည်။"
+      },
+      {
+        "t": "q",
+        "x": "_______________ arriving at the hotel, U Min Aung went straight to the meeting room.",
+        "my": "ဟိုတယ်သို့ ရောက်ရှိခြင်း ______ ဦးမင်းအောင်သည် အစည်းအဝေးခန်းသို့ တန်းသွားခဲ့သည်။"
+      },
+      {
+        "t": "q",
+        "x": "_______________ I gave him the shopping list, he had left for the market.",
+        "my": "ကျွန်ုပ် သူ့ကို ဈေးဝယ်စာရင်းပေးခြင်း ______ သူသည် ဈေးသို့ ထွက်သွားနှင့်ပြီ ဖြစ်သည်။"
+      },
+      {
+        "t": "ins",
+        "x": "C. Combine each pair of sentences using 'after + V-ing' construction.",
+        "my": "'after + V-ing' ပုံစံကို အသုံးပြု၍ ဝါကျတစ်စုံစီကို ပေါင်းစပ်ပါ။"
+      },
+      {
+        "t": "line",
+        "x": "After throwing out the fishing net, the fisherman waited patiently.",
+        "my": "ငါးဖမ်းကွန်ကို ပစ်ချပြီးနောက် တံငါသည်သည် စိတ်ရှည်စွာ စောင့်နေခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "After telling my mother about my problem, I felt better.",
+        "my": "ကျွန်ုပ်၏ပြဿနာကို မိခင်အား ပြောပြပြီးနောက် စိတ်သက်သာရာ ရခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "After packing her lunch, Thet Thet went out to work.",
+        "my": "နေ့လယ်စာထုပ်ကို ပြင်ဆင်ပြီးနောက် သက်သက်သည် အလုပ်သို့ ထွက်သွားခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "After finishing her/his homework, Nyi Lay was allowed to watch TV.",
+        "my": "အိမ်စာလုပ်ပြီးနောက် ညီလေးအား ရုပ်မြင်သံကြား ကြည့်ခွင့်ပြုခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "After revising all the lessons, Thuta felt confident to take the exam.",
+        "my": "သင်ခန်းစာအားလုံးကို ပြန်လည်လေ့လာပြီးနောက် သုတသည် စာမေးပွဲဖြေဆိုရန် မိမိကိုယ်ကို ယုံကြည်မှုရှိလာခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "After spending a year in the city, he decided to go back to his hometown.",
+        "my": "မြို့ကြီးတွင် တစ်နှစ်နေထိုင်ပြီးနောက် သူသည် ဇာတိမြို့သို့ ပြန်ရန် ဆုံးဖြတ်ခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "After looking at the audience and taking a deep breath, the speaker delivered his speech.",
+        "my": "ပရိသတ်ကို ကြည့်၍ အသက်ပြင်းပြင်း ရှူပြီးနောက် ဟောပြောသူသည် မိန့်ခွန်းပြောကြားခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "After working for the company for two years, Shwe Yee got promoted.",
+        "my": "ကုမ္ပဏီတွင် နှစ်နှစ်အလုပ်လုပ်ပြီးနောက် ရွှေရည်သည် ရာထူးတိုးမြှင့်ခံခဲ့ရသည်။"
+      },
+      {
+        "t": "line",
+        "x": "After working long hours in the cold, his hands were sore and cracked.",
+        "my": "အေးသောနေရာတွင် နာရီပေါင်းများစွာ အလုပ်လုပ်ပြီးနောက် သူ၏လက်များသည် နာကျင်၍ အက်ကွဲနေခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "After deciding to take up the job, I started to worry about my decision.",
+        "my": "ထိုအလုပ်ကို လက်ခံရန် ဆုံးဖြတ်ပြီးနောက် ကျွန်ုပ်သည် မိမိ၏ဆုံးဖြတ်ချက်နှင့်ပတ်သက်၍ စတင်စိုးရိမ်လာခဲ့သည်။"
+      },
+      {
+        "t": "ins",
+        "x": "D. Combine each pair of sentences using 'before + V-ing' construction.",
+        "my": "'before + V-ing' ပုံစံကို အသုံးပြု၍ ဝါကျတစ်စုံစီကို ပေါင်းစပ်ပါ။"
+      },
+      {
+        "t": "line",
+        "x": "1. Aye Aye washed the vegetables. She put them in the refrigerator.",
+        "my": "1. အေးအေးသည် ဟင်းသီးဟင်းရွက်များကို ဆေးခဲ့သည်။ ထို့နောက် ရေခဲသေတ္တာထဲသို့ ထည့်ခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "2. Ko Naing applied for a job at the company. He had attended a computer training course.",
+        "my": "2. ကိုနိုင်သည် ကုမ္ပဏီတွင် အလုပ်လျှောက်ခဲ့သည်။ ထိုမတိုင်မီ သူသည် ကွန်ပျူတာသင်တန်း တက်ရောက်ခဲ့ပြီး ဖြစ်သည်။"
+      },
+      {
+        "t": "line",
+        "x": "3. I had a cup of coffee. I left for work this morning.",
+        "my": "3. ကျွန်ုပ်သည် ကော်ဖီတစ်ခွက် သောက်ခဲ့သည်။ ယနေ့နံနက် အလုပ်သို့ ထွက်ခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "4. We had to queue up for an hour. We got the tickets for the music concert.",
+        "my": "4. ကျွန်ုပ်တို့သည် တစ်နာရီကြာ တန်းစီခဲ့ရသည်။ ထို့နောက် ဂီတဖျော်ဖြေပွဲလက်မှတ်များ ရခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "5. There is a lot to study on the subject. Only after that we can start our project.",
+        "my": "5. ဤအကြောင်းအရာနှင့်ပတ်သက်၍ လေ့လာစရာ များစွာရှိသည်။ ထိုသို့ လေ့လာပြီးမှသာ ကျွန်ုပ်တို့၏စီမံကိန်းကို စတင်နိုင်မည်။"
+      },
+      {
+        "t": "line",
+        "x": "6. He ran the Yoma Marathon. He had practised for almost a year.",
+        "my": "6. သူသည် ရိုးမမာရသွန်တွင် ပြေးခဲ့သည်။ ထိုမတိုင်မီ တစ်နှစ်နီးပါး လေ့ကျင့်ခဲ့ပြီး ဖြစ်သည်။"
+      },
+      {
+        "t": "line",
+        "x": "7. She went throt th her assignment again. She submitted it to the teacher.",
+        "my": "7. သူမသည် မိမိ၏အိမ်စာတာဝန်ကို ထပ်မံစစ်ဆေးခဲ့သည်။ ထို့နောက် ဆရာထံ တင်သွင်းခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "8. She had packed her suitcase; she went to the bus terminal.",
+        "my": "8. သူမသည် ခရီးဆောင်အိတ်ကို ထုပ်ပိုးပြီးနောက် အဝေးပြေးကားဂိတ်သို့ သွားခဲ့သည်။"
+      },
+      {
+        "t": "line",
+        "x": "9. My father always takes physical exercise. And then he has a bath.",
+        "my": "9. ကျွန်ုပ်၏ဖခင်သည် အမြဲတမ်း ကိုယ်လက်လှုပ်ရှားလေ့ကျင့်ခန်း ပြုလုပ်သည်။ ထို့နောက် ရေချိုးသည်။"
+      },
+      {
+        "t": "line",
+        "x": "10. We had lived in a small town for two years. Then, we moved to Yangon.",
+        "my": "10. ကျွန်ုပ်တို့သည် မြို့ငယ်တစ်မြို့တွင် နှစ်နှစ် နေထိုင်ခဲ့သည်။ ထို့နောက် ရန်ကုန်သို့ ပြောင်းရွှေ့ခဲ့ကြသည်။"
+      }
+    ]
+  },
+  {
+    "code": "1D",
+    "title": "Listening and Speaking",
+    "blocks": [
+      {
+        "t": "ins",
+        "x": "A. Listen to a talk on 'Wildlife Conservation'. Then, complete the following table.",
+        "my": "'တောရိုင်းတိရစ္ဆာန်နှင့် အပင်များ ထိန်းသိမ်းကာကွယ်ရေး' အကြောင်း ဟောပြောချက်ကို နားထောင်ပါ။ ထို့နောက် အောက်ပါဇယားကို ဖြည့်စွက်ပါ။"
+      },
+      {
+        "t": "line",
+        "x": "'Wildlife'",
+        "my": "တောရိုင်းတိရစ္ဆာန်နှင့် အပင်များ"
+      },
+      {
+        "t": "q",
+        "x": "(1) animals, birds and plants that are found in their _______________",
+        "my": "၎င်းတို့၏ _______________ တွင် တွေ့ရသော တိရစ္ဆာန်များ၊ ငှက်များနှင့် အပင်များ"
+      },
+      {
+        "t": "line",
+        "x": "'Wildlife conservation'",
+        "my": "တောရိုင်းတိရစ္ဆာန်နှင့် အပင်များ ထိန်းသိမ်းကာကွယ်ရေး"
+      },
+      {
+        "t": "q",
+        "x": "(2) the practice of protecting _______________ and animal species and their habitats",
+        "my": "_______________ နှင့် တိရစ္ဆာန်မျိုးစိတ်များ၊ ၎င်းတို့၏ နေရင်းဒေသများကို ကာကွယ်စောင့်ရှောက်ခြင်း"
+      },
+      {
+        "t": "line",
+        "x": "How to protect wildlife from being extinct",
+        "my": "တောရိုင်းတိရစ္ဆာန်နှင့် အပင်များ မျိုးသုဉ်းပျောက်ကွယ်ခြင်းမှ ကာကွယ်နည်း"
+      },
+      {
+        "t": "q",
+        "x": "(3) to _______________ and collect information about wildlife",
+        "my": "တောရိုင်းတိရစ္ဆာန်နှင့် အပင်များအကြောင်း _______________ နှင့် အချက်အလက်စုဆောင်းရန်"
+      },
+      {
+        "t": "q",
+        "x": "(4) to _______________ of endangered animals and birds",
+        "my": "မျိုးသုဉ်းရန် အန္တရာယ်ရှိသော တိရစ္ဆာန်များနှင့် ငှက်များ၏ _______________ ရန်"
+      },
+      {
+        "t": "q",
+        "x": "(5) to _______________ about the importance of wildlife",
+        "my": "တောရိုင်းတိရစ္ဆာန်နှင့် အပင်များ၏ အရေးပါမှုအကြောင်း _______________ ရန်"
+      },
+      {
+        "t": "line",
+        "x": "How to maintain the number of wildlife in balance with their habitats",
+        "my": "တောရိုင်းတိရစ္ဆာန်အရေအတွက်နှင့် နေရင်းဒေသတို့ မျှတစေရန် ထိန်းသိမ်းနည်း"
+      },
+      {
+        "t": "q",
+        "x": "(6) to prohibit _______________ forest trees and to grow more trees for the animals",
+        "my": "သစ်တောသစ်ပင်များ _______________ ကို တားမြစ်ရန်နှင့် တိရစ္ဆာန်များအတွက် သစ်ပင်များ ပိုမိုစိုက်ပျိုးရန်"
+      },
+      {
+        "t": "q",
+        "x": "(7) _______________ protected areas like national parks and wildlife sanctuaries",
+        "my": "အမျိုးသားဥယျာဉ်များနှင့် တောရိုင်းတိရစ္ဆာန် ဘေးမဲ့တောများကဲ့သို့ ကာကွယ်ထိန်းသိမ်းထားသော နယ်မြေများ _______________"
+      },
+      {
+        "t": "ins",
+        "x": "B. Complete the following dialogue using the questions given below.",
+        "my": "အောက်တွင် ပေးထားသော မေးခွန်းများကို အသုံးပြု၍ စကားပြောခန်းကို ဖြည့်စွက်ပါ။"
+      },
+      {
+        "t": "line",
+        "x": "(a) How did you feel after the trip?",
+        "my": "(a) ခရီးစဉ်ပြီးနောက် မင်း ဘယ်လိုခံစားရသလဲ။"
+      },
+      {
+        "t": "line",
+        "x": "(b) How was your trip?",
+        "my": "(b) မင်းရဲ့ခရီးစဉ်က ဘယ်လိုလဲ။"
+      },
+      {
+        "t": "line",
+        "x": "(c) What did you do with that group?",
+        "my": "(c) အဲဒီအဖွဲ့နဲ့ မင်း ဘာတွေလုပ်ခဲ့သလဲ။"
+      },
+      {
+        "t": "line",
+        "x": "(d) What did you do after that?",
+        "my": "(d) အဲဒီနောက် မင်း ဘာလုပ်ခဲ့သလဲ။"
+      },
+      {
+        "t": "line",
+        "x": "(e) With whom did you go there?",
+        "my": "(e) အဲဒီကို မင်း ဘယ်သူတွေနဲ့ သွားခဲ့သလဲ။"
+      },
+      {
+        "t": "line",
+        "x": "A: Hi! Kyaw Swar, you've just come back from Chaung Tha, haven't you?",
+        "my": "A: ဟေး၊ ကျော်စွာ။ မင်း ချောင်းသာကနေ အခုလေးတင် ပြန်ရောက်လာတာ မဟုတ်လား။"
+      },
+      {
+        "t": "line",
+        "x": "B: Yes, I have.",
+        "my": "B: ဟုတ်တယ်၊ ပြန်ရောက်လာပြီ။"
+      },
+      {
+        "t": "line",
+        "x": "A: (1)",
+        "my": "A: (1) _______________"
+      },
+      {
+        "t": "line",
+        "x": "B: Fantastic! I got a lot of experience from it.",
+        "my": "B: အရမ်းကောင်းတယ်။ အတွေ့အကြုံတွေလည်း အများကြီး ရခဲ့တယ်။"
+      },
+      {
+        "t": "line",
+        "x": "A: Did you? (2)",
+        "my": "A: ဟုတ်လား။ (2) _______________"
+      },
+      {
+        "t": "line",
+        "x": "B: I went there with a voluntary group to do the project on the environment.",
+        "my": "B: ပတ်ဝန်းကျင်ဆိုင်ရာ စီမံကိန်းလုပ်ဖို့ စေတနာ့ဝန်ထမ်းအဖွဲ့တစ်ဖွဲ့နဲ့ သွားခဲ့တာ။"
+      },
+      {
+        "t": "line",
+        "x": "A: (3)",
+        "my": "A: (3) _______________"
+      },
+      {
+        "t": "line",
+        "x": "B: When we arrived there, we collected litter on the beach and buried the garbage bags in the hole that we dug away from the beach.",
+        "my": "B: အဲဒီကို ရောက်တော့ ကမ်းခြေက အမှိုက်တွေကို ကောက်ပြီး ကမ်းခြေနဲ့ဝေးတဲ့နေရာမှာ တူးထားတဲ့ကျင်းထဲ အမှိုက်အိတ်တွေကို မြှုပ်ခဲ့ကြတယ်။"
+      },
+      {
+        "t": "line",
+        "x": "A: What a good deed! (4)",
+        "my": "A: ကောင်းတဲ့အလုပ်ပဲ။ (4) _______________"
+      },
+      {
+        "t": "line",
+        "x": "B: When I came back to the beach, I saw a sea turtle crawling on the sand. So my friend and I carried it and released it into the sea.",
+        "my": "B: ကမ်းခြေကို ပြန်လာတော့ သဲပေါ်မှာ တွားသွားနေတဲ့ ပင်လယ်လိပ်တစ်ကောင်ကို တွေ့ခဲ့တယ်။ ဒါကြောင့် သူငယ်ချင်းနဲ့အတူ အဲဒီလိပ်ကို သယ်ပြီး ပင်လယ်ထဲ ပြန်လွှတ်ပေးခဲ့တယ်။"
+      },
+      {
+        "t": "line",
+        "x": "A: (5)",
+        "my": "A: (5) _______________"
+      },
+      {
+        "t": "line",
+        "x": "B: Well, I was pleased for what I had done in Chaung Tha. I hope you can join us when we go on the next trip.",
+        "my": "B: ချောင်းသာမှာ ကိုယ်လုပ်ခဲ့တာတွေအတွက် ကျေနပ်မိတယ်။ နောက်တစ်ခေါက် ခရီးသွားတဲ့အခါ မင်းလည်း ငါတို့နဲ့ လိုက်နိုင်မယ်လို့ မျှော်လင့်တယ်။"
+      },
+      {
+        "t": "ins",
+        "x": "C. In pairs, practise the dialogue.",
+        "my": "နှစ်ယောက်တစ်တွဲ စကားပြောခန်းကို လေ့ကျင့်ပါ။"
+      },
+      {
+        "t": "ins",
+        "x": "D. In pairs, create a dialogue as in Exercise B talking about a trip to a lake in the area you live in for birdwatching.",
+        "my": "နှစ်ယောက်တစ်တွဲ လုပ်ဆောင်ပါ။ သင်နေထိုင်ရာဒေသရှိ ရေကန်တစ်ခုသို့ ငှက်ကြည့်ရန် သွားရောက်သည့် ခရီးစဉ်အကြောင်း လေ့ကျင့်ခန်း B ကဲ့သို့ စကားပြောခန်းတစ်ခု ဖန်တီးပါ။"
+      }
+    ]
+  },
+  {
+    "code": "1E",
+    "title": "Writing",
+    "blocks": [
+      {
+        "t": "line",
+        "x": "Write an essay on 'Myanmar Star Tortoise' in about 250 words using the points given below.",
+        "my": "အောက်ပါအချက်များကို အသုံးပြု၍ 'မြန်မာ့ကြယ်လိပ်' အကြောင်း စကားလုံး ၂၅၀ ခန့်ရှိသော စာစီစာကုံးတစ်ပုဒ် ရေးပါ။"
+      },
+      {
+        "t": "line",
+        "x": "Appearance",
+        "my": "ပုံပန်းသဏ္ဌာန်"
+      },
+      {
+        "t": "line",
+        "x": "medium-sized tortoise with an oval-shaped top shell",
+        "my": "အပေါ်ခွံသည် ဘဲဥပုံသဏ္ဌာန်ရှိသော အလတ်စား ကုန်းလိပ်တစ်မျိုး ဖြစ်သည်။"
+      },
+      {
+        "t": "line",
+        "x": "star-shaped patterns on the top shell",
+        "my": "အပေါ်ခွံတွင် ကြယ်ပုံသဏ္ဌာန် အဆင်များ ပါရှိသည်။"
+      },
+      {
+        "t": "line",
+        "x": "size : 20 cm – 30 cm",
+        "my": "အရွယ်အစားမှာ ၂၀ စင်တီမီတာမှ ၃၀ စင်တီမီတာအထိ ရှိသည်။"
+      },
+      {
+        "t": "line",
+        "x": "weight : 1.3 kg – 2.2 kg",
+        "my": "ကိုယ်အလေးချိန်မှာ ၁.၃ ကီလိုဂရမ်မှ ၂.၂ ကီလိုဂရမ်အထိ ရှိသည်။"
+      },
+      {
+        "t": "line",
+        "x": "colour : top shell – dark brown or black",
+        "my": "အပေါ်ခွံ၏အရောင်မှာ အညိုရင့်ရောင် သို့မဟုတ် အနက်ရောင် ဖြစ်သည်။"
+      },
+      {
+        "t": "line",
+        "x": "skin of the head, limbs and tail – yellowish",
+        "my": "ဦးခေါင်း၊ ခြေလက်များနှင့် အမြီးရှိ အရေပြားသည် အဝါရောင်သန်းသည်။"
+      },
+      {
+        "t": "line",
+        "x": "Habitat",
+        "my": "နေထိုင်ရာဒေသ"
+      },
+      {
+        "t": "line",
+        "x": "found in thorn scrubs, bushes, and dry forests located within the dry zone of central Myanmar",
+        "my": "မြန်မာနိုင်ငံအလယ်ပိုင်း အပူပိုင်းခြောက်သွေ့ဒေသရှိ ဆူးချုံတောများ၊ ချုံပုတ်များနှင့် ခြောက်သွေ့တောများတွင် တွေ့ရသည်။"
+      }
+    ]
+  }
 ]
