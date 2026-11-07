@@ -3,6 +3,7 @@ import { Link } from "@tanstack/react-router";
 import {
   ArrowLeft, BookOpen, ChevronDown, Headphones, ListChecks, MessageSquare, PenLine, SpellCheck, Sparkles, Type,
 } from "lucide-react";
+import { Grade11TextLesson, hasGrade11Text } from "@/components/grade11/Grade11TextLesson";
 import { G11_SYLLABUS, pageUrl, type G11SkillKind } from "@/data/grade11/syllabus";
 
 const SKILL_ICONS: Record<G11SkillKind, typeof BookOpen> = {
@@ -15,7 +16,7 @@ const GROUPS: { title: string; hint: string; kinds: G11SkillKind[] }[] = [
   { title: "Knowledge about Language", hint: "Build the system", kinds: ["vocabulary", "grammar"] },
 ];
 
-type View = { eyebrow: string; title: string; detail?: string; pages: number[]; list?: boolean };
+type View = { eyebrow: string; title: string; detail?: string; pages: number[]; list?: boolean; unit?: number; kind?: G11SkillKind };
 
 export function Grade11CurriculumExplorer() {
   const [openUnit, setOpenUnit] = useState<number | null>(1);
@@ -38,7 +39,9 @@ export function Grade11CurriculumExplorer() {
             {view.detail && <p className="mt-1 text-sm text-muted-foreground">{view.detail}</p>}
           </div>
         </header>
-        {view.pages.length > 0 ? (
+        {view.unit && view.kind && hasGrade11Text(view.unit) ? (
+          <Grade11TextLesson unit={view.unit} kind={view.kind} />
+        ) : view.pages.length > 0 ? (
           <div className="mt-5 space-y-4">
             {view.pages.map((n) => (
               <figure key={n} className="overflow-hidden rounded-2xl border border-border bg-card">
@@ -119,7 +122,7 @@ export function Grade11CurriculumExplorer() {
                           const Icon = SKILL_ICONS[kind];
                           return (
                             <button key={kind} type="button"
-                              onClick={() => setView({ eyebrow: `Unit ${node.number} · ${node.title}`, title: skill.label, detail: skill.detail, pages: skill.pages })}
+                              onClick={() => setView({ eyebrow: `Unit ${node.number} · ${node.title}`, title: skill.label, detail: skill.detail, pages: skill.pages, unit: node.number, kind })}
                               className="group flex w-full cursor-pointer items-start gap-3 rounded-xl border border-primary/40 bg-primary/5 p-3 text-left transition hover:-translate-y-0.5 hover:border-primary hover:bg-primary/10 hover:shadow-md">
                               <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-secondary text-primary">
                                 <Icon className="h-3.5 w-3.5" />

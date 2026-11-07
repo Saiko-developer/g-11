@@ -1,0 +1,752 @@
+[
+ {
+  "code": "3A",
+  "title": "Reading",
+  "blocks": [
+   {
+    "t": "sub",
+    "x": "Pre-reading"
+   },
+   {
+    "t": "line",
+    "x": "1. Do you still remember any poems you learned from the previous grades? Name them."
+   },
+   {
+    "t": "q",
+    "x": "2. Are you good at remembering the names and faces of the people you have met?"
+   },
+   {
+    "t": "q",
+    "x": "3. Do you still remember the family holiday trip you went on as a young child?"
+   },
+   {
+    "t": "q",
+    "x": "4. What did you remember from the lesson you learned yesterday?"
+   },
+   {
+    "t": "sub",
+    "x": "Read the passage."
+   },
+   {
+    "t": "para",
+    "x": "The word 'memory' has three non-technical meanings: (1) something that we remember, e.g. a name, a number, a colour, or a taste; (2) the ability to remember or recall something as in: Yes, I remember that poem; and (3) the period of time that somebody is able to remember events as in: a frightful storm in recent memory. Technically, all books on psychology would say that there are three kinds of memory: (1) Episodic memory, (2) Semantic memory, and (3) Procedural memory."
+   },
+   {
+    "t": "h",
+    "x": "Episodic memory"
+   },
+   {
+    "t": "para",
+    "x": "This is our memory of events, situations, and places of our past. For instance, when we are asked about our first day at school, we think back and try to recall how old we were, who took us to school, what the name of the school was, whether we cried silently or aloud, etc. Similarly, when wishing to talk about a memorable family vacation, we draw upon our episodic memory to recall as much as possible all the details of that vacation."
+   },
+   {
+    "t": "h",
+    "x": "Semantic memory"
+   },
+   {
+    "t": "para",
+    "x": "This memory refers to all of our knowledge of the world around us. For instance, we know that cats and dogs are four-legged animals but at the same time we know that they are not the same. In the same way, we know that milk, coffee, and tea are liquid but one is different from the other two. We also know that fire is hot and ice is cold. Then, we are taught and we learn that two times two is four; five minus three leaves two; the molecular formula for water is HO; the chemical formula for the common salt is NaCl; and many, many more."
+   },
+   {
+    "t": "h",
+    "x": "Procedural memory"
+   },
+   {
+    "t": "para",
+    "x": "This memory helps us perform skills such as riding a bicycle or driving a car; playing the guitar or the piano; playing tennis, badminton, golf, soccer, etc.; and baking a cake or arranging flowers. In most cases, we just do not forget as we tend to in episodic or semantic memory. At most, our ability to perform those skills declines as we advance in years, and maybe one day we just do not have the strength to perform at all. Books on psychology also point out that there are short-term memory and long-term memory. For instance, when we are following a lecture, we store the incoming information in our short-term memory as we jot down notes as fast as we can. Then, when we can find time later, we go over our notes, link up the points and memorize them to store the information in our long-term memory. The diagram below should help you understand better the notions of short-term memory and long-term memory."
+   },
+   {
+    "t": "para",
+    "x": "From what has been presented so far, it should be quite plain to us that our memory is just like the database of a computer where a large amount of information on a large variety of subjects is stored and used as and when necessary. Without a database, the computer is useless. Similarly, without memory, we would be utterly helpless and useless. Just imagine how frustrated and upset we get when we cannot remember where we have put our car keys. Put yourself in the place of a student taking an examination and imagine he cannot recall a thing he has studied. You will then be able to understand how helpless he would feel. There is another role that memory plays in our lives. Very often, we \"take a stroll down memory's lane' - figuratively speaking - and go through various emotional states. Sometimes, we smile when we remember something pleasant, or frown when we recall something unpleasant. Thus, depending on what we happen to remember, our memories may be sweet or bitter."
+   },
+   {
+    "t": "sub",
+    "x": "Comprehension"
+   },
+   {
+    "t": "ins",
+    "x": "A. In pairs, find the bold-faced words in the passage that are similar in meaning to the following. There are two extra bold-faced words in the text."
+   },
+   {
+    "t": "line",
+    "x": "1. unforgettable"
+   },
+   {
+    "t": "q",
+    "x": "a. _______________"
+   },
+   {
+    "t": "line",
+    "x": "2. learn something so that you will remember it exactly"
+   },
+   {
+    "t": "q",
+    "x": "b. _______________"
+   },
+   {
+    "t": "line",
+    "x": "3. easy to understand"
+   },
+   {
+    "t": "q",
+    "x": "c. _______________"
+   },
+   {
+    "t": "line",
+    "x": "4. a collection of pieces of information stored in a computer system"
+   },
+   {
+    "t": "q",
+    "x": "d. _______________"
+   },
+   {
+    "t": "line",
+    "x": "5. feeling annoyed and impatient"
+   },
+   {
+    "t": "q",
+    "x": "e. _______________"
+   },
+   {
+    "t": "line",
+    "x": "6. having a strong feeling"
+   },
+   {
+    "t": "q",
+    "x": "f. _______________"
+   },
+   {
+    "t": "ins",
+    "x": "B. Complete each sentence below with a suitable word from Exercise A."
+   },
+   {
+    "t": "q",
+    "x": "Everybody understands his article as his writing is _______________ and direct."
+   },
+   {
+    "t": "q",
+    "x": "Her eyes were filled with tears to see a very _______________ moment of her family union."
+   },
+   {
+    "t": "q",
+    "x": "I can't _______________ that Swe Swe came to visit us last year."
+   },
+   {
+    "t": "q",
+    "x": "Our library keeps a _______________ of over ten thousand books on various subjects."
+   },
+   {
+    "t": "q",
+    "x": "My little sister is very intelligent; she can _______________ nursery rhymes in a short time."
+   },
+   {
+    "t": "q",
+    "x": "He felt _______________ when his friend did not understand what he was explaining."
+   },
+   {
+    "t": "ins",
+    "x": "C. Give a full-sentence answer to each question below."
+   },
+   {
+    "t": "line",
+    "x": "According to books on psychology, how many kinds of memory are there? What are they?"
+   },
+   {
+    "t": "line",
+    "x": "What does semantic memory refer to?"
+   },
+   {
+    "t": "line",
+    "x": "What do you do if you want to store the information in the long-term memory?"
+   },
+   {
+    "t": "line",
+    "x": "According to the text, what is memory compared to?"
+   },
+   {
+    "t": "line",
+    "x": "What will happen to a computer without a database?"
+   },
+   {
+    "t": "line",
+    "x": "How would you react when you remember something pleasant?"
+   },
+   {
+    "t": "line",
+    "x": "Read the extracts (a) and (b) of the two different poems, and say what type of memory the poets retrieved their information from."
+   },
+   {
+    "t": "line",
+    "x": "(a)"
+   },
+   {
+    "t": "line",
+    "x": "I wandered lonely as a cloud"
+   },
+   {
+    "t": "line",
+    "x": "That floats on high o'er vales and hills,"
+   },
+   {
+    "t": "line",
+    "x": "When all at once I saw a crowd,"
+   },
+   {
+    "t": "line",
+    "x": "A host of golden daffodils;"
+   },
+   {
+    "t": "line",
+    "x": "Beside the lake, beneath the trees,"
+   },
+   {
+    "t": "line",
+    "x": "Fluttering and dancing in the breeze."
+   },
+   {
+    "t": "line",
+    "x": "(b)"
+   },
+   {
+    "t": "line",
+    "x": "Oft in the stilly night,"
+   },
+   {
+    "t": "line",
+    "x": "Ere Slumber's chain has bound me,"
+   },
+   {
+    "t": "line",
+    "x": "Fond Memory brings the light"
+   },
+   {
+    "t": "line",
+    "x": "Of other days around me;"
+   },
+   {
+    "t": "line",
+    "x": "The smiles, the tears,"
+   },
+   {
+    "t": "line",
+    "x": "Of boyhood's years,"
+   },
+   {
+    "t": "line",
+    "x": "The words of love then spoken;"
+   },
+   {
+    "t": "line",
+    "x": "The eyes that shone,"
+   },
+   {
+    "t": "line",
+    "x": "Now dimmed and gone,"
+   },
+   {
+    "t": "line",
+    "x": "The cheerful hearts now broken!"
+   },
+   {
+    "t": "line",
+    "x": "Thus, in the stilly night,"
+   },
+   {
+    "t": "line",
+    "x": "Ere Slumber's chain has bound me,"
+   },
+   {
+    "t": "line",
+    "x": "Sad Memory brings the light"
+   },
+   {
+    "t": "line",
+    "x": "Of other days around me."
+   },
+   {
+    "t": "line",
+    "x": "You are strumming the guitar and singing a song. What type of memory are you drawing information from?"
+   },
+   {
+    "t": "line",
+    "x": "Bill and Bob are flying kites. What type of memory are they depending on?"
+   },
+   {
+    "t": "line",
+    "x": "You are taking an examination. What type of memory are you depending on?"
+   }
+  ]
+ },
+ {
+  "code": "3B",
+  "title": "Vocabulary",
+  "blocks": [
+   {
+    "t": "line",
+    "x": "Phrasal Verbs"
+   },
+   {
+    "t": "line",
+    "x": "A phrasal verb is a verb followed by an adverb, a preposition, or both. It is usually used with an idiomatic meaning. This meaning is often quite different from the literal meaning of the individual words."
+   },
+   {
+    "t": "line",
+    "x": "e.g. Books on psychology point out that there are short-term memory and long-term memory."
+   },
+   {
+    "t": "ins",
+    "x": "A. Study the following phrasal verbs."
+   },
+   {
+    "t": "line",
+    "x": "think back = remember"
+   },
+   {
+    "t": "line",
+    "x": "draw on / upon = use something as a source of supply"
+   },
+   {
+    "t": "line",
+    "x": "point out = make someone aware of something"
+   },
+   {
+    "t": "line",
+    "x": "jot down = write something quickly"
+   },
+   {
+    "t": "line",
+    "x": "go over = review"
+   },
+   {
+    "t": "line",
+    "x": "link up = join or become joined with something"
+   },
+   {
+    "t": "line",
+    "x": "go through = experience something"
+   },
+   {
+    "t": "line",
+    "x": "depend on = rely on something"
+   },
+   {
+    "t": "ins",
+    "x": "B. Complete the sentences with the correct forms of the phrasal verbs in Exercise A."
+   },
+   {
+    "t": "q",
+    "x": "The teacher ___________ the mistakes I had made in my essay."
+   },
+   {
+    "t": "q",
+    "x": "Khin Khin ___________ notes while she was listening to the lecture."
+   },
+   {
+    "t": "q",
+    "x": "He was proud of himself when he ___________ to all the things he had done for the company."
+   },
+   {
+    "t": "q",
+    "x": "You should ___________ your assignment before you submit it to your teacher."
+   },
+   {
+    "t": "q",
+    "x": "Kyu Kyu wrote this article by ___________ her own experience."
+   },
+   {
+    "t": "q",
+    "x": "The amount of money he has saved ___________ the job he is doing."
+   },
+   {
+    "t": "q",
+    "x": "The two universities have ___________ to do a project on rural development."
+   },
+   {
+    "t": "q",
+    "x": "To be able to do the job, you have to ___________ several months of training."
+   }
+  ]
+ },
+ {
+  "code": "3C",
+  "title": "Grammar",
+  "blocks": [
+   {
+    "t": "line",
+    "x": "Gerund and Infinitive with 'to'"
+   },
+   {
+    "t": "line",
+    "x": "Gerund"
+   },
+   {
+    "t": "line",
+    "x": "A gerund is a noun made from a verb by adding '-ing'. Gerunds can be used:"
+   },
+   {
+    "t": "line",
+    "x": "as the subject of a sentence."
+   },
+   {
+    "t": "line",
+    "x": "e.g. Smoking is not good for health."
+   },
+   {
+    "t": "line",
+    "x": "as the object of a sentence."
+   },
+   {
+    "t": "line",
+    "x": "e.g. I have finished cooking; dinner is ready."
+   },
+   {
+    "t": "line",
+    "x": "as the complement of a sentence."
+   },
+   {
+    "t": "line",
+    "x": "e.g. My favourite hobby is cooking."
+   },
+   {
+    "t": "line",
+    "x": "as the object of a preposition."
+   },
+   {
+    "t": "line",
+    "x": "e.g. She is afraid of going out alone at night."
+   },
+   {
+    "t": "line",
+    "x": "Infinitive with 'to'"
+   },
+   {
+    "t": "line",
+    "x": "An infinitive is the basic form of a verb, used with 'to'. Infinitives can be used:"
+   },
+   {
+    "t": "line",
+    "x": "as a subject at the beginning of a sentence."
+   },
+   {
+    "t": "line",
+    "x": "e.g. To travel around the country is my dream."
+   },
+   {
+    "t": "line",
+    "x": "as an object of the verb."
+   },
+   {
+    "t": "line",
+    "x": "e.g. He promised to return my book."
+   },
+   {
+    "t": "line",
+    "x": "after 'It + be + adjective'."
+   },
+   {
+    "t": "line",
+    "x": "e.g. It is important to study hard."
+   },
+   {
+    "t": "line",
+    "x": "It is necessary for students to wear uniforms every day."
+   },
+   {
+    "t": "line",
+    "x": "Note:"
+   },
+   {
+    "t": "line",
+    "x": "Some verbs such as 'begin', 'continue', 'hate', 'like', 'start' can be followed by an infinitive or a gerund without changing the meaning."
+   },
+   {
+    "t": "line",
+    "x": "e.g. He continued studying until after midnight."
+   },
+   {
+    "t": "line",
+    "x": "He continued to study until after midnight."
+   },
+   {
+    "t": "line",
+    "x": "Some verbs such as 'forget', 'remember', 'stop' can be followed by a gerund or an infinitive with 'to' but with a change in meaning."
+   },
+   {
+    "t": "line",
+    "x": "e.g. She stopped drinking coffee. (She never drinks coffee again.)"
+   },
+   {
+    "t": "line",
+    "x": "She stopped to drink coffee. (She stopped what she was doing and drank coffee.)"
+   },
+   {
+    "t": "line",
+    "x": "Verbs such as 'avoid', 'can't help', 'discuss', 'dislike', 'enjoy', 'finish', 'keep', 'mind', 'spend time', 'stop' are generally followed by gerunds."
+   },
+   {
+    "t": "line",
+    "x": "Verbs such as 'agree', 'arrange', 'decide', 'expect', 'forget', 'intend', 'offer', 'promise', 'remember', 'wish' are generally followed by infinitives with 'to'."
+   },
+   {
+    "t": "line",
+    "x": "Complete each sentence with an infinitive with 'to' or a gerund of the verbs given in brackets."
+   },
+   {
+    "t": "q",
+    "x": "I can't help -----about my school days in Japan."
+   },
+   {
+    "t": "q",
+    "x": "We all agreed ---- again next month."
+   },
+   {
+    "t": "q",
+    "x": "I finished ------the assignment just before the deadline."
+   },
+   {
+    "t": "q",
+    "x": "My mother promises ---- me a laptop if I pass the examination."
+   },
+   {
+    "t": "q",
+    "x": "I dislike -----for someone for a long time."
+   },
+   {
+    "t": "q",
+    "x": "He decided ---- a computer course during the holiday."
+   },
+   {
+    "t": "q",
+    "x": "I offered ---- the new student with his homework."
+   },
+   {
+    "t": "q",
+    "x": "It's very hot in here. Do you mind -----the window?"
+   },
+   {
+    "t": "q",
+    "x": "It is necessary for us to be able ---- English well to work in a five-star hotel."
+   },
+   {
+    "t": "q",
+    "x": "We intended ---- to the cinema, but in the end we stayed at home."
+   }
+  ]
+ },
+ {
+  "code": "3D",
+  "title": "Listening and Speaking",
+  "blocks": [
+   {
+    "t": "ins",
+    "x": "A. Listen to Soe Thu talking about his childhood events and determine if the following statements are TRUE or FALSE:"
+   },
+   {
+    "t": "line",
+    "x": "Soe Thu has a very good memory."
+   },
+   {
+    "t": "line",
+    "x": "Certain sights, smells, tastes, and sounds help him recall his childhood."
+   },
+   {
+    "t": "line",
+    "x": "He is discussing a recent event in his life."
+   },
+   {
+    "t": "line",
+    "x": "The smell and taste of mont-hin-gah remind him of his mother."
+   },
+   {
+    "t": "line",
+    "x": "In his youth, he loved mont-hin-gah so much that he ate it daily."
+   },
+   {
+    "t": "line",
+    "x": "The song 'You are my Sunshine' reminds him of his friend, Cho Cho."
+   },
+   {
+    "t": "line",
+    "x": "Soe Thu and Cho Cho typically sang the song while playing."
+   },
+   {
+    "t": "line",
+    "x": "He received a white cat as a present for his 7th birthday."
+   },
+   {
+    "t": "line",
+    "x": "His cat, Mi Phyu, used to sleep beside him."
+   },
+   {
+    "t": "line",
+    "x": "Soe Thu played with Mi Phyu before going to bed."
+   },
+   {
+    "t": "ins",
+    "x": "B. Study the expressions used in agreeing and disagreeing."
+   },
+   {
+    "t": "line",
+    "x": "Agreeing"
+   },
+   {
+    "t": "line",
+    "x": "Disagreeing"
+   },
+   {
+    "t": "line",
+    "x": "I agree with you."
+   },
+   {
+    "t": "line",
+    "x": "I totally agree."
+   },
+   {
+    "t": "line",
+    "x": "That's what I think too."
+   },
+   {
+    "t": "line",
+    "x": "I think you are right."
+   },
+   {
+    "t": "line",
+    "x": "Absolutely!"
+   },
+   {
+    "t": "line",
+    "x": "I'm afraid I disagree."
+   },
+   {
+    "t": "line",
+    "x": "I'm not sure about that."
+   },
+   {
+    "t": "line",
+    "x": "I see your point but ..."
+   },
+   {
+    "t": "line",
+    "x": "No, I don't think so."
+   },
+   {
+    "t": "ins",
+    "x": "C. Complete the following dialogue with the expressions given in the box."
+   },
+   {
+    "t": "line",
+    "x": "I don't think so"
+   },
+   {
+    "t": "line",
+    "x": "you're right"
+   },
+   {
+    "t": "line",
+    "x": "I agree with you"
+   },
+   {
+    "t": "line",
+    "x": "I see your point"
+   },
+   {
+    "t": "line",
+    "x": "Lin Lin        : We should have a time to relax after the exam. What do you think?"
+   },
+   {
+    "t": "q",
+    "x": "Thiri            : I think (1) _______________. How about going shopping to the City Mall? We can have a lot of fun there."
+   },
+   {
+    "t": "q",
+    "x": "Lin Lin        : (2) _______________. There's a lot of people and it is a bit noisy. I wish to go to a quiet place."
+   },
+   {
+    "t": "q",
+    "x": "Thiri            : (3) _______________, but we can have good food at the Food Court and can also watch movie if you like. You like watching movies, don't you? It's relaxing to watch a comedy."
+   },
+   {
+    "t": "q",
+    "x": "Lin Lin        : OK. (4) _______________ now. Let's watch a movie after having lunch."
+   },
+   {
+    "t": "ins",
+    "x": "D. In pairs, practise the dialogue."
+   },
+   {
+    "t": "ins",
+    "x": "E. Su Su and Nilar are at the canteen. Write a dialogue between Su Su and Nilar talking about junk food and organic food. Use the following information in the dialogue."
+   },
+   {
+    "t": "line",
+    "x": "Su Su          - likes to eat junk food; thinks they are tasty; thinks organic food is expensive."
+   },
+   {
+    "t": "line",
+    "x": "Nilar           - prefers to eat organic food; thinks junk food is not good for health; worried that her friend will become sick."
+   },
+   {
+    "t": "line",
+    "x": "You can begin the dialogue like this."
+   },
+   {
+    "t": "line",
+    "x": "Su Su        : Would you like to eat some crisps?"
+   },
+   {
+    "t": "line",
+    "x": "Nilar        : No, I try to avoid junk food."
+   },
+   {
+    "t": "line",
+    "x": "Su Su        : ........................."
+   }
+  ]
+ },
+ {
+  "code": "3E",
+  "title": "Writing",
+  "blocks": [
+   {
+    "t": "line",
+    "x": "Describing a past event"
+   },
+   {
+    "t": "line",
+    "x": "Study a past event written by a student."
+   },
+   {
+    "t": "line",
+    "x": "On a Sunday afternoon at a quiet bookshop, the writer noticed a girl closely following them from shelf to shelf. Suspicious that she might be a pickpocket, the writer turned around to confront her, only to discover she was actually trying to block the view of a tear in the back of the writer's skirt."
+   },
+   {
+    "t": "line",
+    "x": "Think about an unforgettable event in the past. Write a paragraph on 'An unforgettable"
+   },
+   {
+    "t": "line",
+    "x": "event in my life'. The following questions are given to help you."
+   },
+   {
+    "t": "line",
+    "x": "• What was the event and when did it happen?"
+   },
+   {
+    "t": "line",
+    "x": "• Where were you at that time and what were you doing there?"
+   },
+   {
+    "t": "line",
+    "x": "• How did you feel when it happened?"
+   },
+   {
+    "t": "line",
+    "x": "• What did you do then?"
+   },
+   {
+    "t": "line",
+    "x": "• How did the event end?"
+   }
+  ]
+ }
+]
