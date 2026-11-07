@@ -2,7 +2,6 @@ import { useRef, useState } from "react";
 import {
   UNIT1_READING_C_WORDS,
   UNIT1_READING_C_ROLES,
-  UNIT1_READING_C_STRUCTURE,
   UNIT1_READING_ROLE_INFO,
 } from "@/data/grade11/unit1ReadingStructure";
 import {
@@ -23,10 +22,6 @@ export function Grade11ReadingStructure({ questionId }: { questionId: string }) 
   const info = activeIndex === null ? null : UNIT1_READING_ROLE_INFO[roles[activeIndex]];
   return (
     <div className="space-y-3">
-      <p lang="my">{UNIT1_READING_C_STRUCTURE[questionId]}</p>
-      <p className="text-xs text-muted-foreground" lang="my">
-        စကားလုံးကတ်တစ်ခုကို နှိပ်ပြီး သဒ္ဒါအသုံးပြုပုံကို လေ့လာပါ။
-      </p>
       <div
         className="flex flex-wrap gap-3 rounded-2xl border border-primary/30 bg-primary/5 p-3"
         aria-label="Sentence structure words"
@@ -83,7 +78,6 @@ export function Grade11ReadingStructure({ questionId }: { questionId: string }) 
             <div className="mt-5 space-y-4 text-sm leading-relaxed" lang="my">
               <p className="rounded-xl bg-primary/5 p-3">{active[1]}</p>
               <p>{info.explanationMy}</p>
-              <p className="border-t border-border pt-3">{UNIT1_READING_C_STRUCTURE[questionId]}</p>
             </div>
           )}
         </SheetContent>
