@@ -1,0 +1,824 @@
+[
+ {
+  "code": "1A",
+  "title": "Reading",
+  "blocks": [
+   {
+    "t": "sub",
+    "x": "Pre-reading"
+   },
+   {
+    "t": "line",
+    "x": "1. Which of these sentences is / are true for you? Put a tick or a cross in the box."
+   },
+   {
+    "t": "line",
+    "x": "a. I have seen a dolphin."
+   },
+   {
+    "t": "line",
+    "x": "b. I have seen a dolphin in the movies."
+   },
+   {
+    "t": "line",
+    "x": "c. I have seen a picture of a dolphin."
+   },
+   {
+    "t": "line",
+    "x": "d. I have seen an Ayeyarwady dolphin."
+   },
+   {
+    "t": "line",
+    "x": "e. I have never seen a dolphin."
+   },
+   {
+    "t": "q",
+    "x": "2. How will you feel if you see a dolphin?"
+   },
+   {
+    "t": "sub",
+    "x": "Read the passage."
+   },
+   {
+    "t": "para",
+    "x": "The dolphin is a kind of sea animal that looks like a large fish with a long pointed snout. Dolphins are both intelligent and friendly towards humans. There are several types of dolphins. Among them, the Ayeyarwady dolphin is a popular kind in Southeast Asia. Dolphins of this type are usually found in coastal areas in South and Southeast Asia and in freshwater rivers in Myanmar, Indonesia, and Laos. This species is called the Ayeyarwady dolphin as it was first found in the Ayeyarwady River in Myanmar, Its scientific name is Orcaella brevirostris and it is one of the endangered species among the freshwater dolphins in the world."
+   },
+   {
+    "t": "para",
+    "x": "The Ayeyarwady dolphin is quite different from other well-known dolphins. Its colour may be dark blue or dark or pale gray. It has a rounded head and a very bulging forehead. Unlike other dolphins, it has no beak, or snout. The dorsal fin is short, blunt and triangular. The flippers are long and broad. The average length is 2.3 metres and the weight can range from kg to 200 kg."
+   },
+   {
+    "t": "para",
+    "x": "They feed on bony fish, fish eggs, and crustaceans which are crabs, lobsters and shrimps. They also eat octopuses and squids. They take food into the mouth by suction, that is, by sucking in it."
+   },
+   {
+    "t": "para",
+    "x": "Ayeyarwady dolphins like to stay in tropical and subtropical waters and near shallow coastal waters. In other words, they live near coasts and river mouths. They are also found in freshwater rivers: the Ayeyarwady in Myanmar, the Mahakam in Indonesia and the Mekong in Laos. They are mostly seen about 1.6 kilometres away from the shore and they do not usually live in deep waters. In Myanmar, they inhabit the Ayeyarwady River between Mandalay and Bamaw."
+   },
+   {
+    "t": "para",
+    "x": "Ayeyarwady dolphins are slow swimmers and they are generally found in groups of to 6 members, but sometimes up to dolphins are seen together. They usually breathe, bringing only the head out of the water. They produce sounds such as whistles, clicks and screeches to communicate with one another. They can be seen jumping, making bubbles. and hitting the water with their flippers and tails. They can squirt streams of water that can reach up to 1.5 metres above the surface of the water. One of the most distinctive characteristics of these dolphins is the mutual relationship they have with the local fishermen. By making a tapping sound against the sides of their boats, the local fishermen used to call the dolphins to drive fish into their cast nets. In return. they rewarded the dolphins with a share of the fish that they had caught. The fishermen tried to get the attention of the dolphins in various ways - by striking the sides of their boats with their wooden sticks, by splashing the surface of the water with their oars and by giving their nets several rapid tugs."
+   },
+   {
+    "t": "para",
+    "x": "Ayeyarwady dolphins are now on the verge of extinction. They are listed as a critically endangered species, that is, it may no longer exist in the future as the dolphin population declines year by year. They often get entangled in the fishing nets and they also die as a result of electrofishing, and the use of gillnets and explosives. Now, in Myanmar the dolphins are under protection. The region in the Ayeyarwady River between Mingun and Kyaukmyaung is officially recognized as a sanctuary to protect the decline of the dolphin population. The Department of Fisheries prohibits the catching or killing of dolphins. The local fishermen are not allowed to use electrofishing, gillnets and explosives, which lead to a steady decline of the population of Ayeyarwady dolphins."
+   },
+   {
+    "t": "sub",
+    "x": "Comprehension"
+   },
+   {
+    "t": "ins",
+    "x": "A. Read the passage and choose the appropriate topic for each paragraph."
+   },
+   {
+    "t": "line",
+    "x": "Match the paragraphs (1-5) with the topics (a-e)."
+   },
+   {
+    "t": "line",
+    "x": "a. Food"
+   },
+   {
+    "t": "line",
+    "x": "b. Threats and Conservation."
+   },
+   {
+    "t": "ins",
+    "x": "C. Description"
+   },
+   {
+    "t": "line",
+    "x": "d. Characteristics"
+   },
+   {
+    "t": "line",
+    "x": "e. Habitat"
+   },
+   {
+    "t": "ins",
+    "x": "B. In pairs, find the bold-faced words in the passage that are similar in meaning to the"
+   },
+   {
+    "t": "line",
+    "x": "following."
+   },
+   {
+    "t": "line",
+    "x": "1. live in a particular place"
+   },
+   {
+    "t": "line",
+    "x": "2. an area where animals are protected and cannot be hunted"
+   },
+   {
+    "t": "line",
+    "x": "3. no longer exist in future"
+   },
+   {
+    "t": "line",
+    "x": "4. bans"
+   },
+   {
+    "t": "line",
+    "x": "5. near the coast"
+   },
+   {
+    "t": "line",
+    "x": "6. caught in a rope, net, etc."
+   },
+   {
+    "t": "line",
+    "x": "7. the long nose of some kind of animals; beak"
+   },
+   {
+    "t": "ins",
+    "x": "C. Give a full-sentence answer to each question below."
+   },
+   {
+    "t": "q",
+    "x": "1. Where are Ayeyarwady dolphins usually found?"
+   },
+   {
+    "t": "q",
+    "x": "2. Why are they called Ayeyarwady dolphins?"
+   },
+   {
+    "t": "q",
+    "x": "3. What is the difference between Ayeyarwady dolphins and other dolphins?"
+   },
+   {
+    "t": "q",
+    "x": "4. How do they eat their food?"
+   },
+   {
+    "t": "q",
+    "x": "5. Where can you find them in Myanmar?"
+   },
+   {
+    "t": "q",
+    "x": "6. How do they communicate with one another?"
+   },
+   {
+    "t": "q",
+    "x": "7. How did the local fishermen get the attention of the dolphins?"
+   },
+   {
+    "t": "q",
+    "x": "8. Why does the dolphin population decline year by year?"
+   },
+   {
+    "t": "q",
+    "x": "9. Which part of the Ayeyarwady River is kept as a sanctuary to protect the dolphins?"
+   },
+   {
+    "t": "q",
+    "x": "10. What can you do to protect the decline of Ayeyarwady dolphin population?"
+   }
+  ]
+ },
+ {
+  "code": "1B",
+  "title": "Vocabulary",
+  "blocks": [
+   {
+    "t": "line",
+    "x": "Adverb Adjective Collocations"
+   },
+   {
+    "t": "line",
+    "x": "Certain adverbs and adjectives often go together in sentences as collocation. Sometimes, they can also be used as compound adjectives."
+   },
+   {
+    "t": "line",
+    "x": "e.g. Ayeyarwady dolphins are listed as a critically endangered species."
+   },
+   {
+    "t": "line",
+    "x": "U Aung Tin is a highly respected teacher in our school."
+   },
+   {
+    "t": "ins",
+    "x": "A. Match an adverb from Column A with an adjective from Column B."
+   },
+   {
+    "t": "line",
+    "x": "Column A"
+   },
+   {
+    "t": "line",
+    "x": "Column B"
+   },
+   {
+    "t": "line",
+    "x": "1. absolutely"
+   },
+   {
+    "t": "line",
+    "x": "a. necessary"
+   },
+   {
+    "t": "line",
+    "x": "2. deeply"
+   },
+   {
+    "t": "line",
+    "x": "b. concerned"
+   },
+   {
+    "t": "line",
+    "x": "3. highly"
+   },
+   {
+    "t": "line",
+    "x": "c. recommended"
+   },
+   {
+    "t": "line",
+    "x": "4. badly"
+   },
+   {
+    "t": "line",
+    "x": "d. hurt"
+   },
+   {
+    "t": "line",
+    "x": "5. completely"
+   },
+   {
+    "t": "line",
+    "x": "e. different"
+   },
+   {
+    "t": "line",
+    "x": "6. fully"
+   },
+   {
+    "t": "line",
+    "x": "f. aware"
+   },
+   {
+    "t": "line",
+    "x": "7. happily"
+   },
+   {
+    "t": "line",
+    "x": "g. married"
+   },
+   {
+    "t": "line",
+    "x": "8. actively"
+   },
+   {
+    "t": "line",
+    "x": "h. involved"
+   },
+   {
+    "t": "line",
+    "x": "9. deadly"
+   },
+   {
+    "t": "line",
+    "x": "i. serious"
+   },
+   {
+    "t": "line",
+    "x": "10. mentally"
+   },
+   {
+    "t": "line",
+    "x": "j. ill"
+   },
+   {
+    "t": "ins",
+    "x": "B. Complete each sentence with an appropriate adverb and adjective collocation from Exercise A."
+   },
+   {
+    "t": "q",
+    "x": "My brother has been _________________ in voluntary work for over two years."
+   },
+   {
+    "t": "q",
+    "x": "It is _________________ for you to have a balanced diet if you want to be healthy."
+   },
+   {
+    "t": "q",
+    "x": "They had been _________________ for 5 years, but their marriage ended in divorce."
+   },
+   {
+    "t": "q",
+    "x": "Fortunately, no one was _________________ in the car accident."
+   },
+   {
+    "t": "q",
+    "x": "Students must be trained to be _________________ of their responsibilities as good citizens."
+   },
+   {
+    "t": "q",
+    "x": "It is very challenging to take care of people who are _________________."
+   },
+   {
+    "t": "q",
+    "x": "When I look around the surrounding area, it is now _________________ from it was five years ago."
+   },
+   {
+    "t": "q",
+    "x": "The townspeople are _________________ about the threat of health problems caused by polluted water in the river."
+   },
+   {
+    "t": "q",
+    "x": "When he said he was leaving school, we thought he was joking, but he said he was _________________."
+   },
+   {
+    "t": "q",
+    "x": "This book was so _________________ by critics that it became one of the bestsellers of the year."
+   }
+  ]
+ },
+ {
+  "code": "1C",
+  "title": "Grammar",
+  "blocks": [
+   {
+    "t": "line",
+    "x": "Both ... and"
+   },
+   {
+    "t": "line",
+    "x": "The 'both ... and' construction is used to emphasize that something is true not just of one person, thing or situation, but also of another."
+   },
+   {
+    "t": "line",
+    "x": "It indicates that the two items are equally presented and included."
+   },
+   {
+    "t": "line",
+    "x": "e.g. I like both the novel and the movie."
+   },
+   {
+    "t": "line",
+    "x": "Both Ko Zaw and Soe Thu are good students.*"
+   },
+   {
+    "t": "line",
+    "x": "She can both speak and write Chinese."
+   },
+   {
+    "t": "line",
+    "x": "Dolphins are both intelligent and friendly towards humans."
+   },
+   {
+    "t": "line",
+    "x": "If 'both ... and' is used in the subject of a sentence, the plural verb is used."
+   },
+   {
+    "t": "line",
+    "x": "e.g. Both the movie and the play were good."
+   },
+   {
+    "t": "line",
+    "x": "NB 'Both ... and' is not usually used in negative sentences. 'Neither ... nor' is used instead."
+   },
+   {
+    "t": "line",
+    "x": "e.g. My father neither drinks nor smokes."
+   },
+   {
+    "t": "line",
+    "x": "(Not) My father does not both drink and smoke."
+   },
+   {
+    "t": "ins",
+    "x": "A. Rewrite the sentences using 'both ... and'."
+   },
+   {
+    "t": "line",
+    "x": "e.g. I like chocolate ice cream. I like vanilla ice cream."
+   },
+   {
+    "t": "line",
+    "x": "I like both chocolate ice cream and vanilla ice cream."
+   },
+   {
+    "t": "line",
+    "x": "You are wasting too much time. Kyaw Zaw is wasting too much time."
+   },
+   {
+    "t": "line",
+    "x": "He played football when he was a student. He played volleyball when he was a student."
+   },
+   {
+    "t": "line",
+    "x": "They are tired after shopping. They are hungry after shopping."
+   },
+   {
+    "t": "line",
+    "x": "Not only Kyi Thar but also his brother is a guitarist."
+   },
+   {
+    "t": "line",
+    "x": "Daw Nandar wants to go to Bagan during the Thingyan holiday. Her sons want to go there too."
+   },
+   {
+    "t": "line",
+    "x": "Ni Ni wants to put up at the Shwe Myint Mo Hotel and so does Maw Maw."
+   },
+   {
+    "t": "line",
+    "x": "Applicants for this post must be able to speak English. Applicants for this post must be able to speak Chinese too."
+   },
+   {
+    "t": "line",
+    "x": "You should work harder if you want to be successful. You should have perseverance if you want to be successful."
+   },
+   {
+    "t": "line",
+    "x": "He donated money to the poor in our community. He donated food to the poor in our community."
+   },
+   {
+    "t": "line",
+    "x": "As we are free this afternoon, we can go shopping and we can see a film as well."
+   },
+   {
+    "t": "line",
+    "x": "'Before' and 'After'"
+   },
+   {
+    "t": "line",
+    "x": "'Before' is used:"
+   },
+   {
+    "t": "line",
+    "x": "as a preposition (followed by a noun) meaning 'earlier than the time'; as an adverb (without a following noun) to refer to 'the previous time'; and as a conjunction (connecting two clauses) to indicate that the second event happened soon after the first one."
+   },
+   {
+    "t": "line",
+    "x": "e.g. Could you come to me before lunch? (preposition)"
+   },
+   {
+    "t": "line",
+    "x": "He has written about this subject before. (adverb)"
+   },
+   {
+    "t": "line",
+    "x": "She gave everyone a present before she left. (conjunction)"
+   },
+   {
+    "t": "line",
+    "x": "with present perfect or past perfect tense to emphasize the idea of completion and with 'V-ing' in a formal style."
+   },
+   {
+    "t": "line",
+    "x": "e.g. He went out before I had finished talking."
+   },
+   {
+    "t": "line",
+    "x": "Please switch off all the lights before leaving the office."
+   },
+   {
+    "t": "line",
+    "x": "'After' is used:"
+   },
+   {
+    "t": "line",
+    "x": "as a preposition (followed by a noun) meaning 'at a later time'; as an adverb (without a following noun) meaning 'following in time or place'; and as a conjunction (connecting two clauses) meaning 'when an action or an event has ended'."
+   },
+   {
+    "t": "line",
+    "x": "e.g. I went for a walk after dinner. (preposition)"
+   },
+   {
+    "t": "line",
+    "x": "They started the job on 17th June and finished a week after. (adverb)"
+   },
+   {
+    "t": "line",
+    "x": "After you had left, I got a phone call from Thuzar. (conjunction)"
+   },
+   {
+    "t": "line",
+    "x": "with present perfect or past perfect tense to show that one thing is completed before another starts and with 'V-ing' in a formal style."
+   },
+   {
+    "t": "line",
+    "x": "e.g. I will call you after I have done my homework."
+   },
+   {
+    "t": "line",
+    "x": "After completing this form, give it to the secretary."
+   },
+   {
+    "t": "ins",
+    "x": "B. Complete each sentence with 'before' or 'after'."
+   },
+   {
+    "t": "line",
+    "x": "I left the cinema ……..the boring film ended."
+   },
+   {
+    "t": "line",
+    "x": "My sister usually does the washing-up …..dinner."
+   },
+   {
+    "t": "line",
+    "x": "………graduating from high school, I would like to attend the University of Computer Studies."
+   },
+   {
+    "t": "q",
+    "x": "His watch remains in good condition -------- having been used for five years."
+   },
+   {
+    "t": "line",
+    "x": "……..a careful consideration, my parents allowed me to join the dance club."
+   },
+   {
+    "t": "line",
+    "x": "The new building should be completed ………the end of this month as it is planned to be inaugurated in the first week of next month."
+   },
+   {
+    "t": "line",
+    "x": "The man was arrested by the police two years ……committing the murder."
+   },
+   {
+    "t": "q",
+    "x": "I am looking forward to the trip as I have never been to Japan _______________."
+   },
+   {
+    "t": "q",
+    "x": "_______________ arriving at the hotel, U Min Aung went straight to the meeting room."
+   },
+   {
+    "t": "q",
+    "x": "_______________ I gave him the shopping list, he had left for the market."
+   },
+   {
+    "t": "ins",
+    "x": "C. Combine each pair of sentences using 'after + V-ing' construction."
+   },
+   {
+    "t": "line",
+    "x": "After throwing out the fishing net, the fisherman waited patiently."
+   },
+   {
+    "t": "line",
+    "x": "After telling my mother about my problem, I felt better."
+   },
+   {
+    "t": "line",
+    "x": "After packing her lunch, Thet Thet went out to work."
+   },
+   {
+    "t": "line",
+    "x": "After finishing her/his homework, Nyi Lay was allowed to watch TV."
+   },
+   {
+    "t": "line",
+    "x": "After revising all the lessons, Thuta felt confident to take the exam."
+   },
+   {
+    "t": "line",
+    "x": "After spending a year in the city, he decided to go back to his hometown."
+   },
+   {
+    "t": "line",
+    "x": "After looking at the audience and taking a deep breath, the speaker delivered his speech."
+   },
+   {
+    "t": "line",
+    "x": "After working for the company for two years, Shwe Yee got promoted."
+   },
+   {
+    "t": "line",
+    "x": "After working long hours in the cold, his hands were sore and cracked."
+   },
+   {
+    "t": "line",
+    "x": "After deciding to take up the job, I started to worry about my decision."
+   },
+   {
+    "t": "ins",
+    "x": "D. Combine each pair of sentences using 'before + V-ing' construction."
+   },
+   {
+    "t": "line",
+    "x": "1. Aye Aye washed the vegetables. She put them in the refrigerator."
+   },
+   {
+    "t": "line",
+    "x": "2. Ko Naing applied for a job at the company. He had attended a computer training course."
+   },
+   {
+    "t": "line",
+    "x": "3. I had a cup of coffee. I left for work this morning."
+   },
+   {
+    "t": "line",
+    "x": "4. We had to queue up for an hour. We got the tickets for the music concert."
+   },
+   {
+    "t": "line",
+    "x": "5. There is a lot to study on the subject. Only after that we can start our project."
+   },
+   {
+    "t": "line",
+    "x": "6. He ran the Yoma Marathon. He had practised for almost a year."
+   },
+   {
+    "t": "line",
+    "x": "7. She went throt th her assignment again. She submitted it to the teacher."
+   },
+   {
+    "t": "line",
+    "x": "8. She had packed her suitcase; she went to the bus terminal."
+   },
+   {
+    "t": "line",
+    "x": "9. My father always takes physical exercise. And then he has a bath."
+   },
+   {
+    "t": "line",
+    "x": "10. We had lived in a small town for two years. Then, we moved to Yangon."
+   }
+  ]
+ },
+ {
+  "code": "1D",
+  "title": "Listening and Speaking",
+  "blocks": [
+   {
+    "t": "ins",
+    "x": "A. Listen to a talk on 'Wildlife Conservation'. Then, complete the following table."
+   },
+   {
+    "t": "line",
+    "x": "'Wildlife'"
+   },
+   {
+    "t": "q",
+    "x": "(1) animals, birds and plants that are found in their _______________"
+   },
+   {
+    "t": "line",
+    "x": "'Wildlife conservation'"
+   },
+   {
+    "t": "q",
+    "x": "(2) the practice of protecting _______________ and animal species and their habitats"
+   },
+   {
+    "t": "line",
+    "x": "How to protect wildlife from being extinct"
+   },
+   {
+    "t": "q",
+    "x": "(3) to _______________ and collect information about wildlife"
+   },
+   {
+    "t": "q",
+    "x": "(4) to _______________ of endangered animals and birds"
+   },
+   {
+    "t": "q",
+    "x": "(5) to _______________ about the importance of wildlife"
+   },
+   {
+    "t": "line",
+    "x": "How to maintain the number of wildlife in balance with their habitats"
+   },
+   {
+    "t": "q",
+    "x": "(6) to prohibit _______________ forest trees and to grow more trees for the animals"
+   },
+   {
+    "t": "q",
+    "x": "(7) _______________ protected areas like national parks and wildlife sanctuaries"
+   },
+   {
+    "t": "ins",
+    "x": "B. Complete the following dialogue using the questions given below."
+   },
+   {
+    "t": "line",
+    "x": "(a) How did you feel after the trip?"
+   },
+   {
+    "t": "line",
+    "x": "(b) How was your trip?"
+   },
+   {
+    "t": "line",
+    "x": "(c) What did you do with that group?"
+   },
+   {
+    "t": "line",
+    "x": "(d) What did you do after that?"
+   },
+   {
+    "t": "line",
+    "x": "(e) With whom did you go there?"
+   },
+   {
+    "t": "line",
+    "x": "A: Hi! Kyaw Swar, you've just come back from Chaung Tha, haven't you?"
+   },
+   {
+    "t": "line",
+    "x": "B: Yes, I have."
+   },
+   {
+    "t": "line",
+    "x": "A: (1)"
+   },
+   {
+    "t": "line",
+    "x": "B: Fantastic! I got a lot of experience from it."
+   },
+   {
+    "t": "line",
+    "x": "A: Did you? (2)"
+   },
+   {
+    "t": "line",
+    "x": "B: I went there with a voluntary group to do the project on the environment."
+   },
+   {
+    "t": "line",
+    "x": "A: (3)"
+   },
+   {
+    "t": "line",
+    "x": "B: When we arrived there, we collected litter on the beach and buried the garbage bags in the hole that we dug away from the beach."
+   },
+   {
+    "t": "line",
+    "x": "A: What a good deed! (4)"
+   },
+   {
+    "t": "line",
+    "x": "B: When I came back to the beach, I saw a sea turtle crawling on the sand. So my friend and I carried it and released it into the sea."
+   },
+   {
+    "t": "line",
+    "x": "A: (5)"
+   },
+   {
+    "t": "line",
+    "x": "B: Well, I was pleased for what I had done in Chaung Tha. I hope you can join us when we go on the next trip."
+   },
+   {
+    "t": "ins",
+    "x": "C. In pairs, practise the dialogue."
+   },
+   {
+    "t": "ins",
+    "x": "D. In pairs, create a dialogue as in Exercise B talking about a trip to a lake in the area you live in for birdwatching."
+   }
+  ]
+ },
+ {
+  "code": "1E",
+  "title": "Writing",
+  "blocks": [
+   {
+    "t": "line",
+    "x": "Write an essay on 'Myanmar Star Tortoise' in about 250 words using the points given below."
+   },
+   {
+    "t": "line",
+    "x": "Appearance"
+   },
+   {
+    "t": "line",
+    "x": "medium-sized tortoise with an oval-shaped top shell"
+   },
+   {
+    "t": "line",
+    "x": "star-shaped patterns on the top shell"
+   },
+   {
+    "t": "line",
+    "x": "size : 20 cm – 30 cm"
+   },
+   {
+    "t": "line",
+    "x": "weight : 1.3 kg – 2.2 kg"
+   },
+   {
+    "t": "line",
+    "x": "colour : top shell – dark brown or black"
+   },
+   {
+    "t": "line",
+    "x": "skin of the head, limbs and tail – yellowish"
+   },
+   {
+    "t": "line",
+    "x": "Habitat"
+   },
+   {
+    "t": "line",
+    "x": "found in thorn scrubs, bushes, and dry forests located within the dry zone of central Myanmar"
+   }
+  ]
+ }
+]
