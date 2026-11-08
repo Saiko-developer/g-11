@@ -1,4 +1,5 @@
 import { untrusted, cleanLine } from "@/lib/api-guard.server";
+import { GRADE11_HOME_PROMPT } from "@/lib/grade11TutorPrompt.server";
 import { withTone } from "@/lib/tone-rules";
 import { consumeTutorQuota } from "@/lib/tutor-quota.server";
 import { createFileRoute } from "@tanstack/react-router";
@@ -119,7 +120,7 @@ export const Route = createFileRoute("/api/chat-home")({
         const model = getLovableChatModel();
 
         const grade11 = body.grade === 11;
-        let system = grade11 ? HOME_PROMPT.replaceAll("Grade 10", "Grade 11") : HOME_PROMPT;
+        let system = grade11 ? GRADE11_HOME_PROMPT : HOME_PROMPT;
         if (lessonContext) {
           system += `\n\n--- ယခု ကျောင်းသား ဖတ်နေသော သင်ခန်းစာ ---\n${untrusted("lesson", lessonContext, grade11 ? 40000 : 8000)}`;
         }

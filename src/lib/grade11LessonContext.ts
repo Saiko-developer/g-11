@@ -21,6 +21,7 @@ export type Grade11AIQuestion = { id: string; question: string; instructions: st
 export function grade11LessonContext(unit: number, kind: G11SkillKind) {
   const questions: Grade11AIQuestion[] = [];
   let text = "";
+  let passageIndex = "";
   if (isUpperUnit(unit)) {
     const content = UPPER_UNITS[unit].skills[kind];
     for (const group of content.groups)
@@ -53,6 +54,12 @@ export function grade11LessonContext(unit: number, kind: G11SkillKind) {
           ? Number(b.id.split("-")[1]) >= speakingStart
           : Number(b.id.split("-")[1]) < speakingStart),
     );
+    if (kind === "reading") {
+      const paragraphs = selected.filter((b) => b.t === "para" && b.area === "lesson");
+      passageIndex = paragraphs
+        .map((b, index) => `[Paragraph ${index + 1} | source ${b.id}]\n${b.x}`)
+        .join("\n\n");
+    }
     for (const block of selected) {
       if (block.t === "ins") {
         instructions = block.x;
@@ -73,6 +80,6 @@ export function grade11LessonContext(unit: number, kind: G11SkillKind) {
       getGrade11Captions(unit)
         .map((c) => c.en)
         .join("\n");
-  const context = `Grade 11 English · Unit ${unit} · ${kind}\nTextbook questions:\n${questions.map((q) => `[${q.id}] ${q.instructions}\n${q.question}`).join("\n")}\nOriginal textbook reference (OCR may contain recognition errors; never invent missing information):\n${text}`;
+  const context = `Grade 11 English · Unit ${unit} · ${kind}\n${passageIndex ? `Reading passage paragraphs in display order (including the introductory paragraph; printed heading blanks are NOT paragraph numbers):\n${passageIndex}\n\n` : ""}Textbook questions:\n${questions.map((q) => `[${q.id}] ${q.instructions}\n${q.question}`).join("\n")}\nOriginal textbook reference (OCR may contain recognition errors; never invent missing information):\n${text}`;
   return { context, questions };
 }

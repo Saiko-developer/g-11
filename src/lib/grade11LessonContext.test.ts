@@ -31,3 +31,17 @@ describe("Grade 11 AI has real context in every unit and section", () => {
           ).toBeGreaterThan(20);
   });
 });
+
+it("distinguishes the first passage paragraph from numbered heading blanks in Unit 1", () => {
+  const context = grade11LessonContext(1, "reading").context;
+  expect(context).toContain("[Paragraph 1 | source 1A-9]\nThe dolphin is a kind of sea animal");
+  expect(context).toContain("[Paragraph 2 | source 1A-10]\n1. ______");
+  expect(context.indexOf("[Paragraph 1")).toBeLessThan(context.indexOf("Textbook questions:"));
+});
+it.each([1, 2, 3, 4, 5, 6])(
+  "provides source paragraph references for Unit %i reading only",
+  (unit) => {
+    expect(grade11LessonContext(unit, "reading").context).toContain("[Paragraph 1 | source");
+    expect(grade11LessonContext(unit, "grammar").context).not.toContain("[Paragraph 1 | source");
+  },
+);

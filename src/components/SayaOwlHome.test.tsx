@@ -153,6 +153,88 @@ it("ends a stalled thinking turn with a visible retry message", async () => {
   await act(async () => {
     await vi.advanceTimersByTimeAsync(90001);
   });
-  expect(screen.getByRole("alert")).toHaveTextContent("စောင့်ချိန်ကြာသွားပါပြီ");
+  expect(screen.getByRole("alert")).toHaveTextContent("တုံ့ပြန်မှု မရတာ ကြာသွားပါပြီ");
   expect(mock.chat.stop).toHaveBeenCalled();
+});
+
+it("keeps a long explanation alive while new streamed text arrives", async () => {
+  const view = render(<SayaOwlHome grade={11} lessonContext="Grade 11 Unit 1" />);
+  await startAndSpeak();
+  mock.chat.status = "streaming";
+  for (let i = 1; i <= 4; i++) {
+    await act(async () => {
+      await vi.advanceTimersByTimeAsync(60000);
+    });
+    mock.chat.messages = [
+      { role: "user", parts: [] },
+      { role: "assistant", parts: [{ type: "text", text: "ဒီစာပိုဒ်အကြောင်း ".repeat(i) }] },
+    ];
+    view.rerender(<SayaOwlHome grade={11} lessonContext="Grade 11 Unit 1" />);
+    expect(screen.queryByRole("alert")).toBeNull();
+  }
+  expect(mock.chat.stop).not.toHaveBeenCalled();
+  // A real stall after progress still times out.
+  await act(async () => {
+    await vi.advanceTimersByTimeAsync(91000);
+  });
+  expect(screen.getByRole("alert")).toHaveTextContent("တုံ့ပြန်မှု မရတာ ကြာသွားပါပြီ");
+});
+it("does not interrupt audio that is still playing beyond 90 seconds after streaming finishes", async () => {
+  class TestAudio {
+    static last: TestAudio;
+    paused = true;
+    startedAt = 0;
+    onended?: () => void;
+    onerror?: () => void;
+    onpause?: () => void;
+    constructor() {
+      TestAudio.last = this;
+    }
+    get currentTime() {
+      return (Date.now() - this.startedAt) / 1000;
+    }
+    play() {
+      this.paused = false;
+      this.startedAt = Date.now();
+      return Promise.resolve();
+    }
+    pause() {
+      this.paused = true;
+      this.onpause?.();
+    }
+  }
+  vi.stubGlobal("Audio", TestAudio);
+  URL.createObjectURL = vi.fn(() => "blob:test");
+  URL.revokeObjectURL = vi.fn();
+  vi.mocked(fetch).mockImplementation(async (url) =>
+    url === "/api/transcribe"
+      ? Response.json({ text: "စာပိုဒ်တစ်ကို အသေးစိတ်ရှင်းပြပါ" })
+      : new Response("audio"),
+  );
+  const view = render(<SayaOwlHome grade={11} lessonContext="Grade 11 Unit 1" />);
+  await startAndSpeak();
+  mock.chat.messages = [
+    { role: "user", parts: [] },
+    {
+      role: "assistant",
+      parts: [{ type: "text", text: "ဒီစာပိုဒ်ကို အသေးစိတ် ရှင်းပြပေးပါမယ်။" }],
+    },
+  ];
+  view.rerender(<SayaOwlHome grade={11} lessonContext="Grade 11 Unit 1" />);
+  await act(async () => {
+    await vi.advanceTimersByTimeAsync(6000);
+  });
+  expect(
+    screen.getByRole("button", { name: "ဆရာ ရှင်းပြနေပါတယ်… (နှိပ်ပြီး ရပ်နိုင်)" }),
+  ).toBeInTheDocument();
+  await act(async () => {
+    await vi.advanceTimersByTimeAsync(180000);
+  });
+  expect(screen.queryByRole("alert")).toBeNull();
+  expect(TestAudio.last.paused).toBe(false);
+  expect(mock.chat.stop).not.toHaveBeenCalled();
+  await act(async () => {
+    TestAudio.last.onended?.();
+  });
+  expect(screen.getByRole("button", { name: "နားထောင်နေပါတယ်… မေးလိုက်ပါ" })).toBeInTheDocument();
 });

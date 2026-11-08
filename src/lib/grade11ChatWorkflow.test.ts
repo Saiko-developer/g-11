@@ -3,6 +3,7 @@ import { Route } from "@/routes/api/chat-home";
 import { consumeTutorQuota } from "./tutor-quota.server";
 import { getLovableChatModel } from "./ai-gateway.server";
 import { streamText } from "ai";
+import { GRADE11_HOME_PROMPT } from "./grade11TutorPrompt.server";
 vi.mock("@tanstack/react-router", () => ({
   createFileRoute: () => (options: unknown) => ({ options }),
 }));
@@ -81,4 +82,21 @@ describe("shared tutor workflow keeps Grade 10 defaults and supports Grade 11", 
     expect(response.status).toBe(503);
     expect((await response.json()).error).toBe("ai_unavailable");
   });
+});
+
+it("uses a request-specific Grade 11 policy without the Grade 10 exercise template", async () => {
+  await post({
+    request: request({
+      grade: 11,
+      mode: "voice",
+      messages: [],
+      lessonContext: "[Paragraph 1] The dolphin is a kind of sea animal.",
+    }),
+  });
+  const system = vi.mocked(streamText).mock.calls[0][0].system;
+  expect(system).toContain(GRADE11_HOME_PROMPT);
+  expect(system).toContain("Paragraph 1 / ပထမစာပိုဒ်");
+  expect(system).toContain("မူရင်းဝါကျတစ်ကြောင်းစီ");
+  expect(system).not.toContain("# အသေးစိတ် ရှင်းပြရသည့်အခါ အဖြေပုံစံ");
+  expect(system).toContain("The dolphin is a kind of sea animal.");
 });

@@ -113,6 +113,8 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
 
   const activeRef = useRef(false);
   const generationRef = useRef(0);
+  const progressAtRef = useRef(Date.now());
+  const streamTextRef = useRef("");
   const nativeRecRef = useRef<NativeRec | null>(null);
   const nativeFailedRef = useRef(false);
   const mutedRef = useRef(false);
@@ -161,11 +163,9 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
       const audio = new Audio(url);
       audioRef.current = audio;
       let settled = false;
-      const timer = grade === 11 ? window.setTimeout(() => { audio.pause(); done(); }, 45000) : undefined;
       const done = () => {
         if (settled) return;
         settled = true;
-        window.clearTimeout(timer);
         URL.revokeObjectURL(url);
         if (audioRef.current === audio) audioRef.current = null;
         resolve();
@@ -202,6 +202,7 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
           if (url) URL.revokeObjectURL(url);
           return;
         }
+        if (grade === 11) progressAtRef.current = Date.now();
         // Prefetch only one sentence ahead to stay inside the rate limit.
         if (textQueueRef.current.length) nextFetchRef.current = fetchSpeech(textQueueRef.current.shift()!, grade === 11);
         await fillerDoneRef.current;
@@ -277,6 +278,8 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
     voiceFailedRef.current = false;
     textQueueRef.current = [];
     turnRef.current = { active: true, offset: 0, done: false, userCount: grade === 11 ? messages.length + 1 : -1 };
+    progressAtRef.current = Date.now();
+    streamTextRef.current = "";
     setPhase("thinking");
     setSubtitle("");
     void sendMessage(
@@ -582,6 +585,10 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
     }
     if (!last || last.role !== "assistant" || messages.length <= t.userCount) return;
     const body = last.parts.map((p) => (p.type === "text" ? p.text : "")).join("").split("@@")[0];
+    if (grade === 11 && body !== streamTextRef.current) {
+      streamTextRef.current = body;
+      progressAtRef.current = Date.now();
+    }
     const final = status === "ready";
     if (grade === 11 && final && !body.trim()) {
       failCallRef.current("AI အဖြေ မရရှိပါ။ ပြန်စရန် ဆရာဇီးကွက်ကို နှိပ်ပါ။");
@@ -594,13 +601,24 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [messages, status]);
 
-  // A stalled upload, stream or voice response must never leave Grade 11 thinking forever.
+  // Detect inactivity, not total explanation length. Audio can outlast the completed stream.
   useEffect(() => {
     if (grade !== 11 || (phase !== "thinking" && phase !== "speaking")) return;
-    const timer = window.setTimeout(() => {
-      failCallRef.current("စောင့်ချိန်ကြာသွားပါပြီ။ Internet စစ်ပြီး ပြန်စရန် ဆရာဇီးကွက်ကို နှိပ်ပါ။");
-    }, 90000);
-    return () => window.clearTimeout(timer);
+    progressAtRef.current = Date.now();
+    let previousAudio: HTMLAudioElement | null = null;
+    let previousTime = 0;
+    const timer = window.setInterval(() => {
+      const audio = audioRef.current;
+      if (audio !== previousAudio) { previousAudio = audio; previousTime = 0; }
+      if (audio && !audio.paused && audio.currentTime > previousTime) {
+        progressAtRef.current = Date.now();
+        previousTime = audio.currentTime;
+      }
+      if (Date.now() - progressAtRef.current >= 90000) {
+        failCallRef.current("တုံ့ပြန်မှု မရတာ ကြာသွားပါပြီ။ ပြန်စရန် ဆရာဇီးကွက်ကို နှိပ်ပါ။");
+      }
+    }, 1000);
+    return () => window.clearInterval(timer);
   }, [grade, phase]);
 
   useEffect(() => () => endCallRef.current(), []);
