@@ -62,11 +62,9 @@ describe("Grade 11 Units 3–6 workspaces", () => {
         .blocks.find((b) => b.t === "ins")!.x;
       const view = render(<Lesson kind="listening" />);
       expect(screen.getByRole("heading", { name: listening })).toBeVisible();
-      expect(screen.getAllByText(/🎧/)).toHaveLength(1);
       view.unmount();
       render(<Lesson kind="speaking" />);
       expect(screen.queryByRole("heading", { name: listening })).toBeNull();
-      expect(screen.queryByText(/🎧/)).toBeNull();
     },
   );
 

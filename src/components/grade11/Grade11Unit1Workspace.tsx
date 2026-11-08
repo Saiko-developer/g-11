@@ -116,9 +116,6 @@ export function Grade11Unit1Workspace({ kind }: { kind: G11SkillKind }) {
                       : section.title}
                 </span>
               </header>
-              {kind === "listening" && (
-                <OwlBadge>🎧 ဤလေ့ကျင့်ခန်းအတွက် Grade 11 အသံဖိုင် မရရှိသေးပါ။</OwlBadge>
-              )}
               {kind === "speaking" && (
                 <LessonAudioPlayer
                   label="Model pronunciation"

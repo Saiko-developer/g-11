@@ -70,11 +70,6 @@ function UpperWorkspace({ unit, kind }: { unit: UpperUnitNumber; kind: G11SkillK
         />
       </div>
       {kind === "grammar" && <Grade11GrammarVideos unit={unit} />}
-      {kind === "listening" && (
-        <p lang="my" className="rounded-xl bg-muted p-3 text-sm">
-          🎧 ဤလေ့ကျင့်ခန်းအတွက် Grade 11 အသံဖိုင် မရရှိသေးပါ။
-        </p>
-      )}
       <div className="grid min-w-0 items-start gap-5 lg:grid-cols-2">
         <aside
           aria-label="Original textbook"

@@ -1,0 +1,182 @@
+[
+  {
+    "unit": 1,
+    "src": "/grade11/audio/unit1.mp3",
+    "durationSeconds": 116.114,
+    "sourceFilename": "Grade_11_Unit_1_THE_AYEYARWADY_DOLPHINS_@eela_excellentenglish128k.mp3",
+    "sha256": "85ea564ac91b4adff12d75bc3c6098efeed8cf3a75d076d7b4aa089ca6fcb202",
+    "bytes": 1858383,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "unit": 2,
+    "src": "/grade11/audio/unit2.mp3",
+    "durationSeconds": 112.797,
+    "sourceFilename": "Grade_11_Unit_2_Online_Shopping_@eela_excellentenglish128k.mp3",
+    "sha256": "599395f0f553e865dbd8985c8b591e8b9f6637bd02d6352f975351421a3da195",
+    "bytes": 1805302,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "unit": 3,
+    "src": "/grade11/audio/unit3.mp3",
+    "durationSeconds": 77.949,
+    "sourceFilename": "Grade_-_11__Unit_-_3,_Memory__@eela-excellentenglish(128k).mp3",
+    "sha256": "d563cb664d3138b799ae428d542c9c246f0d31597021d772b8a10454b6804d63",
+    "bytes": 1247745,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "unit": 4,
+    "src": "/grade11/audio/unit4.mp3",
+    "durationSeconds": 193.384,
+    "sourceFilename": "Grade_11_Unit_4,_Globalization_of_food_@eela_excellentenglish128k.mp3",
+    "sha256": "cc5953179a64ffd208ceed1584dfcc04ca3c5e46e11ea6e1ff1a9209de5d7679",
+    "bytes": 3094706,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "unit": 5,
+    "src": "/grade11/audio/unit5.mp3",
+    "durationSeconds": 133.721,
+    "sourceFilename": "Grade_-_11__Unit_-_5,_Travel_in_Southeast_Asia_1_(128k).mp3",
+    "sha256": "349381c8513819265c2a8269d2a6792362388df5c7db6765694e911b4f2f21f4",
+    "bytes": 2140088,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "unit": 6,
+    "src": "/grade11/audio/unit6.mp3",
+    "durationSeconds": 216.686,
+    "sourceFilename": "Grade_11,_English_,_Unit_6,_Travel_in_Southeast_Asia_2,_#audio_#listening.mp3",
+    "sha256": "83097d8a0197472ecc05b29a30d32928436f536efe92311afea84f5197e60128",
+    "bytes": 3467526,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "unit": 7,
+    "src": "/grade11/audio/unit7.mp3",
+    "durationSeconds": 137.77,
+    "sourceFilename": "Grade_11,_Unit_7,_Systems_and_Organs_of_the_Human_Body,_#audio_#listening.mp3",
+    "sha256": "99501fa703f386dd5f4f09508c293f55293c301da51cf0ebc7ef5b2977743437",
+    "bytes": 2204871,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "unit": 8,
+    "src": "/grade11/audio/unit8.mp3",
+    "durationSeconds": 93.309,
+    "sourceFilename": "Grade_11,_Unit_8,_The_last_leaf,_#audio_#listening_@eela_excellentenglish128k.mp3",
+    "sha256": "83493af05a1d3bb702c2049a5b1a2ab3ed9392ec06885786deca7068f19ce4c9",
+    "bytes": 1493505,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "unit": 9,
+    "src": "/grade11/audio/unit9.mp3",
+    "durationSeconds": 130.011,
+    "sourceFilename": "Grade_11,_Unit_9,_Stress_and_how_to_beat_it,_#audio_#listening_@eela.mp3",
+    "sha256": "ca874535ad8d862df0fd4d229469323221663ac25474752714fad18ae05eb2e1",
+    "bytes": 2080737,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "unit": 10,
+    "src": "/grade11/audio/unit10.mp3",
+    "durationSeconds": 99.527,
+    "sourceFilename": "Grade_11,_Unit_10,_Sleep_Deprivation,_#audio_#listening_@eela_e.mp3",
+    "sha256": "4d0573705b53507253cff30785fd37e85cb669495ab81b194670ac22963943bd",
+    "bytes": 1592979,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "unit": 11,
+    "src": "/grade11/audio/unit11.mp3",
+    "durationSeconds": 194.403,
+    "sourceFilename": "Grade_11,_Unit_11,_Dream,_#audio_#listening_@eela_excellentenglish128k.mp3",
+    "sha256": "35be2c0d494c75635b88aa288a781ff2f44f1614cacd2b210272d695f961015a",
+    "bytes": 3111007,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "unit": 12,
+    "src": "/grade11/audio/unit12.mp3",
+    "durationSeconds": 212.114,
+    "sourceFilename": "Grade_11,_Unit_12,_Natural_Disasters,_#audio_#listening_@eela_e.mp3",
+    "sha256": "21793b6e85dab3bc2aecffe3dfaa9df68ec507dadb89d47d1796ac52901da30d",
+    "bytes": 3394383,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ]
+  }
+]

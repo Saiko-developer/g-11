@@ -5,7 +5,11 @@ import { Grade11TextLesson, hasGrade11Text } from "./Grade11TextLesson";
 import { UPPER_UNITS, type UpperUnitNumber } from "@/lib/grade11Upper";
 import type { G11SkillKind } from "@/data/grade11/syllabus";
 
-beforeEach(() => sessionStorage.clear());
+beforeEach(() => {
+  sessionStorage.clear();
+  vi.spyOn(HTMLMediaElement.prototype, "pause").mockImplementation(() => {});
+  vi.spyOn(HTMLMediaElement.prototype, "load").mockImplementation(() => {});
+});
 afterEach(() => {
   cleanup();
   vi.restoreAllMocks();
@@ -37,7 +41,15 @@ describe("Grade 11 Units 7–12 workspaces", () => {
         expect(screen.queryByRole("button", { name: "Check Answer" })).toBeNull();
         expect(screen.queryByRole("button", { name: "Reveal Answer" })).toBeNull();
       }
-      if (kind === "speaking") expect(screen.queryByText(/🎧/)).toBeNull();
+      if (kind === "speaking" || kind === "listening") {
+        expect(
+          screen.getByRole("region", { name: `Grade 11 Unit ${unit} original audio` }),
+        ).toBeVisible();
+        expect(screen.getByLabelText(`Unit ${unit} listening track`)).toHaveAttribute(
+          "src",
+          `/grade11/audio/unit${unit}.mp3`,
+        );
+      }
       if (kind === "reading") {
         const pre = screen.getByRole("heading", { name: "Pre-reading" }).parentElement!;
         expect(within(pre).queryByRole("button", { name: "Translate Instructions" })).toBeNull();

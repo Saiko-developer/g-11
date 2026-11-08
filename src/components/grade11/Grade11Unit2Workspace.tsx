@@ -122,11 +122,6 @@ export function Grade11Unit2Workspace({ kind }: { kind: G11SkillKind }) {
               </div>
             </div>
           )}
-          {kind === "listening" && (
-            <p lang="my" className="rounded-xl bg-muted p-3 text-sm">
-              🎧 ဤလေ့ကျင့်ခန်းအတွက် Grade 11 အသံဖိုင် မရရှိသေးပါ။
-            </p>
-          )}
           {exercises.map((ex) => (
             <div key={ex.instruction.id} className="rounded-2xl border border-border bg-card p-4">
               <h3 className="border-b border-border pb-2 font-semibold">{ex.instruction.x}</h3>

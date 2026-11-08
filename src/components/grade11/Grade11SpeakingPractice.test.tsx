@@ -23,6 +23,8 @@ const synth = { speak: vi.fn(), cancel: vi.fn(), getVoices: () => [{ lang: "en-U
 beforeEach(() => {
   sessionStorage.clear();
   vi.clearAllMocks();
+  vi.spyOn(HTMLMediaElement.prototype, "pause").mockImplementation(() => {});
+  vi.spyOn(HTMLMediaElement.prototype, "load").mockImplementation(() => {});
   vi.stubGlobal("speechSynthesis", synth);
   vi.stubGlobal(
     "SpeechSynthesisUtterance",
@@ -37,6 +39,7 @@ beforeEach(() => {
 afterEach(() => {
   cleanup();
   vi.unstubAllGlobals();
+  vi.restoreAllMocks();
 });
 const enterPractice = () => fireEvent.click(screen.getByRole("button", { name: "🎯 လိုက်ဆို" }));
 

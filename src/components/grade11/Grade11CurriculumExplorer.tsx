@@ -133,8 +133,7 @@ export function Grade11CurriculumExplorer() {
                           const skill = node.skills.find((s) => s.kind === kind)!;
                           const Icon = SKILL_ICONS[kind];
                           return (
-                            <button key={kind} type="button"
-                              onClick={() => setView({ eyebrow: `Unit ${node.number} · ${node.title}`, title: skill.label, detail: skill.detail, pages: skill.pages, unit: node.number, kind })}
+                            <Link key={kind} to="/grade-11/$unit/$skill" params={{ unit: String(node.number), skill: kind }}
                               className="group flex w-full cursor-pointer items-start gap-3 rounded-xl border border-primary/40 bg-primary/5 p-3 text-left transition hover:-translate-y-0.5 hover:border-primary hover:bg-primary/10 hover:shadow-md">
                               <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-secondary text-primary">
                                 <Icon className="h-3.5 w-3.5" />
@@ -143,7 +142,7 @@ export function Grade11CurriculumExplorer() {
                                 <span className="block text-xs font-semibold">{skill.label}</span>
                                 <span className="block text-xs text-muted-foreground">{skill.detail}</span>
                               </span>
-                            </button>
+                            </Link>
                           );
                         })}
                       </div>

@@ -1,3 +1,4 @@
+import { Grade11AudioPlayer } from "./Grade11AudioPlayer";
 import { Grade11SpeakingPractice } from "./Grade11SpeakingPractice";
 import { Grade11UpperLesson } from "./Grade11UpperLesson";
 import { isUpperUnit } from "@/lib/grade11Upper";
@@ -84,7 +85,10 @@ function split(blocks: Block[]) {
 }
 
 export function Grade11TextLesson({ unit, kind }: { unit: number; kind: G11SkillKind }) {
-  const lesson = <Grade11LessonContent unit={unit} kind={kind} />;
+  const lesson = <>
+    {(kind === "listening" || kind === "speaking") && <Grade11AudioPlayer unit={unit} reference={kind === "speaking"} />}
+    <Grade11LessonContent unit={unit} kind={kind} />
+  </>;
   return kind === "speaking" ? <Grade11SpeakingPractice key={unit} unit={unit}>{lesson}</Grade11SpeakingPractice> : lesson;
 }
 

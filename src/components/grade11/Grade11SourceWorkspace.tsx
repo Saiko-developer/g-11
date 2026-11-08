@@ -121,11 +121,6 @@ export function Grade11SourceWorkspace({
           {kind === "listening" ? "Listening" : kind === "speaking" ? "Speaking" : section.title}
         </h2>
       </header>
-      {kind === "listening" && (
-        <p lang="my" className="rounded-xl bg-muted p-3 text-sm">
-          🎧 ဤလေ့ကျင့်ခန်းအတွက် Grade 11 အသံဖိုင် မရရှိသေးပါ။
-        </p>
-      )}
       <div
         className={
           kind === "reading" && lesson.length
