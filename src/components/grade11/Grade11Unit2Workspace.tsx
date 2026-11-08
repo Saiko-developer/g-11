@@ -1,11 +1,11 @@
 import { Grade11ExerciseCard, Grade11LessonTips } from "./Grade11ExerciseCard";
+import { Grade11GrammarExercise } from "./Grade11GrammarExercise";
 import { Grade11AIReview } from "./Grade11AIReview";
 import listeningKeys from "@/data/grade11/listeningExerciseKeys.json";
 import { useEffect, useState } from "react";
 import { Languages } from "lucide-react";
 import { ToggleReveal } from "@/components/lesson/ExerciseKit";
 import { GrammarScriptView } from "@/components/lesson/GrammarScriptView";
-import { GrammarExerciseGenerator } from "@/components/lesson/GrammarExerciseGenerator";
 import { Grade11GrammarVideos } from "./Grade11GrammarVideos";
 import { Grade11Pronunciation } from "./Grade11Pronunciation";
 import { Grade11Unit1Answer } from "./Grade11Unit1Answer";
@@ -128,7 +128,15 @@ export function Grade11Unit2Workspace({ kind }: { kind: G11SkillKind }) {
           )}
           <Grade11LessonTips kind={kind} />
           {exercises.map((ex) =>
-            kind !== "speaking" && ex.instruction.id !== "2A-0" ? (
+            kind === "grammar" ? (
+              <Grade11GrammarExercise
+                key={ex.instruction.id}
+                exercise={ex}
+                keys={UNIT2_KEYS}
+                answers={answers}
+                setAnswer={setAnswer}
+              />
+            ) : kind !== "speaking" && ex.instruction.id !== "2A-0" ? (
               <Grade11ExerciseCard
                 key={ex.instruction.id}
                 exercise={ex}
@@ -151,11 +159,9 @@ export function Grade11Unit2Workspace({ kind }: { kind: G11SkillKind }) {
                     {ex.instruction.my}
                   </p>
                 ) : (
-                  kind !== "grammar" && (
-                    <ToggleReveal label="Translate Instructions" icon={Languages}>
-                      {ex.instruction.my}
-                    </ToggleReveal>
-                  )
+                  <ToggleReveal label="Translate Instructions" icon={Languages}>
+                    {ex.instruction.my}
+                  </ToggleReveal>
                 )}
                 {ex.instruction.id === "2A-16" ? (
                   <table className="mt-3 w-full table-fixed border-collapse text-sm">
@@ -218,15 +224,6 @@ export function Grade11Unit2Workspace({ kind }: { kind: G11SkillKind }) {
                         <SourceBlock key={b.id} block={b} />
                       ),
                     )}
-                  </div>
-                )}
-                {kind === "grammar" && (
-                  <div className="mt-4">
-                    <GrammarExerciseGenerator
-                      title={`Grade 11 ${section.code} ${ex.instruction.x.slice(0, 60)}`}
-                      instructions={ex.instruction.x}
-                      samples={ex.blocks.filter((b) => b.t === "q").map((b) => ({ text: b.x }))}
-                    />
                   </div>
                 )}
               </div>

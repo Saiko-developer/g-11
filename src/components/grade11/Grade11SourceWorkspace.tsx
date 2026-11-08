@@ -1,4 +1,5 @@
 import { Grade11ExerciseCard, Grade11LessonTips } from "./Grade11ExerciseCard";
+import { Grade11GrammarExercise } from "./Grade11GrammarExercise";
 import { Grade11MemoryTable } from "./Grade11MemoryTable";
 import { Grade11AIReview } from "./Grade11AIReview";
 import { GrammarScriptView } from "@/components/lesson/GrammarScriptView";
@@ -175,6 +176,31 @@ export function Grade11SourceWorkspace({
           <OwlBadge>သင်ခန်းစာကို အရင်လေ့လာပြီး လေ့ကျင့်ခန်းများကို ကိုယ်တိုင်ဖြေကြည့်ပါ။</OwlBadge>
           {(unitNumber === 3 || unitNumber === 4) && <Grade11LessonTips kind={kind} />}
           {exercises.map((ex) => {
+            if (kind === "grammar")
+              return (
+                <div key={ex.instruction.id}>
+                  <Grade11GrammarExercise
+                    exercise={ex}
+                    keys={answerKeys}
+                    answers={answers}
+                    setAnswer={setAnswer}
+                  />
+                  {unitNumber >= 5 && ex.blocks.some((block) => block.t === "q") && (
+                    <div className="mt-4">
+                      <p className="text-xs text-muted-foreground">
+                        အောက်ပါ AI အပိုလေ့ကျင့်ခန်းများသည် မူရင်းဖတ်စာအုပ်ထဲမှ မဟုတ်ပါ။
+                      </p>
+                      <GrammarExerciseGenerator
+                        title={`Grade 11 ${section.code} ${ex.instruction.x.slice(0, 60)}`}
+                        instructions={ex.instruction.x}
+                        samples={ex.blocks
+                          .filter((block) => block.t === "q" && !block.scanPage)
+                          .map((block) => ({ text: block.x }))}
+                      />
+                    </div>
+                  )}
+                </div>
+              );
             const refine =
               unitNumber === 4 ||
               (unitNumber === 3 && ["reading", "grammar", "listening", "speaking"].includes(kind));
@@ -207,7 +233,6 @@ export function Grade11SourceWorkspace({
                 noStructure={!(kind === "reading" && /full-sentence/i.test(ex.instruction.x))}
                 multiline={
                   (kind === "reading" && !table) ||
-                  (kind === "grammar" && unitNumber !== 3) ||
                   ex.instruction.id === "5B-4" ||
                   ex.instruction.id === "6A-32" ||
                   kind === "writing" ||
@@ -401,18 +426,6 @@ export function Grade11SourceWorkspace({
                         <SourceBlock key={block.id} block={block} scanUrl={scanUrl} />
                       ),
                     )}
-                  </div>
-                )}
-                {kind === "grammar" && questions.length > 0 && (
-                  <div className="mt-4">
-                    <p className="text-xs text-muted-foreground">
-                      အောက်ပါ AI အပိုလေ့ကျင့်ခန်းများသည် မူရင်းဖတ်စာအုပ်ထဲမှ မဟုတ်ပါ။
-                    </p>
-                    <GrammarExerciseGenerator
-                      title={`Grade 11 ${section.code} ${ex.instruction.x.slice(0, 60)}`}
-                      instructions={ex.instruction.x}
-                      samples={questions.filter((b) => !b.scanPage).map((b) => ({ text: b.x }))}
-                    />
                   </div>
                 )}
               </div>

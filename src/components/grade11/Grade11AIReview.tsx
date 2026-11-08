@@ -10,12 +10,14 @@ export function Grade11AIReview({
   context,
   answer,
   writing = false,
+  checkLabel = "Check Answer with AI",
 }: {
   question: string;
   instructions: string;
   context: string;
   answer: string;
   writing?: boolean;
+  checkLabel?: string;
 }) {
   const { session } = useAuth();
   const [busy, setBusy] = useState(false);
@@ -105,8 +107,8 @@ export function Grade11AIReview({
       >
         {busy && checkingAnswer === answer && !requestRef.current?.signal.aborted
           ? "စစ်ဆေးနေသည်…"
-          : session
-            ? "Check Answer with AI"
+          : session || checkLabel === "Check Answer"
+            ? checkLabel
             : "Login to check with AI"}
       </Button>
       {result?.answer === answer && (

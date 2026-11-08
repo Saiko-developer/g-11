@@ -1,4 +1,6 @@
 import { UPPER_STRUCTURES } from "@/lib/grade11UpperStructure";
+import { Grade11GrammarQuestion } from "./Grade11GrammarExercise";
+import grammarSupport from "@/data/grade11/grammarExerciseSupport.json";
 import { useEffect, useRef, useState } from "react";
 import { Languages, Sparkles } from "lucide-react";
 import { ToggleReveal } from "@/components/lesson/ExerciseKit";
@@ -116,7 +118,40 @@ function UpperWorkspace({ unit, kind }: { unit: UpperUnitNumber; kind: G11SkillK
                     မူရင်းစာမျက်နှာရှိ မျဉ်းသားထားသော အပိုင်းကို ကြည့်၍ ဖြေပါ။
                   </p>
                 )}
-                {group.table ? (
+                {kind === "grammar" ? (
+                  <div className="mt-3 space-y-3">
+                    {group.items.map((item) => {
+                      const support = (
+                        grammarSupport.items as Record<
+                          string,
+                          {
+                            questionMy: string;
+                            answer: string;
+                            semantic?: boolean;
+                            emphasis?: string;
+                            context?: string;
+                          }
+                        >
+                      )[item.id];
+                      return (
+                        <Grade11GrammarQuestion
+                          key={item.id}
+                          id={item.id}
+                          question={item.prompt}
+                          questionMy={item.promptMy ?? support.questionMy}
+                          instructions={group.instruction}
+                          answer={{ answer: support.answer }}
+                          value={answers[item.id] ?? ""}
+                          onChange={(value) => setAnswer(item.id, value)}
+                          multiline={item.multiline ?? group.multiline ?? false}
+                          semantic={support.semantic}
+                          emphasis={support.emphasis}
+                          context={support.context}
+                        />
+                      );
+                    })}
+                  </div>
+                ) : group.table ? (
                   <div className="mt-3 max-w-full overflow-x-auto">
                     <table className="w-full min-w-[360px] table-fixed border-collapse text-sm">
                       <caption className="sr-only">{group.instruction}</caption>

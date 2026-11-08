@@ -1,0 +1,694 @@
+{
+  "officialAnswerKey": false,
+  "provenance": "Myanmar translations and worked answers derived from the existing textbook grammar prompts. Unit 10 function labels checked on PDF page 116; Unit 11 underlining checked on PDF page 126. Open-ended completions and participle-function tasks receive semantic feedback, not exact-answer grading.",
+  "items": {
+    "7-passive-1": {
+      "questionMy": "မိုးရာသီမစတင်မီ ကုန်လှောင်ရုံ၏ အမိုးကို သင် အစားထိုးသင့်သည်။",
+      "answer": "The roof of the warehouse should be replaced before the beginning of the rainy season."
+    },
+    "7-passive-2": {
+      "questionMy": "ပြောင်းလဲမှုများ ပြုလုပ်ရသည့်အကြောင်းရင်းကို ရှင်းပြရန် သူတို့က သူ့ကို တောင်းဆိုခဲ့ကြသည်။",
+      "answer": "He was asked to explain his reasons for making the changes."
+    },
+    "7-passive-3": {
+      "questionMy": "ကျွန်ုပ်၏လုပ်ဖော်ကိုင်ဖက်က ကျွန်ုပ်ကို မန်နေဂျာနှင့် မိတ်ဆက်မပေးရသေးပါ။",
+      "answer": "I have not been introduced to the manager by my colleague yet.; I have not yet been introduced to the manager by my colleague."
+    },
+    "7-passive-4": {
+      "questionMy": "ကျောင်းသည် လာမည့်အပတ်မတိုင်မီ စာမေးပွဲရလဒ်များကို ကြေညာမည်မဟုတ်ပါ။",
+      "answer": "The examination results will not be announced until next week."
+    },
+    "7-passive-5": {
+      "questionMy": "ကျွန်ုပ်တို့သည် စုဆောင်းထားသော အချက်အလက်များကို သေချာစွာ ဆန်းစစ်ခဲ့ကြသည်။",
+      "answer": "The collected data were analysed carefully.; The collected data were carefully analysed."
+    },
+    "7-passive-6": {
+      "questionMy": "ယခု တံတားကို ပြုပြင်နေကြသဖြင့် ကျွန်ုပ်တို့ အသုံးမပြုနိုင်ပါ။",
+      "answer": "The bridge is being repaired at the moment so we cannot use it."
+    },
+    "7-passive-7": {
+      "questionMy": "ဆယ်လီသည် ယနေ့ည အထူးညစာတစ်နပ် ချက်ပြုတ်မည်ဖြစ်သည်။",
+      "answer": "A special dinner is going to be made by Sally tonight.; A special dinner is going to be made tonight by Sally."
+    },
+    "7-passive-8": {
+      "questionMy": "မိုးလေဝသနှင့် ဇလဗေဒဦးစီးဌာနသည် မြေနိမ့်ဒေသများအတွက် ရေကြီးမှု ကြိုတင်သတိပေးချက်များကို အမြဲ ထုတ်ပြန်သည်။",
+      "answer": "Early warnings of floods for the lowland areas are always issued by the Department of Meteorology and Hydrology."
+    },
+    "7-passive-9": {
+      "questionMy": "ယခုနည်းပညာခေတ်တွင် လူတို့သည် ကွန်ပျူတာများကို ရည်ရွယ်ချက်အမျိုးမျိုးဖြင့် အသုံးပြုကြသည်။",
+      "answer": "In this age of technology, computers are used for various purposes.; Computers are used for various purposes in this age of technology."
+    },
+    "7-passive-10": {
+      "questionMy": "ကျွန်ုပ်တို့ကျောင်းမှ ဆရာများသည် ဖတ်စာအုပ်အသစ်များအကြောင်း အစည်းအဝေး တက်ရောက်နေကြသည်။",
+      "answer": "A meeting on new textbooks is being attended by teachers in our school."
+    },
+    "7-passive-11": {
+      "questionMy": "ကျောင်းသားများ၏ လုံခြုံရေးအတွက် ပြုလုပ်ထားသော ပြောင်းလဲမှုများကို ကျောင်းအုပ်ကြီးက လာမည့်တနင်္လာနေ့တွင် ဆွေးနွေးမည်။",
+      "answer": "The changes made for the safety of students will be discussed by the headmaster next Monday.; The changes made for the safety of students will be discussed next Monday by the headmaster."
+    },
+    "7-passive-12": {
+      "questionMy": "စာအုပ်၏ တတိယစာမျက်နှာတွင် မာတိကာကို သင် တွေ့နိုင်သည်။",
+      "answer": "The contents can be found on the third page of the book."
+    },
+    "7-impersonal-1": {
+      "questionMy": "ဆိုင်ကလုန်းမုန်တိုင်းကြောင့် ပျက်စီးဆုံးရှုံးမှု ပြင်းထန်ခဲ့ကြောင်း သူတို့ သတင်းပို့ခဲ့ကြသည်။",
+      "answer": "It was reported that the damage by the cyclone was severe."
+    },
+    "7-impersonal-2": {
+      "questionMy": "တရုတ်ဘာသာစကား သင်ယူရသည်မှာ ခက်ခဲသည်ဟု သူတို့ ပြောကြသည်။",
+      "answer": "It is said that learning Chinese is difficult."
+    },
+    "7-impersonal-3": {
+      "questionMy": "လာမည့်လတွင် ကျောင်းများ ပြန်ဖွင့်မည်ဟု ကျွန်ုပ်တို့ မျှော်လင့်သည်။",
+      "answer": "It is expected that schools will be reopened next month."
+    },
+    "7-impersonal-4": {
+      "questionMy": "အပင်များသည် အသက်အရွယ်တစ်ခု ကျော်လွန်လျှင် ကြီးထွားမှု နှေးကွေးလာကြောင်း ကျွန်ုပ်တို့ သိရှိခဲ့ကြသည်။",
+      "answer": "It was learnt that plant growth slows down beyond a certain age."
+    },
+    "7-impersonal-5": {
+      "questionMy": "တိုက်ဂါးဝုဒ်သည် တစ်ချိန်လုံးတွင် အကောင်းဆုံး ဂေါက်သီးကစားသမားဟု လူအချို့ ထင်ခဲ့ကြသည်။",
+      "answer": "It was thought that Tiger Wood is the best golf player ever."
+    },
+    "7-impersonal-6": {
+      "questionMy": "သမ္မတသည် နံနက် ဆယ်နာရီတွင် မိန့်ခွန်းပြောမည်ဟု လူတို့ ပြောကြသည်။",
+      "answer": "It is said that the president will give a speech at 10 a.m."
+    },
+    "7-impersonal-7": {
+      "questionMy": "ကျွန်ုပ်တို့၏ သစ်တောပြန်လည်ထူထောင်ရေး ကြိုးပမ်းမှုများက သစ်တောများကို ကာကွယ်ရန် အထောက်အကူပြုမည်ဟု မျှော်လင့်သည်။",
+      "answer": "It is hoped that our reforestation efforts will help protect forests."
+    },
+    "7-impersonal-8": {
+      "questionMy": "မိဘများတွင် သားသမီးများကို နိုင်ငံသားကောင်းများ ဖြစ်လာအောင် သင်ကြားပေးရန် တာဝန်ရှိသည်ဟု လူတိုင်း ယုံကြည်ကြသည်။",
+      "answer": "It is believed that parents have the responsibility of teaching their children to be good citizens."
+    },
+    "7-impersonal-9": {
+      "questionMy": "ညီလာခံသို့ လူပေါင်း လေးထောင်ခန့် တက်ရောက်မည်ဟု သူတို့ မျှော်လင့်ခဲ့ကြသည်။",
+      "answer": "It was expected that about 4,000 people would attend the conference."
+    },
+    "7-impersonal-10": {
+      "questionMy": "လုပ်ငန်းအသစ် စတင်ခြင်းသည် စိန်ခေါ်မှုရှိပြီး စွန့်စားရကြောင်း ကျွန်ုပ်တို့ သိထားပြီးဖြစ်သည်။",
+      "answer": "It is already known that starting a new business is challenging and risky."
+    },
+    "8-reported-1": {
+      "questionMy": "စာကို ဖတ်ပြီးပြီဖြစ်သော်လည်း နားမလည်ကြောင်း စန္ဒာက ပြောသည်။",
+      "answer": "Sandar said that she had read the letter but she did not understand it.; Sandar said she had read the letter but did not understand it."
+    },
+    "8-reported-2": {
+      "questionMy": "နန္ဒာက ယုပါကို မနေ့ညက ပြတင်းပေါက် ဖွင့်ထားခဲ့သည်ဟု ပြောသည်။",
+      "answer": "Nandar told Yu Par that she had left the window open the previous night.; Nandar told Yu Par that she had left the window open the night before."
+    },
+    "8-reported-3": {
+      "questionMy": "ပိုပိုက သန့်ဇော်ကို မည်သူ့ကို ရှာနေခဲ့သနည်းဟု မေးသည်။",
+      "answer": "Po Po asked Thant Zaw who he had been looking for."
+    },
+    "8-reported-4": {
+      "questionMy": "မေသူက အခန်းဖော်ကို ထွက်သွားချိန်တွင် တံခါးပိတ်ပေးရန် တောင်းဆိုသည်။",
+      "answer": "May Thu asked her roommate to close the door as she left."
+    },
+    "8-reported-5": {
+      "questionMy": "ဧည့်ကြိုဝန်ထမ်းက ထိုလူကို ပုံစံဖြည့်ပြီး မန်နေဂျာလာသည်အထိ စောင့်ရန် တောင်းဆိုသည်။",
+      "answer": "The receptionist asked the man to fill in that form and wait till the manager came.; The receptionist asked the man to fill in the form and wait until the manager came."
+    },
+    "8-reported-6": {
+      "questionMy": "အပြင်သွားချိန် မီးပိတ်ရန် ဘယ်နှကြိမ် ပြောပြီးပြီနည်းဟု ဒေါ်မူမူက သားကို မေးသည်။",
+      "answer": "Daw Mu Mu asked her son how many times she had told him to turn off the lights when he went out."
+    },
+    "8-reported-7": {
+      "questionMy": "ဆေးဝါးကျွမ်းကျင်သူက ဆေးပုလင်းကို အသုံးမပြုမီ ကောင်းစွာ လှုပ်ရန် ပြောသည်။",
+      "answer": "The chemist told me to shake the bottle well before I used it.; The chemist told us to shake the bottle well before we used it."
+    },
+    "8-reported-8": {
+      "questionMy": "ဆရာက ဤအိတ်ကို ဤနေရာ၌ မည်သူ ထားခဲ့သနည်းဟု မေးသည်။",
+      "answer": "The teacher asked who had left that bag there."
+    },
+    "8-reported-9": {
+      "questionMy": "မျက်လုံးဖွင့်ထားရန်ပင် ခက်လောက်အောင် အိပ်ငိုက်နေသည်ဟု နီနီက ပြောသည်။",
+      "answer": "Ni Ni said that she was so sleepy that she could hardly keep her eyes open."
+    },
+    "8-reported-10": {
+      "questionMy": "အမှတ်ပိုကောင်းလာလျှင် အိုင်ပက် ဝယ်ပေးမည်ဟု အမေက ပြောသည်။",
+      "answer": "Mum said that if I got better grades, she would buy me an iPad.; Mum told me that if I got better grades, she would buy me an iPad."
+    },
+    "8-reported-11": {
+      "questionMy": "နေ့လယ်စာနားချိန်မတိုင်မီ ဤအလုပ်ကို ပြီးအောင် လုပ်ရမလားဟု သူဇာက မူယာကို မေးသည်။",
+      "answer": "Thuzar asked Muyar if they had to finish that task before the lunch break.; Thuzar asked Muyar whether they had to finish that task before the lunch break."
+    },
+    "8-reported-12": {
+      "questionMy": "ရုံးတက်ရုံးဆင်းအချိန်တွင် ဘတ်စ်ကား မစီးမိရန် အမေက သားကို မှာသည်။",
+      "answer": "The mother told her son to make sure he did not take the bus in the rush hour.; The mother warned her son not to take the bus in the rush hour."
+    },
+    "8-reported-13": {
+      "questionMy": "အသားမထည့်မီ ကြက်သွန်နီများကို အညိုရောင်သန်းသည်အထိ ကြော်ရန် အဒေါ်က ပြောသည်။",
+      "answer": "My aunt told me to brown the onions before I added meat.; My aunt told us to brown the onions before we added meat."
+    },
+    "8-reported-14": {
+      "questionMy": "မော်မော်က သော်ဇင်ကို ယခု စကားပြောရမည်ဟု ပြောသည်။",
+      "answer": "Maw Maw told Thaw Zin that she had to speak to him then."
+    },
+    "8-reported-15": {
+      "questionMy": "ဇော်ထိုက်က အထက်အရာရှိကို ထိုအချက်အလက်များ ဖက်စ်ပို့ပေးရမလားဟု မေးသည်။",
+      "answer": "Zaw Htike asked his senior officer if he should fax the information to them.; Zaw Htike asked his senior officer whether he should fax the information to them."
+    },
+    "8-direct-1": {
+      "questionMy": "ထိုအချိန်တွင် ထွက်လျှင် နေမဝင်မီ စခန်းသို့ ပြန်ရောက်မည်ဟု လမ်းညွှန်က ကျွန်ုပ်တို့ကို ပြောသည်။",
+      "answer": "The guide said to us, \"If you leave now, you will get back to the camp before the sun sets.\"; The guide said, \"If we leave now, we will get back to the camp before the sun sets.\""
+    },
+    "8-direct-2": {
+      "questionMy": "ငါးကို အကြာကြီး မချက်ရန် အမေက ကျွန်ုပ်ကို တောင်းဆိုသည်။",
+      "answer": "My mum said to me, \"Please do not cook the fish too long.\"; My mum said to me, \"Don't cook the fish too long.\""
+    },
+    "8-direct-3": {
+      "questionMy": "လက်ထပ်တော့မည်ဟု ကျော်ခိုင်နှင့် မာလာတို့က ပြောသည်။",
+      "answer": "Kyaw Khine and Marlar said, \"We are going to get married.\""
+    },
+    "8-direct-4": {
+      "questionMy": "အခန်းထဲတွင် ဆေးလိပ်သောက်ခွင့်မရှိကြောင်း ဟိုတယ်မန်နေဂျာက ကျွန်ုပ်ကို ပြောသည်။",
+      "answer": "The hotel manager said to me, \"You are not allowed to smoke in your room.\""
+    },
+    "8-direct-5": {
+      "questionMy": "ဆရာဝန်နှင့် ပြသင့်သည်ဟု မျိုးဆက်က သူ့ညီမကို အကြံပေးသည်။",
+      "answer": "Myo Set said to his sister, \"It would be a good idea for you to see a doctor.\"; Myo Set said to his sister, \"You should see a doctor.\""
+    },
+    "8-direct-6": {
+      "questionMy": "အလုပ်ထွက်ရန် ဆုံးဖြတ်ပြီးပြီလားဟု လင်းထက်က ကျွန်ုပ်ကို မေးသည်။",
+      "answer": "Lin Htet said to me, \"Have you decided to leave the job?\""
+    },
+    "8-direct-7": {
+      "questionMy": "အားကစားရုံသို့ ဘယ်နှကြိမ် သွားသနည်းဟု သန္တာက ကျော်စွာကို မေးသည်။",
+      "answer": "Thandar said to Kyaw Swar, \"How often do you go to the gym?\""
+    },
+    "8-direct-8": {
+      "questionMy": "အမေ မပြန်လာမီ သူ့ကို စနောက်ခြင်းရပ်ပြီး သန့်ရှင်းရေးလုပ်ရန် ရီမွန်က သူ့မောင်ကို ပြောသည်။",
+      "answer": "Yi Mon said to her brother, \"Stop teasing me and do the cleaning before Mum comes back.\""
+    },
+    "8-direct-9": {
+      "questionMy": "မိမိခဲတံကို ဘာကြောင့် ယူမလာခဲ့သနည်းဟု သင်းနွယ်က ဇွဲထက်ကို မေးသည်။",
+      "answer": "Thin Nwe said to Zwe Htet, \"Why didn't you bring your own pencil?\"; Thin Nwe said to Zwe Htet, \"Why haven't you brought your own pencil?\""
+    },
+    "8-direct-10": {
+      "questionMy": "သူတို့၏ လျှို့ဝှက်ချက်ကို အခြားသူအား မပြောရန် ကစ်ကစ်က ချစ်ချစ်ကို ပြောသည်။",
+      "answer": "Kit Kit said to Chit Chit, \"Don't tell our secret to anyone else.\""
+    },
+    "9-future-1": {
+      "questionMy": "ခဏလောက် စောင့်နိုင်မလား။ ကျွန်ုပ်က သင့်ကို လေဆိပ်သို့ ကားမောင်းပို့မည်။",
+      "answer": "will drive; 'll drive"
+    },
+    "9-future-2": {
+      "questionMy": "ကားဝယ်မည်ဖြစ်သဖြင့် ကျွန်ုပ်၏ စက်ဘီးကို ရောင်းပြီးပြီ။",
+      "answer": "am going to buy"
+    },
+    "9-future-3": {
+      "questionMy": "တောင်းပန်ပါတယ်၊ ကျွန်ုပ် မှားခဲ့သည်။ နောက်ထပ် မလုပ်တော့ဟု ကတိပေးသည်။",
+      "answer": "will not do; won't do"
+    },
+    "9-future-4": {
+      "questionMy": "ဘောလုံးကစားနေသော ကောင်လေးများကို ကြည့်ပါ။ သူတို့ ပြတင်းပေါက်ကို ခွဲမိတော့မည်။",
+      "answer": "are going to break"
+    },
+    "9-future-5": {
+      "questionMy": "ယခုစနေနေ့တွင် သင် မွေးနေ့ပွဲ လုပ်မလား။",
+      "answer": "Are you having; Are you going to have"
+    },
+    "9-future-6": {
+      "questionMy": "နောက်အပတ် ယခုအချိန်တွင် ကျွန်ုပ်သည် ဘာလီ၌ နေပူစာလှုံနေမည်။",
+      "answer": "will be sunbathing"
+    },
+    "9-future-7": {
+      "questionMy": "သင် ဈေးသွားမလား။ နို့ကုန်သွားပြီ။",
+      "answer": "Are you going; Will you go; Will you be going"
+    },
+    "9-future-8": {
+      "questionMy": "ဆီတိုင်းကိရိယာကို ကြည့်ပါ။ အိမ်မရောက်မီ ကျွန်ုပ်တို့ ဆီကုန်တော့မည်။",
+      "answer": "are going to run out"
+    },
+    "9-future-9": {
+      "questionMy": "ယနေ့ည ဖျော်ဖြေပွဲတွင် သူဇာကို တွေ့မည်ဟု ကျွန်ုပ် မထင်ပါ။",
+      "answer": "will see"
+    },
+    "9-future-10": {
+      "questionMy": "ကျွန်ုပ် မရှိချိန်တွင် အပင်များကို ရေလောင်းပေးမလား။",
+      "answer": "Will you water"
+    },
+    "9-future-11": {
+      "questionMy": "လာမည့်တနင်္လာနေ့ ယခုအချိန်မတိုင်မီ ကျွန်ုပ်တို့ကျောင်း၌ အဖွဲ့တည်ဆောက်ရေး အစည်းအဝေး ကျင်းပပြီးဖြစ်မည်။",
+      "answer": "will have held"
+    },
+    "9-future-12": {
+      "questionMy": "ဟိုတယ်က ဘူဖေးနံနက်စာ ပေးမည်ဟု ကျွန်ုပ် ထင်သည်။",
+      "answer": "will provide"
+    },
+    "9-future-13": {
+      "questionMy": "အချိန်ဇယားကို စစ်ပြီးနောက် သင့်ထံ ချက်ချင်း အီးမေးလ်ပို့မည်။",
+      "answer": "will email"
+    },
+    "9-future-14": {
+      "questionMy": "နောက်ငါးနှစ်ကြာလျှင် ဤနေရာတွင် သင် အလုပ်လုပ်နေဦးမည်ဟု ထင်သလား။",
+      "answer": "will still be working"
+    },
+    "9-future-15": {
+      "questionMy": "အမှန်ကို ပြောလျှင် သူတို့က သင့်ကို ခွင့်လွှတ်မည်။",
+      "answer": "will forgive"
+    },
+    "10-by-ing-1": {
+      "questionMy": "ဆရာက ဆူညံနေသောကလေးများကို ဒဏ်ပေးခဲ့သည်။ အပိုလေ့ကျင့်ခန်းများ လုပ်ခိုင်းခဲ့သည်။",
+      "answer": "The teacher punished the noisy children by making them do extra exercises."
+    },
+    "10-by-ing-2": {
+      "questionMy": "ကျွန်ုပ်တို့သည် ရေနံနှင့် သဘာဝဓာတ်ငွေ့ကို ချွေတာသင့်သည်။ အခြားစွမ်းအင်ရင်းမြစ်များကို အသုံးပြုသင့်သည်။",
+      "answer": "We should conserve oil and gas by making use of other energy sources."
+    },
+    "10-by-ing-3": {
+      "questionMy": "အေးအေးက စာစီစာကုံးများကို ပြန်ပြင်ခဲ့သည်။ အချို့ကို ဖြည့်စွက်ပြီး အချို့ကို ဖျက်ခဲ့သည်။",
+      "answer": "Aye Aye revised her essays by making some additions and deletions."
+    },
+    "10-by-ing-4": {
+      "questionMy": "ဦးစည်သူသည် အားလပ်ချိန်ကို အပြည့်အဝ ပျော်ရွှင်နိုင်သည်။ စနေတနင်္ဂနွေများတွင် ကျေးလက်နှင့် ကမ်းခြေများသို့ ခရီးထွက်သည်။",
+      "answer": "U Sithu can enjoy his leisure to the full by making trips to the country or beaches at weekends."
+    },
+    "10-by-ing-5": {
+      "questionMy": "ဇော်ဇော်က သူငယ်ချင်းများထက် ပိုကြိုးစားခဲ့သည်။ မကြာမီ အတန်းဖော်များထက် သာလွန်လာခဲ့သည်။",
+      "answer": "Zaw Zaw soon got ahead of his classmates by working harder than his friends."
+    },
+    "10-by-ing-6": {
+      "questionMy": "ကျွန်ုပ်တို့ ပိုက်ဆံအချို့ ချွေတာနိုင်ခဲ့သည်။ အိမ်ကို ကိုယ်တိုင် ဆေးသုတ်ခဲ့ကြသည်။",
+      "answer": "We've saved some money by painting our house by ourselves.; We have saved some money by painting our house by ourselves."
+    },
+    "10-by-ing-7": {
+      "questionMy": "သူသည် ပိုနေသော အဆီများကို လျှော့ချရန် ကြိုးစားနေသည်။ နေ့စဉ် လေ့ကျင့်ခန်း လုပ်သည်။",
+      "answer": "He is trying to work off his surplus fat by exercising every day."
+    },
+    "10-by-ing-8": {
+      "questionMy": "ကျွန်ုပ်တို့ဆရာမက စွန့်စားကြည့်ရန် အားပေးသည်။ အသစ်များကို စမ်းလုပ်ခိုင်းသည်။",
+      "answer": "Our teacher encourages us to take risks by asking us to try new things."
+    },
+    "10-by-ing-9": {
+      "questionMy": "ခရီးသည်များနှင့် သင်္ဘောသားများ အသက်ရှင်ခဲ့ကြသည်။ ကမ်းပေါ်သို့ ရေကူးလာခဲ့ကြသည်။",
+      "answer": "The passengers and the sailors survived by swimming ashore."
+    },
+    "10-by-ing-10": {
+      "questionMy": "ကိုတိုးက ဝေါဟာရ တိုးတက်စေရန် ကြိုးစားသည်။ စာအုပ်အမျိုးမျိုး ဖတ်သည်။",
+      "answer": "Ko Toe tries to improve his vocabulary by reading all sorts of books."
+    },
+    "10-participle-1": {
+      "questionMy": "ကျွန်ုပ်တို့က အနိုင်ရဘောလုံးအသင်းကို ကြိုဆိုခဲ့ကြသည်။ အလံများဝှေ့ယမ်းပြီး နိုင်ငံတော်သီချင်း ဆိုခဲ့ကြသည်။",
+      "answer": "We welcomed our winning football team, waving our flags and singing our national anthem. — c",
+      "semantic": true,
+      "context": "Textbook function labels: {\"a\": \"result of an action\", \"b\": \"reason for an action\", \"c\": \"simultaneous actions\", \"d\": \"additional information about the main subject\"}. Require both the combined sentence and its function letter. Accept defensible alternatives with an explanation."
+    },
+    "10-participle-2": {
+      "questionMy": "ကိုယ်အလေးချိန်တက်လာကြောင်း ကျွန်ုပ် သတိပြုမိသည်။ လေ့ကျင့်ခန်း ပိုလုပ်ရန် စတင်သည်။",
+      "answer": "Realizing that I put on some weight, I begin to exercise more. — b",
+      "semantic": true,
+      "context": "Textbook function labels: {\"a\": \"result of an action\", \"b\": \"reason for an action\", \"c\": \"simultaneous actions\", \"d\": \"additional information about the main subject\"}. Require both the combined sentence and its function letter. Accept defensible alternatives with an explanation."
+    },
+    "10-participle-3": {
+      "questionMy": "ကျွန်ုပ်က ပြတင်းပေါက်အပြင်သို့ ကြည့်ခဲ့သည်။ ကောင်းကင်၌ ထူးခြားသော တိမ်မည်းများကို တွေ့ခဲ့သည်။",
+      "answer": "Looking out of the window, I noticed the unusual dark clouds in the sky. — c",
+      "semantic": true,
+      "context": "Textbook function labels: {\"a\": \"result of an action\", \"b\": \"reason for an action\", \"c\": \"simultaneous actions\", \"d\": \"additional information about the main subject\"}. Require both the combined sentence and its function letter. Accept defensible alternatives with an explanation."
+    },
+    "10-participle-4": {
+      "questionMy": "ထိုဒေသတွင် ပြင်းထန်သော မိုးခေါင်မှု ဖြစ်ခဲ့သည်။ သီးနှံများကို အလွန် ပျက်စီးစေခဲ့သည်။",
+      "answer": "A severe drought hit the area, doing a lot of damage to the crops. — a",
+      "semantic": true,
+      "context": "Textbook function labels: {\"a\": \"result of an action\", \"b\": \"reason for an action\", \"c\": \"simultaneous actions\", \"d\": \"additional information about the main subject\"}. Require both the combined sentence and its function letter. Accept defensible alternatives with an explanation."
+    },
+    "10-participle-5": {
+      "questionMy": "ကျွန်ုပ်က သူငယ်ချင်းထံ စာရေးခဲ့သည်။ မွေးနေ့လက်ဆောင် ပို့ပေးသည့်အတွက် ကျေးဇူးတင်ခဲ့သည်။",
+      "answer": "I wrote a letter to my friend, thanking him for sending me a birthday present. — d",
+      "semantic": true,
+      "context": "Textbook function labels: {\"a\": \"result of an action\", \"b\": \"reason for an action\", \"c\": \"simultaneous actions\", \"d\": \"additional information about the main subject\"}. Require both the combined sentence and its function letter. Accept defensible alternatives with an explanation."
+    },
+    "10-participle-6": {
+      "questionMy": "ကားတစ်စီးသည် မညီညာသော မြေသားလမ်းပေါ် လှိမ့်မောင်းသွားခဲ့သည်။ ဖုန်ဖြူများ နောက်တွင် လွင့်ကျန်ခဲ့သည်။",
+      "answer": "A car rolled over the bumpy dirt road, leaving behind a whirl of white dust. — a",
+      "semantic": true,
+      "context": "Textbook function labels: {\"a\": \"result of an action\", \"b\": \"reason for an action\", \"c\": \"simultaneous actions\", \"d\": \"additional information about the main subject\"}. Require both the combined sentence and its function letter. Accept defensible alternatives with an explanation."
+    },
+    "10-participle-7": {
+      "questionMy": "သန္တာသည် ဗီဒီယိုဂိမ်းများ ကစားရာတွင် အချိန်များစွာ ကုန်ဆုံးသည်။ စာမေးပွဲများ၌ အမှတ်နည်းခဲ့သည်။",
+      "answer": "Spending a lot of her time playing video games, Thandar got poor grades in the tests. — b",
+      "semantic": true,
+      "context": "Textbook function labels: {\"a\": \"result of an action\", \"b\": \"reason for an action\", \"c\": \"simultaneous actions\", \"d\": \"additional information about the main subject\"}. Require both the combined sentence and its function letter. Accept defensible alternatives with an explanation."
+    },
+    "10-participle-8": {
+      "questionMy": "ညီညီက ဆရာမအပေါ် ရိုင်းပြမိကြောင်း သတိပြုမိသည်။ သူမကို တောင်းပန်ခဲ့သည်။",
+      "answer": "Realizing that he was rude to the teacher, Nyi Nyi apologized to her. — b",
+      "semantic": true,
+      "context": "Textbook function labels: {\"a\": \"result of an action\", \"b\": \"reason for an action\", \"c\": \"simultaneous actions\", \"d\": \"additional information about the main subject\"}. Require both the combined sentence and its function letter. Accept defensible alternatives with an explanation."
+    },
+    "10-participle-9": {
+      "questionMy": "လယ်သမားများသည် ခရမ်းချဉ်သီးတန်းများကြား လျှောက်ခဲ့ကြသည်။ မှည့်နေသော အသီးများကို ခူးခဲ့ကြသည်။",
+      "answer": "Farmers walked between rows of tomato plants, picking the ripe ones. — c",
+      "semantic": true,
+      "context": "Textbook function labels: {\"a\": \"result of an action\", \"b\": \"reason for an action\", \"c\": \"simultaneous actions\", \"d\": \"additional information about the main subject\"}. Require both the combined sentence and its function letter. Accept defensible alternatives with an explanation."
+    },
+    "10-participle-10": {
+      "questionMy": "သူ့အသက် တစ်နှစ်သာ ကျန်တော့မည်ဟု ယုံကြည်ခဲ့သည်။ ကုသမှုအားလုံးကို ငြင်းပယ်ခဲ့သည်။",
+      "answer": "Believing that he had only a year to live, he refused to receive any treatment. — b",
+      "semantic": true,
+      "context": "Textbook function labels: {\"a\": \"result of an action\", \"b\": \"reason for an action\", \"c\": \"simultaneous actions\", \"d\": \"additional information about the main subject\"}. Require both the combined sentence and its function letter. Accept defensible alternatives with an explanation."
+    },
+    "11-emphasis-1": {
+      "questionMy": "အိပ်ရေးပျက်ခြင်းက ကျွန်ုပ်တို့၏ ကျန်းမာရေးတစ်ခုလုံးနှင့် သုခချမ်းသာကို ထိခိုက်စေသည်။",
+      "answer": "It is our overall health and well-being that sleep deprivation affects.",
+      "emphasis": "our overall health and well-being"
+    },
+    "11-emphasis-2": {
+      "questionMy": "ဒါဝင်က ဆင့်ကဲဖြစ်စဉ် သီအိုရီကို ရှင်းပြရန် ကြိုးစားခဲ့သည်။",
+      "answer": "It was Darwin who attempted to explain the theory of evolution.; It was Darwin that attempted to explain the theory of evolution.",
+      "emphasis": "Darwin"
+    },
+    "11-emphasis-3": {
+      "questionMy": "ကျွန်ုပ်သည် နေ့စဉ် လမ်းခဏလျှောက်ခြင်းဖြင့် လေ့ကျင့်ခန်းအလေ့အကျင့် စတင်ခဲ့သည်။",
+      "answer": "It was with taking a daily short walk that I began an exercise habit.",
+      "emphasis": "with taking a daily short walk"
+    },
+    "11-emphasis-4": {
+      "questionMy": "ညိုညိုက စူပါမားကတ်မန်နေဂျာထံ မနေ့က တိုင်ကြားစာ ပို့ခဲ့သည်။",
+      "answer": "It was to the manager of the supermarket that Nyo Nyo sent a complaint letter yesterday.",
+      "emphasis": "to the manager of the supermarket"
+    },
+    "11-emphasis-5": {
+      "questionMy": "ရွာသားများသည် တောနက်ထဲတွင် စပါးအုံးမြွေကြီးတစ်ကောင်ကို တွေ့ခဲ့ကြသည်။",
+      "answer": "It was in the deep forest that the villagers found a huge python.",
+      "emphasis": "in the deep forest"
+    },
+    "11-emphasis-6": {
+      "questionMy": "မိမိကိုယ်ကို ယုံကြည်မှုက အလုပ်တစ်ခုကို ကောင်းစွာ လုပ်ဆောင်နိုင်စေသည်။",
+      "answer": "It is self-confidence that enables us to perform a task well.",
+      "emphasis": "Self-confidence"
+    },
+    "11-emphasis-7": {
+      "questionMy": "သဘာဝနေထိုင်ရာဒေသများ ဆုံးရှုံးမှုကြောင့် တောရိုင်းတိရစ္ဆာန် အရေအတွက် လျော့နည်းလာသည်။",
+      "answer": "It is due to the loss of their natural habitats that the number of wildlife has decreased.",
+      "emphasis": "due to the loss of their natural habitats"
+    },
+    "11-emphasis-8": {
+      "questionMy": "ကျောင်းမုန့်ဈေးတန်း၏ မီးဖိုချောင်ကို သန့်ရှင်းမှုအတွက် ပုံမှန် စစ်ဆေးသည်။",
+      "answer": "It is for cleanliness that the kitchen of the school canteen is regularly inspected.",
+      "emphasis": "for cleanliness"
+    },
+    "11-emphasis-9": {
+      "questionMy": "ကျန်းမာရေးနှင့်ညီညွတ်သော အစားအစာက ရောဂါခုခံနိုင်စွမ်းကို ဖြစ်ပေါ်စေသည်။",
+      "answer": "It is body resistance to diseases that a healthy diet creates.",
+      "emphasis": "body resistance to diseases"
+    },
+    "11-emphasis-10": {
+      "questionMy": "ပုံမှန်ကိုယ်လက်လှုပ်ရှားမှုသည် ကိုယ်အလေးချိန်လျှော့ချခြင်းနှင့် ကျန်းမာရေးထိန်းသိမ်းခြင်းအတွက် အရေးကြီးသည်။",
+      "answer": "It is regular physical activity that is important for losing weight and maintaining good health.",
+      "emphasis": "Regular physical activity"
+    },
+    "11-agree-1": {
+      "questionMy": "ကျွန်ုပ် မှတ်ပုံတင် ယူမလာခဲ့ပါ။",
+      "answer": "Neither did I."
+    },
+    "11-agree-2": {
+      "questionMy": "ကျွန်ုပ်၏သူငယ်ချင်းများသည် ပရဟိတအဖွဲ့များတွင် စေတနာ့ဝန်ထမ်းလုပ်ရန် စိတ်အားထက်သန်ကြသည်။",
+      "answer": "So am I."
+    },
+    "11-agree-3": {
+      "questionMy": "ဆယ်ကျော်သက်များစွာသည် အိမ်မှုကိစ္စလုပ်ခြင်းကို စိတ်မဝင်စားကြပါ။",
+      "answer": "Neither am I."
+    },
+    "11-agree-4": {
+      "questionMy": "မနက်ဖြန် အစည်းအဝေးသို့ ကျွန်ုပ် တက်မည်။",
+      "answer": "So will I."
+    },
+    "11-agree-5": {
+      "questionMy": "ကျွန်ုပ်၏အမေသည် အေးသောရာသီဥတုကို မကြိုက်ပါ။",
+      "answer": "Neither do I."
+    },
+    "11-agree-6": {
+      "questionMy": "သူဇာသည် မည်သည့်တူရိယာကိုမျှ မတီးတတ်ပါ။",
+      "answer": "Neither can I."
+    },
+    "11-agree-7": {
+      "questionMy": "ကျွန်ုပ်သည် ပင်လယ်စာနှင့် မတည့်ပါ။",
+      "answer": "So am I."
+    },
+    "11-agree-8": {
+      "questionMy": "ဤခက်ခဲသော သင်ခန်းစာကို သင့်အား ကျွန်ုပ် မရှင်းပြနိုင်ပါ။",
+      "answer": "Neither can I."
+    },
+    "11-agree-9": {
+      "questionMy": "ရေသန့်သည်ဟု ညီညီ မထင်ပါ။",
+      "answer": "Neither do I."
+    },
+    "11-agree-10": {
+      "questionMy": "အစားအစာသည် ကျန်းမာရေးနှင့် အလွန်ညီညွတ်သည်ဟု ကျွန်ုပ် ထင်သည်။",
+      "answer": "So do I."
+    },
+    "11-similar-1": {
+      "questionMy": "နူးညံ့သောစကားများနှင့် ကောင်းသောအပြုအမူများသည် ကြီးမားသော ပျော်ရွှင်မှုကို ပေးနိုင်သည်။",
+      "answer": "Kind words can bring great happiness. So can good deeds."
+    },
+    "11-similar-2": {
+      "questionMy": "ကျွန်ုပ်၏အစ်မနှင့် ကျွန်ုပ်သည် ရန်ကုန်တွင် မွေးဖွားခဲ့ခြင်း မဟုတ်ပါ။",
+      "answer": "My sister was not born in Yangon. Neither was I.; My sister wasn't born in Yangon. Neither was I."
+    },
+    "11-similar-3": {
+      "questionMy": "နေခြည်နှင့် သူဇာတို့သည် ဒင်္ဂါးစုဆောင်းခြင်းကို နှစ်သက်ကြသည်။",
+      "answer": "Nay Chi likes collecting coins. So does Thuzar."
+    },
+    "11-similar-4": {
+      "questionMy": "အာကာနှင့် စည်သူတို့ အိမ်စာ မပြီးကြသေးပါ။",
+      "answer": "Arkar hasn't finished his homework yet. Neither has Sithu.; Arkar has not finished his homework yet. Neither has Sithu."
+    },
+    "11-similar-5": {
+      "questionMy": "ယခုအချိန်အထိ ကင်ဆာနှင့် ဆီးချိုသည် ကုသ၍ မပျောက်ကင်းနိုင်သော ရောဂါများ ဖြစ်သည်။",
+      "answer": "Until now, cancer is an incurable disease. So is diabetes."
+    },
+    "11-similar-6": {
+      "questionMy": "ဇော်ဇော်နှင့် သူ့သူငယ်ချင်းများသည် စီမံကိန်းပြီးရန် အချိန်ရှိမရှိ မသေချာခဲ့ကြပါ။",
+      "answer": "Zaw Zaw wasn't sure that he had the time to complete the project. Neither were his friends.; Zaw Zaw was not sure that he had the time to complete the project. Neither were his friends."
+    },
+    "11-similar-7": {
+      "questionMy": "ဆရာနှင့် ကျောင်းသားများသည် ပျော်စရာလေ့လာရေးခရီးကို ဘယ်တော့မှ မမေ့ကြပါ။",
+      "answer": "The teacher will never forget the enjoyable excursion. Neither will his students."
+    },
+    "11-similar-8": {
+      "questionMy": "ထိုင်းနှင့် လာအိုသည် မြန်မာနိုင်ငံ၏ အိမ်နီးချင်းနိုင်ငံများ ဖြစ်သည်။",
+      "answer": "Thailand is a neighbouring country of Myanmar. So is Laos."
+    },
+    "11-similar-9": {
+      "questionMy": "အိပ်ရေးပျက်ခြင်းနှင့် အလွန်အကျွံစားခြင်းသည် အဝလွန်နိုင်ခြေကို ပိုများစေသည်။",
+      "answer": "Sleep deprivation can cause a higher risk of obesity. So can over-eating."
+    },
+    "11-similar-10": {
+      "questionMy": "စုစုနှင့် ဇင်ဇင်သည် ကျောင်း၏ သင်ရိုးပြင်ပလှုပ်ရှားမှုများတွင် တက်ကြွစွာ ပါဝင်ခဲ့ကြသည်။",
+      "answer": "Su Su actively participated in the extra-curricular activities of the school. So did Zin Zin."
+    },
+    "12-possibility-1": {
+      "questionMy": "ကာဗွန်ဒိုင်အောက်ဆိုက် ထုတ်လွှတ်မှု လျှော့ချခြင်းဖြင့် ကမ္ဘာကြီးပူနွေးမှုကို ထိန်းချုပ်နိုင်သည်။",
+      "answer": "can"
+    },
+    "12-possibility-2": {
+      "questionMy": "အွန်လိုင်းဈေးဝယ်ခြင်းသည် ဈေးထဲတွင် ဝယ်ခြင်းထက် ပိုကုန်ကျနိုင်သော်လည်း ကျွန်ုပ် မသေချာပါ။",
+      "answer": "could"
+    },
+    "12-possibility-3": {
+      "questionMy": "သူမသည် သည်းခံတတ်သူဖြစ်သည်။ သင့်ငြင်းခုံမှုကြောင့် အလွယ်တကူ စိတ်ဆိုးနိုင်မည် မဟုတ်ပါ။",
+      "answer": "cannot; can't"
+    },
+    "12-possibility-4": {
+      "questionMy": "အိမ်မွေးခွေးများသည် ပိုင်ရှင်များထံ ရောဂါ ကူးစက်စေနိုင်သည်။",
+      "answer": "can"
+    },
+    "12-possibility-5": {
+      "questionMy": "သကြားပမာဏတစ်ခု စားခြင်းသည် ဆီးချိုဖြစ်နိုင်ခြေကို တိုးစေနိုင်သည်။",
+      "answer": "could"
+    },
+    "12-possibility-6": {
+      "questionMy": "လွန်ခဲ့သောနှစ်များစွာက မိုဘိုင်းဖုန်းများသည် လူအများအတွက် ဇိမ်ခံပစ္စည်းများ ဖြစ်နိုင်ခဲ့သည်။",
+      "answer": "could"
+    },
+    "12-possibility-7": {
+      "questionMy": "မိုးရာသီတွင် တောင်တက်ခရီးသွားခြင်းသည် အန္တရာယ်ရှိနိုင်သည်။",
+      "answer": "can"
+    },
+    "12-possibility-8": {
+      "questionMy": "လေယာဉ်ခရီးရှည်ပြီးနောက် သူမ ပင်ပန်းနွမ်းနယ်နေနိုင်သည်ဟု ကျွန်ုပ် ထင်သည်။",
+      "answer": "could"
+    },
+    "12-possibility-9": {
+      "questionMy": "သူတို့ ပွဲနိုင်နိုင်မည် မဟုတ်ပါ။ သင့်တော်သော လေ့ကျင့်မှု မရှိခဲ့ကြပါ။",
+      "answer": "cannot; can't"
+    },
+    "12-possibility-10": {
+      "questionMy": "ဆပ်ပြာနှင့် စီးဆင်းနေသောရေဖြင့် လက်မကြာခဏ ဆေးခြင်းအားဖြင့် အသက်ရှူလမ်းကြောင်း ပိုးဝင်မှုများကို ကာကွယ်နိုင်သည်။",
+      "answer": "can"
+    },
+    "12-ability-1": {
+      "questionMy": "အစ်ကိုသည် သုံးနှစ်သားအထိ စကားတစ်ခွန်းမျှ မပြောတတ်ခဲ့ပါ။",
+      "answer": "could not; couldn't"
+    },
+    "12-ability-2": {
+      "questionMy": "အပေါ်ဆုံးစင်ကို သင် လှမ်းမီနိုင်သလား။",
+      "answer": "Can"
+    },
+    "12-ability-3": {
+      "questionMy": "သူပြောနေသည်ကို ကျွန်ုပ် နားမလည်နိုင်ပါ။ သူက မြန်လွန်းစွာ ပြောနေသည်။",
+      "answer": "cannot; can't"
+    },
+    "12-ability-4": {
+      "questionMy": "ကျွန်ုပ်၏ခွေးသည် ငယ်စဉ်က ယခုထက် ပိုမြင့်စွာ ခုန်နိုင်ခဲ့သည်။",
+      "answer": "could"
+    },
+    "12-ability-5": {
+      "questionMy": "ဤကျောပိုးအိတ်ကို ကျွန်ုပ် မသယ်နိုင်ပါ။ လေးလွန်းသည်။",
+      "answer": "cannot; can't"
+    },
+    "12-ability-6": {
+      "questionMy": "ယာဉ်ကြောပိတ်မိခဲ့သော်လည်း ကျွန်ုပ်တို့ အစည်းအဝေးသို့ အချိန်မီ ရောက်နိုင်ခဲ့သည်။",
+      "answer": "could"
+    },
+    "12-ability-7": {
+      "questionMy": "သူ ဂစ်တာ မတီးတတ်ပါ။ တီးနည်းကို မသင်ဖူးပါ။",
+      "answer": "cannot; can't"
+    },
+    "12-ability-8": {
+      "questionMy": "ဂျပန်ဘာသာသင်တန်း မတက်မီ ကျွန်ုပ် ဂျပန်စကား လုံးဝ မပြောတတ်ခဲ့ပါ။",
+      "answer": "could not; couldn't"
+    },
+    "12-ability-9": {
+      "questionMy": "သီဟသည် သီချင်း အလွန်ကောင်းစွာ ဆိုတတ်သည်။ ပြိုင်ပွဲများတွင် ဆုများစွာ ရထားသည်။",
+      "answer": "can"
+    },
+    "12-ability-10": {
+      "questionMy": "သူမသည် ယခု ရှစ်နှစ်ရှိပြီဖြစ်သော်လည်း စာမဖတ်တတ်သေးပါ။",
+      "answer": "cannot; can't"
+    },
+    "12-rewrite-1": {
+      "questionMy": "သူသည် ငယ်စဉ်က မာရသွန် ပြေးနိုင်ခဲ့သည်။",
+      "answer": "He could run a marathon when he was young."
+    },
+    "12-rewrite-2": {
+      "questionMy": "သူမသည် ချိစ်ကိတ် လုပ်နည်း မသိပါ။",
+      "answer": "She cannot make a cheese cake.; She can't make a cheese cake."
+    },
+    "12-rewrite-3": {
+      "questionMy": "ယနေ့ ဆေးဆိုင်ပိတ်မပိတ် ကျွန်ုပ် မသေချာပါ။",
+      "answer": "The pharmacy could close today.; The pharmacy could be closed today."
+    },
+    "12-rewrite-4": {
+      "questionMy": "မှတ်တမ်းရုပ်ရှင် ကြည့်ရခြင်းသည် တစ်ခါတစ်ရံ အလွန်ပျင်းစရာကောင်းသည်။",
+      "answer": "Watching a documentary movie can be really boring."
+    },
+    "12-rewrite-5": {
+      "questionMy": "ဤမှိုသည် အဆိပ်ရှိနိုင်သည်။",
+      "answer": "This mushroom could be poisonous."
+    },
+    "12-rewrite-6": {
+      "questionMy": "သူမသည် ဆရာမ မဟုတ်ကြောင်း သေချာသည်။",
+      "answer": "She cannot be a teacher.; She can't be a teacher."
+    },
+    "12-rewrite-7": {
+      "questionMy": "ကျွန်ုပ်၏မြို့တွင် အင်တာနက်သုံးခွင့် ရရှိရန် တစ်ခါတစ်ရံ ခက်ခဲခဲ့သည်။",
+      "answer": "Having access to the internet could be difficult in my town.; It could be difficult to have access to the internet in my town."
+    },
+    "12-rewrite-8": {
+      "questionMy": "နှင်းနှင်းသည် အသက်နှစ်ဆယ်တွင် ကားမမောင်းတတ်ခဲ့ပါ။",
+      "answer": "Hnin Hnin could not drive a car when she was twenty.; Hnin Hnin couldn't drive a car when she was twenty."
+    },
+    "12-rewrite-9": {
+      "questionMy": "ကျယ်လောင်စွာ အော်ခြင်းသည် စိတ်ဖိစီးမှု လျှော့ချရန် အထောက်အကူပြုနိုင်သည်။",
+      "answer": "Shouting out loud could help you to reduce stress."
+    },
+    "12-rewrite-10": {
+      "questionMy": "မူယာသည် ဆွယ်တာ ထိုးတတ်သည်။",
+      "answer": "Muyar can knit sweaters."
+    },
+    "12-result-1": {
+      "questionMy": "မြင်ကွင်းက အံ့ဩစရာကောင်းခဲ့သည်။ အသက်ရှူရန်ပင် ကျွန်ုပ် မေ့ခဲ့သည်။",
+      "answer": "It was such an amazing view that I even forgot to breathe.; The view was so amazing that I even forgot to breathe."
+    },
+    "12-result-2": {
+      "questionMy": "ကျွန်ုပ်၏အတွင်းရေးမှူးသည် အားကိုးရသည်။ နေ့စဉ်အချိန်ဇယားအတွက် ဘယ်တော့မှ မပူရပါ။",
+      "answer": "My secretary is so reliable that I never have to worry about my daily schedule."
+    },
+    "12-result-3": {
+      "questionMy": "ကျွန်ုပ်တို့မြို့တွင် စက်ရုံများစွာ ရှိသည်။ လေထုအရည်အသွေး ညံ့သည်။",
+      "answer": "There are so many factories in our city that the air quality is poor."
+    },
+    "12-result-4": {
+      "questionMy": "သူ ကားကို အလွန်မြန်စွာ မောင်းခဲ့သည်။ သတ်မှတ်အမြန်နှုန်း ကျော်လွန်မှုအတွက် ဒဏ်ရိုက်ခံခဲ့ရသည်။",
+      "answer": "He drove so fast that he was fined for driving over the speed limit."
+    },
+    "12-result-5": {
+      "questionMy": "မင်းခန့်သည် ပါရမီရှိသောကောင်လေး ဖြစ်သည်။ ဘာသာစကားလေးမျိုးကို တစ်ပြိုင်နက် သင်ယူနိုင်သည်။",
+      "answer": "Min Khant is such a talented boy that he can learn four languages at the same time."
+    },
+    "12-result-6": {
+      "questionMy": "သူမသည် အလွန်တိုးတိုး ပြောခဲ့သည်။ ဒုတိယတန်းမှပင် ကျွန်ုပ်တို့ လုံးဝ မကြားနိုင်ခဲ့ပါ။",
+      "answer": "She spoke so softly that we could not hear her at all even from the second row."
+    },
+    "12-result-7": {
+      "questionMy": "သူတို့သည် အလွန်ကြိုးစားသော ကျောင်းသားများ ဖြစ်သည်။ နှစ်စဉ် ထူးချွန်ဆုများ ရရှိကြသည်။",
+      "answer": "They are such hard-working students that they win outstanding awards every year."
+    },
+    "12-result-8": {
+      "questionMy": "သူသည် မိဘများထံမှ ငွေအများကြီး အမွေရခဲ့သည်။ အလုပ်လုပ်ရန် မလိုခဲ့ပါ။",
+      "answer": "He inherited so much money from his parents that he did not need to work."
+    },
+    "12-result-9": {
+      "questionMy": "ပျော်စရာခရီးတစ်ခု ဖြစ်ခဲ့သည်။ အခိုက်အတန့်တိုင်းကို ကျွန်ုပ် ဘယ်တော့မှ မမေ့ပါ။",
+      "answer": "It was such an enjoyable trip that I would never forget every single moment.; The trip was so enjoyable that I would never forget every single moment."
+    },
+    "12-result-10": {
+      "questionMy": "သူမ၏ဘလောက်စ်အင်္ကျီသည် အလွန်ကျပ်သည်။ အသက်ရှူရန် ခက်ခဲခဲ့သည်။",
+      "answer": "Her blouse was so tight that it was difficult for her to breathe."
+    },
+    "12-endings-1": {
+      "questionMy": "ကလေးများ ဆူညံလွန်းသဖြင့် …",
+      "answer": "The children are so noisy that I cannot concentrate.",
+      "semantic": true
+    },
+    "12-endings-2": {
+      "questionMy": "နေသာသောနေ့ ဖြစ်လွန်းသဖြင့် …",
+      "answer": "It was such a sunny day that we went to the beach.",
+      "semantic": true
+    },
+    "12-endings-3": {
+      "questionMy": "သူက အဝတ်အစားအတွက် ပိုက်ဆံအလွန်သုံးခဲ့သဖြင့် …",
+      "answer": "He spent so much money on clothes that he had none left for food.",
+      "semantic": true
+    },
+    "12-endings-4": {
+      "questionMy": "ကျွန်ုပ် အိပ်ငိုက်လွန်းသဖြင့် …",
+      "answer": "I was so sleepy that I fell asleep immediately.",
+      "semantic": true
+    },
+    "12-endings-5": {
+      "questionMy": "သူမသည် ဖော်ရွေသောမိန်းကလေး ဖြစ်လွန်းသဖြင့် …",
+      "answer": "She is such a friendly girl that everyone likes her.",
+      "semantic": true
+    },
+    "12-endings-6": {
+      "questionMy": "အလွန်ပျင်းစရာကောင်းသော ရုပ်ရှင်ဖြစ်ခဲ့သဖြင့် …",
+      "answer": "It was such a boring film that I fell asleep.",
+      "semantic": true
+    },
+    "12-endings-7": {
+      "questionMy": "စက်က ဆူညံသံအလွန်ထွက်နေသဖြင့် …",
+      "answer": "The machine is making so much noise that we cannot hear each other.",
+      "semantic": true
+    },
+    "12-endings-8": {
+      "questionMy": "သူက အမြန်ပြင်အစားအစာ အလွန်စားသဖြင့် …",
+      "answer": "He eats so much fast food that he is gaining weight.",
+      "semantic": true
+    },
+    "12-endings-9": {
+      "questionMy": "အလွန်ဈေးကြီးသော စားသောက်ဆိုင် ဖြစ်သဖြင့် …",
+      "answer": "It is such an expensive restaurant that we cannot afford to eat there.",
+      "semantic": true
+    },
+    "12-endings-10": {
+      "questionMy": "ကျွန်ုပ်၏နောက်ကျော နာလွန်းသဖြင့် …",
+      "answer": "My back is aching so badly that I cannot sit comfortably.",
+      "semantic": true
+    }
+  }
+}
