@@ -37,7 +37,7 @@ Return short raw JSON, with no markdown or emoji.`;
 
 /** Isolated Grade 11 adapter; uses the existing caller-owned sessions and billing RPCs. */
 export async function handleGrade11Roleplay(request: Request): Promise<Response> {
-  const auth = await requireUser(request);
+  const auth = await requireUser(request, { reportServiceErrors: true });
   if (auth instanceof Response) return auth;
   let body: z.infer<typeof input>;
   try {
@@ -51,13 +51,22 @@ export async function handleGrade11Roleplay(request: Request): Promise<Response>
     return Response.json({ error: "Session required" }, { status: 400 });
   if (body.exercise && Number(body.exercise[0]) !== body.unit)
     return Response.json({ error: "Invalid exercise" }, { status: 400 });
+  // The shared model helper requires this key. Fail before opening/charging a speaking session.
+  if (!process.env.LOVABLE_API_KEY?.trim())
+    return Response.json(
+      {
+        error: "ai_not_configured",
+        message: "AI စကားပြောဝန်ဆောင်မှု ချိတ်ဆက်ရန် လိုနေပါသည်။ ဆရာထံ အကြောင်းကြားပါ။",
+      },
+      { status: 503 },
+    );
   let session = body.session;
   if (session) {
-    const blocked = await chargeSpeakingTurn(request, session);
+    const blocked = await chargeSpeakingTurn(request, session, { reportServiceErrors: true });
     // Preserve the existing policy: final feedback remains available after credits run out.
     if (blocked && !(body.finish && blocked.status === 402)) return blocked;
   } else {
-    const opened = await startSpeakingSession(request, body.unit);
+    const opened = await startSpeakingSession(request, body.unit, { reportServiceErrors: true });
     if (opened instanceof Response) return opened;
     session = opened.session;
   }
@@ -122,6 +131,22 @@ export async function handleGrade11Roleplay(request: Request): Promise<Response>
     console.error("[g11-roleplay]", error instanceof Error ? error.message : "Generation failed");
     const message = error instanceof Error ? error.message : "";
     const status = /\b402\b/.test(message) ? 402 : /\b429\b/.test(message) ? 429 : 502;
-    return Response.json({ error: "Grade 11 role-play unavailable" }, { status });
+    return Response.json(
+      {
+        error:
+          status === 402
+            ? "provider_credit_exhausted"
+            : status === 429
+              ? "provider_busy"
+              : "roleplay_unavailable",
+        message:
+          status === 402
+            ? "AI ဝန်ဆောင်မှု၏ credit မလုံလောက်ပါ။ ဆရာထံ အကြောင်းကြားပါ။"
+            : status === 429
+              ? "AI ဝန်ဆောင်မှု အလုပ်များနေပါသည်။ ခဏစောင့်ပြီး ပြန်စမ်းပါ။"
+              : "AI အဖြေ ရယူမရပါ။ ခဏစောင့်ပြီး ပြန်စမ်းနိုင်ပါတယ်။",
+      },
+      { status },
+    );
   }
 }

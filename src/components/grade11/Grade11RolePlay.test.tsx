@@ -3,6 +3,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { Grade11RolePlay } from "./Grade11RolePlay";
 const mocks = vi.hoisted(() => ({
   getSession: vi.fn(),
+  refreshSession: vi.fn(),
   rpc: vi.fn(),
   speak: vi.fn(),
   stopVoice: vi.fn(),
@@ -12,7 +13,10 @@ const mocks = vi.hoisted(() => ({
   callbacks: null as null | { onFinal: (text: string) => void; onSilence: () => void },
 }));
 vi.mock("@/integrations/supabase/client", () => ({
-  supabase: { auth: { getSession: mocks.getSession }, rpc: mocks.rpc },
+  supabase: {
+    auth: { getSession: mocks.getSession, refreshSession: mocks.refreshSession },
+    rpc: mocks.rpc,
+  },
 }));
 vi.mock("@/components/RequireSignIn", () => ({ signInWithGoogle: vi.fn() }));
 vi.mock("@/hooks/use-whisper", () => ({
@@ -55,6 +59,7 @@ const typedMode = () => fireEvent.click(screen.getByRole("checkbox"));
 beforeEach(() => {
   vi.clearAllMocks();
   mocks.getSession.mockResolvedValue({ data: { session: { access_token: "test-token" } } });
+  mocks.refreshSession.mockResolvedValue({ data: { session: null }, error: new Error("expired") });
   mocks.rpc.mockResolvedValue({ data: { used: 0, limit: 2, unlimited: false } });
   vi.stubGlobal(
     "fetch",
@@ -162,4 +167,40 @@ describe("Grade 11 AI speaking lifecycle", () => {
     );
     expect(fetch).not.toHaveBeenCalled();
   });
+});
+
+it("does not ask a signed-in student to login again for a speaking service error", async () => {
+  vi.mocked(fetch).mockResolvedValue(
+    Response.json(
+      { error: "speaking_service_unavailable", message: "စကားပြောဝန်ဆောင်မှုကို ချိတ်ဆက်မရပါ။" },
+      { status: 503 },
+    ),
+  );
+  render(<Grade11RolePlay unit={5} />);
+  typedMode();
+  start();
+  expect(await screen.findByRole("alert")).toHaveTextContent(
+    "စကားပြောဝန်ဆောင်မှုကို ချိတ်ဆက်မရပါ။",
+  );
+  expect(screen.queryByRole("button", { name: "Login" })).toBeNull();
+  expect(mocks.refreshSession).not.toHaveBeenCalled();
+});
+it("offers login only after a real auth rejection and unsuccessful token refresh", async () => {
+  vi.mocked(fetch).mockResolvedValue(Response.json({ error: "signin" }, { status: 401 }));
+  render(<Grade11RolePlay unit={5} />);
+  typedMode();
+  start();
+  await screen.findByRole("alert");
+  expect(screen.getByRole("button", { name: "Login" })).toBeVisible();
+  expect(mocks.refreshSession).toHaveBeenCalledOnce();
+});
+it("continues to the student's turn when speech playback fails before reporting speaking=true", async () => {
+  mocks.speak.mockImplementationOnce(async () => {
+    throw new Error("audio unavailable");
+  });
+  render(<Grade11RolePlay unit={5} />);
+  start();
+  await screen.findByLabelText("Your AI conversation reply");
+  expect(mocks.startMic).toHaveBeenCalled();
+  expect(fetch).toHaveBeenCalledOnce();
 });

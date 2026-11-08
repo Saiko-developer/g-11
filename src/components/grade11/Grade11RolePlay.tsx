@@ -20,24 +20,44 @@ const EMOTIONS: Record<string, string> = {
 
 type Phase = "idle" | "thinking" | "speaking" | "listening" | "summary";
 
+class SpeakingFailure extends Error {
+  constructor(
+    readonly status: number,
+    readonly code: string,
+    message: string,
+  ) {
+    super(message);
+  }
+}
 async function callRoleplay(body: object, signal?: AbortSignal) {
   const res = await grade11ApiFetch("/api/g11-roleplay", {
     signal,
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body),
   });
+  const data = await res.json().catch(() => ({}));
   if (!res.ok) {
-    if (res.status === 401) toast.error("AI Role-Play သုံးရန် အရင် Login ဝင်ပါ။");
-    else if (res.status === 429) toast.error("ဒီ Unit အတွက် ယနေ့ AI စကားပြောခွင့် ပြည့်သွားပါပြီ။");
-    else if (res.status === 402)
-      toast.error("AI Credit ကုန်သွားပါပြီ။ Credit ဝယ်ယူပြီး ပြန်စမ်းပါ။");
-    else if (res.status === 410) toast.error("စကားပြောချိန် ကုန်သွားပါပြီ။ အသစ် ပြန်စပါ။");
-    throw new Error(String(res.status));
+    const code = typeof data.error === "string" ? data.error : "";
+    const message =
+      typeof data.message === "string" && data.message.trim()
+        ? data.message
+        : res.status === 401
+          ? "AI Role-Play သုံးရန် အကောင့်ကို ပြန်အတည်ပြုပါ။"
+          : res.status === 429
+            ? code === "unit_limit"
+              ? "ဒီ Unit အတွက် ယနေ့ AI စကားပြောခွင့် ပြည့်သွားပါပြီ။"
+              : "AI ဝန်ဆောင်မှု အလုပ်များနေပါသည်။ ခဏစောင့်ပြီး ပြန်စမ်းပါ။"
+            : res.status === 402
+              ? "AI Credit မလုံလောက်ပါ။ Credit ဖြည့်ပြီး ပြန်စမ်းပါ။"
+              : res.status === 410
+                ? "စကားပြောချိန် ကုန်သွားပါပြီ။ အသစ် ပြန်စပါ။"
+                : res.status === 503
+                  ? "AI စကားပြောဝန်ဆောင်မှုကို ယခု ချိတ်ဆက်မရပါ။ ခဏစောင့်ပြီး ပြန်စမ်းပါ။"
+                  : "AI အဖြေ ရယူမရပါ။ ပြန်စမ်းနိုင်ပါတယ်။";
+    throw new SpeakingFailure(res.status, code, message);
   }
-  return res.json();
+  return data;
 }
 
 export function Grade11RolePlay({
@@ -67,6 +87,9 @@ export function Grade11RolePlay({
   const turnsRef = useRef<Turn[]>([]);
   const bufRef = useRef("");
   const sawSpeech = useRef(false);
+  const playbackSettled = useRef(false);
+  const speechAttempt = useRef(0);
+  const [speechRevision, setSpeechRevision] = useState(0);
   const listRef = useRef<HTMLDivElement | null>(null);
   const tts = useSpeechSynthesis();
   const generationRef = useRef(0);
@@ -75,6 +98,7 @@ export function Grade11RolePlay({
   const voiceModeRef = useRef(true);
   voiceModeRef.current = voiceMode;
   const [error, setError] = useState("");
+  const [authError, setAuthError] = useState(false);
 
   const set = (p: Phase) => {
     phaseRef.current = p;
@@ -165,13 +189,39 @@ export function Grade11RolePlay({
         return;
       }
       set("speaking");
-      void tts.speak(r.reply, { speed: 1, voice: "echo", provider: "openai" });
+      playbackSettled.current = false;
+      const attempt = ++speechAttempt.current;
+      void (async () => {
+        try {
+          await tts.speak(r.reply, { speed: 1, voice: "echo", provider: "openai" });
+        } catch {
+          if (
+            activeRef.current &&
+            generation === generationRef.current &&
+            attempt === speechAttempt.current
+          )
+            setError("AI အသံ ဖွင့်မရပါ။ စာတန်းကို ဖတ်ပြီး စာရိုက်၍ ဆက်လေ့ကျင့်နိုင်ပါတယ်။");
+        } finally {
+          if (
+            activeRef.current &&
+            generation === generationRef.current &&
+            attempt === speechAttempt.current &&
+            phaseRef.current === "speaking"
+          ) {
+            playbackSettled.current = true;
+            setSpeechRevision((old) => old + 1);
+          }
+        }
+      })();
     } catch (e) {
       if (generation !== generationRef.current || controller.signal.aborted) return;
-      setError("AI ချိတ်ဆက်မှု မအောင်မြင်ပါ။ ပြန်စမ်းနိုင်ပါတယ်။");
-      const code = e instanceof Error ? e.message : "";
-      if (!["401", "402", "429"].includes(code))
-        toast.error("AI ချိတ်ဆက်မရပါ။ Internet စစ်ပြီး ပြန်စမ်းပါ။");
+      const message =
+        e instanceof SpeakingFailure
+          ? e.message
+          : "AI ချိတ်ဆက်မှု မအောင်မြင်ပါ။ ပြန်စမ်းနိုင်ပါတယ်။";
+      setError(message);
+      setAuthError(e instanceof SpeakingFailure && e.status === 401);
+      toast.error(message);
       stop(false);
     }
   };
@@ -183,7 +233,7 @@ export function Grade11RolePlay({
       sawSpeech.current = true;
       return;
     }
-    if (sawSpeech.current && activeRef.current) {
+    if ((sawSpeech.current || playbackSettled.current) && activeRef.current) {
       if (endingRef.current) {
         void stop();
         return;
@@ -193,7 +243,7 @@ export function Grade11RolePlay({
       interimRef.current = "";
       if (voiceModeRef.current) rec.start();
     }
-  }, [tts.speaking]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [tts.speaking, speechRevision]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Browser may end recognition on its own; keep listening while the call is live.
   useEffect(() => {
@@ -264,6 +314,7 @@ export function Grade11RolePlay({
     }
     const generation = ++generationRef.current;
     setError("");
+    setAuthError(false);
     set("thinking");
     const auth = await supabase.auth.getSession().catch(() => null);
     if (generation !== generationRef.current) return;
@@ -391,6 +442,11 @@ export function Grade11RolePlay({
       {error && (
         <p role="alert" lang="my" className="px-5 pt-3 text-sm text-destructive">
           {error}
+          {authError && (
+            <button type="button" onClick={() => void signInToGrade11()} className="ml-2 underline">
+              Login
+            </button>
+          )}
         </p>
       )}
       {!live && (
