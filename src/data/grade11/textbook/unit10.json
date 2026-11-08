@@ -1,0 +1,668 @@
+{
+  "number": 10,
+  "title": "Sleep Deprivation",
+  "mmTitle": "အိပ်ရေးပျက်ခြင်း",
+  "sourceFiles": [
+    "13575. Grade (11) English New Syllabus-97-144.pdf"
+  ],
+  "skills": {
+    "reading": {
+      "sources": [
+        {
+          "page": 111,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-111.jpg",
+          "originalUrl": "/grade11/upper/page-111.jpg"
+        },
+        {
+          "page": 112,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-112.jpg",
+          "originalUrl": "/grade11/upper/page-112.jpg"
+        },
+        {
+          "page": 113,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-113.jpg",
+          "originalUrl": "/grade11/upper/page-113.jpg"
+        },
+        {
+          "page": 114,
+          "top": 0,
+          "bottom": 0.7131,
+          "url": "/grade11/upper/unit10-reading-114.jpg",
+          "originalUrl": "/grade11/upper/page-114.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "10-pre",
+          "instruction": "Pre-reading",
+          "instructionMy": "မဖတ်မီ ဆွေးနွေးရန်",
+          "pages": [
+            111
+          ],
+          "items": [
+            {
+              "id": "10-pre-1",
+              "prompt": "1. On average, how many hours do you sleep a night?",
+              "promptMy": "ပျမ်းမျှအားဖြင့် ညတစ်ညလျှင် ဘယ်နှနာရီ အိပ်သနည်း။"
+            },
+            {
+              "id": "10-pre-2",
+              "prompt": "2. Are there times when you don’t sleep well? If so, when don’t you sleep well?",
+              "promptMy": "ကောင်းစွာ မအိပ်ပျော်သည့်အချိန်များ ရှိသလား။ ရှိလျှင် မည်သည့်အချိန်များ ဖြစ်သနည်း။"
+            },
+            {
+              "id": "10-pre-3",
+              "prompt": "3. What do you do when you can’t sleep?",
+              "promptMy": "အိပ်မပျော်သောအခါ မည်သည့်အရာကို လုပ်သနည်း။"
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "10-gaps",
+          "instruction": "A. Read the passage and choose the appropriate phrases (a–f) to complete the gaps (1–6).",
+          "instructionMy": "စာပိုဒ်ကို ဖတ်ပြီး ကွက်လပ်ခြောက်ခုတွင် သင့်လျော်သော စကားစုကို ရွေးပါ။",
+          "pages": [
+            113
+          ],
+          "items": [
+            {
+              "id": "10-gaps-1",
+              "prompt": "(1) ______",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f"
+              ]
+            },
+            {
+              "id": "10-gaps-2",
+              "prompt": "(2) ______",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f"
+              ]
+            },
+            {
+              "id": "10-gaps-3",
+              "prompt": "(3) ______",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f"
+              ]
+            },
+            {
+              "id": "10-gaps-4",
+              "prompt": "(4) ______",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f"
+              ]
+            },
+            {
+              "id": "10-gaps-5",
+              "prompt": "(5) ______",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f"
+              ]
+            },
+            {
+              "id": "10-gaps-6",
+              "prompt": "(6) ______",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10-causes",
+          "instruction": "B. Complete the following table, using the information from the passage.",
+          "instructionMy": "စာပိုဒ်ပါအချက်အလက်များကို အသုံးပြု၍ အိပ်ရေးပျက်ခြင်း၏ အကြောင်းရင်းဇယားကို ဖြည့်ပါ။",
+          "pages": [
+            114
+          ],
+          "items": [
+            {
+              "id": "10-causes-1",
+              "prompt": "Inappropriate sleep habits and personal choice"
+            },
+            {
+              "id": "10-causes-2",
+              "prompt": "Medical problems"
+            }
+          ],
+          "table": true,
+          "multiline": true
+        },
+        {
+          "id": "10-comprehension",
+          "instruction": "C. Give a full-sentence answer to each question below.",
+          "instructionMy": "အောက်ပါမေးခွန်းတစ်ခုစီကို ဝါကျပြည့်ဖြင့် ဖြေပါ။",
+          "pages": [
+            114
+          ],
+          "items": [
+            {
+              "id": "10-comprehension-1",
+              "prompt": "1. What are the characteristics of sleep?",
+              "promptMy": "အိပ်စက်ခြင်း၏ လက္ခဏာများမှာ အဘယ်နည်း။"
+            },
+            {
+              "id": "10-comprehension-2",
+              "prompt": "2. What is the difference between insomnia and sleep deprivation?",
+              "promptMy": "အိပ်မပျော်ရောဂါနှင့် အိပ်ရေးပျက်ခြင်း မည်သို့ ကွာခြားသနည်း။"
+            },
+            {
+              "id": "10-comprehension-3",
+              "prompt": "3. What do people who regard sleep as wasted time do?",
+              "promptMy": "အိပ်ချိန်ကို အချိန်ဖြုန်းခြင်းဟု ထင်သူများသည် မည်သို့ ပြုလုပ်ကြသနည်း။"
+            },
+            {
+              "id": "10-comprehension-4",
+              "prompt": "4. Among the effects of sleep deprivation given in paragraph 4, which do you think is the most serious? Why?",
+              "promptMy": "စာပိုဒ်လေးတွင် ပေးထားသော အိပ်ရေးပျက်ခြင်း၏ အကျိုးဆက်များအနက် မည်သည့်အကျိုးဆက်က အဆိုးဆုံးဟု ထင်သနည်း။ အဘယ်ကြောင့်နည်း။"
+            },
+            {
+              "id": "10-comprehension-5",
+              "prompt": "5. When are drugs used to help sleep-deprived people?",
+              "promptMy": "အိပ်ရေးပျက်သူများကို ကူညီရန် ဆေးဝါးများကို မည်သည့်အချိန်တွင် အသုံးပြုသနည်း။"
+            },
+            {
+              "id": "10-comprehension-6",
+              "prompt": "6. Why is it important to limit the dosage of sleeping medications?",
+              "promptMy": "အိပ်ဆေးပမာဏကို ကန့်သတ်ရန် အဘယ်ကြောင့် အရေးကြီးသနည်း။"
+            },
+            {
+              "id": "10-comprehension-7",
+              "prompt": "7. What is the advantage of having a quick nap in the daytime?",
+              "promptMy": "နေ့ခင်း၌ ခဏတာအိပ်စက်ခြင်း၏ အကျိုးကျေးဇူးမှာ အဘယ်နည်း။"
+            },
+            {
+              "id": "10-comprehension-8",
+              "prompt": "8. If you were suffering from sleep deprivation, what would you do?",
+              "promptMy": "သင်သာ အိပ်ရေးပျက်နေပါက မည်သို့လုပ်မည်နည်း။"
+            }
+          ],
+          "multiline": true,
+          "structure": true
+        }
+      ]
+    },
+    "vocabulary": {
+      "sources": [
+        {
+          "page": 114,
+          "top": 0.7131,
+          "bottom": 1,
+          "url": "/grade11/upper/unit10-vocabulary-114.jpg",
+          "originalUrl": "/grade11/upper/page-114.jpg"
+        },
+        {
+          "page": 115,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-115.jpg",
+          "originalUrl": "/grade11/upper/page-115.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "10-compound",
+          "instruction": "A. Form compound adjectives by matching the words in Column A with those in Column B.",
+          "instructionMy": "ကော်လံနှစ်ခုရှိ စကားလုံးများကို တွဲ၍ ပေါင်းစပ်နာမဝိသေသနများ ဖွဲ့ပါ။",
+          "pages": [
+            115
+          ],
+          "items": [
+            {
+              "id": "10-compound-1",
+              "prompt": "2. deeply"
+            },
+            {
+              "id": "10-compound-2",
+              "prompt": "3. far"
+            },
+            {
+              "id": "10-compound-3",
+              "prompt": "4. highly"
+            },
+            {
+              "id": "10-compound-4",
+              "prompt": "5. old"
+            },
+            {
+              "id": "10-compound-5",
+              "prompt": "6. open"
+            },
+            {
+              "id": "10-compound-6",
+              "prompt": "7. quick"
+            },
+            {
+              "id": "10-compound-7",
+              "prompt": "8. rapidly"
+            },
+            {
+              "id": "10-compound-8",
+              "prompt": "9. well"
+            },
+            {
+              "id": "10-compound-9",
+              "prompt": "10. widely"
+            }
+          ],
+          "table": true
+        },
+        {
+          "id": "10-complete",
+          "instruction": "B. Complete the sentences, using the appropriate compound adjectives from Exercise A.",
+          "instructionMy": "ယခင်လေ့ကျင့်ခန်းမှ သင့်လျော်သော ပေါင်းစပ်နာမဝိသေသနများဖြင့် ဝါကျများကို ဖြည့်ပါ။",
+          "pages": [
+            115
+          ],
+          "items": [
+            {
+              "id": "10-complete-1",
+              "prompt": "1. Today, many teenagers think that their parents have ______ ideas and views on how they see the world."
+            },
+            {
+              "id": "10-complete-2",
+              "prompt": "2. You can talk to our teacher about anything — she’s very ______."
+            },
+            {
+              "id": "10-complete-3",
+              "prompt": "3. After three months, my father will be ______ in his new career."
+            },
+            {
+              "id": "10-complete-4",
+              "prompt": "4. Children should be treated well, as the feeling of rejection is ______ in childhood."
+            },
+            {
+              "id": "10-complete-5",
+              "prompt": "5. My aunt is ______ and full of new ideas and a strong sense of social obligation."
+            },
+            {
+              "id": "10-complete-6",
+              "prompt": "6. The ______ urban population has given rise to housing shortage."
+            },
+            {
+              "id": "10-complete-7",
+              "prompt": "7. Some sports stars have become more ______ than famous actors and actresses."
+            },
+            {
+              "id": "10-complete-8",
+              "prompt": "8. Damage to mangroves and coral reefs can have ______ effects on people living in the coastal areas."
+            },
+            {
+              "id": "10-complete-9",
+              "prompt": "9. In Myanmar, teachers are ______ by their students."
+            },
+            {
+              "id": "10-complete-10",
+              "prompt": "10. On our way to Mandalay last night, we drove along ______ roads of Nay Pyi Taw."
+            }
+          ]
+        }
+      ]
+    },
+    "grammar": {
+      "sources": [
+        {
+          "page": 116,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-116.jpg",
+          "originalUrl": "/grade11/upper/page-116.jpg"
+        },
+        {
+          "page": 117,
+          "top": 0,
+          "bottom": 0.5076,
+          "url": "/grade11/upper/unit10-grammar-117.jpg",
+          "originalUrl": "/grade11/upper/page-117.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "10-by-ing",
+          "instruction": "A. Combine each pair of sentences, using the ‘by + V-ing’ construction.",
+          "instructionMy": "စာအုပ်ပါ သတ်မှတ်ပုံစံကို သုံး၍ ဝါကျအတွဲတစ်ခုစီကို ပေါင်းပါ။",
+          "pages": [
+            116
+          ],
+          "items": [
+            {
+              "id": "10-by-ing-1",
+              "prompt": "1. The teacher punished the noisy children. He made them do extra exercises."
+            },
+            {
+              "id": "10-by-ing-2",
+              "prompt": "2. We should conserve oil and gas. We should make use of other energy sources."
+            },
+            {
+              "id": "10-by-ing-3",
+              "prompt": "3. Aye Aye revised her essays. She made some additions and deletions."
+            },
+            {
+              "id": "10-by-ing-4",
+              "prompt": "4. U Sithu can enjoy his leisure to the full. He makes trips to the country or beaches at weekends."
+            },
+            {
+              "id": "10-by-ing-5",
+              "prompt": "5. Zaw Zaw worked harder than his friends. He soon got ahead of his classmates."
+            },
+            {
+              "id": "10-by-ing-6",
+              "prompt": "6. We’ve saved some money. We painted our house by ourselves."
+            },
+            {
+              "id": "10-by-ing-7",
+              "prompt": "7. He is trying to work off his surplus fat. He exercises every day."
+            },
+            {
+              "id": "10-by-ing-8",
+              "prompt": "8. Our teacher encourages us to take risks. She asks us to try new things."
+            },
+            {
+              "id": "10-by-ing-9",
+              "prompt": "9. The passengers and the sailors survived. They swam ashore."
+            },
+            {
+              "id": "10-by-ing-10",
+              "prompt": "10. Ko Toe tries to improve his vocabulary. He reads all sorts of books."
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "10-participle",
+          "instruction": "B. Combine each pair of sentences, using ‘V-ing’ as in the example given. Then, say what function each sentence serves — a, b, c or d.",
+          "instructionMy": "ဥပမာအတိုင်း ပစ္စုပ္ပန်ကြိယာဝိသေသနပုံစံဖြင့် ဝါကျများကို ပေါင်းပြီး သက်ဆိုင်သော လုပ်ဆောင်ချက်အမှတ်ကိုပါ ဖော်ပြပါ။",
+          "pages": [
+            117
+          ],
+          "items": [
+            {
+              "id": "10-participle-1",
+              "prompt": "1. We welcomed our winning football team. We waved our flags and sang our national anthem."
+            },
+            {
+              "id": "10-participle-2",
+              "prompt": "2. I realize that I put on some weight. I begin to exercise more."
+            },
+            {
+              "id": "10-participle-3",
+              "prompt": "3. I looked out of the window. I noticed the unusual dark clouds in the sky."
+            },
+            {
+              "id": "10-participle-4",
+              "prompt": "4. A severe drought hit the area. It did a lot of damage to the crops."
+            },
+            {
+              "id": "10-participle-5",
+              "prompt": "5. I wrote a letter to my friend. I thanked him for sending me a birthday present."
+            },
+            {
+              "id": "10-participle-6",
+              "prompt": "6. A car rolled over the bumpy dirt road. It left behind a whirl of white dust."
+            },
+            {
+              "id": "10-participle-7",
+              "prompt": "7. Thandar spends a lot of her time playing video games. She got poor grades in the tests."
+            },
+            {
+              "id": "10-participle-8",
+              "prompt": "8. Nyi Nyi realized that he was rude to the teacher. He apologized to her."
+            },
+            {
+              "id": "10-participle-9",
+              "prompt": "9. Farmers walked between rows of tomato plants. They picked the ripe ones."
+            },
+            {
+              "id": "10-participle-10",
+              "prompt": "10. He believed that he had only a year to live. He refused to receive any treatment."
+            }
+          ],
+          "multiline": true
+        }
+      ]
+    },
+    "listening": {
+      "sources": [
+        {
+          "page": 117,
+          "top": 0.5076,
+          "bottom": 1,
+          "url": "/grade11/upper/unit10-listening-117.jpg",
+          "originalUrl": "/grade11/upper/page-117.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "10-listen",
+          "instruction": "A. Listen to Thu Thu, talking about how she spends her time. Read the statements and write TRUE or FALSE.",
+          "instructionMy": "သူသူ အချိန်အသုံးပြုပုံအကြောင်း နားထောင်၍ အဆိုတစ်ခုစီ မှန်၊ မှား ရွေးပါ။",
+          "pages": [
+            117
+          ],
+          "items": [
+            {
+              "id": "10-listen-1",
+              "prompt": "1. Thu Thu spends too much time studying.",
+              "choices": [
+                "TRUE",
+                "FALSE"
+              ]
+            },
+            {
+              "id": "10-listen-2",
+              "prompt": "2. She doesn’t get enough sleep.",
+              "choices": [
+                "TRUE",
+                "FALSE"
+              ]
+            },
+            {
+              "id": "10-listen-3",
+              "prompt": "3. She wants some time during weekdays to pursue her hobbies.",
+              "choices": [
+                "TRUE",
+                "FALSE"
+              ]
+            },
+            {
+              "id": "10-listen-4",
+              "prompt": "4. She spends a lot of time with her friends.",
+              "choices": [
+                "TRUE",
+                "FALSE"
+              ]
+            },
+            {
+              "id": "10-listen-5",
+              "prompt": "5. She is busy having to study all day.",
+              "choices": [
+                "TRUE",
+                "FALSE"
+              ]
+            },
+            {
+              "id": "10-listen-6",
+              "prompt": "6. She wants more time for recreation.",
+              "choices": [
+                "TRUE",
+                "FALSE"
+              ]
+            },
+            {
+              "id": "10-listen-7",
+              "prompt": "7. She sometimes feels bored because she has nothing to do.",
+              "choices": [
+                "TRUE",
+                "FALSE"
+              ]
+            },
+            {
+              "id": "10-listen-8",
+              "prompt": "8. She usually puts off the tasks that she needs to do.",
+              "choices": [
+                "TRUE",
+                "FALSE"
+              ]
+            },
+            {
+              "id": "10-listen-9",
+              "prompt": "9. She feels stressed because she doesn’t have enough time to do everything she wants to.",
+              "choices": [
+                "TRUE",
+                "FALSE"
+              ]
+            }
+          ],
+          "audio": true
+        }
+      ]
+    },
+    "speaking": {
+      "sources": [
+        {
+          "page": 118,
+          "top": 0,
+          "bottom": 0.6901,
+          "url": "/grade11/upper/unit10-speaking-118.jpg",
+          "originalUrl": "/grade11/upper/page-118.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "10-interview",
+          "instruction": "B. In pairs, interview your friend, asking him / her how he / she spends his / her leisure. Then, tell the class how your friend spends his / her leisure.",
+          "instructionMy": "နှစ်ယောက်တစ်တွဲစီ အားလပ်ချိန်အသုံးပြုပုံကို မေးမြန်းပြီး သူငယ်ချင်း၏ အားလပ်ချိန်အသုံးပြုပုံကို အတန်းတွင် ပြောပြပါ။",
+          "pages": [
+            118
+          ],
+          "items": [
+            {
+              "id": "10-interview-1",
+              "prompt": "How do you usually spend your leisure?"
+            },
+            {
+              "id": "10-interview-2",
+              "prompt": "Which activities are important in your life?"
+            },
+            {
+              "id": "10-interview-3",
+              "prompt": "Which activity do you like doing most? Why?"
+            },
+            {
+              "id": "10-interview-4",
+              "prompt": "Do you have enough time to do what you want to do? Why?"
+            },
+            {
+              "id": "10-interview-5",
+              "prompt": "Do you think you make good use of your leisure?"
+            },
+            {
+              "id": "10-interview-6",
+              "prompt": "Reporting back"
+            }
+          ],
+          "multiline": true
+        }
+      ]
+    },
+    "writing": {
+      "sources": [
+        {
+          "page": 118,
+          "top": 0.6901,
+          "bottom": 1,
+          "url": "/grade11/upper/unit10-writing-118.jpg",
+          "originalUrl": "/grade11/upper/page-118.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "10-plan",
+          "instruction": "Planning questions",
+          "instructionMy": "စာအုပ်ပါ လမ်းညွှန်မေးခွန်းများ",
+          "pages": [
+            118
+          ],
+          "items": [
+            {
+              "id": "10-plan-1",
+              "prompt": "Who is the mobile phone addict you know of?"
+            },
+            {
+              "id": "10-plan-2",
+              "prompt": "What signs of addiction does he / she have?"
+            },
+            {
+              "id": "10-plan-3",
+              "prompt": "How much time does he / she spend on his / her mobile?"
+            },
+            {
+              "id": "10-plan-4",
+              "prompt": "How does his / her addiction affect him / her and people around him / her?"
+            },
+            {
+              "id": "10-plan-5",
+              "prompt": "How should he / she be treated?"
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "10-composition",
+          "instruction": "Write a paragraph about ‘A mobile phone addict’, including answers to the following questions.",
+          "instructionMy": "စာအုပ်ပါ မေးခွန်းများ၏အဖြေများ ပါဝင်အောင် လက်ကိုင်ဖုန်းစွဲလမ်းသူတစ်ဦးအကြောင်း စာပိုဒ်ရေးပါ။",
+          "pages": [
+            118
+          ],
+          "items": [
+            {
+              "id": "10-composition-1",
+              "prompt": "Write a paragraph about ‘A mobile phone addict’, including answers to the following questions.",
+              "multiline": true,
+              "wordTarget": null
+            }
+          ],
+          "multiline": true
+        }
+      ]
+    }
+  }
+}

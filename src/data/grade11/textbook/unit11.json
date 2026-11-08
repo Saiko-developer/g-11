@@ -1,0 +1,798 @@
+{
+  "number": 11,
+  "title": "Dreams",
+  "mmTitle": "အိပ်မက်များ",
+  "sourceFiles": [
+    "13575. Grade (11) English New Syllabus-97-144.pdf"
+  ],
+  "skills": {
+    "reading": {
+      "sources": [
+        {
+          "page": 120,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-120.jpg",
+          "originalUrl": "/grade11/upper/page-120.jpg"
+        },
+        {
+          "page": 121,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-121.jpg",
+          "originalUrl": "/grade11/upper/page-121.jpg"
+        },
+        {
+          "page": 122,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-122.jpg",
+          "originalUrl": "/grade11/upper/page-122.jpg"
+        },
+        {
+          "page": 123,
+          "top": 0,
+          "bottom": 0.3881,
+          "url": "/grade11/upper/unit11-reading-123.jpg",
+          "originalUrl": "/grade11/upper/page-123.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "11-pre",
+          "instruction": "Pre-reading",
+          "instructionMy": "မဖတ်မီ ဆွေးနွေးရန်",
+          "pages": [
+            120
+          ],
+          "items": [
+            {
+              "id": "11-pre-1",
+              "prompt": "1. How often do you dream in your sleep?",
+              "promptMy": "အိပ်နေစဉ် မည်မျှမကြာခဏ အိပ်မက်မက်သနည်း။"
+            },
+            {
+              "id": "11-pre-2",
+              "prompt": "2. Recall an unforgettable dream you had, and tell a friend about it.",
+              "promptMy": "မမေ့နိုင်သော အိပ်မက်တစ်ခုကို ပြန်စဉ်းစား၍ သူငယ်ချင်းကို ပြောပြပါ။"
+            },
+            {
+              "id": "11-pre-3",
+              "prompt": "3. What do you dream of becoming?",
+              "promptMy": "အနာဂတ်တွင် မည်သူဖြစ်လာရန် စိတ်ကူးအိပ်မက်ရှိသနည်း။"
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "11-professions",
+          "instruction": "A. Complete the following table with what each professional creates. Then, add three more professionals and what they create. The first one is done for you as an example.",
+          "instructionMy": "ပညာရှင်တစ်ဦးစီ ဖန်တီးသောအရာဖြင့် ဇယားကို ဖြည့်ပါ။ ထို့နောက် အခြားပညာရှင်သုံးဦးနှင့် ၎င်းတို့၏ဖန်တီးမှုများကို ထပ်ဖြည့်ပါ။",
+          "pages": [
+            122
+          ],
+          "items": [
+            {
+              "id": "11-professions-1",
+              "prompt": "2. a sculptor"
+            },
+            {
+              "id": "11-professions-2",
+              "prompt": "3. a novelist"
+            },
+            {
+              "id": "11-professions-3",
+              "prompt": "4. a musician"
+            },
+            {
+              "id": "11-professions-4",
+              "prompt": "5. a playwright"
+            },
+            {
+              "id": "11-professions-5",
+              "prompt": "6. Professional — What they create"
+            },
+            {
+              "id": "11-professions-6",
+              "prompt": "7. Professional — What they create"
+            },
+            {
+              "id": "11-professions-7",
+              "prompt": "8. Professional — What they create"
+            }
+          ],
+          "table": true
+        },
+        {
+          "id": "11-quotations",
+          "instruction": "B. Match the quotations (1–8) in Column A with their implied meanings (a–h) in Column B.",
+          "instructionMy": "ကော်လံနှစ်ခုရှိ ကိုးကားချက်များနှင့် ၎င်းတို့၏ ဆိုလိုရင်းများကို တွဲပါ။",
+          "pages": [
+            122
+          ],
+          "items": [
+            {
+              "id": "11-quotations-1",
+              "prompt": "1. You are never too old to set another goal or to dream a new dream.",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h"
+              ]
+            },
+            {
+              "id": "11-quotations-2",
+              "prompt": "2. To accomplish great things, we must not only act, but also dream; not only plan, but also believe.",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h"
+              ]
+            },
+            {
+              "id": "11-quotations-3",
+              "prompt": "3. We must teach our children to dream with their eyes open.",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h"
+              ]
+            },
+            {
+              "id": "11-quotations-4",
+              "prompt": "4. All our dreams can come true if we have the courage to pursue them.",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h"
+              ]
+            },
+            {
+              "id": "11-quotations-5",
+              "prompt": "5. Everything starts as somebody’s daydream.",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h"
+              ]
+            },
+            {
+              "id": "11-quotations-6",
+              "prompt": "6. When we can’t dream any longer, we die.",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h"
+              ]
+            },
+            {
+              "id": "11-quotations-7",
+              "prompt": "7. All men of action are dreamers.",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h"
+              ]
+            },
+            {
+              "id": "11-quotations-8",
+              "prompt": "8. If there were dreams to sell, what would you buy?",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h"
+              ]
+            }
+          ],
+          "table": true
+        },
+        {
+          "id": "11-comprehension",
+          "instruction": "C. Give a full-sentence answer to each question below.",
+          "instructionMy": "အောက်ပါမေးခွန်းတစ်ခုစီကို ဝါကျပြည့်ဖြင့် ဖြေပါ။",
+          "pages": [
+            123
+          ],
+          "items": [
+            {
+              "id": "11-comprehension-1",
+              "prompt": "1. According to the passage, when do people dream?",
+              "promptMy": "စာပိုဒ်အရ လူများသည် မည်သည့်အချိန်တွင် အိပ်မက်မက်ကြသနည်း။"
+            },
+            {
+              "id": "11-comprehension-2",
+              "prompt": "2. How do you feel when you wake up after having a nightmare?",
+              "promptMy": "အိပ်မက်ဆိုးမက်ပြီး နိုးလာသောအခါ မည်သို့ ခံစားရသနည်း။"
+            },
+            {
+              "id": "11-comprehension-3",
+              "prompt": "3. Do you think that dreams are prophetic? Why or why not?",
+              "promptMy": "အိပ်မက်များသည် အနာဂတ်ကို ကြိုတင်ဟောနိုင်သည်ဟု ထင်သလား။ အဘယ်ကြောင့်နည်း။"
+            },
+            {
+              "id": "11-comprehension-4",
+              "prompt": "4. What does the underlined word ‘so’ in line 17 refer to?",
+              "promptMy": "စာကြောင်းရေ ၁၇ ရှိ မျဉ်းသားထားသော စကားလုံးသည် မည်သည့်အကြောင်းအရာကို ရည်ညွှန်းသနည်း။"
+            },
+            {
+              "id": "11-comprehension-5",
+              "prompt": "5. How was the moon regarded by the ancient Greeks and Romans?",
+              "promptMy": "ရှေးခေတ် ဂရိနှင့် ရောမလူမျိုးများက လကို မည်သို့ သတ်မှတ်ခဲ့ကြသနည်း။"
+            },
+            {
+              "id": "11-comprehension-6",
+              "prompt": "6. According to the author, how does reality begin?",
+              "promptMy": "စာရေးသူအဆိုအရ လက်တွေ့ဖြစ်လာခြင်းသည် မည်သို့ စတင်သနည်း။"
+            },
+            {
+              "id": "11-comprehension-7",
+              "prompt": "7. What do great inventions and discoveries begin with?",
+              "promptMy": "ကြီးကျယ်သော တီထွင်ဖန်တီးမှုနှင့် ရှာဖွေတွေ့ရှိမှုများသည် မည်သည့်အရာမှ စတင်သနည်း။"
+            },
+            {
+              "id": "11-comprehension-8",
+              "prompt": "8. How does humankind advance from age to age?",
+              "promptMy": "လူသားမျိုးနွယ်သည် ခေတ်အဆက်ဆက် မည်သို့ တိုးတက်လာသနည်း။"
+            },
+            {
+              "id": "11-comprehension-9",
+              "prompt": "9. Among the eight quotations, which one do you like most? Why?",
+              "promptMy": "ကိုးကားချက်ရှစ်ခုအနက် မည်သည့်အချက်ကို အနှစ်သက်ဆုံးဖြစ်သနည်း။ အဘယ်ကြောင့်နည်း။"
+            },
+            {
+              "id": "11-comprehension-10",
+              "prompt": "10. What would you buy if there were dreams to sell?",
+              "promptMy": "အိပ်မက်များကို ရောင်းချလျှင် မည်သည့်အိပ်မက်ကို ဝယ်မည်နည်း။"
+            }
+          ],
+          "multiline": true,
+          "structure": true
+        }
+      ]
+    },
+    "vocabulary": {
+      "sources": [
+        {
+          "page": 123,
+          "top": 0.3881,
+          "bottom": 1,
+          "url": "/grade11/upper/unit11-vocabulary-123.jpg",
+          "originalUrl": "/grade11/upper/page-123.jpg"
+        },
+        {
+          "page": 124,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-124.jpg",
+          "originalUrl": "/grade11/upper/page-124.jpg"
+        },
+        {
+          "page": 125,
+          "top": 0,
+          "bottom": 0.5929,
+          "url": "/grade11/upper/unit11-vocabulary-125.jpg",
+          "originalUrl": "/grade11/upper/page-125.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "11-reporting",
+          "instruction": "A. Choose the correct alternative for each sentence.",
+          "instructionMy": "ဝါကျတစ်ခုစီအတွက် မှန်ကန်သော စကားလုံးကို ရွေးပါ။",
+          "pages": [
+            124
+          ],
+          "items": [
+            {
+              "id": "11-reporting-1",
+              "prompt": "1. The skin-care product (claims / mentions) that it can prevent moisture loss."
+            },
+            {
+              "id": "11-reporting-2",
+              "prompt": "2. Researchers (claimed / proposed) new plans for dealing with climate change."
+            },
+            {
+              "id": "11-reporting-3",
+              "prompt": "3. People who are pessimistic have the habit of (describing / pointing out) the weaknesses of others."
+            },
+            {
+              "id": "11-reporting-4",
+              "prompt": "4. Many (argue / describe) that music can be used to maintain and promote a better quality of life for older people."
+            },
+            {
+              "id": "11-reporting-5",
+              "prompt": "5. The doctor (claimed / said) that the patient should take vitamin supplements."
+            }
+          ]
+        },
+        {
+          "id": "11-degree",
+          "instruction": "B. Rewrite the sentences choosing the correct degree adverbs.",
+          "instructionMy": "သင့်လျော်သော အတိုင်းအတာပြကြိယာဝိသေသနကို ရွေး၍ ဝါကျများကို ပြန်ရေးပါ။",
+          "pages": [
+            125
+          ],
+          "items": [
+            {
+              "id": "11-degree-1",
+              "prompt": "1. We (almost / most / scarcely) had time to think and had to act immediately in times of emergency."
+            },
+            {
+              "id": "11-degree-2",
+              "prompt": "2. It’s been (completely / fairly / nearly) three months since we last met."
+            },
+            {
+              "id": "11-degree-3",
+              "prompt": "3. He had been (almost / fairly / nearly) good at drawing when he was at school."
+            },
+            {
+              "id": "11-degree-4",
+              "prompt": "4. You need a / an (completely / extremely / slightly) powerful microscope to see tiny germs."
+            },
+            {
+              "id": "11-degree-5",
+              "prompt": "5. Repairing the computer would cost (almost / largely / pretty) as much as it would to buy a new one."
+            },
+            {
+              "id": "11-degree-6",
+              "prompt": "6. The Dream-K music band is (fairly / largely / nearly) composed of young people."
+            },
+            {
+              "id": "11-degree-7",
+              "prompt": "7. He had (completely / fairly / largely) changed — I didn’t recognize him at all."
+            },
+            {
+              "id": "11-degree-8",
+              "prompt": "8. You need to book (almost / pretty / scarcely) early to get a good seat for the music concert."
+            },
+            {
+              "id": "11-degree-9",
+              "prompt": "9. The food Ni Ni ate this morning made her feel (almost / scarcely / slightly) sick."
+            },
+            {
+              "id": "11-degree-10",
+              "prompt": "10. The train was (completely / nearly / rather) crowded and we were a bit uncomfortable."
+            }
+          ],
+          "multiline": true
+        }
+      ]
+    },
+    "grammar": {
+      "sources": [
+        {
+          "page": 125,
+          "top": 0.5929,
+          "bottom": 1,
+          "url": "/grade11/upper/unit11-grammar-125.jpg",
+          "originalUrl": "/grade11/upper/page-125.jpg"
+        },
+        {
+          "page": 126,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-126.jpg",
+          "originalUrl": "/grade11/upper/page-126.jpg"
+        },
+        {
+          "page": 127,
+          "top": 0,
+          "bottom": 0.7375,
+          "url": "/grade11/upper/unit11-grammar-127.jpg",
+          "originalUrl": "/grade11/upper/page-127.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "11-emphasis",
+          "instruction": "A. Rewrite the following sentences using ‘It is’ / ‘It was’ emphasizing the underlined words as in the example.",
+          "instructionMy": "ဥပမာအတိုင်း စာအုပ်တွင် မျဉ်းသားထားသောအပိုင်းကို အလေးပေး၍ သတ်မှတ်ပုံစံဖြင့် ဝါကျများကို ပြန်ရေးပါ။",
+          "pages": [
+            125,
+            126
+          ],
+          "items": [
+            {
+              "id": "11-emphasis-1",
+              "prompt": "1. Sleep deprivation affects our overall health and well-being."
+            },
+            {
+              "id": "11-emphasis-2",
+              "prompt": "2. Darwin attempted to explain the theory of evolution."
+            },
+            {
+              "id": "11-emphasis-3",
+              "prompt": "3. I began an exercise habit with taking a daily short walk."
+            },
+            {
+              "id": "11-emphasis-4",
+              "prompt": "4. Nyo Nyo sent a complaint letter to the manager of the supermarket yesterday."
+            },
+            {
+              "id": "11-emphasis-5",
+              "prompt": "5. The villagers found a huge python in the deep forest."
+            },
+            {
+              "id": "11-emphasis-6",
+              "prompt": "6. Self-confidence enables us to perform a task well."
+            },
+            {
+              "id": "11-emphasis-7",
+              "prompt": "7. The number of wildlife has decreased due to the loss of their natural habitats."
+            },
+            {
+              "id": "11-emphasis-8",
+              "prompt": "8. The kitchen of the school canteen is regularly inspected for cleanliness."
+            },
+            {
+              "id": "11-emphasis-9",
+              "prompt": "9. A healthy diet creates body resistance to diseases."
+            },
+            {
+              "id": "11-emphasis-10",
+              "prompt": "10. Regular physical activity is important for losing weight and maintaining good health."
+            }
+          ],
+          "multiline": true,
+          "sourceRequired": true
+        },
+        {
+          "id": "11-agree",
+          "instruction": "B. Agree with the following statements using ‘So ... I’ or ‘Neither ... I’ as in the example.",
+          "instructionMy": "ဥပမာအတိုင်း သတ်မှတ်ထားသော ထောက်ခံသဘောတူပုံစံကို သုံး၍ ပြန်ဖြေပါ။",
+          "pages": [
+            126,
+            127
+          ],
+          "items": [
+            {
+              "id": "11-agree-1",
+              "prompt": "1. I didn’t bring my identity card."
+            },
+            {
+              "id": "11-agree-2",
+              "prompt": "2. My friends are passionate about volunteering in charity groups."
+            },
+            {
+              "id": "11-agree-3",
+              "prompt": "3. Many teens aren’t interested in doing house work."
+            },
+            {
+              "id": "11-agree-4",
+              "prompt": "4. I’ll be at the meeting tomorrow."
+            },
+            {
+              "id": "11-agree-5",
+              "prompt": "5. My mother doesn’t like the cold weather."
+            },
+            {
+              "id": "11-agree-6",
+              "prompt": "6. Thuzar can’t play any musical instrument."
+            },
+            {
+              "id": "11-agree-7",
+              "prompt": "7. I’m allergic to seafood."
+            },
+            {
+              "id": "11-agree-8",
+              "prompt": "8. I can’t explain this difficult lesson to you."
+            },
+            {
+              "id": "11-agree-9",
+              "prompt": "9. Nyi Nyi doesn’t think the water is clean."
+            },
+            {
+              "id": "11-agree-10",
+              "prompt": "10. I think the food is very healthy."
+            }
+          ]
+        },
+        {
+          "id": "11-similar",
+          "instruction": "C. Write two sentences for each statement. Begin the second sentence with ‘So’ or ‘Neither’ as in the example.",
+          "instructionMy": "အဆိုတစ်ခုစီအတွက် ဝါကျနှစ်ကြောင်းရေးပြီး ဒုတိယဝါကျကို ဥပမာပါ သတ်မှတ်စကားလုံးဖြင့် စပါ။",
+          "pages": [
+            127
+          ],
+          "items": [
+            {
+              "id": "11-similar-1",
+              "prompt": "1. Kind words and good deeds can bring great happiness."
+            },
+            {
+              "id": "11-similar-2",
+              "prompt": "2. My sister and I were not born in Yangon."
+            },
+            {
+              "id": "11-similar-3",
+              "prompt": "3. Nay Chi and Thuzar like collecting coins."
+            },
+            {
+              "id": "11-similar-4",
+              "prompt": "4. Arkar and Sithu haven’t finished their homework yet."
+            },
+            {
+              "id": "11-similar-5",
+              "prompt": "5. Until now, cancer and diabetes are incurable diseases."
+            },
+            {
+              "id": "11-similar-6",
+              "prompt": "6. Zaw Zaw and his friends weren’t sure that they had the time to complete the project."
+            },
+            {
+              "id": "11-similar-7",
+              "prompt": "7. The teacher and his students will never forget the enjoyable excursion."
+            },
+            {
+              "id": "11-similar-8",
+              "prompt": "8. Thailand and Laos are neighbouring countries of Myanmar."
+            },
+            {
+              "id": "11-similar-9",
+              "prompt": "9. Sleep deprivation and over-eating can cause a higher risk of obesity."
+            },
+            {
+              "id": "11-similar-10",
+              "prompt": "10. Su Su and Zin Zin actively participated in the extra-curricular activities of the school."
+            }
+          ],
+          "multiline": true
+        }
+      ]
+    },
+    "listening": {
+      "sources": [
+        {
+          "page": 127,
+          "top": 0.7375,
+          "bottom": 1,
+          "url": "/grade11/upper/unit11-listening-127.jpg",
+          "originalUrl": "/grade11/upper/page-127.jpg"
+        },
+        {
+          "page": 128,
+          "top": 0,
+          "bottom": 0.288,
+          "url": "/grade11/upper/unit11-listening-128.jpg",
+          "originalUrl": "/grade11/upper/page-128.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "11-listen",
+          "instruction": "A. Listen to a teacher talking about ‘The importance of having big dreams in life’ and complete the statements.",
+          "instructionMy": "ဘဝတွင် ကြီးမားသောအိပ်မက်ရှိခြင်း၏ အရေးပါမှုအကြောင်း ဆရာတစ်ဦးပြောကြားသည်ကို နားထောင်ပြီး အဆိုများကို ဖြည့်ပါ။",
+          "pages": [
+            127,
+            128
+          ],
+          "items": [
+            {
+              "id": "11-listen-1",
+              "prompt": "1. A big dream is ______ or an ambition or something you often think about."
+            },
+            {
+              "id": "11-listen-2",
+              "prompt": "2. According to the teacher, the size of ______ is measured by the size of your dream."
+            },
+            {
+              "id": "11-listen-3",
+              "prompt": "3. A big dream is a vision that both scares and ______ us at the same time."
+            },
+            {
+              "id": "11-listen-4",
+              "prompt": "4. A big dream brings out our passion, imagination, creativity and a ______ to take risks."
+            },
+            {
+              "id": "11-listen-5",
+              "prompt": "5. All of us have ______ that we want to fulfil in life."
+            },
+            {
+              "id": "11-listen-6",
+              "prompt": "6. We must allow ourselves ______ to dream big dreams."
+            },
+            {
+              "id": "11-listen-7",
+              "prompt": "7. Whatever our dream is, we should own it and be ______ it."
+            },
+            {
+              "id": "11-listen-8",
+              "prompt": "8. We must keep working on our plans and implement them ______."
+            },
+            {
+              "id": "11-listen-9",
+              "prompt": "9. According to Walt Disney, all our dreams can come true if we have the ______ to pursue them."
+            },
+            {
+              "id": "11-listen-10",
+              "prompt": "10. Our dream doesn’t happen ______, but, eventually it will happen."
+            }
+          ],
+          "audio": true
+        }
+      ]
+    },
+    "speaking": {
+      "sources": [
+        {
+          "page": 128,
+          "top": 0.288,
+          "bottom": 1,
+          "url": "/grade11/upper/unit11-speaking-128.jpg",
+          "originalUrl": "/grade11/upper/page-128.jpg"
+        },
+        {
+          "page": 129,
+          "top": 0,
+          "bottom": 0.4416,
+          "url": "/grade11/upper/unit11-speaking-129.jpg",
+          "originalUrl": "/grade11/upper/page-129.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "11-dream-job",
+          "instruction": "B. Think of your dream job considering the following points. Then, present it to the class.",
+          "instructionMy": "စာအုပ်ပါအချက်များကို စဉ်းစား၍ မိမိအိပ်မက်အလုပ်အကိုင်အကြောင်း အတန်းတွင် တင်ပြပါ။",
+          "pages": [
+            128
+          ],
+          "items": [
+            {
+              "id": "11-dream-job-1",
+              "prompt": "What your dream job is"
+            },
+            {
+              "id": "11-dream-job-2",
+              "prompt": "Why you wish to have that job — any special reasons behind your dream job and who your role model is (if any)"
+            },
+            {
+              "id": "11-dream-job-3",
+              "prompt": "What knowledge and skills you need in order to get your dream job"
+            },
+            {
+              "id": "11-dream-job-4",
+              "prompt": "What you are doing to fulfil your dream"
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "11-compare",
+          "instruction": "C. In groups, compare your dream jobs. Which job is the most common and the most unusual in your group? Tell the class about it.",
+          "instructionMy": "အဖွဲ့လိုက် မိမိတို့၏အိပ်မက်အလုပ်များကို နှိုင်းယှဉ်၍ အများဆုံးရွေးသောအလုပ်နှင့် အထူးခြားဆုံးအလုပ်ကို အတန်းတွင် ပြောပြပါ။",
+          "pages": [
+            129
+          ],
+          "items": [
+            {
+              "id": "11-compare-1",
+              "prompt": "The most common dream job"
+            },
+            {
+              "id": "11-compare-2",
+              "prompt": "The most unusual dream job"
+            }
+          ],
+          "multiline": true
+        }
+      ]
+    },
+    "writing": {
+      "sources": [
+        {
+          "page": 129,
+          "top": 0.4416,
+          "bottom": 1,
+          "url": "/grade11/upper/unit11-writing-129.jpg",
+          "originalUrl": "/grade11/upper/page-129.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "11-plan",
+          "instruction": "Planning questions",
+          "instructionMy": "စာအုပ်ပါ လမ်းညွှန်မေးခွန်းများ",
+          "pages": [
+            129
+          ],
+          "items": [
+            {
+              "id": "11-plan-1",
+              "prompt": "What kind of invention is it?"
+            },
+            {
+              "id": "11-plan-2",
+              "prompt": "What is it made of?"
+            },
+            {
+              "id": "11-plan-3",
+              "prompt": "Who are the users you have in mind?"
+            },
+            {
+              "id": "11-plan-4",
+              "prompt": "How would you name it?"
+            },
+            {
+              "id": "11-plan-5",
+              "prompt": "How can it be used?"
+            },
+            {
+              "id": "11-plan-6",
+              "prompt": "How much will it cost?"
+            },
+            {
+              "id": "11-plan-7",
+              "prompt": "Is it cost-effective (Is it effective without costing a lot of money?)?"
+            },
+            {
+              "id": "11-plan-8",
+              "prompt": "What is the prospect (the possibility that it will have in the future) of your invention?"
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "11-composition",
+          "instruction": "In groups, think of a dream invention and write a description of it in about 200 words using the following questions.",
+          "instructionMy": "အဖွဲ့လိုက် စိတ်ကူးထဲမှ တီထွင်မှုတစ်ခုကို စဉ်းစား၍ စာအုပ်ပါမေးခွန်းများအတိုင်း စာလုံးရေ ၂၀၀ ခန့်ဖြင့် ဖော်ပြရေးသားပါ။",
+          "pages": [
+            129
+          ],
+          "items": [
+            {
+              "id": "11-composition-1",
+              "prompt": "In groups, think of a dream invention and write a description of it in about 200 words using the following questions.",
+              "multiline": true,
+              "wordTarget": [
+                200,
+                200
+              ]
+            }
+          ],
+          "multiline": true
+        }
+      ]
+    }
+  }
+}

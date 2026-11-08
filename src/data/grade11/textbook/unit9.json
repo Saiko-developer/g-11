@@ -1,0 +1,537 @@
+{
+  "number": 9,
+  "title": "Stress, and How to Beat It",
+  "mmTitle": "စိတ်ဖိစီးမှုနှင့် ၎င်းကို ကျော်လွှားနည်း",
+  "sourceFiles": [
+    "13575. Grade (11) English New Syllabus-97-144.pdf"
+  ],
+  "skills": {
+    "reading": {
+      "sources": [
+        {
+          "page": 100,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-100.jpg",
+          "originalUrl": "/grade11/upper/page-100.jpg"
+        },
+        {
+          "page": 101,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-101.jpg",
+          "originalUrl": "/grade11/upper/page-101.jpg"
+        },
+        {
+          "page": 102,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-102.jpg",
+          "originalUrl": "/grade11/upper/page-102.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "9-pre",
+          "instruction": "Pre-reading",
+          "instructionMy": "မဖတ်မီ ဆွေးနွေးရန်",
+          "pages": [
+            100
+          ],
+          "items": [
+            {
+              "id": "9-pre-1",
+              "prompt": "1. How do you feel when the deadline for the assignment is tomorrow but you haven’t finished it yet?",
+              "promptMy": "တာဝန်ပေးစာတင်ရမည့် နောက်ဆုံးရက်က မနက်ဖြန်ဖြစ်သော်လည်း မပြီးသေးသောအခါ မည်သို့ခံစားရသနည်း။"
+            },
+            {
+              "id": "9-pre-2",
+              "prompt": "2. When do you usually feel stressed?",
+              "promptMy": "မည်သည့်အချိန်တွင် စိတ်ဖိစီးလေ့ရှိသနည်း။"
+            },
+            {
+              "id": "9-pre-3",
+              "prompt": "3. How do you usually react to stress?",
+              "promptMy": "စိတ်ဖိစီးမှုကို မည်သို့ တုံ့ပြန်လေ့ရှိသနည်း။"
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "9-comprehension",
+          "instruction": "A. Give a full-sentence answer to each question below.",
+          "instructionMy": "အောက်ပါမေးခွန်းတစ်ခုစီကို ဝါကျပြည့်ဖြင့် ဖြေပါ။",
+          "pages": [
+            102
+          ],
+          "items": [
+            {
+              "id": "9-comprehension-1",
+              "prompt": "1. List various forms of stress.",
+              "promptMy": "စိတ်ဖိစီးမှု၏ ပုံစံအမျိုးမျိုးကို စာရင်းပြုစုပါ။"
+            },
+            {
+              "id": "9-comprehension-2",
+              "prompt": "2. Why is it likely to have infections like colds and flu when we feel stressed?",
+              "promptMy": "စိတ်ဖိစီးသောအခါ အအေးမိနှင့် တုပ်ကွေးကဲ့သို့ ကူးစက်ရောဂါများ အဘယ်ကြောင့် ပိုဖြစ်လွယ်သနည်း။"
+            },
+            {
+              "id": "9-comprehension-3",
+              "prompt": "3. What happens when we laugh?",
+              "promptMy": "ရယ်မောသောအခါ မည်သည့်အရာများ ဖြစ်ပေါ်သနည်း။"
+            },
+            {
+              "id": "9-comprehension-4",
+              "prompt": "4. How can we remove bitter unpleasant feelings?",
+              "promptMy": "ခါးသီးမနှစ်မြို့ဖွယ် ခံစားချက်များကို မည်သို့ ဖယ်ရှားနိုင်သနည်း။"
+            },
+            {
+              "id": "9-comprehension-5",
+              "prompt": "5. What can we experience by practising yoga or reciting a short prayer?",
+              "promptMy": "ယောဂလေ့ကျင့်ခြင်း သို့မဟုတ် ဆုတောင်းစာတိုရွတ်ဆိုခြင်းဖြင့် မည်သည့်အတွေ့အကြုံ ရနိုင်သနည်း။"
+            },
+            {
+              "id": "9-comprehension-6",
+              "prompt": "6. Among the seven ways recommended in the passage to reduce stress, which one do you like best? Why?",
+              "promptMy": "စာပိုဒ်တွင် အကြံပြုထားသော စိတ်ဖိစီးမှုလျှော့ချနည်း ခုနစ်မျိုးအနက် မည်သည့်နည်းကို အနှစ်သက်ဆုံးဖြစ်သနည်း။ အဘယ်ကြောင့်နည်း။"
+            },
+            {
+              "id": "9-comprehension-7",
+              "prompt": "7. State a cause of stress that is not mentioned in the passage.",
+              "promptMy": "စာပိုဒ်တွင် မဖော်ပြထားသော စိတ်ဖိစီးမှုအကြောင်းရင်းတစ်ခုကို ဖော်ပြပါ။"
+            },
+            {
+              "id": "9-comprehension-8",
+              "prompt": "8. State three more ways of relieving stress.",
+              "promptMy": "စိတ်ဖိစီးမှုသက်သာစေသော အခြားနည်းလမ်းသုံးမျိုးကို ဖော်ပြပါ။"
+            },
+            {
+              "id": "9-comprehension-9",
+              "prompt": "9. What do you usually do when you feel stressed?",
+              "promptMy": "စိတ်ဖိစီးသောအခါ မည်သည့်အရာကို လုပ်လေ့ရှိသနည်း။"
+            }
+          ],
+          "multiline": true,
+          "structure": true
+        },
+        {
+          "id": "9-expressions",
+          "instruction": "B. Complete each blank with an appropriate expression.",
+          "instructionMy": "ကွက်လပ်တစ်ခုစီတွင် သင့်လျော်သော အသုံးအနှုန်းကို ဖြည့်ပါ။",
+          "pages": [
+            102
+          ],
+          "items": [
+            {
+              "id": "9-expressions-1",
+              "prompt": "1. If you ______ for a few minutes before bedtime, you may fall asleep easily."
+            },
+            {
+              "id": "9-expressions-2",
+              "prompt": "2. After the earthquake, the victims were found ______ under the big table."
+            },
+            {
+              "id": "9-expressions-3",
+              "prompt": "3. We should learn to accept criticism without ______."
+            },
+            {
+              "id": "9-expressions-4",
+              "prompt": "4. The two friends sometimes find time to meet up to ______ and see a film."
+            },
+            {
+              "id": "9-expressions-5",
+              "prompt": "5. The accident left him paralysed, but after exercising, he could ______ his legs."
+            },
+            {
+              "id": "9-expressions-6",
+              "prompt": "6. She always responds to things calmly, but now she is ______ by stress."
+            },
+            {
+              "id": "9-expressions-7",
+              "prompt": "7. After a long tiring day, I took a warm bath to ______ myself."
+            },
+            {
+              "id": "9-expressions-8",
+              "prompt": "8. The couple could finally find a way to ______."
+            },
+            {
+              "id": "9-expressions-9",
+              "prompt": "9. Ko Min wrote his report the whole night to ______."
+            },
+            {
+              "id": "9-expressions-10",
+              "prompt": "10. You simply made a mistake; you don’t need to ______."
+            }
+          ]
+        }
+      ]
+    },
+    "vocabulary": {
+      "sources": [
+        {
+          "page": 103,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-103.jpg",
+          "originalUrl": "/grade11/upper/page-103.jpg"
+        },
+        {
+          "page": 104,
+          "top": 0,
+          "bottom": 0.2116,
+          "url": "/grade11/upper/unit9-vocabulary-104.jpg",
+          "originalUrl": "/grade11/upper/page-104.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "9-confused",
+          "instruction": "Underline the correct alternative.",
+          "instructionMy": "မှန်ကန်သော စကားလုံးကို ရွေးပါ။",
+          "pages": [
+            103,
+            104
+          ],
+          "items": [
+            {
+              "id": "9-confused-1",
+              "prompt": "1. One particular accident / incident that sticks in my mind is my first day at school."
+            },
+            {
+              "id": "9-confused-2",
+              "prompt": "2. The museum is having a perspective / retrospective exhibit of the artist’s early works."
+            },
+            {
+              "id": "9-confused-3",
+              "prompt": "3. We are conscientious / conscious of the generation gap problems between youths and their parents."
+            },
+            {
+              "id": "9-confused-4",
+              "prompt": "4. I didn’t mean to break it — it was an accident / incident."
+            },
+            {
+              "id": "9-confused-5",
+              "prompt": "5. The drought may seriously affect / effect the central part of Myanmar."
+            },
+            {
+              "id": "9-confused-6",
+              "prompt": "6. We drove along the muddy lane / line to reach the farmhouse."
+            },
+            {
+              "id": "9-confused-7",
+              "prompt": "7. Today’s youths should be more conscientious / conscious about their own learning."
+            },
+            {
+              "id": "9-confused-8",
+              "prompt": "8. Modern farming methods can have an adverse affect / effect on the environment."
+            },
+            {
+              "id": "9-confused-9",
+              "prompt": "9. The train was delayed because a tree had fallen across the lane / line."
+            },
+            {
+              "id": "9-confused-10",
+              "prompt": "10. Let’s look at the traffic congestion problem from a different perspective / retrospective."
+            }
+          ]
+        }
+      ]
+    },
+    "grammar": {
+      "sources": [
+        {
+          "page": 104,
+          "top": 0.2116,
+          "bottom": 1,
+          "url": "/grade11/upper/unit9-grammar-104.jpg",
+          "originalUrl": "/grade11/upper/page-104.jpg"
+        },
+        {
+          "page": 105,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-105.jpg",
+          "originalUrl": "/grade11/upper/page-105.jpg"
+        },
+        {
+          "page": 106,
+          "top": 0,
+          "bottom": 0.2027,
+          "url": "/grade11/upper/unit9-grammar-106.jpg",
+          "originalUrl": "/grade11/upper/page-106.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "9-future",
+          "instruction": "Complete each sentence with the correct future form of the verb given in brackets.",
+          "instructionMy": "ကွင်းအတွင်းရှိ ကြိယာကို သင့်လျော်သော အနာဂတ်ကာလပုံစံဖြင့် ပြောင်းပြီး ဝါကျတစ်ခုစီကို ဖြည့်ပါ။",
+          "pages": [
+            105,
+            106
+          ],
+          "items": [
+            {
+              "id": "9-future-1",
+              "prompt": "1. Can you wait a few minutes? I ______ (drive) you to the airport."
+            },
+            {
+              "id": "9-future-2",
+              "prompt": "2. I’ve sold my bike because I ______ (buy) a car."
+            },
+            {
+              "id": "9-future-3",
+              "prompt": "3. Sorry, I made a mistake. I promise that I ______ (not, do) it again."
+            },
+            {
+              "id": "9-future-4",
+              "prompt": "4. Look at those boys playing football! They ______ (break) the window."
+            },
+            {
+              "id": "9-future-5",
+              "prompt": "5. ______ (you, have) your birthday party this Saturday?"
+            },
+            {
+              "id": "9-future-6",
+              "prompt": "6. This time next week, I ______ (sunbathe) in Bali."
+            },
+            {
+              "id": "9-future-7",
+              "prompt": "7. ______ (you, go) shopping? We’ve run out of milk."
+            },
+            {
+              "id": "9-future-8",
+              "prompt": "8. Look at the fuel gauge. We ______ (run out) of petrol before we reach home."
+            },
+            {
+              "id": "9-future-9",
+              "prompt": "9. I don’t think I ______ (see) Thuzar at the concert tonight."
+            },
+            {
+              "id": "9-future-10",
+              "prompt": "10. ______ (you, water) the plants while I’m away?"
+            },
+            {
+              "id": "9-future-11",
+              "prompt": "11. We ______ (hold) a team-building meeting in our school by this time next Monday."
+            },
+            {
+              "id": "9-future-12",
+              "prompt": "12. I think the hotel ______ (provide) a buffet breakfast."
+            },
+            {
+              "id": "9-future-13",
+              "prompt": "13. After checking the schedule, I ______ (email) it to you straight away."
+            },
+            {
+              "id": "9-future-14",
+              "prompt": "14. Do you think you ______ (still work) here in five years’ time?"
+            },
+            {
+              "id": "9-future-15",
+              "prompt": "15. If you tell them the truth, they ______ (forgive) you."
+            }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "sources": [
+        {
+          "page": 106,
+          "top": 0.2027,
+          "bottom": 0.7116,
+          "url": "/grade11/upper/unit9-listening-106.jpg",
+          "originalUrl": "/grade11/upper/page-106.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "9-main",
+          "instruction": "A. Listen to the talk given by a psychologist and tick the main idea of the talk.",
+          "instructionMy": "စိတ်ပညာရှင်၏ ဟောပြောချက်ကို နားထောင်ပြီး အဓိကအကြောင်းအရာကို ရွေးပါ။",
+          "pages": [
+            106
+          ],
+          "items": [
+            {
+              "id": "9-main-1",
+              "prompt": "Main idea",
+              "choices": [
+                "(a) Music has soothing power.",
+                "(b) Listening to music is good for stress management.",
+                "(c) We should listen to any kind of music at any time."
+              ]
+            }
+          ],
+          "audio": true
+        },
+        {
+          "id": "9-statements",
+          "instruction": "B. Tick the statements that the psychologist makes.",
+          "instructionMy": "စိတ်ပညာရှင် ပြောကြားသော အဆိုများကို အမှန်ခြစ်ပါ။",
+          "pages": [
+            106
+          ],
+          "items": [
+            {
+              "id": "9-statements-1",
+              "prompt": "1. There is no link between our emotions and music.",
+              "choices": [
+                "Mentioned",
+                "Not mentioned"
+              ]
+            },
+            {
+              "id": "9-statements-2",
+              "prompt": "2. In order to reduce stress, slow and quiet music is better than other types of music.",
+              "choices": [
+                "Mentioned",
+                "Not mentioned"
+              ]
+            },
+            {
+              "id": "9-statements-3",
+              "prompt": "3. You don’t need to listen to classical music if you don’t like it.",
+              "choices": [
+                "Mentioned",
+                "Not mentioned"
+              ]
+            },
+            {
+              "id": "9-statements-4",
+              "prompt": "4. You shouldn’t listen to music if you are extremely stressed.",
+              "choices": [
+                "Mentioned",
+                "Not mentioned"
+              ]
+            },
+            {
+              "id": "9-statements-5",
+              "prompt": "5. Though you are busy, you can listen to music while driving, taking a shower or walking the dog.",
+              "choices": [
+                "Mentioned",
+                "Not mentioned"
+              ]
+            },
+            {
+              "id": "9-statements-6",
+              "prompt": "6. If you are feeling stressed, you shouldn’t sing.",
+              "choices": [
+                "Mentioned",
+                "Not mentioned"
+              ]
+            },
+            {
+              "id": "9-statements-7",
+              "prompt": "7. You can sleep well if you listen to music at bedtime.",
+              "choices": [
+                "Mentioned",
+                "Not mentioned"
+              ]
+            }
+          ],
+          "audio": true
+        }
+      ]
+    },
+    "speaking": {
+      "sources": [
+        {
+          "page": 106,
+          "top": 0.7116,
+          "bottom": 1,
+          "url": "/grade11/upper/unit9-speaking-106.jpg",
+          "originalUrl": "/grade11/upper/page-106.jpg"
+        },
+        {
+          "page": 107,
+          "top": 0,
+          "bottom": 0.6367,
+          "url": "/grade11/upper/unit9-speaking-107.jpg",
+          "originalUrl": "/grade11/upper/page-107.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "9-advice",
+          "instruction": "C. Study the dialogue and underline the language expressions used to ask for and give advice.",
+          "instructionMy": "စကားပြောကို လေ့လာ၍ အကြံဉာဏ်တောင်းခြင်းနှင့် ပေးခြင်းအတွက် သုံးထားသော အသုံးအနှုန်းများကို ရေးမှတ်ပါ။",
+          "pages": [
+            106,
+            107
+          ],
+          "items": [
+            {
+              "id": "9-advice-1",
+              "prompt": "Asking for advice"
+            },
+            {
+              "id": "9-advice-2",
+              "prompt": "Giving advice"
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "9-dialogue",
+          "instruction": "E. In pairs, choose TWO of the problems below and write a dialogue as in Exercise C.",
+          "instructionMy": "နှစ်ယောက်တစ်တွဲစီ စာအုပ်ပါပြဿနာများထဲမှ နှစ်ခုရွေးပြီး လေ့ကျင့်ခန်းတွင် ပြထားသည့်အတိုင်း စကားပြောရေးပါ။",
+          "pages": [
+            107
+          ],
+          "items": [
+            {
+              "id": "9-dialogue-1",
+              "prompt": "Dialogue 1"
+            },
+            {
+              "id": "9-dialogue-2",
+              "prompt": "Dialogue 2"
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "9-roleplay",
+          "instruction": "F. Practise the dialogue and roleplay it.",
+          "instructionMy": "စကားပြောကို လေ့ကျင့်၍ အခန်းကဏ္ဍအလိုက် သရုပ်ဆောင်ပြောပါ။",
+          "pages": [
+            107
+          ],
+          "items": []
+        }
+      ]
+    },
+    "writing": {
+      "sources": [
+        {
+          "page": 107,
+          "top": 0.6367,
+          "bottom": 1,
+          "url": "/grade11/upper/unit9-writing-107.jpg",
+          "originalUrl": "/grade11/upper/page-107.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "9-composition",
+          "instruction": "In pairs, read the following letter and write a reply.",
+          "instructionMy": "နှစ်ယောက်တစ်တွဲစီ စာအုပ်ပါစာကို ဖတ်ပြီး ပြန်စာရေးပါ။",
+          "pages": [
+            107
+          ],
+          "items": [
+            {
+              "id": "9-composition-1",
+              "prompt": "In pairs, read the following letter and write a reply.",
+              "multiline": true,
+              "wordTarget": null
+            }
+          ],
+          "multiline": true
+        }
+      ]
+    }
+  }
+}

@@ -1,3 +1,5 @@
+import { Grade11UpperLesson } from "./Grade11UpperLesson";
+import { isUpperUnit } from "@/lib/grade11Upper";
 import { Grade11Unit5Lesson, Grade11Unit6Lesson } from "@/components/grade11/Grade11TravelLesson";
 import { Grade11Unit2Lesson } from "@/components/grade11/Grade11Unit2Lesson";
 import { Grade11Unit4Lesson } from "@/components/grade11/Grade11Unit4Lesson";
@@ -66,7 +68,7 @@ const OWL_NOTE: Record<G11SkillKind, string> = {
 };
 
 export function hasGrade11Text(unit: number) {
-  return [4, 5, 6].includes(unit) || unit in UNITS;
+  return isUpperUnit(unit) || [4, 5, 6].includes(unit) || unit in UNITS;
 }
 
 function split(blocks: Block[]) {
@@ -81,6 +83,7 @@ function split(blocks: Block[]) {
 }
 
 export function Grade11TextLesson({ unit, kind }: { unit: number; kind: G11SkillKind }) {
+  if (isUpperUnit(unit)) return <Grade11UpperLesson unit={unit} kind={kind} />;
   if (unit === 5) return <Grade11Unit5Lesson key={kind} kind={kind} />;
   if (unit === 6) return <Grade11Unit6Lesson key={kind} kind={kind} />;
   if (unit === 2) return <Grade11Unit2Lesson key={kind} kind={kind} />;

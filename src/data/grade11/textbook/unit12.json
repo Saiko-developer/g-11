@@ -1,0 +1,1283 @@
+{
+  "number": 12,
+  "title": "Natural Disasters",
+  "mmTitle": "သဘာဝဘေးအန္တရာယ်များ",
+  "sourceFiles": [
+    "13575. Grade (11) English New Syllabus-97-144.pdf"
+  ],
+  "skills": {
+    "reading": {
+      "sources": [
+        {
+          "page": 131,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-131.jpg",
+          "originalUrl": "/grade11/upper/page-131.jpg"
+        },
+        {
+          "page": 132,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-132.jpg",
+          "originalUrl": "/grade11/upper/page-132.jpg"
+        },
+        {
+          "page": 133,
+          "top": 0,
+          "bottom": 0.7494,
+          "url": "/grade11/upper/unit12-reading-133.jpg",
+          "originalUrl": "/grade11/upper/page-133.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "12-pre",
+          "instruction": "Pre-reading",
+          "instructionMy": "မဖတ်မီ ဆွေးနွေးရန်",
+          "pages": [
+            131
+          ],
+          "items": [
+            {
+              "id": "12-pre-1",
+              "prompt": "1. Have you ever watched or read any news about natural disasters?",
+              "promptMy": "သဘာဝဘေးအန္တရာယ်သတင်းများကို ကြည့်ဖူး သို့မဟုတ် ဖတ်ဖူးသလား။"
+            },
+            {
+              "id": "12-pre-2",
+              "prompt": "2. What kind of disaster was it?",
+              "promptMy": "မည်သည့်ဘေးအန္တရာယ်အမျိုးအစား ဖြစ်သနည်း။"
+            },
+            {
+              "id": "12-pre-3",
+              "prompt": "3. When and where did it happen?",
+              "promptMy": "မည်သည့်အချိန်နှင့် မည်သည့်နေရာတွင် ဖြစ်ပွားခဲ့သနည်း။"
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "12-categories",
+          "instruction": "A. Put each of the disasters under the respective category. Then, add one more of your own to each category.",
+          "instructionMy": "ဘေးအန္တရာယ်များကို သက်ဆိုင်ရာအမျိုးအစားအောက်တွင် ထည့်ပြီး အမျိုးအစားတစ်ခုစီအတွက် အခြားဥပမာတစ်ခု ထပ်ဖြည့်ပါ။",
+          "pages": [
+            133
+          ],
+          "items": [
+            {
+              "id": "12-categories-1",
+              "prompt": "Geophysical disaster",
+              "multiline": true
+            },
+            {
+              "id": "12-categories-2",
+              "prompt": "Hydrological disaster",
+              "multiline": true
+            },
+            {
+              "id": "12-categories-3",
+              "prompt": "Climatological disaster",
+              "multiline": true
+            },
+            {
+              "id": "12-categories-4",
+              "prompt": "Meteorological disaster",
+              "multiline": true
+            },
+            {
+              "id": "12-categories-5",
+              "prompt": "Biological disaster",
+              "multiline": true
+            }
+          ],
+          "table": true
+        },
+        {
+          "id": "12-comprehension",
+          "instruction": "B. Give a full-sentence answer to each question below.",
+          "instructionMy": "အောက်ပါမေးခွန်းတစ်ခုစီကို ဝါကျပြည့်ဖြင့် ဖြေပါ။",
+          "pages": [
+            133
+          ],
+          "items": [
+            {
+              "id": "12-comprehension-1",
+              "prompt": "1. How do natural disasters affect the world?",
+              "promptMy": "သဘာဝဘေးအန္တရာယ်များသည် ကမ္ဘာကြီးကို မည်သို့ သက်ရောက်သနည်း။"
+            },
+            {
+              "id": "12-comprehension-2",
+              "prompt": "2. What is the difference between weak and strong earthquakes?",
+              "promptMy": "အားနည်းသောငလျင်နှင့် ပြင်းထန်သောငလျင် မည်သို့ ကွာခြားသနည်း။"
+            },
+            {
+              "id": "12-comprehension-3",
+              "prompt": "3. In what situations do floods occur?",
+              "promptMy": "မည်သည့်အခြေအနေများတွင် ရေကြီးမှု ဖြစ်ပွားသနည်း။"
+            },
+            {
+              "id": "12-comprehension-4",
+              "prompt": "4. Why do forest fires spread easily?",
+              "promptMy": "တောမီးများသည် အဘယ်ကြောင့် အလွယ်တကူ ပျံ့နှံ့သနည်း။"
+            },
+            {
+              "id": "12-comprehension-5",
+              "prompt": "5. What are the different names of tropical storms?",
+              "promptMy": "အပူပိုင်းမုန်တိုင်းများ၏ မတူညီသော အမည်များမှာ အဘယ်နည်း။"
+            },
+            {
+              "id": "12-comprehension-6",
+              "prompt": "6. What are the storms that occur in Myanmar called?",
+              "promptMy": "မြန်မာနိုင်ငံတွင် ဖြစ်ပွားသော မုန်တိုင်းများကို မည်သို့ ခေါ်သနည်း။"
+            },
+            {
+              "id": "12-comprehension-7",
+              "prompt": "7. Name the victims of biological disasters.",
+              "promptMy": "ဇီဝဘေးအန္တရာယ်များ၏ ထိခိုက်ခံရသူများကို ဖော်ပြပါ။"
+            },
+            {
+              "id": "12-comprehension-8",
+              "prompt": "8. What is the benefit of having coral reefs, forests and mangroves?",
+              "promptMy": "သန္တာကျောက်တန်းများ၊ သစ်တောများနှင့် ဒီရေတောများ ရှိခြင်း၏ အကျိုးကျေးဇူးမှာ အဘယ်နည်း။"
+            },
+            {
+              "id": "12-comprehension-9",
+              "prompt": "9. What can be done to reduce the damage caused by earthquakes?",
+              "promptMy": "ငလျင်ကြောင့် ပျက်စီးဆုံးရှုံးမှု လျှော့ချရန် မည်သို့ လုပ်ဆောင်နိုင်သနည်း။"
+            }
+          ],
+          "multiline": true,
+          "structure": true
+        }
+      ]
+    },
+    "vocabulary": {
+      "sources": [
+        {
+          "page": 133,
+          "top": 0.7494,
+          "bottom": 1,
+          "url": "/grade11/upper/unit12-vocabulary-133.jpg",
+          "originalUrl": "/grade11/upper/page-133.jpg"
+        },
+        {
+          "page": 134,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-134.jpg",
+          "originalUrl": "/grade11/upper/page-134.jpg"
+        },
+        {
+          "page": 135,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-135.jpg",
+          "originalUrl": "/grade11/upper/page-135.jpg"
+        },
+        {
+          "page": 136,
+          "top": 0,
+          "bottom": 0.3562,
+          "url": "/grade11/upper/unit12-vocabulary-136.jpg",
+          "originalUrl": "/grade11/upper/page-136.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "12-disaster-words",
+          "instruction": "A. Find the bold-faced words in the passage that are similar in meaning to the following.",
+          "instructionMy": "အောက်ပါအဓိပ္ပာယ်များနှင့် ဆင်တူသော စာလုံးမည်းဖြင့်ရေးထားသည့် စကားလုံးများကို စာပိုဒ်တွင် ရှာပါ။",
+          "pages": [
+            133,
+            134
+          ],
+          "items": [
+            {
+              "id": "12-disaster-words-1",
+              "prompt": "1. the action of reducing the severity, seriousness, or painfulness of something"
+            },
+            {
+              "id": "12-disaster-words-2",
+              "prompt": "2. occurrence of a disease over a whole country or the world"
+            },
+            {
+              "id": "12-disaster-words-3",
+              "prompt": "3. a state of readiness"
+            },
+            {
+              "id": "12-disaster-words-4",
+              "prompt": "4. producing or bearing many crops in great quantities"
+            },
+            {
+              "id": "12-disaster-words-5",
+              "prompt": "5. a sudden occurrence of something unwelcome, such as war or disease"
+            },
+            {
+              "id": "12-disaster-words-6",
+              "prompt": "6. a situation in which there is not enough food for a great number of people"
+            },
+            {
+              "id": "12-disaster-words-7",
+              "prompt": "7. a widespread occurrence of an infectious disease in a community at a particular time"
+            }
+          ]
+        },
+        {
+          "id": "12-disaster-blanks",
+          "instruction": "B. Complete the sentences using the bold-faced words in the passage.",
+          "instructionMy": "စာပိုဒ်ပါ စာလုံးမည်းဖြင့်ရေးထားသော စကားလုံးများဖြင့် ဝါကျများကို ဖြည့်ပါ။",
+          "pages": [
+            134
+          ],
+          "items": [
+            {
+              "id": "12-disaster-blanks-1",
+              "prompt": "1. The ______ of the coronavirus disease was first identified in Wuhan, China in December, 2019."
+            },
+            {
+              "id": "12-disaster-blanks-2",
+              "prompt": "2. According to the earthquake ______ guidelines, we must plan in advance to reduce the serious injury or loss of life."
+            },
+            {
+              "id": "12-disaster-blanks-3",
+              "prompt": "3. Favourable climate and ______ soil are important elements for the growth of crops."
+            },
+            {
+              "id": "12-disaster-blanks-4",
+              "prompt": "4. Failure of crops often results in ______."
+            },
+            {
+              "id": "12-disaster-blanks-5",
+              "prompt": "5. A regional ______ has an impact on a certain community as the disease does not spread globally."
+            },
+            {
+              "id": "12-disaster-blanks-6",
+              "prompt": "6. The government has built dams and bridges in our area for the ______ of flood."
+            },
+            {
+              "id": "12-disaster-blanks-7",
+              "prompt": "7. The 1918 H1N1 flu virus caused the deadliest ______ of the 20th century, infecting about 500 million people."
+            }
+          ]
+        },
+        {
+          "id": "12-identify-verbs",
+          "instruction": "A. Underline the phrasal verbs in the following sentences.",
+          "instructionMy": "စာအုပ်ပါ ဝါကျတစ်ခုစီရှိ တွဲဖက်ကြိယာကို ဖော်ထုတ်ရေးပါ။",
+          "pages": [
+            134,
+            135
+          ],
+          "items": [
+            {
+              "id": "12-identify-verbs-1",
+              "prompt": "1. I asked her to knock around with me coming Sunday."
+            },
+            {
+              "id": "12-identify-verbs-2",
+              "prompt": "2. I think she will knock back my proposal."
+            },
+            {
+              "id": "12-identify-verbs-3",
+              "prompt": "3. An earthquake or a hurricane can knock down our houses."
+            },
+            {
+              "id": "12-identify-verbs-4",
+              "prompt": "4. You look exhausted. You should knock off early today."
+            },
+            {
+              "id": "12-identify-verbs-5",
+              "prompt": "5. Dad puts away his uniforms after his retirement."
+            },
+            {
+              "id": "12-identify-verbs-6",
+              "prompt": "6. We should put off our party as there’ll be a storm in the evening."
+            },
+            {
+              "id": "12-identify-verbs-7",
+              "prompt": "7. Don’t forget to put on the raincoat when you go out."
+            },
+            {
+              "id": "12-identify-verbs-8",
+              "prompt": "8. A downpour of rain put out the children’s bonfire."
+            },
+            {
+              "id": "12-identify-verbs-9",
+              "prompt": "9. Flood water washed away many houses in our village last night."
+            },
+            {
+              "id": "12-identify-verbs-10",
+              "prompt": "10. I had a glass of cola to wash down a slice of pizza."
+            },
+            {
+              "id": "12-identify-verbs-11",
+              "prompt": "11. You should wash off the dirt on your knees as soon as you get home."
+            },
+            {
+              "id": "12-identify-verbs-12",
+              "prompt": "12. She always helps her mum to wash up after dinner."
+            }
+          ]
+        },
+        {
+          "id": "12-match-verbs",
+          "instruction": "B. Match the phrasal verbs with their meanings.",
+          "instructionMy": "တွဲဖက်ကြိယာများနှင့် ၎င်းတို့၏ အဓိပ္ပာယ်များကို တွဲပါ။",
+          "pages": [
+            135
+          ],
+          "items": [
+            {
+              "id": "12-match-verbs-1",
+              "prompt": "1. knock around",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k",
+                "l"
+              ]
+            },
+            {
+              "id": "12-match-verbs-2",
+              "prompt": "2. knock back",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k",
+                "l"
+              ]
+            },
+            {
+              "id": "12-match-verbs-3",
+              "prompt": "3. knock down",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k",
+                "l"
+              ]
+            },
+            {
+              "id": "12-match-verbs-4",
+              "prompt": "4. knock off",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k",
+                "l"
+              ]
+            },
+            {
+              "id": "12-match-verbs-5",
+              "prompt": "5. put away",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k",
+                "l"
+              ]
+            },
+            {
+              "id": "12-match-verbs-6",
+              "prompt": "6. put off",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k",
+                "l"
+              ]
+            },
+            {
+              "id": "12-match-verbs-7",
+              "prompt": "7. put on",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k",
+                "l"
+              ]
+            },
+            {
+              "id": "12-match-verbs-8",
+              "prompt": "8. put out",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k",
+                "l"
+              ]
+            },
+            {
+              "id": "12-match-verbs-9",
+              "prompt": "9. wash away",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k",
+                "l"
+              ]
+            },
+            {
+              "id": "12-match-verbs-10",
+              "prompt": "10. wash down",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k",
+                "l"
+              ]
+            },
+            {
+              "id": "12-match-verbs-11",
+              "prompt": "11. wash off",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k",
+                "l"
+              ]
+            },
+            {
+              "id": "12-match-verbs-12",
+              "prompt": "12. wash up",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k",
+                "l"
+              ]
+            }
+          ],
+          "table": true
+        },
+        {
+          "id": "12-verb-forms",
+          "instruction": "C. Complete the sentences with the correct forms of the phrasal verbs in Exercise B.",
+          "instructionMy": "ယခင်လေ့ကျင့်ခန်းမှ တွဲဖက်ကြိယာများ၏ မှန်ကန်သောပုံစံများဖြင့် ဝါကျများကို ဖြည့်ပါ။",
+          "pages": [
+            135,
+            136
+          ],
+          "items": [
+            {
+              "id": "12-verb-forms-1",
+              "prompt": "1. The manager ______ the meeting until next Friday."
+            },
+            {
+              "id": "12-verb-forms-2",
+              "prompt": "2. I used to ______ the medicine with a cup of coffee."
+            },
+            {
+              "id": "12-verb-forms-3",
+              "prompt": "3. I often ______ with my friends in this park in summertime."
+            },
+            {
+              "id": "12-verb-forms-4",
+              "prompt": "4. ______ Thanakha can protect your face and hands from sunburn."
+            },
+            {
+              "id": "12-verb-forms-5",
+              "prompt": "5. He is very hard-working. He never ______ work until 7:00 p.m."
+            },
+            {
+              "id": "12-verb-forms-6",
+              "prompt": "6. Heavy rains not only ______ the soil but also cause serious floods."
+            },
+            {
+              "id": "12-verb-forms-7",
+              "prompt": "7. It’s my brother’s turn to ______ the dishes this week."
+            },
+            {
+              "id": "12-verb-forms-8",
+              "prompt": "8. It took the firefighters about five days to ______ the forest fire."
+            },
+            {
+              "id": "12-verb-forms-9",
+              "prompt": "9. The old houses were ______ by a strong earthquake."
+            },
+            {
+              "id": "12-verb-forms-10",
+              "prompt": "10. Before you ______ those ceremonial plates, make sure that they are cleaned properly."
+            },
+            {
+              "id": "12-verb-forms-11",
+              "prompt": "11. She was really fed up with him. So, she ______ to see him again."
+            },
+            {
+              "id": "12-verb-forms-12",
+              "prompt": "12. As soon as she got home, she ______ her make-up."
+            }
+          ]
+        }
+      ]
+    },
+    "grammar": {
+      "sources": [
+        {
+          "page": 136,
+          "top": 0.3562,
+          "bottom": 1,
+          "url": "/grade11/upper/unit12-grammar-136.jpg",
+          "originalUrl": "/grade11/upper/page-136.jpg"
+        },
+        {
+          "page": 137,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-137.jpg",
+          "originalUrl": "/grade11/upper/page-137.jpg"
+        },
+        {
+          "page": 138,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-138.jpg",
+          "originalUrl": "/grade11/upper/page-138.jpg"
+        },
+        {
+          "page": 139,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-139.jpg",
+          "originalUrl": "/grade11/upper/page-139.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "12-possibility",
+          "instruction": "A. Fill in the blanks with ‘can’ or ‘could’. Use the negative form where necessary.",
+          "instructionMy": "ဖြစ်နိုင်ခြေကို ဖော်ပြသော သတ်မှတ်ကြိယာနှစ်လုံးအနက် သင့်တော်ရာကို ဖြည့်ပါ။ လိုအပ်လျှင် အငြင်းပုံစံ သုံးပါ။",
+          "pages": [
+            137
+          ],
+          "items": [
+            {
+              "id": "12-possibility-1",
+              "prompt": "1. Global warming ______ be controlled by reducing CO₂ emission."
+            },
+            {
+              "id": "12-possibility-2",
+              "prompt": "2. Shopping online ______ cost you more than shopping at the market but I’m not sure."
+            },
+            {
+              "id": "12-possibility-3",
+              "prompt": "3. She is a tolerant person. She ______ easily be upset with your argument."
+            },
+            {
+              "id": "12-possibility-4",
+              "prompt": "4. Pet dogs ______ transmit diseases to their owners."
+            },
+            {
+              "id": "12-possibility-5",
+              "prompt": "5. Perhaps, eating certain amount of sugar ______ increase the risk of diabetes."
+            },
+            {
+              "id": "12-possibility-6",
+              "prompt": "6. Many years ago, mobile phones ______ be luxury items for many people."
+            },
+            {
+              "id": "12-possibility-7",
+              "prompt": "7. Hiking in the rainy seasons ______ be dangerous."
+            },
+            {
+              "id": "12-possibility-8",
+              "prompt": "8. I think she ______ be exhausted after a long flight."
+            },
+            {
+              "id": "12-possibility-9",
+              "prompt": "9. They ______ win the match. They didn’t have proper training."
+            },
+            {
+              "id": "12-possibility-10",
+              "prompt": "10. You ______ prevent respiratory tract infections by washing your hands with soap and running water often."
+            }
+          ]
+        },
+        {
+          "id": "12-ability",
+          "instruction": "B. Fill in the blanks with ‘can’ or ‘could’. Use the negative form where necessary.",
+          "instructionMy": "လုပ်ဆောင်နိုင်စွမ်းကို ဖော်ပြသော သတ်မှတ်ကြိယာနှစ်လုံးအနက် သင့်တော်ရာကို ဖြည့်ပါ။ လိုအပ်လျှင် အငြင်းပုံစံ သုံးပါ။",
+          "pages": [
+            137,
+            138
+          ],
+          "items": [
+            {
+              "id": "12-ability-1",
+              "prompt": "1. My brother ______ say a word until he was three."
+            },
+            {
+              "id": "12-ability-2",
+              "prompt": "2. ______ you reach the top shelf?"
+            },
+            {
+              "id": "12-ability-3",
+              "prompt": "3. I ______ understand what he is saying. He’s speaking too fast."
+            },
+            {
+              "id": "12-ability-4",
+              "prompt": "4. My dog ______ jump higher than now when he was young."
+            },
+            {
+              "id": "12-ability-5",
+              "prompt": "5. I ______ carry this backpack; it’s too heavy."
+            },
+            {
+              "id": "12-ability-6",
+              "prompt": "6. We ______ get to the meeting on time although we were stuck in traffic."
+            },
+            {
+              "id": "12-ability-7",
+              "prompt": "7. He ______ play the guitar. He has never learnt how to play it."
+            },
+            {
+              "id": "12-ability-8",
+              "prompt": "8. Before I attended the Japanese class, I ______ speak Japanese at all."
+            },
+            {
+              "id": "12-ability-9",
+              "prompt": "9. Thiha ______ sing very well. He has won many awards in singing contests."
+            },
+            {
+              "id": "12-ability-10",
+              "prompt": "10. She is already eight now, but she ______ read yet."
+            }
+          ]
+        },
+        {
+          "id": "12-rewrite",
+          "instruction": "C. Rewrite the following sentences by using ‘can’, ‘can’t’, ‘could’ or ‘couldn’t’ without changing the meaning of the given sentences.",
+          "instructionMy": "မူရင်းအဓိပ္ပာယ်မပြောင်းဘဲ စာအုပ်တွင် သတ်မှတ်ထားသော ကြိယာပုံစံဖြင့် ဝါကျများကို ပြန်ရေးပါ။",
+          "pages": [
+            138
+          ],
+          "items": [
+            {
+              "id": "12-rewrite-1",
+              "prompt": "1. He had the ability to run a marathon when he was young."
+            },
+            {
+              "id": "12-rewrite-2",
+              "prompt": "2. She doesn’t know how to make a cheese cake."
+            },
+            {
+              "id": "12-rewrite-3",
+              "prompt": "3. I am not sure that the pharmacy will close today."
+            },
+            {
+              "id": "12-rewrite-4",
+              "prompt": "4. Watching a documentary movie is sometimes really boring."
+            },
+            {
+              "id": "12-rewrite-5",
+              "prompt": "5. This mushroom is possibly poisonous."
+            },
+            {
+              "id": "12-rewrite-6",
+              "prompt": "6. It is certain that she is not a teacher."
+            },
+            {
+              "id": "12-rewrite-7",
+              "prompt": "7. Having access to the internet was sometimes difficult in my town."
+            },
+            {
+              "id": "12-rewrite-8",
+              "prompt": "8. Hnin Hnin didn’t have the ability to drive a car when she was twenty."
+            },
+            {
+              "id": "12-rewrite-9",
+              "prompt": "9. Shouting out loud possibly helps you to reduce stress."
+            },
+            {
+              "id": "12-rewrite-10",
+              "prompt": "10. Muyar knows how to knit sweaters."
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "12-result",
+          "instruction": "D. Combine the sentences by using ‘so ... that’ or ‘such ... that’.",
+          "instructionMy": "စာအုပ်ပါ အကြောင်းအကျိုးပြပုံစံနှစ်မျိုးအနက် သင့်တော်ရာကို သုံး၍ ဝါကျများကို ပေါင်းပါ။",
+          "pages": [
+            139
+          ],
+          "items": [
+            {
+              "id": "12-result-1",
+              "prompt": "1. It was an amazing view. I even forgot to breathe."
+            },
+            {
+              "id": "12-result-2",
+              "prompt": "2. My secretary is reliable. I never have to worry about my daily schedule."
+            },
+            {
+              "id": "12-result-3",
+              "prompt": "3. There are many factories in our city. The air quality is poor."
+            },
+            {
+              "id": "12-result-4",
+              "prompt": "4. He drove very fast. He was fined for driving over the speed limit."
+            },
+            {
+              "id": "12-result-5",
+              "prompt": "5. Min Khant is a talented boy. He can learn four languages at the same time."
+            },
+            {
+              "id": "12-result-6",
+              "prompt": "6. She spoke very softly. We could not hear her at all even from the second row."
+            },
+            {
+              "id": "12-result-7",
+              "prompt": "7. They are hard-working students. They win outstanding awards every year."
+            },
+            {
+              "id": "12-result-8",
+              "prompt": "8. He inherited much money from his parents. He did not need to work."
+            },
+            {
+              "id": "12-result-9",
+              "prompt": "9. It was an enjoyable trip. I would never forget every single moment."
+            },
+            {
+              "id": "12-result-10",
+              "prompt": "10. Her blouse was very tight. It was difficult for her to breathe."
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "12-endings",
+          "instruction": "E. Finish the following sentences with logical results.",
+          "instructionMy": "အကြောင်းအကျိုးဆီလျော်သော အဆုံးသတ်များဖြင့် ဝါကျများကို ဖြည့်ပါ။",
+          "pages": [
+            139
+          ],
+          "items": [
+            {
+              "id": "12-endings-1",
+              "prompt": "1. The children are so noisy that ..."
+            },
+            {
+              "id": "12-endings-2",
+              "prompt": "2. It was such a sunny day that ..."
+            },
+            {
+              "id": "12-endings-3",
+              "prompt": "3. He spent so much money on clothes that ..."
+            },
+            {
+              "id": "12-endings-4",
+              "prompt": "4. I was so sleepy that ..."
+            },
+            {
+              "id": "12-endings-5",
+              "prompt": "5. She is such a friendly girl that ..."
+            },
+            {
+              "id": "12-endings-6",
+              "prompt": "6. It was such a boring film that ..."
+            },
+            {
+              "id": "12-endings-7",
+              "prompt": "7. The machine is making so much noise that ..."
+            },
+            {
+              "id": "12-endings-8",
+              "prompt": "8. He eats so much fast food that ..."
+            },
+            {
+              "id": "12-endings-9",
+              "prompt": "9. It is such an expensive restaurant that ..."
+            },
+            {
+              "id": "12-endings-10",
+              "prompt": "10. My back is aching so badly that ..."
+            }
+          ],
+          "multiline": true
+        }
+      ]
+    },
+    "listening": {
+      "sources": [
+        {
+          "page": 140,
+          "top": 0,
+          "bottom": 0.5706,
+          "url": "/grade11/upper/unit12-listening-140.jpg",
+          "originalUrl": "/grade11/upper/page-140.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "12-match",
+          "instruction": "A. Listen to a radio interview with three people and match the speakers with the disasters they have experienced.",
+          "instructionMy": "လူသုံးဦးနှင့် ရေဒီယိုအင်တာဗျူးကို နားထောင်ပြီး ပြောသူတစ်ဦးစီနှင့် ကြုံခဲ့သော ဘေးအန္တရာယ်ကို တွဲပါ။",
+          "pages": [
+            140
+          ],
+          "items": [
+            {
+              "id": "12-match-1",
+              "prompt": "1. Speaker 1",
+              "choices": [
+                "(a) Earthquake",
+                "(b) Cyclone Nargis",
+                "(c) COVID-19"
+              ]
+            },
+            {
+              "id": "12-match-2",
+              "prompt": "2. Speaker 2",
+              "choices": [
+                "(a) Earthquake",
+                "(b) Cyclone Nargis",
+                "(c) COVID-19"
+              ]
+            },
+            {
+              "id": "12-match-3",
+              "prompt": "3. Speaker 3",
+              "choices": [
+                "(a) Earthquake",
+                "(b) Cyclone Nargis",
+                "(c) COVID-19"
+              ]
+            }
+          ],
+          "audio": true,
+          "table": true
+        },
+        {
+          "id": "12-statements",
+          "instruction": "B. Listen again. Decide if the given statements are TRUE (T), FALSE (F) or NOT MENTIONED (NM).",
+          "instructionMy": "ထပ်မံနားထောင်၍ အဆိုတစ်ခုစီကို မှန်၊ မှား၊ သို့မဟုတ် မဖော်ပြထား ဟု ရွေးပါ။",
+          "pages": [
+            140
+          ],
+          "items": [
+            {
+              "id": "12-statements-1",
+              "prompt": "1. Speaker 1 was ten years old when she was affected by a natural disaster.",
+              "choices": [
+                "TRUE",
+                "FALSE",
+                "NOT MENTIONED"
+              ]
+            },
+            {
+              "id": "12-statements-2",
+              "prompt": "2. Delta areas can be easily affected by storms.",
+              "choices": [
+                "TRUE",
+                "FALSE",
+                "NOT MENTIONED"
+              ]
+            },
+            {
+              "id": "12-statements-3",
+              "prompt": "3. Cyclone Nargis hit only Bogalay Township.",
+              "choices": [
+                "TRUE",
+                "FALSE",
+                "NOT MENTIONED"
+              ]
+            },
+            {
+              "id": "12-statements-4",
+              "prompt": "4. Speaker 2 got a high temperature while he was at a quarantine centre.",
+              "choices": [
+                "TRUE",
+                "FALSE",
+                "NOT MENTIONED"
+              ]
+            },
+            {
+              "id": "12-statements-5",
+              "prompt": "5. Having a swab test was not comfortable for Speaker 2.",
+              "choices": [
+                "TRUE",
+                "FALSE",
+                "NOT MENTIONED"
+              ]
+            },
+            {
+              "id": "12-statements-6",
+              "prompt": "6. You may find it hard to breathe when you are infected by COVID-19.",
+              "choices": [
+                "TRUE",
+                "FALSE",
+                "NOT MENTIONED"
+              ]
+            },
+            {
+              "id": "12-statements-7",
+              "prompt": "7. Speaker 3 was with her friends when she experienced the natural disaster.",
+              "choices": [
+                "TRUE",
+                "FALSE",
+                "NOT MENTIONED"
+              ]
+            },
+            {
+              "id": "12-statements-8",
+              "prompt": "8. People in Bagan were not hurt in the earthquake.",
+              "choices": [
+                "TRUE",
+                "FALSE",
+                "NOT MENTIONED"
+              ]
+            },
+            {
+              "id": "12-statements-9",
+              "prompt": "9. Many famous pagodas were damaged because of the earthquake.",
+              "choices": [
+                "TRUE",
+                "FALSE",
+                "NOT MENTIONED"
+              ]
+            }
+          ],
+          "audio": true
+        }
+      ]
+    },
+    "speaking": {
+      "sources": [
+        {
+          "page": 140,
+          "top": 0.5706,
+          "bottom": 1,
+          "url": "/grade11/upper/unit12-speaking-140.jpg",
+          "originalUrl": "/grade11/upper/page-140.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "12-interview",
+          "instruction": "C. In pairs, interview each other about a terrible experience you have had using the useful language phrases in the box.",
+          "instructionMy": "နှစ်ယောက်တစ်တွဲစီ စာအုပ်ပါ အသုံးအနှုန်းများကို သုံး၍ မိမိကြုံခဲ့ဖူးသော ဆိုးရွားသည့်အတွေ့အကြုံကို အပြန်အလှန် မေးမြန်းပါ။",
+          "pages": [
+            140
+          ],
+          "items": [
+            {
+              "id": "12-interview-1",
+              "prompt": "Have you ever had a terrible experience in your life?"
+            },
+            {
+              "id": "12-interview-2",
+              "prompt": "When and where did it happen?"
+            },
+            {
+              "id": "12-interview-3",
+              "prompt": "Who were you with at that time?"
+            },
+            {
+              "id": "12-interview-4",
+              "prompt": "Tell me more about your experience."
+            },
+            {
+              "id": "12-interview-5",
+              "prompt": "What was the hardest part of that incident and why?"
+            }
+          ],
+          "multiline": true
+        }
+      ]
+    },
+    "writing": {
+      "sources": [
+        {
+          "page": 141,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-141.jpg",
+          "originalUrl": "/grade11/upper/page-141.jpg"
+        },
+        {
+          "page": 142,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-142.jpg",
+          "originalUrl": "/grade11/upper/page-142.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "12-functions",
+          "instruction": "A. Study the following problem-solution essay and decide on the functions (a–j) of the statements (1–10). The first one is done for you as an example.",
+          "instructionMy": "စာအုပ်ပါ ပြဿနာနှင့်ဖြေရှင်းနည်း စာစီစာကုံးကို လေ့လာ၍ ဖော်ပြချက်တစ်ခုစီ၏ လုပ်ဆောင်ချက်ကို ရွေးပါ။ ပထမတစ်ခုကို ဥပမာပေးထားသည်။",
+          "pages": [
+            141
+          ],
+          "items": [
+            {
+              "id": "12-functions-1",
+              "prompt": "2. ______",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j"
+              ]
+            },
+            {
+              "id": "12-functions-2",
+              "prompt": "3. ______",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j"
+              ]
+            },
+            {
+              "id": "12-functions-3",
+              "prompt": "4. ______",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j"
+              ]
+            },
+            {
+              "id": "12-functions-4",
+              "prompt": "5. ______",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j"
+              ]
+            },
+            {
+              "id": "12-functions-5",
+              "prompt": "6. ______",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j"
+              ]
+            },
+            {
+              "id": "12-functions-6",
+              "prompt": "7. ______",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j"
+              ]
+            },
+            {
+              "id": "12-functions-7",
+              "prompt": "8. ______",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j"
+              ]
+            },
+            {
+              "id": "12-functions-8",
+              "prompt": "9. ______",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j"
+              ]
+            },
+            {
+              "id": "12-functions-9",
+              "prompt": "10. ______",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j"
+              ]
+            }
+          ],
+          "table": true
+        },
+        {
+          "id": "12-composition",
+          "instruction": "B. Write a problem-solution essay in about 200–250 words on the following.",
+          "instructionMy": "စာအုပ်ပါ လူငယ်များနှင့်မိဘများအကြား ဆက်ဆံရေးပြဿနာများအကြောင်း စာလုံးရေ ၂၀၀ မှ ၂၅၀ အတွင်း ပြဿနာနှင့်ဖြေရှင်းနည်း စာစီစာကုံးရေးပါ။",
+          "pages": [
+            142
+          ],
+          "items": [
+            {
+              "id": "12-composition-1",
+              "prompt": "B. Write a problem-solution essay in about 200–250 words on the following.",
+              "multiline": true,
+              "wordTarget": [
+                200,
+                250
+              ]
+            }
+          ],
+          "multiline": true
+        }
+      ]
+    }
+  }
+}

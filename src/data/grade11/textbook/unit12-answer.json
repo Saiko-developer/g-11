@@ -1,0 +1,401 @@
+{
+  "unit": 12,
+  "official_answer_key": false,
+  "items": {
+    "12-disaster-words-1": {
+      "answer": "mitigation",
+      "answerMy": "သက်ရောက်မှုလျှော့ချခြင်း",
+      "origin": "source-derived",
+      "sourcePages": [
+        133,
+        134
+      ]
+    },
+    "12-disaster-words-2": {
+      "answer": "pandemic",
+      "answerMy": "ကမ္ဘာ့ကပ်ရောဂါ",
+      "origin": "source-derived",
+      "sourcePages": [
+        133,
+        134
+      ]
+    },
+    "12-disaster-words-3": {
+      "answer": "preparedness",
+      "answerMy": "ကြိုတင်အသင့်ပြင်ဆင်မှု",
+      "origin": "source-derived",
+      "sourcePages": [
+        133,
+        134
+      ]
+    },
+    "12-disaster-words-4": {
+      "answer": "fertile",
+      "answerMy": "မြေဩဇာကောင်းသော",
+      "origin": "source-derived",
+      "sourcePages": [
+        133,
+        134
+      ]
+    },
+    "12-disaster-words-5": {
+      "answer": "outbreak",
+      "answerMy": "ရုတ်တရက်ဖြစ်ပွားမှု",
+      "origin": "source-derived",
+      "sourcePages": [
+        133,
+        134
+      ]
+    },
+    "12-disaster-words-6": {
+      "answer": "famine",
+      "answerMy": "အစာရေစာရှားပါးမှု",
+      "origin": "source-derived",
+      "sourcePages": [
+        133,
+        134
+      ]
+    },
+    "12-disaster-words-7": {
+      "answer": "epidemic",
+      "answerMy": "ဒေသတွင်းကပ်ရောဂါ",
+      "origin": "source-derived",
+      "sourcePages": [
+        133,
+        134
+      ]
+    },
+    "12-disaster-blanks-1": {
+      "answer": "outbreak",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134
+      ]
+    },
+    "12-disaster-blanks-2": {
+      "answer": "preparedness",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134
+      ]
+    },
+    "12-disaster-blanks-3": {
+      "answer": "fertile",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134
+      ]
+    },
+    "12-disaster-blanks-4": {
+      "answer": "famine",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134
+      ]
+    },
+    "12-disaster-blanks-5": {
+      "answer": "epidemic",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134
+      ]
+    },
+    "12-disaster-blanks-6": {
+      "answer": "mitigation",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134
+      ]
+    },
+    "12-disaster-blanks-7": {
+      "answer": "pandemic",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134
+      ]
+    },
+    "12-identify-verbs-1": {
+      "answer": "knock around",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134,
+        135
+      ]
+    },
+    "12-identify-verbs-2": {
+      "answer": "knock back",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134,
+        135
+      ]
+    },
+    "12-identify-verbs-3": {
+      "answer": "knock down",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134,
+        135
+      ]
+    },
+    "12-identify-verbs-4": {
+      "answer": "knock off",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134,
+        135
+      ]
+    },
+    "12-identify-verbs-5": {
+      "answer": "puts away; put away",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134,
+        135
+      ]
+    },
+    "12-identify-verbs-6": {
+      "answer": "put off",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134,
+        135
+      ]
+    },
+    "12-identify-verbs-7": {
+      "answer": "put on",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134,
+        135
+      ]
+    },
+    "12-identify-verbs-8": {
+      "answer": "put out",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134,
+        135
+      ]
+    },
+    "12-identify-verbs-9": {
+      "answer": "washed away; wash away",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134,
+        135
+      ]
+    },
+    "12-identify-verbs-10": {
+      "answer": "wash down",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134,
+        135
+      ]
+    },
+    "12-identify-verbs-11": {
+      "answer": "wash off",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134,
+        135
+      ]
+    },
+    "12-identify-verbs-12": {
+      "answer": "wash up",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        134,
+        135
+      ]
+    },
+    "12-match-verbs-1": {
+      "answer": "f",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        135
+      ]
+    },
+    "12-match-verbs-2": {
+      "answer": "g",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        135
+      ]
+    },
+    "12-match-verbs-3": {
+      "answer": "i",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        135
+      ]
+    },
+    "12-match-verbs-4": {
+      "answer": "e",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        135
+      ]
+    },
+    "12-match-verbs-5": {
+      "answer": "l",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        135
+      ]
+    },
+    "12-match-verbs-6": {
+      "answer": "k",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        135
+      ]
+    },
+    "12-match-verbs-7": {
+      "answer": "b",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        135
+      ]
+    },
+    "12-match-verbs-8": {
+      "answer": "j",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        135
+      ]
+    },
+    "12-match-verbs-9": {
+      "answer": "a",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        135
+      ]
+    },
+    "12-match-verbs-10": {
+      "answer": "c",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        135
+      ]
+    },
+    "12-match-verbs-11": {
+      "answer": "d",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        135
+      ]
+    },
+    "12-match-verbs-12": {
+      "answer": "h",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        135
+      ]
+    },
+    "12-functions-1": {
+      "answer": "i",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        141
+      ]
+    },
+    "12-functions-2": {
+      "answer": "g",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        141
+      ]
+    },
+    "12-functions-3": {
+      "answer": "j",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        141
+      ]
+    },
+    "12-functions-4": {
+      "answer": "h",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        141
+      ]
+    },
+    "12-functions-5": {
+      "answer": "a",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        141
+      ]
+    },
+    "12-functions-6": {
+      "answer": "b",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        141
+      ]
+    },
+    "12-functions-7": {
+      "answer": "e",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        141
+      ]
+    },
+    "12-functions-8": {
+      "answer": "c",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        141
+      ]
+    },
+    "12-functions-9": {
+      "answer": "d",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        141
+      ]
+    }
+  }
+}

@@ -1,0 +1,610 @@
+{
+  "number": 7,
+  "title": "Systems and Organs of the Human Body",
+  "mmTitle": "လူ့ခန္ဓာကိုယ်၏ စနစ်များနှင့် အင်္ဂါများ",
+  "sourceFiles": [
+    "13575. Grade (11) English New Syllabus-49-96.pdf"
+  ],
+  "skills": {
+    "reading": {
+      "sources": [
+        {
+          "page": 76,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-76.jpg",
+          "originalUrl": "/grade11/upper/page-76.jpg"
+        },
+        {
+          "page": 77,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-77.jpg",
+          "originalUrl": "/grade11/upper/page-77.jpg"
+        },
+        {
+          "page": 78,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-78.jpg",
+          "originalUrl": "/grade11/upper/page-78.jpg"
+        },
+        {
+          "page": 79,
+          "top": 0,
+          "bottom": 0.4015,
+          "url": "/grade11/upper/unit7-reading-79.jpg",
+          "originalUrl": "/grade11/upper/page-79.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "7-pre",
+          "instruction": "Pre-reading",
+          "instructionMy": "မဖတ်မီ ဆွေးနွေးရန်",
+          "pages": [
+            76
+          ],
+          "items": [
+            {
+              "id": "7-pre-1",
+              "prompt": "1. What is more important in a person’s life, health or wealth? Why do you think so?",
+              "promptMy": "လူတစ်ဦး၏ဘဝတွင် ကျန်းမာရေးနှင့် ချမ်းသာမှု မည်သည်က ပိုအရေးကြီးသနည်း။ အဘယ်ကြောင့် ထိုသို့ထင်သနည်း။"
+            },
+            {
+              "id": "7-pre-2",
+              "prompt": "2. What do you think the human body is made up of?",
+              "promptMy": "လူ့ခန္ဓာကိုယ်ကို မည်သည့်အရာများဖြင့် ဖွဲ့စည်းထားသည်ဟု ထင်သနည်း။"
+            },
+            {
+              "id": "7-pre-3",
+              "prompt": "3. Is there any organ of the human body you know? What is it / are they?",
+              "promptMy": "သင်သိသော လူ့ခန္ဓာကိုယ်အင်္ဂါများ ရှိသလား။ မည်သည့်အင်္ဂါများ ဖြစ်သနည်း။"
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "7-functions",
+          "instruction": "A. Complete the table with the function(s) of each organ as in the example.",
+          "instructionMy": "ဥပမာအတိုင်း အင်္ဂါတစ်ခုစီ၏ လုပ်ဆောင်ချက်များကို ဇယားတွင် ဖြည့်ပါ။",
+          "pages": [
+            78
+          ],
+          "items": [
+            {
+              "id": "7-functions-1",
+              "prompt": "2. nose"
+            },
+            {
+              "id": "7-functions-2",
+              "prompt": "3. ear"
+            },
+            {
+              "id": "7-functions-3",
+              "prompt": "4. heart"
+            },
+            {
+              "id": "7-functions-4",
+              "prompt": "5. kidney"
+            },
+            {
+              "id": "7-functions-5",
+              "prompt": "6. liver"
+            }
+          ],
+          "multiline": true,
+          "table": true
+        },
+        {
+          "id": "7-comprehension",
+          "instruction": "B. Give a full-sentence answer to each question below.",
+          "instructionMy": "အောက်ပါမေးခွန်းတစ်ခုစီကို ဝါကျပြည့်ဖြင့် ဖြေပါ။",
+          "pages": [
+            79
+          ],
+          "items": [
+            {
+              "id": "7-comprehension-1",
+              "prompt": "1. What are the systems of the human body made up of?",
+              "promptMy": "လူ့ခန္ဓာကိုယ်၏ စနစ်များကို မည်သည့်အရာများဖြင့် ဖွဲ့စည်းထားသနည်း။"
+            },
+            {
+              "id": "7-comprehension-2",
+              "prompt": "2. Are all organs vital for our survival? Why?",
+              "promptMy": "အင်္ဂါအားလုံးသည် အသက်ရှင်ရပ်တည်ရေးအတွက် မရှိမဖြစ် လိုအပ်သလား။ အဘယ်ကြောင့်နည်း။"
+            },
+            {
+              "id": "7-comprehension-3",
+              "prompt": "3. Where and when does the rhythmic contraction of the heart muscles begin?",
+              "promptMy": "နှလုံးကြွက်သားများ၏ စည်းချက်မှန်ကျုံ့ခြင်းသည် မည်သည့်နေရာတွင် မည်သည့်အချိန်၌ စတင်သနည်း။"
+            },
+            {
+              "id": "7-comprehension-4",
+              "prompt": "4. Where are the kidneys located in the human body?",
+              "promptMy": "ကျောက်ကပ်များသည် လူ့ခန္ဓာကိုယ်၏ မည်သည့်နေရာတွင် ရှိသနည်း။"
+            },
+            {
+              "id": "7-comprehension-5",
+              "prompt": "5. How do tiny tubules in the kidneys work?",
+              "promptMy": "ကျောက်ကပ်အတွင်းရှိ ပြွန်ငယ်များသည် မည်သို့ လုပ်ဆောင်သနည်း။"
+            },
+            {
+              "id": "7-comprehension-6",
+              "prompt": "6. What is the diaphragm?",
+              "promptMy": "ရင်ဝမ်းခြားကြွက်သားဆိုသည်မှာ အဘယ်နည်း။"
+            },
+            {
+              "id": "7-comprehension-7",
+              "prompt": "7. What does the liver do when the amount of glucose in the blood is very low?",
+              "promptMy": "သွေးအတွင်း ဂလူးကို့စ်ပမာဏ အလွန်နည်းလာသောအခါ အသည်းသည် မည်သို့ လုပ်ဆောင်သနည်း။"
+            },
+            {
+              "id": "7-comprehension-8",
+              "prompt": "8. In addition to bile, what does the liver produce?",
+              "promptMy": "အသည်းသည် သည်းခြေရည်အပြင် မည်သည့်အရာများ ထုတ်လုပ်သနည်း။"
+            },
+            {
+              "id": "7-comprehension-9",
+              "prompt": "9. Which system of your body do you think can have a problem when you overeat?",
+              "promptMy": "အစားအလွန်အကျွံစားသောအခါ ခန္ဓာကိုယ်၏ မည်သည့်စနစ်တွင် ပြဿနာဖြစ်နိုင်သည်ဟု ထင်သနည်း။"
+            },
+            {
+              "id": "7-comprehension-10",
+              "prompt": "10. Among the three organs you have read about, which do you think is the most important? Why?",
+              "promptMy": "ဖတ်ခဲ့သော အင်္ဂါသုံးခုအနက် မည်သည့်အင်္ဂါက အရေးအကြီးဆုံးဟု ထင်သနည်း။ အဘယ်ကြောင့်နည်း။"
+            }
+          ],
+          "multiline": true,
+          "structure": true
+        }
+      ]
+    },
+    "vocabulary": {
+      "sources": [
+        {
+          "page": 79,
+          "top": 0.4015,
+          "bottom": 1,
+          "url": "/grade11/upper/unit7-vocabulary-79.jpg",
+          "originalUrl": "/grade11/upper/page-79.jpg"
+        },
+        {
+          "page": 80,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-80.jpg",
+          "originalUrl": "/grade11/upper/page-80.jpg"
+        },
+        {
+          "page": 81,
+          "top": 0,
+          "bottom": 0.4809,
+          "url": "/grade11/upper/unit7-vocabulary-81.jpg",
+          "originalUrl": "/grade11/upper/page-81.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "7-homonyms",
+          "instruction": "Read each sentence. Tick the correct definition of the bold-faced word in the sentence.",
+          "instructionMy": "ဝါကျတစ်ခုစီကို ဖတ်ပြီး စာလုံးမည်းဖြင့် ရေးထားသော စကားလုံး၏ မှန်ကန်သည့်အဓိပ္ပာယ်ကို ရွေးပါ။",
+          "pages": [
+            79,
+            80,
+            81
+          ],
+          "items": [
+            {
+              "id": "7-homonyms-1",
+              "prompt": "1. organ",
+              "choices": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "7-homonyms-2",
+              "prompt": "2. means",
+              "choices": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "7-homonyms-3",
+              "prompt": "3. lose",
+              "choices": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "7-homonyms-4",
+              "prompt": "4. left",
+              "choices": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "7-homonyms-5",
+              "prompt": "5. time",
+              "choices": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "7-homonyms-6",
+              "prompt": "6. lie",
+              "choices": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "7-homonyms-7",
+              "prompt": "7. waste",
+              "choices": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "7-homonyms-8",
+              "prompt": "8. Note down",
+              "choices": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "7-homonyms-9",
+              "prompt": "9. right",
+              "choices": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "7-homonyms-10",
+              "prompt": "10. vessel",
+              "choices": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "7-homonyms-11",
+              "prompt": "11. store",
+              "choices": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "7-homonyms-12",
+              "prompt": "12. fat",
+              "choices": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "7-homonyms-13",
+              "prompt": "13. function",
+              "choices": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "7-homonyms-14",
+              "prompt": "14. form",
+              "choices": [
+                "a",
+                "b"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "grammar": {
+      "sources": [
+        {
+          "page": 81,
+          "top": 0.4809,
+          "bottom": 1,
+          "url": "/grade11/upper/unit7-grammar-81.jpg",
+          "originalUrl": "/grade11/upper/page-81.jpg"
+        },
+        {
+          "page": 82,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-82.jpg",
+          "originalUrl": "/grade11/upper/page-82.jpg"
+        },
+        {
+          "page": 83,
+          "top": 0,
+          "bottom": 0.2301,
+          "url": "/grade11/upper/unit7-grammar-83.jpg",
+          "originalUrl": "/grade11/upper/page-83.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "7-passive",
+          "instruction": "A. Change the following active sentences into the passive sentences. Leave out the agent if it is implied, unknown or unimportant.",
+          "instructionMy": "အောက်ပါဝါကျများကို ကံပြုဝါကျသို့ ပြောင်းပါ။ ပြုလုပ်သူကို သိသာနေ၊ မသိ၊ သို့မဟုတ် အရေးမကြီးလျှင် ချန်ထားပါ။",
+          "pages": [
+            81,
+            82
+          ],
+          "items": [
+            {
+              "id": "7-passive-1",
+              "prompt": "1. You should replace the roof of the warehouse before the beginning of the rainy season."
+            },
+            {
+              "id": "7-passive-2",
+              "prompt": "2. They asked him to explain his reasons for making the changes."
+            },
+            {
+              "id": "7-passive-3",
+              "prompt": "3. My colleague has not introduced me to the manager yet."
+            },
+            {
+              "id": "7-passive-4",
+              "prompt": "4. The school will not announce the examination results until next week."
+            },
+            {
+              "id": "7-passive-5",
+              "prompt": "5. We analysed the collected data carefully."
+            },
+            {
+              "id": "7-passive-6",
+              "prompt": "6. They are repairing the bridge at the moment so we cannot use it."
+            },
+            {
+              "id": "7-passive-7",
+              "prompt": "7. Sally is going to make a special dinner tonight."
+            },
+            {
+              "id": "7-passive-8",
+              "prompt": "8. The Department of Meteorology and Hydrology always issues early warnings of floods for the lowland areas."
+            },
+            {
+              "id": "7-passive-9",
+              "prompt": "9. In this age of technology, people use computers for various purposes."
+            },
+            {
+              "id": "7-passive-10",
+              "prompt": "10. Teachers in our school are attending a meeting on new textbooks."
+            },
+            {
+              "id": "7-passive-11",
+              "prompt": "11. The headmaster will discuss the changes made for the safety of students next Monday."
+            },
+            {
+              "id": "7-passive-12",
+              "prompt": "12. You can find the contents on the third page of the book."
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "7-impersonal",
+          "instruction": "B. Rewrite the following sentences in the impersonal passive, beginning with ‘It’ as in the example.",
+          "instructionMy": "ဥပမာအတိုင်း ဝါကျများကို ပုဂ္ဂိုလ်မညွှန်းကံပြုပုံစံဖြင့် ပြန်ရေးပြီး သတ်မှတ်ထားသော စကားလုံးဖြင့် စပါ။",
+          "pages": [
+            82,
+            83
+          ],
+          "items": [
+            {
+              "id": "7-impersonal-1",
+              "prompt": "1. They reported that the damage by the cyclone was severe."
+            },
+            {
+              "id": "7-impersonal-2",
+              "prompt": "2. They say that learning Chinese is difficult."
+            },
+            {
+              "id": "7-impersonal-3",
+              "prompt": "3. We expect that schools will be reopened next month."
+            },
+            {
+              "id": "7-impersonal-4",
+              "prompt": "4. We learnt that plant growth slows down beyond a certain age."
+            },
+            {
+              "id": "7-impersonal-5",
+              "prompt": "5. Some people thought that Tiger Wood is the best golf player ever."
+            },
+            {
+              "id": "7-impersonal-6",
+              "prompt": "6. People say that the president will give a speech at 10 a.m."
+            },
+            {
+              "id": "7-impersonal-7",
+              "prompt": "7. We hope that our reforestation efforts will help protect forests."
+            },
+            {
+              "id": "7-impersonal-8",
+              "prompt": "8. Everyone believes that parents have the responsibility of teaching their children to be good citizens."
+            },
+            {
+              "id": "7-impersonal-9",
+              "prompt": "9. They expected that about 4,000 people would attend the conference."
+            },
+            {
+              "id": "7-impersonal-10",
+              "prompt": "10. We already know that starting a new business is challenging and risky."
+            }
+          ],
+          "multiline": true
+        }
+      ]
+    },
+    "listening": {
+      "sources": [
+        {
+          "page": 83,
+          "top": 0.2301,
+          "bottom": 0.6997,
+          "url": "/grade11/upper/unit7-listening-83.jpg",
+          "originalUrl": "/grade11/upper/page-83.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "7-listen",
+          "instruction": "A. Listen to the dialogue between Thinzar and Su Mon and complete the following sentences.",
+          "instructionMy": "သင်ဇာနှင့် စုမွန်တို့၏ စကားပြောကို နားထောင်ပြီး ဝါကျများကို ဖြည့်ပါ။",
+          "pages": [
+            83
+          ],
+          "items": [
+            {
+              "id": "7-listen-1",
+              "prompt": "1. Thinzar and Su Mon have not ______ each other since the Thadingyut holiday."
+            },
+            {
+              "id": "7-listen-2",
+              "prompt": "2. During the Thadingyut holiday, Su Mon went to Bagan with ______."
+            },
+            {
+              "id": "7-listen-3",
+              "prompt": "3. Su Mon ______ her mum at home after the trip."
+            },
+            {
+              "id": "7-listen-4",
+              "prompt": "4. During the Thadingyut holiday, Thinzar ______ anywhere."
+            },
+            {
+              "id": "7-listen-5",
+              "prompt": "5. Thinzar is worried about gaining weight as she watches TV for about ______ every day."
+            },
+            {
+              "id": "7-listen-6",
+              "prompt": "6. Su Mon advised Thinzar to reduce her weight by ______ or doing sports."
+            },
+            {
+              "id": "7-listen-7",
+              "prompt": "7. The two types of sports Su Mon ______ are team sports and individual sports."
+            },
+            {
+              "id": "7-listen-8",
+              "prompt": "8. Su Mon told Thinzar that ______ can develop social skills."
+            },
+            {
+              "id": "7-listen-9",
+              "prompt": "9. Thinzar prefers ______ to gymnastics or kickboxing because it does not cost much."
+            },
+            {
+              "id": "7-listen-10",
+              "prompt": "10. Su Mon advised Thinzar to go swimming before gaining more ______."
+            }
+          ],
+          "audio": true
+        }
+      ]
+    },
+    "speaking": {
+      "sources": [
+        {
+          "page": 83,
+          "top": 0.6997,
+          "bottom": 1,
+          "url": "/grade11/upper/unit7-speaking-83.jpg",
+          "originalUrl": "/grade11/upper/page-83.jpg"
+        },
+        {
+          "page": 84,
+          "top": 0,
+          "bottom": 0.5098,
+          "url": "/grade11/upper/unit7-speaking-84.jpg",
+          "originalUrl": "/grade11/upper/page-84.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "7-notes",
+          "instruction": "B. Think of a health problem (an imaginary or a real one) you had in the past. Then answer the questions below and make notes.",
+          "instructionMy": "ယခင်ကြုံခဲ့သော သို့မဟုတ် စိတ်ကူးထားသော ကျန်းမာရေးပြဿနာတစ်ခုကို စဉ်းစား၍ အောက်ပါမေးခွန်းများကို ဖြေပြီး မှတ်စုရေးပါ။",
+          "pages": [
+            83
+          ],
+          "items": [
+            {
+              "id": "7-notes-1",
+              "prompt": "1. What health problem did you have and when?"
+            },
+            {
+              "id": "7-notes-2",
+              "prompt": "2. What caused the problem?"
+            },
+            {
+              "id": "7-notes-3",
+              "prompt": "3. How did you feel?"
+            },
+            {
+              "id": "7-notes-4",
+              "prompt": "4. What did you do to overcome the problem?"
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "7-present",
+          "instruction": "C. In pairs, take turns to tell each other about the problem each of you had, referring to your notes.",
+          "instructionMy": "နှစ်ယောက်တစ်တွဲစီ မှတ်စုကို ကိုးကားပြီး မိမိကြုံခဲ့သော ပြဿနာအကြောင်း အလှည့်ကျ ပြောပြပါ။",
+          "pages": [
+            84
+          ],
+          "items": [
+            {
+              "id": "7-present-1",
+              "prompt": "Presentation notes"
+            }
+          ],
+          "multiline": true
+        }
+      ]
+    },
+    "writing": {
+      "sources": [
+        {
+          "page": 84,
+          "top": 0.5098,
+          "bottom": 1,
+          "url": "/grade11/upper/unit7-writing-84.jpg",
+          "originalUrl": "/grade11/upper/page-84.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "7-composition",
+          "instruction": "Write an essay on ‘What you need to know about fatty liver disease’ referring to the notes Thuta has taken.",
+          "instructionMy": "သူတ မှတ်သားထားသော စာအုပ်ပါမှတ်စုများကို ကိုးကားပြီး အသည်းအဆီဖုံးရောဂါအကြောင်း သိသင့်သောအချက်များကို စာစီစာကုံးရေးပါ။",
+          "pages": [
+            84
+          ],
+          "items": [
+            {
+              "id": "7-composition-1",
+              "prompt": "Write an essay on ‘What you need to know about fatty liver disease’ referring to the notes Thuta has taken.",
+              "multiline": true,
+              "wordTarget": null
+            }
+          ],
+          "multiline": true
+        }
+      ]
+    }
+  }
+}

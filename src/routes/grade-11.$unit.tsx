@@ -1,21 +1,18 @@
-import { Grade11Unit5Lesson, Grade11Unit6Lesson } from "@/components/grade11/Grade11TravelLesson";
+import { Grade11TextLesson } from "@/components/grade11/Grade11TextLesson";
+import { UPPER_PAGES } from "@/lib/grade11Upper";
 import { TRAVEL_PAGES } from "@/lib/grade11Travel";
 import { Grade11Review1View, Grade11Poem1View } from "@/components/grade11/Grade11Revision";
-import { Grade11Unit2Lesson } from "@/components/grade11/Grade11Unit2Lesson";
-import { Grade11Unit4Lesson } from "@/components/grade11/Grade11Unit4Lesson";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { G11QuizBlock } from "@/components/grade11/G11Quiz";
 import { getG11Unit } from "@/data/grade11/part1";
-import { Grade11Unit3Lesson } from "@/components/grade11/Grade11Unit3Lesson";
-import { Grade11Unit1Lesson } from "@/components/grade11/Grade11Unit1Lesson";
 import { SayaOwlHome } from "@/components/SayaOwlHome";
 import type { G11SkillKind } from "@/data/grade11/syllabus";
 
 export const Route = createFileRoute("/grade-11/$unit")({
   loader: ({ params }) => {
-    const unit = getG11Unit(params.unit) ?? TRAVEL_PAGES[params.unit];
+    const unit = getG11Unit(params.unit) ?? TRAVEL_PAGES[params.unit] ?? UPPER_PAGES[params.unit];
     if (!unit) throw notFound();
     return { unit };
   },
@@ -40,7 +37,7 @@ function UnitPage() {
   const { unit } = Route.useLoaderData();
   const tabs = [...(unit.reading ? ["Reading"] : []), ...unit.sections.map((s) => s.title.split(":")[0])];
   const [tab, setTab] = useState(0);
-  if (["unit-1", "unit-2", "unit-3", "unit-4", "unit-5", "unit-6"].includes(unit.id)) return <SourceUnitPage key={unit.id} unitNumber={Number(unit.id.slice(5)) as 1 | 2 | 3 | 4 | 5 | 6} title={unit.title} mmTitle={unit.mmTitle} />;
+  if (/^unit-(?:[1-9]|1[0-2])$/.test(unit.id)) return <SourceUnitPage key={unit.id} unitNumber={Number(unit.id.slice(5))} title={unit.title} mmTitle={unit.mmTitle} />;
   if (unit.id === "review-1" || unit.id === "poem-1") return <SourceExtraPage poem={unit.id === "poem-1"} />;
   const readingOffset = unit.reading ? 1 : 0;
   const section = tab >= readingOffset ? unit.sections[tab - readingOffset] : null;
@@ -110,9 +107,8 @@ const SOURCE_SKILLS: { kind: G11SkillKind; label: string }[] = [
 ];
 
 /** Direct links use the same verified content as the curriculum explorer. */
-function SourceUnitPage({ title, mmTitle, unitNumber }: { title: string; mmTitle: string; unitNumber: 1 | 2 | 3 | 4 | 5 | 6 }) {
+function SourceUnitPage({ title, mmTitle, unitNumber }: { title: string; mmTitle: string; unitNumber: number }) {
   const [skill, setSkill] = useState<G11SkillKind>("reading");
-  const Lesson = { 1: Grade11Unit1Lesson, 2: Grade11Unit2Lesson, 3: Grade11Unit3Lesson, 4: Grade11Unit4Lesson, 5: Grade11Unit5Lesson, 6: Grade11Unit6Lesson }[unitNumber];
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
@@ -129,7 +125,7 @@ function SourceUnitPage({ title, mmTitle, unitNumber }: { title: string; mmTitle
             </button>
           ))}
         </nav>
-        <div data-saya-home-section><Lesson key={skill} kind={skill} /></div>
+        <div data-saya-home-section><Grade11TextLesson key={skill} unit={unitNumber} kind={skill} /></div>
         <SayaOwlHome lessonContext={`Grade 11 English · Unit ${unitNumber} · ${title} · ${skill}`} />
       </main>
     </div>

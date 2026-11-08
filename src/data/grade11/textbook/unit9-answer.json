@@ -1,0 +1,96 @@
+{
+  "unit": 9,
+  "official_answer_key": false,
+  "items": {
+    "9-confused-1": {
+      "answer": "incident",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        103,
+        104
+      ]
+    },
+    "9-confused-2": {
+      "answer": "retrospective",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        103,
+        104
+      ]
+    },
+    "9-confused-3": {
+      "answer": "conscious",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        103,
+        104
+      ]
+    },
+    "9-confused-4": {
+      "answer": "accident",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        103,
+        104
+      ]
+    },
+    "9-confused-5": {
+      "answer": "affect",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        103,
+        104
+      ]
+    },
+    "9-confused-6": {
+      "answer": "lane",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        103,
+        104
+      ]
+    },
+    "9-confused-7": {
+      "answer": "conscientious",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        103,
+        104
+      ]
+    },
+    "9-confused-8": {
+      "answer": "effect",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        103,
+        104
+      ]
+    },
+    "9-confused-9": {
+      "answer": "line",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        103,
+        104
+      ]
+    },
+    "9-confused-10": {
+      "answer": "perspective",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        103,
+        104
+      ]
+    }
+  }
+}

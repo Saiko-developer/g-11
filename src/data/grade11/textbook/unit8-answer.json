@@ -1,0 +1,254 @@
+{
+  "unit": 8,
+  "official_answer_key": false,
+  "items": {
+    "8-terms-1": {
+      "answer": "character",
+      "answerMy": "ဇာတ်ကောင်",
+      "origin": "source-derived",
+      "sourcePages": [
+        91
+      ]
+    },
+    "8-terms-2": {
+      "answer": "setting",
+      "answerMy": "ဇာတ်အိမ်",
+      "origin": "source-derived",
+      "sourcePages": [
+        91
+      ]
+    },
+    "8-terms-3": {
+      "answer": "conflict",
+      "answerMy": "ပဋိပက္ခ",
+      "origin": "source-derived",
+      "sourcePages": [
+        91
+      ]
+    },
+    "8-terms-4": {
+      "answer": "climax",
+      "answerMy": "အထွတ်အထိပ်",
+      "origin": "source-derived",
+      "sourcePages": [
+        91
+      ]
+    },
+    "8-terms-5": {
+      "answer": "resolution",
+      "answerMy": "ဖြေရှင်းမှု",
+      "origin": "source-derived",
+      "sourcePages": [
+        91
+      ]
+    },
+    "8-terms-6": {
+      "answer": "ending",
+      "answerMy": "အဆုံးသတ်",
+      "origin": "source-derived",
+      "sourcePages": [
+        91
+      ]
+    },
+    "8-terms-7": {
+      "answer": "theme",
+      "answerMy": "အဓိကအကြောင်းအရာ",
+      "origin": "source-derived",
+      "sourcePages": [
+        91
+      ]
+    },
+    "8-make-do-1": {
+      "answer": "do",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-make-do-2": {
+      "answer": "make",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-make-do-3": {
+      "answer": "do",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-make-do-4": {
+      "answer": "do",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-make-do-5": {
+      "answer": "do",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-make-do-6": {
+      "answer": "make",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-make-do-7": {
+      "answer": "make",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-make-do-8": {
+      "answer": "do",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-make-do-9": {
+      "answer": "make",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-make-do-10": {
+      "answer": "do",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-make-do-11": {
+      "answer": "make",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-make-do-12": {
+      "answer": "make",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-make-do-13": {
+      "answer": "do",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-make-do-14": {
+      "answer": "do",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-forms-1": {
+      "answer": "does",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-forms-2": {
+      "answer": "make",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-forms-3": {
+      "answer": "do",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-forms-4": {
+      "answer": "makes",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-forms-5": {
+      "answer": "make",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-forms-6": {
+      "answer": "made",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-forms-7": {
+      "answer": "did; have done",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-forms-8": {
+      "answer": "make",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-forms-9": {
+      "answer": "made",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    },
+    "8-forms-10": {
+      "answer": "do",
+      "answerMy": null,
+      "origin": "source-derived",
+      "sourcePages": [
+        92
+      ]
+    }
+  }
+}

@@ -94,13 +94,15 @@ const BURMESE_NAMES: Record<string, string> = {
 export function Grade11SourceStructure({
   questionText,
   sentenceMy,
+  breakdown,
 }: {
   questionText: string;
   sentenceMy: string;
+  breakdown?: { word: string; tag: string }[];
 }) {
   const [activeTag, setActiveTag] = useState<string | null>(null);
   const trigger = useRef<HTMLButtonElement | null>(null);
-  const cars = buildTrainCars(questionText).cars;
+  const cars = breakdown ?? buildTrainCars(questionText).cars;
   const translation = Object.entries(BURMESE_NAMES).reduce(
     (text, [name, burmese]) => text.replaceAll(name, burmese),
     sentenceMy,

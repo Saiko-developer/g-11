@@ -1,0 +1,849 @@
+{
+  "number": 8,
+  "title": "The Last Leaf",
+  "mmTitle": "နောက်ဆုံးသစ်ရွက်",
+  "sourceFiles": [
+    "13575. Grade (11) English New Syllabus-49-96.pdf",
+    "13575. Grade (11) English New Syllabus-97-144.pdf"
+  ],
+  "skills": {
+    "reading": {
+      "sources": [
+        {
+          "page": 86,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-86.jpg",
+          "originalUrl": "/grade11/upper/page-86.jpg"
+        },
+        {
+          "page": 87,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-87.jpg",
+          "originalUrl": "/grade11/upper/page-87.jpg"
+        },
+        {
+          "page": 88,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-88.jpg",
+          "originalUrl": "/grade11/upper/page-88.jpg"
+        },
+        {
+          "page": 89,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-89.jpg",
+          "originalUrl": "/grade11/upper/page-89.jpg"
+        },
+        {
+          "page": 90,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-90.jpg",
+          "originalUrl": "/grade11/upper/page-90.jpg"
+        },
+        {
+          "page": 91,
+          "top": 0,
+          "bottom": 0.7657,
+          "url": "/grade11/upper/unit8-reading-91.jpg",
+          "originalUrl": "/grade11/upper/page-91.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "8-pre",
+          "instruction": "Pre-reading",
+          "instructionMy": "မဖတ်မီ ဆွေးနွေးရန်",
+          "pages": [
+            86
+          ],
+          "items": [
+            {
+              "id": "8-pre-1",
+              "prompt": "1. In what season of the year do leaves fall in your country?",
+              "promptMy": "သင့်နိုင်ငံတွင် မည်သည့်ရာသီ၌ သစ်ရွက်များ ကြွေသနည်း။"
+            },
+            {
+              "id": "8-pre-2",
+              "prompt": "2. How do you feel when you see leaves falling to the ground? Does it affect you in any way?",
+              "promptMy": "သစ်ရွက်များ မြေပြင်သို့ ကြွေကျသည်ကို မြင်သောအခါ မည်သို့ ခံစားရသနည်း။ သင့်အပေါ် သက်ရောက်မှုရှိသလား။"
+            },
+            {
+              "id": "8-pre-3",
+              "prompt": "3. Do you believe that if there is hope, there is life? Why?",
+              "promptMy": "မျှော်လင့်ချက်ရှိလျှင် ရှင်သန်မှုရှိသည်ဟု ယုံကြည်သလား။ အဘယ်ကြောင့်နည်း။"
+            },
+            {
+              "id": "8-pre-4",
+              "prompt": "4. Tick what you think the story is about.",
+              "promptMy": "ဇာတ်လမ်းသည် မည်သည့်အကြောင်းအရာ ဖြစ်မည်ဟု ထင်သနည်း။ သင့်ရွေးချယ်မှုများကို အမှန်ခြစ်ပါ။",
+              "choices": [
+                "friendship",
+                "selfless sacrifice",
+                "a leaf",
+                "hope",
+                "health and diseases"
+              ],
+              "multiple": true
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "8-comprehension",
+          "instruction": "A. Give a full-sentence answer to each question below.",
+          "instructionMy": "အောက်ပါမေးခွန်းတစ်ခုစီကို ဝါကျပြည့်ဖြင့် ဖြေပါ။",
+          "pages": [
+            90
+          ],
+          "items": [
+            {
+              "id": "8-comprehension-1",
+              "prompt": "1. Why did artists come to Greenwich Village?",
+              "promptMy": "ပန်းချီဆရာများသည် ဂရင်းနစ်ချ်ရွာသို့ အဘယ်ကြောင့် လာခဲ့ကြသနည်း။"
+            },
+            {
+              "id": "8-comprehension-2",
+              "prompt": "2. What does the underlined word ‘He’ in line 11 refer to?",
+              "promptMy": "စာကြောင်းရေ ၁၁ ရှိ မျဉ်းသားထားသော နာမ်စားသည် မည်သူ့ကို ရည်ညွှန်းသနည်း။"
+            },
+            {
+              "id": "8-comprehension-3",
+              "prompt": "3. What do you think Johnsy was counting backwards?",
+              "promptMy": "ဂျွန်စီသည် မည်သည့်အရာကို ပြောင်းပြန်ရေတွက်နေသည်ဟု ထင်သနည်း။"
+            },
+            {
+              "id": "8-comprehension-4",
+              "prompt": "4. When the doctor left, how did Sue try to hide her sadness?",
+              "promptMy": "ဆရာဝန်ပြန်သွားသောအခါ ဆူးသည် ဝမ်းနည်းမှုကို မည်သို့ ဖုံးကွယ်ရန် ကြိုးစားခဲ့သနည်း။"
+            },
+            {
+              "id": "8-comprehension-5",
+              "prompt": "5. Do you think Johnsy will die at the end of the story? Why or why not?",
+              "promptMy": "ဇာတ်လမ်းအဆုံးတွင် ဂျွန်စီ သေဆုံးမည်ဟု ထင်သလား။ အဘယ်ကြောင့် ထိုသို့ထင်သနည်း။"
+            },
+            {
+              "id": "8-comprehension-6",
+              "prompt": "6. If you were Sue, what would you buy for Johnsy, who was ill?",
+              "promptMy": "သင်သာ ဆူးဖြစ်လျှင် နေမကောင်းဖြစ်နေသော ဂျွန်စီအတွက် မည်သည့်အရာကို ဝယ်ပေးမည်နည်း။"
+            },
+            {
+              "id": "8-comprehension-7",
+              "prompt": "7. Why did Sue draw in Johnsy’s room on that day?",
+              "promptMy": "ထိုနေ့တွင် ဆူးသည် ဂျွန်စီ၏အခန်း၌ အဘယ်ကြောင့် ပန်းချီဆွဲခဲ့သနည်း။"
+            },
+            {
+              "id": "8-comprehension-8",
+              "prompt": "8. How did Mr Behrman earn his living?",
+              "promptMy": "မစ္စတာ ဘာမန်သည် မည်သို့ အသက်မွေးဝမ်းကျောင်းပြုသနည်း။"
+            },
+            {
+              "id": "8-comprehension-9",
+              "prompt": "9. Why did Mr Behrman consider himself as a watch-dog and protector for Sue and Johnsy?",
+              "promptMy": "မစ္စတာ ဘာမန်သည် မိမိကိုယ်ကို ဆူးနှင့်ဂျွန်စီတို့၏ စောင့်ရှောက်သူအဖြစ် အဘယ်ကြောင့် သတ်မှတ်ခဲ့သနည်း။"
+            },
+            {
+              "id": "8-comprehension-10",
+              "prompt": "10. According to Sue, what made Johnsy think that she would die when the last leaf fell?",
+              "promptMy": "ဆူး၏အဆိုအရ ဂျွန်စီသည် နောက်ဆုံးသစ်ရွက်ကြွေသောအခါ မိမိသေဆုံးမည်ဟု အဘယ်ကြောင့် ထင်ခဲ့သနည်း။"
+            },
+            {
+              "id": "8-comprehension-11",
+              "prompt": "11. What was Mr Behrman’s masterpiece? Where did he paint it?",
+              "promptMy": "မစ္စတာ ဘာမန်၏ လက်ရာမြောက်ပန်းချီသည် အဘယ်နည်း။ မည်သည့်နေရာတွင် ရေးဆွဲခဲ့သနည်း။"
+            },
+            {
+              "id": "8-comprehension-12",
+              "prompt": "12. How did people know that Mr Behrman painted the picture of a leaf on the wall of the house opposite?",
+              "promptMy": "မျက်နှာချင်းဆိုင်အိမ်၏နံရံပေါ်မှ သစ်ရွက်ပုံကို မစ္စတာ ဘာမန် ရေးဆွဲခဲ့ကြောင်း လူများ မည်သို့သိခဲ့သနည်း။"
+            },
+            {
+              "id": "8-comprehension-13",
+              "prompt": "13. If you were Mr Behrman, would you sacrifice yourself for a friend? Why or why not?",
+              "promptMy": "သင်သာ မစ္စတာ ဘာမန်ဖြစ်လျှင် သူငယ်ချင်းအတွက် မိမိကိုယ်ကို အနစ်နာခံမည်လား။ အဘယ်ကြောင့်နည်း။"
+            },
+            {
+              "id": "8-comprehension-14",
+              "prompt": "14. Does the story have (a) a happy ending (b) a sad ending or (c) a surprise ending?",
+              "promptMy": "ဇာတ်လမ်းသည် ပျော်ရွှင်ဖွယ်အဆုံးသတ်၊ ဝမ်းနည်းဖွယ်အဆုံးသတ်၊ သို့မဟုတ် အံ့အားသင့်ဖွယ်အဆုံးသတ် မည်သည့်ပုံစံဖြစ်သနည်း။"
+            },
+            {
+              "id": "8-comprehension-15",
+              "prompt": "15. Does the story end as you have expected? Why or why not?",
+              "promptMy": "ဇာတ်လမ်းသည် သင်မျှော်လင့်ထားသည့်အတိုင်း အဆုံးသတ်သလား။ အဘယ်ကြောင့်နည်း။"
+            }
+          ],
+          "multiline": true,
+          "structure": true
+        },
+        {
+          "id": "8-elements",
+          "instruction": "B. Tick the part of the story in which you find the following elements. Refer back to the story if necessary. The first one is done for you.",
+          "instructionMy": "ပေးထားသော ဇာတ်လမ်းအစိတ်အပိုင်းများ ပါဝင်သည့်အပိုင်းကို ရွေးပါ။ ပထမတစ်ခုကို ဥပမာပေးထားသည်။",
+          "pages": [
+            91
+          ],
+          "items": [
+            {
+              "id": "8-elements-1",
+              "prompt": "Problem the main character has",
+              "choices": [
+                "Part I",
+                "Part II",
+                "Part III"
+              ],
+              "multiple": true
+            },
+            {
+              "id": "8-elements-2",
+              "prompt": "How the problem is resolved",
+              "choices": [
+                "Part I",
+                "Part II",
+                "Part III"
+              ],
+              "multiple": true
+            },
+            {
+              "id": "8-elements-3",
+              "prompt": "How the story ends",
+              "choices": [
+                "Part I",
+                "Part II",
+                "Part III"
+              ],
+              "multiple": true
+            },
+            {
+              "id": "8-elements-4",
+              "prompt": "The most exciting part of the story",
+              "choices": [
+                "Part I",
+                "Part II",
+                "Part III"
+              ],
+              "multiple": true
+            },
+            {
+              "id": "8-elements-5",
+              "prompt": "The part that makes you feel surprised or gives suspense",
+              "choices": [
+                "Part I",
+                "Part II",
+                "Part III"
+              ],
+              "multiple": true
+            },
+            {
+              "id": "8-elements-6",
+              "prompt": "The main character(s)",
+              "choices": [
+                "Part I",
+                "Part II",
+                "Part III"
+              ],
+              "multiple": true
+            }
+          ],
+          "table": true
+        },
+        {
+          "id": "8-terms",
+          "instruction": "C. Write the elements of a story in the box beside their meanings.",
+          "instructionMy": "အဓိပ္ပာယ်တစ်ခုစီနှင့် ကိုက်ညီသော ဇာတ်လမ်းအစိတ်အပိုင်းအမည်ကို ဖြည့်ပါ။",
+          "pages": [
+            91
+          ],
+          "items": [
+            {
+              "id": "8-terms-1",
+              "prompt": "1. A person in a story, play, or movie"
+            },
+            {
+              "id": "8-terms-2",
+              "prompt": "2. Place and time at which the action of a story or play takes place"
+            },
+            {
+              "id": "8-terms-3",
+              "prompt": "3. A situation in which there is a difficult problem to solve"
+            },
+            {
+              "id": "8-terms-4",
+              "prompt": "4. The most exciting part of a story that happens near the end"
+            },
+            {
+              "id": "8-terms-5",
+              "prompt": "5. The act of solving or settling a problem"
+            },
+            {
+              "id": "8-terms-6",
+              "prompt": "6. The last part of a story"
+            },
+            {
+              "id": "8-terms-7",
+              "prompt": "7. The subject or the main idea of a piece of writing or a talk"
+            }
+          ]
+        }
+      ]
+    },
+    "vocabulary": {
+      "sources": [
+        {
+          "page": 91,
+          "top": 0.7657,
+          "bottom": 1,
+          "url": "/grade11/upper/unit8-vocabulary-91.jpg",
+          "originalUrl": "/grade11/upper/page-91.jpg"
+        },
+        {
+          "page": 92,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-92.jpg",
+          "originalUrl": "/grade11/upper/page-92.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "8-make-do",
+          "instruction": "A. Fill each blank with ‘make’ or ‘do’ as in the examples given below.",
+          "instructionMy": "ပေးထားသော ဥပမာများအတိုင်း ကွက်လပ်များတွင် သတ်မှတ်စကားလုံးနှစ်လုံးအနက် သင့်တော်ရာကို ဖြည့်ပါ။",
+          "pages": [
+            92
+          ],
+          "items": [
+            {
+              "id": "8-make-do-1",
+              "prompt": "3. ______ an experiment",
+              "choices": [
+                "make",
+                "do"
+              ]
+            },
+            {
+              "id": "8-make-do-2",
+              "prompt": "4. ______ a progress",
+              "choices": [
+                "make",
+                "do"
+              ]
+            },
+            {
+              "id": "8-make-do-3",
+              "prompt": "5. ______ good",
+              "choices": [
+                "make",
+                "do"
+              ]
+            },
+            {
+              "id": "8-make-do-4",
+              "prompt": "6. ______ (one’s) best",
+              "choices": [
+                "make",
+                "do"
+              ]
+            },
+            {
+              "id": "8-make-do-5",
+              "prompt": "7. ______ housework",
+              "choices": [
+                "make",
+                "do"
+              ]
+            },
+            {
+              "id": "8-make-do-6",
+              "prompt": "8. ______ a trip",
+              "choices": [
+                "make",
+                "do"
+              ]
+            },
+            {
+              "id": "8-make-do-7",
+              "prompt": "9. ______ a loss",
+              "choices": [
+                "make",
+                "do"
+              ]
+            },
+            {
+              "id": "8-make-do-8",
+              "prompt": "10. ______ harm",
+              "choices": [
+                "make",
+                "do"
+              ]
+            },
+            {
+              "id": "8-make-do-9",
+              "prompt": "11. ______ noises",
+              "choices": [
+                "make",
+                "do"
+              ]
+            },
+            {
+              "id": "8-make-do-10",
+              "prompt": "12. ______ (me) a favour",
+              "choices": [
+                "make",
+                "do"
+              ]
+            },
+            {
+              "id": "8-make-do-11",
+              "prompt": "13. ______ promises",
+              "choices": [
+                "make",
+                "do"
+              ]
+            },
+            {
+              "id": "8-make-do-12",
+              "prompt": "14. ______ a mistake",
+              "choices": [
+                "make",
+                "do"
+              ]
+            },
+            {
+              "id": "8-make-do-13",
+              "prompt": "15. ______ the washing up",
+              "choices": [
+                "make",
+                "do"
+              ]
+            },
+            {
+              "id": "8-make-do-14",
+              "prompt": "16. ______ exercises",
+              "choices": [
+                "make",
+                "do"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8-forms",
+          "instruction": "B. Complete each blank with the correct form of ‘make’ or ‘do’.",
+          "instructionMy": "ကွက်လပ်တစ်ခုစီတွင် သတ်မှတ်ကြိယာနှစ်လုံး၏ မှန်ကန်သောပုံစံကို ဖြည့်ပါ။",
+          "pages": [
+            92
+          ],
+          "items": [
+            {
+              "id": "8-forms-1",
+              "prompt": "1. In the mornings, Daw Lay May ______ a few jobs around the house and then takes a rest for a while."
+            },
+            {
+              "id": "8-forms-2",
+              "prompt": "2. The astrologer told me that I would ______ a lot of money next year."
+            },
+            {
+              "id": "8-forms-3",
+              "prompt": "3. All you have to ______ is rub the lotion into your scalp."
+            },
+            {
+              "id": "8-forms-4",
+              "prompt": "4. Ko Latt has joined an international IT company and now he ______ US$ 200,000 a year."
+            },
+            {
+              "id": "8-forms-5",
+              "prompt": "5. Grandpa often brings sweets to ______ the children happy."
+            },
+            {
+              "id": "8-forms-6",
+              "prompt": "6. Uncle has ______ an appointment to see the dentist."
+            },
+            {
+              "id": "8-forms-7",
+              "prompt": "7. We ______ a very interesting experiment in chemistry today."
+            },
+            {
+              "id": "8-forms-8",
+              "prompt": "8. Don’t ______ a noise; we don’t want to wake the baby up."
+            },
+            {
+              "id": "8-forms-9",
+              "prompt": "9. My sister has ______ a good impression in her new job."
+            },
+            {
+              "id": "8-forms-10",
+              "prompt": "10. Zaw Zaw does not ______ any extensive reading though he is a highschool student."
+            }
+          ]
+        }
+      ]
+    },
+    "grammar": {
+      "sources": [
+        {
+          "page": 93,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-93.jpg",
+          "originalUrl": "/grade11/upper/page-93.jpg"
+        },
+        {
+          "page": 94,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-94.jpg",
+          "originalUrl": "/grade11/upper/page-94.jpg"
+        },
+        {
+          "page": 95,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-95.jpg",
+          "originalUrl": "/grade11/upper/page-95.jpg"
+        },
+        {
+          "page": 96,
+          "top": 0,
+          "bottom": 0.242,
+          "url": "/grade11/upper/unit8-grammar-96.jpg",
+          "originalUrl": "/grade11/upper/page-96.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "8-reported",
+          "instruction": "A. Change the following into the reported speech.",
+          "instructionMy": "အောက်ပါ တိုက်ရိုက်ပြောစကားများကို သွယ်ဝိုက်ပြောစကားအဖြစ် ပြောင်းပါ။",
+          "pages": [
+            95
+          ],
+          "items": [
+            {
+              "id": "8-reported-1",
+              "prompt": "1. Sandar said, “I’ve read the letter but I don’t understand it.”"
+            },
+            {
+              "id": "8-reported-2",
+              "prompt": "2. Nandar said to Yu Par, “You left the window open last night.”"
+            },
+            {
+              "id": "8-reported-3",
+              "prompt": "3. Po Po said, “Thant Zaw, who were you looking for?”"
+            },
+            {
+              "id": "8-reported-4",
+              "prompt": "4. May Thu said to her roommate, “Please close the door as you leave.”"
+            },
+            {
+              "id": "8-reported-5",
+              "prompt": "5. The receptionist said to the man, “Please fill in this form and wait till the manager comes.”"
+            },
+            {
+              "id": "8-reported-6",
+              "prompt": "6. Daw Mu Mu said to her son, “How many times have I told you to turn off the lights when you go out?”"
+            },
+            {
+              "id": "8-reported-7",
+              "prompt": "7. “Shake the bottle well before you use it,” said the chemist."
+            },
+            {
+              "id": "8-reported-8",
+              "prompt": "8. The teacher said, “Who left this bag here?”"
+            },
+            {
+              "id": "8-reported-9",
+              "prompt": "9. Ni Ni said, “I am so sleepy that I can hardly keep my eyes open.”"
+            },
+            {
+              "id": "8-reported-10",
+              "prompt": "10. Mum said, “If you get better grades, I will buy you an iPad.”"
+            },
+            {
+              "id": "8-reported-11",
+              "prompt": "11. Thuzar said, “Do we have to finish this task before the lunch break, Muyar?”"
+            },
+            {
+              "id": "8-reported-12",
+              "prompt": "12. “Make sure you don’t take the bus in the rush hour,” said the mother to her son."
+            },
+            {
+              "id": "8-reported-13",
+              "prompt": "13. My aunt said, “Brown the onions before you add meat.”"
+            },
+            {
+              "id": "8-reported-14",
+              "prompt": "14. “I must speak to you now, Thaw Zin,” said Maw Maw."
+            },
+            {
+              "id": "8-reported-15",
+              "prompt": "15. Zaw Htike said to his senior officer, “Shall I fax the information to them?”"
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "8-direct",
+          "instruction": "B. Change the following into direct speech.",
+          "instructionMy": "အောက်ပါဝါကျများကို တိုက်ရိုက်ပြောစကားအဖြစ် ပြောင်းပါ။",
+          "pages": [
+            95,
+            96
+          ],
+          "items": [
+            {
+              "id": "8-direct-1",
+              "prompt": "1. The guide told us that if we left then, we would get back to the camp before the sun set."
+            },
+            {
+              "id": "8-direct-2",
+              "prompt": "2. My mum asked me not to cook the fish too long."
+            },
+            {
+              "id": "8-direct-3",
+              "prompt": "3. Kyaw Khine and Marlar said that they were going to get married."
+            },
+            {
+              "id": "8-direct-4",
+              "prompt": "4. The hotel manager told me that I was not allowed to smoke in my room."
+            },
+            {
+              "id": "8-direct-5",
+              "prompt": "5. Myo Set told his sister that it would be a good idea for her to see a doctor."
+            },
+            {
+              "id": "8-direct-6",
+              "prompt": "6. Lin Htet asked me if I had decided to leave the job."
+            },
+            {
+              "id": "8-direct-7",
+              "prompt": "7. Thandar asked Kyaw Swar how often he went to the gym."
+            },
+            {
+              "id": "8-direct-8",
+              "prompt": "8. Yi Mon told her brother to stop teasing her and do the cleaning before Mum came back."
+            },
+            {
+              "id": "8-direct-9",
+              "prompt": "9. Thin Nwe asked Zwe Htet why he had not brought his own pencil."
+            },
+            {
+              "id": "8-direct-10",
+              "prompt": "10. Kit Kit told Chit Chit not to tell their secret to anyone else."
+            }
+          ],
+          "multiline": true
+        }
+      ]
+    },
+    "listening": {
+      "sources": [
+        {
+          "page": 96,
+          "top": 0.242,
+          "bottom": 0.7101,
+          "url": "/grade11/upper/unit8-listening-96.jpg",
+          "originalUrl": "/grade11/upper/page-96.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "8-listen",
+          "instruction": "A. Listen to the dialogue between two friends and complete the sentences.",
+          "instructionMy": "သူငယ်ချင်းနှစ်ဦး၏ စကားပြောကို နားထောင်ပြီး ကွက်လပ်များကို ဖြည့်ပါ။",
+          "pages": [
+            96
+          ],
+          "items": [
+            {
+              "id": "8-listen-1",
+              "prompt": "1. I like the (1) ______ of the story, Sue, Johnsy and Behrman."
+            },
+            {
+              "id": "8-listen-2",
+              "prompt": "2. What do you think the (2) ______ of the story is?"
+            },
+            {
+              "id": "8-listen-3",
+              "prompt": "3. I think it’s about (3) ______."
+            },
+            {
+              "id": "8-listen-4",
+              "prompt": "4. All of them are (4) ______ and they love art."
+            },
+            {
+              "id": "8-listen-5",
+              "prompt": "5. And when Johnsy (5) ______, Sue manages all her care."
+            },
+            {
+              "id": "8-listen-6",
+              "prompt": "6. Mr Behrman helps Johnsy (6) ______, too."
+            },
+            {
+              "id": "8-listen-7",
+              "prompt": "7. Sue is also willing to (7) ______ her wishes and time for her friend."
+            },
+            {
+              "id": "8-listen-8",
+              "prompt": "8. It proves that (8) ______ and kindness is more valuable than expensive material possessions."
+            }
+          ],
+          "audio": true
+        }
+      ]
+    },
+    "speaking": {
+      "sources": [
+        {
+          "page": 96,
+          "top": 0.7101,
+          "bottom": 1,
+          "url": "/grade11/upper/unit8-speaking-96.jpg",
+          "originalUrl": "/grade11/upper/page-96.jpg"
+        },
+        {
+          "page": 97,
+          "top": 0,
+          "bottom": 0.788,
+          "url": "/grade11/upper/unit8-speaking-97.jpg",
+          "originalUrl": "/grade11/upper/page-97.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "8-practice",
+          "instruction": "B. In pairs, practise the dialogue and swap roles.",
+          "instructionMy": "နှစ်ယောက်တစ်တွဲစီ စကားပြောကို လေ့ကျင့်၍ အခန်းကဏ္ဍများ လဲလှယ်ပါ။",
+          "pages": [
+            96
+          ],
+          "items": []
+        },
+        {
+          "id": "8-character",
+          "instruction": "C. Read the short notes on the characters below. Then, in pairs, ask each other the given questions to talk about the character you like.",
+          "instructionMy": "စာအုပ်ပါ ဇာတ်ကောင်မှတ်စုများကို ဖတ်ပြီး နှစ်ယောက်တစ်တွဲ မေးခွန်းများမေး၍ မိမိနှစ်သက်သော ဇာတ်ကောင်အကြောင်း ပြောပါ။",
+          "pages": [
+            97
+          ],
+          "items": [
+            {
+              "id": "8-character-1",
+              "prompt": "Which character do you like more?"
+            },
+            {
+              "id": "8-character-2",
+              "prompt": "What kind of person is he / she?"
+            },
+            {
+              "id": "8-character-3",
+              "prompt": "What kind of relationship does each character have with Johnsy?"
+            },
+            {
+              "id": "8-character-4",
+              "prompt": "What role does he / she play in the story?"
+            },
+            {
+              "id": "8-character-5",
+              "prompt": "Why do you like him / her better?"
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "8-report",
+          "instruction": "D. Tell the class about the character your friend likes.",
+          "instructionMy": "သင့်သူငယ်ချင်းနှစ်သက်သော ဇာတ်ကောင်အကြောင်း အတန်းတွင် ပြောပြပါ။",
+          "pages": [
+            97
+          ],
+          "items": [
+            {
+              "id": "8-report-1",
+              "prompt": "Presentation notes"
+            }
+          ],
+          "multiline": true
+        }
+      ]
+    },
+    "writing": {
+      "sources": [
+        {
+          "page": 97,
+          "top": 0.788,
+          "bottom": 1,
+          "url": "/grade11/upper/unit8-writing-97.jpg",
+          "originalUrl": "/grade11/upper/page-97.jpg"
+        },
+        {
+          "page": 98,
+          "top": 0,
+          "bottom": 1,
+          "url": "/grade11/upper/page-98.jpg",
+          "originalUrl": "/grade11/upper/page-98.jpg"
+        }
+      ],
+      "groups": [
+        {
+          "id": "8-plan",
+          "instruction": "Planning questions",
+          "instructionMy": "စာအုပ်ပါ လမ်းညွှန်မေးခွန်းများ",
+          "pages": [
+            98
+          ],
+          "items": [
+            {
+              "id": "8-plan-1",
+              "prompt": "Who / what is the story about?"
+            },
+            {
+              "id": "8-plan-2",
+              "prompt": "Where / when does the story take place?"
+            },
+            {
+              "id": "8-plan-3",
+              "prompt": "What does the character want?"
+            },
+            {
+              "id": "8-plan-4",
+              "prompt": "What problem does the character encounter?"
+            },
+            {
+              "id": "8-plan-5",
+              "prompt": "How does the character solve the problem?"
+            },
+            {
+              "id": "8-plan-6",
+              "prompt": "How does the story end?"
+            }
+          ],
+          "multiline": true
+        },
+        {
+          "id": "8-composition",
+          "instruction": "In groups of four, read the story ‘The Last Leaf’ again and write a summary of it in about 100 words.",
+          "instructionMy": "လေးယောက်တစ်ဖွဲ့စီ မူရင်းဇာတ်လမ်းကို ပြန်ဖတ်ပြီး စာလုံးရေ ၁၀၀ ခန့်ဖြင့် အကျဉ်းချုပ်ရေးပါ။",
+          "pages": [
+            98
+          ],
+          "items": [
+            {
+              "id": "8-composition-1",
+              "prompt": "In groups of four, read the story ‘The Last Leaf’ again and write a summary of it in about 100 words.",
+              "multiline": true,
+              "wordTarget": [
+                100,
+                100
+              ]
+            }
+          ],
+          "multiline": true
+        }
+      ]
+    }
+  }
+}
