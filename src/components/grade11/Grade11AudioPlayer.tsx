@@ -22,6 +22,7 @@ function TrackPlayer({ track, reference }: { track: (typeof tracks)[number]; ref
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
   const [showCaptions, setShowCaptions] = useState(true);
+  const [showMy, setShowMy] = useState(true);
   const cues = getGrade11Captions(track.unit);
   const stopAt = useRef<number | null>(null);
   const active = useGrade11CaptionClock(audioRef, cues, stopAt);
@@ -148,12 +149,27 @@ function TrackPlayer({ track, reference }: { track: (typeof tracks)[number]; ref
             >
               {showCaptions ? "CC စာတန်း ပိတ်မည်" : "CC စာတန်း ပြမည်"}
             </button>
+            <button
+              type="button"
+              aria-pressed={showMy}
+              className="text-primary underline"
+              onClick={() => setShowMy((old) => !old)}
+            >
+              {showMy ? "မြန်မာပြန် ဝှက်မယ်" : "မြန်မာပြန် ပြမယ်"}
+            </button>
             <a
               href={`/grade11/captions/unit${track.unit}.vtt`}
               download
               className="text-primary underline"
             >
-              VTT စာတန်း ရယူမည်
+              English VTT ရယူမည်
+            </a>
+            <a
+              href={`/grade11/captions/unit${track.unit}.my.vtt`}
+              download
+              className="text-primary underline"
+            >
+              မြန်မာ VTT ရယူမည်
             </a>
           </div>
           <p lang="my" className="text-xs text-muted-foreground">
@@ -173,8 +189,8 @@ function TrackPlayer({ track, reference }: { track: (typeof tracks)[number]; ref
                   အသံဖွင့်ပြီး ပြောနေသောစာကြောင်းကို ဒီနေရာတွင် ကြည့်နိုင်ပါသည်။
                 </p>
               )}
-              {current?.my && (
-                <p lang="my" className="mt-2 text-sm">
+              {showMy && current?.my && (
+                <p lang="my" className="mt-2 text-sm leading-relaxed">
                   {current.my}
                 </p>
               )}
@@ -206,7 +222,14 @@ function TrackPlayer({ track, reference }: { track: (typeof tracks)[number]; ref
                     }
                   }}
                 >
-                  {cue.en}
+                  <span lang="en" className="block">
+                    {cue.en}
+                  </span>
+                  {showMy && cue.my && (
+                    <span lang="my" className="mt-2 block leading-relaxed text-muted-foreground">
+                      {cue.my}
+                    </span>
+                  )}
                 </button>
               ))}
             </div>

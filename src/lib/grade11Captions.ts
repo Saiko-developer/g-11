@@ -1,3 +1,4 @@
+import burmese from "@/data/grade11/listeningTranslations.my.json";
 import data from "@/data/grade11/listeningCaptions.json";
 
 export type Grade11CaptionWord = { start: number; end: number; word: string };
@@ -15,7 +16,16 @@ export type Grade11Transcript = {
   audioSha256: string;
   cues: Grade11Caption[];
 };
-export const GRADE11_TRANSCRIPTS = data as Record<string, Grade11Transcript>;
+const translations = burmese.translations as Record<string, string>;
+export const GRADE11_TRANSCRIPTS: Record<string, Grade11Transcript> = Object.fromEntries(
+  Object.entries(data as Record<string, Grade11Transcript>).map(([unit, transcript]) => [
+    unit,
+    {
+      ...transcript,
+      cues: transcript.cues.map((cue) => ({ ...cue, my: translations[cue.id] })),
+    },
+  ]),
+);
 const EMPTY: Grade11Caption[] = [];
 export const getGrade11Captions = (unit: number) => GRADE11_TRANSCRIPTS[unit]?.cues ?? EMPTY;
 

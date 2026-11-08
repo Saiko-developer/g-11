@@ -35,7 +35,13 @@ describe("Grade 11 original audio", () => {
     audio.currentTime = (word.start + word.end) / 2;
     fireEvent.seeked(audio);
     const live = screen.getByRole("region", { name: "Live audio subtitles" });
-    expect(live.textContent?.trim()).toBe(cue.en);
+    expect(live.querySelector('[lang="en"]')?.textContent?.trim()).toBe(cue.en);
+    expect(live.querySelector('[lang="my"]')?.textContent?.trim()).toBe(cue.my);
+    fireEvent.click(screen.getByRole("button", { name: "မြန်မာပြန် ဝှက်မယ်" }));
+    expect(live.querySelector('[lang="my"]')).toBeNull();
+    expect(live.querySelector('[lang="en"]')?.textContent?.trim()).toBe(cue.en);
+    fireEvent.click(screen.getByRole("button", { name: "မြန်မာပြန် ပြမယ်" }));
+    expect(live.querySelector('[lang="my"]')?.textContent?.trim()).toBe(cue.my);
     expect(live.querySelector('[aria-current="true"]')?.textContent).toBe(word.word);
     audio.currentTime = 115;
     fireEvent.seeked(audio);
@@ -43,7 +49,9 @@ describe("Grade 11 original audio", () => {
     fireEvent.click(screen.getByRole("button", { name: "CC စာတန်း ပိတ်မည်" }));
     expect(screen.queryByRole("region", { name: "Live audio subtitles" })).toBeNull();
     fireEvent.click(screen.getByText("စာတန်းအပြည့် / တစ်ကြောင်းချင်း နားထောင်မည်"));
-    await fireEvent.click(screen.getByRole("button", { name: cue.en }));
+    await fireEvent.click(
+      screen.getByText(cue.en, { selector: 'span[lang="en"]' }).closest("button")!,
+    );
     expect(audio.currentTime).toBe(cue.start);
     vi.mocked(audio.pause).mockClear();
     audio.currentTime = cue.end + 0.01;

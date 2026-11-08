@@ -1,3 +1,5 @@
+import translations from "@/data/grade11/listeningTranslations.my.json";
+import { createHash } from "node:crypto";
 import { describe, expect, it } from "vitest";
 import { readFileSync } from "node:fs";
 import { GRADE11_TRANSCRIPTS, getGrade11Captions, grade11CaptionAt } from "./grade11Captions";
@@ -13,6 +15,9 @@ describe("Grade 11 MP3-aligned captions", () => {
       let lastEnd = 0;
       const vtt = readFileSync(`public/grade11/captions/unit${track.unit}.vtt`, "utf8");
       expect(vtt.startsWith("WEBVTT")).toBe(true);
+      const myVtt = readFileSync(`public/grade11/captions/unit${track.unit}.my.vtt`, "utf8");
+      expect(myVtt.startsWith("WEBVTT")).toBe(true);
+      expect(myVtt.match(/^\d{2}:.*-->.*$/gm)).toEqual(vtt.match(/^\d{2}:.*-->.*$/gm));
       for (const cue of transcript.cues) {
         expect(cue.start).toBeGreaterThanOrEqual(lastEnd - 0.05);
         expect(cue.end).toBeGreaterThan(cue.start);
@@ -24,6 +29,9 @@ describe("Grade 11 MP3-aligned captions", () => {
             .trim(),
         ).toBe(cue.en);
         expect(vtt).toContain(cue.en);
+        expect(cue.my).toMatch(/[\u1000-\u109f]/);
+        expect(cue.my).not.toBe(cue.en);
+        expect(myVtt).toContain(cue.my);
         for (const word of cue.words) {
           expect(word.start).toBeGreaterThanOrEqual(cue.start);
           expect(word.end).toBeGreaterThanOrEqual(word.start);
@@ -33,6 +41,18 @@ describe("Grade 11 MP3-aligned captions", () => {
       }
     },
   );
+  it("covers exactly the current English cues and detects stale translations after source edits", () => {
+    const ids = Object.values(GRADE11_TRANSCRIPTS)
+      .flatMap((transcript) => transcript.cues.map((cue) => cue.id))
+      .sort();
+    expect(Object.keys(translations.translations).sort()).toEqual(ids);
+    expect(translations.sourceSha256).toBe(
+      createHash("sha256")
+        .update(readFileSync("src/data/grade11/listeningCaptions.json"))
+        .digest("hex"),
+    );
+  });
+
   it("uses the media time with no artificial offset and clears captions during silence", () => {
     const cues = getGrade11Captions(1);
     const word = cues[1].words.find((item) => item.end > item.start)!;
