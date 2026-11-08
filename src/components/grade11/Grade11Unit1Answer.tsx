@@ -1,3 +1,4 @@
+import { grade11ApiFetch } from "@/lib/grade11ApiFetch";
 import { useState } from "react";
 import { CheckCircle2, Lightbulb, Loader2 } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -43,10 +44,10 @@ export function Grade11Unit1Answer({
     setHintLoading(true);
     setHintError(null);
     try {
-      const res = await fetch("/api/answer-hint", {
+      const res = await grade11ApiFetch("/api/answer-hint", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question, instructions, studentAnswer: val, correct }),
+        body: JSON.stringify({ grade: 11, question, instructions, studentAnswer: val, correct }),
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok || !data.hint) throw new Error();

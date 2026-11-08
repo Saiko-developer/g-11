@@ -31,10 +31,10 @@ ${
     ? 'Give the best model answer in English for the question. Return JSON: {"answer": string}'
     : 'Decide if the student answer is acceptable (meaning matters, minor spelling ok). Give short feedback in Burmese (Unicode). If wrong, explain why without giving the full answer. Return JSON: {"correct": boolean, "feedback": string}'
 }`,
-      prompt: `Lesson text: ${untrusted("lesson", context || "-")}
+      prompt: `Lesson text: ${untrusted("lesson", context || "-", 18000)}
 Instructions: ${untrusted("instructions", instructions || "-")}
 Question: ${untrusted("question", question)}
-${mode === "check" ? `Student answer: ${untrusted("student_answer", studentAnswer)}` : ""}`,
+${mode === "check" ? `Student answer: ${untrusted("student_answer", studentAnswer, 12000)}` : ""}`,
     });
     return Response.json({
       correct: !!raw?.correct,

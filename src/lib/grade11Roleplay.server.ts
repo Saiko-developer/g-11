@@ -1,4 +1,5 @@
 import { UNIT1_KEYS, UNIT1_SECTIONS } from "./grade11Unit1";
+import { TRAVEL_LESSONS } from "./grade11Travel";
 import { z } from "zod";
 import { generateJson } from "@/lib/ai-json.server";
 import { requireUser, untrusted } from "@/lib/api-guard.server";
@@ -8,7 +9,7 @@ import { GRADE11_SPEAKING_LINES } from "@/data/grade11/speakingPractice";
 
 const input = z.object({
   unit: z.number().int().min(1).max(12),
-  exercise: z.enum(["1D-30", "1D-31"]).optional(),
+  exercise: z.enum(["1D-30", "1D-31", "5D-14", "5D-21"]).optional(),
   turns: z
     .array(z.object({ role: z.enum(["ai", "student"]), text: z.string().max(1600) }))
     .max(20)
@@ -48,7 +49,7 @@ export async function handleGrade11Roleplay(request: Request): Promise<Response>
   }
   if (body.finish && !body.session)
     return Response.json({ error: "Session required" }, { status: 400 });
-  if (body.exercise && body.unit !== 1)
+  if (body.exercise && Number(body.exercise[0]) !== body.unit)
     return Response.json({ error: "Invalid exercise" }, { status: 400 });
   let session = body.session;
   if (session) {
@@ -66,7 +67,7 @@ export async function handleGrade11Roleplay(request: Request): Promise<Response>
   const objective = unit.skills.find((skill) => skill.kind === "speaking")!.detail;
   const source = GRADE11_SPEAKING_LINES[body.unit].map((line) => line.en).join("\n");
   let exerciseContext = "";
-  if (body.exercise) {
+  if (body.exercise && body.unit === 1) {
     const blocks = UNIT1_SECTIONS.find((section) => section.code === "1D")!.blocks;
     const instruction = blocks.find((block) => block.id === body.exercise)!;
     const dialogue = blocks
@@ -81,6 +82,17 @@ export async function handleGrade11Roleplay(request: Request): Promise<Response>
       body.exercise === "1D-30"
         ? `${instruction.x}\nOriginal Exercise B dialogue:\n${dialogue}\nPractise this textbook dialogue as one partner, one turn at a time. Let the student speak the other partner. Stay on this trip; do not introduce an unrelated scenario.`
         : `${instruction.x}\nCreate a related birdwatching trip dialogue with the student, using the structure of Exercise B. Ask about the student's local lake rather than inventing facts about their home.`;
+  }
+  if (body.exercise && body.unit === 5) {
+    const blocks = TRAVEL_LESSONS[5].sections.find((section) => section.code === "5D")!.blocks;
+    exerciseContext = blocks
+      .filter((block) => Number(block.id.split("-")[1]) >= 14)
+      .map((block) => block.x)
+      .join("\n");
+    exerciseContext +=
+      body.exercise === "5D-14"
+        ? "\nAct as a classmate and ask the six textbook planning questions one at a time. Let the student choose a place from the five studied ASEAN countries. Do not invent their trip details."
+        : "\nAsk the student to report a friend's preferred destination in the third person. Ask for their friend's actual answers first; do not invent a friend or travel facts. Give presentation feedback.";
   }
   const context = `Grade 11 Unit ${body.unit}: ${unit.title}\nSpeaking objective: ${objective}\nTextbook practice phrases/questions:\n${source}\nExercise task:\n${exerciseContext}`;
   const conversation = untrusted("conversation", JSON.stringify(body.turns), 36000);

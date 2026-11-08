@@ -2,7 +2,7 @@ import { getGrade11Captions, GRADE11_TRANSCRIPTS } from "@/lib/grade11Captions";
 import tracks from "@/data/grade11/listeningAudio.json";
 import { useGrade11CaptionClock } from "./useGrade11CaptionClock";
 import { Grade11CaptionText } from "./Grade11CaptionText";
-import { RequireSignIn } from "@/components/RequireSignIn";
+import { Grade11RequireSignIn as RequireSignIn } from "./Grade11RequireSignIn";
 import { Grade11RolePlay } from "./Grade11RolePlay";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Button } from "@/components/ui/button";

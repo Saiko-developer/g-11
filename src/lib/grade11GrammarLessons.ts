@@ -1,4 +1,5 @@
 import type { GrammarSection, UnitGrammar } from "@/data/grammar/types";
+import { TRAVEL_LESSONS } from "./grade11Travel";
 import { UNIT3_SECTIONS, UNIT3_KEYS } from "./grade11Unit3";
 import { UNIT4_SECTIONS, UNIT4_KEYS } from "./grade11Unit4";
 import type { Unit1Block } from "./grade11Unit1";
@@ -18,11 +19,11 @@ type Spec = {
   after?: number;
   parts?: [string, string, string][];
 };
-function grammar(unit: 3 | 4, specs: Spec[]): UnitGrammar {
-  const blocks = (unit === 3 ? UNIT3_SECTIONS : UNIT4_SECTIONS).find(
-    (s) => s.code === `${unit}C`,
-  )!.blocks;
-  const keys = unit === 3 ? UNIT3_KEYS : UNIT4_KEYS;
+function grammar(unit: 3 | 4 | 5, specs: Spec[]): UnitGrammar {
+  const blocks = (
+    unit === 3 ? UNIT3_SECTIONS : unit === 4 ? UNIT4_SECTIONS : TRAVEL_LESSONS[5].sections
+  ).find((s) => s.code === `${unit}C`)!.blocks;
+  const keys = unit === 3 ? UNIT3_KEYS : unit === 4 ? UNIT4_KEYS : TRAVEL_LESSONS[5].keys;
   const block = (n: number) => blocks.find((b) => b.id === `${unit}C-${n}`)!;
   const en = (b: Unit1Block) => b.x.replace(/^e\.g\.\s*/, "");
   const sections: GrammarSection[] = specs.map((spec) => {
@@ -55,9 +56,11 @@ function grammar(unit: 3 | 4, specs: Spec[]): UnitGrammar {
           beforeEn: [spec.before ? en(block(spec.before)) : question.x],
           afterEn: spec.after
             ? en(block(spec.after))
-            : completed.includes("_")
+            : unit === 5
               ? answer.answer
-              : completed,
+              : completed.includes("_")
+                ? answer.answer
+                : completed,
           stepsMy: spec.steps,
         },
       },
@@ -85,11 +88,18 @@ function grammar(unit: 3 | 4, specs: Spec[]): UnitGrammar {
   });
   return {
     unit,
-    topicEn: unit === 3 ? "Gerund and Infinitive with to" : "Too … to and Enough to",
+    topicEn:
+      unit === 5
+        ? "Inversion and relative clauses"
+        : unit === 3
+          ? "Gerund and Infinitive with to"
+          : "Too … to and Enough to",
     topicMy:
-      unit === 3
-        ? "ကြိယာမှ နာမ်ပြုခြင်းနှင့် ရည်ရွယ်ချက်ပြ ကြိယာပုံစံ"
-        : "လွန်ကဲမှုနှင့် လုံလောက်မှု ပြဝါကျများ",
+      unit === 5
+        ? "ဝါကျအစီအစဉ်ပြောင်းခြင်းနှင့် ဆက်စပ်ဝါကျတိုပြုခြင်း"
+        : unit === 3
+          ? "ကြိယာမှ နာမ်ပြုခြင်းနှင့် ရည်ရွယ်ချက်ပြ ကြိယာပုံစံ"
+          : "လွန်ကဲမှုနှင့် လုံလောက်မှု ပြဝါကျများ",
     sections,
   };
 }
@@ -230,6 +240,63 @@ export const UNIT4_GRAMMAR = grammar(4, [
       "မူရင်းဝါကျမှာ ဆူညံလွန်းလို့ မအနားယူနိုင်ကြောင်း ပြပါတယ်။",
       "ငြိမ်သက်မှု မလုံလောက်ကြောင်း ပုံစံပြောင်းပါ။",
       "နောက်က အနားယူခြင်းနဲ့ ကာလကို ထိန်းထားပါ။",
+    ],
+  },
+]);
+
+export const UNIT5_GRAMMAR = grammar(5, [
+  {
+    id: "inversion",
+    title: "Inversion",
+    my: "ကြိယာကို ကတ္တားရှေ့ထားခြင်း",
+    formula: "[Place / Direction] + [Intransitive verb] + [Subject]",
+    idea: "နေရာနဲ့ ဦးတည်ရာကို ရှေ့တင်ပြီး အကြောင်းအရာအသစ်ကို မိတ်ဆက်ရာမှာ ကြိယာကို ကတ္တားရှေ့ထားနိုင်ပါတယ်။",
+    why: "ဖော်ပြချက်ကို ပိုထင်ရှားစေဖို့ စာပေနဲ့ သရုပ်ဖော်ရေးသားမှုတွေမှာ သုံးပါတယ်။",
+    rules: [
+      "နေရာ သို့မဟုတ် ဦးတည်ရာပြ စကားစုကို ဝါကျရှေ့မှာ ထားပါ။",
+      "ကံမလိုတဲ့ ကြိယာကို ကတ္တားရှေ့ရွှေ့ပြီး မူလကာလနဲ့ အနည်းအများကို ထိန်းပါ။",
+      "မေးခွန်းပြောင်းတာ မဟုတ်လို့ အကူကြိယာအသစ် မထည့်ပါနှင့်။",
+    ],
+    examples: [5, 6, 7],
+    question: 10,
+    steps: ["လှည့်ထွက်လာတဲ့ နေရာကို ရှေ့တင်ပါ။", "မူလကြိယာနဲ့ ကတ္တားကို အစီအစဉ်ပြောင်းပါ။"],
+  },
+  {
+    id: "participle",
+    title: "Relative clauses and participle phrases",
+    my: "ဆက်စပ်ဝါကျကို ကြိယာစကားစုအဖြစ် တိုပြုခြင်း",
+    formula: "[Noun] + [V-ing / V3 phrase]",
+    idea: "ဆက်စပ်ဝါကျထဲမှာ ဆက်စပ်နာမ်စားက ကတ္တားဖြစ်နေရင် ကြိယာစကားစုအဖြစ် တိုပြုနိုင်ပါတယ်။",
+    why: "အဓိပ္ပာယ်ကို မပြောင်းဘဲ နာမ်ရဲ့ အချက်အလက်ကို ကျစ်လျစ်စွာ ဖော်ပြနိုင်ပါတယ်။",
+    rules: [
+      "ကိုယ်တိုင်လုပ်ဆောင်နေတဲ့ အဓိပ္ပာယ်ဆိုရင် ကြိယာကို အိုင်အင်ဂျီပုံစံ ပြောင်းပါ။",
+      "ပြုလုပ်ခံရတဲ့ အဓိပ္ပာယ်ဆိုရင် ကြိယာတတိယပုံစံ သုံးပါ။",
+      "နာမ်နဲ့ နောက်ကစကားစုရဲ့ အဓိပ္ပာယ်ဆက်စပ်မှုကို ပြန်စစ်ပါ။",
+    ],
+    examples: [23, 25],
+    question: 29,
+    steps: [
+      "ဆက်စပ်နာမ်စားရဲ့ လုပ်ဆောင်ချက်ကို ရှာပါ။",
+      "အပြုခံအဓိပ္ပာယ်ဖြစ်လို့ ဆက်စပ်နာမ်စားနဲ့ အကူကြိယာကို ဖြုတ်ပြီး ကြိယာတတိယပုံစံကို ထိန်းပါ။",
+    ],
+  },
+  {
+    id: "object-relative",
+    title: "Omitting an object relative pronoun",
+    my: "ကံအဖြစ်သုံးသော ဆက်စပ်နာမ်စားကို ချန်လှပ်ခြင်း",
+    formula: "[Noun] + [Subject] + [Verb]",
+    idea: "ဆက်စပ်နာမ်စားက ကံဖြစ်နေရင် အဲဒီနာမ်စားကိုပဲ ချန်လှပ်နိုင်ပါတယ်။",
+    why: "နောက်မှာ ကတ္တားနဲ့ ကြိယာ ရှိနေပြီးဖြစ်လို့ ကြိယာပုံစံကို ထပ်မပြောင်းရပါ။",
+    rules: [
+      "ဆက်စပ်နာမ်စားနောက်မှာ သီးခြားကတ္တား ရှိမရှိ ကြည့်ပါ။",
+      "ကံအဖြစ်သုံးနေရင် နာမ်စားကိုပဲ ဖြုတ်ပြီး ကျန်ဝါကျကို ထိန်းပါ။",
+      "ကတ္တားအဖြစ်သုံးတဲ့ နာမ်စားနဲ့ မရောထွေးပါနှင့်။",
+    ],
+    examples: [27],
+    question: 42,
+    steps: [
+      "ဆက်စပ်ဝါကျရဲ့ ကတ္တားနဲ့ ကံကို ခွဲကြည့်ပါ။",
+      "ကံနာမ်စားဖြစ်ရင် နာမ်စားတစ်ခုပဲ ဖြုတ်ပါ။",
     ],
   },
 ]);

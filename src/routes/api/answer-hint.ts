@@ -22,7 +22,7 @@ export const Route = createFileRoute("/api/answer-hint")({
         }
         try {
           const raw = await generateJson<{ hint: string }>({
-            system: withTone`You are Saya Owl, an expert Myanmar Grade 10 English grammar teacher.
+            system: withTone`You are Saya Owl, an expert Myanmar Grade ${body.grade === 11 ? 11 : 10} English grammar teacher.
 A student's answer is wrong. Write a direct, targeted explanation in clear Burmese (Unicode) with exactly two parts, formatted like this:
 
 **မှားယွင်းနေသည့် အချက်:**

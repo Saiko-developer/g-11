@@ -90,6 +90,7 @@ type ChatHomeRequestBody = {
   sectionContent?: string | null;
   mode?: "voice" | "text";
   paperVoice?: boolean;
+  grade?: 10 | 11;
 };
 
 export const Route = createFileRoute("/api/chat-home")({
@@ -105,16 +106,25 @@ export const Route = createFileRoute("/api/chat-home")({
         }
 
         if (!process.env.LOVABLE_API_KEY) {
+          if (body.grade === 11)
+            return Response.json(
+              {
+                error: "ai_unavailable",
+                message: "AI ဝန်ဆောင်မှု ချိတ်ဆက်ရန် လိုနေပါသည်။ ဆရာထံ အကြောင်းကြားပေးပါ။",
+              },
+              { status: 503 },
+            );
           return new Response("Missing LOVABLE_API_KEY", { status: 500 });
         }
         const model = getLovableChatModel();
 
-        let system = HOME_PROMPT;
+        const grade11 = body.grade === 11;
+        let system = grade11 ? HOME_PROMPT.replaceAll("Grade 10", "Grade 11") : HOME_PROMPT;
         if (lessonContext) {
-          system += `\n\n--- ယခု ကျောင်းသား ဖတ်နေသော သင်ခန်းစာ ---\n${untrusted("lesson", lessonContext)}`;
+          system += `\n\n--- ယခု ကျောင်းသား ဖတ်နေသော သင်ခန်းစာ ---\n${untrusted("lesson", lessonContext, grade11 ? 40000 : 8000)}`;
         }
         if (sectionContent) {
-          system += `\n\n--- ကျောင်းသား ကြည့်နေသော နေရာပိုင်း (မျက်နှာပြင်ပေါ်က စာသား အစစ်) ---\n${untrusted("screen_section", sectionContent)}`;
+          system += `\n\n--- ကျောင်းသား ကြည့်နေသော နေရာပိုင်း (မျက်နှာပြင်ပေါ်က စာသား အစစ်) ---\n${untrusted("screen_section", sectionContent, grade11 ? 16000 : 8000)}`;
         }
         if (paperVoice) {
           system += `\n\n# မျက်နှာပြင် မှတ်စုတို (Screen Note) — မဖြစ်မနေ\n- အသံဖြင့် အပြည့်အစုံ ရှင်းပြပြီးနောက် အဖြေ၏ အဆုံးတွင် "@@NOTE@@" ဟူသော စာကြောင်းတစ်ကြောင်း သီးသန့်ရေးပါ။ ထို့နောက် အောက်ပါပုံစံဖြင့်သာ ရေးပါ (ဤအပိုင်းကို အသံမဖတ်ပါ) —\nအမေး: <ကျောင်းသားမေးသော မေးခွန်း တိုတို>\nအဖြေ: <အဖြေမှန် တိုတို>\n• <အဓိကမှတ်သားရန် အချက်တို>\n• <အချက်တို> (၂–၃ ချက်သာ)\n- "@@NOTE@@" ကို အဖြေတစ်ခုလျှင် တစ်ကြိမ်သာ ရေးပါ။ နှုတ်ဆက်စကားသက်သက် ဖြစ်လျှင် မရေးပါနှင့်။`;
@@ -127,19 +137,34 @@ export const Route = createFileRoute("/api/chat-home")({
         const DOCX = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
         for (const m of messages as UIMessage[]) {
           for (let i = 0; i < (m.parts?.length ?? 0); i++) {
-            const p = m.parts[i] as { type: string; mediaType?: string; url?: string; filename?: string };
-            const isDocx = p.type === "file" && (p.mediaType === DOCX || /\.docx$/i.test(p.filename ?? ""));
+            const p = m.parts[i] as {
+              type: string;
+              mediaType?: string;
+              url?: string;
+              filename?: string;
+            };
+            const isDocx =
+              p.type === "file" && (p.mediaType === DOCX || /\.docx$/i.test(p.filename ?? ""));
             if (!isDocx || !p.url?.startsWith("data:")) continue;
             try {
-              const bytes = Uint8Array.from(atob(p.url.split(",")[1] ?? ""), (c) => c.charCodeAt(0));
+              const bytes = Uint8Array.from(atob(p.url.split(",")[1] ?? ""), (c) =>
+                c.charCodeAt(0),
+              );
               const mammoth = await import("mammoth/mammoth.browser");
-              const text = (await mammoth.extractRawText({ arrayBuffer: bytes.buffer })).value.slice(0, 120000);
+              const text = (
+                await mammoth.extractRawText({ arrayBuffer: bytes.buffer })
+              ).value.slice(0, 120000);
               (m.parts as unknown[])[i] = {
                 type: "text",
-                text: untrusted("uploaded_exam_paper", text.trim() || "(Word file had no readable text)"),
+                text: untrusted(
+                  "uploaded_exam_paper",
+                  text.trim() || "(Word file had no readable text)",
+                ),
               };
             } catch {
-              return new Response("Could not read the Word file. Please upload a PDF or photo.", { status: 400 });
+              return new Response("Could not read the Word file. Please upload a PDF or photo.", {
+                status: 400,
+              });
             }
           }
         }

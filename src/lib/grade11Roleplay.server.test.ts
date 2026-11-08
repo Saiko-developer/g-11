@@ -119,3 +119,16 @@ describe("isolated Grade 11 roleplay with existing quota enforcement", () => {
     expect(generateJson).not.toHaveBeenCalled();
   });
 });
+
+it.each(["5D-14", "5D-21"])(
+  "grounds Unit 5 task %s without changing session billing",
+  async (exercise) => {
+    const response = await handleGrade11Roleplay(request({ unit: 5, exercise }));
+    expect(response.status).toBe(200);
+    expect(startSpeakingSession).toHaveBeenCalledWith(expect.any(Request), 5);
+    expect(vi.mocked(generateJson).mock.calls[0][0].prompt).toContain("place");
+    expect(vi.mocked(generateJson).mock.calls[0][0].prompt).toContain(
+      exercise === "5D-14" ? "six textbook planning questions" : "third person",
+    );
+  },
+);

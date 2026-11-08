@@ -9,6 +9,7 @@ import {
   UNIT2_ROLE_INFO,
 } from "@/data/grade11/unit2ReadingStructure";
 
+vi.mock("@/components/AuthGate", () => ({ useAuth: () => ({ session: null, ready: true }) }));
 vi.mock("@/components/lesson/GrammarScriptView", () => ({ GrammarScriptView: () => null }));
 vi.mock("@/components/lesson/GrammarExerciseGenerator", () => ({
   GrammarExerciseGenerator: () => null,

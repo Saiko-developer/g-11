@@ -1,3 +1,4 @@
+import { grade11ApiFetch } from "@/lib/grade11ApiFetch";
 import { useEffect, useRef, useState } from "react";
 import { Loader2, Mic, Phone, PhoneOff, Square } from "lucide-react";
 import { toast } from "sonner";
@@ -5,7 +6,7 @@ import { useSpeechSynthesis } from "@/hooks/use-voice";
 import { useWhisperRecognition } from "@/hooks/use-whisper";
 import { cn } from "@/lib/utils";
 import { supabase } from "@/integrations/supabase/client";
-import { signInWithGoogle } from "@/components/RequireSignIn";
+import { signInToGrade11 } from "@/lib/grade11SignIn";
 import { G11_SYLLABUS } from "@/data/grade11/syllabus";
 
 type Turn = { role: "ai" | "student"; text: string; my?: string; tip?: string };
@@ -20,14 +21,11 @@ const EMOTIONS: Record<string, string> = {
 type Phase = "idle" | "thinking" | "speaking" | "listening" | "summary";
 
 async function callRoleplay(body: object, signal?: AbortSignal) {
-  const { data } = await supabase.auth.getSession();
-  const token = data.session?.access_token;
-  const res = await fetch("/api/g11-roleplay", {
+  const res = await grade11ApiFetch("/api/g11-roleplay", {
     signal,
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      ...(token ? { Authorization: `Bearer ${token}` } : {}),
     },
     body: JSON.stringify(body),
   });
@@ -47,7 +45,7 @@ export function Grade11RolePlay({
   exercise,
 }: {
   unit: number;
-  exercise?: "1D-30" | "1D-31";
+  exercise?: "1D-30" | "1D-31" | "5D-14" | "5D-21";
 }) {
   const unitTitle =
     G11_SYLLABUS.filter((node) => node.type === "unit").find((node) => node.number === unit)
@@ -277,7 +275,7 @@ export function Grade11RolePlay({
     if (!auth.data.session) {
       set("idle");
       toast.error("AI နဲ့ စကားပြောရန် Google ဖြင့် အရင် Login ဝင်ပါ။", {
-        action: { label: "Login", onClick: () => void signInWithGoogle() },
+        action: { label: "Login", onClick: () => void signInToGrade11() },
       });
       return;
     }

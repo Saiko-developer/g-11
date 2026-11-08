@@ -490,5 +490,138 @@
     "evidenceCueIds": [
       "g11-audio-4-38"
     ]
+  },
+  "5D-1": {
+    "answer": "E",
+    "answerMy": "ကျောင်းသား င",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit5.mp3",
+    "audioSha256": "349381c8513819265c2a8269d2a6792362388df5c7db6765694e911b4f2f21f4",
+    "evidenceCueIds": [
+      "g11-audio-5-18",
+      "g11-audio-5-19",
+      "g11-audio-5-20",
+      "g11-audio-5-21"
+    ]
+  },
+  "5D-2": {
+    "answer": "D",
+    "answerMy": "ကျောင်းသား ဃ",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit5.mp3",
+    "audioSha256": "349381c8513819265c2a8269d2a6792362388df5c7db6765694e911b4f2f21f4",
+    "evidenceCueIds": [
+      "g11-audio-5-15",
+      "g11-audio-5-16",
+      "g11-audio-5-17"
+    ]
+  },
+  "5D-4": {
+    "answer": "B",
+    "answerMy": "ကျောင်းသား ခ",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit5.mp3",
+    "audioSha256": "349381c8513819265c2a8269d2a6792362388df5c7db6765694e911b4f2f21f4",
+    "evidenceCueIds": [
+      "g11-audio-5-8",
+      "g11-audio-5-9",
+      "g11-audio-5-10",
+      "g11-audio-5-11"
+    ]
+  },
+  "5D-5": {
+    "answer": "C",
+    "answerMy": "ကျောင်းသား ဂ",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit5.mp3",
+    "audioSha256": "349381c8513819265c2a8269d2a6792362388df5c7db6765694e911b4f2f21f4",
+    "evidenceCueIds": [
+      "g11-audio-5-12",
+      "g11-audio-5-13",
+      "g11-audio-5-14"
+    ]
+  },
+  "5D-7": {
+    "answer": "community",
+    "answerMy": "အသိုင်းအဝိုင်း",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit5.mp3",
+    "audioSha256": "349381c8513819265c2a8269d2a6792362388df5c7db6765694e911b4f2f21f4",
+    "evidenceCueIds": [
+      "g11-audio-5-3"
+    ]
+  },
+  "5D-8": {
+    "answer": "grow",
+    "answerMy": "တိုးတက်ရင့်ကျက်လာသည်",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit5.mp3",
+    "audioSha256": "349381c8513819265c2a8269d2a6792362388df5c7db6765694e911b4f2f21f4",
+    "evidenceCueIds": [
+      "g11-audio-5-5",
+      "g11-audio-5-6",
+      "g11-audio-5-7"
+    ]
+  },
+  "5D-9": {
+    "answer": "adapt",
+    "answerMy": "လိုက်လျောညီထွေ နေသည်",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit5.mp3",
+    "audioSha256": "349381c8513819265c2a8269d2a6792362388df5c7db6765694e911b4f2f21f4",
+    "evidenceCueIds": [
+      "g11-audio-5-10"
+    ]
+  },
+  "5D-10": {
+    "answer": "welcome challenges",
+    "answerMy": "ဝမ်းမြောက်စွာ လက်ခံချင်သော စိန်ခေါ်မှုများ",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit5.mp3",
+    "audioSha256": "349381c8513819265c2a8269d2a6792362388df5c7db6765694e911b4f2f21f4",
+    "evidenceCueIds": [
+      "g11-audio-5-11"
+    ]
+  },
+  "5D-11": {
+    "answer": "values",
+    "answerMy": "တန်ဖိုးထားမှုများ",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit5.mp3",
+    "audioSha256": "349381c8513819265c2a8269d2a6792362388df5c7db6765694e911b4f2f21f4",
+    "evidenceCueIds": [
+      "g11-audio-5-14"
+    ]
+  },
+  "5D-12": {
+    "answer": "smaller",
+    "answerMy": "ပိုသေးငယ်သည်",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit5.mp3",
+    "audioSha256": "349381c8513819265c2a8269d2a6792362388df5c7db6765694e911b4f2f21f4",
+    "evidenceCueIds": [
+      "g11-audio-5-17"
+    ]
+  },
+  "5D-13": {
+    "answer": "skills",
+    "answerMy": "ကျွမ်းကျင်မှုများ",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit5.mp3",
+    "audioSha256": "349381c8513819265c2a8269d2a6792362388df5c7db6765694e911b4f2f21f4",
+    "evidenceCueIds": [
+      "g11-audio-5-21"
+    ]
   }
 }

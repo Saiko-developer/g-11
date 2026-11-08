@@ -134,6 +134,7 @@ describe("individual Grade 11 grammar exercises", () => {
     fireEvent.click(screen.getByRole("button", { name: "Check Answer" }));
     expect(fetch).not.toHaveBeenCalled();
     fireEvent.click(screen.getByRole("button", { name: /ဘာလို့မှားလဲ/ }));
+    await waitFor(() => expect(fetch).toHaveBeenCalledOnce());
     const signal = vi.mocked(fetch).mock.calls[0][1]!.signal!;
     fireEvent.change(screen.getByRole("textbox"), { target: { value: "revised" } });
     view.rerender(<Grade11GrammarAnswer {...props} value={draft} />);

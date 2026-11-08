@@ -1,5 +1,5 @@
 import { Grade11RolePlay } from "./Grade11RolePlay";
-import { RequireSignIn } from "@/components/RequireSignIn";
+import { Grade11RequireSignIn as RequireSignIn } from "./Grade11RequireSignIn";
 import { Button } from "@/components/ui/button";
 import { Grade11Unit1ExerciseBlocks } from "./Grade11Unit1ExerciseBlocks";
 import { Grade11GrammarVideos } from "./Grade11GrammarVideos";

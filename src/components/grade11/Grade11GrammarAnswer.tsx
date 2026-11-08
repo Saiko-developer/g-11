@@ -1,3 +1,4 @@
+import { grade11ApiFetch } from "@/lib/grade11ApiFetch";
 import { useEffect, useRef, useState } from "react";
 import { CheckCircle2, Lightbulb, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -44,11 +45,11 @@ export function Grade11GrammarAnswer({
     setPending(value);
     setHint(null);
     try {
-      const response = await fetch("/api/answer-hint", {
+      const response = await grade11ApiFetch("/api/answer-hint", {
         method: "POST",
         signal: controller.signal,
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question, instructions, studentAnswer: value, correct }),
+        body: JSON.stringify({ grade: 11, question, instructions, studentAnswer: value, correct }),
       });
       const data = await response.json().catch(() => ({}));
       if (!response.ok || typeof data.hint !== "string" || !data.hint.trim())

@@ -3,7 +3,7 @@ import { Grade11GrammarExercise } from "./Grade11GrammarExercise";
 import { Grade11MemoryTable } from "./Grade11MemoryTable";
 import { Grade11AIReview } from "./Grade11AIReview";
 import { GrammarScriptView } from "@/components/lesson/GrammarScriptView";
-import { UNIT3_GRAMMAR, UNIT4_GRAMMAR } from "@/lib/grade11GrammarLessons";
+import { UNIT3_GRAMMAR, UNIT4_GRAMMAR, UNIT5_GRAMMAR } from "@/lib/grade11GrammarLessons";
 import listeningKeys from "@/data/grade11/listeningExerciseKeys.json";
 import { Grade11SourceStructure } from "./Grade11SourceStructure";
 import { Grade11GrammarVideos } from "./Grade11GrammarVideos";
@@ -61,6 +61,7 @@ export function Grade11SourceWorkspace({
         : true,
   );
   const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [activeSpeakingExercise, setActiveSpeakingExercise] = useState<string | null>(null);
   const storageKey = `grade11:unit${unitNumber}:${kind}:drafts:v1`;
   const [loadedKey, setLoadedKey] = useState("");
   useEffect(() => {
@@ -136,8 +137,12 @@ export function Grade11SourceWorkspace({
             : "space-y-5"
         }
       >
-        {kind === "grammar" && (unitNumber === 3 || unitNumber === 4) ? (
-          <GrammarScriptView grammar={unitNumber === 3 ? UNIT3_GRAMMAR : UNIT4_GRAMMAR} />
+        {kind === "grammar" && (unitNumber === 3 || unitNumber === 4 || unitNumber === 5) ? (
+          <GrammarScriptView
+            grammar={
+              unitNumber === 3 ? UNIT3_GRAMMAR : unitNumber === 4 ? UNIT4_GRAMMAR : UNIT5_GRAMMAR
+            }
+          />
         ) : unitNumber === 3 && kind === "speaking" && lesson.some((b) => b.id === "3D-11") ? (
           <Grade11ExerciseCard
             exercise={{
@@ -156,7 +161,7 @@ export function Grade11SourceWorkspace({
             <article
               className={`space-y-3 rounded-2xl border border-border bg-card p-5 ${kind === "reading" ? "lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto" : ""}`}
             >
-              {lesson.some((b) => b.t !== "scan") && (
+              {!(unitNumber === 5 && kind !== "reading") && lesson.some((b) => b.t !== "scan") && (
                 <ToggleReveal label="Translate whole section to Burmese" icon={Languages}>
                   <p className="whitespace-pre-line leading-relaxed">
                     {lesson
@@ -167,14 +172,21 @@ export function Grade11SourceWorkspace({
                 </ToggleReveal>
               )}
               {lesson.map((block) => (
-                <SourceBlock key={block.id} block={block} scanUrl={scanUrl} />
+                <SourceBlock
+                  key={block.id}
+                  block={block}
+                  scanUrl={scanUrl}
+                  directMy={unitNumber === 5 && kind !== "reading"}
+                />
               ))}
             </article>
           )
         )}
         <section className="min-w-0 space-y-4" aria-label={`${section.title} exercises`}>
           <OwlBadge>သင်ခန်းစာကို အရင်လေ့လာပြီး လေ့ကျင့်ခန်းများကို ကိုယ်တိုင်ဖြေကြည့်ပါ။</OwlBadge>
-          {(unitNumber === 3 || unitNumber === 4) && <Grade11LessonTips kind={kind} />}
+          {(unitNumber === 3 || unitNumber === 4 || unitNumber === 5) && (
+            <Grade11LessonTips kind={kind} />
+          )}
           {exercises.map((ex) => {
             if (kind === "grammar")
               return (
@@ -203,6 +215,7 @@ export function Grade11SourceWorkspace({
               );
             const refine =
               unitNumber === 4 ||
+              unitNumber === 5 ||
               (unitNumber === 3 && ["reading", "grammar", "listening", "speaking"].includes(kind));
             if (refine && ex.instruction.x !== "Pre-reading")
               return (
@@ -211,6 +224,8 @@ export function Grade11SourceWorkspace({
                   exercise={ex}
                   unit={unitNumber}
                   kind={kind}
+                  activeSpeakingExercise={activeSpeakingExercise}
+                  onSpeakingExerciseChange={setActiveSpeakingExercise}
                   keys={{ ...answerKeys, ...listeningKeys }}
                   answers={answers}
                   setAnswer={setAnswer}
@@ -439,6 +454,11 @@ export function Grade11SourceWorkspace({
               >
                 {task.title}
               </label>
+              {kind === "writing" && unitNumber === 5 && (
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Words: {answers[task.id]?.trim().split(/\s+/).filter(Boolean).length ?? 0}
+                </p>
+              )}
               {kind === "writing" && unitNumber === 6 && (
                 <p className="mt-2 text-sm text-muted-foreground">
                   Words: {answers.free?.trim().split(/\s+/).filter(Boolean).length ?? 0} / 200–250
@@ -453,10 +473,22 @@ export function Grade11SourceWorkspace({
                 className="mt-2"
                 maxLength={12000}
               />
-              {unitNumber === 4 && kind === "writing" && (
+              {unitNumber === 5 && kind === "speaking" && (
+                <Grade11AIReview
+                  question={task.title}
+                  instructions={task.title}
+                  context={section.blocks.map((b) => b.x).join("\n")}
+                  answer={answers[task.id] ?? ""}
+                />
+              )}
+              {(unitNumber === 4 || unitNumber === 5) && kind === "writing" && (
                 <Grade11AIReview
                   writing
-                  question="Write an essay on Causes and effects of obesity"
+                  question={
+                    unitNumber === 5
+                      ? (exercises.at(-1)?.instruction.x ?? "Write a travelogue")
+                      : "Write an essay on Causes and effects of obesity"
+                  }
                   instructions={exercises.at(-1)?.instruction.x ?? ""}
                   context={section.blocks.map((b) => b.x).join("\n")}
                   answer={answers[task.id] ?? ""}
@@ -503,9 +535,11 @@ function SourceScan({ page, scanUrl }: { page: number; scanUrl: (page: number) =
 function SourceBlock({
   block,
   scanUrl,
+  directMy = false,
 }: {
   block: Unit1Block;
   scanUrl: (page: number) => string | null;
+  directMy?: boolean;
 }) {
   if (block.id === "3A-memory-diagram") return <Grade11MemoryTable />;
   if (block.t === "scan")
@@ -528,11 +562,16 @@ function SourceBlock({
           <SourceText block={block} />
         </p>
       )}
-      {block.my && (
-        <ToggleReveal label="Show Myanmar Translation" icon={Languages}>
-          <p className="whitespace-pre-line">{block.my}</p>
-        </ToggleReveal>
-      )}
+      {block.my &&
+        (directMy ? (
+          <p lang="my" className="mt-2 text-sm text-muted-foreground">
+            {block.my}
+          </p>
+        ) : (
+          <ToggleReveal label="Show Myanmar Translation" icon={Languages}>
+            <p className="whitespace-pre-line">{block.my}</p>
+          </ToggleReveal>
+        ))}
     </div>
   );
 }

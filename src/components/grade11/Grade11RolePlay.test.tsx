@@ -82,8 +82,10 @@ describe("Grade 11 AI speaking lifecycle", () => {
       "/api/g11-roleplay",
       expect.objectContaining({
         method: "POST",
-        headers: expect.objectContaining({ Authorization: "Bearer test-token" }),
       }),
+    );
+    expect(new Headers(vi.mocked(fetch).mock.calls[0][1]!.headers).get("authorization")).toBe(
+      "Bearer test-token",
     );
     const first = JSON.parse(vi.mocked(fetch).mock.calls[0][1]!.body as string);
     expect(first.unit).toBe(5);

@@ -1,3 +1,4 @@
+import { Grade11Unit5Map, Grade11Unit5Speaking } from "./Grade11Unit5Tools";
 import { Grade11ExpressionsTable } from "./Grade11ExpressionsTable";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
@@ -42,6 +43,8 @@ export function Grade11ExerciseCard({
   answers,
   setAnswer,
   context,
+  activeSpeakingExercise,
+  onSpeakingExerciseChange,
 }: {
   exercise: Unit1Exercise;
   unit: number;
@@ -50,6 +53,8 @@ export function Grade11ExerciseCard({
   answers: Record<string, string>;
   setAnswer: (id: string, value: string) => void;
   context: string;
+  activeSpeakingExercise?: string | null;
+  onSpeakingExerciseChange?: (id: string | null) => void;
 }) {
   const { instruction, blocks } = exercise;
   const questions = blocks.filter((b) => b.t === "q");
@@ -66,7 +71,8 @@ export function Grade11ExerciseCard({
     (kind === "speaking" && !questions.some((q) => keys[q.id]));
   const openReading =
     instruction.id === "2A-30" || (kind === "reading" && /full-sentence/i.test(instruction.x));
-  const ai = openReading || kind === "writing" || food;
+  const order = instruction.id === "5E-17";
+  const ai = openReading || instruction.id === "5A-55" || (kind === "writing" && !order) || food;
   const ids = survey
     ? questions.flatMap((q) => [1, 2, 3, 4].map((n) => `${q.id}:student${n}`))
     : food
@@ -105,11 +111,30 @@ export function Grade11ExerciseCard({
         ? ["TRUE", "FALSE"]
         : instruction.id === "2D-0"
           ? ["1", "2", "3"]
-          : matching
-            ? (notes
-                .map((n) => n.x.match(/^\(?([a-z])\)?[.)]?\s/i)?.[1])
-                .filter(Boolean) as string[])
-            : [];
+          : instruction.id === "5D-0"
+            ? ["A", "B", "C", "D", "E"]
+            : instruction.id === "5A-4"
+              ? [
+                  "Myanmar",
+                  "Thailand",
+                  "Malaysia",
+                  "Singapore",
+                  "Indonesia",
+                  "Laos",
+                  "Vietnam",
+                  "The Philippines",
+                  "Cambodia",
+                  "Brunei Darussalam",
+                ]
+              : instruction.id === "5A-44"
+                ? ["a", "b", "c", "d", "e"]
+                : instruction.id === "5A-75"
+                  ? (q.x.match(/([A-Za-z]+) \/ ([A-Za-z]+)/)?.slice(1) ?? [])
+                  : matching
+                    ? (notes
+                        .map((n) => n.x.match(/^\(?([a-z])\)?[.)]?\s/i)?.[1])
+                        .filter(Boolean) as string[])
+                    : [];
     return (
       <div>
         <label className="sr-only" htmlFor={`response-${id}`}>
@@ -198,7 +223,8 @@ export function Grade11ExerciseCard({
     survey ||
     food ||
     instruction.id === "4E-2" ||
-    kind === "speaking";
+    kind === "speaking" ||
+    (unit === 5 && ["5A-4", "5A-44", "5A-55", "5A-62", "5A-68", "5B-4"].includes(instruction.id));
   const tableRows = questions.length ? questions : notes.filter((b) => b.t === "line");
   const summaryAnswer = ids
     .filter((id) => answers[id]?.trim())
@@ -215,6 +241,10 @@ export function Grade11ExerciseCard({
           {instruction.my}
         </p>
       </header>
+      {instruction.id === "5A-4" && <Grade11Unit5Map />}
+      {unit === 5 && table && notes.length > 0 && kind !== "speaking" && (
+        <div className="rounded-xl bg-muted/30 p-3 space-y-2">{renderNotes(notes)}</div>
+      )}
       {instruction.id === "2D-0" && (
         <div className="grid gap-3 sm:grid-cols-3">
           {questions.map((q, i) => (
@@ -264,7 +294,71 @@ export function Grade11ExerciseCard({
           <div className="mt-4 space-y-4">{renderNotes(notes)}</div>
         </details>
       )}
-      {instruction.id === "3D-11" ? (
+      {unit === 5 && ["5D-14", "5D-21"].includes(instruction.id) ? (
+        <Grade11Unit5Speaking
+          exercise={instruction.id as "5D-14" | "5D-21"}
+          notes={notes}
+          open={activeSpeakingExercise === instruction.id}
+          onToggle={() =>
+            onSpeakingExerciseChange?.(
+              activeSpeakingExercise === instruction.id ? null : instruction.id,
+            )
+          }
+          answers={answers}
+          setAnswer={setAnswer}
+        />
+      ) : order ? (
+        <div className="space-y-4">
+          {notes.map((n) => (
+            <details key={n.id} className="rounded-xl border border-border p-3">
+              <summary className="cursor-pointer font-semibold">
+                Paragraph {n.x.slice(0, 1)}
+              </summary>
+              <div className="mt-3 space-y-2">{renderNotes([n])}</div>
+            </details>
+          ))}
+          <fieldset className="flex flex-wrap gap-3">
+            <legend className="mb-2 font-medium">Paragraph order</legend>
+            {[0, 1, 2, 3, 4].map((i) => (
+              <label key={i} className="text-sm">
+                {i + 1}
+                <select
+                  aria-label={`Paragraph position ${i + 1}`}
+                  className="ml-2 rounded-md border border-border bg-background p-2"
+                  value={(answers["5E-23"] ?? "").split(",")[i]?.trim() ?? ""}
+                  onChange={(e) => {
+                    const parts = Array.from(
+                      { length: 5 },
+                      (_, j) => (answers["5E-23"] ?? "").split(",")[j]?.trim() ?? "",
+                    );
+                    parts[i] = e.target.value;
+                    setAnswer("5E-23", parts.join(","));
+                  }}
+                >
+                  <option value="">—</option>
+                  {["A", "B", "C", "D", "E"].map((letter) => (
+                    <option
+                      key={letter}
+                      value={letter}
+                      disabled={
+                        (answers["5E-23"] ?? "")
+                          .split(",")
+                          .map((v) => v.trim())
+                          .includes(letter) &&
+                        (answers["5E-23"] ?? "").split(",")[i]?.trim() !== letter
+                      }
+                    >
+                      {letter}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            ))}
+          </fieldset>
+          {status(questions[0])}
+          {revealed && <p className="text-sm text-primary">{keys["5E-23"].answer}</p>}
+        </div>
+      ) : instruction.id === "3D-11" ? (
         <Grade11ExpressionsTable blocks={blocks} />
       ) : table && tableRows.length > 0 ? (
         <div className="relative max-w-full overflow-x-auto">
@@ -277,7 +371,15 @@ export function Grade11ExerciseCard({
                 <th
                   className={`${matching ? "w-1/4" : "w-1/2"} border border-border p-3 text-left`}
                 >
-                  {definitions ? "Meaning" : matching ? "Column A" : "Textbook item"}
+                  {instruction.id === "5B-4"
+                    ? "Noun as modifier"
+                    : instruction.id === "5A-62"
+                      ? "Country"
+                      : definitions
+                        ? "Meaning"
+                        : matching
+                          ? "Column A"
+                          : "Textbook item"}
                 </th>
                 {matching && (
                   <th className="border border-border p-3 text-left">Column B — meanings</th>
@@ -296,7 +398,13 @@ export function Grade11ExerciseCard({
                   ))
                 ) : (
                   <th className="border border-border p-3 text-left">
-                    {classify ? "Advantage / Disadvantage" : "Your answer"}
+                    {instruction.id === "5B-4"
+                      ? "Noun which is modified"
+                      : instruction.id === "5A-62"
+                        ? "Capital city"
+                        : classify
+                          ? "Advantage / Disadvantage"
+                          : "Your answer"}
                   </th>
                 )}
               </tr>

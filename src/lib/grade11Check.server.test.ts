@@ -23,7 +23,7 @@ describe("Grade 11 semantic checking and writing", () => {
     expect(generateJson).not.toHaveBeenCalled();
   });
   it("reviews the complete writing submission beyond the old 800-character limit", async () => {
-    const essay = "My review. ".repeat(200) + "END OF ESSAY";
+    const essay = "My review. ".repeat(900) + "END OF ESSAY";
     const response = await handleGrade11Check(
       request({
         question: "Write a website review",

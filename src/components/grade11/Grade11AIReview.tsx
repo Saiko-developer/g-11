@@ -1,7 +1,8 @@
+import { grade11ApiFetch } from "@/lib/grade11ApiFetch";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/components/AuthGate";
-import { signInWithGoogle } from "@/components/RequireSignIn";
+import { signInToGrade11 } from "@/lib/grade11SignIn";
 
 /** Reuses the existing authenticated Grade 11 checking route; no provider/billing changes. */
 export function Grade11AIReview({
@@ -19,7 +20,7 @@ export function Grade11AIReview({
   writing?: boolean;
   checkLabel?: string;
 }) {
-  const { session } = useAuth();
+  const { session, ready = true } = useAuth();
   const [busy, setBusy] = useState(false);
   const [checkingAnswer, setCheckingAnswer] = useState("");
   const [result, setResult] = useState<{ answer: string; text: string; error?: boolean } | null>(
@@ -36,7 +37,8 @@ export function Grade11AIReview({
   );
   const check = async () => {
     if (!session) {
-      await signInWithGoogle();
+      const login = await signInToGrade11();
+      if (login.error) setResult({ answer, text: login.error.message, error: true });
       return;
     }
     if (answer.length > 12000) {
@@ -51,7 +53,7 @@ export function Grade11AIReview({
     setCheckingAnswer(answer);
     setResult(null);
     try {
-      const response = await fetch("/api/g11-check", {
+      const response = await grade11ApiFetch("/api/g11-check", {
         method: "POST",
         signal: controller.signal,
         headers: { "Content-Type": "application/json" },
@@ -100,16 +102,19 @@ export function Grade11AIReview({
         type="button"
         variant="outline"
         disabled={
+          !ready ||
           (busy && checkingAnswer === answer && !requestRef.current?.signal.aborted) ||
           !answer.trim()
         }
         onClick={() => void check()}
       >
-        {busy && checkingAnswer === answer && !requestRef.current?.signal.aborted
-          ? "စစ်ဆေးနေသည်…"
-          : session || checkLabel === "Check Answer"
-            ? checkLabel
-            : "Login to check with AI"}
+        {!ready
+          ? "အကောင့် စစ်ဆေးနေသည်…"
+          : busy && checkingAnswer === answer && !requestRef.current?.signal.aborted
+            ? "စစ်ဆေးနေသည်…"
+            : session || checkLabel === "Check Answer"
+              ? checkLabel
+              : "Login to check with AI"}
       </Button>
       {result?.answer === answer && (
         <div
