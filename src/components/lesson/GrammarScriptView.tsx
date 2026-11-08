@@ -7,7 +7,7 @@
  * `/api/tts` pipeline (Gemini `google/gemini-2.5-flash-tts` voice "Kore",
  * falling back to `openai/gpt-4o-mini-tts` voice "shimmer" on any failure).
  */
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, type ComponentType } from "react";
 import { BookOpen, Loader2, Mic, Pause, Play, Volume2 } from "lucide-react";
 
 import { OwlBadge } from "@/components/lesson/ExerciseKit";
@@ -20,17 +20,26 @@ type Mode = "text" | "oral";
 
 
 
-export function GrammarScriptView({ grammar }: { grammar: UnitGrammar }) {
+type OralNotesView = ComponentType<{ section: GrammarSection }>;
+
+export function GrammarScriptView({ grammar, OralNotes }: {
+  grammar: UnitGrammar;
+  OralNotes?: OralNotesView;
+}) {
   return (
     <div className="space-y-6">
       {grammar.sections.map((section) => (
-        <GrammarSectionCard key={section.id} unit={grammar.unit} section={section} />
+        <GrammarSectionCard key={section.id} unit={grammar.unit} section={section} OralNotes={OralNotes} />
       ))}
     </div>
   );
 }
 
-function GrammarSectionCard({ unit, section }: { unit: number; section: GrammarSection }) {
+function GrammarSectionCard({ unit, section, OralNotes }: {
+  unit: number;
+  section: GrammarSection;
+  OralNotes?: OralNotesView;
+}) {
   const [mode, setMode] = useState<Mode | null>(null);
   const speech = useCloudSpeech();
   const { stop } = speech;
@@ -89,7 +98,7 @@ function GrammarSectionCard({ unit, section }: { unit: number; section: GrammarS
       {mode === "text" ? (
         <TextMode section={section} />
       ) : mode === "oral" ? (
-        <OralMode section={section} speech={speech} />
+        <OralMode section={section} speech={speech} OralNotes={OralNotes} />
       ) : (
         <p className="mt-4 text-sm text-muted-foreground">
           ရှင်းလင်းချက်ကို ဘယ်လိုကြည့်ချင်လဲ ရွေးပါ — စာဖြင့် (Text) သို့မဟုတ် အသံဖြင့် (Oral)။
@@ -258,7 +267,9 @@ function TextMode({ section }: { section: GrammarSection }) {
 function OralMode({
   section,
   speech,
+  OralNotes,
 }: {
+  OralNotes?: OralNotesView;
   section: GrammarSection;
   speech: CloudSpeech;
 }) {
@@ -289,7 +300,7 @@ function OralMode({
 
       <div className="rounded-lg border border-primary/30 bg-primary/5 p-3">
         <div className="flex items-start justify-between gap-3">
-          <p className="text-xs font-semibold text-primary">📝 မှတ်စု အကျဉ်းချုပ် (Short notes)</p>
+          <p className="text-xs font-semibold text-primary">{OralNotes ? "📝 အသံနဲ့အတူ လိုက်ကြည့်ရန်" : "📝 မှတ်စု အကျဉ်းချုပ် (Short notes)"}</p>
           <Button
             type="button"
             size="icon"
@@ -313,25 +324,31 @@ function OralMode({
           </Button>
         </div>
 
-        <ul className="mt-2 space-y-1.5 text-sm leading-relaxed">
-          {bullets.map((b, i) => (
-            <li key={i} className="flex gap-2">
-              <span className="text-primary">•</span>
-              <span>{b}</span>
-            </li>
-          ))}
-        </ul>
+        {OralNotes ? (
+          <OralNotes section={section} />
+        ) : (
+          <>
+            <ul className="mt-2 space-y-1.5 text-sm leading-relaxed">
+              {bullets.map((b, i) => (
+                <li key={i} className="flex gap-2">
+                  <span className="text-primary">•</span>
+                  <span>{b}</span>
+                </li>
+              ))}
+            </ul>
 
-        <p className="mt-3 font-mono text-xs">{o.note.formula}</p>
+            <p className="mt-3 font-mono text-xs">{o.note.formula}</p>
 
-        <ul className="mt-2 space-y-1">
-          {o.note.examples.map((e, i) => (
-            <li key={i} className="text-sm">
-              <span className="font-medium">{e.en}</span>
-              <span className="text-muted-foreground"> — {e.my}</span>
-            </li>
-          ))}
-        </ul>
+            <ul className="mt-2 space-y-1">
+              {o.note.examples.map((e, i) => (
+                <li key={i} className="text-sm">
+                  <span className="font-medium">{e.en}</span>
+                  <span className="text-muted-foreground"> — {e.my}</span>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
 
         {status === "error" ? (
           <p className="mt-3 text-xs text-destructive">

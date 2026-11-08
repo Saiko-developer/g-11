@@ -12,6 +12,7 @@ import { OwlBadge, StructureBreakdown, ToggleReveal } from "@/components/lesson/
 import { GrammarExerciseGenerator } from "@/components/lesson/GrammarExerciseGenerator";
 import { Grade11Unit1Answer } from "./Grade11Unit1Answer";
 import { GrammarScriptView } from "@/components/lesson/GrammarScriptView";
+import { Grade11Unit1OralNotes } from "./Grade11Unit1OralNotes";
 import { UNIT1_GRAMMAR } from "@/lib/grade11Unit1Grammar";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -107,7 +108,7 @@ export function Grade11Unit1Workspace({ kind }: { kind: G11SkillKind }) {
         {kind !== "vocabulary" &&
           (kind !== "speaking" || lesson.length > 0) &&
           (kind === "grammar" ? (
-            <GrammarScriptView grammar={UNIT1_GRAMMAR} />
+            <GrammarScriptView grammar={UNIT1_GRAMMAR} OralNotes={Grade11Unit1OralNotes} />
           ) : (
             <article className="space-y-3 rounded-2xl border border-border bg-card p-5">
               {kind !== "speaking" && (
