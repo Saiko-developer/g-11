@@ -206,7 +206,7 @@ export function Grade11Poem1View() {
                   item={item}
                   answer={POEM_KEYS[item.id]}
                   instructions={group.instruction}
-                  structure={group.code === "A" || group.code === "Pre-reading"}
+                  structure={group.code === "A"}
                   composition={group.code === "D"}
                 />
               ))}

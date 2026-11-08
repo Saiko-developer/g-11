@@ -23,9 +23,14 @@ describe("Grade 11 Unit 2 workspace", () => {
       screen.getByLabelText("Your answer: 1. Have you ever bought anything online?"),
       { target: { value: "My answer" } },
     );
-    fireEvent.change(screen.getAllByPlaceholderText("Advantage / Disadvantage")[0], {
-      target: { value: "Advantage" },
-    });
+    fireEvent.change(
+      within(document.querySelector('[data-exercise="2A-16"]') as HTMLElement).getAllByRole(
+        "combobox",
+      )[0],
+      {
+        target: { value: "Advantage" },
+      },
+    );
     expect(screen.getByText("Progress: 2 / 25 answered")).toBeVisible();
     view.rerender(<Grade11Unit2Workspace key="vocabulary" kind="vocabulary" />);
     expect(screen.getAllByRole("button", { name: /^Speak / })).toHaveLength(8);
@@ -38,23 +43,19 @@ describe("Grade 11 Unit 2 workspace", () => {
     );
     expect(screen.getByText("Progress: 2 / 25 answered")).toBeVisible();
   });
-  it("provides seven bilingual reading suggestions without grading personal opinions", () => {
+  it("checks reading B semantically while retaining sentence structures", () => {
     render(<Grade11Unit2Workspace kind="reading" />);
-    const b = within(
-      screen.getByRole("heading", {
-        name: "B. Give a full-sentence answer to each question below.",
-      }).parentElement!,
-    );
-    expect(b.getAllByRole("button", { name: "Check Answer" })).toHaveLength(7);
-    expect(b.getAllByRole("button", { name: "Reveal Answer" })).toHaveLength(7);
+    const b = within(document.querySelector('[data-exercise="2A-30"]') as HTMLElement);
+    expect(b.queryByRole("button", { name: "Check Answer" })).toBeNull();
+    expect(b.queryByRole("button", { name: "Reveal Answer" })).toBeNull();
+    expect(b.getAllByRole("button", { name: /check with AI/i })).toHaveLength(1);
     expect(b.getAllByRole("button", { name: "Sentence Structure" })).toHaveLength(10);
     for (const id of ["2A-38", "2A-39", "2A-40"]) expect(UNIT2_KEYS[id]).toBeUndefined();
-    fireEvent.click(b.getAllByRole("button", { name: "Reveal Answer" })[0]);
-    expect(b.getByText(`🇲🇲 ${UNIT2_KEYS["2A-31"].answerMy}`)).toBeVisible();
   });
   it("shows only original listening A/B tasks and speaking C/D prompts", () => {
     const view = render(<Grade11Unit2Workspace key="listening" kind="listening" />);
-    expect(screen.getAllByRole("textbox")).toHaveLength(8);
+    expect(screen.getAllByRole("textbox")).toHaveLength(5);
+    expect(screen.getAllByRole("combobox")).toHaveLength(3);
     expect(screen.getAllByRole("img", { name: /Textbook listening picture/ })).toHaveLength(3);
     expect(screen.queryByText(/^C\. In pairs, create/)).toBeNull();
     view.rerender(<Grade11Unit2Workspace key="speaking" kind="speaking" />);

@@ -1,3 +1,9 @@
+import { Grade11ExerciseCard, Grade11LessonTips } from "./Grade11ExerciseCard";
+import { Grade11MemoryTable } from "./Grade11MemoryTable";
+import { Grade11AIReview } from "./Grade11AIReview";
+import { GrammarScriptView } from "@/components/lesson/GrammarScriptView";
+import { UNIT3_GRAMMAR, UNIT4_GRAMMAR } from "@/lib/grade11GrammarLessons";
+import listeningKeys from "@/data/grade11/listeningExerciseKeys.json";
 import { Grade11SourceStructure } from "./Grade11SourceStructure";
 import { Grade11GrammarVideos } from "./Grade11GrammarVideos";
 import { Grade11SourceAnswer } from "./Grade11SourceAnswer";
@@ -129,28 +135,62 @@ export function Grade11SourceWorkspace({
             : "space-y-5"
         }
       >
-        {lesson.length > 0 && (
-          <article
-            className={`space-y-3 rounded-2xl border border-border bg-card p-5 ${kind === "reading" ? "lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto" : ""}`}
-          >
-            {lesson.some((b) => b.t !== "scan") && (
-              <ToggleReveal label="Translate whole section to Burmese" icon={Languages}>
-                <p className="whitespace-pre-line leading-relaxed">
-                  {lesson
-                    .map((b) => b.my)
-                    .filter(Boolean)
-                    .join("\n\n")}
-                </p>
-              </ToggleReveal>
-            )}
-            {lesson.map((block) => (
-              <SourceBlock key={block.id} block={block} scanUrl={scanUrl} />
-            ))}
-          </article>
+        {kind === "grammar" && (unitNumber === 3 || unitNumber === 4) ? (
+          <GrammarScriptView grammar={unitNumber === 3 ? UNIT3_GRAMMAR : UNIT4_GRAMMAR} />
+        ) : unitNumber === 3 && kind === "speaking" && lesson.some((b) => b.id === "3D-11") ? (
+          <Grade11ExerciseCard
+            exercise={{
+              instruction: lesson.find((b) => b.id === "3D-11")!,
+              blocks: lesson.filter((b) => b.id !== "3D-11"),
+            }}
+            unit={3}
+            kind={kind}
+            keys={answerKeys}
+            answers={answers}
+            setAnswer={setAnswer}
+            context={section.blocks.map((b) => b.x).join("\n")}
+          />
+        ) : (
+          lesson.length > 0 && (
+            <article
+              className={`space-y-3 rounded-2xl border border-border bg-card p-5 ${kind === "reading" ? "lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto" : ""}`}
+            >
+              {lesson.some((b) => b.t !== "scan") && (
+                <ToggleReveal label="Translate whole section to Burmese" icon={Languages}>
+                  <p className="whitespace-pre-line leading-relaxed">
+                    {lesson
+                      .map((b) => b.my)
+                      .filter(Boolean)
+                      .join("\n\n")}
+                  </p>
+                </ToggleReveal>
+              )}
+              {lesson.map((block) => (
+                <SourceBlock key={block.id} block={block} scanUrl={scanUrl} />
+              ))}
+            </article>
+          )
         )}
         <section className="min-w-0 space-y-4" aria-label={`${section.title} exercises`}>
           <OwlBadge>သင်ခန်းစာကို အရင်လေ့လာပြီး လေ့ကျင့်ခန်းများကို ကိုယ်တိုင်ဖြေကြည့်ပါ။</OwlBadge>
+          {(unitNumber === 3 || unitNumber === 4) && <Grade11LessonTips kind={kind} />}
           {exercises.map((ex) => {
+            const refine =
+              unitNumber === 4 ||
+              (unitNumber === 3 && ["reading", "grammar", "listening", "speaking"].includes(kind));
+            if (refine && ex.instruction.x !== "Pre-reading")
+              return (
+                <Grade11ExerciseCard
+                  key={ex.instruction.id}
+                  exercise={ex}
+                  unit={unitNumber}
+                  kind={kind}
+                  keys={{ ...answerKeys, ...listeningKeys }}
+                  answers={answers}
+                  setAnswer={setAnswer}
+                  context={section.blocks.map((b) => b.x).join("\n")}
+                />
+              );
             const questions = ex.blocks.filter((b) => b.t === "q");
             const matching = /Match .*Column A/i.test(ex.instruction.x);
             const table =
@@ -398,7 +438,17 @@ export function Grade11SourceWorkspace({
                 onChange={(event) => setAnswer(task.id, event.target.value)}
                 placeholder="Write your answer…"
                 className="mt-2"
+                maxLength={12000}
               />
+              {unitNumber === 4 && kind === "writing" && (
+                <Grade11AIReview
+                  writing
+                  question="Write an essay on Causes and effects of obesity"
+                  instructions={exercises.at(-1)?.instruction.x ?? ""}
+                  context={section.blocks.map((b) => b.x).join("\n")}
+                  answer={answers[task.id] ?? ""}
+                />
+              )}
             </div>
           ))}
         </section>
@@ -444,6 +494,7 @@ function SourceBlock({
   block: Unit1Block;
   scanUrl: (page: number) => string | null;
 }) {
+  if (block.id === "3A-memory-diagram") return <Grade11MemoryTable />;
   if (block.t === "scan")
     return (
       <div>

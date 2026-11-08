@@ -7,13 +7,13 @@ import poemAnswers from "@/data/grade11/textbook/poem1-answer.json";
 import { grade11AnswerKeys } from "@/lib/grade11Answers";
 
 describe("Grade 11 original Review 1 and Bridges", () => {
-  it("retains the two ten-item review exercises and avoids reconstructing damaged B4", () => {
+  it("retains the two ten-item review exercises and uses the teacher-provided B4", () => {
     expect(review.groups.map((g) => g.items.length)).toEqual([10, 10]);
     const keys = grade11AnswerKeys(reviewAnswers);
-    expect(Object.keys(keys)).toHaveLength(19);
+    expect(Object.keys(keys)).toHaveLength(20);
     expect(keys["review1-A-1"].answer).toBe("deadly serious");
-    expect(keys["review1-B-4"]).toBeUndefined();
-    expect(review.groups[1].items[3].scanPage).toBe(37);
+    expect(keys["review1-B-4"].answer).toContain("After the gymnasts had rehearsed");
+    expect(review.groups[1].items[3].question).toContain("The gymnasts rehearsed");
     expect(existsSync("public/grade11/review1/page-37.jpg")).toBe(true);
     expect(reviewAnswers.official_answer_key).toBe(false);
   });

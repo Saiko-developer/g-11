@@ -1,3 +1,4 @@
+import { UNIT1_KEYS, UNIT1_SECTIONS } from "./grade11Unit1";
 import { z } from "zod";
 import { generateJson } from "@/lib/ai-json.server";
 import { requireUser, untrusted } from "@/lib/api-guard.server";
@@ -7,6 +8,7 @@ import { GRADE11_SPEAKING_LINES } from "@/data/grade11/speakingPractice";
 
 const input = z.object({
   unit: z.number().int().min(1).max(12),
+  exercise: z.enum(["1D-30", "1D-31"]).optional(),
   turns: z
     .array(z.object({ role: z.enum(["ai", "student"]), text: z.string().max(1600) }))
     .max(20)
@@ -46,6 +48,8 @@ export async function handleGrade11Roleplay(request: Request): Promise<Response>
   }
   if (body.finish && !body.session)
     return Response.json({ error: "Session required" }, { status: 400 });
+  if (body.exercise && body.unit !== 1)
+    return Response.json({ error: "Invalid exercise" }, { status: 400 });
   let session = body.session;
   if (session) {
     const blocked = await chargeSpeakingTurn(request, session);
@@ -61,7 +65,24 @@ export async function handleGrade11Roleplay(request: Request): Promise<Response>
   )!;
   const objective = unit.skills.find((skill) => skill.kind === "speaking")!.detail;
   const source = GRADE11_SPEAKING_LINES[body.unit].map((line) => line.en).join("\n");
-  const context = `Grade 11 Unit ${body.unit}: ${unit.title}\nSpeaking objective: ${objective}\nTextbook practice phrases/questions:\n${source}`;
+  let exerciseContext = "";
+  if (body.exercise) {
+    const blocks = UNIT1_SECTIONS.find((section) => section.code === "1D")!.blocks;
+    const instruction = blocks.find((block) => block.id === body.exercise)!;
+    const dialogue = blocks
+      .filter(
+        (block) => Number(block.id.split("-")[1]) >= 18 && Number(block.id.split("-")[1]) <= 29,
+      )
+      .map((block) =>
+        block.x.replace(/\(\d+\)\s*_+/, UNIT1_KEYS[block.id]?.answer.split("; ").at(-1) ?? ""),
+      )
+      .join("\n");
+    exerciseContext =
+      body.exercise === "1D-30"
+        ? `${instruction.x}\nOriginal Exercise B dialogue:\n${dialogue}\nPractise this textbook dialogue as one partner, one turn at a time. Let the student speak the other partner. Stay on this trip; do not introduce an unrelated scenario.`
+        : `${instruction.x}\nCreate a related birdwatching trip dialogue with the student, using the structure of Exercise B. Ask about the student's local lake rather than inventing facts about their home.`;
+  }
+  const context = `Grade 11 Unit ${body.unit}: ${unit.title}\nSpeaking objective: ${objective}\nTextbook practice phrases/questions:\n${source}\nExercise task:\n${exerciseContext}`;
   const conversation = untrusted("conversation", JSON.stringify(body.turns), 36000);
   try {
     if (body.finish) {

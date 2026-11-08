@@ -49,9 +49,11 @@ export function Grade11Unit1ExerciseBlocks({
   const dialogue = blocks.filter((block) => !options.includes(block));
   return (
     <div className="mt-3 space-y-3">
-      <div className="space-y-2 rounded-xl border border-border p-3">
-        {options.map(renderBlock)}
-      </div>
+      {options.length > 0 && (
+        <div className="space-y-2 rounded-xl border border-border p-3">
+          {options.map(renderBlock)}
+        </div>
+      )}
       <table className="w-full table-fixed border-collapse text-sm">
         <caption className="sr-only">Exercise B dialogue</caption>
         <colgroup>

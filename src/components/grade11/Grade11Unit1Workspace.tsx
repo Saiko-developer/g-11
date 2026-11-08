@@ -1,3 +1,6 @@
+import { Grade11RolePlay } from "./Grade11RolePlay";
+import { RequireSignIn } from "@/components/RequireSignIn";
+import { Button } from "@/components/ui/button";
 import { Grade11Unit1ExerciseBlocks } from "./Grade11Unit1ExerciseBlocks";
 import { Grade11GrammarVideos } from "./Grade11GrammarVideos";
 import { Grade11Pronunciation } from "./Grade11Pronunciation";
@@ -34,6 +37,7 @@ const LETTER: Record<G11SkillKind, string> = {
 /** Unit 1 presentation is isolated from Grade 10 and other Grade 11 units. */
 export function Grade11Unit1Workspace({ kind }: { kind: G11SkillKind }) {
   const unitNumber = 1;
+  const [aiExercise, setAiExercise] = useState<string | null>(null);
   const sections = UNIT1_SECTIONS;
   const answerKeys = UNIT1_KEYS;
   const scanUrl = unit1ScanUrl;
@@ -132,12 +136,18 @@ export function Grade11Unit1Workspace({ kind }: { kind: G11SkillKind }) {
             const questions = ex.blocks.filter((b) => b.t === "q");
             const matching = section.code === "1B" && ex.instruction.x.startsWith("A.");
             return (
-              <div key={ex.instruction.id} className="rounded-2xl border border-border bg-card p-4">
+              <div
+                key={ex.instruction.id}
+                data-exercise={ex.instruction.id}
+                className="rounded-2xl border border-border bg-card p-4"
+              >
                 <h3 className="flex gap-2 border-b border-border pb-2 font-semibold">
                   <PenLine className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                   {ex.instruction.x}
                 </h3>
-                {kind === "writing" || ["1A-0", "1A-28"].includes(ex.instruction.id) ? (
+                {kind === "writing" ||
+                kind === "speaking" ||
+                ["1A-0", "1A-28"].includes(ex.instruction.id) ? (
                   <p className="mt-2 text-sm text-muted-foreground">{ex.instruction.my}</p>
                 ) : (
                   (kind !== "reading" || ex.instruction.id === "1A-36") &&
@@ -149,8 +159,67 @@ export function Grade11Unit1Workspace({ kind }: { kind: G11SkillKind }) {
                 )}
 
                 {matching && <MatchingColumns blocks={ex.blocks} />}
+                {ex.instruction.id === "1D-12" && (
+                  <table className="mt-3 w-full table-fixed border-collapse text-sm">
+                    <caption className="sr-only">Questions for the trip dialogue</caption>
+                    <thead>
+                      <tr>
+                        <th className="border border-border p-3 text-left">Question</th>
+                        <th className="border border-border p-3 text-left">မြန်မာပြန်</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {ex.blocks
+                        .filter((b) => /^1D-1[3-7]$/.test(b.id))
+                        .map((b) => (
+                          <tr key={b.id}>
+                            <th
+                              scope="row"
+                              className="border border-border p-3 text-left font-normal"
+                            >
+                              {b.x}
+                            </th>
+                            <td lang="my" className="border border-border p-3 leading-relaxed">
+                              {b.my}
+                            </td>
+                          </tr>
+                        ))}
+                    </tbody>
+                  </table>
+                )}
+                {["1D-30", "1D-31"].includes(ex.instruction.id) && (
+                  <div className="mt-3">
+                    <Button
+                      type="button"
+                      variant="outline"
+                      aria-expanded={aiExercise === ex.instruction.id}
+                      onClick={() =>
+                        setAiExercise((old) =>
+                          old === ex.instruction.id ? null : ex.instruction.id,
+                        )
+                      }
+                    >
+                      Practise with AI
+                    </Button>
+                    {aiExercise === ex.instruction.id && (
+                      <div className="mt-3">
+                        <RequireSignIn>
+                          <Grade11RolePlay
+                            key={ex.instruction.id}
+                            unit={1}
+                            exercise={ex.instruction.id as "1D-30" | "1D-31"}
+                          />
+                        </RequireSignIn>
+                      </div>
+                    )}
+                  </div>
+                )}
                 <Grade11Unit1ExerciseBlocks
-                  blocks={ex.blocks}
+                  blocks={
+                    ex.instruction.id === "1D-12"
+                      ? ex.blocks.filter((b) => !/^1D-1[3-7]$/.test(b.id))
+                      : ex.blocks
+                  }
                   layout={
                     ex.instruction.id === "1D-0"
                       ? "listening"
@@ -169,10 +238,11 @@ export function Grade11Unit1Workspace({ kind }: { kind: G11SkillKind }) {
                           instructions={ex.instruction.x}
                           value={answers[block.id] ?? ""}
                           textarea={kind === "reading"}
-                          directMy={false}
+                          directMy={kind === "speaking"}
                           translate={
-                            kind !== "reading" ||
-                            ["1A-0", "1A-28", "1A-36"].includes(ex.instruction.id)
+                            kind !== "speaking" &&
+                            (kind !== "reading" ||
+                              ["1A-0", "1A-28", "1A-36"].includes(ex.instruction.id))
                           }
                           reveal={
                             !(kind === "reading" && ["1A-16", "1A-28"].includes(ex.instruction.id))
@@ -187,7 +257,11 @@ export function Grade11Unit1Workspace({ kind }: { kind: G11SkillKind }) {
                         key={block.id}
                         block={block}
                         scanUrl={scanUrl}
-                        directMy={kind === "writing" || /^1A-(18|19|20|21|22)$/.test(block.id)}
+                        directMy={
+                          kind === "writing" ||
+                          kind === "speaking" ||
+                          /^1A-(18|19|20|21|22)$/.test(block.id)
+                        }
                         hideMy={
                           kind === "reading" &&
                           ex.instruction.id !== "1A-0" &&

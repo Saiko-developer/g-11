@@ -1,6 +1,6 @@
 {
   "official_answer_key": false,
-  "note": "Source-derived answers; damaged B4 is left unanswered instead of guessed.",
+  "note": "Source-derived answers; B4 supplied and clarified by the teacher.",
   "sections": [
     {
       "code": "A",
@@ -168,12 +168,12 @@
         },
         {
           "blockId": "review1-B-4",
-          "question": "4.",
-          "questionMy": "၄။",
-          "status": "unreadable-source",
-          "kind": "suggested",
-          "answer": null,
-          "answerMy": null,
+          "question": "The gymnasts rehearsed their moves several times. Then, they performed on the stage. (Combine the sentences using 'after'.)",
+          "questionMy": "ကျွမ်းဘားကစားသမားတွေက လှုပ်ရှားမှုတွေကို အကြိမ်ကြိမ် လေ့ကျင့်ခဲ့ကြတယ်။ ပြီးတော့ စင်ပေါ်မှာ ဖျော်ဖြေခဲ့ကြတယ်။ after သုံးပြီး ဝါကျပေါင်းပါ။",
+          "status": "source-derived",
+          "kind": "closed",
+          "answer": "After the gymnasts had rehearsed their moves several times, they performed on the stage.; The gymnasts performed on the stage after they had rehearsed their moves several times.; After the gymnasts rehearsed their moves several times, they performed on the stage.; The gymnasts performed on the stage after they rehearsed their moves several times.",
+          "answerMy": "လှုပ်ရှားမှုတွေကို အကြိမ်ကြိမ် လေ့ကျင့်ပြီးနောက် ကျွမ်းဘားကစားသမားတွေ စင်ပေါ်မှာ ဖျော်ဖြေခဲ့ကြတယ်။",
           "sourcePages": [
             37
           ]

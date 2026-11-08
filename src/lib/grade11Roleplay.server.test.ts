@@ -98,4 +98,24 @@ describe("isolated Grade 11 roleplay with existing quota enforcement", () => {
     }
     expect(startSpeakingSession).not.toHaveBeenCalled();
   });
+  it.each(["1D-30", "1D-31"])(
+    "anchors Unit 1 task %s to the correct textbook exercise",
+    async (exercise) => {
+      const response = await handleGrade11Roleplay(request({ unit: 1, exercise }));
+      expect(response.status).toBe(200);
+      const prompt = vi.mocked(generateJson).mock.calls[0][0].prompt;
+      expect(prompt).toContain(
+        exercise === "1D-30" ? "Original Exercise B dialogue" : "birdwatching",
+      );
+      if (exercise === "1D-30") {
+        expect(prompt).toContain("Chaung Tha");
+        expect(prompt).not.toContain("______");
+      }
+    },
+  );
+  it("rejects a Unit 1-only exercise on another unit before billing", async () => {
+    expect((await handleGrade11Roleplay(request({ unit: 2, exercise: "1D-30" }))).status).toBe(400);
+    expect(startSpeakingSession).not.toHaveBeenCalled();
+    expect(generateJson).not.toHaveBeenCalled();
+  });
 });

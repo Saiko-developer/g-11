@@ -1,3 +1,6 @@
+import { Grade11ExerciseCard, Grade11LessonTips } from "./Grade11ExerciseCard";
+import { Grade11AIReview } from "./Grade11AIReview";
+import listeningKeys from "@/data/grade11/listeningExerciseKeys.json";
 import { useEffect, useState } from "react";
 import { Languages } from "lucide-react";
 import { ToggleReveal } from "@/components/lesson/ExerciseKit";
@@ -123,98 +126,112 @@ export function Grade11Unit2Workspace({ kind }: { kind: G11SkillKind }) {
               </div>
             </div>
           )}
-          {exercises.map((ex) => (
-            <div key={ex.instruction.id} className="rounded-2xl border border-border bg-card p-4">
-              <h3 className="border-b border-border pb-2 font-semibold">{ex.instruction.x}</h3>
-              {ex.instruction.id === "2A-0" ? (
-                <p lang="my" className="mt-2 text-sm text-muted-foreground">
-                  {ex.instruction.my}
-                </p>
-              ) : ex.instruction.id === "2A-16" ? (
-                <p lang="my" className="mt-2 text-sm text-muted-foreground">
-                  {ex.instruction.my}
-                </p>
-              ) : (
-                kind !== "grammar" && (
-                  <ToggleReveal label="Translate Instructions" icon={Languages}>
+          <Grade11LessonTips kind={kind} />
+          {exercises.map((ex) =>
+            kind !== "speaking" && ex.instruction.id !== "2A-0" ? (
+              <Grade11ExerciseCard
+                key={ex.instruction.id}
+                exercise={ex}
+                unit={2}
+                kind={kind}
+                keys={{ ...UNIT2_KEYS, ...listeningKeys }}
+                answers={answers}
+                setAnswer={setAnswer}
+                context={section.blocks.map((b) => b.x).join("\n")}
+              />
+            ) : (
+              <div key={ex.instruction.id} className="rounded-2xl border border-border bg-card p-4">
+                <h3 className="border-b border-border pb-2 font-semibold">{ex.instruction.x}</h3>
+                {ex.instruction.id === "2A-0" ? (
+                  <p lang="my" className="mt-2 text-sm text-muted-foreground">
                     {ex.instruction.my}
-                  </ToggleReveal>
-                )
-              )}
-              {ex.instruction.id === "2A-16" ? (
-                <table className="mt-3 w-full table-fixed border-collapse text-sm">
-                  <caption className="sr-only">
-                    Advantages and disadvantages of online shopping
-                  </caption>
-                  <thead>
-                    <tr>
-                      <th className="w-[58%] border border-border p-2">Statement</th>
-                      <th className="border border-border p-2">
-                        Advantage / Disadvantage<p lang="my">ကောင်းကျိုး / ဆိုးကျိုး</p>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
+                  </p>
+                ) : ex.instruction.id === "2A-16" ? (
+                  <p lang="my" className="mt-2 text-sm text-muted-foreground">
+                    {ex.instruction.my}
+                  </p>
+                ) : (
+                  kind !== "grammar" && (
+                    <ToggleReveal label="Translate Instructions" icon={Languages}>
+                      {ex.instruction.my}
+                    </ToggleReveal>
+                  )
+                )}
+                {ex.instruction.id === "2A-16" ? (
+                  <table className="mt-3 w-full table-fixed border-collapse text-sm">
+                    <caption className="sr-only">
+                      Advantages and disadvantages of online shopping
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th className="w-[58%] border border-border p-2">Statement</th>
+                        <th className="border border-border p-2">
+                          Advantage / Disadvantage<p lang="my">ကောင်းကျိုး / ဆိုးကျိုး</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {ex.blocks
+                        .filter((b) => b.t === "q")
+                        .map((b) => (
+                          <tr key={b.id}>
+                            <th
+                              scope="row"
+                              className="border border-border p-2 text-left align-top font-normal"
+                            >
+                              {b.x}
+                            </th>
+                            <td className="border border-border p-2 align-top">
+                              {question(b, ex.instruction.x, true)}
+                            </td>
+                          </tr>
+                        ))}
+                    </tbody>
+                  </table>
+                ) : ex.instruction.id === "2D-0" ? (
+                  <div className="mt-3 grid gap-4 md:grid-cols-3">
                     {ex.blocks
                       .filter((b) => b.t === "q")
-                      .map((b) => (
-                        <tr key={b.id}>
-                          <th
-                            scope="row"
-                            className="border border-border p-2 text-left align-top font-normal"
-                          >
-                            {b.x}
-                          </th>
-                          <td className="border border-border p-2 align-top">
-                            {question(b, ex.instruction.x, true)}
-                          </td>
-                        </tr>
-                      ))}
-                  </tbody>
-                </table>
-              ) : ex.instruction.id === "2D-0" ? (
-                <div className="mt-3 grid gap-4 md:grid-cols-3">
-                  {ex.blocks
-                    .filter((b) => b.t === "q")
-                    .map((b, index) => (
-                      <div
-                        key={b.id}
-                        className="min-w-0 space-y-2 rounded-xl border border-border p-2"
-                      >
-                        <svg
-                          viewBox={`${[265, 591, 922][index]} 320 335 310`}
-                          role="img"
-                          aria-label={`Textbook listening picture ${index + 1}`}
-                          className="w-full"
+                      .map((b, index) => (
+                        <div
+                          key={b.id}
+                          className="min-w-0 space-y-2 rounded-xl border border-border p-2"
                         >
-                          <image href={unit2ScanUrl(25)!} width="1273" height="1800" />
-                        </svg>
-                        {question(b, ex.instruction.x)}
-                      </div>
-                    ))}
-                </div>
-              ) : (
-                <div className="mt-3 space-y-3">
-                  {ex.blocks.map((b) =>
-                    b.t === "q" ? (
-                      question(b, ex.instruction.x)
-                    ) : (
-                      <SourceBlock key={b.id} block={b} />
-                    ),
-                  )}
-                </div>
-              )}
-              {kind === "grammar" && (
-                <div className="mt-4">
-                  <GrammarExerciseGenerator
-                    title={`Grade 11 ${section.code} ${ex.instruction.x.slice(0, 60)}`}
-                    instructions={ex.instruction.x}
-                    samples={ex.blocks.filter((b) => b.t === "q").map((b) => ({ text: b.x }))}
-                  />
-                </div>
-              )}
-            </div>
-          ))}
+                          <svg
+                            viewBox={`${[265, 591, 922][index]} 320 335 310`}
+                            role="img"
+                            aria-label={`Textbook listening picture ${index + 1}`}
+                            className="w-full"
+                          >
+                            <image href={unit2ScanUrl(25)!} width="1273" height="1800" />
+                          </svg>
+                          {question(b, ex.instruction.x)}
+                        </div>
+                      ))}
+                  </div>
+                ) : (
+                  <div className="mt-3 space-y-3">
+                    {ex.blocks.map((b) =>
+                      b.t === "q" ? (
+                        question(b, ex.instruction.x)
+                      ) : (
+                        <SourceBlock key={b.id} block={b} />
+                      ),
+                    )}
+                  </div>
+                )}
+                {kind === "grammar" && (
+                  <div className="mt-4">
+                    <GrammarExerciseGenerator
+                      title={`Grade 11 ${section.code} ${ex.instruction.x.slice(0, 60)}`}
+                      instructions={ex.instruction.x}
+                      samples={ex.blocks.filter((b) => b.t === "q").map((b) => ({ text: b.x }))}
+                    />
+                  </div>
+                )}
+              </div>
+            ),
+          )}
           {free && (
             <div className="rounded-2xl border border-border bg-card p-4">
               <label htmlFor={`unit2-${kind}-response`} className="font-semibold">
@@ -227,7 +244,17 @@ export function Grade11Unit2Workspace({ kind }: { kind: G11SkillKind }) {
                 onChange={(e) => setAnswer("free", e.target.value)}
                 placeholder="Write your answer…"
                 className="mt-2"
+                maxLength={12000}
               />
+              {kind === "writing" && (
+                <Grade11AIReview
+                  writing
+                  question="Write a review of EiiZi Mart"
+                  instructions={exercises.at(-1)?.instruction.x ?? ""}
+                  context={section.blocks.map((b) => b.x).join("\n")}
+                  answer={answers.free ?? ""}
+                />
+              )}
             </div>
           )}
         </section>

@@ -86,7 +86,7 @@ describe("Grade 11 Units 3–6 workspaces", () => {
     const first = screen.getAllByRole("textbox")[0];
     fireEvent.change(first, { target: { value: "thinking" } });
     fireEvent.click(screen.getAllByRole("button", { name: "Check Answer" })[0]);
-    expect(screen.getByText(/✅/)).toBeVisible();
+    expect(screen.getByText("✓ မှန်ပါတယ်။")).toBeVisible();
     view.rerender(<Grade11Unit4Lesson key="unit4" kind="grammar" />);
     expect(screen.getAllByRole("textbox")[0]).toHaveValue("");
     view.rerender(<Grade11Unit3Lesson key="unit3" kind="grammar" />);

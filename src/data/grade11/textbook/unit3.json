@@ -1414,13 +1414,12 @@
         "area": "exercise"
       },
       {
-        "t": "scan",
-        "x": "",
+        "t": "line",
+        "x": "Nilar — prefers to eat organic food; thinks junk food is not good for health; worried that her friend will become sick.",
         "id": "3D-36",
-        "my": "",
+        "my": "နီလာ — သဘာဝအခြေခံစိုက်ပျိုးထုတ်လုပ်သည့် အစားအစာကို ပိုနှစ်သက်သည်။ အာဟာရမပြည့်ဝသော အစားအစာများသည် ကျန်းမာရေးအတွက် မကောင်းဟု ထင်ပြီး သူငယ်ချင်း နေမကောင်းဖြစ်လာမည်ကို စိုးရိမ်သည်။",
         "sourcePage": 35,
-        "area": "exercise",
-        "scanPage": 35
+        "area": "exercise"
       },
       {
         "t": "line",

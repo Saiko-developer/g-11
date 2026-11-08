@@ -42,7 +42,13 @@ async function callRoleplay(body: object, signal?: AbortSignal) {
   return res.json();
 }
 
-export function Grade11RolePlay({ unit }: { unit: number }) {
+export function Grade11RolePlay({
+  unit,
+  exercise,
+}: {
+  unit: number;
+  exercise?: "1D-30" | "1D-31";
+}) {
   const unitTitle =
     G11_SYLLABUS.filter((node) => node.type === "unit").find((node) => node.number === unit)
       ?.title ?? "Grade 11 English";
@@ -129,6 +135,7 @@ export function Grade11RolePlay({ unit }: { unit: number }) {
         {
           unit,
           unitTitle,
+          exercise,
           session: sessionRef.current || undefined,
           goodbye,
           turns: history.slice(-20).map(({ role, text }) => ({ role, text })),
@@ -319,6 +326,7 @@ export function Grade11RolePlay({ unit }: { unit: number }) {
         {
           unit,
           unitTitle,
+          exercise,
           session: sessionRef.current,
           turns: turnsRef.current.slice(-20),
           finish: true,

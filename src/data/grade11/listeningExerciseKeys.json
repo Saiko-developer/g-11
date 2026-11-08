@@ -1,0 +1,494 @@
+{
+  "2D-1": {
+    "answer": "3",
+    "answerMy": "ပထမပုံက ဖေ့စ်ဘွတ်ခ် ဖြစ်ပြီး စကားပြောခန်း ၃ နှင့် ကိုက်ညီသည်။",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit2.mp3",
+    "audioSha256": "599395f0f553e865dbd8985c8b591e8b9f6637bd02d6352f975351421a3da195",
+    "evidenceCueIds": [
+      "g11-audio-2-1",
+      "g11-audio-2-2",
+      "g11-audio-2-3",
+      "g11-audio-2-4",
+      "g11-audio-2-5",
+      "g11-audio-2-6",
+      "g11-audio-2-7",
+      "g11-audio-2-8",
+      "g11-audio-2-9",
+      "g11-audio-2-10",
+      "g11-audio-2-11",
+      "g11-audio-2-12",
+      "g11-audio-2-13",
+      "g11-audio-2-14",
+      "g11-audio-2-15",
+      "g11-audio-2-16",
+      "g11-audio-2-17",
+      "g11-audio-2-18",
+      "g11-audio-2-19",
+      "g11-audio-2-20",
+      "g11-audio-2-21",
+      "g11-audio-2-22",
+      "g11-audio-2-23",
+      "g11-audio-2-24",
+      "g11-audio-2-25",
+      "g11-audio-2-26",
+      "g11-audio-2-27",
+      "g11-audio-2-28",
+      "g11-audio-2-29",
+      "g11-audio-2-30",
+      "g11-audio-2-31",
+      "g11-audio-2-32",
+      "g11-audio-2-33",
+      "g11-audio-2-34",
+      "g11-audio-2-35",
+      "g11-audio-2-36"
+    ]
+  },
+  "2D-2": {
+    "answer": "1",
+    "answerMy": "ဒုတိယပုံက မိုဘိုင်းဘဏ်ဝန်ဆောင်မှု ဖြစ်ပြီး စကားပြောခန်း ၁ နှင့် ကိုက်ညီသည်။",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit2.mp3",
+    "audioSha256": "599395f0f553e865dbd8985c8b591e8b9f6637bd02d6352f975351421a3da195",
+    "evidenceCueIds": [
+      "g11-audio-2-1",
+      "g11-audio-2-2",
+      "g11-audio-2-3",
+      "g11-audio-2-4",
+      "g11-audio-2-5",
+      "g11-audio-2-6",
+      "g11-audio-2-7",
+      "g11-audio-2-8",
+      "g11-audio-2-9",
+      "g11-audio-2-10",
+      "g11-audio-2-11",
+      "g11-audio-2-12",
+      "g11-audio-2-13",
+      "g11-audio-2-14",
+      "g11-audio-2-15",
+      "g11-audio-2-16",
+      "g11-audio-2-17",
+      "g11-audio-2-18",
+      "g11-audio-2-19",
+      "g11-audio-2-20",
+      "g11-audio-2-21",
+      "g11-audio-2-22",
+      "g11-audio-2-23",
+      "g11-audio-2-24",
+      "g11-audio-2-25",
+      "g11-audio-2-26",
+      "g11-audio-2-27",
+      "g11-audio-2-28",
+      "g11-audio-2-29",
+      "g11-audio-2-30",
+      "g11-audio-2-31",
+      "g11-audio-2-32",
+      "g11-audio-2-33",
+      "g11-audio-2-34",
+      "g11-audio-2-35",
+      "g11-audio-2-36"
+    ]
+  },
+  "2D-3": {
+    "answer": "2",
+    "answerMy": "တတိယပုံက အွန်လိုင်းဈေးဝယ်ခြင်း ဖြစ်ပြီး စကားပြောခန်း ၂ နှင့် ကိုက်ညီသည်။",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit2.mp3",
+    "audioSha256": "599395f0f553e865dbd8985c8b591e8b9f6637bd02d6352f975351421a3da195",
+    "evidenceCueIds": [
+      "g11-audio-2-1",
+      "g11-audio-2-2",
+      "g11-audio-2-3",
+      "g11-audio-2-4",
+      "g11-audio-2-5",
+      "g11-audio-2-6",
+      "g11-audio-2-7",
+      "g11-audio-2-8",
+      "g11-audio-2-9",
+      "g11-audio-2-10",
+      "g11-audio-2-11",
+      "g11-audio-2-12",
+      "g11-audio-2-13",
+      "g11-audio-2-14",
+      "g11-audio-2-15",
+      "g11-audio-2-16",
+      "g11-audio-2-17",
+      "g11-audio-2-18",
+      "g11-audio-2-19",
+      "g11-audio-2-20",
+      "g11-audio-2-21",
+      "g11-audio-2-22",
+      "g11-audio-2-23",
+      "g11-audio-2-24",
+      "g11-audio-2-25",
+      "g11-audio-2-26",
+      "g11-audio-2-27",
+      "g11-audio-2-28",
+      "g11-audio-2-29",
+      "g11-audio-2-30",
+      "g11-audio-2-31",
+      "g11-audio-2-32",
+      "g11-audio-2-33",
+      "g11-audio-2-34",
+      "g11-audio-2-35",
+      "g11-audio-2-36"
+    ]
+  },
+  "2D-5": {
+    "answer": "money",
+    "answerMy": "ငွေ",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit2.mp3",
+    "audioSha256": "599395f0f553e865dbd8985c8b591e8b9f6637bd02d6352f975351421a3da195",
+    "evidenceCueIds": [
+      "g11-audio-2-7"
+    ]
+  },
+  "2D-6": {
+    "answer": "convenient; very convenient",
+    "answerMy": "အဆင်ပြေသော",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit2.mp3",
+    "audioSha256": "599395f0f553e865dbd8985c8b591e8b9f6637bd02d6352f975351421a3da195",
+    "evidenceCueIds": [
+      "g11-audio-2-10"
+    ]
+  },
+  "2D-7": {
+    "answer": "delivered",
+    "answerMy": "အိမ်အရောက်ပို့ပေးသည်",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit2.mp3",
+    "audioSha256": "599395f0f553e865dbd8985c8b591e8b9f6637bd02d6352f975351421a3da195",
+    "evidenceCueIds": [
+      "g11-audio-2-16"
+    ]
+  },
+  "2D-8": {
+    "answer": "jobs",
+    "answerMy": "အလုပ်များ",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit2.mp3",
+    "audioSha256": "599395f0f553e865dbd8985c8b591e8b9f6637bd02d6352f975351421a3da195",
+    "evidenceCueIds": [
+      "g11-audio-2-26"
+    ]
+  },
+  "2D-9": {
+    "answer": "common interests",
+    "answerMy": "တူညီသော စိတ်ဝင်စားမှုများ",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit2.mp3",
+    "audioSha256": "599395f0f553e865dbd8985c8b591e8b9f6637bd02d6352f975351421a3da195",
+    "evidenceCueIds": [
+      "g11-audio-2-35"
+    ]
+  },
+  "3D-1": {
+    "answer": "FALSE",
+    "answerMy": "သူက မှတ်ဉာဏ် သိပ်မကောင်းဘူးဟု ပြောသည်။",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit3.mp3",
+    "audioSha256": "d563cb664d3138b799ae428d542c9c246f0d31597021d772b8a10454b6804d63",
+    "evidenceCueIds": [
+      "g11-audio-3-1",
+      "g11-audio-3-2",
+      "g11-audio-3-3",
+      "g11-audio-3-4",
+      "g11-audio-3-5",
+      "g11-audio-3-6",
+      "g11-audio-3-7",
+      "g11-audio-3-8",
+      "g11-audio-3-9",
+      "g11-audio-3-10",
+      "g11-audio-3-11"
+    ]
+  },
+  "3D-2": {
+    "answer": "TRUE",
+    "answerMy": "မြင်ကွင်း၊ အနံ့၊ အရသာနှင့် အသံတွေက ငယ်ဘဝကို သတိရစေသည်။",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit3.mp3",
+    "audioSha256": "d563cb664d3138b799ae428d542c9c246f0d31597021d772b8a10454b6804d63",
+    "evidenceCueIds": [
+      "g11-audio-3-1",
+      "g11-audio-3-2",
+      "g11-audio-3-3",
+      "g11-audio-3-4",
+      "g11-audio-3-5",
+      "g11-audio-3-6",
+      "g11-audio-3-7",
+      "g11-audio-3-8",
+      "g11-audio-3-9",
+      "g11-audio-3-10",
+      "g11-audio-3-11"
+    ]
+  },
+  "3D-3": {
+    "answer": "FALSE",
+    "answerMy": "မကြာသေးမီက ဖြစ်ရပ်မဟုတ်ဘဲ ငယ်ဘဝအကြောင်း ပြောနေသည်။",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit3.mp3",
+    "audioSha256": "d563cb664d3138b799ae428d542c9c246f0d31597021d772b8a10454b6804d63",
+    "evidenceCueIds": [
+      "g11-audio-3-1",
+      "g11-audio-3-2",
+      "g11-audio-3-3",
+      "g11-audio-3-4",
+      "g11-audio-3-5",
+      "g11-audio-3-6",
+      "g11-audio-3-7",
+      "g11-audio-3-8",
+      "g11-audio-3-9",
+      "g11-audio-3-10",
+      "g11-audio-3-11"
+    ]
+  },
+  "3D-4": {
+    "answer": "TRUE",
+    "answerMy": "မုန့်ဟင်းခါးက သူ့အမေကို သတိရစေသည်။",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit3.mp3",
+    "audioSha256": "d563cb664d3138b799ae428d542c9c246f0d31597021d772b8a10454b6804d63",
+    "evidenceCueIds": [
+      "g11-audio-3-1",
+      "g11-audio-3-2",
+      "g11-audio-3-3",
+      "g11-audio-3-4",
+      "g11-audio-3-5",
+      "g11-audio-3-6",
+      "g11-audio-3-7",
+      "g11-audio-3-8",
+      "g11-audio-3-9",
+      "g11-audio-3-10",
+      "g11-audio-3-11"
+    ]
+  },
+  "3D-5": {
+    "answer": "FALSE",
+    "answerMy": "အမေက တနင်္ဂနွေနေ့တွေမှာ ချက်ပေးလေ့ရှိကြောင်းသာ ပြောသည်။",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit3.mp3",
+    "audioSha256": "d563cb664d3138b799ae428d542c9c246f0d31597021d772b8a10454b6804d63",
+    "evidenceCueIds": [
+      "g11-audio-3-1",
+      "g11-audio-3-2",
+      "g11-audio-3-3",
+      "g11-audio-3-4",
+      "g11-audio-3-5",
+      "g11-audio-3-6",
+      "g11-audio-3-7",
+      "g11-audio-3-8",
+      "g11-audio-3-9",
+      "g11-audio-3-10",
+      "g11-audio-3-11"
+    ]
+  },
+  "3D-6": {
+    "answer": "TRUE",
+    "answerMy": "သီချင်းက ချိုချိုကို သတိရစေသည်။",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit3.mp3",
+    "audioSha256": "d563cb664d3138b799ae428d542c9c246f0d31597021d772b8a10454b6804d63",
+    "evidenceCueIds": [
+      "g11-audio-3-1",
+      "g11-audio-3-2",
+      "g11-audio-3-3",
+      "g11-audio-3-4",
+      "g11-audio-3-5",
+      "g11-audio-3-6",
+      "g11-audio-3-7",
+      "g11-audio-3-8",
+      "g11-audio-3-9",
+      "g11-audio-3-10",
+      "g11-audio-3-11"
+    ]
+  },
+  "3D-7": {
+    "answer": "FALSE",
+    "answerMy": "သူတို့က ကျောင်းဆင်းပြီး အိမ်ပြန်လမ်းမှာ သီချင်းဆိုကြသည်။",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit3.mp3",
+    "audioSha256": "d563cb664d3138b799ae428d542c9c246f0d31597021d772b8a10454b6804d63",
+    "evidenceCueIds": [
+      "g11-audio-3-1",
+      "g11-audio-3-2",
+      "g11-audio-3-3",
+      "g11-audio-3-4",
+      "g11-audio-3-5",
+      "g11-audio-3-6",
+      "g11-audio-3-7",
+      "g11-audio-3-8",
+      "g11-audio-3-9",
+      "g11-audio-3-10",
+      "g11-audio-3-11"
+    ]
+  },
+  "3D-8": {
+    "answer": "TRUE",
+    "answerMy": "ကြောင်လေးရခဲ့တဲ့နေ့က ခုနစ်နှစ်ပြည့်မွေးနေ့ ဖြစ်သည်။",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit3.mp3",
+    "audioSha256": "d563cb664d3138b799ae428d542c9c246f0d31597021d772b8a10454b6804d63",
+    "evidenceCueIds": [
+      "g11-audio-3-1",
+      "g11-audio-3-2",
+      "g11-audio-3-3",
+      "g11-audio-3-4",
+      "g11-audio-3-5",
+      "g11-audio-3-6",
+      "g11-audio-3-7",
+      "g11-audio-3-8",
+      "g11-audio-3-9",
+      "g11-audio-3-10",
+      "g11-audio-3-11"
+    ]
+  },
+  "3D-9": {
+    "answer": "FALSE",
+    "answerMy": "ကြောင်လေးက စာလုပ်နေချိန် ဘေးမှာ ထိုင်နေသည်။",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit3.mp3",
+    "audioSha256": "d563cb664d3138b799ae428d542c9c246f0d31597021d772b8a10454b6804d63",
+    "evidenceCueIds": [
+      "g11-audio-3-1",
+      "g11-audio-3-2",
+      "g11-audio-3-3",
+      "g11-audio-3-4",
+      "g11-audio-3-5",
+      "g11-audio-3-6",
+      "g11-audio-3-7",
+      "g11-audio-3-8",
+      "g11-audio-3-9",
+      "g11-audio-3-10",
+      "g11-audio-3-11"
+    ]
+  },
+  "3D-10": {
+    "answer": "TRUE",
+    "answerMy": "အိပ်ရာမဝင်ခင် ကြောင်လေးနှင့် ကစားလေ့ရှိသည်။",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit3.mp3",
+    "audioSha256": "d563cb664d3138b799ae428d542c9c246f0d31597021d772b8a10454b6804d63",
+    "evidenceCueIds": [
+      "g11-audio-3-1",
+      "g11-audio-3-2",
+      "g11-audio-3-3",
+      "g11-audio-3-4",
+      "g11-audio-3-5",
+      "g11-audio-3-6",
+      "g11-audio-3-7",
+      "g11-audio-3-8",
+      "g11-audio-3-9",
+      "g11-audio-3-10",
+      "g11-audio-3-11"
+    ]
+  },
+  "4D-3": {
+    "answer": "satisfy",
+    "answerMy": "ဆာလောင်မှုကို ပြေစေသည်",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit4.mp3",
+    "audioSha256": "cc5953179a64ffd208ceed1584dfcc04ca3c5e46e11ea6e1ff1a9209de5d7679",
+    "evidenceCueIds": [
+      "g11-audio-4-8"
+    ]
+  },
+  "4D-4": {
+    "answer": "tastes",
+    "answerMy": "အရသာရှိသည်",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit4.mp3",
+    "audioSha256": "cc5953179a64ffd208ceed1584dfcc04ca3c5e46e11ea6e1ff1a9209de5d7679",
+    "evidenceCueIds": [
+      "g11-audio-4-10"
+    ]
+  },
+  "4D-5": {
+    "answer": "reasonable",
+    "answerMy": "ဈေးနှုန်းသင့်တင့်သော",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit4.mp3",
+    "audioSha256": "cc5953179a64ffd208ceed1584dfcc04ca3c5e46e11ea6e1ff1a9209de5d7679",
+    "evidenceCueIds": [
+      "g11-audio-4-13"
+    ]
+  },
+  "4D-6": {
+    "answer": "healthy options; healthier options",
+    "answerMy": "ကျန်းမာရေးနှင့်ညီညွတ်သည့် ရွေးချယ်စရာများ",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit4.mp3",
+    "audioSha256": "cc5953179a64ffd208ceed1584dfcc04ca3c5e46e11ea6e1ff1a9209de5d7679",
+    "evidenceCueIds": [
+      "g11-audio-4-19"
+    ]
+  },
+  "4D-7": {
+    "answer": "health",
+    "answerMy": "ကျန်းမာရေး",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit4.mp3",
+    "audioSha256": "cc5953179a64ffd208ceed1584dfcc04ca3c5e46e11ea6e1ff1a9209de5d7679",
+    "evidenceCueIds": [
+      "g11-audio-4-24"
+    ]
+  },
+  "4D-8": {
+    "answer": "feel",
+    "answerMy": "ခံစားရသည်",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit4.mp3",
+    "audioSha256": "cc5953179a64ffd208ceed1584dfcc04ca3c5e46e11ea6e1ff1a9209de5d7679",
+    "evidenceCueIds": [
+      "g11-audio-4-27",
+      "g11-audio-4-28"
+    ]
+  },
+  "4D-9": {
+    "answer": "problems",
+    "answerMy": "ပြဿနာများ",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit4.mp3",
+    "audioSha256": "cc5953179a64ffd208ceed1584dfcc04ca3c5e46e11ea6e1ff1a9209de5d7679",
+    "evidenceCueIds": [
+      "g11-audio-4-33"
+    ]
+  },
+  "4D-10": {
+    "answer": "quality time",
+    "answerMy": "တန်ဖိုးရှိသည့် အတူရှိချိန်",
+    "kind": "closed",
+    "origin": "audio-derived",
+    "audioSrc": "/grade11/audio/unit4.mp3",
+    "audioSha256": "cc5953179a64ffd208ceed1584dfcc04ca3c5e46e11ea6e1ff1a9209de5d7679",
+    "evidenceCueIds": [
+      "g11-audio-4-38"
+    ]
+  }
+}
