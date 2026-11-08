@@ -21,7 +21,7 @@ function TrackPlayer({ track, reference }: { track: (typeof tracks)[number]; ref
   const [speed, setSpeed] = useState(1);
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
-  const [showCaptions, setShowCaptions] = useState(true);
+  const [showEnglish, setShowEnglish] = useState(true);
   const [showMy, setShowMy] = useState(true);
   const cues = getGrade11Captions(track.unit);
   const stopAt = useRef<number | null>(null);
@@ -79,6 +79,7 @@ function TrackPlayer({ track, reference }: { track: (typeof tracks)[number]; ref
         ref={audioRef}
         src={track.src}
         controls
+        controlsList="nodownload"
         preload="metadata"
         aria-label={`Unit ${track.unit} listening track`}
         className="block w-full min-w-0"
@@ -130,110 +131,87 @@ function TrackPlayer({ track, reference }: { track: (typeof tracks)[number]; ref
             ))}
           </select>
         </label>
-        <a
-          href={track.src}
-          download={`grade11-unit${track.unit}.mp3`}
-          className="rounded-lg px-3 py-2 text-primary underline"
-        >
-          MP3 ရယူမည်
-        </a>
       </div>
       {cues.length > 0 && (
         <div className="space-y-3 border-t border-border pt-3">
-          <div className="flex flex-wrap gap-3 text-sm">
+          <div
+            role="group"
+            aria-label="Subtitle languages"
+            className="flex flex-wrap gap-2 text-sm"
+          >
             <button
               type="button"
-              aria-pressed={showCaptions}
-              className="text-primary underline"
-              onClick={() => setShowCaptions((old) => !old)}
+              aria-pressed={showEnglish}
+              onClick={() => setShowEnglish((old) => !old)}
+              className={`rounded-full border px-4 py-2 font-medium transition ${showEnglish ? "border-primary bg-primary text-primary-foreground" : "border-border bg-background text-muted-foreground"}`}
             >
-              {showCaptions ? "CC စာတန်း ပိတ်မည်" : "CC စာတန်း ပြမည်"}
+              English
             </button>
             <button
               type="button"
               aria-pressed={showMy}
-              className="text-primary underline"
               onClick={() => setShowMy((old) => !old)}
+              className={`rounded-full border px-4 py-2 font-medium transition ${showMy ? "border-primary bg-primary text-primary-foreground" : "border-border bg-background text-muted-foreground"}`}
             >
-              {showMy ? "မြန်မာပြန် ဝှက်မယ်" : "မြန်မာပြန် ပြမယ်"}
+              မြန်မာ
             </button>
-            <a
-              href={`/grade11/captions/unit${track.unit}.vtt`}
-              download
-              className="text-primary underline"
-            >
-              English VTT ရယူမည်
-            </a>
-            <a
-              href={`/grade11/captions/unit${track.unit}.my.vtt`}
-              download
-              className="text-primary underline"
-            >
-              မြန်မာ VTT ရယူမည်
-            </a>
           </div>
-          <p lang="my" className="text-xs text-muted-foreground">
-            မူရင်း MP3 မှ စက်ဖြင့်အသံဖော်ထားသော အင်္ဂလိပ်စာတန်း ဖြစ်၍ စာလုံးနှင့် အချိန်ကိုက်မှုတွင်
-            အမှားအယွင်း ရှိနိုင်ပါသည်။
-          </p>
-          {showCaptions && (
+          {current && (showEnglish || showMy) && (
             <div
               role="region"
               aria-label="Live audio subtitles"
-              className="min-h-24 rounded-xl border border-primary/30 bg-primary/5 p-4"
+              className="rounded-xl border border-primary/30 bg-primary/5 p-4"
             >
-              {current ? (
-                <Grade11CaptionText cue={current} wordIndex={active.wordIndex} />
-              ) : (
-                <p lang="my" className="text-sm text-muted-foreground">
-                  အသံဖွင့်ပြီး ပြောနေသောစာကြောင်းကို ဒီနေရာတွင် ကြည့်နိုင်ပါသည်။
-                </p>
-              )}
-              {showMy && current?.my && (
+              {showEnglish && <Grade11CaptionText cue={current} wordIndex={active.wordIndex} />}
+              {showMy && current.my && (
                 <p lang="my" className="mt-2 text-sm leading-relaxed">
                   {current.my}
                 </p>
               )}
             </div>
           )}
-          <details>
-            <summary className="cursor-pointer text-sm font-medium text-primary">
-              စာတန်းအပြည့် / တစ်ကြောင်းချင်း နားထောင်မည်
-            </summary>
-            <div ref={transcriptRef} className="relative mt-3 max-h-72 space-y-2 overflow-y-auto">
-              {cues.map((cue, index) => (
-                <button
-                  key={cue.id}
-                  type="button"
-                  disabled={!ready}
-                  aria-current={index === active.cueIndex ? "true" : undefined}
-                  className={`block w-full rounded-xl border p-3 text-left text-sm disabled:opacity-50 ${index === active.cueIndex ? "border-primary bg-primary/5" : "border-border"}`}
-                  onClick={async () => {
-                    const audio = audioRef.current;
-                    if (!audio) return;
-                    setPlayError("");
-                    stopAt.current = cue.end;
-                    audio.currentTime = cue.start;
-                    try {
-                      await audio.play();
-                    } catch {
-                      stopAt.current = null;
-                      setPlayError("အသံဖွင့်မရပါ။ ထပ်နှိပ်၍ စမ်းပါ။");
-                    }
-                  }}
-                >
-                  <span lang="en" className="block">
-                    {cue.en}
-                  </span>
-                  {showMy && cue.my && (
-                    <span lang="my" className="mt-2 block leading-relaxed text-muted-foreground">
-                      {cue.my}
-                    </span>
-                  )}
-                </button>
-              ))}
-            </div>
-          </details>
+          {(showEnglish || showMy) && (
+            <details>
+              <summary className="cursor-pointer text-sm font-medium text-primary">
+                စာတန်းအပြည့် / တစ်ကြောင်းချင်း နားထောင်မည်
+              </summary>
+              <div ref={transcriptRef} className="relative mt-3 max-h-72 space-y-2 overflow-y-auto">
+                {cues.map((cue, index) => (
+                  <button
+                    key={cue.id}
+                    type="button"
+                    disabled={!ready}
+                    aria-current={index === active.cueIndex ? "true" : undefined}
+                    className={`block w-full rounded-xl border p-3 text-left text-sm disabled:opacity-50 ${index === active.cueIndex ? "border-primary bg-primary/5" : "border-border"}`}
+                    onClick={async () => {
+                      const audio = audioRef.current;
+                      if (!audio) return;
+                      setPlayError("");
+                      stopAt.current = cue.end;
+                      audio.currentTime = cue.start;
+                      try {
+                        await audio.play();
+                      } catch {
+                        stopAt.current = null;
+                        setPlayError("အသံဖွင့်မရပါ။ ထပ်နှိပ်၍ စမ်းပါ။");
+                      }
+                    }}
+                  >
+                    {showEnglish && (
+                      <span lang="en" className="block">
+                        {cue.en}
+                      </span>
+                    )}
+                    {showMy && cue.my && (
+                      <span lang="my" className="mt-2 block leading-relaxed text-muted-foreground">
+                        {cue.my}
+                      </span>
+                    )}
+                  </button>
+                ))}
+              </div>
+            </details>
+          )}
           {playError && (
             <p role="alert" lang="my" className="text-sm">
               {playError}
@@ -243,9 +221,7 @@ function TrackPlayer({ track, reference }: { track: (typeof tracks)[number]; ref
       )}
       {failed && (
         <div role="alert" lang="my" className="space-y-2 text-sm">
-          <p>
-            အသံဖိုင် ဖွင့်မရပါ။ အင်တာနက်ချိတ်ဆက်မှု စစ်ပြီး ပြန်ဖွင့်ပါ၊ သို့မဟုတ် MP3 ကို ရယူပါ။
-          </p>
+          <p>အသံဖိုင် ဖွင့်မရပါ။ အင်တာနက်ချိတ်ဆက်မှု စစ်ပြီး ပြန်ဖွင့်ပါ။</p>
           <button
             type="button"
             className="rounded-lg border border-border px-3 py-2"

@@ -84,12 +84,13 @@ export function Grade11Unit2Workspace({ kind }: { kind: G11SkillKind }) {
         </p>
         <Progress value={ids.length ? (done / ids.length) * 100 : 0} className="mt-2 h-2" />
       </div>
-      <header className="rounded-2xl border border-border bg-card p-5">
-        <p className="text-xs font-semibold text-primary">
-          {section.code} ·{" "}
-          {kind === "speaking" ? "Speaking" : kind === "listening" ? "Listening" : section.title}
-        </p>
-      </header>
+      {kind !== "speaking" && (
+        <header className="rounded-2xl border border-border bg-card p-5">
+          <p className="text-xs font-semibold text-primary">
+            {section.code} · {kind === "listening" ? "Listening" : section.title}
+          </p>
+        </header>
+      )}
       <div className={kind === "reading" ? "grid items-start gap-5 lg:grid-cols-2" : "space-y-5"}>
         {kind === "grammar" ? (
           <div className="space-y-5">

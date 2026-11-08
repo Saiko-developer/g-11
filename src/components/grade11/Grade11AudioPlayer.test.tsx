@@ -1,6 +1,6 @@
 import { getGrade11Captions } from "@/lib/grade11Captions";
 import { StrictMode } from "react";
-import { cleanup, fireEvent, render, screen, within } from "@testing-library/react";
+import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { Grade11TextLesson } from "./Grade11TextLesson";
 import { Grade11AudioPlayer } from "./Grade11AudioPlayer";
@@ -34,19 +34,24 @@ describe("Grade 11 original audio", () => {
     const word = cue.words.find((item) => item.end > item.start)!;
     audio.currentTime = (word.start + word.end) / 2;
     fireEvent.seeked(audio);
-    const live = screen.getByRole("region", { name: "Live audio subtitles" });
+    let live = screen.getByRole("region", { name: "Live audio subtitles" });
     expect(live.querySelector('[lang="en"]')?.textContent?.trim()).toBe(cue.en);
     expect(live.querySelector('[lang="my"]')?.textContent?.trim()).toBe(cue.my);
-    fireEvent.click(screen.getByRole("button", { name: "မြန်မာပြန် ဝှက်မယ်" }));
-    expect(live.querySelector('[lang="my"]')).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "English" }));
+    expect(live.querySelector('[lang="en"]')).toBeNull();
+    expect(live.querySelector('[lang="my"]')?.textContent?.trim()).toBe(cue.my);
+    fireEvent.click(screen.getByRole("button", { name: "မြန်မာ" }));
+    expect(screen.queryByRole("region", { name: "Live audio subtitles" })).toBeNull();
+    expect(screen.queryByText("စာတန်းအပြည့် / တစ်ကြောင်းချင်း နားထောင်မည်")).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "English" }));
+    live = screen.getByRole("region", { name: "Live audio subtitles" });
     expect(live.querySelector('[lang="en"]')?.textContent?.trim()).toBe(cue.en);
-    fireEvent.click(screen.getByRole("button", { name: "မြန်မာပြန် ပြမယ်" }));
+    expect(live.querySelector('[lang="my"]')).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "မြန်မာ" }));
     expect(live.querySelector('[lang="my"]')?.textContent?.trim()).toBe(cue.my);
     expect(live.querySelector('[aria-current="true"]')?.textContent).toBe(word.word);
     audio.currentTime = 115;
     fireEvent.seeked(audio);
-    expect(within(live).queryByText(cue.en)).toBeNull();
-    fireEvent.click(screen.getByRole("button", { name: "CC စာတန်း ပိတ်မည်" }));
     expect(screen.queryByRole("region", { name: "Live audio subtitles" })).toBeNull();
     fireEvent.click(screen.getByText("စာတန်းအပြည့် / တစ်ကြောင်းချင်း နားထောင်မည်"));
     await fireEvent.click(
@@ -98,15 +103,13 @@ describe("Grade 11 original audio", () => {
     expect(screen.getByLabelText("Audio playback speed")).toHaveValue("2");
   });
 
-  it("offers a download and retry on failure, then clears the failure after metadata loads", () => {
+  it("offers retry without download controls on failure, then clears the failure after metadata loads", () => {
     render(<Grade11AudioPlayer unit={12} />);
     const audio = player();
     fireEvent.error(audio);
     expect(screen.getByRole("alert")).toBeVisible();
-    expect(screen.getByRole("link", { name: "MP3 ရယူမည်" })).toHaveAttribute(
-      "href",
-      "/grade11/audio/unit12.mp3",
-    );
+    expect(screen.queryByRole("link")).toBeNull();
+    expect(audio).toHaveAttribute("controlslist", "nodownload");
     fireEvent.click(screen.getByRole("button", { name: "ပြန်ဖွင့်မည်" }));
     expect(audio.load).toHaveBeenCalled();
     fireEvent.loadedMetadata(audio);

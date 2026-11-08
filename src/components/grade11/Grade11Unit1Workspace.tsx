@@ -10,7 +10,6 @@ import { GrammarExerciseGenerator } from "@/components/lesson/GrammarExerciseGen
 import { Grade11Unit1Answer } from "./Grade11Unit1Answer";
 import { GrammarScriptView } from "@/components/lesson/GrammarScriptView";
 import { UNIT1_GRAMMAR } from "@/lib/grade11Unit1Grammar";
-import { LessonAudioPlayer } from "@/components/LessonAudioPlayer";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Progress } from "@/components/ui/progress";
@@ -102,34 +101,17 @@ export function Grade11Unit1Workspace({ kind }: { kind: G11SkillKind }) {
 
       <div className={kind === "reading" ? "grid gap-5 lg:grid-cols-2" : "space-y-5"}>
         {kind !== "vocabulary" &&
+          (kind !== "speaking" || lesson.length > 0) &&
           (kind === "grammar" ? (
             <GrammarScriptView grammar={UNIT1_GRAMMAR} />
           ) : (
             <article className="space-y-3 rounded-2xl border border-border bg-card p-5">
-              <header>
-                <span className="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-bold text-primary">
-                  {section.code} ·{" "}
-                  {kind === "speaking"
-                    ? "Speaking"
-                    : kind === "listening"
-                      ? "Listening"
-                      : section.title}
-                </span>
-              </header>
-              {kind === "speaking" && (
-                <LessonAudioPlayer
-                  label="Model pronunciation"
-                  script={allExercises
-                    .find((ex) => ex.instruction.id === "1D-12")!
-                    .blocks.filter((b) => b.t === "q" || (b.t === "line" && /^[AB]:/.test(b.x)))
-                    .map((b) =>
-                      b.t === "q"
-                        ? b.x.replace(/\(\d+\)\s*_+/, answerKeys[b.id].answer.split("; ").at(-1)!)
-                        : b.x,
-                    )
-                    .join("\n")}
-                  hint="နမူနာ အသံထွက်ကို နားထောင်ပြီး လိုက်ဆိုကြည့်ပါ။"
-                />
+              {kind !== "speaking" && (
+                <header>
+                  <span className="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-bold text-primary">
+                    {section.code} · {kind === "listening" ? "Listening" : section.title}
+                  </span>
+                </header>
               )}
               {lesson
                 .filter((block) => !(kind === "writing" && block.t === "scan"))

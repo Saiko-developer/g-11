@@ -64,6 +64,19 @@ describe("Grade 11 speaking source practice", () => {
     },
   );
 
+  it.each(Array.from({ length: 12 }, (_, i) => i + 1))(
+    "keeps Unit %i speaking exercises without redundant model audio or download controls",
+    (unit) => {
+      const view = render(<Grade11TextLesson unit={unit} kind="speaking" />);
+      expect(screen.queryByText("Model pronunciation")).toBeNull();
+      expect(screen.queryByRole("button", { name: /Play model pronunciation/ })).toBeNull();
+      expect(screen.queryByText(/^\d+D · Speaking$/)).toBeNull();
+      expect(view.container.querySelector("a[download]")).toBeNull();
+      expect(screen.getAllByRole("textbox").length).toBeGreaterThan(0);
+      expect(screen.getByRole("button", { name: "💬 AI စကားပြော" })).toBeVisible();
+    },
+  );
+
   it("plays only the selected Grade 11 text through browser speech", () => {
     render(<Grade11SpeakingPractice unit={1}>Original lesson</Grade11SpeakingPractice>);
     enterPractice();

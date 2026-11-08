@@ -115,12 +115,13 @@ export function Grade11SourceWorkspace({
         <Progress value={total ? (done / total) * 100 : 0} className="mt-2 h-2" />
       </div>
       {kind === "grammar" && <Grade11GrammarVideos unit={unitNumber} />}
-      <header className="rounded-2xl border border-border bg-card p-4">
-        <h2 className="font-semibold">
-          {section.code} ·{" "}
-          {kind === "listening" ? "Listening" : kind === "speaking" ? "Speaking" : section.title}
-        </h2>
-      </header>
+      {kind !== "speaking" && (
+        <header className="rounded-2xl border border-border bg-card p-4">
+          <h2 className="font-semibold">
+            {section.code} · {kind === "listening" ? "Listening" : section.title}
+          </h2>
+        </header>
+      )}
       <div
         className={
           kind === "reading" && lesson.length
