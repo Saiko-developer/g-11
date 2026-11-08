@@ -29,9 +29,15 @@ export const GRADE11_TRANSCRIPTS: Record<string, Grade11Transcript> = Object.fro
 const EMPTY: Grade11Caption[] = [];
 export const getGrade11Captions = (unit: number) => GRADE11_TRANSCRIPTS[unit]?.cues ?? EMPTY;
 
-/** End times matter: do not keep showing speech through music or silence. */
+/** Keep the last started cue visible until the next starts; highlight only words being spoken. */
 export function grade11CaptionAt(cues: Grade11Caption[], time: number) {
-  const cueIndex = cues.findIndex((cue) => time >= cue.start && time < cue.end);
+  let cueIndex = -1;
+  for (let index = cues.length - 1; index >= 0; index--) {
+    if (time >= cues[index].start) {
+      cueIndex = index;
+      break;
+    }
+  }
   const wordIndex =
     cueIndex < 0
       ? -1

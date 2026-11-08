@@ -25,7 +25,7 @@ describe("Grade 11 original audio", () => {
     },
   );
 
-  it("updates word captions after seeking, clears silent gaps, toggles captions and stops a selected clip", async () => {
+  it("updates word captions after seeking, retains captions through silent gaps, toggles captions and stops a selected clip", async () => {
     vi.spyOn(HTMLMediaElement.prototype, "play").mockResolvedValue();
     render(<Grade11AudioPlayer unit={1} />);
     const audio = player();
@@ -51,6 +51,13 @@ describe("Grade 11 original audio", () => {
     expect(live.querySelector('[lang="my"]')?.textContent?.trim()).toBe(cue.my);
     expect(live.querySelector('[aria-current="true"]')?.textContent).toBe(word.word);
     audio.currentTime = 115;
+    fireEvent.seeked(audio);
+    const last = getGrade11Captions(1).at(-1)!;
+    live = screen.getByRole("region", { name: "Live audio subtitles" });
+    expect(live.querySelector('[lang="en"]')?.textContent?.trim()).toBe(last.en);
+    expect(live.querySelector('[lang="my"]')?.textContent?.trim()).toBe(last.my);
+    expect(live.querySelector('[aria-current="true"]')).toBeNull();
+    audio.currentTime = 0;
     fireEvent.seeked(audio);
     expect(screen.queryByRole("region", { name: "Live audio subtitles" })).toBeNull();
     fireEvent.click(screen.getByText("စာတန်းအပြည့် / တစ်ကြောင်းချင်း နားထောင်မည်"));

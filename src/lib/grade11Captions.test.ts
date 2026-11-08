@@ -53,7 +53,7 @@ describe("Grade 11 MP3-aligned captions", () => {
     );
   });
 
-  it("uses the media time with no artificial offset and clears captions during silence", () => {
+  it("uses the media time with no artificial offset and retains the final cue", () => {
     const cues = getGrade11Captions(1);
     const word = cues[1].words.find((item) => item.end > item.start)!;
     const time = (word.start + word.end) / 2;
@@ -62,7 +62,23 @@ describe("Grade 11 MP3-aligned captions", () => {
       wordIndex: cues[1].words.indexOf(word),
     });
     expect(grade11CaptionAt(cues, 0).cueIndex).toBe(-1);
-    expect(grade11CaptionAt(cues, 115).cueIndex).toBe(-1);
-    expect(grade11CaptionAt(cues, cues[1].end).cueIndex).not.toBe(1);
+    expect(grade11CaptionAt(cues, 115)).toEqual({ cueIndex: cues.length - 1, wordIndex: -1 });
+    expect(grade11CaptionAt(cues, cues[1].end)).toEqual({ cueIndex: 1, wordIndex: -1 });
   });
+  it.each(tracks)(
+    "holds Unit $unit captions through gaps, switches at the next start, and resets on rewind",
+    (track) => {
+      const cues = getGrade11Captions(track.unit);
+      const index = cues.findIndex((cue, i) => i + 1 < cues.length && cue.end < cues[i + 1].start);
+      expect(index).toBeGreaterThanOrEqual(0);
+      const gap = (cues[index].end + cues[index + 1].start) / 2;
+      expect(grade11CaptionAt(cues, gap)).toEqual({ cueIndex: index, wordIndex: -1 });
+      expect(grade11CaptionAt(cues, cues[index + 1].start).cueIndex).toBe(index + 1);
+      expect(grade11CaptionAt(cues, track.durationSeconds)).toEqual({
+        cueIndex: cues.length - 1,
+        wordIndex: -1,
+      });
+      expect(grade11CaptionAt(cues, 0)).toEqual({ cueIndex: -1, wordIndex: -1 });
+    },
+  );
 });
