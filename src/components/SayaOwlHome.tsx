@@ -11,6 +11,7 @@ import { TutorQuotaBar, tutorFetch } from "@/components/TutorQuotaBar";
 import { SayaOwlAvatar } from "@/components/SayaOwlAvatar";
 import { useDraggable } from "@/hooks/useDraggable";
 import { fileToDataUrl, onExamUpload } from "@/lib/examUpload";
+import { voiceRequest } from "@/lib/voice-request";
 import { cleanForSpeech, takeSpeakableChunks } from "@/lib/voice-sentences";
 
 /**
@@ -48,7 +49,16 @@ const NEXT_CHUNK = 200;
 const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
 
 /** One TTS request at a time, with backoff on 429/5xx so the voice isn't silently dropped. */
-async function fetchSpeech(text: string): Promise<{ text: string; url: string | null }> {
+async function fetchSpeech(text: string, bounded = false): Promise<{ text: string; url: string | null }> {
+  if (bounded) {
+    try {
+      const blob = await voiceRequest("/api/tts", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text }),
+      }, (r) => r.blob(), 20000);
+      return { text, url: URL.createObjectURL(blob) };
+    } catch { return { text, url: null }; }
+  }
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
       const r = await fetch("/api/tts", {
@@ -85,17 +95,24 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
   const [heardSpeech, setHeardSpeech] = useState(false);
   const [studentLine, setStudentLine] = useState("");
   const [subtitle, setSubtitle] = useState("");
+  const [callError, setCallError] = useState("");
+  const failCallRef = useRef<(message: string) => void>(() => {});
 
   const [transport] = useState(() => new DefaultChatTransport({ api: "/api/chat-home", fetch: tutorFetch }));
-  const { messages, sendMessage, status, setMessages } = useChat({
+  const { messages, sendMessage, status, setMessages, stop: stopChat } = useChat({
     transport,
     onError: (err) => {
+      if (grade === 11) {
+        failCallRef.current(err.message || "AI ချိတ်ဆက်မရပါ။ ပြန်စရန် ဆရာဇီးကွက်ကို နှိပ်ပါ။");
+        return;
+      }
       console.error("[saya-owl-voice]", err);
       toast.error("ဆရာ ခဏ မဖြေနိုင်ပါ", { description: "ခဏနေ ပြန်မေးကြည့်ပါ။" });
     },
   });
 
   const activeRef = useRef(false);
+  const generationRef = useRef(0);
   const nativeRecRef = useRef<NativeRec | null>(null);
   const nativeFailedRef = useRef(false);
   const mutedRef = useRef(false);
@@ -117,7 +134,7 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
     // Sequential to stay inside the rate limit.
     let chain: Promise<unknown> = Promise.resolve();
     fillerUrlsRef.current = FILLERS.map((t) => {
-      const p = chain.then(() => fetchSpeech(t)).then((r) => r.url);
+      const p = chain.then(() => fetchSpeech(t, grade === 11)).then((r) => r.url);
       chain = p;
       return p;
     });
@@ -132,7 +149,8 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
       const a = new Audio(url);
       audioRef.current = a;
       const done = () => { if (audioRef.current === a) audioRef.current = null; resolve(); };
-      a.onended = done; a.onerror = done;
+      const timer = grade === 11 ? window.setTimeout(() => { a.pause(); done(); }, 5000) : undefined;
+      a.onended = () => { window.clearTimeout(timer); done(); }; a.onerror = () => { window.clearTimeout(timer); done(); };
       a.play().catch(done);
     });
   };
@@ -142,7 +160,12 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
     new Promise<void>((resolve) => {
       const audio = new Audio(url);
       audioRef.current = audio;
+      let settled = false;
+      const timer = grade === 11 ? window.setTimeout(() => { audio.pause(); done(); }, 45000) : undefined;
       const done = () => {
+        if (settled) return;
+        settled = true;
+        window.clearTimeout(timer);
         URL.revokeObjectURL(url);
         if (audioRef.current === audio) audioRef.current = null;
         resolve();
@@ -168,25 +191,33 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
 
   const pump = async () => {
     if (speakingRef.current) return;
+    const generation = generationRef.current;
     speakingRef.current = true;
     try {
       while (activeRef.current && (nextFetchRef.current || textQueueRef.current.length)) {
-        const pending = nextFetchRef.current ?? fetchSpeech(textQueueRef.current.shift()!);
+        const pending = nextFetchRef.current ?? fetchSpeech(textQueueRef.current.shift()!, grade === 11);
         nextFetchRef.current = null;
         const { text, url } = await pending;
+        if (grade === 11 && generation !== generationRef.current) {
+          if (url) URL.revokeObjectURL(url);
+          return;
+        }
         // Prefetch only one sentence ahead to stay inside the rate limit.
-        if (textQueueRef.current.length) nextFetchRef.current = fetchSpeech(textQueueRef.current.shift()!);
+        if (textQueueRef.current.length) nextFetchRef.current = fetchSpeech(textQueueRef.current.shift()!, grade === 11);
         await fillerDoneRef.current;
-        if (!activeRef.current) break;
+        if (!activeRef.current || (grade === 11 && generation !== generationRef.current)) {
+          if (url) URL.revokeObjectURL(url);
+          break;
+        }
         setSubtitle(text.replace(/[*#>`_]/g, ""));
         if (!url) { voiceFailedRef.current = true; continue; }
         setPhase("speaking");
         await playUrl(url);
       }
     } finally {
-      speakingRef.current = false;
+      if (grade !== 11 || generation === generationRef.current) speakingRef.current = false;
     }
-    maybeFinishTurn();
+    if (grade !== 11 || generation === generationRef.current) maybeFinishTurn();
   };
 
   const enqueueSpeech = (raw: string) => {
@@ -219,6 +250,15 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
     try {
       const form = new FormData();
       form.append("file", blob, "recording.webm");
+      if (grade === 11) {
+        form.append("grade", "11");
+        form.append("language", "my");
+        form.append("lessonContext", lessonContext.slice(0, 1500));
+        form.append("sectionContent", (readActiveSectionText() ?? "").slice(0, 1500));
+        const data = await voiceRequest("/api/transcribe", { method: "POST", body: form },
+          (r) => r.json() as Promise<{ text?: string }>, 30000);
+        return typeof data.text === "string" ? data.text.trim() || null : null;
+      }
       const res = await fetch("/api/transcribe", { method: "POST", body: form });
       if (!res.ok) throw new Error(`transcribe ${res.status}`);
       const data = (await res.json()) as { text?: string };
@@ -236,7 +276,7 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
     const mode = paperModeRef.current && !voiceOnRef.current ? "text" : "voice";
     voiceFailedRef.current = false;
     textQueueRef.current = [];
-    turnRef.current = { active: true, offset: 0, done: false, userCount: -1 };
+    turnRef.current = { active: true, offset: 0, done: false, userCount: grade === 11 ? messages.length + 1 : -1 };
     setPhase("thinking");
     setSubtitle("");
     void sendMessage(
@@ -336,8 +376,9 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
       if (!spoke) { relisten(); return; }
       setPhase("thinking");
       fillerDoneRef.current = playFiller();
+      const generation = generationRef.current;
       const text = await transcribe(new Blob(chunks, { type: recorder.mimeType || "audio/webm" }));
-      if (!activeRef.current) return;
+      if (!activeRef.current || (grade === 11 && generation !== generationRef.current)) return;
       if (!text) { relisten(); return; }
       setStudentLine(text);
       sendTurn(text);
@@ -370,7 +411,7 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
         voicedMs += 100;
         if (!spoke && voicedMs >= 250) { spoke = true; setHeardSpeech(true); }
       }
-      if ((spoke && now - lastVoice > SILENCE_MS) || now - startedAt > 45000 || (!spoke && now - startedAt > 20000)) {
+      if ((spoke && now - lastVoice > (grade === 11 ? 3000 : SILENCE_MS)) || now - startedAt > 45000 || (!spoke && now - startedAt > 20000)) {
         if (recorder.state === "recording") recorder.stop();
       }
     }, 100);
@@ -383,6 +424,7 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
   /* ------------------------------ call ------------------------------- */
   const endCall = () => {
     activeRef.current = false;
+    if (grade === 11) { generationRef.current++; speakingRef.current = false; void stopChat(); }
     mutedRef.current = false;
     turnRef.current.active = false;
     releaseMic();
@@ -394,10 +436,15 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
     setSubtitle("");
     setStudentLine("");
   };
+  failCallRef.current = (message) => {
+    endCall();
+    setCallError(message);
+  };
   const endCallRef = useRef(endCall);
   endCallRef.current = endCall;
 
   const startCall = () => {
+    setCallError("");
     if (typeof navigator === "undefined" || !navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === "undefined") {
       toast.error("ဒီ browser က အသံဖြင့် စကားပြောခြင်းကို မထောက်ပံ့ပါ");
       return false;
@@ -461,6 +508,10 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
   };
 
   const tapOwl = () => {
+    if (grade === 11 && !activeRef.current) {
+      if (startCall()) void listenOnce();
+      return;
+    }
     if (phase === "speaking") {
       // Interrupt Sayar Owl and let the student speak.
       textQueueRef.current = [];
@@ -521,16 +572,36 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
       if (last?.role === "user") t.userCount = messages.length;
       return;
     }
-    if (status === "error") { t.done = true; maybeFinishTurn(); return; }
+    if (status === "error") {
+      if (grade === 11) { failCallRef.current("AI ချိတ်ဆက်မရပါ။ ပြန်စရန် ဆရာဇီးကွက်ကို နှိပ်ပါ။"); return; }
+      t.done = true; maybeFinishTurn(); return;
+    }
+    if (grade === 11 && status === "ready" && (!last || last.role !== "assistant")) {
+      failCallRef.current("AI အဖြေ မရရှိပါ။ ပြန်စရန် ဆရာဇီးကွက်ကို နှိပ်ပါ။");
+      return;
+    }
     if (!last || last.role !== "assistant" || messages.length <= t.userCount) return;
     const body = last.parts.map((p) => (p.type === "text" ? p.text : "")).join("").split("@@")[0];
     const final = status === "ready";
+    if (grade === 11 && final && !body.trim()) {
+      failCallRef.current("AI အဖြေ မရရှိပါ။ ပြန်စရန် ဆရာဇီးကွက်ကို နှိပ်ပါ။");
+      return;
+    }
     const { chunks, next } = takeSpeakableChunks(body, t.offset, final, t.offset === 0 ? FIRST_CHUNK : NEXT_CHUNK);
     t.offset = next;
     if (!paperModeRef.current || voiceOnRef.current) chunks.forEach(enqueueSpeech);
     if (final) { t.done = true; maybeFinishTurn(); }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [messages, status]);
+
+  // A stalled upload, stream or voice response must never leave Grade 11 thinking forever.
+  useEffect(() => {
+    if (grade !== 11 || (phase !== "thinking" && phase !== "speaking")) return;
+    const timer = window.setTimeout(() => {
+      failCallRef.current("စောင့်ချိန်ကြာသွားပါပြီ။ Internet စစ်ပြီး ပြန်စရန် ဆရာဇီးကွက်ကို နှိပ်ပါ။");
+    }, 90000);
+    return () => window.clearTimeout(timer);
+  }, [grade, phase]);
 
   useEffect(() => () => endCallRef.current(), []);
 
@@ -693,9 +764,10 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: Saya
   return (
     <div ref={drag.ref} className="fixed bottom-20 right-4 z-50 flex max-w-[calc(100vw-2rem)] flex-col items-end gap-2 md:bottom-4" style={{ paddingBottom: "env(safe-area-inset-bottom)", ...drag.style }}>
       {open && <TutorQuotaBar lowOnly />}
+      {open && callError && <p role="alert" className="max-w-[260px] rounded-2xl bg-card px-3 py-2 text-sm text-destructive shadow-md">{callError}</p>}
       {open && (subtitle || phase !== "idle") && (
         <p className="line-clamp-2 max-w-[260px] rounded-2xl bg-card/95 px-3 py-1.5 text-xs leading-relaxed text-foreground shadow-md">
-          {phase === "speaking" && subtitle
+          {(phase === "speaking" || (grade === 11 && phase === "listening")) && subtitle
             ? subtitle
             : phase === "thinking" && studentLine
               ? `ကြားလိုက်ရတာ: “${studentLine}”`
