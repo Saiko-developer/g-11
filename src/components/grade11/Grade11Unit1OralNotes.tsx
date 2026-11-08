@@ -83,6 +83,7 @@ const plans = {
 } as const;
 
 function Highlight({ text, words }: { text: string; words: readonly string[] }) {
+  if (!words.length) return <>{text}</>;
   // Authored fragments are matched literally; textbook wording remains intact.
   const pattern = new RegExp(
     `(${words.map((word) => word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})`,
@@ -104,7 +105,7 @@ function Highlight({ text, words }: { text: string; words: readonly string[] }) 
 }
 
 /** Static reading notes for the existing narration; no extra playback or AI requests. */
-export function Grade11Unit1OralNotes({ section }: { section: GrammarSection }) {
+function FullUnit1OralNotes({ section }: { section: GrammarSection }) {
   const id = section.id.replace("grade11-unit1-", "") as keyof typeof plans;
   const plan = plans[id];
   if (!plan) return null;
@@ -195,6 +196,59 @@ export function Grade11Unit1OralNotes({ section }: { section: GrammarSection }) 
             </li>
           ))}
         </ul>
+      </details>
+    </div>
+  );
+}
+
+/** Follow the actual audio segment, retaining its note through pauses and buffering. */
+export function Grade11Unit1OralNotes({
+  section,
+  activeSegment,
+}: {
+  section: GrammarSection;
+  activeSegment?: number | null;
+}) {
+  const segments = section.oral.segments;
+  if (!segments?.length) return <FullUnit1OralNotes section={section} />;
+  const index = Math.max(0, Math.min(activeSegment ?? 0, segments.length - 1));
+  const current = segments[index];
+  return (
+    <div className="mt-3 space-y-3">
+      <section
+        aria-label="Current oral explanation note"
+        aria-live="polite"
+        aria-atomic="true"
+        className="sticky top-4 z-10 space-y-3 rounded-xl border border-primary/30 bg-card p-4 shadow-sm"
+      >
+        <div className="flex items-center justify-between gap-2 text-xs text-muted-foreground">
+          <span>လက်ရှိရှင်းပြနေသည့်အပိုင်း</span>
+          <span>
+            {index + 1} / {segments.length}
+          </span>
+        </div>
+        <h4 className="font-semibold text-primary">{current.titleMy}</h4>
+        {current.sentenceEn && (
+          <div className="space-y-2 rounded-lg bg-muted/40 p-3">
+            <p lang="en" className="text-base leading-relaxed">
+              <Highlight text={current.sentenceEn} words={current.focus ?? []} />
+            </p>
+            {current.sentenceMy && (
+              <p lang="my" className="text-sm leading-relaxed text-muted-foreground">
+                {current.sentenceMy}
+              </p>
+            )}
+          </div>
+        )}
+        <p lang="my" className="text-sm leading-relaxed">
+          💡 {current.noteMy}
+        </p>
+      </section>
+      <details className="rounded-xl border border-border bg-background p-3">
+        <summary className="cursor-pointer text-sm font-medium">
+          မှတ်စုအပြည့်ကို ဖွင့်ကြည့်မယ်
+        </summary>
+        <FullUnit1OralNotes section={section} />
       </details>
     </div>
   );

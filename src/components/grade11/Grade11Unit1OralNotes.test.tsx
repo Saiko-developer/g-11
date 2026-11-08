@@ -20,6 +20,7 @@ it.each([0, 1, 2])(
     render(<GrammarScriptView grammar={UNIT1_GRAMMAR} OralNotes={Grade11Unit1OralNotes} />);
     fireEvent.click(screen.getAllByRole("button", { name: "Oral Explanation" })[index]);
     expect(screen.getByText("📝 အသံနဲ့အတူ လိုက်ကြည့်ရန်")).toBeInTheDocument();
+    fireEvent.click(screen.getByText("မှတ်စုအပြည့်ကို ဖွင့်ကြည့်မယ်"));
     expect(screen.getByRole("region", { name: "Textbook example" })).toBeInTheDocument();
     expect(screen.getByText(UNIT1_GRAMMAR.sections[index].quiz.answerEn)).toBeInTheDocument();
     expect(Boolean(screen.queryByLabelText("Event order"))).toBe(index !== 0);

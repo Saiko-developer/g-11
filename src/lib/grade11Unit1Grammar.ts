@@ -1,4 +1,5 @@
 import type { GrammarSection, UnitGrammar } from "@/data/grammar/types";
+import { unit1OralTimeline } from "./grade11Unit1OralTimeline";
 import { UNIT1_ORAL_SCRIPTS } from "./grade11Unit1Oral";
 import { UNIT1_KEYS, UNIT1_SECTIONS } from "./grade11Unit1";
 
@@ -49,6 +50,7 @@ function section(
     },
     oral: {
       scriptMy: UNIT1_ORAL_SCRIPTS[id],
+      segments: unit1OralTimeline(id),
       note: {
         ideaMy: block(rules[0]).my,
         formula,

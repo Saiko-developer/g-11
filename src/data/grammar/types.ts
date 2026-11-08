@@ -69,7 +69,18 @@ export type GrammarTextMode = {
   formulas: GrammarFormula[];
 };
 
+export type GrammarOralSegment = {
+  scriptMy: string;
+  titleMy: string;
+  sentenceEn?: string;
+  sentenceMy?: string;
+  noteMy: string;
+  focus?: string[];
+};
+
 export type GrammarOralMode = {
+  /** Optional authored cue boundaries; notes change when their audio actually starts. */
+  segments?: GrammarOralSegment[];
   /** Conversational spoken Burmese script — read aloud by the tutor voice. */
   scriptMy: string;
   /** On-screen cheat sheet shown while the script is playing. */

@@ -20,7 +20,7 @@ type Mode = "text" | "oral";
 
 
 
-type OralNotesView = ComponentType<{ section: GrammarSection }>;
+type OralNotesView = ComponentType<{ section: GrammarSection; activeSegment?: number | null }>;
 
 export function GrammarScriptView({ grammar, OralNotes }: {
   grammar: UnitGrammar;
@@ -89,6 +89,8 @@ function GrammarSectionCard({ unit, section, OralNotes }: {
           )}
           {mode === "oral" && busy
             ? "Loading audio…"
+            : mode === "oral" && OralNotes && speech.status === "paused"
+              ? "Oral Explanation • Paused"
             : mode === "oral" && active
               ? "Oral Explanation • Playing"
               : "Oral Explanation"}
@@ -277,14 +279,14 @@ function OralMode({
   // `scriptMy` is authored as concatenated string literals — joining happens at
   // build time, so this is already one clean Unicode string. Only strip markup.
   const spoken = sanitizeForSpeech(String(o.scriptMy));
-  const { status, error, toggle } = speech;
+  const { status, error, toggle, activeSegment } = speech;
   const startedRef = useRef(false);
 
   // Auto-read as soon as the Oral Explanation view opens.
   useEffect(() => {
     if (startedRef.current) return;
     startedRef.current = true;
-    void toggle(spoken);
+    void toggle(spoken, o.segments?.map((segment) => segment.scriptMy));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -307,7 +309,7 @@ function OralMode({
             variant="outline"
             className="h-8 w-8 shrink-0 rounded-full"
             disabled={loading}
-            onClick={() => void toggle(spoken)}
+            onClick={() => void toggle(spoken, o.segments?.map((segment) => segment.scriptMy))}
             aria-label={playing ? "Pause explanation" : "Play explanation"}
             aria-busy={loading}
             title={
@@ -325,7 +327,7 @@ function OralMode({
         </div>
 
         {OralNotes ? (
-          <OralNotes section={section} />
+          <OralNotes section={section} activeSegment={activeSegment} />
         ) : (
           <>
             <ul className="mt-2 space-y-1.5 text-sm leading-relaxed">
@@ -399,7 +401,8 @@ type SpeechStatus = "idle" | "loading" | "playing" | "paused" | "error";
 type CloudSpeech = {
   status: SpeechStatus;
   error: string | null;
-  toggle: (text: string) => Promise<void>;
+  activeSegment: number | null;
+  toggle: (text: string, segments?: string[]) => Promise<void>;
   stop: () => void;
 };
 
@@ -414,6 +417,7 @@ type CloudSpeech = {
 function useCloudSpeech(): CloudSpeech {
   const [status, setStatus] = useState<SpeechStatus>("idle");
   const [error, setError] = useState<string | null>(null);
+  const [activeSegment, setActiveSegment] = useState<number | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const urlsRef = useRef<string[]>([]);
   const runIdRef = useRef(0);
@@ -459,7 +463,7 @@ function useCloudSpeech(): CloudSpeech {
     return res.blob();
   }, []);
 
-  const playBlob = useCallback((blob: Blob, myId: number) => {
+  const playBlob = useCallback((blob: Blob, myId: number, segment?: number) => {
     return new Promise<void>((resolve, reject) => {
       const url = URL.createObjectURL(blob);
       urlsRef.current.push(url);
@@ -469,7 +473,10 @@ function useCloudSpeech(): CloudSpeech {
       audio.onerror = () => reject(new Error("audio playback failed"));
       audio.play().then(
         () => {
-          if (myId === runIdRef.current) setStatus("playing");
+          if (myId === runIdRef.current) {
+            setStatus("playing");
+            if (segment !== undefined) setActiveSegment(segment);
+          }
         },
         (err) => reject(err instanceof Error ? err : new Error("autoplay blocked")),
       );
@@ -477,7 +484,7 @@ function useCloudSpeech(): CloudSpeech {
   }, []);
 
   const toggle = useCallback(
-    async (text: string) => {
+    async (text: string, segments?: string[]) => {
       if (typeof window === "undefined") return;
       const audio = audioRef.current;
 
@@ -506,14 +513,19 @@ function useCloudSpeech(): CloudSpeech {
       setStatus("loading");
 
       try {
-        const chunks = chunkScript(clean);
+        const chunks = segments?.length
+          ? segments.flatMap((segment, index) => chunkScript(sanitizeForSpeech(segment)).map((text) => ({ text, segment: index })))
+          : chunkScript(clean).map((text) => ({ text, segment: undefined }));
         // Fetch the first chunk, then prefetch the next while the current plays.
-        let pending: Promise<Blob> | null = fetchChunk(chunks[0]);
+        let pending: Promise<Blob> | null = fetchChunk(chunks[0].text);
         for (let i = 0; i < chunks.length; i++) {
+          if (segments?.length) setStatus("loading");
           const blob = await pending!;
           if (myId !== runIdRef.current) return;
-          pending = i + 1 < chunks.length ? fetchChunk(chunks[i + 1]) : null;
-          await playBlob(blob, myId);
+          pending = i + 1 < chunks.length ? fetchChunk(chunks[i + 1].text) : null;
+          // Observe a prefetch rejection immediately; the normal await below still reports it.
+          if (segments?.length) void pending?.catch(() => {});
+          await playBlob(blob, myId, chunks[i].segment);
           if (myId !== runIdRef.current) return;
         }
         if (myId !== runIdRef.current) return;
@@ -530,7 +542,7 @@ function useCloudSpeech(): CloudSpeech {
     [cleanup, fetchChunk, playBlob, status],
   );
 
-  return { status, error, toggle, stop };
+  return { status, error, activeSegment, toggle, stop };
 }
 
 
