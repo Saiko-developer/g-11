@@ -1,4 +1,5 @@
 import type { GrammarSection, UnitGrammar } from "@/data/grammar/types";
+import { UNIT1_ORAL_SCRIPTS } from "./grade11Unit1Oral";
 import { UNIT1_KEYS, UNIT1_SECTIONS } from "./grade11Unit1";
 
 const blocks = UNIT1_SECTIONS.find((s) => s.code === "1C")!.blocks;
@@ -6,7 +7,7 @@ const block = (n: number) => blocks.find((b) => b.id === `1C-${n}`)!;
 
 /** Adapt only the PDF's rules/examples to the existing Grade 10 explanation UI. */
 function section(
-  id: string,
+  id: keyof typeof UNIT1_ORAL_SCRIPTS,
   titleEn: string,
   titleMy: string,
   rules: number[],
@@ -47,7 +48,7 @@ function section(
           : [],
     },
     oral: {
-      scriptMy: [...rules, ...examples].map((n) => block(n).my).join("\n\n"),
+      scriptMy: UNIT1_ORAL_SCRIPTS[id],
       note: {
         ideaMy: block(rules[0]).my,
         formula,
