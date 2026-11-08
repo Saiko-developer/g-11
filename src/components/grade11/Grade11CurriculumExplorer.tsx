@@ -6,7 +6,7 @@ import {
   ArrowLeft, BookOpen, ChevronDown, Headphones, ListChecks, MessageSquare, PenLine, SpellCheck, Sparkles, Type,
 } from "lucide-react";
 import { Grade11TextLesson, hasGrade11Text } from "@/components/grade11/Grade11TextLesson";
-import { SayaOwlHome } from "@/components/SayaOwlHome";
+import { Grade11PopupTutor } from "./Grade11PopupTutor";
 import { G11_SYLLABUS, pageUrl, type G11SkillKind } from "@/data/grade11/syllabus";
 
 const SKILL_ICONS: Record<G11SkillKind, typeof BookOpen> = {
@@ -68,8 +68,8 @@ export function Grade11CurriculumExplorer() {
         <Link to="/tutor" className="mt-5 inline-flex rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">
           🦉 ဆရာဇီးကွက်ကို မေးမည်
         </Link>
-        <SayaOwlHome lessonContext={`Grade 11 English · ${view.eyebrow} · ${view.title}`} />
-        {/* SayaOwlHome reads the visible lesson text from [data-saya-home-section]. */}
+        {view.unit && view.kind ? <Grade11PopupTutor key={`${view.unit}:${view.kind}`} unit={view.unit} kind={view.kind} /> : <Grade11PopupTutor key={`${view.eyebrow}:${view.title}`} lessonContext={`Grade 11 English · ${view.eyebrow} · ${view.title}`} />}
+        {/* The shared popup receives Grade 11 context and visible section text. */}
       </div>
     );
   }

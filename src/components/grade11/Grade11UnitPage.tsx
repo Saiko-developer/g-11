@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
-import { Grade11AITutor } from "./Grade11AITutor";
+import { Grade11PopupTutor } from "./Grade11PopupTutor";
 import { Grade11TextLesson } from "./Grade11TextLesson";
 import { GRADE11_SKILLS } from "@/lib/grade11Navigation";
 import type { G11SkillKind } from "@/data/grade11/syllabus";
@@ -43,7 +43,7 @@ export function Grade11UnitPage({
         <div data-saya-home-section>
           <Grade11TextLesson key={`${unitNumber}:${skill}`} unit={unitNumber} kind={skill} />
         </div>
-        <Grade11AITutor key={`ai:${unitNumber}:${skill}`} unit={unitNumber} kind={skill} />
+        <Grade11PopupTutor key={`ai:${unitNumber}:${skill}`} unit={unitNumber} kind={skill} />
       </main>
     </div>
   );

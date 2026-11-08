@@ -1,5 +1,7 @@
 # Unit 5 refinement and Grade 11 AI access
 
+The inline tutor described below was subsequently replaced at the user’s request by the shared Grade 10 section popup. See [the current popup implementation](grade11-popup-assistant.md). The Unit 5 exercises and authentication fixes below remain in place.
+
 Unit 5 now has a zoomable original ASEAN map, direct exercise translations, grouped reading/vocabulary checks, a noun-pair table, Grade 10-style text/oral grammar explanation panels and the existing per-question grammar controls. Eleven listening responses are bound to the supplied MP3 hash and evidence cue IDs. Speaking C has a six-point bilingual trip planner; C and D open task-specific conversations through the existing caller-owned speaking sessions. Switching tasks unmounts the previous conversation. Writing preserves the original five travelogue paragraphs, orders them with five selects, checks the sequence together, reviews the student's own title/essay, counts words and retains existing draft keys.
 
 ## Shared AI workflow

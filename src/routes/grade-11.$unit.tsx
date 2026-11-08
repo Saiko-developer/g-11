@@ -7,7 +7,7 @@ import { useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { G11QuizBlock } from "@/components/grade11/G11Quiz";
 import { getG11Unit } from "@/data/grade11/part1";
-import { SayaOwlHome } from "@/components/SayaOwlHome";
+import { Grade11PopupTutor } from "@/components/grade11/Grade11PopupTutor";
 
 export const Route = createFileRoute("/grade-11/$unit")({
   loader: ({ params }) => {
@@ -98,5 +98,5 @@ function UnitPage() {
 
 function SourceExtraPage({ poem }: { poem: boolean }) {
   const title = poem ? "Poem 1 — Bridges" : "Review 1";
-  return <div className="min-h-screen bg-background text-foreground"><SiteHeader /><main className="mx-auto max-w-6xl px-4 py-6"><Link to="/grade-11" className="text-sm text-primary">← Grade 11 Units</Link><h1 className="mt-4 text-3xl font-bold">{title}</h1><div className="mt-5" data-saya-home-section>{poem ? <Grade11Poem1View /> : <Grade11Review1View />}</div><SayaOwlHome lessonContext={`Grade 11 English · ${title}`} /></main></div>;
+  return <div className="min-h-screen bg-background text-foreground"><SiteHeader /><main className="mx-auto max-w-6xl px-4 py-6"><Link to="/grade-11" className="text-sm text-primary">← Grade 11 Units</Link><h1 className="mt-4 text-3xl font-bold">{title}</h1><div className="mt-5" data-saya-home-section>{poem ? <Grade11Poem1View /> : <Grade11Review1View />}</div><Grade11PopupTutor key={title} lessonContext={`Grade 11 English · ${title}`} /></main></div>;
 }

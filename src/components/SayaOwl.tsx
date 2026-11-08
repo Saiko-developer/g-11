@@ -27,9 +27,11 @@ type SayaOwlProps = {
   lessonContext: string;
   /** The exact question the student is working on right now, if any. */
   currentQuestion?: string | null;
+  grade?: 10 | 11;
+  contextLabel?: string;
 };
 
-function SayaOwlInner({ lessonContext, currentQuestion }: SayaOwlProps) {
+function SayaOwlInner({ lessonContext, currentQuestion, grade = 10, contextLabel }: SayaOwlProps) {
   const drag = useDraggable("sayaowl-pos");
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
@@ -64,7 +66,7 @@ function SayaOwlInner({ lessonContext, currentQuestion }: SayaOwlProps) {
     setInput("");
     void sendMessage(
       { text: value },
-      { body: { mode: "text", lessonContext, currentQuestion: currentQuestion ?? null } },
+      { body: { mode: "text", lessonContext, currentQuestion: currentQuestion ?? null, ...(grade === 11 ? { grade: 11, sectionContent: document.querySelector("[data-saya-home-section]")?.textContent?.slice(0, 16000) } : {}) } },
     );
   };
 
@@ -98,7 +100,7 @@ function SayaOwlInner({ lessonContext, currentQuestion }: SayaOwlProps) {
             <img src={tutorLogo} alt="" className="h-8 w-8 rounded-full object-cover" />
             <div className="min-w-0 flex-1">
               <p className="truncate text-sm font-semibold">Saya Owl</p>
-              <p className="truncate text-[11px] text-muted-foreground">{lessonContext}</p>
+              <p className="truncate text-[11px] text-muted-foreground">{contextLabel ?? lessonContext}</p>
             </div>
             <Button variant="ghost" size="icon" onClick={() => setOpen(false)} aria-label="Close">
               <X className="h-4 w-4" />

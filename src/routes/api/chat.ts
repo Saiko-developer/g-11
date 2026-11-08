@@ -79,6 +79,8 @@ type ChatRequestBody = {
   lessonContext?: string;
   currentQuestion?: string | null;
   mode?: "voice" | "text";
+  grade?: 10 | 11;
+  sectionContent?: string;
 };
 
 export const Route = createFileRoute("/api/chat")({
@@ -99,11 +101,16 @@ export const Route = createFileRoute("/api/chat")({
         const model = getLovableChatModel();
 
         let system = mode === "voice" ? VOICE_PROMPT : mode === "text" ? TEXT_PROMPT : BASE_PROMPT;
+        const grade11 = body.grade === 11;
+        if (grade11) system = system.replaceAll("Grade 10", "Grade 11");
         if (lessonContext) {
-          system += `\n\n--- ယခု ကျောင်းသား ဖတ်နေသော သင်ခန်းစာ ---\n${untrusted("lesson", lessonContext)}`;
+          system += `\n\n--- ယခု ကျောင်းသား ဖတ်နေသော သင်ခန်းစာ ---\n${untrusted("lesson", lessonContext, grade11 ? 40000 : 8000)}`;
         }
         if (currentQuestion) {
           system += `\n\n--- ကျောင်းသား လက်ရှိ ဖြေနေသော မေးခွန်း ---\n${untrusted("current_question", currentQuestion, 3000)}\n(သူဖြေနိုင်အောင် အကြံပြုပါ — အဖြေ တိုက်ရိုက် မပြောပါနှင့်၊ သူ မေးမှသာ ပြောပါ။)`;
+        }
+        if (grade11 && typeof body.sectionContent === "string") {
+          system += `\n\nVisible Grade 11 section:\n${untrusted("screen_section", body.sectionContent, 16000)}`;
         }
 
         const result = streamText({
