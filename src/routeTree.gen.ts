@@ -23,6 +23,7 @@ import { Route as ApiChatHomeRouteImport } from './routes/api/chat-home'
 import { Route as ApiExamRouteImport } from './routes/api/exam'
 import { Route as ApiExercisesRouteImport } from './routes/api/exercises'
 import { Route as ApiG11CheckRouteImport } from './routes/api/g11-check'
+import { Route as ApiG11RoleplayRouteImport } from './routes/api/g11-roleplay'
 import { Route as ApiGradeExamRouteImport } from './routes/api/grade-exam'
 import { Route as ApiGrammarExercisesRouteImport } from './routes/api/grammar-exercises'
 import { Route as ApiGrammarQuestionsRouteImport } from './routes/api/grammar-questions'
@@ -111,6 +112,11 @@ const ApiExercisesRoute = ApiExercisesRouteImport.update({
 const ApiG11CheckRoute = ApiG11CheckRouteImport.update({
   id: '/api/g11-check',
   path: '/api/g11-check',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiG11RoleplayRoute = ApiG11RoleplayRouteImport.update({
+  id: '/api/g11-roleplay',
+  path: '/api/g11-roleplay',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiGradeExamRoute = ApiGradeExamRouteImport.update({
@@ -224,6 +230,7 @@ export interface FileRoutesByFullPath {
   '/api/exam': typeof ApiExamRoute
   '/api/exercises': typeof ApiExercisesRoute
   '/api/g11-check': typeof ApiG11CheckRoute
+  '/api/g11-roleplay': typeof ApiG11RoleplayRoute
   '/api/grade-exam': typeof ApiGradeExamRoute
   '/api/grammar-exercises': typeof ApiGrammarExercisesRoute
   '/api/grammar-questions': typeof ApiGrammarQuestionsRoute
@@ -259,6 +266,7 @@ export interface FileRoutesByTo {
   '/api/exam': typeof ApiExamRoute
   '/api/exercises': typeof ApiExercisesRoute
   '/api/g11-check': typeof ApiG11CheckRoute
+  '/api/g11-roleplay': typeof ApiG11RoleplayRoute
   '/api/grade-exam': typeof ApiGradeExamRoute
   '/api/grammar-exercises': typeof ApiGrammarExercisesRoute
   '/api/grammar-questions': typeof ApiGrammarQuestionsRoute
@@ -294,6 +302,7 @@ export interface FileRoutesById {
   '/api/exam': typeof ApiExamRoute
   '/api/exercises': typeof ApiExercisesRoute
   '/api/g11-check': typeof ApiG11CheckRoute
+  '/api/g11-roleplay': typeof ApiG11RoleplayRoute
   '/api/grade-exam': typeof ApiGradeExamRoute
   '/api/grammar-exercises': typeof ApiGrammarExercisesRoute
   '/api/grammar-questions': typeof ApiGrammarQuestionsRoute
@@ -331,6 +340,7 @@ export interface FileRouteTypes {
     | '/api/exam'
     | '/api/exercises'
     | '/api/g11-check'
+    | '/api/g11-roleplay'
     | '/api/grade-exam'
     | '/api/grammar-exercises'
     | '/api/grammar-questions'
@@ -366,6 +376,7 @@ export interface FileRouteTypes {
     | '/api/exam'
     | '/api/exercises'
     | '/api/g11-check'
+    | '/api/g11-roleplay'
     | '/api/grade-exam'
     | '/api/grammar-exercises'
     | '/api/grammar-questions'
@@ -400,6 +411,7 @@ export interface FileRouteTypes {
     | '/api/exam'
     | '/api/exercises'
     | '/api/g11-check'
+    | '/api/g11-roleplay'
     | '/api/grade-exam'
     | '/api/grammar-exercises'
     | '/api/grammar-questions'
@@ -436,6 +448,7 @@ export interface RootRouteChildren {
   ApiExamRoute: typeof ApiExamRoute
   ApiExercisesRoute: typeof ApiExercisesRoute
   ApiG11CheckRoute: typeof ApiG11CheckRoute
+  ApiG11RoleplayRoute: typeof ApiG11RoleplayRoute
   ApiGradeExamRoute: typeof ApiGradeExamRoute
   ApiGrammarExercisesRoute: typeof ApiGrammarExercisesRoute
   ApiGrammarQuestionsRoute: typeof ApiGrammarQuestionsRoute
@@ -553,6 +566,13 @@ declare module '@tanstack/react-router' {
       path: '/api/g11-check'
       fullPath: '/api/g11-check'
       preLoaderRoute: typeof ApiG11CheckRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/g11-roleplay': {
+      id: '/api/g11-roleplay'
+      path: '/api/g11-roleplay'
+      fullPath: '/api/g11-roleplay'
+      preLoaderRoute: typeof ApiG11RoleplayRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/grade-exam': {
@@ -720,6 +740,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApiExamRoute: ApiExamRoute,
   ApiExercisesRoute: ApiExercisesRoute,
   ApiG11CheckRoute: ApiG11CheckRoute,
+  ApiG11RoleplayRoute: ApiG11RoleplayRoute,
   ApiGradeExamRoute: ApiGradeExamRoute,
   ApiGrammarExercisesRoute: ApiGrammarExercisesRoute,
   ApiGrammarQuestionsRoute: ApiGrammarQuestionsRoute,

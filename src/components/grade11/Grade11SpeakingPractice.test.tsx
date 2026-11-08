@@ -41,9 +41,12 @@ afterEach(() => {
   vi.unstubAllGlobals();
   vi.restoreAllMocks();
 });
-const enterPractice = () => fireEvent.click(screen.getByRole("button", { name: "🎯 လိုက်ဆို" }));
+const enterPractice = () => {
+  fireEvent.click(screen.getByRole("button", { name: "🎯 လိုက်ဆို" }));
+  fireEvent.click(screen.getByRole("button", { name: "📖 စာအုပ်စကားရပ်" }));
+};
 
-describe("Grade 11 speaking UI without AI backend changes", () => {
+describe("Grade 11 speaking source practice", () => {
   it.each(Array.from({ length: 12 }, (_, i) => i + 1))(
     "offers source-based practice for Unit %i",
     (unit) => {
@@ -57,7 +60,7 @@ describe("Grade 11 speaking UI without AI backend changes", () => {
       expect(screen.getByRole("region", { name: "Grade 11 shadowing practice" })).toBeVisible();
       expect(screen.queryByText("Original lesson")).toBeNull();
       expect(screen.getByText(/မူရင်းအသံဖိုင် မဟုတ်ပါ/)).toBeVisible();
-      expect(screen.queryByRole("button", { name: /AI စကားပြော/ })).toBeNull();
+      expect(screen.getByRole("button", { name: /AI စကားပြော/ })).toBeVisible();
     },
   );
 

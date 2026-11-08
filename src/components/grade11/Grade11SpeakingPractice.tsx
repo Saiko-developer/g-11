@@ -1,3 +1,9 @@
+import { getGrade11Captions, GRADE11_TRANSCRIPTS } from "@/lib/grade11Captions";
+import tracks from "@/data/grade11/listeningAudio.json";
+import { useGrade11CaptionClock } from "./useGrade11CaptionClock";
+import { Grade11CaptionText } from "./Grade11CaptionText";
+import { RequireSignIn } from "@/components/RequireSignIn";
+import { Grade11RolePlay } from "./Grade11RolePlay";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -6,12 +12,26 @@ import { grade11SpeakingMatch } from "@/lib/grade11SpeakingScore";
 import { useSpeechRecognition } from "@/hooks/use-voice";
 
 type PracticeState = { drafts: Record<string, string>; completed: string[] };
-const EMPTY_LINES: Grade11SpeakingLine[] = [];
+type PracticeLine = Grade11SpeakingLine & { start?: number; end?: number };
+const EMPTY_LINES: PracticeLine[] = [];
+const RECORDING_LINES: Record<number, PracticeLine[]> = Object.fromEntries(
+  Object.entries(GRADE11_TRANSCRIPTS).map(([unit, transcript]) => [
+    unit,
+    transcript.cues.map((cue) => ({
+      id: cue.id,
+      en: cue.en,
+      my: cue.my ?? "",
+      page: 0,
+      start: cue.start,
+      end: cue.end,
+    })),
+  ]),
+);
 const emptyState = (): PracticeState => ({ drafts: {}, completed: [] });
 
-/** Grade 11 only. Existing lesson controls and all Grade 10/AI endpoints keep their behavior. */
+/** Grade 11 only. Existing lesson controls and Grade 10 endpoints keep their behavior. */
 export function Grade11SpeakingPractice({ unit, children }: { unit: number; children: ReactNode }) {
-  const [mode, setMode] = useState<"lesson" | "practice">("lesson");
+  const [mode, setMode] = useState<"lesson" | "practice" | "roleplay">("lesson");
   return (
     <div className="mt-5 space-y-5">
       <nav
@@ -34,15 +54,62 @@ export function Grade11SpeakingPractice({ unit, children }: { unit: number; chil
         >
           🎯 လိုက်ဆို
         </Button>
+        <Button
+          type="button"
+          variant={mode === "roleplay" ? "default" : "outline"}
+          aria-pressed={mode === "roleplay"}
+          onClick={() => setMode("roleplay")}
+        >
+          💬 AI စကားပြော
+        </Button>
       </nav>
       {mode === "lesson" && <div>{children}</div>}
-      {mode === "practice" && <PracticePanel key={unit} unit={unit} />}
+      {mode === "practice" && <ShadowingModes key={unit} unit={unit} />}
+      {mode === "roleplay" && (
+        <RequireSignIn>
+          <Grade11RolePlay key={unit} unit={unit} />
+        </RequireSignIn>
+      )}
     </div>
   );
 }
 
-function PracticePanel({ unit }: { unit: number }) {
-  const lines = GRADE11_SPEAKING_LINES[unit] ?? EMPTY_LINES;
+function ShadowingModes({ unit }: { unit: number }) {
+  const [source, setSource] = useState<"recording" | "textbook">("recording");
+  return (
+    <div className="space-y-3">
+      <nav aria-label="Shadowing source" className="flex flex-wrap gap-2">
+        <Button
+          type="button"
+          variant={source === "recording" ? "default" : "outline"}
+          aria-pressed={source === "recording"}
+          onClick={() => setSource("recording")}
+        >
+          🎧 မူရင်းအသံ
+        </Button>
+        <Button
+          type="button"
+          variant={source === "textbook" ? "default" : "outline"}
+          aria-pressed={source === "textbook"}
+          onClick={() => setSource("textbook")}
+        >
+          📖 စာအုပ်စကားရပ်
+        </Button>
+      </nav>
+      <PracticePanel key={`${unit}:${source}`} unit={unit} recorded={source === "recording"} />
+    </div>
+  );
+}
+
+function PracticePanel({ unit, recorded = false }: { unit: number; recorded?: boolean }) {
+  const lines: PracticeLine[] =
+    (recorded ? RECORDING_LINES[unit] : GRADE11_SPEAKING_LINES[unit]) ?? EMPTY_LINES;
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const stopAt = useRef<number | null>(null);
+  const [audioReady, setAudioReady] = useState(false);
+  const cues = getGrade11Captions(recorded ? unit : -1);
+  const active = useGrade11CaptionClock(audioRef, cues, stopAt);
+  const track = tracks.find((item) => item.unit === unit);
   const [index, setIndex] = useState(0);
   const line = lines[index];
   const [state, setState] = useState<PracticeState>(emptyState);
@@ -58,7 +125,9 @@ function PracticePanel({ unit }: { unit: number }) {
   const recordingId = useRef<string | null>(null);
   const buffer = useRef("");
   const interim = useRef("");
-  const storageKey = `grade11:speaking:${unit}:shadow:v1`;
+  const storageKey = recorded
+    ? `grade11:speaking:${unit}:recording:v1`
+    : `grade11:speaking:${unit}:shadow:v1`;
 
   const persist = (next: PracticeState) => {
     stateRef.current = next;
@@ -71,6 +140,11 @@ function PracticePanel({ unit }: { unit: number }) {
   };
   useEffect(() => {
     const playback = playId;
+    const audio = audioRef.current;
+    if (audio) {
+      if (!audio.getAttribute("src") && track) audio.src = track.src;
+      setAudioReady(audio.readyState >= 1);
+    }
     const restored = emptyState();
     try {
       const data: unknown = JSON.parse(sessionStorage.getItem(storageKey) ?? "{}");
@@ -106,8 +180,13 @@ function PracticePanel({ unit }: { unit: number }) {
       playback.current++;
       recordingId.current = null;
       window.speechSynthesis?.cancel();
+      if (audio) {
+        audio.pause();
+        audio.removeAttribute("src");
+        audio.load();
+      }
     };
-  }, [storageKey, lines]);
+  }, [storageKey, lines, track]);
 
   const finishRecording = () => {
     const id = recordingId.current;
@@ -156,15 +235,30 @@ function PracticePanel({ unit }: { unit: number }) {
   const stopModel = () => {
     playId.current++;
     window.speechSynthesis?.cancel();
+    stopAt.current = null;
+    audioRef.current?.pause();
     setPlaying(false);
   };
   const play = () => {
-    if (!line || !voiceAvailable) return;
+    if (!line || (!recorded && !voiceAvailable)) return;
     recognition.stop();
     finishRecording();
     stopModel();
     setMessage("");
     const id = ++playId.current;
+    if (recorded && audioRef.current && line.start !== undefined && line.end !== undefined) {
+      const audio = audioRef.current;
+      stopAt.current = line.end;
+      audio.currentTime = line.start;
+      audio.playbackRate = speed;
+      void audio.play().catch(() => {
+        if (id !== playId.current) return;
+        stopAt.current = null;
+        setPlaying(false);
+        setMessage("မူရင်းအသံဖိုင် ဖွင့်မရပါ။ ထပ်စမ်းနိုင်ပါသည်။");
+      });
+      return;
+    }
     const utterance = new SpeechSynthesisUtterance(line.en);
     utterance.lang = "en-US";
     utterance.rate = speed;
@@ -222,8 +316,9 @@ function PracticePanel({ unit }: { unit: number }) {
       <header className="space-y-2">
         <h2 className="font-semibold">Grade 11 · Unit {unit} · လိုက်ဆိုလေ့ကျင့်ခြင်း</h2>
         <p lang="my" className="text-sm text-muted-foreground">
-          မူရင်းစာအုပ်ပါ စကားရပ်နှင့် မေးခွန်းများကို လေ့ကျင့်ပါ။ နားထောင်ရန်အသံသည် browser ၏
-          စက်အသံဖြစ်ပြီး မူရင်းအသံဖိုင် မဟုတ်ပါ။
+          {recorded
+            ? "ပေးထားသော Listening MP3 မှ တစ်ကြောင်းချင်း နားထောင်ပြီး လိုက်ဆိုပါ။ စာတန်းနှင့် အချိန်ကိုက်မှုကို စက်ဖြင့် ထုတ်ထားသဖြင့် အမှားအယွင်း ရှိနိုင်ပါသည်။"
+            : "မူရင်းစာအုပ်ပါ စကားရပ်နှင့် မေးခွန်းများကို လေ့ကျင့်ပါ။ နားထောင်ရန်အသံသည် browser ၏ စက်အသံဖြစ်ပြီး မူရင်းအသံဖိုင် မဟုတ်ပါ။"}
         </p>
         <p lang="my" className="text-sm text-muted-foreground">
           ရာခိုင်နှုန်းသည် ကြားရသောစာသားနှင့် ကိုက်ညီမှုကိုသာ ဖော်ပြသည်။ အသံထွက်၊ လေယူလေသိမ်း
@@ -233,6 +328,22 @@ function PracticePanel({ unit }: { unit: number }) {
           လေ့ကျင့်ပြီး {state.completed.length} / {lines.length}
         </p>
       </header>
+      {recorded && track && (
+        <audio
+          ref={audioRef}
+          src={track.src}
+          preload="metadata"
+          aria-label={`Unit ${unit} original shadowing audio`}
+          onLoadedMetadata={() => setAudioReady(true)}
+          onPlay={() => setPlaying(true)}
+          onPause={() => setPlaying(false)}
+          onEnded={() => setPlaying(false)}
+          onError={() => {
+            setAudioReady(false);
+            setMessage("အသံဖိုင် ဖွင့်မရပါ။ အင်တာနက်ကို စစ်ပြီး ပြန်ဝင်ကြည့်ပါ။");
+          }}
+        />
+      )}
       <fieldset disabled={!loaded} className="min-w-0 space-y-4">
         <legend className="sr-only">လိုက်ဆိုရန်စာကြောင်းများ</legend>
         <div
@@ -260,20 +371,33 @@ function PracticePanel({ unit }: { unit: number }) {
           ))}
         </div>
         <div className="space-y-3 rounded-xl bg-muted/40 p-4">
-          <p lang="en" className="text-lg font-semibold leading-relaxed">
-            {line.en}
-          </p>
-          {showMy && (
+          {recorded && cues[index] ? (
+            <Grade11CaptionText
+              cue={cues[index]}
+              wordIndex={active.cueIndex === index ? active.wordIndex : -1}
+            />
+          ) : (
+            <p lang="en" className="text-lg font-semibold leading-relaxed">
+              {line.en}
+            </p>
+          )}
+          {showMy && line.my && (
             <p lang="my" className="text-sm leading-relaxed text-muted-foreground">
               {line.my}
             </p>
           )}
-          <p className="text-xs text-muted-foreground">Textbook page {line.page - 5}</p>
+          <p className="text-xs text-muted-foreground">
+            {recorded
+              ? `MP3 · ${line.start?.toFixed(1)}–${line.end?.toFixed(1)}s`
+              : `Textbook page ${line.page - 5}`}
+          </p>
         </div>
         <div className="flex flex-wrap gap-2">
-          <Button type="button" variant="outline" onClick={() => setShowMy((old) => !old)}>
-            {showMy ? "မြန်မာပြန် ဝှက်မယ်" : "မြန်မာပြန် ပြမယ်"}
-          </Button>
+          {line.my && (
+            <Button type="button" variant="outline" onClick={() => setShowMy((old) => !old)}>
+              {showMy ? "မြန်မာပြန် ဝှက်မယ်" : "မြန်မာပြန် ပြမယ်"}
+            </Button>
+          )}
           {[0.75, 1].map((rate) => (
             <Button
               key={rate}
@@ -286,11 +410,15 @@ function PracticePanel({ unit }: { unit: number }) {
               {rate}x
             </Button>
           ))}
-          <Button type="button" disabled={!voiceAvailable} onClick={playing ? stopModel : play}>
-            {playing ? "အသံရပ်မည်" : "စက်အသံ နားထောင်မည်"}
+          <Button
+            type="button"
+            disabled={recorded ? !audioReady : !voiceAvailable}
+            onClick={playing ? stopModel : play}
+          >
+            {playing ? "အသံရပ်မည်" : recorded ? "မူရင်းအသံ နားထောင်မည်" : "စက်အသံ နားထောင်မည်"}
           </Button>
         </div>
-        {!voiceAvailable && (
+        {!recorded && !voiceAvailable && (
           <p lang="my" className="text-sm text-muted-foreground">
             ဤ browser တွင် စက်အသံ မရနိုင်ပါ။ စာကြောင်းကို ဖတ်၍ လေ့ကျင့်နိုင်ပါသည်။
           </p>

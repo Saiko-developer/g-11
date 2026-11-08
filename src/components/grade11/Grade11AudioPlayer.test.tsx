@@ -1,5 +1,6 @@
+import { getGrade11Captions } from "@/lib/grade11Captions";
 import { StrictMode } from "react";
-import { cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { cleanup, fireEvent, render, screen, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { Grade11TextLesson } from "./Grade11TextLesson";
 import { Grade11AudioPlayer } from "./Grade11AudioPlayer";
@@ -23,6 +24,32 @@ describe("Grade 11 original audio", () => {
       expect(screen.queryByText(/အသံဖိုင် မရရှိသေးပါ/)).toBeNull();
     },
   );
+
+  it("updates word captions after seeking, clears silent gaps, toggles captions and stops a selected clip", async () => {
+    vi.spyOn(HTMLMediaElement.prototype, "play").mockResolvedValue();
+    render(<Grade11AudioPlayer unit={1} />);
+    const audio = player();
+    fireEvent.loadedMetadata(audio);
+    const cue = getGrade11Captions(1)[1];
+    const word = cue.words.find((item) => item.end > item.start)!;
+    audio.currentTime = (word.start + word.end) / 2;
+    fireEvent.seeked(audio);
+    const live = screen.getByRole("region", { name: "Live audio subtitles" });
+    expect(live.textContent?.trim()).toBe(cue.en);
+    expect(live.querySelector('[aria-current="true"]')?.textContent).toBe(word.word);
+    audio.currentTime = 115;
+    fireEvent.seeked(audio);
+    expect(within(live).queryByText(cue.en)).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "CC စာတန်း ပိတ်မည်" }));
+    expect(screen.queryByRole("region", { name: "Live audio subtitles" })).toBeNull();
+    fireEvent.click(screen.getByText("စာတန်းအပြည့် / တစ်ကြောင်းချင်း နားထောင်မည်"));
+    await fireEvent.click(screen.getByRole("button", { name: cue.en }));
+    expect(audio.currentTime).toBe(cue.start);
+    vi.mocked(audio.pause).mockClear();
+    audio.currentTime = cue.end + 0.01;
+    fireEvent.timeUpdate(audio);
+    expect(audio.pause).toHaveBeenCalledOnce();
+  });
 
   it("keeps a playable source after Strict Mode cleanup and releases playback when leaving", () => {
     const view = render(
@@ -89,6 +116,6 @@ describe("Grade 11 original audio", () => {
     expect(player()).toHaveAttribute("src", "/grade11/audio/unit4.mp3");
     expect(screen.getByLabelText("Audio playback speed")).toHaveValue("1");
     expect(screen.getByRole("button", { name: "+10s" })).toBeDisabled();
-    expect(screen.getByText(/Speaking စာကြောင်း/)).toBeVisible();
+    expect(screen.getByText(/စာအုပ်၏ Speaking စကားရပ်/)).toBeVisible();
   });
 });
