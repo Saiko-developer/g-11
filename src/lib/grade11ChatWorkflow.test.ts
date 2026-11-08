@@ -43,6 +43,25 @@ describe("shared tutor workflow keeps Grade 10 defaults and supports Grade 11", 
     expect(args.system).toContain(`(Grade ${grade})`);
     if (grade === 11) expect(args.system).not.toContain("Grade 10");
   });
+  it.each([undefined, 11])(
+    "grounds voice replies in the active section for grade %s",
+    async (grade) => {
+      await post({
+        request: request({
+          grade,
+          mode: "voice",
+          messages: [],
+          lessonContext: "Original textbook lesson",
+          sectionContent: "Current exercise question",
+        }),
+      });
+      const system = vi.mocked(streamText).mock.calls[0][0].system;
+      expect(system).toContain(grade === 11 ? "Grade 11" : "Grade 10");
+      expect(system).toContain('<untrusted label="screen_section">');
+      expect(system).toContain("Current exercise question");
+      expect(system).toContain("markdown");
+    },
+  );
   it("does not make a model call after the existing quota denies access", async () => {
     vi.mocked(consumeTutorQuota).mockResolvedValue(new Response(null, { status: 429 }));
     expect((await post({ request: request({ grade: 11, messages: [] }) })).status).toBe(429);

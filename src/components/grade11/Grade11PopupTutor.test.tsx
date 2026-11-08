@@ -5,8 +5,8 @@ import { Grade11UnitPage } from "./Grade11UnitPage";
 import { Grade11PopupTutor } from "./Grade11PopupTutor";
 import { useAuth } from "@/components/AuthGate";
 const mocks = vi.hoisted(() => ({ popup: vi.fn() }));
-vi.mock("@/components/SayaOwl", () => ({
-  SayaOwl: (props: unknown) => {
+vi.mock("@/components/SayaOwlHome", () => ({
+  SayaOwlHome: (props: unknown) => {
     mocks.popup(props);
     return <button>Open Saya Owl tutor</button>;
   },
@@ -28,7 +28,7 @@ beforeEach(() => {
   vi.mocked(useAuth).mockReturnValue({ session: { access_token: "test" }, ready: true } as never);
 });
 afterEach(cleanup);
-describe("Grade 11 uses the shared Grade 10 popup instead of the inline panel", () => {
+describe("Grade 11 uses the shared Grade 10 voice popup instead of the inline panel", () => {
   it.each(Array.from({ length: 12 }, (_, i) => i + 1))(
     "provides one correctly grounded popup in all Unit %i sections",
     (unit) => {
@@ -66,7 +66,6 @@ describe("Grade 11 uses the shared Grade 10 popup instead of the inline panel", 
     expect(mocks.popup).toHaveBeenCalledWith({
       grade: 11,
       lessonContext: "Grade 11 English · Review 1",
-      contextLabel: "Grade 11 English · Review 1",
     });
   });
   it("waits for session restoration without mounting the popup or requesting another login", () => {

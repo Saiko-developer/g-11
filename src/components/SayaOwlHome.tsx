@@ -25,7 +25,7 @@ function readActiveSectionText(): string | null {
   return text.length > 12000 ? `${text.slice(0, 12000)}…` : text;
 }
 
-type SayaOwlHomeProps = { lessonContext: string; paperOnly?: boolean };
+type SayaOwlHomeProps = { lessonContext: string; paperOnly?: boolean; grade?: 10 | 11 };
 type Attachment = { name: string; mediaType: string; url: string };
 type Phase = "idle" | "listening" | "thinking" | "speaking" | "muted";
 type NativeRec = {
@@ -67,7 +67,7 @@ async function fetchSpeech(text: string): Promise<{ text: string; url: string | 
   return { text, url: null };
 }
 
-function SayaOwlHomeInner({ lessonContext, paperOnly = false }: SayaOwlHomeProps) {
+function SayaOwlHomeInner({ lessonContext, paperOnly = false, grade = 10 }: SayaOwlHomeProps) {
   const drag = useDraggable("sayaowl-pos");
   // Exam-paper mode: the student asks first (text or voice); replies in Burmese, voice optional.
   const [paper, setPaper] = useState<Attachment | null>(null);
@@ -244,7 +244,7 @@ function SayaOwlHomeInner({ lessonContext, paperOnly = false }: SayaOwlHomeProps
         text,
         ...(file ? { files: [{ type: "file" as const, mediaType: file.mediaType, filename: file.name, url: file.url }] } : {}),
       },
-      { body: { mode, paperVoice: paperModeRef.current && voiceOnRef.current, lessonContext, sectionContent: readActiveSectionText(), hasUpload: Boolean(file) } },
+      { body: { ...(grade === 11 ? { grade: 11 } : {}), mode, paperVoice: paperModeRef.current && voiceOnRef.current, lessonContext, sectionContent: readActiveSectionText(), hasUpload: Boolean(file) } },
     );
   };
 

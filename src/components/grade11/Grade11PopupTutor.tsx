@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { SayaOwl } from "@/components/SayaOwl";
+import { SayaOwlHome } from "@/components/SayaOwlHome";
 import { grade11LessonContext } from "@/lib/grade11LessonContext";
 import type { G11SkillKind } from "@/data/grade11/syllabus";
 import { Grade11RequireSignIn } from "./Grade11RequireSignIn";
@@ -16,11 +16,7 @@ export function Grade11PopupTutor({ unit, kind, lessonContext }: Props) {
   );
   return (
     <Grade11RequireSignIn>
-      <SayaOwl
-        grade={11}
-        lessonContext={context}
-        contextLabel={unit && kind ? `Grade 11 English · Unit ${unit} · ${kind}` : lessonContext}
-      />
+      <SayaOwlHome grade={11} lessonContext={context} />
     </Grade11RequireSignIn>
   );
 }
