@@ -1,10 +1,10 @@
-import { Grade11SourceLesson } from "@/components/grade11/Grade11Unit1Lesson";
+import { Grade11SourceWorkspace } from "@/components/grade11/Grade11SourceWorkspace";
 import { TRAVEL_LESSONS, travelScanUrl } from "@/lib/grade11Travel";
 import type { G11SkillKind } from "@/data/grade11/syllabus";
 function TravelLesson({ unit, kind }: { unit: 5 | 6; kind: G11SkillKind }) {
   const data = TRAVEL_LESSONS[unit];
   return (
-    <Grade11SourceLesson
+    <Grade11SourceWorkspace
       unitNumber={unit}
       kind={kind}
       sections={data.sections}
