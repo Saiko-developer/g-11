@@ -19,6 +19,7 @@ import {
   type UpperUnitNumber,
 } from "@/lib/grade11Upper";
 import type { G11SkillKind } from "@/data/grade11/syllabus";
+import { Grade11GrammarExplanation } from "./Grade11GrammarExplanation";
 import { Grade11GrammarVideos } from "./Grade11GrammarVideos";
 import { Grade11SourceStructure } from "./Grade11SourceStructure";
 
@@ -71,7 +72,12 @@ function UpperWorkspace({ unit, kind }: { unit: UpperUnitNumber; kind: G11SkillK
           className="mt-2 h-2"
         />
       </div>
-      {kind === "grammar" && <Grade11GrammarVideos unit={unit} />}
+      {kind === "grammar" && (
+        <>
+          <Grade11GrammarVideos unit={unit} />
+          <Grade11GrammarExplanation unit={unit} />
+        </>
+      )}
       <div className="grid min-w-0 items-start gap-5 lg:grid-cols-2">
         <aside
           aria-label="Original textbook"

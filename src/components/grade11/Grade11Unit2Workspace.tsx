@@ -5,7 +5,7 @@ import listeningKeys from "@/data/grade11/listeningExerciseKeys.json";
 import { useEffect, useState } from "react";
 import { Languages } from "lucide-react";
 import { ToggleReveal } from "@/components/lesson/ExerciseKit";
-import { GrammarScriptView } from "@/components/lesson/GrammarScriptView";
+import { Grade11GrammarExplanation } from "./Grade11GrammarExplanation";
 import { Grade11GrammarVideos } from "./Grade11GrammarVideos";
 import { Grade11Pronunciation } from "./Grade11Pronunciation";
 import { Grade11Unit1Answer } from "./Grade11Unit1Answer";
@@ -14,7 +14,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 import { UNIT2_KEYS, UNIT2_SECTIONS, unit2ScanUrl } from "@/lib/grade11Unit2";
-import { UNIT2_GRAMMAR } from "@/lib/grade11Unit2Grammar";
 import { splitUnit1, type Unit1Block } from "@/lib/grade11Unit1";
 import type { G11SkillKind } from "@/data/grade11/syllabus";
 
@@ -97,7 +96,7 @@ export function Grade11Unit2Workspace({ kind }: { kind: G11SkillKind }) {
       <div className={kind === "reading" ? "grid items-start gap-5 lg:grid-cols-2" : "space-y-5"}>
         {kind === "grammar" ? (
           <div className="space-y-5">
-            <GrammarScriptView grammar={UNIT2_GRAMMAR} />
+            <Grade11GrammarExplanation unit={2} />
             <Grade11GrammarVideos unit={2} />
           </div>
         ) : kind === "reading" || kind === "writing" ? (

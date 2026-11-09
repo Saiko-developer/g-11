@@ -2,8 +2,7 @@ import { Grade11ExerciseCard, Grade11LessonTips } from "./Grade11ExerciseCard";
 import { Grade11GrammarExercise } from "./Grade11GrammarExercise";
 import { Grade11MemoryTable } from "./Grade11MemoryTable";
 import { Grade11AIReview } from "./Grade11AIReview";
-import { GrammarScriptView } from "@/components/lesson/GrammarScriptView";
-import { UNIT3_GRAMMAR, UNIT4_GRAMMAR, UNIT5_GRAMMAR } from "@/lib/grade11GrammarLessons";
+import { Grade11GrammarExplanation } from "./Grade11GrammarExplanation";
 import listeningKeys from "@/data/grade11/listeningExerciseKeys.json";
 import { Grade11SourceStructure } from "./Grade11SourceStructure";
 import { Grade11GrammarVideos } from "./Grade11GrammarVideos";
@@ -137,12 +136,8 @@ export function Grade11SourceWorkspace({
             : "space-y-5"
         }
       >
-        {kind === "grammar" && (unitNumber === 3 || unitNumber === 4 || unitNumber === 5) ? (
-          <GrammarScriptView
-            grammar={
-              unitNumber === 3 ? UNIT3_GRAMMAR : unitNumber === 4 ? UNIT4_GRAMMAR : UNIT5_GRAMMAR
-            }
-          />
+        {kind === "grammar" ? (
+          <Grade11GrammarExplanation unit={unitNumber} />
         ) : unitNumber === 3 && kind === "speaking" && lesson.some((b) => b.id === "3D-11") ? (
           <Grade11ExerciseCard
             exercise={{
