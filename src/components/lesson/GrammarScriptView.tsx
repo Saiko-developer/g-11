@@ -12,6 +12,7 @@ import { BookOpen, Loader2, Mic, Pause, Play, Volume2 } from "lucide-react";
 
 import { OwlBadge } from "@/components/lesson/ExerciseKit";
 import { Button } from "@/components/ui/button";
+import { chunkScript } from "@/lib/grammarSpeechChunks";
 import { sanitizeForSpeech } from "@/lib/sanitizeSpeech";
 import type { GrammarSection, UnitGrammar } from "@/data/grammar/types";
 
@@ -41,7 +42,7 @@ function GrammarSectionCard({ unit, section, OralNotes }: {
   OralNotes?: OralNotesView;
 }) {
   const [mode, setMode] = useState<Mode | null>(null);
-  const speech = useCloudSpeech();
+  const speech = useCloudSpeech(section.id.startsWith("grade11-unit1-"));
   const { stop } = speech;
 
   // Stop audio instantly when leaving oral mode or unmounting the card.
@@ -372,30 +373,6 @@ function summarise(section: GrammarSection): string[] {
   return [...fromIdea, ...rules].slice(0, 6);
 }
 
-/** Split a long Burmese script into TTS-sized chunks at sentence boundaries. */
-function chunkScript(text: string, maxChars = 900): string[] {
-  const sentences = text.split(/(?<=[။\.\!\?])\s*/).filter((s) => s.trim());
-  const chunks: string[] = [];
-  let current = "";
-  for (const sentence of sentences) {
-    if (sentence.length > maxChars) {
-      if (current.trim()) chunks.push(current.trim());
-      current = "";
-      for (let i = 0; i < sentence.length; i += maxChars) {
-        chunks.push(sentence.slice(i, i + maxChars).trim());
-      }
-      continue;
-    }
-    if (current.length + sentence.length > maxChars) {
-      chunks.push(current.trim());
-      current = "";
-    }
-    current += sentence;
-  }
-  if (current.trim()) chunks.push(current.trim());
-  return chunks.length ? chunks : [text];
-}
-
 type SpeechStatus = "idle" | "loading" | "playing" | "paused" | "error";
 
 type CloudSpeech = {
@@ -414,7 +391,7 @@ type CloudSpeech = {
  * `openai/gpt-4o-mini-tts` (voice "shimmer") if Gemini errors out. The body is
  * JSON-encoded, so Burmese Unicode is transmitted intact.
  */
-function useCloudSpeech(): CloudSpeech {
+function useCloudSpeech(cacheUnit1 = false): CloudSpeech {
   const [status, setStatus] = useState<SpeechStatus>("idle");
   const [error, setError] = useState<string | null>(null);
   const [activeSegment, setActiveSegment] = useState<number | null>(null);
@@ -454,14 +431,14 @@ function useCloudSpeech(): CloudSpeech {
       headers: { "Content-Type": "application/json; charset=utf-8" },
       // "sarah" maps to Gemini "Kore" server-side and to OpenAI "shimmer"
       // in the fallback path.
-      body: JSON.stringify({ text, voice: "sarah", speed: 1.0 }),
+      body: JSON.stringify({ text, voice: "sarah", speed: 1.0, ...(cacheUnit1 ? { lessonCache: "grade11-unit1" } : {}) }),
     });
     if (!res.ok) {
       const detail = await res.text().catch(() => "");
       throw new Error(`TTS ${res.status}${detail ? `: ${detail.slice(0, 120)}` : ""}`);
     }
     return res.blob();
-  }, []);
+  }, [cacheUnit1]);
 
   const playBlob = useCallback((blob: Blob, myId: number, segment?: number) => {
     return new Promise<void>((resolve, reject) => {

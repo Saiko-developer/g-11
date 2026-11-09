@@ -1,9 +1,11 @@
+import { unit1GrammarAudio } from "@/lib/grade11GrammarAudioCache.server";
 import { requireUser, untrusted, cleanLine } from "@/lib/api-guard.server";
 import { createFileRoute } from "@tanstack/react-router";
 
 import { sanitizeForSpeech } from "@/lib/sanitizeSpeech";
 
 type TtsBody = {
+  lessonCache?: string;
   text?: string;
   voice?: string;
   speed?: number;
@@ -62,86 +64,83 @@ export const Route = createFileRoute("/api/tts")({
       POST: async ({ request }) => {
         const authed = await requireUser(request);
         if (authed instanceof Response) return authed;
-        const { text, voice, speed, provider } = (await request.json()) as TtsBody;
+        const { text, voice, speed, provider, lessonCache } = (await request.json()) as TtsBody;
         if (!text || typeof text !== "string") {
           return new Response("text is required", { status: 400 });
         }
 
-        const lovableKey = process.env.LOVABLE_API_KEY;
-        if (!lovableKey) return new Response("Missing LOVABLE_API_KEY", { status: 500 });
+        const generate = async () => {
+          const lovableKey = process.env.LOVABLE_API_KEY;
+          if (!lovableKey) return new Response("Missing LOVABLE_API_KEY", { status: 500 });
 
-        // Strip markdown / tags / emoji, keep Burmese script and English words intact.
-        const clean = sanitizeForSpeech(text);
-        if (!clean) return new Response("empty text", { status: 400 });
+          // Strip markdown / tags / emoji, keep Burmese script and English words intact.
+          const clean = sanitizeForSpeech(text);
+          if (!clean) return new Response("empty text", { status: 400 });
 
-        const input = clean.length > 3500 ? clean.slice(0, 3500) : clean;
-        const safeSpeed = Math.min(1.3, Math.max(0.7, speed ?? 1.0));
-        const geminiVoice =
-          (voice && GEMINI_VOICES[voice.toLowerCase()]) || DEFAULT_GEMINI_VOICE;
+          const input = clean.length > 3500 ? clean.slice(0, 3500) : clean;
+          const safeSpeed = Math.min(1.3, Math.max(0.7, speed ?? 1.0));
+          const geminiVoice = (voice && GEMINI_VOICES[voice.toLowerCase()]) || DEFAULT_GEMINI_VOICE;
 
-        // 1) Gemini TTS — natural Burmese.
-        try {
-          if (provider === "openai") throw new Error("openai requested");
-          const upstream = await fetch("https://ai.gateway.lovable.dev/v1/audio/speech", {
-            method: "POST",
-            headers: {
-              "Lovable-API-Key": lovableKey,
-              "Content-Type": "application/json; charset=utf-8",
-            },
-            body: JSON.stringify({
-              model: process.env.LOVABLE_TTS_MODEL?.trim() || "google/gemini-2.5-flash-tts",
-              contents: [
-                {
-                  role: "user",
-                  parts: [
-                    {
-                      text: input,
-                    },
-                  ],
-                },
-              ],
-              generationConfig: {
-                responseModalities: ["AUDIO"],
-                speechConfig: {
-                  voiceConfig: { prebuiltVoiceConfig: { voiceName: geminiVoice } },
-                },
+          // 1) Gemini TTS — natural Burmese.
+          try {
+            if (provider === "openai") throw new Error("openai requested");
+            const upstream = await fetch("https://ai.gateway.lovable.dev/v1/audio/speech", {
+              method: "POST",
+              headers: {
+                "Lovable-API-Key": lovableKey,
+                "Content-Type": "application/json; charset=utf-8",
               },
-            }),
-          });
+              body: JSON.stringify({
+                model: process.env.LOVABLE_TTS_MODEL?.trim() || "google/gemini-2.5-flash-tts",
+                contents: [
+                  {
+                    role: "user",
+                    parts: [
+                      {
+                        text: input,
+                      },
+                    ],
+                  },
+                ],
+                generationConfig: {
+                  responseModalities: ["AUDIO"],
+                  speechConfig: {
+                    voiceConfig: { prebuiltVoiceConfig: { voiceName: geminiVoice } },
+                  },
+                },
+              }),
+            });
 
-          if (!upstream.ok) {
-            const detail = await upstream.text().catch(() => "");
-            throw new Error(`Gemini TTS ${upstream.status}: ${detail.slice(0, 300)}`);
-          }
+            if (!upstream.ok) {
+              const detail = await upstream.text().catch(() => "");
+              throw new Error(`Gemini TTS ${upstream.status}: ${detail.slice(0, 300)}`);
+            }
 
-          const buf = new Uint8Array(await upstream.arrayBuffer());
-          if (buf.byteLength < 1024) throw new Error("Gemini TTS returned no audio");
+            const buf = new Uint8Array(await upstream.arrayBuffer());
+            if (buf.byteLength < 1024) throw new Error("Gemini TTS returned no audio");
 
-          // Gateway returns a complete WAV file; pass through. If it ever
-          // returns raw PCM, wrap it so the browser can decode it.
-          const isWav =
-            buf[0] === 0x52 && buf[1] === 0x49 && buf[2] === 0x46 && buf[3] === 0x46;
-          const body = isWav ? buf : pcmToWav(buf);
+            // Gateway returns a complete WAV file; pass through. If it ever
+            // returns raw PCM, wrap it so the browser can decode it.
+            const isWav = buf[0] === 0x52 && buf[1] === 0x49 && buf[2] === 0x46 && buf[3] === 0x46;
+            const body = isWav ? buf : pcmToWav(buf);
 
-          return new Response(body.slice().buffer as ArrayBuffer, {
-            headers: {
-              "Content-Type": "audio/wav",
-              "Cache-Control": "no-store",
-              "X-TTS-Provider": "gemini",
-            },
-          });
-        } catch (err) {
-          console.warn(
-            "[tts] gemini failed, falling back to openai",
-            err instanceof Error ? err.message : err,
-          );
+            return new Response(body.slice().buffer as ArrayBuffer, {
+              headers: {
+                "Content-Type": "audio/wav",
+                "Cache-Control": "no-store",
+                "X-TTS-Provider": "gemini",
+              },
+            });
+          } catch (err) {
+            console.warn(
+              "[tts] gemini failed, falling back to openai",
+              err instanceof Error ? err.message : err,
+            );
 
-          // Male fallback voice to match Sayar Owl.
-          const openaiVoice = provider === "openai" && voice ? voice.toLowerCase() : "echo";
+            // Male fallback voice to match Sayar Owl.
+            const openaiVoice = provider === "openai" && voice ? voice.toLowerCase() : "echo";
 
-          const fallback = await fetch(
-            "https://ai.gateway.lovable.dev/v1/audio/speech",
-            {
+            const fallback = await fetch("https://ai.gateway.lovable.dev/v1/audio/speech", {
               method: "POST",
               headers: {
                 "Lovable-API-Key": lovableKey,
@@ -155,26 +154,29 @@ export const Route = createFileRoute("/api/tts")({
                 response_format: "mp3",
                 speed: safeSpeed,
               }),
-            },
-          ).catch((e) => {
-            console.error("[tts] openai fallback network error", e);
-            return null;
-          });
+            }).catch((e) => {
+              console.error("[tts] openai fallback network error", e);
+              return null;
+            });
 
-          if (!fallback || !fallback.ok) {
-            const detail = fallback ? await fallback.text().catch(() => "") : "network error";
-            console.error("[tts] openai fallback failed", fallback?.status, detail);
-            return new Response(detail || "TTS failed", { status: fallback?.status ?? 502 });
+            if (!fallback || !fallback.ok) {
+              const detail = fallback ? await fallback.text().catch(() => "") : "network error";
+              console.error("[tts] openai fallback failed", fallback?.status, detail);
+              return new Response(detail || "TTS failed", { status: fallback?.status ?? 502 });
+            }
+
+            return new Response(fallback.body, {
+              headers: {
+                "Content-Type": "audio/mpeg",
+                "Cache-Control": "no-store",
+                "X-TTS-Provider": "openai",
+              },
+            });
           }
-
-          return new Response(fallback.body, {
-            headers: {
-              "Content-Type": "audio/mpeg",
-              "Cache-Control": "no-store",
-              "X-TTS-Provider": "openai",
-            },
-          });
-        }
+        };
+        return lessonCache === "grade11-unit1"
+          ? unit1GrammarAudio(request, { text, voice, speed, provider }, generate)
+          : generate();
       },
     },
   },
