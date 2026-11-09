@@ -3,7 +3,8 @@ import unit5 from "@/data/grade11/textbook/unit5.json";
 import { expect, it } from "vitest";
 import { GRADE11_ORAL_GRAMMAR } from "./grade11GrammarOral";
 import { EXTENDED_GRADE11_PLANS } from "./grade11GrammarOralUpper";
-import { GRADE11_TEACHING_VOICE, GRADE11_TEXTBOOK_WALKTHROUGHS } from "./grade11GrammarTeaching";
+import { GRADE11_GRAMMAR_LESSON_FRAMES } from "./grade11GrammarLessonFrames";
+import { GRADE11_TEXTBOOK_WALKTHROUGHS } from "./grade11GrammarTeaching";
 import sourceText from "@/data/grade11/aiSourceText.json";
 it.each(Array.from({ length: 11 }, (_, index) => index + 2))(
   "grounds every Unit %i oral topic with independent teaching and short notes",
@@ -18,12 +19,17 @@ it.each(Array.from({ length: 11 }, (_, index) => index + 2))(
       const examples = segments.filter((segment) => segment.sentenceEn);
       expect(examples.length).toBeGreaterThan(0);
       const topic = section.id.replace(/^grade11-unit\d+-/, "");
-      expect(segments[0].scriptMy).toBe(GRADE11_TEACHING_VOICE[topic].openingMy);
+      expect(segments[0].titleMy).toContain(section.titleEn);
+      expect(segments[0].scriptMy).toContain(GRADE11_GRAMMAR_LESSON_FRAMES[topic].meaningMy);
+      expect(segments[1].scriptMy).toBe(GRADE11_GRAMMAR_LESSON_FRAMES[topic].patternSpeechMy);
+      expect(segments[0].sentenceEn).toBeUndefined();
+      expect(segments[1].sentenceEn).toBeUndefined();
       for (const segment of segments) {
         expect(segment.noteMy.length).toBeLessThan(200);
         expect(segment.scriptMy.length).toBeGreaterThan(segment.noteMy.length);
         expect(segment.scriptMy).not.toContain("နောက်က စာအုပ်နမူနာတွေမှာ ဒီအချက်ကို တွဲကြည့်ပါ။");
         if (segment.sentenceEn) {
+          for (const focus of segment.focus ?? []) expect(segment.sentenceEn).toContain(focus);
           expect(segment.scriptMy).toContain(segment.sentenceEn);
           expect(segment.scriptMy).toContain(segment.sentenceMy!);
           expect(

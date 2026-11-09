@@ -53,7 +53,8 @@ it("changes notes on actual playback, not prefetch, and keeps the note during pa
   const section = UNIT1_GRAMMAR.sections[0];
   // A short real cue pair makes playback boundaries deterministic without real provider calls.
   const segments = section.oral
-    .segments!.slice(1, 3)
+    .segments!.filter((segment) => segment.sentenceEn)
+    .slice(0, 2)
     .map((segment) => ({ ...segment, scriptMy: segment.scriptMy.slice(0, 100) }));
   let resolveSecond: (response: Response) => void = () => {};
   vi.mocked(fetch)
@@ -109,7 +110,8 @@ it("does not start the next audio after oral mode is closed", async () => {
 it("keeps the current note when the following clip is already prefetched", async () => {
   const section = UNIT1_GRAMMAR.sections[0];
   const segments = section.oral
-    .segments!.slice(1, 3)
+    .segments!.filter((segment) => segment.sentenceEn)
+    .slice(0, 2)
     .map((segment) => ({ ...segment, scriptMy: segment.scriptMy.slice(0, 100) }));
   const grammar: UnitGrammar = {
     ...UNIT1_GRAMMAR,

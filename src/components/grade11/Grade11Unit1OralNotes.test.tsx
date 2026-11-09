@@ -15,7 +15,7 @@ afterEach(() => {
   vi.unstubAllGlobals();
 });
 it.each([0, 1, 2])(
-  "shows source-linked teaching notes for oral topic %i without changing narration",
+  "shows source-linked teaching notes for oral topic %i with the current authored narration",
   (index) => {
     render(<GrammarScriptView grammar={UNIT1_GRAMMAR} OralNotes={Grade11Unit1OralNotes} />);
     fireEvent.click(screen.getAllByRole("button", { name: "Oral Explanation" })[index]);
@@ -28,7 +28,9 @@ it.each([0, 1, 2])(
     const requestBody = JSON.parse(vi.mocked(fetch).mock.calls[0][1]!.body as string);
     // Existing oral narration still uses the same TTS endpoint and its opening text.
     expect(vi.mocked(fetch).mock.calls[0][0]).toBe("/api/tts");
-    expect(UNIT1_GRAMMAR.sections[index].oral.scriptMy).toContain(requestBody.text.slice(0, 40));
+    expect(UNIT1_GRAMMAR.sections[index].oral.scriptMy.replace(/\s+/g, "")).toContain(
+      requestBody.text.replace(/\s+/g, "").slice(0, 40),
+    );
   },
 );
 it("keeps the existing notes when a caller does not opt into the Unit 1 view", () => {

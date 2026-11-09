@@ -49,7 +49,9 @@ function section(
           : [],
     },
     oral: {
-      scriptMy: UNIT1_ORAL_SCRIPTS[id],
+      scriptMy: unit1OralTimeline(id)
+        .map((segment) => segment.scriptMy)
+        .join("\n\n"),
       segments: unit1OralTimeline(id),
       note: {
         ideaMy: block(rules[0]).my,

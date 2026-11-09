@@ -128,7 +128,7 @@ export const EXTENDED_GRADE11_PLANS: Record<number, OralPlan[]> = {
       "Reported statements",
       "ပြောစကားကို ပြန်လည်တင်ပြခြင်း",
       "တခြားသူပြောခဲ့တဲ့ စကားကို ကိုယ့်စကားနဲ့ ပြန်တင်ပြတာဖြစ်လို့ quotation marks မသုံးပါ။",
-      "said / told + (person) + that + statement",
+      "said (to + person) / told + person + that + statement",
       [
         "reporting verb က အတိတ်ဖြစ်လျှင် စာအုပ်ပါ tense နောက်ဆုတ်ပုံကို စစ်ပါ။ reporting verb က ပစ္စုပ္ပန်ဖြစ်လျှင် သို့မဟုတ် ယေဘုယျအမှန်တရားဖြစ်လျှင် ကာလကို အလိုအလျောက် မပြောင်းပါနှင့်။",
         "နာမ်စား၊ အချိန်နဲ့ နေရာပြစကားကို ပြောသူ၊ နားထောင်သူနဲ့ ပြန်ပြောတဲ့အချိန်ပေါ်မူတည်ပြီး ပြောင်းပါ။ here → there၊ today → that day ကဲ့သို့ ပြောင်းရန် လိုမလို စစ်ပါ။",

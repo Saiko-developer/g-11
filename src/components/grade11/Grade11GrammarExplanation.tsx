@@ -6,6 +6,26 @@ import { sanitizeForSpeech } from "@/lib/sanitizeSpeech";
 import { Button } from "@/components/ui/button";
 import { Grade11RequireSignIn } from "./Grade11RequireSignIn";
 
+function FocusSentence({ text, focus = [] }: { text: string; focus?: string[] }) {
+  if (!focus.length) return <>{text}</>;
+  const escaped = [...focus]
+    .sort((a, b) => b.length - a.length)
+    .map((part) => part.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  return (
+    <>
+      {text.split(new RegExp(`(${escaped.join("|")})`, "g")).map((part, index) =>
+        focus.includes(part) ? (
+          <mark key={index} className="rounded bg-primary/15 px-0.5 font-semibold text-primary">
+            {part}
+          </mark>
+        ) : (
+          part
+        ),
+      )}
+    </>
+  );
+}
+
 /** Grade 11 only. Neither Grade 10 nor the approved Unit 1 player is modified. */
 export function Grade11GrammarExplanation({ unit }: { unit: number }) {
   const grammar = GRADE11_ORAL_GRAMMAR[unit];
@@ -318,7 +338,7 @@ export function Grade11OralPlayer({
         {current.sentenceEn && (
           <div className="space-y-2 rounded-lg bg-muted/40 p-3">
             <p lang="en" className="text-base font-medium leading-relaxed">
-              {current.sentenceEn}
+              <FocusSentence text={current.sentenceEn} focus={current.focus} />
             </p>
             <p lang="my" className="text-sm leading-relaxed text-muted-foreground">
               {current.sentenceMy}
@@ -348,7 +368,7 @@ export function Grade11OralPlayer({
               {segment.sentenceEn && (
                 <>
                   <p lang="en" className="mt-1">
-                    {segment.sentenceEn}
+                    <FocusSentence text={segment.sentenceEn} focus={segment.focus} />
                   </p>
                   <p lang="my" className="mt-1 text-muted-foreground">
                     {segment.sentenceMy}

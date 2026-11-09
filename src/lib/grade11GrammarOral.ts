@@ -1,6 +1,7 @@
 import type { GrammarOralSegment, GrammarSection, UnitGrammar } from "@/data/grammar/types";
 import { UNIT2_GRAMMAR } from "./grade11Unit2Grammar";
 import { UNIT3_GRAMMAR, UNIT4_GRAMMAR, UNIT5_GRAMMAR } from "./grade11GrammarLessons";
+import { GRADE11_GRAMMAR_LESSON_FRAMES, grade11LessonOpening } from "./grade11GrammarLessonFrames";
 import { GRADE11_TEACHING_VOICE, GRADE11_TEXTBOOK_WALKTHROUGHS } from "./grade11GrammarTeaching";
 import { EXTENDED_GRADE11_PLANS } from "./grade11GrammarOralUpper";
 
@@ -22,13 +23,10 @@ export function oralSegments(plan: OralPlan): GrammarOralSegment[] {
   if (!teacher || teacher.examples.length !== plan.examples.length)
     throw new Error(`Missing independent Grade 11 teaching script: ${plan.id}`);
   const walkthrough = GRADE11_TEXTBOOK_WALKTHROUGHS[topic];
-  const segments: GrammarOralSegment[] = [
-    {
-      titleMy: "အတူစဉ်းစားကြည့်ရအောင်",
-      noteMy: teacher.ideaNoteMy,
-      scriptMy: teacher.openingMy,
-    },
-  ];
+  const lessonFrame = GRADE11_GRAMMAR_LESSON_FRAMES[topic];
+  if (!lessonFrame || lessonFrame.exampleFocus.length !== plan.examples.length)
+    throw new Error(`Missing Grade 11 grammar focus: ${plan.id}`);
+  const segments: GrammarOralSegment[] = grade11LessonOpening(topic, plan.titleEn);
   plan.examples.forEach((example, index) => {
     if (walkthrough?.exampleIndex === index)
       segments.push({
@@ -49,6 +47,7 @@ export function oralSegments(plan: OralPlan): GrammarOralSegment[] {
           : `စာအုပ်နမူနာ ${index + 1} ကို အတူကြည့်မယ်`,
       sentenceEn,
       sentenceMy: example.my,
+      focus: lessonFrame.exampleFocus[index],
       noteMy: coach.noteMy,
       scriptMy: `${coach.leadMy}\n${sentenceEn}\n${example.my}\n${example.whyMy}`,
     });

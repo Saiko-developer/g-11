@@ -188,3 +188,25 @@ it("leaves a timed-out request recoverable rather than loading forever", async (
   expect(screen.getByRole("alert")).toBeVisible();
   expect(screen.getByRole("button", { name: "Play explanation" })).toBeEnabled();
 });
+it("introduces the topic and grammar pattern before highlighting the first real example", async () => {
+  render(<Grade11GrammarExplanation unit={2} />);
+  fireEvent.click(screen.getAllByRole("button", { name: "Oral Explanation" })[0]);
+  await flush();
+  expect(note()).toHaveTextContent("သင်ခန်းစာမိတ်ဆက် · Present Simple");
+  expect(note().querySelector('p[lang="en"]')).toBeNull();
+  await act(async () => {
+    TestAudio.all[0].finish();
+  });
+  await flush();
+  expect(note()).toHaveTextContent("နမူနာမကြည့်မီ ပုံစံနှင့်အသုံးကို သိထားပါ");
+  expect(note().querySelector('p[lang="en"]')).toBeNull();
+  await act(async () => {
+    TestAudio.all[1].finish();
+  });
+  await flush();
+  expect(note()).toHaveTextContent("Gases expand when they are heated.");
+  expect([...note().querySelectorAll("mark")].map((item) => item.textContent)).toEqual([
+    "Gases",
+    "expand",
+  ]);
+});

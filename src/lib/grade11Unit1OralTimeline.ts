@@ -1,3 +1,4 @@
+import { grade11LessonOpening } from "./grade11GrammarLessonFrames";
 import type { GrammarOralSegment } from "@/data/grammar/types";
 import { UNIT1_ORAL_PARAGRAPHS, type Unit1OralTopic } from "./grade11Unit1Oral";
 import { UNIT1_KEYS, UNIT1_SECTIONS } from "./grade11Unit1";
@@ -271,10 +272,13 @@ const cues: Record<Unit1OralTopic, Cue[]> = {
 };
 export function unit1OralTimeline(topic: Unit1OralTopic): GrammarOralSegment[] {
   const paragraphs = UNIT1_ORAL_PARAGRAPHS[topic];
-  return cues[topic].map(({ start, ...note }, index) => ({
+  const existing = cues[topic].map(({ start, ...note }, index) => ({
     ...note,
     scriptMy: paragraphs
       .slice(start, cues[topic][index + 1]?.start ?? paragraphs.length)
       .join("\n\n"),
   }));
+  const title = { "both-and": "Both … and", before: "Before", after: "After" }[topic];
+  // Replace only the former introduction. The accepted examples and walkthrough stay intact.
+  return [...grade11LessonOpening(topic, title), ...existing.slice(1)];
 }
