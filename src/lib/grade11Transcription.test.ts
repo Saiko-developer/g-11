@@ -56,3 +56,15 @@ it("does not transcribe without authentication", async () => {
   expect((await post({ request: {} as Request })).status).toBe(401);
   expect(fetch).not.toHaveBeenCalled();
 });
+it("returns a service error for malformed upstream output instead of empty recognized speech", async () => {
+  vi.mocked(fetch).mockResolvedValue({
+    ok: true,
+    json: async () => ({ unexpected: "value" }),
+  } as unknown as Response);
+  const form = new FormData();
+  form.append("file", new File(["audio"], "voice.webm", { type: "audio/webm" }));
+  form.append("grade", "11");
+  const response = await post({ request: { formData: async () => form } as Request });
+  expect(response.status).toBe(502);
+  expect((await response.json()).error).toBe("invalid_transcription_response");
+});

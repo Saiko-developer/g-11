@@ -1,6 +1,7 @@
 import { act, cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, beforeEach, expect, it, vi } from "vitest";
 import type { ReactNode } from "react";
+import { grade11LessonContext } from "@/lib/grade11LessonContext";
 import { SayaOwlHome } from "./SayaOwlHome";
 type ChatState = {
   messages: { role: string; parts: { type: string; text?: string }[] }[];
@@ -97,7 +98,7 @@ beforeEach(() => {
     vi.fn(async (url) =>
       url === "/api/transcribe"
         ? { ok: true, json: async () => ({ text: "ဒါလေး ရှင်းပြပေးပါ" }) }
-        : { ok: false, status: 503 },
+        : new Response("unavailable", { status: 503 }),
     ),
   );
 });
@@ -115,7 +116,7 @@ async function startAndSpeak() {
     mock.recorder.stop();
   });
 }
-it("processes a fast reply even if the user-only render was skipped, and recovers from TTS failure", async () => {
+it("processes a fast reply, preserves full text after TTS failure and avoids filler requests", async () => {
   const view = render(<SayaOwlHome grade={11} lessonContext="Grade 11 Unit 1" />);
   await startAndSpeak();
   expect(mock.chat.sendMessage).toHaveBeenCalledOnce();
@@ -131,9 +132,11 @@ it("processes a fast reply even if the user-only render was skipped, and recover
   ];
   view.rerender(<SayaOwlHome grade={11} lessonContext="Grade 11 Unit 1" />);
   await act(async () => {
-    await Promise.resolve();
+    await vi.advanceTimersByTimeAsync(701);
   });
-  expect(screen.getByRole("button", { name: "နားထောင်နေပါတယ်… မေးလိုက်ပါ" })).toBeInTheDocument();
+  expect(screen.getByRole("button", { name: "ဆရာနဲ့ စကားပြောရန် နှိပ်ပါ" })).toBeInTheDocument();
+  expect(screen.getByText("အဖြေစာသားကို ဖတ်မယ်")).toBeVisible();
+  expect(vi.mocked(fetch).mock.calls.filter(([url]) => url === "/api/tts")).toHaveLength(2);
   expect(screen.getByText(/ဟုတ်ကဲ့။/)).toBeInTheDocument();
 });
 it("stops on chat error and lets the student restart with the owl", async () => {
@@ -237,4 +240,28 @@ it("does not interrupt audio that is still playing beyond 90 seconds after strea
     TestAudio.last.onended?.();
   });
   expect(screen.getByRole("button", { name: "နားထောင်နေပါတယ်… မေးလိုက်ပါ" })).toBeInTheDocument();
+});
+
+it("reports a failed transcription request as a service error, not unclear Burmese", async () => {
+  vi.mocked(fetch).mockResolvedValue(new Response("Missing LOVABLE_API_KEY", { status: 500 }));
+  render(<SayaOwlHome grade={11} lessonContext="Grade 11 Unit 1" />);
+  await startAndSpeak();
+  expect(screen.getByRole("alert")).not.toHaveTextContent("နားမလည်");
+  expect(screen.getByRole("alert")).toHaveTextContent("စာသားပြောင်းသည့်စနစ်");
+  expect(mock.chat.sendMessage).not.toHaveBeenCalled();
+  expect(fetch).toHaveBeenCalledOnce();
+});
+
+it("sends the user's reported Unit 3 Grammar number 3 as a unique textbook reference", async () => {
+  vi.mocked(fetch).mockImplementation(async (url) =>
+    url === "/api/transcribe"
+      ? Response.json({ text: "လေ့ကျင့်ခန်း နံပါတ် ၃ ကို မြန်မာလို ရှင်းပြပါ" })
+      : new Response("unavailable", { status: 503 }),
+  );
+  render(<SayaOwlHome grade={11} lessonContext={grade11LessonContext(3, "grammar").context} />);
+  await startAndSpeak();
+  const body = mock.chat.sendMessage.mock.calls[0][1].body;
+  expect(body.currentQuestion).toContain("source 3C-32");
+  expect(body.currentQuestion).toContain("I finished ___________ (write) the assignment");
+  expect(vi.mocked(fetch).mock.calls.filter(([url]) => url === "/api/tts")).toHaveLength(0);
 });

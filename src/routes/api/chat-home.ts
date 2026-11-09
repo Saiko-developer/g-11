@@ -92,6 +92,7 @@ type ChatHomeRequestBody = {
   mode?: "voice" | "text";
   paperVoice?: boolean;
   grade?: 10 | 11;
+  currentQuestion?: string | null;
 };
 
 export const Route = createFileRoute("/api/chat-home")({
@@ -126,6 +127,9 @@ export const Route = createFileRoute("/api/chat-home")({
         }
         if (sectionContent) {
           system += `\n\n--- ကျောင်းသား ကြည့်နေသော နေရာပိုင်း (မျက်နှာပြင်ပေါ်က စာသား အစစ်) ---\n${untrusted("screen_section", sectionContent, grade11 ? 16000 : 8000)}`;
+        }
+        if (grade11 && typeof body.currentQuestion === "string" && body.currentQuestion.trim()) {
+          system += `\n\n--- နောက်ဆုံးမေးခွန်းနှင့် ကိုက်ညီသော စာအုပ်မေးခွန်း ---\n${untrusted("resolved_question", body.currentQuestion, 2500)}`;
         }
         if (paperVoice) {
           system += `\n\n# မျက်နှာပြင် မှတ်စုတို (Screen Note) — မဖြစ်မနေ\n- အသံဖြင့် အပြည့်အစုံ ရှင်းပြပြီးနောက် အဖြေ၏ အဆုံးတွင် "@@NOTE@@" ဟူသော စာကြောင်းတစ်ကြောင်း သီးသန့်ရေးပါ။ ထို့နောက် အောက်ပါပုံစံဖြင့်သာ ရေးပါ (ဤအပိုင်းကို အသံမဖတ်ပါ) —\nအမေး: <ကျောင်းသားမေးသော မေးခွန်း တိုတို>\nအဖြေ: <အဖြေမှန် တိုတို>\n• <အဓိကမှတ်သားရန် အချက်တို>\n• <အချက်တို> (၂–၃ ချက်သာ)\n- "@@NOTE@@" ကို အဖြေတစ်ခုလျှင် တစ်ကြိမ်သာ ရေးပါ။ နှုတ်ဆက်စကားသက်သက် ဖြစ်လျှင် မရေးပါနှင့်။`;

@@ -95,6 +95,10 @@ export const Route = createFileRoute("/api/transcribe")({
         }
 
         const data = (await upstream.json().catch(() => null)) as { text?: string } | null;
+        if (grade11 && (!data || typeof data.text !== "string")) {
+          console.warn("[grade11-transcribe] invalid upstream response");
+          return Response.json({ error: "invalid_transcription_response" }, { status: 502 });
+        }
         return new Response(JSON.stringify({ text: data?.text ?? "" }), {
           headers: { "Content-Type": "application/json", "Cache-Control": "no-store" },
         });

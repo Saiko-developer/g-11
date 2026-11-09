@@ -16,6 +16,11 @@ const letter: Record<G11SkillKind, string> = {
   speaking: "D",
   writing: "E",
 };
+function indexedQuestion(question: { id: string; question: string; instructions: string }) {
+  const group = question.instructions.match(/^(?:Exercise\s+)?([A-E])[.)]\s/i)?.[1]?.toUpperCase();
+  const number = question.question.match(/^(\d+|[a-z])[.)]\s/i)?.[1];
+  return `[${group ? `Exercise ${group} · ` : ""}${number ? `Question ${number}` : "Textbook task"} | source ${question.id}] ${question.instructions}\n${question.question}`;
+}
 export type Grade11AIQuestion = { id: string; question: string; instructions: string };
 /** Source text only: never includes hidden answer keys or other students' work. */
 export function grade11LessonContext(unit: number, kind: G11SkillKind) {
@@ -80,6 +85,6 @@ export function grade11LessonContext(unit: number, kind: G11SkillKind) {
       getGrade11Captions(unit)
         .map((c) => c.en)
         .join("\n");
-  const context = `Grade 11 English · Unit ${unit} · ${kind}\n${passageIndex ? `Reading passage paragraphs in display order (including the introductory paragraph; printed heading blanks are NOT paragraph numbers):\n${passageIndex}\n\n` : ""}Textbook questions:\n${questions.map((q) => `[${q.id}] ${q.instructions}\n${q.question}`).join("\n")}\nOriginal textbook reference (OCR may contain recognition errors; never invent missing information):\n${text}`;
+  const context = `Grade 11 English · Unit ${unit} · ${kind}\n${passageIndex ? `Reading passage paragraphs in display order (including the introductory paragraph; printed heading blanks are NOT paragraph numbers):\n${passageIndex}\n\n` : ""}Textbook questions:\n${questions.map(indexedQuestion).join("\n")}\nOriginal textbook reference (OCR may contain recognition errors; never invent missing information):\n${text}`;
   return { context, questions };
 }

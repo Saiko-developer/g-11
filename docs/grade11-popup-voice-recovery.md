@@ -6,8 +6,8 @@ The shared SayaOwlHome popup now opts into bounded voice requests and recovery w
 
 - Turn tracking records the expected user-message count before sending. A fast assistant response no longer depends on React first rendering a user-only message list.
 - Chat errors stop the call, release the microphone and display an error. Tapping the owl restarts listening.
-- Transcription has a 30-second client deadline covering response decoding; Grade 11 upstream transcription has a 25-second connection/response-header deadline.
-- TTS requests and decoding have a 20-second deadline. Failed voice output preserves the response text and returns to listening after the stream finishes.
+- Transcription has a 35-second client deadline covering response decoding; Grade 11 upstream transcription has a 25-second connection/response-header deadline.
+- TTS requests and decoding have a 45-second total deadline, including at most one retry for explicit transient errors. On persistent speech failure, further voice chunks stop; the complete streamed answer remains readable and the student can restart with the owl.
 - Filler playback has a short deadline. Answer playback has no fixed duration cap. A 90-second inactivity watchdog resets when streamed answer text changes, a voice chunk is prepared, or audio playback time advances. Long explanations continue while progressing; a genuinely stalled call displays a retry message. Neither the old 90-second total explanation limit nor the old 45-second answer-audio cap is used.
 - Closed-call transcription and speech results are ignored after a new call generation starts.
 
@@ -28,3 +28,13 @@ Grade 11 uses its own teaching policy rather than the Grade 10 exercise template
 Units 1–6 reading context now includes source-linked passage paragraphs in their display order before exercise questions. The introductory paragraph counts as Paragraph 1; printed heading blanks do not count as paragraph numbers. Units 7–12 retain their OCR page references rather than receiving invented paragraph boundaries. The policy asks for a first sentence or text when a reference cannot be identified reliably.
 
 Regression tests cover a four-minute text stream, three-minute ongoing audio after streaming completes, and an actual 90-second stall following progress. Prompt/context tests verify wiring and source numbering; live AI answer quality still requires spoken user evaluation.
+
+## Voice service diagnostics and Unit 3 question lookup
+
+The old generic transcription failure toast could misreport a failed HTTP request as misunderstood speech. The old voice toast likewise called all TTS failures busy. Grade 11 now distinguishes session/HTTP errors, configuration/credit errors, timeouts, invalid responses and actual empty transcripts. Malformed upstream transcription output is a Grade 11 service error instead of a successful empty transcript.
+
+Grade 11 no longer prepares three filler voice clips on opening the popup. It uses larger sentence groups and one TTS request at a time. A single retry is allowed for 429/502/503/504, respecting a short Retry-After; auth/credit/config errors are not retried. Closing the call aborts pending voice work and prevents further retries. Grade 10 keeps its existing defaults.
+
+Textbook question context includes exercise letters and question numbers. Explicit English/Myanmar question numbers resolve only when exactly one source question matches, and are sent in a separate untrusted `resolved_question` reference. Unit 3 Grammar Question 3 resolves to source `3C-32`: “I finished ___________ (write) the assignment just before the deadline.” Ambiguous requests remain for the tutor to clarify.
+
+These fixes are verified with mocked requests and playback. The actual production STT/TTS provider error cannot be determined without live deployment logs; provider/model availability and real-device Burmese recognition are not established by these tests.

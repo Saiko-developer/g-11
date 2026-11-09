@@ -100,3 +100,17 @@ it("uses a request-specific Grade 11 policy without the Grade 10 exercise templa
   expect(system).not.toContain("# အသေးစိတ် ရှင်းပြရသည့်အခါ အဖြေပုံစံ");
   expect(system).toContain("The dolphin is a kind of sea animal.");
 });
+it("grounds the reported Unit 3 Grammar question separately from the full section", async () => {
+  await post({
+    request: request({
+      grade: 11,
+      mode: "voice",
+      messages: [],
+      currentQuestion:
+        "Question 3 | source 3C-32\nI finished ___________ (write) the assignment just before the deadline.",
+    }),
+  });
+  const system = vi.mocked(streamText).mock.calls[0][0].system;
+  expect(system).toContain('<untrusted label="resolved_question">');
+  expect(system).toContain("I finished ___________ (write) the assignment");
+});
