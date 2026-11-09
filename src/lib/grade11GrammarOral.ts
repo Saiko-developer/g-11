@@ -1,6 +1,7 @@
 import type { GrammarOralSegment, GrammarSection, UnitGrammar } from "@/data/grammar/types";
 import { UNIT2_GRAMMAR } from "./grade11Unit2Grammar";
 import { UNIT3_GRAMMAR, UNIT4_GRAMMAR, UNIT5_GRAMMAR } from "./grade11GrammarLessons";
+import { GRADE11_TEACHING_VOICE, GRADE11_TEXTBOOK_WALKTHROUGHS } from "./grade11GrammarTeaching";
 import { EXTENDED_GRADE11_PLANS } from "./grade11GrammarOralUpper";
 
 export type OralExample = { en: string; my: string; whyMy: string; source: string };
@@ -14,32 +15,50 @@ export type OralPlan = {
   examples: OralExample[];
   cautionMy: string;
 };
-/** Each teaching cue is its own audio boundary, reusing the proven Unit 1 player. */
+/** Each teaching cue remains its own playback boundary for the Grade 11 player. */
 export function oralSegments(plan: OralPlan): GrammarOralSegment[] {
-  return [
+  const topic = plan.id.replace(/^grade11-unit\d+-/, "");
+  const teacher = GRADE11_TEACHING_VOICE[topic];
+  if (!teacher || teacher.examples.length !== plan.examples.length)
+    throw new Error(`Missing independent Grade 11 teaching script: ${plan.id}`);
+  const walkthrough = GRADE11_TEXTBOOK_WALKTHROUGHS[topic];
+  const segments: GrammarOralSegment[] = [
     {
-      titleMy: "အဓိကနားလည်ရမည့်အချက်",
-      noteMy: plan.ideaMy,
-      scriptMy: `ဒီအပိုင်းမှာ ${plan.titleEn} အကြောင်းကို လေ့လာမယ်။ ${plan.ideaMy}`,
-    },
-    ...plan.rules.map((rule, index) => ({
-      titleMy: `စည်းမျဉ်း ${index + 1}`,
-      noteMy: rule,
-      scriptMy: `${rule} နောက်က စာအုပ်နမူနာတွေမှာ ဒီအချက်ကို တွဲကြည့်ပါ။`,
-    })),
-    ...plan.examples.map((example, index) => ({
-      titleMy: `စာအုပ်နမူနာ ${index + 1}`,
-      sentenceEn: example.en,
-      sentenceMy: example.my,
-      noteMy: example.whyMy,
-      scriptMy: `စာအုပ်ပါ နမူနာကို ကြည့်ရအောင်။ ${example.en}\n${example.my}\n${example.whyMy}`,
-    })),
-    {
-      titleMy: "မှားတတ်သည့်အချက်နှင့် ပြန်စစ်ရန်",
-      noteMy: plan.cautionMy,
-      scriptMy: `နောက်ဆုံး သတိပြုရမယ့်အချက်ကို ပြန်ကြည့်မယ်။ ${plan.cautionMy} စာအုပ်လေ့ကျင့်ခန်းဖြေတဲ့အခါ ပုံစံကိုသာ မကျက်ဘဲ မူရင်းအဓိပ္ပာယ်နဲ့ အချိန်ဆက်စပ်မှုကိုပါ ပြန်စစ်ပါ။`,
+      titleMy: "အတူစဉ်းစားကြည့်ရအောင်",
+      noteMy: teacher.ideaNoteMy,
+      scriptMy: teacher.openingMy,
     },
   ];
+  plan.examples.forEach((example, index) => {
+    if (walkthrough?.exampleIndex === index)
+      segments.push({
+        titleMy: "မူရင်းစာအုပ်ဝါကျ → ပြောင်းနည်း",
+        sentenceEn: walkthrough.en,
+        sentenceMy: walkthrough.my,
+        noteMy: walkthrough.noteMy,
+        scriptMy: `${walkthrough.en}\n${walkthrough.my}\n${walkthrough.explanationMy}`,
+      });
+    const coach = teacher.examples[index];
+    // A parenthesized original is already taught in the preceding walkthrough.
+    // Present the textbook's main example sentence, without letter labels or its annotation.
+    const sentenceEn = example.en.replace(/^\([a-z]\)\s*/i, "").replace(/\s+\([^()]*\)\s*$/, "");
+    segments.push({
+      titleMy:
+        walkthrough?.exampleIndex === index
+          ? "ပြောင်းပြီးစာအုပ်နမူနာကို စစ်ကြည့်ပါ"
+          : `စာအုပ်နမူနာ ${index + 1} ကို အတူကြည့်မယ်`,
+      sentenceEn,
+      sentenceMy: example.my,
+      noteMy: coach.noteMy,
+      scriptMy: `${coach.leadMy}\n${sentenceEn}\n${example.my}\n${example.whyMy}`,
+    });
+  });
+  segments.push({
+    titleMy: "နမူနာများမှ စည်းမျဉ်းကို ပြန်စုကြည့်ပါ",
+    noteMy: teacher.ideaNoteMy,
+    scriptMy: `${teacher.closingMy}\n${plan.rules.join(" ")}\n${plan.cautionMy}`,
+  });
+  return segments;
 }
 export type Grade11OralSection = Omit<GrammarSection, "quiz">;
 export type Grade11OralGrammar = Omit<UnitGrammar, "sections"> & { sections: Grade11OralSection[] };
